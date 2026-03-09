@@ -360,6 +360,316 @@ const Index = () => {
           </div>
         </div>
       </section>
+      {/* ── 6. GUIDE SECTION ── */}
+      <section className="bg-muted/30 py-20 md:py-28">
+        <div className="container">
+          <Reveal>
+            <div className="mx-auto max-w-2xl text-center">
+              <h2 className="font-heading text-3xl font-800 text-foreground md:text-4xl">
+                You don't need to figure this out alone.
+              </h2>
+              <p className="mt-4 text-muted-foreground">
+                Pillar gives you a structured process, clear comparisons, and
+                real support — so you can stop guessing and start moving
+                forward.
+              </p>
+            </div>
+          </Reveal>
+
+          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              {
+                icon: Compass,
+                title: "Discovery-First Approach",
+                desc: "We start by understanding your team, your pain points, and what actually matters before recommending anything.",
+              },
+              {
+                icon: BarChart3,
+                title: "Side-by-Side Option Review",
+                desc: "We present your top options in a clear, comparable format — no jargon, no pressure.",
+              },
+              {
+                icon: Clock,
+                title: "Clear Process & Timeline",
+                desc: "You'll always know what step you're on, what's next, and how long it takes.",
+              },
+              {
+                icon: FileSearch,
+                title: "Support with Documents",
+                desc: "We help you gather census data, tax docs, and everything your new provider needs.",
+              },
+              {
+                icon: ClipboardCheck,
+                title: "Proposal Walkthroughs",
+                desc: "We walk through each proposal line by line so you know exactly what you're agreeing to.",
+              },
+              {
+                icon: HeartHandshake,
+                title: "Warm Handoff into Onboarding",
+                desc: "We stay with you through implementation — not just until the contract is signed.",
+              },
+            ].map(({ icon: Icon, title, desc }, i) => (
+              <Reveal key={title} delay={i * 80}>
+                <Card className="h-full border-border/60 card-elevated">
+                  <CardContent className="p-6">
+                    <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-md bg-accent/10 text-accent">
+                      <Icon size={20} />
+                    </div>
+                    <h3 className="font-heading text-lg font-700 text-foreground">
+                      {title}
+                    </h3>
+                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                      {desc}
+                    </p>
+                  </CardContent>
+                </Card>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── 7. THREE-STEP PLAN ── */}
+      <section className="py-20 md:py-28">
+        <div className="container">
+          <Reveal>
+            <div className="mx-auto max-w-2xl text-center">
+              <h2 className="font-heading text-3xl font-800 text-foreground md:text-4xl">
+                A clear path through a complicated decision.
+              </h2>
+              <p className="mt-4 text-muted-foreground">
+                Three steps. No pressure. Just clarity.
+              </p>
+            </div>
+          </Reveal>
+
+          <div className="mx-auto mt-14 max-w-4xl">
+            <div className="relative grid gap-12 md:grid-cols-3">
+              {/* connector line */}
+              <div className="pointer-events-none absolute left-1/2 top-8 hidden h-px w-[66%] -translate-x-1/2 bg-gradient-to-r from-accent/40 via-accent/20 to-accent/40 md:block" />
+
+              {[
+                {
+                  step: "01",
+                  title: "Tell us what isn't working",
+                  desc: "Share your current setup, frustrations, and goals. We listen before we recommend.",
+                },
+                {
+                  step: "02",
+                  title: "We compare the right options",
+                  desc: "You get a side-by-side review of providers matched to your needs — not a generic list.",
+                },
+                {
+                  step: "03",
+                  title: "Move forward with a cleaner plan",
+                  desc: "Choose with confidence and get hands-on support through the entire transition.",
+                },
+              ].map(({ step, title, desc }, i) => (
+                <Reveal key={step} delay={i * 150}>
+                  <div className="relative text-center">
+                    <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full border-2 border-accent bg-background font-heading text-xl font-800 text-accent">
+                      {step}
+                    </div>
+                    <h3 className="font-heading text-lg font-700 text-foreground">
+                      {title}
+                    </h3>
+                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                      {desc}
+                    </p>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── 8. OUTCOMES / TRANSFORMATION ── */}
+      <section className="bg-muted/30 py-20 md:py-28">
+        <div className="container">
+          <Reveal>
+            <div className="mx-auto max-w-2xl text-center">
+              <h2 className="font-heading text-3xl font-800 text-foreground md:text-4xl">
+                From guesswork to confident direction.
+              </h2>
+              <p className="mt-4 text-muted-foreground">
+                Here's what changes when you have the right guidance.
+              </p>
+            </div>
+          </Reveal>
+
+          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              {
+                icon: ShieldCheck,
+                title: "More Confidence",
+                desc: "You'll know you chose the right provider — not just the loudest one.",
+              },
+              {
+                icon: RefreshCcw,
+                title: "Less Admin Drag",
+                desc: "Streamlined payroll, benefits, and compliance so your team can focus on mission.",
+              },
+              {
+                icon: Target,
+                title: "Better-Fit Support",
+                desc: "A provider matched to your size, industry, and growth trajectory.",
+              },
+              {
+                icon: ArrowRightLeft,
+                title: "Clearer Next Steps",
+                desc: "No more second-guessing. You'll have a timeline and a plan.",
+              },
+              {
+                icon: Users,
+                title: "Stronger Employee Experience",
+                desc: "Better benefits, smoother onboarding, and more reliable HR support.",
+              },
+              {
+                icon: Scale,
+                title: "Less Risk in Transition",
+                desc: "We manage the handoff so nothing falls through the cracks.",
+              },
+            ].map(({ icon: Icon, title, desc }, i) => (
+              <Reveal key={title} delay={i * 80}>
+                <Card className="h-full border-accent/20 card-elevated">
+                  <CardContent className="p-6">
+                    <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-md bg-accent/10 text-accent">
+                      <Icon size={20} />
+                    </div>
+                    <h3 className="font-heading text-lg font-700 text-foreground">
+                      {title}
+                    </h3>
+                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                      {desc}
+                    </p>
+                  </CardContent>
+                </Card>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── 9. WHY PILLAR PREVIEW ── */}
+      <section className="py-20 md:py-28">
+        <div className="container">
+          <Reveal>
+            <div className="mx-auto max-w-2xl text-center">
+              <h2 className="font-heading text-3xl font-800 text-foreground md:text-4xl">
+                Guidance matters when the path isn't obvious.
+              </h2>
+              <p className="mt-5 text-muted-foreground leading-relaxed">
+                Pillar was built because too many employers make critical PEO
+                decisions without real support. We're not a PEO. We're not a
+                broker. We're the guide that helps you compare, evaluate, and
+                move forward — with confidence.
+              </p>
+              <Button
+                size="lg"
+                variant="outline"
+                className="mt-8 border-accent text-accent hover:bg-accent/10 px-8 text-base font-semibold"
+                asChild
+              >
+                <Link to="/about">Read Our Story →</Link>
+              </Button>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* ── 10. FAQ PREVIEW ── */}
+      <section className="bg-muted/30 py-20 md:py-28">
+        <div className="container">
+          <Reveal>
+            <div className="mx-auto max-w-2xl text-center">
+              <h2 className="font-heading text-3xl font-800 text-foreground md:text-4xl">
+                Common questions
+              </h2>
+              <p className="mt-4 text-muted-foreground">
+                Quick answers to the things employers ask most.
+              </p>
+            </div>
+          </Reveal>
+
+          <Reveal delay={100}>
+            <div className="mx-auto mt-12 max-w-2xl">
+              <Accordion type="single" collapsible className="w-full">
+                {[
+                  {
+                    q: "What exactly does Pillar do?",
+                    a: "Pillar helps employers compare PEO and HR outsourcing options through a guided, structured process. We're not a PEO — we're buyer-side support that helps you evaluate proposals, understand pricing, and make a confident decision.",
+                  },
+                  {
+                    q: "Is Pillar a PEO broker?",
+                    a: "No. Brokers typically represent PEOs and earn commissions from them. Pillar works on the employer's side — we help you compare options objectively without steering you toward a specific provider.",
+                  },
+                  {
+                    q: "How much does it cost to work with Pillar?",
+                    a: "We offer several engagement levels depending on your needs. Reach out through our contact page and we'll walk you through what makes sense for your situation.",
+                  },
+                  {
+                    q: "Can you help us switch from our current PEO?",
+                    a: "Absolutely. We specialize in helping employers evaluate alternatives, manage the transition timeline, and ensure nothing falls through the cracks during the switch.",
+                  },
+                  {
+                    q: "Do you work with nonprofits and churches?",
+                    a: "Yes — in fact, nonprofits, churches, and ministries are one of our core focus areas. We understand the unique compliance, benefits, and budget considerations these organizations face.",
+                  },
+                  {
+                    q: "How long does the process take?",
+                    a: "Most engagements take 2–6 weeks depending on complexity. We'll give you a clear timeline upfront so you know exactly what to expect.",
+                  },
+                ].map(({ q, a }, i) => (
+                  <AccordionItem key={i} value={`faq-${i}`}>
+                    <AccordionTrigger className="text-left font-heading font-600 text-foreground">
+                      {q}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground leading-relaxed">
+                      {a}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* ── 11. FINAL CTA ── */}
+      <section className="bg-primary text-primary-foreground py-20 md:py-28">
+        <div className="container">
+          <Reveal>
+            <div className="mx-auto max-w-2xl text-center">
+              <h2 className="font-heading text-3xl font-800 md:text-4xl">
+                Make a confident next-step decision.
+              </h2>
+              <p className="mt-5 text-primary-foreground/80 leading-relaxed">
+                Whether you're exploring PEOs for the first time, switching
+                providers, or just want to know your options — Pillar gives you
+                the structure and support to move forward without second-guessing.
+              </p>
+              <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+                <Button
+                  size="lg"
+                  className="bg-accent text-accent-foreground hover:bg-accent/90 px-8 text-base font-semibold"
+                  asChild
+                >
+                  <Link to="/contact">Compare My Options</Link>
+                </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 px-8 text-base"
+                  asChild
+                >
+                  <Link to="/resources">Get the Buyer Guide</Link>
+                </Button>
+              </div>
+            </div>
+          </Reveal>
+        </div>
+      </section>
     </>
   );
 };
