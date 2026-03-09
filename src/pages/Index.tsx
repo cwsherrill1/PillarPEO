@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { useScrollReveal } from "@/hooks/useScrollReveal";
+import { Reveal } from "@/components/Reveal";
 import {
   Compass,
   BarChart3,
@@ -25,32 +25,6 @@ import {
   CheckCircle2,
   XCircle,
 } from "lucide-react";
-
-/* ─── Reusable reveal wrapper ─── */
-function Reveal({
-  children,
-  className = "",
-  delay = 0,
-}: {
-  children: React.ReactNode;
-  className?: string;
-  delay?: number;
-}) {
-  const { ref, isVisible } = useScrollReveal();
-  return (
-    <div
-      ref={ref}
-      className={`transition-all duration-700 ease-out ${
-        isVisible
-          ? "opacity-100 translate-y-0"
-          : "opacity-0 translate-y-8"
-      } ${className}`}
-      style={{ transitionDelay: `${delay}ms` }}
-    >
-      {children}
-    </div>
-  );
-}
 
 /* ═══════════════════════════════════════════════════════════════
    HOMEPAGE

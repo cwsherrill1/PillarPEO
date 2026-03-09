@@ -14,30 +14,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { toast } from "sonner";
-import { useScrollReveal } from "@/hooks/useScrollReveal";
-
-function Reveal({
-  children,
-  className = "",
-  delay = 0,
-}: {
-  children: React.ReactNode;
-  className?: string;
-  delay?: number;
-}) {
-  const { ref, isVisible } = useScrollReveal(0.15);
-  return (
-    <div
-      ref={ref}
-      className={`transition-all duration-700 ease-out ${
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-      } ${className}`}
-      style={{ transitionDelay: `${delay}ms` }}
-    >
-      {children}
-    </div>
-  );
-}
+import { Reveal } from "@/components/Reveal";
 
 const contactCards = [
   { icon: Mail, label: "Email", value: "hello@pillarpeo.com" },
