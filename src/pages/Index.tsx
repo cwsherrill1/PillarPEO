@@ -308,17 +308,17 @@ const Index = () => {
           <div className="mx-auto mt-14 max-w-3xl space-y-8">
             {[
               {
-                myth: ""All PEOs are basically the same."",
+                myth: "\u201CAll PEOs are basically the same.\u201D",
                 truth:
                   "PEOs differ dramatically in pricing models, service quality, technology, and compliance support. The wrong match can cost you thousands.",
               },
               {
-                myth: ""You lose control of your employees when you join a PEO."",
+                myth: "\u201CYou lose control of your employees when you join a PEO.\u201D",
                 truth:
-                  "You stay the employer of record for day-to-day operations. A PEO is a co-employment partner — you keep full control of hiring, culture, and management.",
+                  "You stay the employer of record for day-to-day operations. A PEO is a co-employment partner \u2014 you keep full control of hiring, culture, and management.",
               },
               {
-                myth: ""Switching PEOs is too disruptive — just stay where you are."",
+                myth: "\u201CSwitching PEOs is too disruptive \u2014 just stay where you are.\u201D",
                 truth:
                   "With proper transition planning, switching is smoother than most expect. Staying in a bad fit is far more expensive long-term.",
               },
