@@ -569,7 +569,7 @@ const Index = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="mt-8 border-accent text-accent hover:bg-accent/10 px-8 text-base font-semibold"
+                className="mt-8 bg-transparent border-accent text-accent hover:bg-accent/10 px-8 text-base font-semibold"
                 asChild
               >
                 <Link to="/about">Read Our Story →</Link>
