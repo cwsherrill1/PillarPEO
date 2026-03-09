@@ -276,7 +276,7 @@ const About = () => (
               asChild
               size="lg"
               variant="outline"
-              className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10"
+              className="bg-transparent border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10"
             >
               <Link to="/resources">
                 <BookOpen className="mr-1 h-4 w-4" /> Browse Resources
