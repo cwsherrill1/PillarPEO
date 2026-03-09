@@ -4,16 +4,18 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Layout from "@/components/Layout";
-import Index from "./pages/Index";
-import HowItWorks from "./pages/HowItWorks";
-import SwitchYourPeo from "./pages/SwitchYourPeo";
-import PeoForNonprofits from "./pages/PeoForNonprofits";
-import DoWeNeedAPeo from "./pages/DoWeNeedAPeo";
-import Resources from "./pages/Resources";
-import About from "./pages/About";
-import Team from "./pages/Team";
-import Contact from "./pages/Contact";
-import NotFound from "./pages/NotFound";
+import { lazy, Suspense } from "react";
+
+const Index = lazy(() => import("./pages/Index"));
+const HowItWorks = lazy(() => import("./pages/HowItWorks"));
+const SwitchYourPeo = lazy(() => import("./pages/SwitchYourPeo"));
+const PeoForNonprofits = lazy(() => import("./pages/PeoForNonprofits"));
+const DoWeNeedAPeo = lazy(() => import("./pages/DoWeNeedAPeo"));
+const Resources = lazy(() => import("./pages/Resources"));
+const About = lazy(() => import("./pages/About"));
+const Team = lazy(() => import("./pages/Team"));
+const Contact = lazy(() => import("./pages/Contact"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
 
