@@ -95,7 +95,7 @@ const Index = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 px-8 text-base"
+                className="bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 px-8 text-base"
                 asChild
               >
                 <Link to="/how-it-works">See How It Works</Link>
@@ -569,7 +569,7 @@ const Index = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="mt-8 border-accent text-accent hover:bg-accent/10 px-8 text-base font-semibold"
+                className="mt-8 bg-transparent border-accent text-accent hover:bg-accent/10 px-8 text-base font-semibold"
                 asChild
               >
                 <Link to="/about">Read Our Story →</Link>
@@ -661,7 +661,7 @@ const Index = () => {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 px-8 text-base"
+                  className="bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 px-8 text-base"
                   asChild
                 >
                   <Link to="/resources">Get the Buyer Guide</Link>

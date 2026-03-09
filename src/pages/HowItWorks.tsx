@@ -258,7 +258,7 @@ const HowItWorks = () => (
               asChild
               size="lg"
               variant="outline"
-              className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 font-heading font-700 text-base px-8"
+              className="bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 font-heading font-700 text-base px-8"
             >
               <Link to="/resources">Get the Buyer Guide</Link>
             </Button>
