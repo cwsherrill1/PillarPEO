@@ -80,7 +80,7 @@ const Team = () => (
                   <p className="mt-1 text-sm font-medium text-accent">
                     {m.title}
                   </p>
-                  <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                  <p className="mt-4 text-base leading-relaxed text-muted-foreground">
                     {m.bio}
                   </p>
                 </CardContent>
