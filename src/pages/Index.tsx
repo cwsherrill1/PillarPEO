@@ -79,9 +79,9 @@ const Index = () => {
                 The wrong setup costs more than the monthly fee.
               </h2>
               <p className="mt-4 text-muted-foreground">
-                When the fit is wrong, the cost shows up everywhere — in
-                leadership time, compliance risk, and the constant sense
-                that something still is not working the way it should.
+               When the fit is wrong, the cost shows up everywhere — in
+                 leadership time, compliance risk, and the constant sense
+                 that something still isn't working.
               </p>
             </div>
           </Reveal>
