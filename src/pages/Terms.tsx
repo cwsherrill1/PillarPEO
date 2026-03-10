@@ -1,4 +1,5 @@
 import { Reveal } from "@/components/Reveal";
+import SEOHead from "@/components/SEOHead";
 
 const sections = [
   {
@@ -29,8 +30,12 @@ const sections = [
 ];
 
 const Terms = () => {
-  return (
+    return (
     <>
+      <SEOHead
+        title="Terms of Service"
+        description="Terms of Service for Pillar PEO Advisors website and advisory services."
+      />
       <section className="bg-primary py-20 text-primary-foreground md:py-28">
         <div className="container text-center">
           <h1 className="font-heading text-3xl font-700 md:text-5xl">Terms of Service</h1>

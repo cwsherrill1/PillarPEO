@@ -18,6 +18,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Reveal } from "@/components/Reveal";
+import SEOHead from "@/components/SEOHead";
 
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
@@ -67,9 +68,27 @@ const faqs = [
   },
 ];
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.a,
+    },
+  })),
+};
+
 const Resources = () => {
   return (
     <>
+      <SEOHead
+        title="Resources"
+        description="Free PEO guides, checklists, and comparisons built for employers — not PEO sales teams. Make a confident decision."
+        jsonLd={faqJsonLd}
+      />
       {/* Hero */}
       <section className="bg-primary py-24 md:py-32">
         <div className="container text-center">

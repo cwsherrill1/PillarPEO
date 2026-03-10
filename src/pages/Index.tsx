@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import SEOHead from "@/components/SEOHead";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Reveal } from "@/components/Reveal";
@@ -16,9 +17,24 @@ import {
 
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
+const orgJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "Pillar PEO Advisors",
+  url: "https://pillarpeo.lovable.app",
+  description: "Independent PEO advisory firm helping employers compare PEO options and make confident decisions.",
+  serviceType: "PEO Advisory",
+  areaServed: "US",
+};
+
 const Index = () => {
   return (
     <>
+      <SEOHead
+        title="Compare PEO Options With Confidence"
+        description="Pillar PEO Advisors helps employers compare PEO options, understand tradeoffs, and make a confident decision — free of charge."
+        jsonLd={orgJsonLd}
+      />
       {/* ── 1. HERO ── */}
       <section className="relative overflow-hidden bg-primary text-primary-foreground">
         <div className="container relative z-10 py-24 md:py-32 lg:py-40">

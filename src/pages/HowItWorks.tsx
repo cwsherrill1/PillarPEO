@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import SEOHead from "@/components/SEOHead";
 import {
   MessageSquare,
   FileText,
@@ -53,6 +54,10 @@ const stages = [
 
 const HowItWorks = () => (
   <>
+    <SEOHead
+      title="How It Works"
+      description="Pillar's six-stage process takes you from discovery to decision in about 60 days — with clarity at every step."
+    />
     {/* Hero */}
     <section className="bg-primary text-primary-foreground">
       <div className="container py-24 md:py-32 text-center max-w-3xl">
