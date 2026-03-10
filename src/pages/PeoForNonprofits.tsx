@@ -1,9 +1,38 @@
 import { Link } from "react-router-dom";
-import { ChevronRight } from "lucide-react";
+import { CheckCircle2, MessageSquare, BarChart3, Handshake } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/Reveal";
 
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
+
+const painPoints = [
+  "HR responsibilities falling on people who were hired to do something else",
+  "Benefits packages that don't compete with larger organizations",
+  "Compliance exposure without a dedicated team to manage it",
+  "Payroll complexity growing faster than headcount",
+  "Board or donor expectations around operational maturity",
+];
+
+const steps = [
+  {
+    num: 1,
+    icon: MessageSquare,
+    title: "Nonprofit-focused discovery",
+    desc: "We learn about your team size, funding model, and where people-ops friction is highest.",
+  },
+  {
+    num: 2,
+    icon: BarChart3,
+    title: "Side-by-side comparison",
+    desc: "We present PEO options that understand nonprofit budgets and mission-driven culture.",
+  },
+  {
+    num: 3,
+    icon: Handshake,
+    title: "Decision & onboarding support",
+    desc: "We help you move forward with confidence — or tell you if a PEO isn't the right fit.",
+  },
+];
 
 const PeoForNonprofits = () => (
   <>
@@ -15,9 +44,9 @@ const PeoForNonprofits = () => (
             More mission. Less admin drag.
           </h1>
           <p className="mt-6 text-lg md:text-xl text-primary-foreground/80 font-body">
-            Pillar helps nonprofit leaders strengthen payroll, benefits, HR, and
-            compliance support so their team can spend less time untangling
-            people administration and more time serving the mission.
+            Pillar helps nonprofit leaders strengthen payroll, benefits, and
+            compliance support so their team spends less time on people
+            administration and more time serving the mission.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Button
@@ -42,46 +71,76 @@ const PeoForNonprofits = () => (
       </div>
     </section>
 
-    {/* Narrative */}
+    {/* Pain Points */}
     <section className="bg-background">
-      <div className="container max-w-3xl py-14 md:py-20">
+      <div className="container max-w-3xl py-20 md:py-28">
         <Reveal>
-          <div className="space-y-6 text-lg leading-relaxed text-muted-foreground md:text-xl">
-            <p>Lean teams feel people-ops friction first.</p>
-            <p>
-              When the mission is strong but internal support is thin, the
-              burden often lands on leaders who are already stretched.
-            </p>
-            <p>
-              Pillar helps nonprofit teams evaluate whether a better support
-              structure could create more margin, better benefits support, and
-              clearer compliance footing.
-            </p>
-          </div>
+          <h2 className="font-heading text-3xl md:text-4xl font-800 text-foreground text-center">
+            Sound familiar?
+          </h2>
+          <p className="mt-4 text-muted-foreground text-center max-w-xl mx-auto">
+            Lean teams feel people-ops friction first. These are the signs a
+            better support structure could help.
+          </p>
         </Reveal>
 
         <Reveal delay={100}>
-          <div className="mt-10 text-center">
-            <Link
-              to="/how-it-works"
-              className="inline-flex items-center gap-1 text-sm font-medium text-accent hover:underline"
-            >
-              See the full process <ChevronRight className="w-4 h-4" />
-            </Link>
-          </div>
+          <ul className="mt-10 space-y-4">
+            {painPoints.map((point) => (
+              <li key={point} className="flex items-start gap-3">
+                <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-accent" />
+                <span className="text-lg text-muted-foreground leading-relaxed">
+                  {point}
+                </span>
+              </li>
+            ))}
+          </ul>
         </Reveal>
+      </div>
+    </section>
+
+    {/* 3-Step Plan */}
+    <section className="bg-muted/40">
+      <div className="container max-w-4xl py-20 md:py-28">
+        <Reveal>
+          <h2 className="font-heading text-3xl md:text-4xl font-800 text-foreground text-center">
+            How we help nonprofit teams
+          </h2>
+        </Reveal>
+
+        <div className="mt-12 grid gap-8 md:grid-cols-3">
+          {steps.map((step, i) => {
+            const Icon = step.icon;
+            return (
+              <Reveal key={step.num} delay={i * 120}>
+                <div className="text-center">
+                  <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-accent text-accent-foreground font-heading text-xl font-800">
+                    {step.num}
+                  </div>
+                  <Icon className="mx-auto mt-4 h-6 w-6 text-accent" />
+                  <h3 className="mt-3 font-heading text-lg font-700 text-foreground">
+                    {step.title}
+                  </h3>
+                  <p className="mt-2 text-base text-muted-foreground leading-relaxed">
+                    {step.desc}
+                  </p>
+                </div>
+              </Reveal>
+            );
+          })}
+        </div>
       </div>
     </section>
 
     {/* Final CTA */}
     <section className="bg-primary text-primary-foreground">
-      <div className="container py-14 md:py-20 text-center max-w-2xl">
+      <div className="container py-20 md:py-28 text-center max-w-2xl">
         <Reveal>
           <h2 className="font-heading text-3xl md:text-4xl font-800">
             Your mission deserves better HR support.
           </h2>
           <p className="mt-4 text-primary-foreground/80 text-lg">
-            Start with a short conversation. We will help you find a provider
+            Start with a short conversation. We'll help you find a provider
             that understands nonprofit teams — or point you in the right
             direction.
           </p>

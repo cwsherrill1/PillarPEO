@@ -4,8 +4,6 @@ import {
   FileText,
   HelpCircle,
   DollarSign,
-  BarChart3,
-  ArrowRightLeft,
   Scale,
   Download,
   ArrowRight,
@@ -21,41 +19,31 @@ import {
 } from "@/components/ui/accordion";
 import { Reveal } from "@/components/Reveal";
 
+const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
+
 const resources = [
   {
     icon: HelpCircle,
     title: "5 Questions to Ask Any PEO Before Signing",
-    desc: "The critical questions most employers never think to ask — until it's too late. Use this before any sales call.",
+    desc: "The critical questions most employers never think to ask — until it's too late.",
     category: "Checklist",
   },
   {
     icon: Scale,
     title: "Understanding Co-Employment",
-    desc: "What co-employment actually means for your liability, your employees, and your control. Plain-language explainer.",
+    desc: "What co-employment actually means for your liability, your employees, and your control.",
     category: "Guide",
   },
   {
     icon: DollarSign,
     title: "PEO Pricing: What to Watch For",
-    desc: "Hidden fees, bundled costs, and renewal surprises. Learn how to read a PEO quote like an insider.",
+    desc: "Hidden fees, bundled costs, and renewal surprises. Read a PEO quote like an insider.",
     category: "Guide",
-  },
-  {
-    icon: BarChart3,
-    title: "Benefits Benchmarking Checklist",
-    desc: "Compare your current benefits package against PEO offerings. Know where you're overpaying or underserved.",
-    category: "Checklist",
-  },
-  {
-    icon: ArrowRightLeft,
-    title: "When to Leave Your Current PEO",
-    desc: "The warning signs that it's time to switch — and a timeline for doing it without disruption.",
-    category: "Article",
   },
   {
     icon: FileText,
     title: "PEO vs. ASO vs. In-House HR",
-    desc: "Not every company needs a PEO. This comparison helps you understand which model fits your stage and goals.",
+    desc: "Not every company needs a PEO. This comparison helps you understand which model fits.",
     category: "Comparison",
   },
 ];
@@ -63,23 +51,19 @@ const resources = [
 const faqs = [
   {
     q: "How do I use the Buyer Guide?",
-    a: "The Buyer Guide walks you through every factor to evaluate when comparing PEO providers. Use it before, during, or after sales conversations to make sure you're asking the right questions and comparing apples to apples.",
+    a: "The Buyer Guide walks you through every factor to evaluate when comparing PEO providers. Use it before, during, or after sales conversations to make sure you're comparing apples to apples.",
   },
   {
     q: "Are these resources free?",
-    a: "Yes — every resource on this page is completely free. We believe employers make better decisions with better information, and that's good for everyone.",
+    a: "Yes — every resource on this page is completely free. We believe employers make better decisions with better information.",
   },
   {
     q: "Can I share these with my team or board?",
-    a: "Absolutely. These resources are designed to be shared with decision-makers, HR leads, CFOs, and board members. The more aligned your team is, the better the outcome.",
+    a: "Absolutely. These resources are designed to be shared with decision-makers, HR leads, CFOs, and board members.",
   },
   {
     q: "Do I need to be a Pillar client to access these?",
     a: "No. These resources are available to any employer exploring PEO options. If you'd like personalized guidance, you can always reach out for a free consultation.",
-  },
-  {
-    q: "How often are resources updated?",
-    a: "We review and update our resources quarterly to reflect changes in the PEO market, pricing trends, and regulatory updates.",
   },
 ];
 
@@ -132,10 +116,10 @@ const Resources = () => {
                   size="lg"
                   className="shrink-0 bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20"
                 >
-                  <Link to="/contact">
+                  <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
                     <Download className="mr-2 h-4 w-4" />
                     Get the Guide
-                  </Link>
+                  </a>
                 </Button>
               </CardContent>
             </Card>
@@ -158,7 +142,7 @@ const Resources = () => {
             </div>
           </Reveal>
 
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-12 grid gap-6 sm:grid-cols-2">
             {resources.map((r, i) => (
               <Reveal key={r.title} delay={i * 80}>
                 <Card className="group h-full transition-shadow duration-300 hover:shadow-lg">
@@ -177,13 +161,15 @@ const Resources = () => {
                     <p className="mt-2 flex-1 text-base text-muted-foreground">
                       {r.desc}
                     </p>
-                    <Link
-                      to="/contact"
+                    <a
+                      href={BOOKING_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="mt-4 inline-flex items-center text-sm font-semibold text-accent transition-colors hover:text-accent/80"
                     >
-                      Coming soon
+                      Request access
                       <ArrowRight className="ml-1 h-3.5 w-3.5" />
-                    </Link>
+                    </a>
                   </CardContent>
                 </Card>
               </Reveal>
@@ -201,11 +187,7 @@ const Resources = () => {
             </h2>
           </Reveal>
           <Reveal delay={100}>
-            <Accordion
-              type="single"
-              collapsible
-              className="mt-10"
-            >
+            <Accordion type="single" collapsible className="mt-10">
               {faqs.map((faq, i) => (
                 <AccordionItem key={i} value={`faq-${i}`}>
                   <AccordionTrigger className="text-left font-heading font-700 text-foreground">
@@ -238,7 +220,9 @@ const Resources = () => {
                 size="lg"
                 className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20"
               >
-                <Link to="/contact">Talk to an Advisor</Link>
+                <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
+                  Talk to an Advisor
+                </a>
               </Button>
               <Button
                 asChild

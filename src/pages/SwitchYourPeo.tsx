@@ -2,7 +2,9 @@ import { Link } from "react-router-dom";
 import {
   CheckCircle2,
   XCircle,
-  ChevronRight,
+  MessageSquare,
+  BarChart3,
+  Handshake,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -15,21 +17,42 @@ const signs = [
   "Costs keep rising without clear value",
   "Your team has outgrown the current setup",
   "Renewals create stress instead of confidence",
-  "You are staying put mostly because switching feels complicated",
+  "You're staying mostly because switching feels complicated",
 ];
 
 const myths = [
   {
-    myth: "\u201CWe are probably stuck.\u201D",
+    myth: "\u201CWe're probably stuck.\u201D",
     truth: "Better-fit options exist, and transitions can be planned.",
   },
   {
     myth: "\u201CSwitching will be chaos.\u201D",
-    truth: "A guided process can create far more clarity than staying in a setup that is already causing friction.",
+    truth: "A guided process creates far more clarity than staying in a setup that's already causing friction.",
   },
   {
-    myth: "\u201CIt is probably not worth reviewing.\u201D",
+    myth: "\u201CIt's probably not worth reviewing.\u201D",
     truth: "Sometimes the biggest cost is continuing with a fit you no longer trust.",
+  },
+];
+
+const steps = [
+  {
+    num: 1,
+    icon: MessageSquare,
+    title: "Switch assessment",
+    desc: "We review your current PEO setup, identify what's not working, and confirm whether switching makes sense.",
+  },
+  {
+    num: 2,
+    icon: BarChart3,
+    title: "Better-fit comparison",
+    desc: "We present alternatives side by side — pricing, service model, benefits — so you can see real tradeoffs.",
+  },
+  {
+    num: 3,
+    icon: Handshake,
+    title: "Transition support",
+    desc: "We help coordinate the move to minimize disruption and keep your team informed throughout.",
   },
 ];
 
@@ -83,7 +106,7 @@ const SwitchYourPeo = () => (
           <ul className="mt-10 space-y-4">
             {signs.map((sign) => (
               <li key={sign} className="flex items-start gap-3 text-muted-foreground">
-                <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-accent" />
+                <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-accent" />
                 <span className="text-lg leading-relaxed">{sign}</span>
               </li>
             ))}
@@ -92,12 +115,45 @@ const SwitchYourPeo = () => (
       </div>
     </section>
 
+    {/* How we help switchers — 3-step plan */}
+    <section className="bg-muted/40">
+      <div className="container max-w-4xl py-20 md:py-28">
+        <Reveal>
+          <h2 className="font-heading text-3xl md:text-4xl font-800 text-foreground text-center">
+            How we help switchers
+          </h2>
+        </Reveal>
+
+        <div className="mt-12 grid gap-8 md:grid-cols-3">
+          {steps.map((step, i) => {
+            const Icon = step.icon;
+            return (
+              <Reveal key={step.num} delay={i * 120}>
+                <div className="text-center">
+                  <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-accent text-accent-foreground font-heading text-xl font-800">
+                    {step.num}
+                  </div>
+                  <Icon className="mx-auto mt-4 h-6 w-6 text-accent" />
+                  <h3 className="mt-3 font-heading text-lg font-700 text-foreground">
+                    {step.title}
+                  </h3>
+                  <p className="mt-2 text-base text-muted-foreground leading-relaxed">
+                    {step.desc}
+                  </p>
+                </div>
+              </Reveal>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+
     {/* Myth vs Truth */}
-    <section className="bg-muted/40 py-20 md:py-28">
+    <section className="bg-background py-20 md:py-28">
       <div className="container max-w-3xl">
         <Reveal>
           <h2 className="font-heading text-3xl md:text-4xl font-800 text-foreground text-center mb-12">
-            What people assume vs. what is true.
+            What people assume vs. what's true.
           </h2>
         </Reveal>
 
@@ -135,17 +191,6 @@ const SwitchYourPeo = () => (
             </Reveal>
           ))}
         </div>
-
-        <Reveal delay={400}>
-          <div className="mt-10 text-center">
-            <Link
-              to="/how-it-works"
-              className="inline-flex items-center gap-1 text-sm font-medium text-accent hover:underline"
-            >
-              See the full process <ChevronRight className="w-4 h-4" />
-            </Link>
-          </div>
-        </Reveal>
       </div>
     </section>
 
@@ -157,8 +202,8 @@ const SwitchYourPeo = () => (
             Ready to explore better options?
           </h2>
           <p className="mt-4 text-primary-foreground/80 text-lg">
-            Start with a short conversation. If we can help, we will show you
-            how. If not, we will point you in the right direction.
+            Start with a short conversation. If we can help, we'll show you
+            how. If not, we'll point you in the right direction.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Button
