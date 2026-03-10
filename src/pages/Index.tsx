@@ -34,9 +34,8 @@ const Index = () => {
             </h1>
 
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-primary-foreground/80">
-              Pillar helps employers evaluate payroll, benefits, HR, and
-              compliance options so they can make a confident next-step decision
-              — with less pressure, less confusion, and less risk.
+              Compare payroll, benefits, HR, and compliance options — with less
+              pressure, less confusion, and less risk.
             </p>
 
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
