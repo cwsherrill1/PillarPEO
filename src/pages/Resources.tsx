@@ -96,7 +96,7 @@ const Resources = () => {
             </h1>
           </Reveal>
           <Reveal delay={100}>
-            <p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/70 md:text-xl">
+            <p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80 md:text-xl">
               Free guides, checklists, and comparisons built for employers — not
               PEO sales teams.
             </p>
@@ -228,7 +228,7 @@ const Resources = () => {
             <h2 className="font-heading text-3xl font-800 text-primary-foreground md:text-4xl">
               Need guidance beyond the guides?
             </h2>
-            <p className="mx-auto mt-4 max-w-xl text-primary-foreground/70">
+            <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">
               Our advisors can walk you through any of these topics — and help
               you apply them to your specific situation.
             </p>

@@ -40,7 +40,7 @@ const Team = () => (
           <h1 className="font-heading text-4xl font-800 leading-tight md:text-5xl lg:text-6xl">
             Meet the team behind Pillar.
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-primary-foreground/70 md:text-xl">
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-primary-foreground/80 md:text-xl">
             A growing team committed to helping employers move with more
             clarity, confidence, and support.
           </p>
@@ -80,7 +80,7 @@ const Team = () => (
                   <p className="mt-1 text-sm font-medium text-accent">
                     {m.title}
                   </p>
-                  <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                  <p className="mt-4 text-base leading-relaxed text-muted-foreground">
                     {m.bio}
                   </p>
                 </CardContent>
@@ -137,7 +137,7 @@ const Team = () => (
             Want to talk to the team
             <br className="hidden md:block" /> behind the process?
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-primary-foreground/60">
+          <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">
             No sales pitch. Just a real conversation about your situation and
             how we can help.
           </p>
