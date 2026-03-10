@@ -40,7 +40,7 @@ const Team = () => (
           <h1 className="font-heading text-4xl font-800 leading-tight md:text-5xl lg:text-6xl">
             Meet the team behind Pillar.
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-primary-foreground/70 md:text-xl">
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed A growing team committed to helping employers move with more">
             A growing team committed to helping employers move with more
             clarity, confidence, and support.
           </p>
