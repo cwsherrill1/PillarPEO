@@ -157,15 +157,13 @@ const About = () => (
           <div className="mt-10 space-y-6 text-left text-base leading-relaxed text-muted-foreground md:text-lg">
             <p>
               We believe employers deserve more than generic quotes and
-              pressure-filled sales conversations.
+              pressure-filled sales conversations. They deserve clear guidance,
+              someone who understands what's at stake, and a better process.
             </p>
-            <p>They deserve clear guidance.</p>
-            <p>They deserve someone who understands what is at stake.</p>
-            <p>They deserve a better process.</p>
             <p>
               Pillar exists to help employers compare options clearly, understand
               the tradeoffs, and put the right support in place before costly
-              friction steals more time, energy, and focus.
+              friction steals more time and focus.
             </p>
           </div>
         </Reveal>
