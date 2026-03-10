@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Clock, PhoneCall, BarChart3 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -17,9 +16,9 @@ import { toast } from "sonner";
 import { Reveal } from "@/components/Reveal";
 
 const contactCards = [
-  { icon: Mail, label: "Email", value: "hello@pillarpeo.com" },
-  { icon: Phone, label: "Phone", value: "(555) 123-4567" },
-  { icon: MapPin, label: "Location", value: "Charlotte, NC" },
+  { icon: Mail, label: "Email", value: "caleb@pillarpeo.com", href: "mailto:caleb@pillarpeo.com" },
+  { icon: Phone, label: "Phone", value: "(704) 787-1261", href: "tel:7047871261" },
+  { icon: MapPin, label: "Location", value: "Charlotte, NC", href: undefined },
 ];
 
 const steps = [
@@ -179,7 +178,13 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="text-sm text-muted-foreground">{card.label}</p>
-                      <p className="font-semibold text-foreground">{card.value}</p>
+                      {card.href ? (
+                        <a href={card.href} className="font-semibold text-foreground hover:text-accent transition-colors">
+                          {card.value}
+                        </a>
+                      ) : (
+                        <p className="font-semibold text-foreground">{card.value}</p>
+                      )}
                     </div>
                   </CardContent>
                 </Card>

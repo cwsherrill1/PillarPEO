@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
+const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
+
 const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground">
@@ -9,7 +11,7 @@ const Footer = () => {
         <div className="container flex flex-col items-center gap-6 py-16 text-center md:flex-row md:justify-between md:text-left">
           <div>
             <h3 className="font-heading text-2xl font-700 md:text-3xl">
-              Ready to compare your options?
+              Make a confident next-step decision.
             </h3>
             <p className="mt-2 max-w-md text-primary-foreground/60">
               Tell us what is not working and we will help you find a better-fit
@@ -21,7 +23,9 @@ const Footer = () => {
             size="lg"
             className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20"
           >
-            <Link to="/contact">Compare My Options</Link>
+            <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
+              Schedule a PEO Strategy Call
+            </a>
           </Button>
         </div>
       </div>
@@ -115,8 +119,16 @@ const Footer = () => {
               Get in Touch
             </h4>
             <ul className="space-y-2.5 text-sm text-primary-foreground/60">
-              <li>[email@pillarpeo.com]</li>
-              <li>[Phone number]</li>
+              <li>
+                <a href="mailto:caleb@pillarpeo.com" className="transition-colors hover:text-accent">
+                  caleb@pillarpeo.com
+                </a>
+              </li>
+              <li>
+                <a href="tel:7047871261" className="transition-colors hover:text-accent">
+                  (704) 787-1261
+                </a>
+              </li>
             </ul>
           </div>
         </div>
