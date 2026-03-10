@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { CheckCircle2, MessageSquare, BarChart3, Handshake } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/Reveal";
+import SEOHead from "@/components/SEOHead";
 
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
