@@ -12,10 +12,6 @@ import {
   Building2,
   CheckCircle2,
   XCircle,
-  ClipboardCheck,
-  BarChart3,
-  ShieldCheck,
-  ArrowRightLeft,
 } from "lucide-react";
 
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
@@ -34,9 +30,8 @@ const Index = () => {
             </h1>
 
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-primary-foreground/80">
-              Pillar helps employers evaluate payroll, benefits, HR, and
-              compliance options so they can make a confident next-step decision
-              — with less pressure, less confusion, and less risk.
+              Compare payroll, benefits, HR, and compliance options — with less
+              pressure, less confusion, and less risk.
             </p>
 
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
@@ -58,32 +53,16 @@ const Index = () => {
             </div>
 
             {/* Social proof line */}
-            <p className="mt-12 text-sm font-medium text-primary-foreground/50">
-              Serving employers with 5–150 employees · ~60-day average process · Zero cost to employers
-            </p>
           </div>
         </div>
       </section>
 
       {/* ── 2. TRUST STRIP ── */}
-      <section className="border-b border-border bg-muted/40 py-8">
+      <section className="border-b border-border bg-muted/40 py-6">
         <div className="container">
-          <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
-            {[
-              { icon: ClipboardCheck, label: "Structured guidance from discovery to decision" },
-              { icon: BarChart3, label: "Side-by-side proposal review support" },
-              { icon: ShieldCheck, label: "Secure document workflow" },
-              { icon: ArrowRightLeft, label: "Transition support after the decision" },
-            ].map(({ icon: Icon, label }) => (
-              <span
-                key={label}
-                className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground"
-              >
-                <Icon size={18} className="text-accent" />
-                {label}
-              </span>
-            ))}
-          </div>
+          <p className="text-center text-sm font-medium text-muted-foreground">
+            Serving employers with 5–150 employees · Structured guidance from discovery to decision · ~60-day average process · Zero cost to employers
+          </p>
         </div>
       </section>
 
@@ -96,9 +75,9 @@ const Index = () => {
                 The wrong setup costs more than the monthly fee.
               </h2>
               <p className="mt-4 text-muted-foreground">
-                When the fit is wrong, the cost shows up everywhere — in
-                leadership time, compliance risk, and the constant sense
-                that something still is not working the way it should.
+               When the fit is wrong, the cost shows up everywhere — in
+                 leadership time, compliance risk, and the constant sense
+                 that something still isn't working.
               </p>
             </div>
           </Reveal>
@@ -113,7 +92,7 @@ const Index = () => {
               {
                 icon: Scale,
                 title: "Mistakes get expensive",
-                desc: "Payroll and compliance errors do not stay small for long.",
+                desc: "Payroll and compliance errors don't stay small for long.",
               },
               {
                 icon: Frown,
@@ -165,18 +144,18 @@ const Index = () => {
               {[
                 {
                   step: "01",
-                  title: "Tell us what is not working",
-                  desc: "We start with your reality: what feels heavy, what is changing, and what matters most.",
+                  title: "Tell us what isn't working",
+                  desc: "We start with your reality: what feels heavy, what's changing, and what matters most.",
                 },
                 {
                   step: "02",
                   title: "We compare the right options",
-                  desc: "Pillar helps you evaluate fit, tradeoffs, and next-step paths with more clarity.",
+                  desc: "Pillar helps you evaluate fit, tradeoffs, and paths forward with more clarity.",
                 },
                 {
                   step: "03",
                   title: "Move forward with a cleaner plan",
-                  desc: "When you are ready, we help you move into the next phase with less confusion and less risk.",
+                  desc: "When you're ready, we help you transition with less confusion and less risk.",
                 },
               ].map(({ step, title, desc }, i) => (
                 <Reveal key={step} delay={i * 150}>
@@ -198,6 +177,26 @@ const Index = () => {
         </div>
       </section>
 
+      {/* ── MID-PAGE CTA ── */}
+      <section className="bg-accent/5 py-14">
+        <div className="container">
+          <Reveal>
+            <div className="mx-auto max-w-2xl text-center">
+              <p className="text-lg font-medium text-foreground">
+                Not sure which path fits? Start with a conversation.
+              </p>
+              <Button
+                size="lg"
+                className="mt-6 bg-accent text-accent-foreground hover:bg-accent/90 px-8 text-base font-semibold"
+                asChild
+              >
+                <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Schedule a PEO Strategy Call</a>
+              </Button>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       {/* ── 5. PATH SELECTOR ── */}
       <section className="bg-muted/30 py-20 md:py-28">
         <div className="container">
@@ -207,7 +206,7 @@ const Index = () => {
                 Start where you are.
               </h2>
               <p className="mt-4 text-muted-foreground">
-                Whether you are replacing a frustrating PEO, leading a nonprofit
+                Whether you're replacing a frustrating PEO, leading a nonprofit
                 team, or trying to figure out whether a PEO even makes sense
                 yet, Pillar helps you move forward with more clarity.
               </p>
@@ -371,7 +370,7 @@ const Index = () => {
                   },
                   {
                     q: "What happens after we decide?",
-                    a: "Pillar helps support the handoff into onboarding so you are not left to navigate the next phase alone.",
+                    a: "Pillar helps support the handoff into onboarding so you're not left to navigate the next phase alone.",
                   },
                 ].map(({ q, a }, i) => (
                   <AccordionItem key={i} value={`faq-${i}`}>
@@ -398,7 +397,7 @@ const Index = () => {
                 Make a confident next-step decision.
               </h2>
               <p className="mt-5 text-primary-foreground/80 leading-relaxed">
-                Tell us what is not working, what matters most, and where you
+                Tell us what isn't working, what matters most, and where you
                 are in the process.
               </p>
               <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
@@ -415,7 +414,7 @@ const Index = () => {
                   className="bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 px-8 text-base"
                   asChild
                 >
-                  <Link to="/resources">Get the Buyer Guide</Link>
+                  <Link to="/resources">See Our Resources</Link>
                 </Button>
               </div>
             </div>
