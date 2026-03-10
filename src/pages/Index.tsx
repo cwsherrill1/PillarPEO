@@ -148,18 +148,18 @@ const Index = () => {
               {[
                 {
                   step: "01",
-                  title: "Tell us what is not working",
-                  desc: "We start with your reality: what feels heavy, what is changing, and what matters most.",
+                  title: "Tell us what isn't working",
+                  desc: "We start with your reality: what feels heavy, what's changing, and what matters most.",
                 },
                 {
                   step: "02",
                   title: "We compare the right options",
-                  desc: "Pillar helps you evaluate fit, tradeoffs, and next-step paths with more clarity.",
+                  desc: "Pillar helps you evaluate fit, tradeoffs, and paths forward with more clarity.",
                 },
                 {
                   step: "03",
                   title: "Move forward with a cleaner plan",
-                  desc: "When you are ready, we help you move into the next phase with less confusion and less risk.",
+                  desc: "When you're ready, we help you transition with less confusion and less risk.",
                 },
               ].map(({ step, title, desc }, i) => (
                 <Reveal key={step} delay={i * 150}>
