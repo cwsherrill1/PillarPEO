@@ -44,9 +44,9 @@ const PeoForNonprofits = () => (
 
     {/* Narrative */}
     <section className="bg-background">
-      <div className="container max-w-3xl py-20 md:py-28">
+      <div className="container max-w-3xl py-14 md:py-20">
         <Reveal>
-          <div className="space-y-6 text-base leading-relaxed text-muted-foreground md:text-lg">
+          <div className="space-y-6 text-lg leading-relaxed text-muted-foreground md:text-xl">
             <p>Lean teams feel people-ops friction first.</p>
             <p>
               When the mission is strong but internal support is thin, the
