@@ -75,7 +75,7 @@ const PeoForNonprofits = () => (
 
     {/* Final CTA */}
     <section className="bg-primary text-primary-foreground">
-      <div className="container py-20 md:py-28 text-center max-w-2xl">
+      <div className="container py-14 md:py-20 text-center max-w-2xl">
         <Reveal>
           <h2 className="font-heading text-3xl md:text-4xl font-800">
             Your mission deserves better HR support.

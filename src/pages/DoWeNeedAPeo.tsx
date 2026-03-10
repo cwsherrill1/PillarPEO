@@ -77,7 +77,7 @@ const DoWeNeedAPeo = () => (
 
     {/* Final CTA */}
     <section className="bg-primary text-primary-foreground">
-      <div className="container py-20 md:py-28 text-center max-w-2xl">
+      <div className="container py-14 md:py-20 text-center max-w-2xl">
         <Reveal>
           <h2 className="font-heading text-3xl md:text-4xl font-800">
             Still not sure? That is what we are here for.

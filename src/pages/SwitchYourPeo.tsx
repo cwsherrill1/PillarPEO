@@ -126,7 +126,7 @@ const SwitchYourPeo = () => (
                         Truth
                       </span>
                     </div>
-                    <p className="text-sm leading-relaxed text-foreground/80">
+                    <p className="text-base leading-relaxed text-foreground/80">
                       {truth}
                     </p>
                   </CardContent>

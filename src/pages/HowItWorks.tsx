@@ -246,7 +246,7 @@ const HowItWorks = () => (
                   <h3 className="font-heading text-xl font-700 text-foreground">
                     {a.title}
                   </h3>
-                  <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+                  <p className="mt-2 text-base text-muted-foreground leading-relaxed">
                     {a.desc}
                   </p>
                   <Link
