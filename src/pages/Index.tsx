@@ -175,7 +175,7 @@ const Index = () => {
                     <h3 className="font-heading text-xl font-700 text-foreground">
                       {title}
                     </h3>
-                    <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">
+                    <p className="mt-3 flex-1 text-base leading-relaxed text-muted-foreground">
                       {desc}
                     </p>
                     <Button
