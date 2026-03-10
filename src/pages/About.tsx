@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Reveal } from "@/components/Reveal";
+import SEOHead from "@/components/SEOHead";
 
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
