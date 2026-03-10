@@ -10,6 +10,8 @@ import {
 } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 
+const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
+
 const solutions = [
   { label: "Switch Your PEO", href: "/switch-your-peo" },
   { label: "PEO for Nonprofits", href: "/peo-for-nonprofits" },
@@ -138,7 +140,9 @@ const Header = () => {
             asChild
             className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20"
           >
-            <Link to="/contact">Compare My Options</Link>
+            <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
+              Schedule a PEO Strategy Call
+            </a>
           </Button>
         </div>
 
@@ -214,9 +218,9 @@ const Header = () => {
                   asChild
                   className="w-full bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90"
                 >
-                  <Link to="/contact" onClick={() => setMobileOpen(false)}>
-                    Compare My Options
-                  </Link>
+                  <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" onClick={() => setMobileOpen(false)}>
+                    Schedule a PEO Strategy Call
+                  </a>
                 </Button>
                 <Button
                   asChild

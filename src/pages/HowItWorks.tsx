@@ -5,55 +5,58 @@ import {
   FileCheck,
   Handshake,
   BarChart3,
-  ClipboardList,
   Clock,
-  ShieldCheck,
   FileText,
-  PhoneCall,
   RefreshCcw,
   Users,
   Building,
   ChevronRight,
+  ClipboardList,
+  Monitor,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Reveal } from "@/components/Reveal";
 
-/* ── Data ── */
-const steps = [
+const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
+
+const stages = [
   {
     num: 1,
     icon: MessageSquare,
-    title: "Tell us what is not working",
-    desc: "We start with a discovery call to understand your current setup, pain points, and what matters most to your team. No sales pitch — just honest questions.",
+    title: "Discovery",
+    desc: "We start by understanding what is happening in your business now: what feels heavy, what is not working, what matters most, and what a better outcome would need to look like.",
   },
   {
     num: 2,
-    icon: Search,
-    title: "We research and compare options",
-    desc: "Based on your needs we identify the best-fit PEO and HRO providers, build a side-by-side comparison, and surface the trade-offs that actually matter.",
+    icon: FileText,
+    title: "Data gathering",
+    desc: "If it makes sense to move forward, we help you gather the documents needed to compare real options. We walk you through this step by step.",
   },
   {
     num: 3,
-    icon: FileCheck,
-    title: "Review proposals together",
-    desc: "We walk through pricing, coverage, service models, and contract terms so you can make a confident decision — not a pressured one.",
+    icon: ClipboardList,
+    title: "Underwriting and proposal development",
+    desc: "Once the information package is complete, proposals are developed and prepared for review.",
   },
   {
     num: 4,
-    icon: Handshake,
-    title: "Transition with support",
-    desc: "Once you choose a direction, we coordinate the onboarding timeline, help with required documents, and provide a warm handoff so nothing falls through the cracks.",
+    icon: BarChart3,
+    title: "Proposal review",
+    desc: "Pillar helps you compare the options side by side so you can understand tradeoffs, fit, and next-step implications.",
   },
-];
-
-const deliverables = [
-  { icon: BarChart3, title: "Structured comparison", desc: "A clear side-by-side view of your top options, not a generic brochure." },
-  { icon: ClipboardList, title: "Proposal review", desc: "We decode the fine print so you understand exactly what you are signing." },
-  { icon: Clock, title: "Timeline clarity", desc: "A realistic schedule for evaluation, decision, and transition." },
-  { icon: ShieldCheck, title: "Transition support", desc: "Hands-on coordination so your team is not left figuring it out alone." },
-  { icon: FileText, title: "Document guidance", desc: "Help gathering and organizing everything your new provider needs." },
-  { icon: PhoneCall, title: "Ongoing check-ins", desc: "We stay available after the switch to make sure things land the way they should." },
+  {
+    num: 5,
+    icon: Monitor,
+    title: "Demos and decision support",
+    desc: "If needed, we help coordinate demos and answer questions so your team can move toward a confident decision.",
+  },
+  {
+    num: 6,
+    icon: Handshake,
+    title: "Signing and onboarding handoff",
+    desc: "Once a decision is made, we help support a smoother handoff into onboarding and implementation.",
+  },
 ];
 
 const audiences = [
@@ -77,7 +80,6 @@ const audiences = [
   },
 ];
 
-/* ── Page ── */
 const HowItWorks = () => (
   <>
     {/* 1 · Hero */}
@@ -85,43 +87,55 @@ const HowItWorks = () => (
       <div className="container py-20 md:py-28 text-center max-w-3xl">
         <Reveal>
           <h1 className="font-heading text-4xl md:text-5xl font-800 leading-tight">
-            A clear process for a complicated decision.
+            A clear process for a decision that carries real weight.
           </h1>
           <p className="mt-6 text-lg md:text-xl text-primary-foreground/80 font-body">
-            Choosing the right PEO or HR outsourcing partner should not feel like guesswork.
-            We walk you through a structured comparison so you can move forward with confidence.
+            Pillar guides employers from discovery to decision with a structured
+            process built around clarity, timing, fit, and support.
           </p>
         </Reveal>
       </div>
     </section>
 
-    {/* 2 · Four-Step Timeline */}
+    {/* Intro */}
+    <section className="bg-background">
+      <div className="container max-w-3xl py-16 text-center md:py-20">
+        <Reveal>
+          <p className="text-lg leading-relaxed text-muted-foreground md:text-xl">
+            A lot of buyers do not need more noise. They need a process they can
+            trust. Pillar's role is to make the path clearer, explain what
+            happens next, and help you move through the process with fewer
+            surprises.
+          </p>
+        </Reveal>
+      </div>
+    </section>
+
+    {/* 2 · Six-Stage Timeline */}
     <section className="bg-background">
       <div className="container py-20 md:py-28 max-w-4xl">
         <Reveal>
           <h2 className="font-heading text-3xl md:text-4xl font-800 text-foreground text-center">
-            Four steps. Zero guesswork.
+            Six stages. Zero guesswork.
           </h2>
           <p className="mt-4 text-muted-foreground text-center max-w-2xl mx-auto">
-            Every engagement follows the same proven path — designed to give you clarity, not complexity.
+            Every engagement follows the same proven path — designed to give you
+            clarity, not complexity.
           </p>
         </Reveal>
 
         <div className="mt-16 relative">
-          {/* vertical line */}
           <div className="absolute left-6 md:left-8 top-0 bottom-0 w-px bg-border hidden sm:block" />
 
           <div className="space-y-12">
-            {steps.map((s, i) => {
+            {stages.map((s, i) => {
               const Icon = s.icon;
               return (
-                <Reveal key={s.num} delay={i * 120}>
+                <Reveal key={s.num} delay={i * 100}>
                   <div className="flex gap-6 md:gap-8 items-start relative">
-                    {/* step indicator */}
                     <div className="relative z-10 flex-shrink-0 w-12 h-12 md:w-16 md:h-16 rounded-full bg-accent flex items-center justify-center text-accent-foreground font-heading text-lg md:text-xl font-800 shadow-md">
                       {s.num}
                     </div>
-
                     <div>
                       <div className="flex items-center gap-2 mb-2">
                         <Icon className="w-5 h-5 text-accent" />
@@ -142,43 +156,77 @@ const HowItWorks = () => (
       </div>
     </section>
 
-    {/* 3 · What You Get */}
+    {/* 3 · Timeline */}
     <section className="bg-muted/40">
-      <div className="container py-20 md:py-28">
+      <div className="container py-20 md:py-28 max-w-3xl">
         <Reveal>
           <h2 className="font-heading text-3xl md:text-4xl font-800 text-foreground text-center">
-            What you walk away with
+            What the timeline usually looks like.
           </h2>
-          <p className="mt-4 text-muted-foreground text-center max-w-2xl mx-auto">
-            Every client gets a clear set of deliverables — not vague promises.
+          <p className="mt-6 text-muted-foreground text-center leading-relaxed">
+            A typical process is around 60 days from the first conversation to
+            signed agreement, though the exact timeline depends on complexity,
+            scheduling, and how quickly information moves.
           </p>
         </Reveal>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {deliverables.map((d, i) => {
-            const Icon = d.icon;
-            return (
-              <Reveal key={d.title} delay={i * 80}>
-                <Card className="card-elevated border-0 h-full">
-                  <CardContent className="p-6 flex gap-4 items-start">
-                    <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center">
-                      <Icon className="w-5 h-5 text-accent" />
-                    </div>
-                    <div>
-                      <h3 className="font-heading text-lg font-700 text-foreground">{d.title}</h3>
-                      <p className="mt-1 text-sm text-muted-foreground leading-relaxed">{d.desc}</p>
-                    </div>
-                  </CardContent>
-                </Card>
-              </Reveal>
-            );
-          })}
-        </div>
+        <Reveal delay={100}>
+          <ul className="mt-10 space-y-3 text-muted-foreground">
+            {[
+              "Discovery happens early",
+              "Data gathering takes 1–2 weeks",
+              "Proposals may take 1–2 weeks after submission",
+              "Decision support and paperwork follow from there",
+              "Onboarding can take additional time depending on complexity",
+            ].map((item) => (
+              <li key={item} className="flex items-start gap-3">
+                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </Reveal>
       </div>
     </section>
 
-    {/* 4 · Who This Is For */}
+    {/* 4 · Documents */}
     <section className="bg-background">
+      <div className="container py-20 md:py-28 max-w-3xl">
+        <Reveal>
+          <h2 className="font-heading text-3xl md:text-4xl font-800 text-foreground text-center">
+            What we may need from you.
+          </h2>
+          <p className="mt-6 text-muted-foreground text-center leading-relaxed">
+            To compare options accurately, we may ask for items like:
+          </p>
+        </Reveal>
+
+        <Reveal delay={100}>
+          <ul className="mt-8 space-y-3 text-muted-foreground">
+            {[
+              "Completed application",
+              "Employee census",
+              "Payroll reports",
+              "SUTA report",
+              "Benefits invoices and summaries",
+              "Workers' compensation information when relevant",
+            ].map((item) => (
+              <li key={item} className="flex items-start gap-3">
+                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-8 text-sm text-muted-foreground/80 italic text-center">
+            We will guide you through this step by step and help you understand
+            what matters, what can come later, and where to find what you need.
+          </p>
+        </Reveal>
+      </div>
+    </section>
+
+    {/* 5 · Who This Is For */}
+    <section className="bg-muted/40">
       <div className="container py-20 md:py-28 max-w-4xl">
         <Reveal>
           <h2 className="font-heading text-3xl md:text-4xl font-800 text-foreground text-center">
@@ -195,8 +243,12 @@ const HowItWorks = () => (
                   <div className="mx-auto w-14 h-14 rounded-full bg-accent/10 flex items-center justify-center mb-4">
                     <Icon className="w-6 h-6 text-accent" />
                   </div>
-                  <h3 className="font-heading text-xl font-700 text-foreground">{a.title}</h3>
-                  <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{a.desc}</p>
+                  <h3 className="font-heading text-xl font-700 text-foreground">
+                    {a.title}
+                  </h3>
+                  <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+                    {a.desc}
+                  </p>
                   <Link
                     to={a.href}
                     className="inline-flex items-center gap-1 mt-3 text-sm font-medium text-accent hover:underline"
@@ -211,7 +263,7 @@ const HowItWorks = () => (
       </div>
     </section>
 
-    {/* 5 · Final CTA */}
+    {/* 6 · Final CTA */}
     <section className="bg-primary text-primary-foreground">
       <div className="container py-20 md:py-28 text-center max-w-2xl">
         <Reveal>
@@ -219,8 +271,8 @@ const HowItWorks = () => (
             Ready to compare your options?
           </h2>
           <p className="mt-4 text-primary-foreground/80 text-lg">
-            Start with a short conversation. We will tell you if we can help — and if we
-            cannot, we will point you in the right direction.
+            Start with a short conversation. We will tell you if we can help —
+            and if we cannot, we will point you in the right direction.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Button
@@ -228,7 +280,9 @@ const HowItWorks = () => (
               size="lg"
               className="bg-accent text-accent-foreground hover:bg-accent/90 font-heading font-700 text-base px-8"
             >
-              <Link to="/contact">Compare My Options</Link>
+              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
+                Schedule a PEO Strategy Call
+              </a>
             </Button>
             <Button
               asChild

@@ -13,10 +13,7 @@ import {
   FileSearch,
   ArrowRightLeft,
   ShieldCheck,
-  AlertTriangle,
-  DollarSign,
   Clock,
-  Ban,
   Frown,
   Scale,
   RefreshCcw,
@@ -26,16 +23,13 @@ import {
   XCircle,
 } from "lucide-react";
 
-/* ═══════════════════════════════════════════════════════════════
-   HOMEPAGE
-   ═══════════════════════════════════════════════════════════════ */
+const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
 const Index = () => {
   return (
     <>
       {/* ── 1. HERO ── */}
       <section className="relative overflow-hidden bg-primary text-primary-foreground">
-        {/* decorative pillar glows */}
         <div className="pointer-events-none absolute inset-0">
           <div className="absolute left-[12%] top-0 h-full w-px bg-gradient-to-b from-transparent via-green/20 to-transparent" />
           <div className="absolute left-[38%] top-0 h-full w-px bg-gradient-to-b from-transparent via-soft-blue/15 to-transparent" />
@@ -64,7 +58,7 @@ const Index = () => {
                 className="bg-accent text-accent-foreground hover:bg-accent/90 px-8 text-base font-semibold"
                 asChild
               >
-                <Link to="/contact">Compare My Options</Link>
+                <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Schedule a PEO Strategy Call</a>
               </Button>
               <Button
                 size="lg"
@@ -79,10 +73,10 @@ const Index = () => {
             {/* support chips */}
             <div className="mt-14 flex flex-wrap justify-center gap-4">
               {[
-                { icon: Compass, label: "Structured guidance" },
-                { icon: BarChart3, label: "Side-by-side comparisons" },
-                { icon: Target, label: "Better-fit decisions" },
-                { icon: HeartHandshake, label: "Support through transition" },
+                { icon: Compass, label: "Buyer-side guidance" },
+                { icon: BarChart3, label: "Better-fit comparisons" },
+                { icon: Target, label: "Clear process" },
+                { icon: HeartHandshake, label: "Steady support" },
               ].map(({ icon: Icon, label }) => (
                 <span
                   key={label}
@@ -102,11 +96,10 @@ const Index = () => {
         <div className="container">
           <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
             {[
-              { icon: ClipboardCheck, label: "Guided comparison process" },
-              { icon: Users, label: "Buyer-side support" },
-              { icon: FileSearch, label: "Proposal review help" },
-              { icon: ArrowRightLeft, label: "Transition support" },
+              { icon: ClipboardCheck, label: "Structured guidance from discovery to decision" },
+              { icon: BarChart3, label: "Side-by-side proposal review support" },
               { icon: ShieldCheck, label: "Secure document workflow" },
+              { icon: ArrowRightLeft, label: "Transition support after the decision" },
             ].map(({ icon: Icon, label }) => (
               <span
                 key={label}
@@ -126,12 +119,12 @@ const Index = () => {
           <Reveal>
             <div className="mx-auto max-w-2xl text-center">
               <h2 className="font-heading text-3xl font-800 text-foreground md:text-4xl">
-                Where are you in your PEO journey?
+                Start where you are.
               </h2>
               <p className="mt-4 text-muted-foreground">
-                We tailor our guidance to your situation — whether you're
-                switching, exploring for the first time, or have unique needs as
-                a nonprofit.
+                Whether you are replacing a frustrating PEO, leading a nonprofit
+                team, or trying to figure out whether a PEO even makes sense
+                yet, Pillar helps you move forward with more clarity.
               </p>
             </div>
           </Reveal>
@@ -140,32 +133,35 @@ const Index = () => {
             {[
               {
                 icon: RefreshCcw,
-                title: "Switch Your PEO",
-                desc: "Outgrown your current provider? We help you compare alternatives and manage the transition without disruption.",
+                title: "Switching your current PEO?",
+                desc: "Compare service, price, support, and fit before you make a move.",
                 href: "/switch-your-peo",
+                cta: "Explore PEO Switching",
                 accent: "text-accent",
                 border: "border-accent/30",
                 glow: "hover:shadow-[0_0_30px_-8px_hsl(145_63%_49%/0.2)]",
               },
               {
                 icon: Church,
-                title: "PEO for Nonprofits",
-                desc: "Churches, ministries, and nonprofits have unique compliance and benefits needs. We know them well.",
+                title: "Running a nonprofit team?",
+                desc: "Reduce admin drag without pulling focus from the mission.",
                 href: "/peo-for-nonprofits",
+                cta: "Explore Nonprofits",
                 accent: "text-soft-blue",
                 border: "border-soft-blue/30",
                 glow: "hover:shadow-[0_0_30px_-8px_hsl(197_86%_64%/0.2)]",
               },
               {
                 icon: Building2,
-                title: "Do We Need a PEO Yet?",
-                desc: "Not sure if a PEO is the right move? We'll help you weigh the options so you don't commit too early — or wait too long.",
+                title: "Wondering if you need a PEO?",
+                desc: "Build a better people-ops foundation before growth gets messy.",
                 href: "/do-we-need-a-peo",
+                cta: "Explore First-Time PEO",
                 accent: "text-bold-yellow",
                 border: "border-bold-yellow/30",
                 glow: "hover:shadow-[0_0_30px_-8px_hsl(43_100%_50%/0.2)]",
               },
-            ].map(({ icon: Icon, title, desc, href, accent, border, glow }, i) => (
+            ].map(({ icon: Icon, title, desc, href, cta, accent, border, glow }, i) => (
               <Reveal key={title} delay={i * 120}>
                 <Card
                   className={`group relative h-full transition-shadow duration-300 ${border} ${glow} card-elevated`}
@@ -187,7 +183,7 @@ const Index = () => {
                       className={`mt-6 w-fit p-0 ${accent} font-semibold`}
                       asChild
                     >
-                      <Link to={href}>Learn more →</Link>
+                      <Link to={href}>{cta} →</Link>
                     </Button>
                   </CardContent>
                 </Card>
@@ -206,8 +202,10 @@ const Index = () => {
                 The wrong setup costs more than the monthly fee.
               </h2>
               <p className="mt-4 text-muted-foreground">
-                Most employers don't realize they're overpaying, under-covered,
-                or locked into the wrong structure until it's too late.
+                When the fit is wrong, the cost shows up everywhere: in
+                leadership time, service frustration, renewal pressure,
+                compliance risk, employee experience, and the constant sense
+                that something still is not working the way it should.
               </p>
             </div>
           </Reveal>
@@ -215,34 +213,34 @@ const Index = () => {
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[
               {
-                icon: DollarSign,
-                title: "Overpaying for Benefits",
-                desc: "Bundled pricing hides markups. Without a side-by-side comparison you can't see what you're really paying.",
-              },
-              {
-                icon: AlertTriangle,
-                title: "Compliance Gaps",
-                desc: "One missed filing or misclassification can mean fines, audits, or lawsuits — and most PEOs won't warn you.",
-              },
-              {
                 icon: Clock,
-                title: "Slow Onboarding",
-                desc: "Weeks of back-and-forth that stall hiring. A bad implementation costs you time and first impressions.",
+                title: "Leadership time disappears",
+                desc: "Owners, executives, and lean HR teams get pulled into avoidable admin.",
               },
               {
-                icon: Ban,
-                title: "Locked-In Contracts",
-                desc: "Auto-renewals and long terms keep you stuck. Switching feels impossible — so you never do.",
+                icon: RefreshCcw,
+                title: "Renewals create pressure",
+                desc: "Instead of clarity, every cycle feels reactive and rushed.",
               },
               {
                 icon: Frown,
-                title: "Poor Service After Signing",
-                desc: "The sales team disappears. Your day-to-day contact barely knows your account.",
+                title: "Service becomes a drain",
+                desc: "What looked fine on paper can feel very different when issues show up.",
+              },
+              {
+                icon: Target,
+                title: "Growth exposes weak spots",
+                desc: "The setup that worked before may no longer fit the business you are becoming.",
               },
               {
                 icon: Scale,
-                title: "One-Size-Fits-All Plans",
-                desc: "Your industry, team size, and goals are unique. A generic plan means you're paying for things you don't need.",
+                title: "Mistakes get expensive",
+                desc: "Payroll and compliance errors do not stay small for long.",
+              },
+              {
+                icon: ArrowRightLeft,
+                title: "Delay becomes its own cost",
+                desc: "The longer confusion sits, the harder momentum is to protect.",
               },
             ].map(({ icon: Icon, title, desc }, i) => (
               <Reveal key={title} delay={i * 80}>
@@ -271,12 +269,8 @@ const Index = () => {
           <Reveal>
             <div className="mx-auto max-w-2xl text-center">
               <h2 className="font-heading text-3xl font-800 text-foreground md:text-4xl">
-                A lot of bad PEO decisions start with bad advice.
+                A lot of bad decisions start with bad assumptions.
               </h2>
-              <p className="mt-4 text-muted-foreground">
-                Here are a few things you've probably heard — and what's
-                actually true.
-              </p>
             </div>
           </Reveal>
 
@@ -285,22 +279,26 @@ const Index = () => {
               {
                 myth: "\u201CAll PEOs are basically the same.\u201D",
                 truth:
-                  "PEOs differ dramatically in pricing models, service quality, technology, and compliance support. The wrong match can cost you thousands.",
+                  "Pricing, service structure, support quality, onboarding experience, and long-term fit can vary more than people realize.",
               },
               {
-                myth: "\u201CYou lose control of your employees when you join a PEO.\u201D",
+                myth: "\u201CSwitching is too disruptive.\u201D",
                 truth:
-                  "You stay the employer of record for day-to-day operations. A PEO is a co-employment partner \u2014 you keep full control of hiring, culture, and management.",
+                  "Staying in the wrong setup often creates its own ongoing disruption. A guided transition can be far more manageable than people expect.",
               },
               {
-                myth: "\u201CSwitching PEOs is too disruptive \u2014 just stay where you are.\u201D",
+                myth: "\u201CWe should just wait until next year.\u201D",
                 truth:
-                  "With proper transition planning, switching is smoother than most expect. Staying in a bad fit is far more expensive long-term.",
+                  "Waiting can extend friction, hidden cost, and preventable risk.",
+              },
+              {
+                myth: "\u201CWe are probably too small.\u201D",
+                truth:
+                  "Smaller teams often feel payroll, benefits, and compliance pressure first because they have fewer internal resources.",
               },
             ].map(({ myth, truth }, i) => (
               <Reveal key={i} delay={i * 120}>
                 <div className="grid gap-4 md:grid-cols-2">
-                  {/* Myth */}
                   <Card className="border-destructive/20 bg-destructive/5">
                     <CardContent className="p-6">
                       <div className="mb-3 flex items-center gap-2">
@@ -315,7 +313,6 @@ const Index = () => {
                     </CardContent>
                   </Card>
 
-                  {/* Truth */}
                   <Card className="border-accent/20 bg-accent/5">
                     <CardContent className="p-6">
                       <div className="mb-3 flex items-center gap-2">
@@ -335,18 +332,19 @@ const Index = () => {
           </div>
         </div>
       </section>
+
       {/* ── 6. GUIDE SECTION ── */}
       <section className="bg-muted/30 py-20 md:py-28">
         <div className="container">
           <Reveal>
             <div className="mx-auto max-w-2xl text-center">
               <h2 className="font-heading text-3xl font-800 text-foreground md:text-4xl">
-                You don't need to figure this out alone.
+                You do not need to figure this out alone.
               </h2>
               <p className="mt-4 text-muted-foreground">
-                Pillar gives you a structured process, clear comparisons, and
-                real support — so you can stop guessing and start moving
-                forward.
+                Pillar helps employers slow the decision down enough to think
+                clearly, compare options side by side, and move forward with a
+                plan that actually fits.
               </p>
             </div>
           </Reveal>
@@ -355,32 +353,32 @@ const Index = () => {
             {[
               {
                 icon: Compass,
-                title: "Discovery-First Approach",
+                title: "Discovery-first approach",
                 desc: "We start by understanding your team, your pain points, and what actually matters before recommending anything.",
               },
               {
+                icon: ClipboardCheck,
+                title: "Clear process and expectations",
+                desc: "You will always know what step you are on, what is next, and how long it takes.",
+              },
+              {
                 icon: BarChart3,
-                title: "Side-by-Side Option Review",
+                title: "Proposal review support",
                 desc: "We present your top options in a clear, comparable format — no jargon, no pressure.",
               },
               {
-                icon: Clock,
-                title: "Clear Process & Timeline",
-                desc: "You'll always know what step you're on, what's next, and how long it takes.",
-              },
-              {
                 icon: FileSearch,
-                title: "Support with Documents",
+                title: "Help gathering required documents",
                 desc: "We help you gather census data, tax docs, and everything your new provider needs.",
               },
               {
-                icon: ClipboardCheck,
-                title: "Proposal Walkthroughs",
-                desc: "We walk through each proposal line by line so you know exactly what you're agreeing to.",
+                icon: Target,
+                title: "Guidance through demos and selection",
+                desc: "We walk through each proposal line by line so you know exactly what you are agreeing to.",
               },
               {
                 icon: HeartHandshake,
-                title: "Warm Handoff into Onboarding",
+                title: "Warm handoff into onboarding",
                 desc: "We stay with you through implementation — not just until the contract is signed.",
               },
             ].map(({ icon: Icon, title, desc }, i) => (
@@ -412,32 +410,28 @@ const Index = () => {
               <h2 className="font-heading text-3xl font-800 text-foreground md:text-4xl">
                 A clear path through a complicated decision.
               </h2>
-              <p className="mt-4 text-muted-foreground">
-                Three steps. No pressure. Just clarity.
-              </p>
             </div>
           </Reveal>
 
           <div className="mx-auto mt-14 max-w-4xl">
             <div className="relative grid gap-12 md:grid-cols-3">
-              {/* connector line */}
               <div className="pointer-events-none absolute left-1/2 top-8 hidden h-px w-[66%] -translate-x-1/2 bg-gradient-to-r from-accent/40 via-accent/20 to-accent/40 md:block" />
 
               {[
                 {
                   step: "01",
-                  title: "Tell us what isn't working",
-                  desc: "Share your current setup, frustrations, and goals. We listen before we recommend.",
+                  title: "Tell us what is not working",
+                  desc: "We start with your reality: what feels heavy, what is changing, and what matters most.",
                 },
                 {
                   step: "02",
                   title: "We compare the right options",
-                  desc: "You get a side-by-side review of providers matched to your needs — not a generic list.",
+                  desc: "Pillar helps you evaluate fit, tradeoffs, and next-step paths with more clarity.",
                 },
                 {
                   step: "03",
                   title: "Move forward with a cleaner plan",
-                  desc: "Choose with confidence and get hands-on support through the entire transition.",
+                  desc: "When you are ready, we help you move into the next phase with less confusion and less risk.",
                 },
               ].map(({ step, title, desc }, i) => (
                 <Reveal key={step} delay={i * 150}>
@@ -467,9 +461,6 @@ const Index = () => {
               <h2 className="font-heading text-3xl font-800 text-foreground md:text-4xl">
                 From guesswork to confident direction.
               </h2>
-              <p className="mt-4 text-muted-foreground">
-                Here's what changes when you have the right guidance.
-              </p>
             </div>
           </Reveal>
 
@@ -477,32 +468,32 @@ const Index = () => {
             {[
               {
                 icon: ShieldCheck,
-                title: "More Confidence",
-                desc: "You'll know you chose the right provider — not just the loudest one.",
+                title: "More confidence in the decision",
+                desc: "You will know you chose the right provider — not just the loudest one.",
               },
               {
-                icon: RefreshCcw,
-                title: "Less Admin Drag",
-                desc: "Streamlined payroll, benefits, and compliance so your team can focus on mission.",
+                icon: Clock,
+                title: "Less admin drag on leadership",
+                desc: "Streamlined payroll, benefits, and compliance so your team can focus on what matters.",
               },
               {
                 icon: Target,
-                title: "Better-Fit Support",
+                title: "Better-fit support structure",
                 desc: "A provider matched to your size, industry, and growth trajectory.",
               },
               {
                 icon: ArrowRightLeft,
-                title: "Clearer Next Steps",
-                desc: "No more second-guessing. You'll have a timeline and a plan.",
+                title: "Clearer next steps",
+                desc: "No more second-guessing. You will have a timeline and a plan.",
               },
               {
                 icon: Users,
-                title: "Stronger Employee Experience",
+                title: "Stronger employee experience",
                 desc: "Better benefits, smoother onboarding, and more reliable HR support.",
               },
               {
                 icon: Scale,
-                title: "Less Risk in Transition",
+                title: "Less risk during transition",
                 desc: "We manage the handoff so nothing falls through the cracks.",
               },
             ].map(({ icon: Icon, title, desc }, i) => (
@@ -532,13 +523,11 @@ const Index = () => {
           <Reveal>
             <div className="mx-auto max-w-2xl text-center">
               <h2 className="font-heading text-3xl font-800 text-foreground md:text-4xl">
-                Guidance matters when the path isn't obvious.
+                Guidance matters when the path is not obvious.
               </h2>
               <p className="mt-5 text-muted-foreground leading-relaxed">
-                Pillar was built because too many employers make critical PEO
-                decisions without real support. We're not a PEO. We're not a
-                broker. We're the guide that helps you compare, evaluate, and
-                move forward — with confidence.
+                Pillar exists to help employers move forward with steadiness,
+                clarity, and support in decisions that carry real weight.
               </p>
               <Button
                 size="lg"
@@ -561,9 +550,6 @@ const Index = () => {
               <h2 className="font-heading text-3xl font-800 text-foreground md:text-4xl">
                 Common questions
               </h2>
-              <p className="mt-4 text-muted-foreground">
-                Quick answers to the things employers ask most.
-              </p>
             </div>
           </Reveal>
 
@@ -572,28 +558,24 @@ const Index = () => {
               <Accordion type="single" collapsible className="w-full">
                 {[
                   {
-                    q: "What exactly does Pillar do?",
-                    a: "Pillar helps employers compare PEO and HR outsourcing options through a guided, structured process. We're not a PEO — we're buyer-side support that helps you evaluate proposals, understand pricing, and make a confident decision.",
+                    q: "How do I know if a PEO is the right fit?",
+                    a: "That depends on your employee count, internal capacity, current pain points, and what kind of support you need. We help you think through that before forcing a decision.",
                   },
                   {
-                    q: "Is Pillar a PEO broker?",
-                    a: "No. Brokers typically represent PEOs and earn commissions from them. Pillar works on the employer's side — we help you compare options objectively without steering you toward a specific provider.",
+                    q: "What if we already have a PEO?",
+                    a: "That is one of the biggest reasons employers reach out. We can help you evaluate whether the current fit is still right.",
                   },
                   {
-                    q: "How much does it cost to work with Pillar?",
-                    a: "We offer several engagement levels depending on your needs. Reach out through our contact page and we'll walk you through what makes sense for your situation.",
+                    q: "What documents will you need?",
+                    a: "Usually things like an application, employee census, payroll reports, SUTA, benefits documents, and workers' comp information when relevant.",
                   },
                   {
-                    q: "Can you help us switch from our current PEO?",
-                    a: "Absolutely. We specialize in helping employers evaluate alternatives, manage the transition timeline, and ensure nothing falls through the cracks during the switch.",
+                    q: "How long does this usually take?",
+                    a: "A typical process is around 60 days, though some move faster and some slower depending on complexity and timing.",
                   },
                   {
-                    q: "Do you work with nonprofits and churches?",
-                    a: "Yes — in fact, nonprofits, churches, and ministries are one of our core focus areas. We understand the unique compliance, benefits, and budget considerations these organizations face.",
-                  },
-                  {
-                    q: "How long does the process take?",
-                    a: "Most engagements take 2–6 weeks depending on complexity. We'll give you a clear timeline upfront so you know exactly what to expect.",
+                    q: "What happens after we decide?",
+                    a: "Pillar helps support the handoff into onboarding so you are not left to navigate the next phase alone.",
                   },
                 ].map(({ q, a }, i) => (
                   <AccordionItem key={i} value={`faq-${i}`}>
@@ -620,9 +602,8 @@ const Index = () => {
                 Make a confident next-step decision.
               </h2>
               <p className="mt-5 text-primary-foreground/80 leading-relaxed">
-                Whether you're exploring PEOs for the first time, switching
-                providers, or just want to know your options — Pillar gives you
-                the structure and support to move forward without second-guessing.
+                Tell us what is not working, what matters most, and where you
+                are in the process.
               </p>
               <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
                 <Button
@@ -630,7 +611,7 @@ const Index = () => {
                   className="bg-accent text-accent-foreground hover:bg-accent/90 px-8 text-base font-semibold"
                   asChild
                 >
-                  <Link to="/contact">Compare My Options</Link>
+                  <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Schedule a PEO Strategy Call</a>
                 </Button>
                 <Button
                   size="lg"
