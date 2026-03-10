@@ -167,18 +167,23 @@ const Resources = () => {
                   </p>
                 </div>
                 <Button
-                  asChild
                   size="lg"
-                  className="shrink-0 bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20"
+                  className="shrink-0 bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20 cursor-pointer"
+                  onClick={() => {
+                    fetch("/guides/Employers_Guide_to_Choosing_the_Right_PEO.pdf")
+                      .then((res) => res.blob())
+                      .then((blob) => {
+                        const url = window.URL.createObjectURL(blob);
+                        const a = document.createElement("a");
+                        a.href = url;
+                        a.download = "Employers_Guide_to_Choosing_the_Right_PEO.pdf";
+                        a.click();
+                        window.URL.revokeObjectURL(url);
+                      });
+                  }}
                 >
-                  <a
-                    href="/guides/Employers_Guide_to_Choosing_the_Right_PEO.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Download className="mr-2 h-4 w-4" />
-                    Get the Guide
-                  </a>
+                  <Download className="mr-2 h-4 w-4" />
+                  Get the Guide
                 </Button>
               </CardContent>
             </Card>
