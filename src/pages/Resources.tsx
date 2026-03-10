@@ -18,6 +18,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Reveal } from "@/components/Reveal";
+import SEOHead from "@/components/SEOHead";
 
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 

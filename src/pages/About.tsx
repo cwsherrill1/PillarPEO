@@ -24,6 +24,10 @@ const founders = [
 
 const About = () => (
   <div>
+    <SEOHead
+      title="About Us"
+      description="Meet the team behind Pillar PEO Advisors — independent advisors helping employers navigate PEO decisions with clarity."
+    />
     {/* ─── Hero ─── */}
     <section className="bg-primary text-primary-foreground">
       <div className="container py-24 text-center md:py-32">

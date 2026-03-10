@@ -37,6 +37,10 @@ const steps = [
 
 const DoWeNeedAPeo = () => (
   <>
+    <SEOHead
+      title="Do We Need a PEO?"
+      description="Not sure if a PEO is right for your business? Pillar helps you assess whether outsourcing HR, payroll, and benefits makes sense."
+    />
     {/* Hero */}
     <section className="bg-primary text-primary-foreground">
       <div className="container py-24 md:py-32 text-center max-w-3xl">

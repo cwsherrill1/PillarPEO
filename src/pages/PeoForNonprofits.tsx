@@ -37,6 +37,10 @@ const steps = [
 
 const PeoForNonprofits = () => (
   <>
+    <SEOHead
+      title="PEO for Nonprofits"
+      description="Pillar helps nonprofits find the right PEO to streamline HR, payroll, and benefits — so your team can focus on the mission."
+    />
     {/* Hero */}
     <section className="bg-primary text-primary-foreground">
       <div className="container py-24 md:py-32 text-center max-w-3xl">

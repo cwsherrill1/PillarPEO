@@ -59,6 +59,10 @@ const steps = [
 
 const SwitchYourPeo = () => (
   <>
+    <SEOHead
+      title="Switch Your PEO"
+      description="Wondering if it's time to switch PEOs? Pillar helps you compare options and manage the transition without disruption."
+    />
     {/* Hero */}
     <section className="bg-primary text-primary-foreground">
       <div className="container py-24 md:py-32 text-center max-w-3xl">
