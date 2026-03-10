@@ -84,7 +84,7 @@ const SwitchYourPeo = () => (
             {signs.map((sign) => (
               <li key={sign} className="flex items-start gap-3 text-muted-foreground">
                 <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-accent" />
-                <span className="text-base leading-relaxed">{sign}</span>
+                <span className="text-lg leading-relaxed">{sign}</span>
               </li>
             ))}
           </ul>
