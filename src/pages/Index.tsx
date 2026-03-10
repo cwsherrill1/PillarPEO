@@ -175,7 +175,7 @@ const Index = () => {
                     <h3 className="font-heading text-xl font-700 text-foreground">
                       {title}
                     </h3>
-                    <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">
+                    <p className="mt-3 flex-1 text-base leading-relaxed text-muted-foreground">
                       {desc}
                     </p>
                     <Button
@@ -252,7 +252,7 @@ const Index = () => {
                     <h3 className="font-heading text-lg font-700 text-foreground">
                       {title}
                     </h3>
-                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                    <p className="mt-2 text-base leading-relaxed text-muted-foreground">
                       {desc}
                     </p>
                   </CardContent>
@@ -307,7 +307,7 @@ const Index = () => {
                           Myth
                         </span>
                       </div>
-                      <p className="text-sm leading-relaxed text-foreground/80 italic">
+                      <p className="text-base leading-relaxed text-foreground/80 italic">
                         {myth}
                       </p>
                     </CardContent>
@@ -321,7 +321,7 @@ const Index = () => {
                           Truth
                         </span>
                       </div>
-                      <p className="text-sm leading-relaxed text-foreground/80">
+                      <p className="text-base leading-relaxed text-foreground/80">
                         {truth}
                       </p>
                     </CardContent>
@@ -391,7 +391,7 @@ const Index = () => {
                     <h3 className="font-heading text-lg font-700 text-foreground">
                       {title}
                     </h3>
-                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                    <p className="mt-2 text-base leading-relaxed text-muted-foreground">
                       {desc}
                     </p>
                   </CardContent>
@@ -442,7 +442,7 @@ const Index = () => {
                     <h3 className="font-heading text-lg font-700 text-foreground">
                       {title}
                     </h3>
-                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                    <p className="mt-2 text-base leading-relaxed text-muted-foreground">
                       {desc}
                     </p>
                   </div>
@@ -506,7 +506,7 @@ const Index = () => {
                     <h3 className="font-heading text-lg font-700 text-foreground">
                       {title}
                     </h3>
-                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                    <p className="mt-2 text-base leading-relaxed text-muted-foreground">
                       {desc}
                     </p>
                   </CardContent>

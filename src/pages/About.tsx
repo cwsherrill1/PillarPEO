@@ -213,7 +213,7 @@ const About = () => (
           <h2 className="font-heading text-3xl font-800 md:text-4xl">
             Need clarity on what comes next?
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-primary-foreground/60">
+          <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">
             Let's talk about what is working, what is not, and what a better-fit
             path could look like.
           </p>

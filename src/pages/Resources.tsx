@@ -174,7 +174,7 @@ const Resources = () => {
                     <h3 className="mt-4 font-heading text-lg font-700 text-foreground">
                       {r.title}
                     </h3>
-                    <p className="mt-2 flex-1 text-sm text-muted-foreground">
+                    <p className="mt-2 flex-1 text-base text-muted-foreground">
                       {r.desc}
                     </p>
                     <Link

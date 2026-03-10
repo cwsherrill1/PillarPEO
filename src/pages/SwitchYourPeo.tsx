@@ -84,7 +84,7 @@ const SwitchYourPeo = () => (
             {signs.map((sign) => (
               <li key={sign} className="flex items-start gap-3 text-muted-foreground">
                 <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-accent" />
-                <span className="text-base leading-relaxed">{sign}</span>
+                <span className="text-lg leading-relaxed">{sign}</span>
               </li>
             ))}
           </ul>
@@ -113,7 +113,7 @@ const SwitchYourPeo = () => (
                         Myth
                       </span>
                     </div>
-                    <p className="text-sm leading-relaxed text-foreground/80 italic">
+                    <p className="text-base leading-relaxed text-foreground/80 italic">
                       {myth}
                     </p>
                   </CardContent>
@@ -126,7 +126,7 @@ const SwitchYourPeo = () => (
                         Truth
                       </span>
                     </div>
-                    <p className="text-sm leading-relaxed text-foreground/80">
+                    <p className="text-base leading-relaxed text-foreground/80">
                       {truth}
                     </p>
                   </CardContent>
