@@ -92,7 +92,7 @@ const Index = () => {
               {
                 icon: Scale,
                 title: "Mistakes get expensive",
-                desc: "Payroll and compliance errors do not stay small for long.",
+                desc: "Payroll and compliance errors don't stay small for long.",
               },
               {
                 icon: Frown,
