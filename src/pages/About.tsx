@@ -35,9 +35,8 @@ const About = () => (
             <br className="hidden md:block" /> weighty decisions.
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-primary-foreground/80 md:text-xl">
-            Pillar PEO Advisors was built to help leaders move through payroll,
-            benefits, HR, and compliance decisions with more clarity, better
-            support, and less costly guesswork.
+            Helping leaders navigate payroll, benefits, HR, and compliance
+            with more clarity and less guesswork.
           </p>
         </Reveal>
       </div>
