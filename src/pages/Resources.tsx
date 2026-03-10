@@ -96,7 +96,7 @@ const Resources = () => {
             </h1>
           </Reveal>
           <Reveal delay={100}>
-            <p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/70 md:text-xl">
+            <p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80 md:text-xl">
               Free guides, checklists, and comparisons built for employers — not
               PEO sales teams.
             </p>
