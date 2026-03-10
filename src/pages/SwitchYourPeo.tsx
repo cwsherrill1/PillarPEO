@@ -113,7 +113,7 @@ const SwitchYourPeo = () => (
                         Myth
                       </span>
                     </div>
-                    <p className="text-sm leading-relaxed text-foreground/80 italic">
+                    <p className="text-base leading-relaxed text-foreground/80 italic">
                       {myth}
                     </p>
                   </CardContent>
