@@ -403,7 +403,7 @@ const Index = () => {
               <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
                 <Button
                   size="lg"
-                  className="bg-accent text-accent-foreground hover:bg-accent/90 px-8 text-base font-semibold"
+                  className="bg-accent text-accent-foreground hover:bg-accent/90 px-8 text-base font-semibold shadow-lg shadow-accent/20"
                   asChild
                 >
                   <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Schedule a PEO Strategy Call</a>
