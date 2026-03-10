@@ -71,7 +71,7 @@ const Resources = () => {
   return (
     <>
       {/* Hero */}
-      <section className="bg-primary py-20 md:py-28">
+      <section className="bg-primary py-24 md:py-32">
         <div className="container text-center">
           <Reveal>
             <h1 className="font-heading text-4xl font-800 leading-tight text-primary-foreground md:text-5xl lg:text-6xl">
@@ -89,7 +89,7 @@ const Resources = () => {
       </section>
 
       {/* Featured: Buyer Guide */}
-      <section className="py-16 md:py-24">
+      <section className="py-20 md:py-28">
         <div className="container">
           <Reveal>
             <Card className="border-accent/30 bg-accent/5 overflow-hidden">
@@ -128,7 +128,7 @@ const Resources = () => {
       </section>
 
       {/* Resource Grid */}
-      <section className="bg-muted/30 py-16 md:py-24">
+      <section className="bg-muted/30 py-20 md:py-28">
         <div className="container">
           <Reveal>
             <div className="text-center">
@@ -167,7 +167,7 @@ const Resources = () => {
                       rel="noopener noreferrer"
                       className="mt-4 inline-flex items-center text-sm font-semibold text-accent transition-colors hover:text-accent/80"
                     >
-                      Request access
+                      Talk to an Advisor
                       <ArrowRight className="ml-1 h-3.5 w-3.5" />
                     </a>
                   </CardContent>
@@ -179,7 +179,7 @@ const Resources = () => {
       </section>
 
       {/* FAQ */}
-      <section className="py-16 md:py-24">
+      <section className="py-20 md:py-28">
         <div className="container max-w-3xl">
           <Reveal>
             <h2 className="text-center font-heading text-3xl font-800 text-foreground md:text-4xl">
@@ -204,7 +204,7 @@ const Resources = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="bg-primary py-16 md:py-24">
+      <section className="bg-primary py-24 md:py-32">
         <div className="container text-center">
           <Reveal>
             <h2 className="font-heading text-3xl font-800 text-primary-foreground md:text-4xl">
@@ -228,7 +228,7 @@ const Resources = () => {
                 asChild
                 size="lg"
                 variant="outline"
-                className="bg-transparent border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/5"
+                className="bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
               >
                 <Link to="/how-it-works">See How It Works</Link>
               </Button>

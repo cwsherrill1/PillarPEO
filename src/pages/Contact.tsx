@@ -215,7 +215,7 @@ const Contact = () => {
             {steps.map((step, i) => (
               <Reveal key={step.title} delay={i * 150}>
                 <div className="flex flex-col items-center text-center">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary text-primary-foreground text-xl font-bold">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-full bg-accent text-accent-foreground font-heading text-xl font-800">
                     {i + 1}
                   </div>
                   <h3 className="mt-4 font-heading text-lg font-600 text-foreground">

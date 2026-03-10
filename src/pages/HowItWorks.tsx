@@ -55,7 +55,7 @@ const HowItWorks = () => (
   <>
     {/* Hero */}
     <section className="bg-primary text-primary-foreground">
-      <div className="container py-20 md:py-28 text-center max-w-3xl">
+      <div className="container py-24 md:py-32 text-center max-w-3xl">
         <Reveal>
           <h1 className="font-heading text-4xl md:text-5xl font-800 leading-tight">
             A clear process for a decision that carries real weight.
@@ -148,7 +148,7 @@ const HowItWorks = () => (
 
     {/* Final CTA */}
     <section className="bg-primary text-primary-foreground">
-      <div className="container py-20 md:py-28 text-center max-w-2xl">
+      <div className="container py-24 md:py-32 text-center max-w-2xl">
         <Reveal>
           <h2 className="font-heading text-3xl md:text-4xl font-800">
             Ready to compare your options?
@@ -161,7 +161,7 @@ const HowItWorks = () => (
             <Button
               asChild
               size="lg"
-              className="bg-accent text-accent-foreground hover:bg-accent/90 font-heading font-700 text-base px-8"
+              className="bg-accent text-accent-foreground hover:bg-accent/90 font-heading font-700 text-base px-8 shadow-lg shadow-accent/20"
             >
               <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
                 Schedule a PEO Strategy Call

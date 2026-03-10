@@ -60,7 +60,7 @@ const SwitchYourPeo = () => (
   <>
     {/* Hero */}
     <section className="bg-primary text-primary-foreground">
-      <div className="container py-20 md:py-28 text-center max-w-3xl">
+      <div className="container py-24 md:py-32 text-center max-w-3xl">
         <Reveal>
           <h1 className="font-heading text-4xl md:text-5xl font-800 leading-tight">
             Your current PEO may not be your best fit.
@@ -74,7 +74,7 @@ const SwitchYourPeo = () => (
             <Button
               asChild
               size="lg"
-              className="bg-accent text-accent-foreground hover:bg-accent/90 font-heading font-700 text-base px-8"
+              className="bg-accent text-accent-foreground hover:bg-accent/90 font-heading font-700 text-base px-8 shadow-lg shadow-accent/20"
             >
               <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
                 Book a PEO Switch Review
@@ -148,6 +148,26 @@ const SwitchYourPeo = () => (
       </div>
     </section>
 
+    {/* Mid-page CTA */}
+    <section className="bg-accent/5 py-14">
+      <div className="container text-center">
+        <Reveal>
+          <p className="text-lg font-medium text-foreground">
+            Not sure if it's time to switch? Let's find out together.
+          </p>
+          <Button
+            asChild
+            size="lg"
+            className="mt-6 bg-accent text-accent-foreground hover:bg-accent/90 font-heading font-700 px-8 shadow-lg shadow-accent/20"
+          >
+            <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
+              Book a PEO Switch Review
+            </a>
+          </Button>
+        </Reveal>
+      </div>
+    </section>
+
     {/* Myth vs Truth */}
     <section className="bg-background py-20 md:py-28">
       <div className="container max-w-3xl">
@@ -196,7 +216,7 @@ const SwitchYourPeo = () => (
 
     {/* Final CTA */}
     <section className="bg-primary text-primary-foreground">
-      <div className="container py-20 md:py-28 text-center max-w-2xl">
+      <div className="container py-24 md:py-32 text-center max-w-2xl">
         <Reveal>
           <h2 className="font-heading text-3xl md:text-4xl font-800">
             Ready to explore better options?
@@ -209,7 +229,7 @@ const SwitchYourPeo = () => (
             <Button
               asChild
               size="lg"
-              className="bg-accent text-accent-foreground hover:bg-accent/90 font-heading font-700 text-base px-8"
+              className="bg-accent text-accent-foreground hover:bg-accent/90 font-heading font-700 text-base px-8 shadow-lg shadow-accent/20"
             >
               <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
                 Book a PEO Switch Review
