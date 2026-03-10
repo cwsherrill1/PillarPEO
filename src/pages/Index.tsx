@@ -76,7 +76,7 @@ const Index = () => {
       {/* ── 2. TRUST STRIP ── */}
       <section className="border-b border-border bg-muted/40 py-6">
         <div className="container">
-          <p className="text-center text-sm font-medium text-muted-foreground">Serving employers with 5–1 employees · Structured guidance from discovery to decision · ~60-day average process · Zero cost to employers
+          <p className="text-center text-sm font-medium text-muted-foreground">Serving employers with 5–500 employees · Structured guidance from discovery to decision · ~60-day average process · Zero cost to employers
 
           </p>
         </div>
