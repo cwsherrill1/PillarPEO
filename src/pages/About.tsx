@@ -1,9 +1,25 @@
-import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Reveal } from "@/components/Reveal";
 
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
+
+const founders = [
+  {
+    initials: "CS",
+    name: "Caleb Sherrill",
+    title: "CEO",
+    bio: "Caleb is a business builder and the CEO of Pillar PEO Advisors. After experiencing firsthand how payroll mistakes, administrative overload, and preventable fines can pull a founder away from real growth, he built Pillar to help employers make better decisions around payroll, HR, benefits, compliance, and PEO strategy. He brings an operator's mindset to the work: practical, direct, and focused on helping leaders protect momentum.",
+  },
+  {
+    initials: "JS",
+    name: "Josiah Sherrill",
+    title: "Partner",
+    bio: "Josiah joined Pillar as Caleb realized the business needed more than support — it needed a true partner. With a background in ministry recruiting, Josiah brings a people-centered lens, relationship strength, and a deep belief that guidance matters most when decisions affect real teams and families. His role helped turn Pillar from a founder-led vision into a growing advisory business.",
+  },
+];
 
 const About = () => (
   <div>
@@ -70,8 +86,53 @@ const About = () => (
       </div>
     </section>
 
-    {/* ─── Why the Work Matters ─── */}
+    {/* ─── Meet the Team ─── */}
     <section className="bg-muted/40">
+      <div className="container py-24 md:py-32">
+        <Reveal>
+          <div className="text-center">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-accent">
+              Our Team
+            </p>
+            <h2 className="font-heading text-3xl font-800 text-foreground md:text-4xl">
+              Meet the team behind Pillar.
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
+              A growing team committed to helping employers move with more
+              clarity, confidence, and support.
+            </p>
+          </div>
+        </Reveal>
+
+        <div className="mx-auto mt-14 grid max-w-4xl gap-8 md:grid-cols-2">
+          {founders.map((m, i) => (
+            <Reveal key={m.name} delay={i * 150}>
+              <Card className="h-full border-none bg-card shadow-sm hover:shadow-md transition-shadow">
+                <CardContent className="p-8 text-center">
+                  <Avatar className="mx-auto mb-5 h-24 w-24">
+                    <AvatarFallback className="bg-accent/10 text-accent text-2xl font-heading font-700">
+                      {m.initials}
+                    </AvatarFallback>
+                  </Avatar>
+                  <h3 className="font-heading text-xl font-700 text-foreground">
+                    {m.name}
+                  </h3>
+                  <p className="mt-1 text-sm font-medium text-accent">
+                    {m.title}
+                  </p>
+                  <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+                    {m.bio}
+                  </p>
+                </CardContent>
+              </Card>
+            </Reveal>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* ─── Why the Work Matters ─── */}
+    <section className="bg-background">
       <div className="container max-w-3xl py-24 md:py-32">
         <Reveal>
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-accent">
@@ -101,82 +162,8 @@ const About = () => (
       </div>
     </section>
 
-    {/* ─── How Josiah Joined ─── */}
-    <section className="bg-background">
-      <div className="container max-w-3xl py-24 md:py-32">
-        <Reveal>
-          <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-accent">
-            A True Partner
-          </p>
-          <h2 className="font-heading text-3xl font-800 text-foreground md:text-4xl">
-            How Josiah joined.
-          </h2>
-        </Reveal>
-
-        <Reveal delay={100}>
-          <div className="mt-10 space-y-6 text-left text-base leading-relaxed text-muted-foreground md:text-lg">
-            <p>
-              As Pillar began to take shape, Caleb realized he did not just need
-              another person to help carry tasks. He needed a true partner.
-            </p>
-            <p>That is when he brought in his brother, Josiah Sherrill.</p>
-            <p>
-              Josiah came with three years of ministry recruiting experience and
-              a people-first mindset. He understood how much decisions like these
-              affect real teams, real leaders, and real families. He also brought
-              relational strength, discernment, and a natural ability to help
-              people feel seen and supported while moving through a big decision.
-            </p>
-            <p className="font-medium text-foreground">
-              What began as one founder's conviction became a shared mission. And
-              from there, Pillar has continued to grow.
-            </p>
-          </div>
-        </Reveal>
-      </div>
-    </section>
-
-    {/* ─── Why the Name Pillar ─── */}
-    <section className="bg-muted/40">
-      <div className="container max-w-3xl py-24 md:py-32">
-        <Reveal>
-          <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-accent">
-            Our Name
-          </p>
-          <h2 className="font-heading text-3xl font-800 text-foreground md:text-4xl">
-            Why the name Pillar.
-          </h2>
-        </Reveal>
-
-        <Reveal delay={100}>
-          <div className="mt-10 space-y-6 text-left text-base leading-relaxed text-muted-foreground md:text-lg">
-            <p>
-              The name Pillar comes from the image in Exodus of the Lord going
-              before His people in a pillar as He led them through unfamiliar
-              ground.
-            </p>
-            <p>That image matters to us.</p>
-            <p>
-              Not because we want to force symbolism into the business, but
-              because it captures something true about the kind of company we
-              want to be.
-            </p>
-            <p>We want to be a steady guide.</p>
-            <p>We want to bring clarity when the path feels unclear.</p>
-            <p>
-              We want to help employers move forward with wisdom, support, and
-              peace instead of pressure and confusion.
-            </p>
-            <p className="font-medium text-foreground">
-              That is what Pillar means to us.
-            </p>
-          </div>
-        </Reveal>
-      </div>
-    </section>
-
     {/* ─── What We Believe ─── */}
-    <section className="bg-background">
+    <section className="bg-muted/40">
       <div className="container max-w-3xl py-24 md:py-32">
         <Reveal>
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-accent">

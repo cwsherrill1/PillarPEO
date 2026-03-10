@@ -58,7 +58,6 @@ const Footer = () => {
                 { label: "How It Works", href: "/how-it-works" },
                 { label: "Resources", href: "/resources" },
                 { label: "About", href: "/about" },
-                { label: "Team", href: "/team" },
                 { label: "Contact", href: "/contact" },
               ].map((link) => (
                 <li key={link.href}>
@@ -83,7 +82,7 @@ const Footer = () => {
                 { label: "Switch Your PEO", href: "/switch-your-peo" },
                 { label: "PEO for Nonprofits", href: "/peo-for-nonprofits" },
                 {
-                  label: "Do We Need a PEO Yet?",
+                  label: "First-Time PEO",
                   href: "/do-we-need-a-peo",
                 },
               ].map((link) => (
@@ -96,12 +95,10 @@ const Footer = () => {
                   </Link>
                 </li>
               ))}
-            </ul>
 
-            <h4 className="mb-4 mt-8 text-xs font-bold tracking-widest text-primary-foreground/40 uppercase">
-              Company
-            </h4>
-            <ul className="space-y-2.5">
+              <h4 className="mb-4 mt-8 text-xs font-bold tracking-widest text-primary-foreground/40 uppercase">
+                Company
+              </h4>
               <li>
                 <Link
                   to="/about#why-pillar"

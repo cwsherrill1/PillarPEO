@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -15,7 +15,7 @@ const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 const solutions = [
   { label: "Switch Your PEO", href: "/switch-your-peo" },
   { label: "PEO for Nonprofits", href: "/peo-for-nonprofits" },
-  { label: "Do We Need a PEO Yet?", href: "/do-we-need-a-peo" },
+  { label: "First-Time PEO", href: "/do-we-need-a-peo" },
 ];
 
 const navLinks = [
@@ -23,8 +23,6 @@ const navLinks = [
   { label: "How It Works", href: "/how-it-works" },
   { label: "Resources", href: "/resources" },
   { label: "About", href: "/about" },
-  { label: "Team", href: "/team" },
-  { label: "Contact", href: "/contact" },
 ];
 
 const Header = () => {
@@ -128,14 +126,8 @@ const Header = () => {
           ))}
         </nav>
 
-        {/* Desktop CTAs */}
-        <div className="hidden items-center gap-3 lg:flex">
-          <Link
-            to="/resources"
-            className="text-sm font-semibold text-primary-foreground/70 transition-colors hover:text-primary-foreground"
-          >
-            Get the Buyer Guide
-          </Link>
+        {/* Desktop CTA */}
+        <div className="hidden items-center lg:flex">
           <Button
             asChild
             className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20"
@@ -221,15 +213,6 @@ const Header = () => {
                   <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" onClick={() => setMobileOpen(false)}>
                     Schedule a PEO Strategy Call
                   </a>
-                </Button>
-                <Button
-                  asChild
-                  variant="outline"
-                  className="w-full border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/5"
-                >
-                  <Link to="/resources" onClick={() => setMobileOpen(false)}>
-                    Get the Buyer Guide
-                  </Link>
                 </Button>
               </div>
             </div>

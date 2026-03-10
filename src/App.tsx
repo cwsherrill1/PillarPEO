@@ -13,7 +13,6 @@ import PeoForNonprofits from "./pages/PeoForNonprofits";
 import DoWeNeedAPeo from "./pages/DoWeNeedAPeo";
 import Resources from "./pages/Resources";
 import About from "./pages/About";
-import Team from "./pages/Team";
 import Contact from "./pages/Contact";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
@@ -37,7 +36,6 @@ const App = () => (
             <Route path="/do-we-need-a-peo" element={<DoWeNeedAPeo />} />
             <Route path="/resources" element={<Resources />} />
             <Route path="/about" element={<About />} />
-            <Route path="/team" element={<Team />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/terms" element={<Terms />} />
