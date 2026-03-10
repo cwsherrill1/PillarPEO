@@ -370,7 +370,7 @@ const Index = () => {
                   },
                   {
                     q: "What happens after we decide?",
-                    a: "Pillar helps support the handoff into onboarding so you are not left to navigate the next phase alone.",
+                    a: "Pillar helps support the handoff into onboarding so you're not left to navigate the next phase alone.",
                   },
                 ].map(({ q, a }, i) => (
                   <AccordionItem key={i} value={`faq-${i}`}>
