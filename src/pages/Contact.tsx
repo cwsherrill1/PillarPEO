@@ -15,6 +15,8 @@ import {
 import { toast } from "sonner";
 import { Reveal } from "@/components/Reveal";
 
+const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
+
 const contactCards = [
   { icon: Mail, label: "Email", value: "caleb@pillarpeo.com", href: "mailto:caleb@pillarpeo.com" },
   { icon: Phone, label: "Phone", value: "(704) 787-1261", href: "tel:7047871261" },
@@ -25,19 +27,14 @@ const steps = [
   {
     icon: Clock,
     title: "We'll reach out within 1 business day",
-    description: "A real person reviews your inquiry and follows up quickly.",
   },
   {
     icon: PhoneCall,
-    title: "Brief discovery call",
-    description:
-      "We learn about your team, benefits goals, and current setup — 15 minutes.",
+    title: "Brief 15-minute discovery call",
   },
   {
     icon: BarChart3,
-    title: "Custom PEO comparison",
-    description:
-      "You receive a side-by-side analysis of the best-fit PEO options for your organization.",
+    title: "Custom PEO comparison delivered",
   },
 ];
 
@@ -69,6 +66,17 @@ const Contact = () => {
               No sales pitch, no obligation — just an honest conversation about
               what's best for your business.
             </p>
+            <div className="mt-6">
+              <Button
+                asChild
+                size="lg"
+                className="bg-accent text-accent-foreground hover:bg-accent/90 font-heading font-700 text-base px-8"
+              >
+                <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
+                  Schedule a Call Instead
+                </a>
+              </Button>
+            </div>
           </Reveal>
         </div>
       </section>
@@ -81,7 +89,7 @@ const Contact = () => {
             <Card>
               <CardContent className="p-8">
                 <h2 className="font-heading text-2xl font-700 text-foreground mb-6">
-                  Request a consultation
+                  Or send us a message
                 </h2>
                 <form onSubmit={handleSubmit} className="space-y-5">
                   <div className="grid gap-5 sm:grid-cols-2">
@@ -201,9 +209,6 @@ const Contact = () => {
             <h2 className="font-heading text-3xl font-700 text-foreground text-center">
               What to Expect
             </h2>
-            <p className="mx-auto mt-3 max-w-xl text-center text-muted-foreground">
-              Our process is simple, structured, and completely pressure-free.
-            </p>
           </Reveal>
 
           <div className="mt-12 grid gap-8 md:grid-cols-3">
@@ -213,13 +218,9 @@ const Contact = () => {
                   <div className="flex h-14 w-14 items-center justify-center rounded-full bg-primary text-primary-foreground text-xl font-bold">
                     {i + 1}
                   </div>
-                  <step.icon className="mt-4 h-6 w-6 text-primary" />
-                  <h3 className="mt-3 font-heading text-lg font-600 text-foreground">
+                  <h3 className="mt-4 font-heading text-lg font-600 text-foreground">
                     {step.title}
                   </h3>
-                  <p className="mt-2 text-base text-muted-foreground">
-                    {step.description}
-                  </p>
                 </div>
               </Reveal>
             ))}
