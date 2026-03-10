@@ -397,7 +397,7 @@ const Index = () => {
                 Make a confident next-step decision.
               </h2>
               <p className="mt-5 text-primary-foreground/80 leading-relaxed">
-                Tell us what is not working, what matters most, and where you
+                Tell us what isn't working, what matters most, and where you
                 are in the process.
               </p>
               <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
