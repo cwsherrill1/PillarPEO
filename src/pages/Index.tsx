@@ -57,9 +57,6 @@ const Index = () => {
             </div>
 
             {/* Social proof line */}
-            <p className="mt-12 text-sm font-medium text-primary-foreground/50">
-              Serving employers with 5–150 employees · ~60-day average process · Zero cost to employers
-            </p>
           </div>
         </div>
       </section>
