@@ -209,7 +209,7 @@ const About = () => (
             Need clarity on what comes next?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">
-            Let's talk about what is working, what is not, and what a better-fit
+            Let's talk about what's working, what isn't, and what a better
             path could look like.
           </p>
         </Reveal>
