@@ -65,24 +65,11 @@ const Index = () => {
       </section>
 
       {/* ── 2. TRUST STRIP ── */}
-      <section className="border-b border-border bg-muted/40 py-8">
+      <section className="border-b border-border bg-muted/40 py-6">
         <div className="container">
-          <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
-            {[
-              { icon: ClipboardCheck, label: "Structured guidance from discovery to decision" },
-              { icon: BarChart3, label: "Side-by-side proposal review support" },
-              { icon: ShieldCheck, label: "Secure document workflow" },
-              { icon: ArrowRightLeft, label: "Transition support after the decision" },
-            ].map(({ icon: Icon, label }) => (
-              <span
-                key={label}
-                className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground"
-              >
-                <Icon size={18} className="text-accent" />
-                {label}
-              </span>
-            ))}
-          </div>
+          <p className="text-center text-sm font-medium text-muted-foreground">
+            Serving employers with 5–150 employees · Structured guidance from discovery to decision · ~60-day average process · Zero cost to employers
+          </p>
         </div>
       </section>
 
