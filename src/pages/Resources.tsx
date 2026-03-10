@@ -182,9 +182,9 @@ const Resources = () => {
                       });
                   }}
                   >
-                    <Download className="mr-2 h-4 w-4" />
-                    Get the Guide
-                  </a>
+                >
+                  <Download className="mr-2 h-4 w-4" />
+                  Get the Guide
                 </Button>
               </CardContent>
             </Card>
