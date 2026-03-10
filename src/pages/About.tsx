@@ -189,7 +189,7 @@ const About = () => (
               "Stewardship matters.",
               "Guidance should reduce fear, not create it.",
               "The right fit matters more than the loudest pitch.",
-              "Business leaders should not lose momentum to preventable complexity.",
+              "Business leaders shouldn't lose momentum to preventable complexity.",
             ].map((belief) => (
               <li key={belief} className="flex items-start gap-3">
                 <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-accent" />
