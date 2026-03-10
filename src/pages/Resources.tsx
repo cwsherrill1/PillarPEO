@@ -181,8 +181,6 @@ const Resources = () => {
                         window.URL.revokeObjectURL(url);
                       });
                   }}
-                  >
-                >
                   <Download className="mr-2 h-4 w-4" />
                   Get the Guide
                 </Button>
