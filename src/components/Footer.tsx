@@ -14,7 +14,7 @@ const Footer = () => {
               Make a confident next-step decision.
             </h3>
             <p className="mt-2 max-w-md text-primary-foreground/60">
-              Tell us what is not working and we will help you find a better-fit
+              Tell us what isn't working and we'll help you find a better-fit
               path forward.
             </p>
           </div>
