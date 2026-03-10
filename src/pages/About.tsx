@@ -56,26 +56,17 @@ const About = () => (
 
         <Reveal delay={100}>
           <div className="mt-10 space-y-6 text-left text-base leading-relaxed text-muted-foreground md:text-lg">
-            <p>Caleb Sherrill did not build Pillar from a distance.</p>
-            <p>He built it from experience.</p>
+            <p>Caleb Sherrill didn't build Pillar from a distance — he built it from experience.</p>
             <p>
-              As a business builder and operator, Caleb had already lived through
-              the kind of administrative drag that quietly steals momentum from a
-              company. In a previous business he started and ran, payroll and
-              setup complexity pulled him deep into work he was never supposed to
-              carry alone. He made mistakes. He incurred fines. He spent more
-              time than he should have inside a major payroll platform trying to
-              fix what he did not know how to structure well in the first place.
+              As a business builder and operator, he'd already lived through the
+              administrative drag that quietly steals momentum. In a previous
+              business, payroll complexity pulled him into work he was never
+              supposed to carry alone. He made mistakes. He incurred fines.
             </p>
             <p>
-              That experience changed the way he sees payroll, HR
-              infrastructure, compliance, and support.
-            </p>
-            <p>
-              It made one thing painfully clear: a lot of business leaders are
-              spending too much time solving the wrong problems. They are trying
-              to build the business while also carrying avoidable risk, avoidable
-              confusion, and avoidable administrative burden.
+              That experience made one thing clear: too many business leaders
+              spend their time solving the wrong problems — carrying avoidable
+              risk, confusion, and administrative burden.
             </p>
             <p className="font-medium text-foreground">
               Pillar was built to change that.
