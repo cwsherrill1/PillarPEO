@@ -1,4 +1,5 @@
 import { Reveal } from "@/components/Reveal";
+import SEOHead from "@/components/SEOHead";
 
 const sections = [
   {
