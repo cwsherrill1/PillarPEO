@@ -121,6 +121,26 @@ const About = () => (
       </div>
     </section>
 
+    {/* ─── Mid-Page CTA ─── */}
+    <section className="bg-accent/5 py-14">
+      <div className="container text-center">
+        <Reveal>
+          <p className="text-lg font-medium text-foreground">
+            Want to learn how Pillar can help your team?
+          </p>
+          <Button
+            asChild
+            size="lg"
+            className="mt-6 bg-accent text-accent-foreground hover:bg-accent/90 font-heading font-700 px-8"
+          >
+            <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
+              Schedule a Call
+            </a>
+          </Button>
+        </Reveal>
+      </div>
+    </section>
+
     {/* ─── Why the Work Matters ─── */}
     <section className="bg-background">
       <div className="container max-w-3xl py-24 md:py-32">
