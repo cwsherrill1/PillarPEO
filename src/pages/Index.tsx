@@ -12,10 +12,6 @@ import {
   Building2,
   CheckCircle2,
   XCircle,
-  ClipboardCheck,
-  BarChart3,
-  ShieldCheck,
-  ArrowRightLeft,
 } from "lucide-react";
 
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
