@@ -173,7 +173,8 @@ const Resources = () => {
                 >
                   <a
                     href="/guides/Employers_Guide_to_Choosing_the_Right_PEO.pdf"
-                    download
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <Download className="mr-2 h-4 w-4" />
                     Get the Guide
