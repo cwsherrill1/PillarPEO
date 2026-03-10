@@ -206,7 +206,7 @@ const Index = () => {
                 Start where you are.
               </h2>
               <p className="mt-4 text-muted-foreground">
-                Whether you are replacing a frustrating PEO, leading a nonprofit
+                Whether you're replacing a frustrating PEO, leading a nonprofit
                 team, or trying to figure out whether a PEO even makes sense
                 yet, Pillar helps you move forward with more clarity.
               </p>
