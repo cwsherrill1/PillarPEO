@@ -177,6 +177,26 @@ const Index = () => {
         </div>
       </section>
 
+      {/* ── MID-PAGE CTA ── */}
+      <section className="bg-accent/5 py-14">
+        <div className="container">
+          <Reveal>
+            <div className="mx-auto max-w-2xl text-center">
+              <p className="text-lg font-medium text-foreground">
+                Not sure which path fits? Start with a conversation.
+              </p>
+              <Button
+                size="lg"
+                className="mt-6 bg-accent text-accent-foreground hover:bg-accent/90 px-8 text-base font-semibold"
+                asChild
+              >
+                <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Schedule a PEO Strategy Call</a>
+              </Button>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       {/* ── 5. PATH SELECTOR ── */}
       <section className="bg-muted/30 py-20 md:py-28">
         <div className="container">
