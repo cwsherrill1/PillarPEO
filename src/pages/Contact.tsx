@@ -217,7 +217,7 @@ const Contact = () => {
                   <h3 className="mt-3 font-heading text-lg font-600 text-foreground">
                     {step.title}
                   </h3>
-                  <p className="mt-2 text-sm text-muted-foreground">
+                  <p className="mt-2 text-base text-muted-foreground">
                     {step.description}
                   </p>
                 </div>

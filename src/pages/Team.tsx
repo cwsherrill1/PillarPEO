@@ -137,7 +137,7 @@ const Team = () => (
             Want to talk to the team
             <br className="hidden md:block" /> behind the process?
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-primary-foreground/60">
+          <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">
             No sales pitch. Just a real conversation about your situation and
             how we can help.
           </p>
