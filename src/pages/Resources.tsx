@@ -7,6 +7,10 @@ import {
   Scale,
   Download,
   ArrowRight,
+  RefreshCw,
+  Building2,
+  ClipboardCheck,
+  Settings,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -28,24 +32,56 @@ const resources = [
     title: "5 Questions to Ask Any PEO Before Signing",
     desc: "The critical questions most employers never think to ask — until it's too late.",
     category: "Checklist",
+    href: "/resources/5-questions",
   },
   {
     icon: Scale,
     title: "Understanding Co-Employment",
     desc: "What co-employment actually means for your liability, your employees, and your control.",
     category: "Guide",
+    href: "/resources/co-employment",
   },
   {
     icon: DollarSign,
     title: "PEO Pricing: What to Watch For",
     desc: "Hidden fees, bundled costs, and renewal surprises. Read a PEO quote like an insider.",
     category: "Guide",
+    href: "/resources/peo-pricing",
   },
   {
     icon: FileText,
     title: "PEO vs. ASO vs. In-House HR",
     desc: "Not every company needs a PEO. This comparison helps you understand which model fits.",
     category: "Comparison",
+    href: "/resources/peo-vs-aso-vs-inhouse",
+  },
+  {
+    icon: RefreshCw,
+    title: "How to Switch PEOs Without Disrupting Payroll",
+    desc: "What the switching process actually looks like — and how to do it without missing a beat.",
+    category: "Guide",
+    href: "/resources/how-to-switch-peos",
+  },
+  {
+    icon: Building2,
+    title: "PEO for Nonprofits: What to Know Before You Buy",
+    desc: "What nonprofit leaders need to understand before partnering with a PEO.",
+    category: "Guide",
+    href: "/resources/peo-for-nonprofits-guide",
+  },
+  {
+    icon: ClipboardCheck,
+    title: "Is Your Company Ready for a PEO?",
+    desc: "An interactive self-assessment to see if your company is a good PEO fit.",
+    category: "Self-Assessment",
+    href: "/resources/peo-readiness",
+  },
+  {
+    icon: Settings,
+    title: "What to Expect During a PEO Implementation",
+    desc: "What the next 60–90 days look like after you sign — and how to prepare.",
+    category: "Guide",
+    href: "/resources/peo-implementation",
   },
 ];
 
@@ -135,7 +171,10 @@ const Resources = () => {
                   size="lg"
                   className="shrink-0 bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20"
                 >
-                  <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="/guides/Employers_Guide_to_Choosing_the_Right_PEO.pdf"
+                    download
+                  >
                     <Download className="mr-2 h-4 w-4" />
                     Get the Guide
                   </a>
@@ -161,7 +200,7 @@ const Resources = () => {
             </div>
           </Reveal>
 
-          <div className="mt-12 grid gap-6 sm:grid-cols-2">
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {resources.map((r, i) => (
               <Reveal key={r.title} delay={i * 80}>
                 <Card className="group h-full transition-shadow duration-300 hover:shadow-lg">
@@ -180,15 +219,13 @@ const Resources = () => {
                     <p className="mt-2 flex-1 text-base text-muted-foreground">
                       {r.desc}
                     </p>
-                    <a
-                      href={BOOKING_URL}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <Link
+                      to={r.href}
                       className="mt-4 inline-flex items-center text-sm font-semibold text-accent transition-colors hover:text-accent/80"
                     >
-                      Talk to an Advisor
+                      Read More
                       <ArrowRight className="ml-1 h-3.5 w-3.5" />
-                    </a>
+                    </Link>
                   </CardContent>
                 </Card>
               </Reveal>

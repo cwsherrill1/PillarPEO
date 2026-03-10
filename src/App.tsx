@@ -18,6 +18,16 @@ import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
 
+// Resource sub-pages
+import FiveQuestions from "./pages/resources/FiveQuestions";
+import CoEmployment from "./pages/resources/CoEmployment";
+import PeoPricing from "./pages/resources/PeoPricing";
+import PeoVsAsoVsInhouse from "./pages/resources/PeoVsAsoVsInhouse";
+import HowToSwitchPeos from "./pages/resources/HowToSwitchPeos";
+import PeoForNonprofitsGuide from "./pages/resources/PeoForNonprofitsGuide";
+import PeoReadiness from "./pages/resources/PeoReadiness";
+import PeoImplementation from "./pages/resources/PeoImplementation";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -35,6 +45,14 @@ const App = () => (
             <Route path="/peo-for-nonprofits" element={<PeoForNonprofits />} />
             <Route path="/do-we-need-a-peo" element={<DoWeNeedAPeo />} />
             <Route path="/resources" element={<Resources />} />
+            <Route path="/resources/5-questions" element={<FiveQuestions />} />
+            <Route path="/resources/co-employment" element={<CoEmployment />} />
+            <Route path="/resources/peo-pricing" element={<PeoPricing />} />
+            <Route path="/resources/peo-vs-aso-vs-inhouse" element={<PeoVsAsoVsInhouse />} />
+            <Route path="/resources/how-to-switch-peos" element={<HowToSwitchPeos />} />
+            <Route path="/resources/peo-for-nonprofits-guide" element={<PeoForNonprofitsGuide />} />
+            <Route path="/resources/peo-readiness" element={<PeoReadiness />} />
+            <Route path="/resources/peo-implementation" element={<PeoImplementation />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy" element={<Privacy />} />
