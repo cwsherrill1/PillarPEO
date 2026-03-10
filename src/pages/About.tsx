@@ -11,13 +11,13 @@ const founders = [
     initials: "CS",
     name: "Caleb Sherrill",
     title: "CEO",
-    bio: "Caleb is a business builder and the CEO of Pillar PEO Advisors. After experiencing firsthand how payroll mistakes, administrative overload, and preventable fines can pull a founder away from real growth, he built Pillar to help employers make better decisions around payroll, HR, benefits, compliance, and PEO strategy. He brings an operator's mindset to the work: practical, direct, and focused on helping leaders protect momentum.",
+    bio: "After living through payroll mistakes, fines, and administrative drag in a previous business, Caleb built Pillar to help employers make better decisions around HR, payroll, and compliance.",
   },
   {
     initials: "JS",
     name: "Josiah Sherrill",
     title: "Partner",
-    bio: "Josiah joined Pillar as Caleb realized the business needed more than support — it needed a true partner. With a background in ministry recruiting, Josiah brings a people-centered lens, relationship strength, and a deep belief that guidance matters most when decisions affect real teams and families. His role helped turn Pillar from a founder-led vision into a growing advisory business.",
+    bio: "With a background in ministry recruiting, Josiah brings a people-centered lens and relationship strength that helped turn Pillar from a founder-led vision into a growing advisory business.",
   },
 ];
 
