@@ -56,6 +56,10 @@ const Contact = () => {
 
   return (
     <>
+      <SEOHead
+        title="Contact Us"
+        description="Get in touch with Pillar PEO Advisors. Schedule a free consultation or send us a message about your PEO needs."
+      />
       {/* Hero */}
       <section className="bg-primary py-20 md:py-28">
         <div className="container text-center">
