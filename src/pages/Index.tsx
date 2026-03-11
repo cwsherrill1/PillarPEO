@@ -315,6 +315,16 @@ const Index = () => {
               myth: "\u201CSwitching is too disruptive.\u201D",
               truth:
               "Staying in the wrong setup often creates its own ongoing disruption. A guided transition can be far more manageable than people expect."
+            },
+            {
+              myth: "\u201CWe\u2019re too small to need a PEO.\u201D",
+              truth:
+              "Employers with as few as 5 employees often benefit the most \u2014 better benefits, compliance coverage, and time back for leadership."
+            },
+            {
+              myth: "\u201CPEOs are just glorified payroll companies.\u201D",
+              truth:
+              "Payroll is one piece. The real value is in benefits access, risk management, and HR infrastructure you\u2019d otherwise have to build yourself."
             }].
             map(({ myth, truth }, i) =>
             <Reveal key={i} delay={i * 120}>
