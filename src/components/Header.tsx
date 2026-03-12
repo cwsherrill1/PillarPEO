@@ -85,7 +85,7 @@ const Header = () => {
             </button>
             {solutionsOpen && (
               <div className="absolute left-0 top-full pt-2">
-                <div className="w-64 rounded-lg border border-primary-foreground/10 bg-primary p-2 shadow-xl">
+                <div className="w-64 rounded-lg border border-border bg-background p-2 shadow-xl">
                   {solutions.map((sol) => (
                     <Link
                       key={sol.href}
