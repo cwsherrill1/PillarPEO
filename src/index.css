@@ -104,3 +104,12 @@
 .card-elevated {
   box-shadow: 0 8px 30px -12px hsl(236 96% 15% / 0.12);
 }
+
+/* Utility: hover lift for cards */
+.hover-lift {
+  @apply transition-all duration-300;
+}
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px -12px hsl(236 96% 15% / 0.18);
+}

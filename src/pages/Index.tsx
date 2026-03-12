@@ -416,7 +416,8 @@ const Index = () => {
       </section>
 
       {/* ── 8. FINAL CTA ── */}
-      <section className="bg-primary text-primary-foreground py-20 md:py-28">
+      <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary to-[hsl(236,70%,22%)] text-primary-foreground py-20 md:py-28">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,hsl(145_63%_49%/0.08),transparent_60%)]" />
         <div className="container">
           <Reveal>
             <div className="mx-auto max-w-2xl text-center">
