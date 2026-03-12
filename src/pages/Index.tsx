@@ -21,7 +21,7 @@ const orgJsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   name: "Pillar PEO Advisors",
-  url: "https://pillarpeo.lovable.app",
+  url: "https://pillarpeo.com",
   description: "Independent PEO advisory firm helping employers compare PEO options and make confident decisions.",
   serviceType: "PEO Advisory",
   areaServed: "US"
