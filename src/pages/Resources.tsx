@@ -87,6 +87,27 @@ const resources = [
   },
 ];
 
+const insights = [
+  {
+    title: "How Much Does a PEO Cost?",
+    desc: "A breakdown of PEO pricing models, what drives costs, and how to compare quotes.",
+    date: "2025",
+    href: "/resources/peo-pricing",
+  },
+  {
+    title: "PEO vs. HR Outsourcing: What's the Difference?",
+    desc: "Understanding the key differences between PEOs, ASOs, and traditional HR outsourcing.",
+    date: "2025",
+    href: "/resources/peo-vs-aso-vs-inhouse",
+  },
+  {
+    title: "Should Your Business Use a PEO?",
+    desc: "How to know if a PEO is the right fit for your company's size, stage, and goals.",
+    date: "2025",
+    href: "/resources/peo-readiness",
+  },
+];
+
 const faqs = [
   {
     q: "How do I use the Buyer Guide?",
