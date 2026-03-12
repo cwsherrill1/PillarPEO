@@ -93,8 +93,8 @@ const Header = () => {
                       className={cn(
                         "block rounded-md px-3 py-2.5 text-sm font-semibold transition-colors",
                         isActive(sol.href)
-                          ? "bg-accent/20 text-accent"
-                          : "text-primary-foreground/80 hover:bg-primary-foreground/5 hover:text-primary-foreground"
+                          ? "bg-accent/10 text-accent"
+                          : "text-foreground/70 hover:bg-muted hover:text-foreground"
                       )}
                       onClick={() => setSolutionsOpen(false)}
                     >
