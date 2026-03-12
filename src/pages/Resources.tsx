@@ -140,7 +140,15 @@ const faqJsonLd = {
   })),
 };
 
+const categories = ["All", "Guide", "Checklist", "Comparison", "Self-Assessment"];
+
 const Resources = () => {
+  const [activeCategory, setActiveCategory] = useState("All");
+
+  const filteredResources = activeCategory === "All"
+    ? resources
+    : resources.filter((r) => r.category === activeCategory);
+
   return (
     <>
       <SEOHead
