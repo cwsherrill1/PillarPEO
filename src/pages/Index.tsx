@@ -36,7 +36,8 @@ const Index = () => {
         jsonLd={orgJsonLd} />
       
       {/* ── 1. HERO ── */}
-      <section className="relative overflow-hidden bg-primary text-primary-foreground">
+      <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary to-[hsl(236,70%,22%)] text-primary-foreground">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,hsl(145_63%_49%/0.08),transparent_60%)]" />
         <div className="container relative z-10 py-24 md:py-32 lg:py-40">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="font-heading text-4xl font-800 leading-[1.1] md:text-5xl lg:text-6xl">
