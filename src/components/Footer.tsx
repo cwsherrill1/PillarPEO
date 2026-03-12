@@ -35,12 +35,11 @@ const Footer = () => {
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-1">
-              <div className="h-7 w-1 rounded-full bg-accent" />
-              <span className="font-heading text-lg font-800 tracking-tight">
-                PILLAR
-              </span>
-            </div>
+            <img
+              src="/pillar-logo.png"
+              alt="Pillar PEO Advisors"
+              className="h-10 w-auto brightness-0 invert"
+            />
             <p className="mt-4 text-sm leading-relaxed text-primary-foreground/50">
               Guidance for employers making high-stakes PEO decisions. Clarity
               over confusion. Confidence over guesswork.
