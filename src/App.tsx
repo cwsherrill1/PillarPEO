@@ -1,6 +1,6 @@
 import React from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -57,6 +57,19 @@ const App = () => (
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/terms" element={<Terms />} />
+            {/* 301 redirects from old pillarpeo.com URLs */}
+            <Route path="/services" element={<Navigate to="/how-it-works" replace />} />
+            <Route path="/why-peo" element={<Navigate to="/do-we-need-a-peo" replace />} />
+            <Route path="/industries" element={<Navigate to="/peo-for-nonprofits" replace />} />
+            <Route path="/nonprofit-toolkit" element={<Navigate to="/peo-for-nonprofits" replace />} />
+            <Route path="/peo-onboarding" element={<Navigate to="/switch-your-peo" replace />} />
+            <Route path="/roi-calculator" element={<Navigate to="/resources/peo-pricing" replace />} />
+            <Route path="/blog" element={<Navigate to="/resources" replace />} />
+            <Route path="/blog/peo-roi-calculator" element={<Navigate to="/resources/peo-pricing" replace />} />
+            <Route path="/blog/how-much-peo-costs" element={<Navigate to="/resources/peo-pricing" replace />} />
+            <Route path="/blog/peo-vs-hr-outsourcing" element={<Navigate to="/resources/peo-vs-aso-vs-inhouse" replace />} />
+            <Route path="/blog/should-your-business-use-peo" element={<Navigate to="/resources/peo-readiness" replace />} />
+            <Route path="/blog/what-is-a-peo-broker-charlotte-nc" element={<Navigate to="/about" replace />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>
