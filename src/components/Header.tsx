@@ -36,16 +36,12 @@ const Header = () => {
     <header className="sticky top-0 z-50 w-full border-b border-primary/10 bg-primary/95 backdrop-blur-md">
       <div className="container flex h-16 items-center justify-between md:h-20">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2">
-          <div className="flex items-center gap-1">
-            <div className="h-8 w-1 rounded-full bg-accent" />
-            <span className="font-heading text-xl font-800 tracking-tight text-primary-foreground md:text-2xl">
-              PILLAR
-            </span>
-          </div>
-          <span className="hidden text-xs font-semibold tracking-widest text-primary-foreground/50 uppercase sm:inline">
-            PEO Advisors
-          </span>
+        <Link to="/" className="flex items-center">
+          <img
+            src="/pillar-logo.png"
+            alt="Pillar PEO Advisors"
+            className="h-10 md:h-12 w-auto"
+          />
         </Link>
 
         {/* Desktop Nav */}
