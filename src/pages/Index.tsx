@@ -36,7 +36,8 @@ const Index = () => {
         jsonLd={orgJsonLd} />
       
       {/* ── 1. HERO ── */}
-      <section className="relative overflow-hidden bg-primary text-primary-foreground">
+      <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary to-[hsl(236,70%,22%)] text-primary-foreground">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,hsl(145_63%_49%/0.08),transparent_60%)]" />
         <div className="container relative z-10 py-24 md:py-32 lg:py-40">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="font-heading text-4xl font-800 leading-[1.1] md:text-5xl lg:text-6xl">
@@ -117,7 +118,7 @@ const Index = () => {
             }].
             map(({ icon: Icon, title, desc }, i) =>
             <Reveal key={title} delay={i * 100}>
-                <Card className="h-full border-border/60 card-elevated">
+                <Card className="h-full border-border/60 card-elevated hover-lift">
                   <CardContent className="p-6">
                     <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-md bg-destructive/10 text-destructive">
                       <Icon size={20} />
@@ -263,8 +264,8 @@ const Index = () => {
             }].
             map(({ icon: Icon, title, desc, href, cta, accent, border, glow }, i) =>
             <Reveal key={title} delay={i * 120}>
-                <Card
-                className={`group relative h-full transition-shadow duration-300 ${border} ${glow} card-elevated`}>
+              <Card
+                className={`group relative h-full transition-all duration-300 ${border} ${glow} card-elevated hover-lift`}>
                 
                   <CardContent className="flex h-full flex-col p-8">
                     <div
@@ -415,7 +416,8 @@ const Index = () => {
       </section>
 
       {/* ── 8. FINAL CTA ── */}
-      <section className="bg-primary text-primary-foreground py-20 md:py-28">
+      <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary to-[hsl(236,70%,22%)] text-primary-foreground py-20 md:py-28">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,hsl(145_63%_49%/0.08),transparent_60%)]" />
         <div className="container">
           <Reveal>
             <div className="mx-auto max-w-2xl text-center">

@@ -7,8 +7,12 @@ import {
   BarChart3,
   Monitor,
   Handshake,
+  Calendar,
+  Layers,
+  DollarSign,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import { Reveal } from "@/components/Reveal";
 
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
@@ -52,15 +56,31 @@ const stages = [
   },
 ];
 
+const timelinePhases = [
+  { label: "Discovery", weeks: "Week 1", width: "12%", color: "bg-accent" },
+  { label: "Data Gathering", weeks: "Week 2–3", width: "20%", color: "bg-secondary" },
+  { label: "Underwriting", weeks: "Week 3–5", width: "24%", color: "bg-soft-blue" },
+  { label: "Review & Demos", weeks: "Week 5–7", width: "24%", color: "bg-accent" },
+  { label: "Decision & Onboarding", weeks: "Week 7–9", width: "20%", color: "bg-primary" },
+];
+
+const stats = [
+  { icon: Calendar, value: "~60", suffix: "days", label: "Typical timeline" },
+  { icon: Layers, value: "6", suffix: "stages", label: "Structured process" },
+  { icon: DollarSign, value: "Zero", suffix: "cost", label: "To employers" },
+];
+
 const HowItWorks = () => (
   <>
     <SEOHead
       title="How It Works"
       description="Pillar's six-stage process takes you from discovery to decision in about 60 days — with clarity at every step."
     />
+
     {/* Hero */}
-    <section className="bg-primary text-primary-foreground">
-      <div className="container py-24 md:py-32 text-center max-w-3xl">
+    <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary to-[hsl(236,70%,22%)] text-primary-foreground">
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,hsl(145_63%_49%/0.08),transparent_60%)]" />
+      <div className="container relative z-10 py-24 md:py-32 text-center max-w-3xl">
         <Reveal>
           <h1 className="font-heading text-4xl md:text-5xl font-800 leading-tight">
             A clear process for a decision that carries real weight.
@@ -70,6 +90,31 @@ const HowItWorks = () => (
             process built around clarity, timing, and fit.
           </p>
         </Reveal>
+      </div>
+    </section>
+
+    {/* Stats Strip */}
+    <section className="border-b border-border bg-background py-12">
+      <div className="container">
+        <div className="mx-auto grid max-w-3xl grid-cols-3 gap-8">
+          {stats.map((s, i) => {
+            const Icon = s.icon;
+            return (
+              <Reveal key={s.label} delay={i * 120}>
+                <div className="text-center">
+                  <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-accent/10 text-accent">
+                    <Icon size={22} />
+                  </div>
+                  <p className="font-heading text-3xl font-800 text-foreground md:text-4xl">
+                    {s.value}
+                    <span className="ml-1 text-lg font-600 text-muted-foreground">{s.suffix}</span>
+                  </p>
+                  <p className="mt-1 text-sm text-muted-foreground">{s.label}</p>
+                </div>
+              </Reveal>
+            );
+          })}
+        </div>
       </div>
     </section>
 
@@ -87,29 +132,32 @@ const HowItWorks = () => (
         </Reveal>
 
         <div className="mt-16 relative">
-          <div className="absolute left-6 md:left-8 top-0 bottom-0 w-px bg-border hidden sm:block" />
+          {/* Gradient timeline line */}
+          <div className="absolute left-6 md:left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-accent via-secondary to-primary hidden sm:block rounded-full" />
 
-          <div className="space-y-12">
+          <div className="space-y-6">
             {stages.map((s, i) => {
               const Icon = s.icon;
               return (
                 <Reveal key={s.num} delay={i * 100}>
-                  <div className="flex gap-6 md:gap-8 items-start relative">
-                    <div className="relative z-10 flex-shrink-0 w-12 h-12 md:w-16 md:h-16 rounded-full bg-accent flex items-center justify-center text-accent-foreground font-heading text-lg md:text-xl font-800 shadow-md">
-                      {s.num}
-                    </div>
-                    <div>
-                      <div className="flex items-center gap-2 mb-2">
-                        <Icon className="w-5 h-5 text-accent" />
-                        <h3 className="font-heading text-xl md:text-2xl font-700 text-foreground">
-                          {s.title}
-                        </h3>
+                  <Card className="relative border-l-4 border-l-accent hover-lift card-elevated">
+                    <CardContent className="p-6 flex gap-5 md:gap-7 items-start">
+                      <div className="relative z-10 flex-shrink-0 w-12 h-12 md:w-14 md:h-14 rounded-full bg-accent flex items-center justify-center text-accent-foreground font-heading text-lg md:text-xl font-800 shadow-md">
+                        {s.num}
                       </div>
-                      <p className="text-muted-foreground leading-relaxed max-w-xl">
-                        {s.desc}
-                      </p>
-                    </div>
-                  </div>
+                      <div>
+                        <div className="flex items-center gap-2 mb-2">
+                          <Icon className="w-5 h-5 text-accent" />
+                          <h3 className="font-heading text-xl md:text-2xl font-700 text-foreground">
+                            {s.title}
+                          </h3>
+                        </div>
+                        <p className="text-muted-foreground leading-relaxed max-w-xl">
+                          {s.desc}
+                        </p>
+                      </div>
+                    </CardContent>
+                  </Card>
                 </Reveal>
               );
             })}
@@ -118,42 +166,71 @@ const HowItWorks = () => (
       </div>
     </section>
 
-    {/* Timeline */}
+    {/* Visual Progress Bar Timeline */}
     <section className="bg-muted/40">
-      <div className="container py-20 md:py-28 max-w-3xl">
+      <div className="container py-20 md:py-28 max-w-4xl">
         <Reveal>
           <h2 className="font-heading text-3xl md:text-4xl font-800 text-foreground text-center">
             What the timeline usually looks like.
           </h2>
-          <p className="mt-6 text-muted-foreground text-center leading-relaxed">
+          <p className="mt-4 text-muted-foreground text-center max-w-2xl mx-auto">
             A typical process takes around 60 days from first conversation to
-            signed agreement — though timing depends on complexity and how
-            quickly information moves.
+            signed agreement — though timing depends on complexity.
           </p>
         </Reveal>
 
-        <Reveal delay={100}>
-          <ul className="mt-10 space-y-3 text-muted-foreground">
-            {[
-              "Discovery happens early",
-              "Data gathering takes 1–2 weeks",
-              "Proposals may take 1–2 weeks after submission",
-              "Decision support and paperwork follow from there",
-              "Onboarding timing depends on complexity",
-            ].map((item) => (
-              <li key={item} className="flex items-start gap-3">
-                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
+        {/* Desktop horizontal bar */}
+        <Reveal delay={200}>
+          <div className="mt-14 hidden md:block">
+            <div className="flex h-14 rounded-xl overflow-hidden shadow-md">
+              {timelinePhases.map((phase, i) => (
+                <div
+                  key={phase.label}
+                  className={`${phase.color} relative flex items-center justify-center transition-all duration-700 ease-out ${
+                    i === 0 ? "rounded-l-xl" : ""
+                  } ${i === timelinePhases.length - 1 ? "rounded-r-xl" : ""}`}
+                  style={{ width: phase.width }}
+                >
+                  {/* Separator */}
+                  {i > 0 && (
+                    <div className="absolute left-0 top-2 bottom-2 w-px bg-background/30" />
+                  )}
+                </div>
+              ))}
+            </div>
+            {/* Labels */}
+            <div className="flex mt-4">
+              {timelinePhases.map((phase) => (
+                <div key={phase.label} style={{ width: phase.width }} className="px-1 text-center">
+                  <p className="text-sm font-heading font-700 text-foreground">{phase.label}</p>
+                  <p className="text-xs text-muted-foreground">{phase.weeks}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </Reveal>
+
+        {/* Mobile vertical timeline */}
+        <div className="mt-12 md:hidden space-y-4">
+          {timelinePhases.map((phase, i) => (
+            <Reveal key={phase.label} delay={i * 80}>
+              <div className="flex items-center gap-4">
+                <div className={`w-4 h-4 rounded-full ${phase.color} shadow-sm flex-shrink-0`} />
+                <div className="flex-1 flex items-center justify-between bg-card rounded-lg p-4 shadow-sm border border-border">
+                  <span className="font-heading font-700 text-foreground text-sm">{phase.label}</span>
+                  <span className="text-xs text-muted-foreground">{phase.weeks}</span>
+                </div>
+              </div>
+            </Reveal>
+          ))}
+        </div>
       </div>
     </section>
 
     {/* Final CTA */}
-    <section className="bg-primary text-primary-foreground">
-      <div className="container py-24 md:py-32 text-center max-w-2xl">
+    <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary to-[hsl(236,70%,22%)] text-primary-foreground">
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,hsl(145_63%_49%/0.08),transparent_60%)]" />
+      <div className="container relative z-10 py-24 md:py-32 text-center max-w-2xl">
         <Reveal>
           <h2 className="font-heading text-3xl md:text-4xl font-800">
             Ready to compare your options?
