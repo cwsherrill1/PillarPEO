@@ -118,7 +118,7 @@ const Index = () => {
             }].
             map(({ icon: Icon, title, desc }, i) =>
             <Reveal key={title} delay={i * 100}>
-                <Card className="h-full border-border/60 card-elevated">
+                <Card className="h-full border-border/60 card-elevated hover-lift">
                   <CardContent className="p-6">
                     <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-md bg-destructive/10 text-destructive">
                       <Icon size={20} />
