@@ -137,7 +137,7 @@ const Header = () => {
         {/* Mobile Menu */}
         <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
           <SheetTrigger asChild className="lg:hidden">
-            <button className="p-2 text-primary-foreground">
+            <button className="p-2 text-foreground">
               <Menu className="h-6 w-6" />
             </button>
           </SheetTrigger>
