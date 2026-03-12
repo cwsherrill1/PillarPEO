@@ -8,7 +8,7 @@ interface SEOHeadProps {
 }
 
 const SITE_NAME = "Pillar PEO Advisors";
-const BASE_URL = "https://pillarpeo.lovable.app";
+const BASE_URL = "https://pillarpeo.com";
 
 const SEOHead = ({ title, description, canonical, jsonLd }: SEOHeadProps) => {
   useEffect(() => {
