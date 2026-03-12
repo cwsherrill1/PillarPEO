@@ -237,8 +237,26 @@ const Resources = () => {
             </div>
           </Reveal>
 
+          <Reveal delay={50}>
+            <div className="mt-8 flex flex-wrap justify-center gap-2">
+              {categories.map((cat) => (
+                <button
+                  key={cat}
+                  onClick={() => setActiveCategory(cat)}
+                  className={`rounded-full px-4 py-1.5 text-sm font-semibold transition-colors cursor-pointer ${
+                    activeCategory === cat
+                      ? "bg-primary text-primary-foreground"
+                      : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
+                  }`}
+                >
+                  {cat}
+                </button>
+              ))}
+            </div>
+          </Reveal>
+
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {resources.map((r, i) => (
+            {filteredResources.map((r, i) => (
               <Reveal key={r.title} delay={i * 80}>
                 <Card className="group h-full transition-shadow duration-300 hover:shadow-lg">
                   <CardContent className="flex h-full flex-col p-6">
@@ -265,6 +283,53 @@ const Resources = () => {
                     </Link>
                   </CardContent>
                 </Card>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* PEO Insights */}
+      <section className="py-20 md:py-28">
+        <div className="container">
+          <Reveal>
+            <div className="flex items-center justify-center gap-3">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10">
+                <Newspaper className="h-5 w-5 text-primary" />
+              </div>
+              <h2 className="font-heading text-3xl font-800 text-foreground md:text-4xl">
+                PEO Insights
+              </h2>
+            </div>
+            <p className="mx-auto mt-4 max-w-xl text-center text-muted-foreground">
+              Shorter reads on common PEO questions — written for busy employers.
+            </p>
+          </Reveal>
+
+          <div className="mx-auto mt-12 max-w-3xl space-y-4">
+            {insights.map((item, i) => (
+              <Reveal key={item.title} delay={i * 80}>
+                <Link to={item.href} className="group block">
+                  <Card className="transition-shadow duration-300 hover:shadow-lg">
+                    <CardContent className="flex items-center gap-5 p-5">
+                      <div className="flex-1">
+                        <div className="flex items-center gap-2">
+                          <Badge className="bg-primary/10 text-primary hover:bg-primary/20 text-xs">
+                            Article
+                          </Badge>
+                          <span className="text-xs text-muted-foreground">{item.date}</span>
+                        </div>
+                        <h3 className="mt-2 font-heading text-base font-700 text-foreground group-hover:text-accent transition-colors">
+                          {item.title}
+                        </h3>
+                        <p className="mt-1 text-sm text-muted-foreground">
+                          {item.desc}
+                        </p>
+                      </div>
+                      <ArrowRight className="h-4 w-4 shrink-0 text-muted-foreground group-hover:text-accent transition-colors" />
+                    </CardContent>
+                  </Card>
+                </Link>
               </Reveal>
             ))}
           </div>
