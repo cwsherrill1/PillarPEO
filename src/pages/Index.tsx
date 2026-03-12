@@ -264,8 +264,8 @@ const Index = () => {
             }].
             map(({ icon: Icon, title, desc, href, cta, accent, border, glow }, i) =>
             <Reveal key={title} delay={i * 120}>
-                <Card
-                className={`group relative h-full transition-shadow duration-300 ${border} ${glow} card-elevated`}>
+              <Card
+                className={`group relative h-full transition-all duration-300 ${border} ${glow} card-elevated hover-lift`}>
                 
                   <CardContent className="flex h-full flex-col p-8">
                     <div
