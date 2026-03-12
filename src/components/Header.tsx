@@ -33,14 +33,14 @@ const Header = () => {
   const isActive = (href: string) => location.pathname === href;
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-primary/10 bg-primary/95 backdrop-blur-md">
+    <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur-md">
       <div className="container flex h-16 items-center justify-between md:h-20">
         {/* Logo */}
         <Link to="/" className="flex items-center">
           <img
             src="/pillar-logo.png"
             alt="Pillar PEO Advisors"
-            className="h-10 md:h-12 w-auto"
+            className="h-12 md:h-14 w-auto"
           />
         </Link>
 
@@ -54,7 +54,7 @@ const Header = () => {
                 "rounded-md px-3 py-2 text-sm font-semibold transition-colors",
                 isActive(link.href)
                   ? "text-accent"
-                  : "text-primary-foreground/80 hover:text-primary-foreground"
+                  : "text-foreground/70 hover:text-foreground"
               )}
             >
               {link.label}
@@ -72,7 +72,7 @@ const Header = () => {
                 "inline-flex items-center gap-1 rounded-md px-3 py-2 text-sm font-semibold transition-colors",
                 solutions.some((s) => isActive(s.href))
                   ? "text-accent"
-                  : "text-primary-foreground/80 hover:text-primary-foreground"
+                  : "text-foreground/70 hover:text-foreground"
               )}
             >
               Solutions
@@ -85,7 +85,7 @@ const Header = () => {
             </button>
             {solutionsOpen && (
               <div className="absolute left-0 top-full pt-2">
-                <div className="w-64 rounded-lg border border-primary-foreground/10 bg-primary p-2 shadow-xl">
+                <div className="w-64 rounded-lg border border-border bg-background p-2 shadow-xl">
                   {solutions.map((sol) => (
                     <Link
                       key={sol.href}
@@ -93,8 +93,8 @@ const Header = () => {
                       className={cn(
                         "block rounded-md px-3 py-2.5 text-sm font-semibold transition-colors",
                         isActive(sol.href)
-                          ? "bg-accent/20 text-accent"
-                          : "text-primary-foreground/80 hover:bg-primary-foreground/5 hover:text-primary-foreground"
+                          ? "bg-accent/10 text-accent"
+                          : "text-foreground/70 hover:bg-muted hover:text-foreground"
                       )}
                       onClick={() => setSolutionsOpen(false)}
                     >
@@ -114,7 +114,7 @@ const Header = () => {
                 "rounded-md px-3 py-2 text-sm font-semibold transition-colors",
                 isActive(link.href)
                   ? "text-accent"
-                  : "text-primary-foreground/80 hover:text-primary-foreground"
+                  : "text-foreground/70 hover:text-foreground"
               )}
             >
               {link.label}
@@ -137,7 +137,7 @@ const Header = () => {
         {/* Mobile Menu */}
         <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
           <SheetTrigger asChild className="lg:hidden">
-            <button className="p-2 text-primary-foreground">
+            <button className="p-2 text-foreground">
               <Menu className="h-6 w-6" />
             </button>
           </SheetTrigger>
