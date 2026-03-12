@@ -123,7 +123,7 @@ const Header = () => {
         </nav>
 
         {/* Desktop CTA */}
-        <div className="hidden items-center lg:flex">
+        <div className="hidden items-center md:flex">
           <Button
             asChild
             className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20"
