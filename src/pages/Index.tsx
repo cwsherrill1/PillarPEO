@@ -415,40 +415,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* ── 8. FINAL CTA ── */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary to-[hsl(236,70%,22%)] text-primary-foreground py-20 md:py-28">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,hsl(145_63%_49%/0.08),transparent_60%)]" />
-        <div className="container">
-          <Reveal>
-            <div className="mx-auto max-w-2xl text-center">
-              <h2 className="font-heading text-3xl font-800 md:text-4xl">
-                Make a confident next-step decision.
-              </h2>
-              <p className="mt-5 text-primary-foreground/80 leading-relaxed">
-                Tell us what isn't working, what matters most, and where you
-                are in the process.
-              </p>
-              <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-                <Button
-                  size="lg"
-                  className="bg-accent text-accent-foreground hover:bg-accent/90 px-8 text-base font-semibold shadow-lg shadow-accent/20"
-                  asChild>
-                  
-                  <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Schedule a PEO Strategy Call</a>
-                </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 px-8 text-base"
-                  asChild>
-                  
-                  <Link to="/resources">See Our Resources</Link>
-                </Button>
-              </div>
-            </div>
-          </Reveal>
-        </div>
-      </section>
     </>);
 
 };
