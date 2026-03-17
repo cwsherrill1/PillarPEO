@@ -34,18 +34,18 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur-md">
-      <div className="container flex h-20 items-center justify-between md:h-24">
+      <div className="container flex h-20 items-center justify-between lg:h-24">
         {/* Logo */}
         <Link to="/" className="flex items-center">
           <img
             src="/pillar-logo.png"
             alt="Pillar PEO Advisors"
-            className="h-16 md:h-20 w-auto"
+            className="h-16 lg:h-20 w-auto"
           />
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden items-center gap-1 md:flex">
+        <nav className="hidden items-center gap-1 lg:flex">
           {navLinks.slice(0, 2).map((link) => (
             <Link
               key={link.href}
@@ -123,7 +123,7 @@ const Header = () => {
         </nav>
 
         {/* Desktop CTA */}
-        <div className="hidden items-center md:flex">
+        <div className="hidden items-center lg:flex">
           <Button
             asChild
             className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20"
@@ -136,7 +136,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
-          <SheetTrigger asChild className="md:hidden">
+          <SheetTrigger asChild className="lg:hidden">
             <button className="p-2 text-foreground">
               <Menu className="h-6 w-6" />
             </button>
