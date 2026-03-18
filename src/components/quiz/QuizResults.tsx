@@ -1,4 +1,5 @@
-import { useMemo } from "react";
+import { useMemo, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -17,14 +18,16 @@ const QuizResults = ({ answers }: QuizResultsProps) => {
   const score = useMemo(() => answers.reduce((a, b) => a + b, 0), [answers]);
   const tierInfo = useMemo(() => getTierInfo(score), [score]);
 
-  // Pair each answer with its question, sort by score desc
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const rankedAnswers = useMemo(() => {
     return answers
       .map((s, i) => ({ score: s, question: quizQuestions[i] }))
       .sort((a, b) => b.score - a.score);
   }, [answers]);
 
-  const topPainPoints = rankedAnswers.slice(0, tierInfo.painPointCount);
   const headacheCards = rankedAnswers.filter((a) => a.score === 3);
 
   const handleShare = async () => {
@@ -36,13 +39,6 @@ const QuizResults = ({ answers }: QuizResultsProps) => {
       toast.error("Couldn't copy — try manually.");
     }
   };
-
-  const painPointLabel =
-    tierInfo.tier === 1
-      ? "Watch out for:"
-      : tierInfo.tier === 2
-        ? "Your biggest HR pain points right now:"
-        : "What's hurting you most right now:";
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-12 animate-fade-in">
@@ -71,26 +67,6 @@ const QuizResults = ({ answers }: QuizResultsProps) => {
           {tierInfo.headline}
         </h2>
         <p className="mx-auto max-w-xl text-muted-foreground">{tierInfo.body}</p>
-      </div>
-
-      {/* Pain Points */}
-      <div className="mb-8">
-        <h3 className="mb-4 font-heading text-xl font-semibold text-foreground">
-          {painPointLabel}
-        </h3>
-        <div className="space-y-3">
-          {topPainPoints.map(({ question }) => (
-            <Card key={question.id} className="border-l-4" style={{ borderLeftColor: tierInfo.color }}>
-              <CardContent className="flex items-start gap-3 p-4">
-                <Target className="mt-0.5 h-5 w-5 shrink-0 text-muted-foreground" />
-                <div>
-                  <p className="font-medium text-foreground">{question.topic}</p>
-                  <p className="text-sm text-muted-foreground">{question.quickWin}</p>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
       </div>
 
       {/* CTA */}
@@ -151,9 +127,9 @@ const QuizResults = ({ answers }: QuizResultsProps) => {
         </p>
         <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
           <Button asChild variant="outline">
-            <a href="https://pillarpeo.com" target="_blank" rel="noopener noreferrer">
+            <Link to="/">
               Learn more at pillarpeo.com
-            </a>
+            </Link>
           </Button>
           <Button asChild>
             <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">

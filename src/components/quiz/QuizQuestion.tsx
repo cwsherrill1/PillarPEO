@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Progress } from "@/components/ui/progress";
+import { ArrowLeft } from "lucide-react";
 import type { QuizQuestion as QuizQuestionType } from "@/data/quizQuestions";
 
 interface QuizQuestionProps {
@@ -7,6 +8,7 @@ interface QuizQuestionProps {
   questionIndex: number;
   totalQuestions: number;
   onAnswer: (score: 1 | 2 | 3) => void;
+  onBack?: () => void;
 }
 
 const QuizQuestion = ({
@@ -14,6 +16,7 @@ const QuizQuestion = ({
   questionIndex,
   totalQuestions,
   onAnswer,
+  onBack,
 }: QuizQuestionProps) => {
   const [animKey, setAnimKey] = useState(questionIndex);
 
@@ -21,7 +24,7 @@ const QuizQuestion = ({
     setAnimKey(questionIndex);
   }, [questionIndex]);
 
-  const progress = ((questionIndex) / totalQuestions) * 100;
+  const progress = ((questionIndex + 1) / totalQuestions) * 100;
 
   return (
     <div className="mx-auto flex min-h-[70vh] max-w-2xl flex-col items-center justify-center px-4">
@@ -59,6 +62,17 @@ const QuizQuestion = ({
             </button>
           ))}
         </div>
+
+        {questionIndex > 0 && onBack && (
+          <button
+            type="button"
+            onClick={onBack}
+            className="mt-4 flex items-center gap-1 text-sm text-muted-foreground transition-colors hover:text-foreground mx-auto"
+          >
+            <ArrowLeft className="h-4 w-4" />
+            Back
+          </button>
+        )}
       </div>
     </div>
   );

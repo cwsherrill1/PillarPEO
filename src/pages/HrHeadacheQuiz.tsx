@@ -28,8 +28,22 @@ const HrHeadacheQuiz = () => {
     [answers, currentQ],
   );
 
-  const handleEmailSubmit = useCallback(() => setStep("results"), []);
-  const handleSkip = useCallback(() => setStep("results"), []);
+  const handleBack = useCallback(() => {
+    if (currentQ > 0) {
+      setCurrentQ((q) => q - 1);
+      setAnswers((prev) => prev.slice(0, -1));
+    }
+  }, [currentQ]);
+
+  const handleEmailSubmit = useCallback(() => {
+    window.scrollTo(0, 0);
+    setStep("results");
+  }, []);
+
+  const handleSkip = useCallback(() => {
+    window.scrollTo(0, 0);
+    setStep("results");
+  }, []);
 
   return (
     <>
@@ -45,6 +59,7 @@ const HrHeadacheQuiz = () => {
           questionIndex={currentQ}
           totalQuestions={quizQuestions.length}
           onAnswer={handleAnswer}
+          onBack={handleBack}
         />
       )}
       {step === "email" && (
