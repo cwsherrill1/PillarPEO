@@ -41,14 +41,13 @@ const Index = () => {
         <div className="container relative z-10 py-24 md:py-32 lg:py-40">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="font-heading text-4xl font-800 leading-[1.1] md:text-5xl lg:text-6xl">
-              Compare PEO options
+              Simplify your Human Resources.
               <br />
-              <span className="text-accent">without guessing.</span>
+              <span className="text-accent">Focus on your people, not paperwork.</span>
             </h1>
 
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-primary-foreground/80">
-              Compare payroll, benefits, HR, and compliance options — with less
-              pressure, less confusion, and less risk.
+              Get the best HR setup for your business — without guessing, confusion, or headaches.
             </p>
 
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
