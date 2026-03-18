@@ -75,6 +75,7 @@ const QuizQuestion = ({
         )}
       </div>
     </div>
+  );
 };
 
 export default QuizQuestion;
