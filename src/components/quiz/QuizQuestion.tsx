@@ -24,7 +24,7 @@ const QuizQuestion = ({
     setAnimKey(questionIndex);
   }, [questionIndex]);
 
-  const progress = ((questionIndex) / totalQuestions) * 100;
+  const progress = ((questionIndex + 1) / totalQuestions) * 100;
 
   return (
     <div className="mx-auto flex min-h-[70vh] max-w-2xl flex-col items-center justify-center px-4">
