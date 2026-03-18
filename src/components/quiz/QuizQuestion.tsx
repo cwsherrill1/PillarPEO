@@ -1,0 +1,67 @@
+import { useState, useEffect } from "react";
+import { Progress } from "@/components/ui/progress";
+import type { QuizQuestion as QuizQuestionType } from "@/data/quizQuestions";
+
+interface QuizQuestionProps {
+  question: QuizQuestionType;
+  questionIndex: number;
+  totalQuestions: number;
+  onAnswer: (score: 1 | 2 | 3) => void;
+}
+
+const QuizQuestion = ({
+  question,
+  questionIndex,
+  totalQuestions,
+  onAnswer,
+}: QuizQuestionProps) => {
+  const [animKey, setAnimKey] = useState(questionIndex);
+
+  useEffect(() => {
+    setAnimKey(questionIndex);
+  }, [questionIndex]);
+
+  const progress = ((questionIndex) / totalQuestions) * 100;
+
+  return (
+    <div className="mx-auto flex min-h-[70vh] max-w-2xl flex-col items-center justify-center px-4">
+      {/* Progress */}
+      <div className="mb-2 w-full">
+        <div className="mb-1 flex items-center justify-between text-sm text-muted-foreground">
+          <span>Question {questionIndex + 1} of {totalQuestions}</span>
+          <span>{Math.round(progress)}%</span>
+        </div>
+        <Progress value={progress} className="h-2" />
+      </div>
+
+      {/* Question */}
+      <div key={animKey} className="w-full animate-fade-in py-8">
+        <h2 className="mb-8 text-center font-heading text-2xl font-bold text-foreground sm:text-3xl">
+          {question.question}
+        </h2>
+
+        {/* Answer Cards */}
+        <div className="flex flex-col gap-3">
+          {question.options.map((option, idx) => (
+            <button
+              key={idx}
+              onClick={() => onAnswer(option.score)}
+              className="group w-full rounded-lg border-2 border-border bg-card p-5 text-left transition-all duration-200 hover:border-accent hover:shadow-md active:scale-[0.98]"
+            >
+              <div className="flex items-center gap-4">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border-2 border-muted text-sm font-semibold text-muted-foreground transition-colors group-hover:border-accent group-hover:bg-accent group-hover:text-accent-foreground">
+                  {String.fromCharCode(65 + idx)}
+                </span>
+                <span className="text-base font-medium text-foreground">
+                  {option.text}
+                </span>
+              </div>
+            </button>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default QuizQuestion;

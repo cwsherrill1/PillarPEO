@@ -17,6 +17,7 @@ import Contact from "./pages/Contact";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
+import HrHeadacheQuiz from "./pages/HrHeadacheQuiz";
 
 // Resource sub-pages
 import FiveQuestions from "./pages/resources/FiveQuestions";
