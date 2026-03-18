@@ -7,6 +7,7 @@ interface QuizQuestionProps {
   questionIndex: number;
   totalQuestions: number;
   onAnswer: (score: 1 | 2 | 3) => void;
+  onBack?: () => void;
 }
 
 const QuizQuestion = ({

@@ -48,7 +48,7 @@ const QuizEmailCapture = ({ onSubmit, onSkip }: QuizEmailCaptureProps) => {
     <div className="mx-auto flex min-h-[70vh] max-w-md flex-col items-center justify-center px-4">
       <div className="w-full animate-fade-in text-center">
         <h2 className="mb-2 font-heading text-3xl font-bold text-foreground sm:text-4xl">
-          Your results are ready.
+          Your results are ready
         </h2>
         <p className="mb-8 text-muted-foreground">
           Enter your details below and we'll show you your HR Headache Score
