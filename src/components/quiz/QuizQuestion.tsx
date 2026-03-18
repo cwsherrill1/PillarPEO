@@ -16,6 +16,7 @@ const QuizQuestion = ({
   questionIndex,
   totalQuestions,
   onAnswer,
+  onBack,
 }: QuizQuestionProps) => {
   const [animKey, setAnimKey] = useState(questionIndex);
 
