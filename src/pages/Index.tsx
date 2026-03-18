@@ -40,12 +40,11 @@ const Index = () => {
       <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary to-[hsl(236,70%,22%)] text-primary-foreground">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,hsl(145_63%_49%/0.08),transparent_60%)]" />
         <div className="container relative z-10 py-24 md:py-32 lg:py-40">
-          <div className="grid items-center gap-12 md:grid-cols-2">
+          <div className="grid items-center gap-12 md:grid-cols-[1.2fr_1fr]">
             <div>
-              <h1 className="font-heading text-4xl font-800 leading-[1.1] md:text-5xl lg:text-6xl">
-                Simplify your Human Resources.
-                <br />
-                <span className="text-accent">Focus on your people, not paperwork.</span>
+              <h1 className="font-heading text-3xl font-800 leading-[1.15] md:text-[2.6rem] lg:text-5xl">
+                <span className="block md:whitespace-nowrap">Simplify your Human Resources.</span>
+                <span className="block md:whitespace-nowrap text-accent">Focus on your people, not paperwork.</span>
               </h1>
 
               <p className="mt-6 max-w-xl text-lg leading-relaxed text-primary-foreground/80">
@@ -71,9 +70,9 @@ const Index = () => {
 
             <div className="flex justify-center">
               <img
-                src="/placeholder.svg"
-                alt="HR team collaborating"
-                className="w-full max-w-md rounded-2xl shadow-2xl shadow-black/20"
+                src={heroTeam}
+                alt="Diverse team collaborating in a modern office"
+                className="w-full max-w-md rounded-2xl shadow-2xl shadow-black/20 object-cover"
               />
             </div>
           </div>
