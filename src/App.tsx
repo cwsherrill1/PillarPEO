@@ -54,6 +54,7 @@ const App = () => (
             <Route path="/resources/peo-for-nonprofits-guide" element={<PeoForNonprofitsGuide />} />
             <Route path="/resources/peo-readiness" element={<PeoReadiness />} />
             <Route path="/resources/peo-implementation" element={<PeoImplementation />} />
+            <Route path="/hr-headache-score" element={<HrHeadacheQuiz />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy" element={<Privacy />} />
