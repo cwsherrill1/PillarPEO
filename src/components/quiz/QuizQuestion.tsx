@@ -62,9 +62,21 @@ const QuizQuestion = ({
             </button>
           ))}
         </div>
+
+        {questionIndex > 0 && onBack && (
+          <button
+            type="button"
+            onClick={onBack}
+            className="mt-4 flex items-center gap-1 text-sm text-muted-foreground transition-colors hover:text-foreground mx-auto"
+          >
+            <ArrowLeft className="h-4 w-4" />
+            Back
+          </button>
+        )}
       </div>
     </div>
   );
+};
 };
 
 export default QuizQuestion;
