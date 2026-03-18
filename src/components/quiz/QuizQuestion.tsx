@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Progress } from "@/components/ui/progress";
+import { ArrowLeft } from "lucide-react";
 import type { QuizQuestion as QuizQuestionType } from "@/data/quizQuestions";
 
 interface QuizQuestionProps {
