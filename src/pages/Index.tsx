@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import heroTeam from "@/assets/hero-team.jpg";
 import { Button } from "@/components/ui/button";
 import SEOHead from "@/components/SEOHead";
 import { Card, CardContent } from "@/components/ui/card";
