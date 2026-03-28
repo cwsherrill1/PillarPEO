@@ -42,8 +42,8 @@ const QuizQuestion = ({
           {question.options.map((option, idx) => (
             <button
               key={idx}
-              onClick={() => onAnswer(option.score)}
-              className="group w-full rounded-lg border-2 border-border bg-card p-5 text-left transition-all duration-200 hover:border-accent hover:shadow-md active:scale-[0.98]"
+              onClick={(e) => { (e.currentTarget as HTMLElement).blur(); onAnswer(option.score); }}
+              className="group w-full rounded-lg border-2 border-border bg-card p-5 text-left transition-all duration-200 hover:border-accent hover:shadow-md active:scale-[0.98] focus:border-border focus:outline-none"
             >
               <div className="flex items-center gap-4">
                 <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border-2 border-muted text-sm font-semibold text-muted-foreground transition-colors group-hover:border-accent group-hover:bg-accent group-hover:text-accent-foreground">
