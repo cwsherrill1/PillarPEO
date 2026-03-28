@@ -1,21 +1,38 @@
 
+Update the quiz answer interaction so mobile users get a clearly visible confirmation before the quiz auto-advances.
 
-# Improve Mobile Tap Feedback on Quiz Answers
+What I’ll change
 
-## Problem
-The `active:` styles (border-accent, shadow, scale) only show while the finger is physically touching the screen — they disappear instantly on release, making it hard to tell what was tapped.
+- `src/components/quiz/QuizQuestion.tsx`
+  - Add a short-lived local “selected” state for the tapped answer
+  - When a user taps an option:
+    - immediately show a stronger selected style on that card
+    - briefly disable the other answers
+    - wait a moment before calling `onAnswer(...)` so the feedback is actually visible
+  - Keep the existing mobile-safe hover setup so nothing stays stuck afterward
 
-## Solution
-Add a brief visual "flash" on tap using a background color change and the letter circle highlight via `active:` states, making the feedback much more obvious:
+Visual feedback improvement
 
-### Changes to `src/components/quiz/QuizQuestion.tsx`
+- Make the tapped answer much more obvious than the current `active:` flash by using a temporary selected state such as:
+  - accent border
+  - light accent background
+  - stronger shadow/ring
+  - highlighted letter circle
+- This selected state will last just long enough to register, then the next question loads
 
-**Answer button** — add `active:bg-accent/10` (light green background flash) so the entire card visibly responds to touch, not just the border:
-- Current: `active:border-accent active:shadow-md active:scale-[0.98]`
-- New: `active:border-accent active:bg-accent/10 active:shadow-md active:scale-[0.98]`
+Behavior details
 
-**Letter circle** — add `group-active:` styles so the circle also highlights on tap (matching the hover behavior but for touch):
-- Add: `group-active:border-accent group-active:bg-accent group-active:text-accent-foreground`
+- Add a small delay before advancing, around 150–250ms
+- Prevent double taps during that delay
+- Clear the temporary selected state when the next question renders, so no answer looks pre-selected afterward
 
-This gives mobile users three simultaneous signals on tap: background tint, border color, and letter circle highlight — clear and immediate feedback without any "sticky" issues since `active:` only applies during the press.
+Expected result
 
+- Mobile: it becomes very clear which answer was tapped
+- Desktop: normal hover behavior still works
+- Back/next flow: no sticky highlight carries over between questions
+
+Technical note
+
+- The current issue is not just styling — the quiz advances so fast that the `active:` state disappears almost instantly
+- A temporary selected state is the cleanest fix because it improves tap clarity without reintroducing the old persistent-highlight bug
