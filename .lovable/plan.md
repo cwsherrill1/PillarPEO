@@ -1,21 +1,21 @@
 
 
-# Fix: Sticky Hover/Highlight on Mobile Quiz Answers
+# Improve Mobile Tap Feedback on Quiz Answers
 
 ## Problem
-On mobile (touch devices), tapping a quiz answer triggers the CSS `:hover` state which "sticks" after the tap — unlike desktop where hover clears when the cursor moves away. This makes the previously tapped answer appear highlighted on the next question.
+The `active:` styles (border-accent, shadow, scale) only show while the finger is physically touching the screen — they disappear instantly on release, making it hard to tell what was tapped.
 
-## Root Cause
-The existing fix (`.blur()` + `focus:` styles) addresses keyboard/mouse focus but not the mobile-specific sticky `:hover` problem. On touch screens, `:hover` persists on the last-tapped element until another element is tapped.
+## Solution
+Add a brief visual "flash" on tap using a background color change and the letter circle highlight via `active:` states, making the feedback much more obvious:
 
-## Fix — `src/components/quiz/QuizQuestion.tsx`
+### Changes to `src/components/quiz/QuizQuestion.tsx`
 
-1. **Use `@media (hover: hover)` for hover styles**: Replace direct `hover:border-accent hover:shadow-md` with a Tailwind media query approach so hover effects only apply on devices that truly support hover (i.e., not touch screens)
-2. **Add `active:` styles instead for touch feedback**: Use `active:border-accent active:shadow-md` so mobile users still get visual feedback on tap, but it clears immediately after release
-3. **Same treatment for the letter circle**: Move `group-hover:` styles to only apply on hover-capable devices
+**Answer button** — add `active:bg-accent/10` (light green background flash) so the entire card visibly responds to touch, not just the border:
+- Current: `active:border-accent active:shadow-md active:scale-[0.98]`
+- New: `active:border-accent active:bg-accent/10 active:shadow-md active:scale-[0.98]`
 
-Specifically, change the button className to use Tailwind's `@media(hover:hover)` variant (available as a custom or inline approach), or more practically: wrap hover styles with `[@media(hover:hover)]{&:hover{...}}` using Tailwind's arbitrary variant syntax:
-- `[@media(hover:hover)]:hover:border-accent [@media(hover:hover)]:hover:shadow-md`
+**Letter circle** — add `group-active:` styles so the circle also highlights on tap (matching the hover behavior but for touch):
+- Add: `group-active:border-accent group-active:bg-accent group-active:text-accent-foreground`
 
-This ensures touch devices never get sticky hover highlights while desktop behavior remains unchanged.
+This gives mobile users three simultaneous signals on tap: background tint, border color, and letter circle highlight — clear and immediate feedback without any "sticky" issues since `active:` only applies during the press.
 
