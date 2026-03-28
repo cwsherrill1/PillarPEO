@@ -1,3 +1,4 @@
+import { useState, useCallback } from "react";
 import { Progress } from "@/components/ui/progress";
 import { ArrowLeft } from "lucide-react";
 import type { QuizQuestion as QuizQuestionType } from "@/data/quizQuestions";
@@ -17,8 +18,21 @@ const QuizQuestion = ({
   onAnswer,
   onBack,
 }: QuizQuestionProps) => {
+  const [selectedIdx, setSelectedIdx] = useState<number | null>(null);
 
   const progress = ((questionIndex + 1) / totalQuestions) * 100;
+
+  const handleSelect = useCallback(
+    (idx: number, score: 1 | 2 | 3) => {
+      if (selectedIdx !== null) return; // prevent double-tap
+      setSelectedIdx(idx);
+      setTimeout(() => {
+        setSelectedIdx(null);
+        onAnswer(score);
+      }, 200);
+    },
+    [selectedIdx, onAnswer]
+  );
 
   return (
     <div className="mx-auto flex min-h-[70vh] max-w-2xl flex-col items-center justify-center px-4">
@@ -39,22 +53,38 @@ const QuizQuestion = ({
 
         {/* Answer Cards */}
         <div className="flex flex-col gap-3">
-          {question.options.map((option, idx) => (
-            <button
-              key={idx}
-              onClick={(e) => { (e.currentTarget as HTMLElement).blur(); onAnswer(option.score); }}
-              className="group w-full rounded-lg border-2 border-border bg-card p-5 text-left transition-all duration-200 [@media(hover:hover)]:hover:border-accent [@media(hover:hover)]:hover:shadow-md active:border-accent active:bg-accent/10 active:shadow-md active:scale-[0.98] focus:border-border focus:outline-none"
-            >
-              <div className="flex items-center gap-4">
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border-2 border-muted text-sm font-semibold text-muted-foreground transition-colors [@media(hover:hover)]:group-hover:border-accent [@media(hover:hover)]:group-hover:bg-accent [@media(hover:hover)]:group-hover:text-accent-foreground group-active:border-accent group-active:bg-accent group-active:text-accent-foreground">
-                  {String.fromCharCode(65 + idx)}
-                </span>
-                <span className="text-base font-medium text-foreground">
-                  {option.text}
-                </span>
-              </div>
-            </button>
-          ))}
+          {question.options.map((option, idx) => {
+            const isSelected = selectedIdx === idx;
+            const isDisabled = selectedIdx !== null && selectedIdx !== idx;
+
+            return (
+              <button
+                key={idx}
+                onClick={() => handleSelect(idx, option.score)}
+                disabled={isDisabled}
+                className={`group w-full rounded-lg border-2 p-5 text-left transition-all duration-200 focus:outline-none ${
+                  isSelected
+                    ? "border-accent bg-accent/15 shadow-md scale-[0.98]"
+                    : "border-border bg-card [@media(hover:hover)]:hover:border-accent [@media(hover:hover)]:hover:shadow-md active:border-accent active:bg-accent/10 active:shadow-md active:scale-[0.98]"
+                } ${isDisabled ? "opacity-50 pointer-events-none" : ""}`}
+              >
+                <div className="flex items-center gap-4">
+                  <span
+                    className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full border-2 text-sm font-semibold transition-colors ${
+                      isSelected
+                        ? "border-accent bg-accent text-accent-foreground"
+                        : "border-muted text-muted-foreground [@media(hover:hover)]:group-hover:border-accent [@media(hover:hover)]:group-hover:bg-accent [@media(hover:hover)]:group-hover:text-accent-foreground group-active:border-accent group-active:bg-accent group-active:text-accent-foreground"
+                    }`}
+                  >
+                    {String.fromCharCode(65 + idx)}
+                  </span>
+                  <span className="text-base font-medium text-foreground">
+                    {option.text}
+                  </span>
+                </div>
+              </button>
+            );
+          })}
         </div>
 
         {questionIndex > 0 && onBack && (
