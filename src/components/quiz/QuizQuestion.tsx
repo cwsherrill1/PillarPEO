@@ -43,10 +43,10 @@ const QuizQuestion = ({
             <button
               key={idx}
               onClick={(e) => { (e.currentTarget as HTMLElement).blur(); onAnswer(option.score); }}
-              className="group w-full rounded-lg border-2 border-border bg-card p-5 text-left transition-all duration-200 [@media(hover:hover)]:hover:border-accent [@media(hover:hover)]:hover:shadow-md active:border-accent active:shadow-md active:scale-[0.98] focus:border-border focus:outline-none"
+              className="group w-full rounded-lg border-2 border-border bg-card p-5 text-left transition-all duration-200 [@media(hover:hover)]:hover:border-accent [@media(hover:hover)]:hover:shadow-md active:border-accent active:bg-accent/10 active:shadow-md active:scale-[0.98] focus:border-border focus:outline-none"
             >
               <div className="flex items-center gap-4">
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border-2 border-muted text-sm font-semibold text-muted-foreground transition-colors [@media(hover:hover)]:group-hover:border-accent [@media(hover:hover)]:group-hover:bg-accent [@media(hover:hover)]:group-hover:text-accent-foreground">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border-2 border-muted text-sm font-semibold text-muted-foreground transition-colors [@media(hover:hover)]:group-hover:border-accent [@media(hover:hover)]:group-hover:bg-accent [@media(hover:hover)]:group-hover:text-accent-foreground group-active:border-accent group-active:bg-accent group-active:text-accent-foreground">
                   {String.fromCharCode(65 + idx)}
                 </span>
                 <span className="text-base font-medium text-foreground">
