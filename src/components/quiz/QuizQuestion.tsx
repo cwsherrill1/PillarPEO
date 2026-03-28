@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { Progress } from "@/components/ui/progress";
 import { ArrowLeft } from "lucide-react";
 import type { QuizQuestion as QuizQuestionType } from "@/data/quizQuestions";
@@ -18,11 +17,6 @@ const QuizQuestion = ({
   onAnswer,
   onBack,
 }: QuizQuestionProps) => {
-  const [animKey, setAnimKey] = useState(questionIndex);
-
-  useEffect(() => {
-    setAnimKey(questionIndex);
-  }, [questionIndex]);
 
   const progress = ((questionIndex + 1) / totalQuestions) * 100;
 
@@ -38,7 +32,7 @@ const QuizQuestion = ({
       </div>
 
       {/* Question */}
-      <div key={animKey} className="w-full animate-fade-in py-8">
+      <div key={questionIndex} className="w-full animate-fade-in py-8">
         <h2 className="mb-8 text-center font-heading text-2xl font-bold text-foreground sm:text-3xl">
           {question.question}
         </h2>
@@ -48,8 +42,8 @@ const QuizQuestion = ({
           {question.options.map((option, idx) => (
             <button
               key={idx}
-              onClick={() => onAnswer(option.score)}
-              className="group w-full rounded-lg border-2 border-border bg-card p-5 text-left transition-all duration-200 hover:border-accent hover:shadow-md active:scale-[0.98]"
+              onClick={(e) => { (e.currentTarget as HTMLElement).blur(); onAnswer(option.score); }}
+              className="group w-full rounded-lg border-2 border-border bg-card p-5 text-left transition-all duration-200 hover:border-accent hover:shadow-md active:scale-[0.98] focus:border-border focus:outline-none"
             >
               <div className="flex items-center gap-4">
                 <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border-2 border-muted text-sm font-semibold text-muted-foreground transition-colors group-hover:border-accent group-hover:bg-accent group-hover:text-accent-foreground">
