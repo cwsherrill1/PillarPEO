@@ -17,11 +17,6 @@ const QuizQuestion = ({
   onAnswer,
   onBack,
 }: QuizQuestionProps) => {
-  const [animKey, setAnimKey] = useState(questionIndex);
-
-  useEffect(() => {
-    setAnimKey(questionIndex);
-  }, [questionIndex]);
 
   const progress = ((questionIndex + 1) / totalQuestions) * 100;
 
