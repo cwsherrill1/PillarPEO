@@ -32,7 +32,7 @@ const QuizQuestion = ({
       </div>
 
       {/* Question */}
-      <div key={animKey} className="w-full animate-fade-in py-8">
+      <div key={questionIndex} className="w-full animate-fade-in py-8">
         <h2 className="mb-8 text-center font-heading text-2xl font-bold text-foreground sm:text-3xl">
           {question.question}
         </h2>
