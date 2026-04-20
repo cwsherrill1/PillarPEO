@@ -20,7 +20,7 @@ const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
 const contactCards = [
   { icon: Mail, label: "Email", value: "caleb@pillarpeo.com", href: "mailto:caleb@pillarpeo.com" },
-  { icon: Phone, label: "Phone", value: "(704) 787-1261", href: "tel:7047871261" },
+  { icon: Phone, label: "Phone", value: "(704) 787-1261", href: undefined },
   { icon: MapPin, label: "Location", value: "Charlotte, NC", href: undefined },
 ];
 
