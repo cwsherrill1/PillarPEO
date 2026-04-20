@@ -1,38 +1,18 @@
+# LeadConnector Chat Widget — SMS Compliance Audit
 
-Update the quiz answer interaction so mobile users get a clearly visible confirmation before the quiz auto-advances.
+Date: 2026-04-20
 
-What I’ll change
+## Audit result
+The chat widget (loaded globally via `index.html`) is embedded on every page. As of this audit, the site is compliant with LeadConnector's requirement that no page with the widget collects phone numbers or SMS opt-in consent.
 
-- `src/components/quiz/QuizQuestion.tsx`
-  - Add a short-lived local “selected” state for the tapped answer
-  - When a user taps an option:
-    - immediately show a stronger selected style on that card
-    - briefly disable the other answers
-    - wait a moment before calling `onAnswer(...)` so the feedback is actually visible
-  - Keep the existing mobile-safe hover setup so nothing stays stuck afterward
+## Forms reviewed
+- `src/pages/Contact.tsx` — Name, Email, Company, Employees, Message. No phone field. No SMS consent.
+- `src/components/quiz/QuizEmailCapture.tsx` — First Name, Email, Company. No phone field. No SMS consent.
+- No other on-site forms exist.
 
-Visual feedback improvement
+## Phone numbers on site
+- `(704) 787-1261` is displayed as an outbound `tel:` link in `Footer.tsx` and `Contact.tsx`. This is not collection.
 
-- Make the tapped answer much more obvious than the current `active:` flash by using a temporary selected state such as:
-  - accent border
-  - light accent background
-  - stronger shadow/ring
-  - highlighted letter circle
-- This selected state will last just long enough to register, then the next question loads
-
-Behavior details
-
-- Add a small delay before advancing, around 150–250ms
-- Prevent double taps during that delay
-- Clear the temporary selected state when the next question renders, so no answer looks pre-selected afterward
-
-Expected result
-
-- Mobile: it becomes very clear which answer was tapped
-- Desktop: normal hover behavior still works
-- Back/next flow: no sticky highlight carries over between questions
-
-Technical note
-
-- The current issue is not just styling — the quiz advances so fast that the `active:` state disappears almost instantly
-- A temporary selected state is the cleanest fix because it improves tap clarity without reintroducing the old persistent-highlight bug
+## Reminders for the future
+1. If a phone field is ever added to the Contact form, Quiz email capture, or any new form, either remove the chat widget from that page or add explicit SMS opt-in consent language.
+2. The HubSpot booking page (`meetings.hubspot.com/caleb-sherrill`) is on HubSpot's domain — not covered by this confirmation.
