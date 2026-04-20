@@ -1,38 +1,40 @@
 
-Update the quiz answer interaction so mobile users get a clearly visible confirmation before the quiz auto-advances.
 
-What I’ll change
+# LeadConnector Chat Widget — SMS Compliance Review
 
-- `src/components/quiz/QuizQuestion.tsx`
-  - Add a short-lived local “selected” state for the tapped answer
-  - When a user taps an option:
-    - immediately show a stronger selected style on that card
-    - briefly disable the other answers
-    - wait a moment before calling `onAnswer(...)` so the feedback is actually visible
-  - Keep the existing mobile-safe hover setup so nothing stays stuck afterward
+## Your question
+LeadConnector requires you to confirm that no forms on pages where the chat widget is embedded collect phone numbers or SMS opt-in consent (contact forms, lead forms, landing page forms, appointment forms).
 
-Visual feedback improvement
+## What's on the site today
 
-- Make the tapped answer much more obvious than the current `active:` flash by using a temporary selected state such as:
-  - accent border
-  - light accent background
-  - stronger shadow/ring
-  - highlighted letter circle
-- This selected state will last just long enough to register, then the next question loads
+The chat widget will load on **every page** (it's added to `index.html`). I reviewed all forms and phone number collection points:
 
-Behavior details
+**Forms that collect phone numbers:** None found.
+- `src/pages/Contact.tsx` — collects Name, Email, Company, Employees, Message. **No phone field.**
+- `src/components/quiz/QuizEmailCapture.tsx` — collects First Name, Email, Company. **No phone field.**
+- No other forms exist (Resources pages, guides, etc. all use external HubSpot booking links, not on-site forms).
 
-- Add a small delay before advancing, around 150–250ms
-- Prevent double taps during that delay
-- Clear the temporary selected state when the next question renders, so no answer looks pre-selected afterward
+**Phone numbers displayed (not collected):**
+- `src/components/Footer.tsx` and `src/pages/Contact.tsx` display `(704) 787-1261` as a clickable `tel:` link. This is outbound contact info, not a collection field.
 
-Expected result
+**SMS opt-in consent:** No SMS checkboxes, opt-in language, or consent fields exist anywhere in the codebase.
 
-- Mobile: it becomes very clear which answer was tapped
-- Desktop: normal hover behavior still works
-- Back/next flow: no sticky highlight carries over between questions
+**External booking (HubSpot):** All "Book a Call" CTAs link out to `https://meetings.hubspot.com/caleb-sherrill`. That booking page is on HubSpot's domain — the chat widget is not embedded there, so it's outside this compliance scope.
 
-Technical note
+## Answer
 
-- The current issue is not just styling — the quiz advances so fast that the `active:` state disappears almost instantly
-- A temporary selected state is the cleanest fix because it improves tap clarity without reintroducing the old persistent-highlight bug
+**Yes, you can confirm the statement as true** for your Lovable site as it stands today:
+- No on-site form collects phone numbers
+- No on-site form collects SMS opt-in consent
+- The only phone number on the site is your *outbound* contact number, displayed as a `tel:` link
+
+## Plan
+
+No code changes needed for compliance right now. I'll add a short note to `.lovable/plan.md` documenting this audit so you have a record, and flag two things to keep in mind going forward:
+
+1. **If you ever add a phone field** to the Contact form or Quiz email capture, you'll need to either remove the chat widget from that page or add proper SMS consent language.
+2. **HubSpot booking page** is on hubspot.com, not your site — it's not covered by this confirmation either way.
+
+### File change
+- `.lovable/plan.md` — replace current contents with a brief audit summary and the two future-state reminders above.
+
