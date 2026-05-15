@@ -19,8 +19,12 @@ import {
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
 const FAQS = [
+  { q: "What is a PEO broker?", a: "A PEO broker is an independent advisor who compares Professional Employer Organizations on your behalf, negotiates pricing, and supports the transition. Brokers are paid by the PEO, not by the employer, so the service is typically free to you." },
+  { q: "Do I pay Pillar PEO Advisors anything?", a: "No. Pillar is compensated by the PEO you ultimately select. Our advice, comparisons, and onboarding support are free to the employer." },
+  { q: "Should I use a PEO broker or go direct?", a: "Brokers typically secure better pricing, shorter contracts, and flexible exit clauses, and they stay engaged after the sale. Smaller employers almost always benefit from broker support because they lack the leverage to negotiate alone." },
   { q: "How do I know if a PEO is the right fit?", a: "That depends on your employee count, internal capacity, current pain points, and what kind of support you need. We help you think through that before forcing a decision." },
   { q: "What if we already have a PEO?", a: "That is one of the biggest reasons employers reach out. We can help you evaluate whether the current fit is still right." },
+  { q: "What hidden fees should I watch for in a PEO contract?", a: "Common hidden fees include setup fees, per-payroll-run fees, off-cycle payroll fees, benefits administration fees, early-termination penalties, and automatic annual rate escalators. We audit every quote to surface these before you sign." },
   { q: "What documents will you need?", a: "Usually things like an application, employee census, payroll reports, SUTA, benefits documents, and workers' comp information when relevant." },
   { q: "How long does this usually take?", a: "A typical process is around 60 days, though some move faster and some slower depending on complexity and timing." },
   { q: "What happens after we decide?", a: "Pillar helps support the handoff into onboarding so you're not left to navigate the next phase alone." },
@@ -33,13 +37,24 @@ const orgJsonLd = {
       "@type": "ProfessionalService",
       "@id": "https://pillarpeo.com/#organization",
       name: "Pillar PEO Advisors",
+      alternateName: "Pillar PEO Broker",
       url: "https://pillarpeo.com",
-      description: "Independent PEO advisory firm helping employers compare PEO options and make confident decisions.",
-      serviceType: "PEO Advisory",
+      description: "Independent PEO broker helping small and mid-sized employers compare PEO options, expose hidden fees, and switch with no service fee.",
+      serviceType: "PEO Broker",
       areaServed: "US",
       telephone: "+1-704-787-1261",
       email: "caleb@pillarpeo.com",
       address: { "@type": "PostalAddress", addressLocality: "Charlotte", addressRegion: "NC", addressCountry: "US" },
+      founder: { "@id": "https://pillarpeo.com/#caleb" },
+      knowsAbout: ["PEO broker", "PEO advisory", "Professional Employer Organization", "Co-employment", "PEO comparison", "Payroll", "Employee benefits", "HR compliance"],
+    },
+    {
+      "@type": "Person",
+      "@id": "https://pillarpeo.com/#caleb",
+      name: "Caleb Sherrill",
+      jobTitle: "Founder & PEO Advisor",
+      worksFor: { "@id": "https://pillarpeo.com/#organization" },
+      sameAs: ["https://www.linkedin.com/in/calebsherrill/"],
     },
     {
       "@type": "FAQPage",
@@ -56,8 +71,8 @@ const Index = () => {
   return (
     <>
       <SEOHead
-        title="Compare PEO Options With Confidence"
-        description="Pillar PEO Advisors helps employers compare PEO options, understand tradeoffs, and make a confident decision — free of charge."
+        title="Independent PEO Broker — Compare PEO Options With Confidence"
+        description="Pillar PEO Advisors is an independent PEO broker helping small and mid-sized employers compare PEOs, expose hidden fees, and switch with no service fee."
         jsonLd={orgJsonLd} />
       
       {/* ── 1. HERO ── */}
@@ -67,12 +82,12 @@ const Index = () => {
           <div className="grid items-center gap-12 md:grid-cols-[1.2fr_1fr]">
             <div>
               <h1 className="font-heading text-3xl font-800 leading-[1.15] md:text-[2.6rem] lg:text-5xl">
-                <span className="block md:whitespace-nowrap">Simplify your Human Resources.</span>
-                <span className="block md:whitespace-nowrap text-accent">Focus on your people, not paperwork.</span>
+                <span className="block">Your independent PEO broker.</span>
+                <span className="block text-accent">Focus on your people, not paperwork.</span>
               </h1>
 
               <p className="mt-6 max-w-xl text-lg leading-relaxed text-primary-foreground/80">
-                Get the best HR setup for your business — without guessing, confusion, or headaches.
+                Pillar is an independent PEO broker that helps employers compare PEO options, understand tradeoffs, and switch without guessing — at no cost to you.
               </p>
 
               <div className="mt-10 flex flex-col gap-4 sm:flex-row">
