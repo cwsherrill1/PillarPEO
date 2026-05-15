@@ -58,6 +58,10 @@ const App = () => (
             <Route path="/resources/peo-for-nonprofits-guide" element={<PeoForNonprofitsGuide />} />
             <Route path="/resources/peo-readiness" element={<PeoReadiness />} />
             <Route path="/resources/peo-implementation" element={<PeoImplementation />} />
+            <Route path="/resources/peo-cost-guide" element={<PeoCostGuide />} />
+            <Route path="/resources/peo-vs-payroll-service" element={<PeoVsPayrollService />} />
+            <Route path="/resources/best-peo-for-small-business" element={<BestPeoForSmallBusiness />} />
+            <Route path="/resources/top-peo-companies" element={<TopPeoCompanies />} />
             <Route path="/hr-headache-score" element={<HrHeadacheQuiz />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
