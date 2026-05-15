@@ -113,6 +113,34 @@ const resources = [
     category: "Industry Guide",
     href: "/resources/top-peo-companies",
   },
+  {
+    icon: Building2,
+    title: "PEO for Startups: The Operator's Playbook",
+    desc: "Multi-state compliance, equity-friendly payroll, and recruiting-grade benefits for venture-backed and bootstrapped startups.",
+    category: "Guide",
+    href: "/resources/peo-for-startups",
+  },
+  {
+    icon: HelpCircle,
+    title: "PEO Benefits Explained",
+    desc: "Health, 401(k), workers' comp, EAP, and the ancillary perks. What's included, what's better, and where PEOs underdeliver.",
+    category: "Guide",
+    href: "/resources/peo-benefits",
+  },
+  {
+    icon: Scale,
+    title: "PEO Broker vs. Going Direct",
+    desc: "How brokers get paid, what changes in your fee, and when each path actually saves you money.",
+    category: "Comparison",
+    href: "/resources/peo-broker-vs-direct",
+  },
+  {
+    icon: BookOpen,
+    title: "What Is a PEO? A Complete Guide",
+    desc: "Plain-English explainer of co-employment, costs, who it fits, and the honest risks. The foundational guide.",
+    category: "Guide",
+    href: "/resources/what-is-a-peo",
+  },
 ];
 
 const insights = [

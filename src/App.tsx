@@ -32,6 +32,10 @@ import PeoCostGuide from "./pages/resources/PeoCostGuide";
 import PeoVsPayrollService from "./pages/resources/PeoVsPayrollService";
 import BestPeoForSmallBusiness from "./pages/resources/BestPeoForSmallBusiness";
 import TopPeoCompanies from "./pages/resources/TopPeoCompanies";
+import PeoForStartups from "./pages/resources/PeoForStartups";
+import PeoBenefits from "./pages/resources/PeoBenefits";
+import PeoBrokerVsDirect from "./pages/resources/PeoBrokerVsDirect";
+import WhatIsAPeo from "./pages/resources/WhatIsAPeo";
 
 const queryClient = new QueryClient();
 
@@ -62,6 +66,10 @@ const App = () => (
             <Route path="/resources/peo-vs-payroll-service" element={<PeoVsPayrollService />} />
             <Route path="/resources/best-peo-for-small-business" element={<BestPeoForSmallBusiness />} />
             <Route path="/resources/top-peo-companies" element={<TopPeoCompanies />} />
+            <Route path="/resources/peo-for-startups" element={<PeoForStartups />} />
+            <Route path="/resources/peo-benefits" element={<PeoBenefits />} />
+            <Route path="/resources/peo-broker-vs-direct" element={<PeoBrokerVsDirect />} />
+            <Route path="/resources/what-is-a-peo" element={<WhatIsAPeo />} />
             <Route path="/hr-headache-score" element={<HrHeadacheQuiz />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
