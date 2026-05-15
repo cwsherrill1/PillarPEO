@@ -5,12 +5,13 @@ interface SEOHeadProps {
   description: string;
   canonical?: string;
   jsonLd?: Record<string, unknown>;
+  ogType?: "website" | "article";
 }
 
 const SITE_NAME = "Pillar PEO Advisors";
 const BASE_URL = "https://pillarpeo.com";
 
-const SEOHead = ({ title, description, canonical, jsonLd }: SEOHeadProps) => {
+const SEOHead = ({ title, description, canonical, jsonLd, ogType = "website" }: SEOHeadProps) => {
   useEffect(() => {
     // Title
     document.title = `${title} — ${SITE_NAME}`;
@@ -25,9 +26,12 @@ const SEOHead = ({ title, description, canonical, jsonLd }: SEOHeadProps) => {
     metaDesc.setAttribute("content", description);
 
     // OG tags
+    const currentUrl = canonical || `${BASE_URL}${window.location.pathname}`;
     const ogTags: Record<string, string> = {
       "og:title": `${title} — ${SITE_NAME}`,
       "og:description": description,
+      "og:url": currentUrl,
+      "og:type": ogType,
       "twitter:title": `${title} — ${SITE_NAME}`,
       "twitter:description": description,
     };
