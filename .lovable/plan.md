@@ -1,42 +1,66 @@
-## Wire up polished og:image social cards
+## Content Expansion Plan — National Ranking & Competing With the Big Guys
 
-### Problem
-Current og:image points to `/pillar-logo.png` — a small square logo that LinkedIn/Slack/Facebook crop awkwardly. Social crawlers don't execute JS, so they only see what's in `index.html`. We need a proper 1200×630 social card and a system to optionally override it per-route for JS-aware crawlers (Googlebot, Twitter).
+### Quick answer on velocity
+**Publishing many articles in one day does NOT hurt you** — Google has confirmed this repeatedly. What hurts is **thin or duplicated content**. The real risk: rushing 10 mediocre 600-word posts and looking like an AI farm. Better play: ship 3–5 *substantial* (1,500–2,500 word) pillar pieces this week, then a steady cadence after.
 
-### What I'll build
+### What Semrush tells us
+Pillar currently ranks for 18 keywords, ~0 estimated traffic. Already ranking **#8 for "peo advisors"** (140/mo) — that's the foothold. The wins below are all **low-difficulty, real-volume keywords** the big guys haven't locked down:
 
-**1. Generate a sitewide og:image (1200×630)**
-- `public/og-image.jpg` — Pillar branded card: dark navy background, grass green accent, League Spartan headline "Compare PEO Options With Confidence", "Pillar PEO Advisors" wordmark, subtle Exodus/pillar visual motif. On-brand, no generic SaaS gradients.
+| Keyword | Volume/mo | Difficulty | Status |
+|---|---|---|---|
+| peo broker | 720 | 24 (easy) | **Top priority** — own this term |
+| peo vs aso | 590 | 4 (very easy) | Already have a page — needs strengthening |
+| best peo for small business | 320 | 25 (easy) | **Missing** |
+| peo cost | 320 | 8 (very easy) | **Missing** (have pricing) |
+| peo for startups | 210 | 6 (very easy) | **Missing** |
+| peo vs payroll service | 170 | 16 (easy) | **Missing** |
+| peo pricing | 140 | 14 (very easy) | Already have |
+| top peo companies | 480 | 23 (easy) | **Missing** — listicle play |
+| peo benefits | 880 | 32 (possible) | **Missing** |
+| peo for nonprofits | 90 | 5 | Already have |
 
-**2. Generate 2–3 section-specific og:images** (optional per-route override)
-- `public/og/og-switch.jpg` — for Switch Your PEO page ("Switching PEOs? Do it without the chaos.")
-- `public/og/og-nonprofits.jpg` — for Nonprofits page ("PEO support built for mission-driven teams.")
-- `public/og/og-resources.jpg` — generic resources/article fallback ("Pillar PEO Resources")
+### Recommended new pieces (8 total — ship in 2 batches)
 
-Most resource articles will fall back to the sitewide card — that's fine.
+**Batch 1 — comparison & cost hub (publish together, ~3 days work)**
 
-**3. Update `index.html`**
-- Replace the two logo references with the new `https://pillarpeo.com/og-image.jpg`
-- Add `og:image:width` (1200), `og:image:height` (630), `og:image:alt`
-- Add `og:site_name`
-- Add `twitter:image:alt`
+1. **`/resources/peo-cost-guide`** — "How Much Does a PEO Cost in 2026? Real Pricing Breakdown" (target: peo cost, peo pricing). Tables, formulas, examples. Compete with ADP/Insperity by being honest about ranges.
+2. **`/resources/peo-vs-payroll-service`** — "PEO vs. Payroll Service: When You Need Each" (target: peo vs payroll service). Decision matrix.
+3. **`/resources/best-peo-for-small-business`** — "Best PEO for Small Business: A Broker's 2026 Comparison" (target: best peo for small business). Listicle covering Justworks, Rippling, ADP TotalSource, Insperity, TriNet — comparison tables, who each fits.
+4. **`/resources/top-peo-companies`** — "Top PEO Companies in 2026: Independent Comparison" (target: top peo companies). Same structure, broader audience.
 
-**4. Extend `SEOHead.tsx`** to accept an optional `ogImage` prop
-- New prop: `ogImage?: string` (path or absolute URL)
-- When provided, overrides `og:image` and `twitter:image` via the same useEffect dedupe pattern
-- Resolves relative paths against `BASE_URL`
-- Note honestly: this only helps JS-executing crawlers (Googlebot, Twitterbot sometimes). LinkedIn/Slack/Facebook still see the static `index.html` card. That's acceptable — the static card is on-brand and works everywhere.
+**Batch 2 — audience-specific (publish 1 week later)**
 
-**5. Wire ogImage on 3 high-value pages**
-- `Index.tsx` → sitewide card (no override needed)
-- `SwitchYourPeo.tsx` → `/og/og-switch.jpg`
-- `PeoForNonprofits.tsx` → `/og/og-nonprofits.jpg`
-- `Resources.tsx` → `/og/og-resources.jpg`
+5. **`/resources/peo-for-startups`** — "PEO for Startups: Equity, Multi-State, and Scaling Compliance" (target: peo for startups, $102 CPC — high commercial intent).
+6. **`/resources/peo-benefits`** — "PEO Benefits Explained: What You Actually Get" (target: peo benefits, 880/mo).
+7. **`/resources/peo-broker-vs-direct`** — "PEO Broker vs. Going Direct: Which Saves More?" (locks down "peo broker" — your top opportunity).
+8. **`/resources/what-is-a-peo`** — Foundational explainer (target: what is a peo, 6,600/mo, KDI 50). Bigger swing — needed eventually but won't rank fast.
 
-### Out of scope
-- Per-article custom cards for every resource page (too many; sitewide card is fine)
-- SSR / pre-rendering for true per-route social previews
-- Twitter handle changes
+### How to compete with ADP/Insperity/TriNet
+You won't outrank them on "what is a peo" anytime soon. You **will** beat them on:
+- **Comparison content they can't honestly write** (broker view of their own competitors)
+- **Specific decision questions** they avoid (cost transparency, "should I switch")
+- **Long-tail audience pages** (nonprofits, churches, startups, multi-state)
+- **AEO citations** — the structured FAQ + Article schema you already have makes Pillar quotable in ChatGPT/Perplexity answers, where the big guys' marketing fluff isn't.
 
-### After publish
-Validate with LinkedIn Post Inspector + Facebook Sharing Debugger to flush their caches.
+### Format for each piece (locks in AEO + SEO)
+- 1,500–2,500 words
+- ArticleByline component (E-E-A-T signal — already built)
+- Article + FAQPage + BreadcrumbList JSON-LD
+- 5–8 FAQ Q&As at the bottom
+- 2–3 internal links to existing resources + Strategy Call CTA
+- Stats and citations (LLMs favor cited content)
+- One comparison table per page where applicable
+
+### Cadence
+- **Week 1**: Batch 1 (4 pieces) — ship together, fine for SEO
+- **Week 2**: Batch 2 (4 pieces) — ship together
+- After: 1 new piece every 2 weeks, plus quarterly refreshes of the comparison pages
+
+### Out of scope (this plan)
+- Backlink outreach (separate workstream — needed for "what is a peo" tier)
+- Programmatic state pages ("PEO for [state]") — let's see what ranks first
+- New nav structure — current Resources hub absorbs all 8 cleanly
+
+---
+
+**Want me to start with Batch 1?** I can build all 4 pages today.
