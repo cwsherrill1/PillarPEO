@@ -5,6 +5,13 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Reveal } from "@/components/Reveal";
 import SEOHead from "@/components/SEOHead";
+import { ArticleByline, ArticleAuthorBio, buildArticleJsonLd } from "@/components/ArticleByline";
+
+const ARTICLE = buildArticleJsonLd({
+  title: "PEO Pricing: What to Watch For",
+  description: "Hidden fees, bundled costs, and renewal surprises. Read a PEO quote like an insider.",
+  path: "/resources/peo-pricing",
+});
 
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
@@ -28,6 +35,8 @@ const PeoPricing = () => (
     <SEOHead
       title="PEO Pricing: What to Watch For"
       description="Hidden fees, bundled costs, and renewal surprises. Learn how to read a PEO quote like an insider with this comprehensive pricing guide."
+      jsonLd={ARTICLE}
+      ogType="article"
     />
 
     {/* Hero */}
@@ -44,6 +53,9 @@ const PeoPricing = () => (
           <p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80 md:text-xl">
             Hidden fees, bundled costs, and renewal surprises. Here's how to read a PEO quote like an insider.
           </p>
+        </Reveal>
+        <Reveal delay={150}>
+          <ArticleByline />
         </Reveal>
         <Reveal delay={200}>
           <div className="mt-8">

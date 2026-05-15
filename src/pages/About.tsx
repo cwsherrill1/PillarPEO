@@ -22,11 +22,38 @@ const founders = [
   },
 ];
 
+const aboutJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AboutPage",
+      url: "https://pillarpeo.com/about",
+      name: "About Pillar PEO Advisors",
+      description: "Meet the team behind Pillar PEO Advisors — an independent PEO broker helping employers compare PEO options.",
+    },
+    {
+      "@type": "Person",
+      "@id": "https://pillarpeo.com/#caleb",
+      name: "Caleb Sherrill",
+      jobTitle: "Founder & PEO Advisor",
+      worksFor: { "@type": "Organization", name: "Pillar PEO Advisors", url: "https://pillarpeo.com" },
+      sameAs: ["https://www.linkedin.com/in/calebsherrill/"],
+    },
+    {
+      "@type": "Person",
+      name: "Josiah Sherrill",
+      jobTitle: "Partner",
+      worksFor: { "@type": "Organization", name: "Pillar PEO Advisors", url: "https://pillarpeo.com" },
+    },
+  ],
+};
+
 const About = () => (
   <div>
     <SEOHead
       title="About Us"
-      description="Meet the team behind Pillar PEO Advisors — independent advisors helping employers navigate PEO decisions with clarity."
+      description="Meet the team behind Pillar PEO Advisors — an independent PEO broker helping employers compare options with clarity."
+      jsonLd={aboutJsonLd}
     />
     {/* ─── Hero ─── */}
     <section className="bg-primary text-primary-foreground">

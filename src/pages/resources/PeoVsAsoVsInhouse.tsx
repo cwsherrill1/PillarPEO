@@ -6,6 +6,13 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Reveal } from "@/components/Reveal";
 import SEOHead from "@/components/SEOHead";
+import { ArticleByline, ArticleAuthorBio, buildArticleJsonLd } from "@/components/ArticleByline";
+
+const ARTICLE = buildArticleJsonLd({
+  title: "PEO vs. ASO vs. In-House HR",
+  description: "Compare PEO, ASO, and in-house HR models side by side to find the right fit.",
+  path: "/resources/peo-vs-aso-vs-inhouse",
+});
 
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
@@ -30,6 +37,8 @@ const PeoVsAsoVsInhouse = () => (
     <SEOHead
       title="PEO vs. ASO vs. In-House HR"
       description="Not every company needs a PEO. Compare PEO, ASO, and in-house HR models side by side to find the right fit for your organization."
+      jsonLd={ARTICLE}
+      ogType="article"
     />
 
     {/* Hero */}
@@ -46,6 +55,9 @@ const PeoVsAsoVsInhouse = () => (
           <p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80 md:text-xl">
             Not every company needs a PEO. This side-by-side comparison helps you understand which model actually fits where you are.
           </p>
+        </Reveal>
+        <Reveal delay={150}>
+          <ArticleByline />
         </Reveal>
         <Reveal delay={200}>
           <div className="mt-8">

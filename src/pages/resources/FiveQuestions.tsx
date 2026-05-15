@@ -5,6 +5,13 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Reveal } from "@/components/Reveal";
 import SEOHead from "@/components/SEOHead";
+import { ArticleByline, ArticleAuthorBio, buildArticleJsonLd } from "@/components/ArticleByline";
+
+const ARTICLE = buildArticleJsonLd({
+  title: "5 Questions to Ask Any PEO Before Signing",
+  description: "The critical questions most employers never think to ask before signing with a PEO.",
+  path: "/resources/5-questions",
+});
 
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
@@ -36,6 +43,8 @@ const FiveQuestions = () => (
     <SEOHead
       title="5 Questions to Ask Any PEO Before Signing"
       description="The critical questions most employers never think to ask before signing with a PEO. Use this checklist to separate a good deal from an expensive mistake."
+      jsonLd={ARTICLE}
+      ogType="article"
     />
 
     {/* Hero */}
@@ -52,6 +61,9 @@ const FiveQuestions = () => (
           <p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80 md:text-xl">
             Most employers walk into PEO evaluations underprepared. These are the questions that separate a good deal from an expensive mistake.
           </p>
+        </Reveal>
+        <Reveal delay={150}>
+          <ArticleByline />
         </Reveal>
         <Reveal delay={200}>
           <div className="mt-8">
@@ -115,6 +127,8 @@ const FiveQuestions = () => (
         </Reveal>
       </div>
     </section>
+
+    <ArticleAuthorBio />
 
     {/* CTA */}
     <section className="bg-primary py-24 md:py-32">

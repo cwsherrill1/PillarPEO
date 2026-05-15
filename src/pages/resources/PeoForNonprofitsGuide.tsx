@@ -4,6 +4,13 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Reveal } from "@/components/Reveal";
 import SEOHead from "@/components/SEOHead";
+import { ArticleByline, ArticleAuthorBio, buildArticleJsonLd } from "@/components/ArticleByline";
+
+const ARTICLE = buildArticleJsonLd({
+  title: "PEO for Nonprofits: What to Know Before You Buy",
+  description: "What nonprofit leaders need to understand before partnering with a PEO.",
+  path: "/resources/peo-for-nonprofits-guide",
+});
 
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
@@ -27,6 +34,8 @@ const PeoForNonprofitsGuide = () => (
     <SEOHead
       title="PEO for Nonprofits: What to Know Before You Buy"
       description="Your mission deserves better HR infrastructure. Learn what nonprofit leaders need to understand before partnering with a PEO."
+      jsonLd={ARTICLE}
+      ogType="article"
     />
 
     <section className="bg-primary py-24 md:py-32">
@@ -42,6 +51,9 @@ const PeoForNonprofitsGuide = () => (
           <p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80 md:text-xl">
             Your mission deserves better HR infrastructure. Here's what nonprofit leaders need to understand before partnering with a PEO.
           </p>
+        </Reveal>
+        <Reveal delay={150}>
+          <ArticleByline />
         </Reveal>
         <Reveal delay={200}>
           <div className="mt-8">

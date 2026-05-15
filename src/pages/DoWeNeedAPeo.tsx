@@ -35,11 +35,22 @@ const steps = [
   },
 ];
 
+const firstTimeJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "First-Time PEO Advisory",
+  serviceType: "PEO Broker",
+  provider: { "@type": "Organization", name: "Pillar PEO Advisors", url: "https://pillarpeo.com" },
+  areaServed: "US",
+  description: "Pillar helps growing employers assess whether a PEO is the right next step for HR, payroll, and benefits.",
+};
+
 const DoWeNeedAPeo = () => (
   <>
     <SEOHead
-      title="Do We Need a PEO?"
-      description="Not sure if a PEO is right for your business? Pillar helps you assess whether outsourcing HR, payroll, and benefits makes sense."
+      title="Do We Need a PEO? — Independent Broker Assessment"
+      description="Not sure if a PEO is right for your business? Pillar is an independent PEO broker — we help you assess whether outsourcing HR, payroll, and benefits makes sense."
+      jsonLd={firstTimeJsonLd}
     />
     {/* Hero */}
     <section className="bg-primary text-primary-foreground">

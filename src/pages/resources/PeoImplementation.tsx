@@ -5,6 +5,13 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Reveal } from "@/components/Reveal";
 import SEOHead from "@/components/SEOHead";
+import { ArticleByline, ArticleAuthorBio, buildArticleJsonLd } from "@/components/ArticleByline";
+
+const ARTICLE = buildArticleJsonLd({
+  title: "What to Expect During a PEO Implementation",
+  description: "What the next 60–90 days look like after you sign — and how to prepare.",
+  path: "/resources/peo-implementation",
+});
 
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
@@ -36,6 +43,8 @@ const PeoImplementation = () => (
     <SEOHead
       title="What to Expect During a PEO Implementation"
       description="Signing with a PEO is step one. Here's what the next 60–90 days actually look like and how to make sure nothing falls through the cracks."
+      jsonLd={ARTICLE}
+      ogType="article"
     />
 
     <section className="bg-primary py-24 md:py-32">
@@ -51,6 +60,9 @@ const PeoImplementation = () => (
           <p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80 md:text-xl">
             Signing with a PEO is step one. Here's what the next 60–90 days actually look like — and how to make sure nothing falls through the cracks.
           </p>
+        </Reveal>
+        <Reveal delay={150}>
+          <ArticleByline />
         </Reveal>
         <Reveal delay={200}>
           <div className="mt-8">
