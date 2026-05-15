@@ -21,7 +21,7 @@ const team = [
   {
     initials: "JS",
     name: "Josiah Sherrill",
-    title: "Partner",
+    title: "Founding Account Executive",
     image: josiahPhoto,
     bio: "With a background in ministry recruiting, Josiah brings a people-centered lens and relationship strength that helped turn Pillar from a founder-led vision into a growing advisory business.",
   },
@@ -54,7 +54,7 @@ const aboutJsonLd = {
     {
       "@type": "Person",
       name: "Josiah Sherrill",
-      jobTitle: "Partner",
+      jobTitle: "Founding Account Executive",
       worksFor: { "@type": "Organization", name: "Pillar PEO Advisors", url: "https://pillarpeo.com" },
     },
     {
