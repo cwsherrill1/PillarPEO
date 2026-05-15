@@ -73,6 +73,7 @@ const SwitchYourPeo = () => (
       title="Switch Your PEO — Independent Broker Review"
       description="Wondering if it's time to switch PEOs? Pillar is an independent PEO broker — we compare options and manage the transition without disruption."
       jsonLd={switchJsonLd}
+      ogImage="/og/og-switch.jpg"
     />
     {/* Hero */}
     <section className="bg-primary text-primary-foreground">
