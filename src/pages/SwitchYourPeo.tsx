@@ -57,11 +57,22 @@ const steps = [
   },
 ];
 
+const switchJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "PEO Switching Advisory",
+  serviceType: "PEO Broker",
+  provider: { "@type": "Organization", name: "Pillar PEO Advisors", url: "https://pillarpeo.com" },
+  areaServed: "US",
+  description: "Pillar helps employers compare better-fit PEOs and manage the transition without disruption.",
+};
+
 const SwitchYourPeo = () => (
   <>
     <SEOHead
-      title="Switch Your PEO"
-      description="Wondering if it's time to switch PEOs? Pillar helps you compare options and manage the transition without disruption."
+      title="Switch Your PEO — Independent Broker Review"
+      description="Wondering if it's time to switch PEOs? Pillar is an independent PEO broker — we compare options and manage the transition without disruption."
+      jsonLd={switchJsonLd}
     />
     {/* Hero */}
     <section className="bg-primary text-primary-foreground">

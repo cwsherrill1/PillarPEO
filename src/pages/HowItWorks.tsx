@@ -70,11 +70,22 @@ const stats = [
   { icon: DollarSign, value: "Zero", suffix: "cost", label: "To employers" },
 ];
 
+const serviceJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "PEO Broker Process",
+  serviceType: "PEO Broker",
+  provider: { "@type": "Organization", name: "Pillar PEO Advisors", url: "https://pillarpeo.com" },
+  areaServed: "US",
+  description: "Pillar's six-stage PEO broker process takes employers from discovery to decision in about 60 days.",
+};
+
 const HowItWorks = () => (
   <>
     <SEOHead
-      title="How It Works"
-      description="Pillar's six-stage process takes you from discovery to decision in about 60 days — with clarity at every step."
+      title="How It Works — PEO Broker Process"
+      description="Pillar's six-stage PEO broker process takes you from discovery to decision in about 60 days — at no cost to the employer."
+      jsonLd={serviceJsonLd}
     />
 
     {/* Hero */}

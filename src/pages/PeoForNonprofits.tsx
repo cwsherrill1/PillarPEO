@@ -35,11 +35,23 @@ const steps = [
   },
 ];
 
+const nonprofitJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "PEO Broker for Nonprofits",
+  serviceType: "PEO Broker",
+  provider: { "@type": "Organization", name: "Pillar PEO Advisors", url: "https://pillarpeo.com" },
+  areaServed: "US",
+  audience: { "@type": "Audience", audienceType: "Nonprofit organizations" },
+  description: "Pillar helps nonprofits find the right PEO to streamline HR, payroll, and benefits.",
+};
+
 const PeoForNonprofits = () => (
   <>
     <SEOHead
-      title="PEO for Nonprofits"
-      description="Pillar helps nonprofits find the right PEO to streamline HR, payroll, and benefits — so your team can focus on the mission."
+      title="PEO for Nonprofits — Independent Broker"
+      description="Pillar is an independent PEO broker helping nonprofits find the right PEO to streamline HR, payroll, and benefits — so your team can focus on the mission."
+      jsonLd={nonprofitJsonLd}
     />
     {/* Hero */}
     <section className="bg-primary text-primary-foreground">
