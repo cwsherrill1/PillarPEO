@@ -25,7 +25,7 @@ const sections = [
   {
     title: "Contact Us",
     content:
-      "If you have any questions about these Terms of Service, please contact us at [email@pillarpeo.com] or visit our Contact page.",
+      "If you have any questions about these Terms of Service, please contact us at info@pillarpeo.com or visit our Contact page.",
   },
 ];
 
