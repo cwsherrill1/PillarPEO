@@ -6,12 +6,14 @@ interface SEOHeadProps {
   canonical?: string;
   jsonLd?: Record<string, unknown>;
   ogType?: "website" | "article";
+  ogImage?: string;
 }
 
 const SITE_NAME = "Pillar PEO Advisors";
 const BASE_URL = "https://pillarpeo.com";
+const DEFAULT_OG_IMAGE = `${BASE_URL}/og-image.jpg`;
 
-const SEOHead = ({ title, description, canonical, jsonLd, ogType = "website" }: SEOHeadProps) => {
+const SEOHead = ({ title, description, canonical, jsonLd, ogType = "website", ogImage }: SEOHeadProps) => {
   useEffect(() => {
     // Title
     document.title = `${title} — ${SITE_NAME}`;
@@ -27,13 +29,20 @@ const SEOHead = ({ title, description, canonical, jsonLd, ogType = "website" }: 
 
     // OG tags
     const currentUrl = canonical || `${BASE_URL}${window.location.pathname}`;
+    const resolvedImage = ogImage
+      ? ogImage.startsWith("http")
+        ? ogImage
+        : `${BASE_URL}${ogImage.startsWith("/") ? "" : "/"}${ogImage}`
+      : DEFAULT_OG_IMAGE;
     const ogTags: Record<string, string> = {
       "og:title": `${title} — ${SITE_NAME}`,
       "og:description": description,
       "og:url": currentUrl,
       "og:type": ogType,
+      "og:image": resolvedImage,
       "twitter:title": `${title} — ${SITE_NAME}`,
       "twitter:description": description,
+      "twitter:image": resolvedImage,
     };
 
     Object.entries(ogTags).forEach(([property, content]) => {
@@ -80,7 +89,7 @@ const SEOHead = ({ title, description, canonical, jsonLd, ogType = "website" }: 
       const script = document.querySelector('script[data-seo-jsonld]');
       if (script) script.remove();
     };
-  }, [title, description, canonical, jsonLd]);
+  }, [title, description, canonical, jsonLd, ogType, ogImage]);
 
   return null;
 };
