@@ -18,14 +18,38 @@ import {
 
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
+const FAQS = [
+  { q: "How do I know if a PEO is the right fit?", a: "That depends on your employee count, internal capacity, current pain points, and what kind of support you need. We help you think through that before forcing a decision." },
+  { q: "What if we already have a PEO?", a: "That is one of the biggest reasons employers reach out. We can help you evaluate whether the current fit is still right." },
+  { q: "What documents will you need?", a: "Usually things like an application, employee census, payroll reports, SUTA, benefits documents, and workers' comp information when relevant." },
+  { q: "How long does this usually take?", a: "A typical process is around 60 days, though some move faster and some slower depending on complexity and timing." },
+  { q: "What happens after we decide?", a: "Pillar helps support the handoff into onboarding so you're not left to navigate the next phase alone." },
+];
+
 const orgJsonLd = {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  name: "Pillar PEO Advisors",
-  url: "https://pillarpeo.com",
-  description: "Independent PEO advisory firm helping employers compare PEO options and make confident decisions.",
-  serviceType: "PEO Advisory",
-  areaServed: "US"
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://pillarpeo.com/#organization",
+      name: "Pillar PEO Advisors",
+      url: "https://pillarpeo.com",
+      description: "Independent PEO advisory firm helping employers compare PEO options and make confident decisions.",
+      serviceType: "PEO Advisory",
+      areaServed: "US",
+      telephone: "+1-704-787-1261",
+      email: "caleb@pillarpeo.com",
+      address: { "@type": "PostalAddress", addressLocality: "Charlotte", addressRegion: "NC", addressCountry: "US" },
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: FAQS.map(({ q, a }) => ({
+        "@type": "Question",
+        name: q,
+        acceptedAnswer: { "@type": "Answer", text: a },
+      })),
+    },
+  ],
 };
 
 const Index = () => {
@@ -72,6 +96,10 @@ const Index = () => {
               <img
                 src={heroTeam}
                 alt="Diverse team collaborating in a modern office"
+                width={576}
+                height={576}
+                fetchPriority="high"
+                decoding="async"
                 className="w-full max-w-md rounded-2xl shadow-2xl shadow-black/20 object-cover"
               />
             </div>

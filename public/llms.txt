@@ -1,0 +1,33 @@
+# Pillar PEO Advisors
+
+> Independent PEO advisory firm helping U.S. employers (5–500 employees) compare PEO options, understand tradeoffs, and make confident decisions — at no cost to the employer.
+
+Pillar PEO Advisors guides business owners, HR leaders, and nonprofit teams through the process of selecting, switching, or evaluating a Professional Employer Organization (PEO). The site explains how PEOs work, who they fit, and how to avoid common pitfalls.
+
+## Pages
+
+- [Home](/): Overview of Pillar's advisory service and audiences served.
+- [How It Works](/how-it-works): The Pillar advisory process from discovery to decision.
+- [Switch Your PEO](/switch-your-peo): Guidance for employers replacing a current PEO.
+- [PEO for Nonprofits](/peo-for-nonprofits): How PEOs reduce admin drag for mission-driven teams.
+- [Do We Need a PEO?](/do-we-need-a-peo): Help for first-time PEO buyers.
+- [Resources](/resources): Educational guides on PEO selection, pricing, and switching.
+- [About](/about): Background on Pillar and the leadership team (Caleb & Josiah Sherrill).
+- [Contact](/contact): Schedule a strategy call or send a message.
+- [HR Headache Score](/hr-headache-score): 15-question quiz that scores your HR pain points.
+
+## Resources
+
+- [5 Questions to Ask Any PEO](/resources/5-questions): Vetting checklist for PEO conversations.
+- [Co-Employment Explained](/resources/co-employment): How the PEO co-employment model works.
+- [PEO Pricing](/resources/peo-pricing): How PEOs charge and what to expect.
+- [PEO vs ASO vs In-House](/resources/peo-vs-aso-vs-inhouse): Comparing HR delivery models.
+- [How to Switch PEOs](/resources/how-to-switch-peos): Step-by-step transition guide.
+- [PEO for Nonprofits Guide](/resources/peo-for-nonprofits-guide): Nonprofit-specific considerations.
+- [PEO Readiness Assessment](/resources/peo-readiness): Tool to assess organizational readiness.
+- [PEO Implementation](/resources/peo-implementation): What onboarding to a PEO looks like.
+
+## Optional
+
+- [Privacy](/privacy)
+- [Terms](/terms)
