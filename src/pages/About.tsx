@@ -1,24 +1,36 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Reveal } from "@/components/Reveal";
 import SEOHead from "@/components/SEOHead";
+import calebPhoto from "@/assets/team/caleb-sherrill.png";
+import josiahPhoto from "@/assets/team/josiah-sherrill.png";
+import emilyPhoto from "@/assets/team/emily-snooks.png";
 
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
-const founders = [
+const team = [
   {
     initials: "CS",
     name: "Caleb Sherrill",
     title: "CEO",
+    image: calebPhoto,
     bio: "After living through payroll mistakes, fines, and administrative drag in a previous business, Caleb built Pillar to help employers make better decisions around HR, payroll, and compliance.",
   },
   {
     initials: "JS",
     name: "Josiah Sherrill",
     title: "Partner",
+    image: josiahPhoto,
     bio: "With a background in ministry recruiting, Josiah brings a people-centered lens and relationship strength that helped turn Pillar from a founder-led vision into a growing advisory business.",
+  },
+  {
+    initials: "ES",
+    name: "Emily Snooks",
+    title: "COO",
+    image: emilyPhoto,
+    bio: "Emily brings 6+ years of operations leadership across remote teams, finance, and event management. As COO, she keeps Pillar's workflows, bookkeeping, and client experience running smoothly — so the advisory work stays focused on employers.",
   },
 ];
 
@@ -43,6 +55,12 @@ const aboutJsonLd = {
       "@type": "Person",
       name: "Josiah Sherrill",
       jobTitle: "Partner",
+      worksFor: { "@type": "Organization", name: "Pillar PEO Advisors", url: "https://pillarpeo.com" },
+    },
+    {
+      "@type": "Person",
+      name: "Emily Snooks",
+      jobTitle: "Chief Operating Officer",
       worksFor: { "@type": "Organization", name: "Pillar PEO Advisors", url: "https://pillarpeo.com" },
     },
   ],
@@ -126,12 +144,13 @@ const About = () => (
           </div>
         </Reveal>
 
-        <div className="mx-auto mt-14 grid max-w-4xl gap-8 md:grid-cols-2">
-          {founders.map((m, i) => (
+        <div className="mx-auto mt-14 grid max-w-5xl gap-8 md:grid-cols-3">
+          {team.map((m, i) => (
             <Reveal key={m.name} delay={i * 150}>
               <Card className="h-full border-none bg-card shadow-sm hover:shadow-md transition-shadow">
                 <CardContent className="p-8 text-center">
-                  <Avatar className="mx-auto mb-5 h-24 w-24">
+                  <Avatar className="mx-auto mb-5 h-28 w-28">
+                    <AvatarImage src={m.image} alt={m.name} className="object-cover" />
                     <AvatarFallback className="bg-accent/10 text-accent text-2xl font-heading font-700">
                       {m.initials}
                     </AvatarFallback>
