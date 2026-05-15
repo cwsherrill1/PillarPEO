@@ -18,6 +18,22 @@ import SEOHead from "@/components/SEOHead";
 
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
+const contactJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "Pillar PEO Advisors",
+  url: "https://pillarpeo.com",
+  email: "caleb@pillarpeo.com",
+  telephone: "+1-704-787-1261",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Charlotte",
+    addressRegion: "NC",
+    addressCountry: "US",
+  },
+  areaServed: "US",
+};
+
 const contactCards = [
   { icon: Mail, label: "Email", value: "caleb@pillarpeo.com", href: "mailto:caleb@pillarpeo.com" },
   { icon: Phone, label: "Phone", value: "(704) 787-1261", href: undefined },
@@ -59,6 +75,7 @@ const Contact = () => {
       <SEOHead
         title="Contact Us"
         description="Get in touch with Pillar PEO Advisors. Schedule a free consultation or send us a message about your PEO needs."
+        jsonLd={contactJsonLd}
       />
       {/* Hero */}
       <section className="bg-primary py-20 md:py-28">
