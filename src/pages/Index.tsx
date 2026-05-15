@@ -125,7 +125,7 @@ const Index = () => {
       {/* ── 2. TRUST STRIP ── */}
       <section className="border-b border-border bg-muted/40 py-6">
         <div className="container">
-          <p className="text-center text-sm font-medium text-muted-foreground">Serving employers with 5–500 employees · Structured guidance from discovery to decision · Zero cost to employers
+          <p className="text-center text-sm font-medium text-muted-foreground">Independent PEO broker · Serving employers with 5–500 employees · Zero cost to employers
 
           </p>
         </div>
@@ -426,28 +426,7 @@ const Index = () => {
           <Reveal delay={100}>
             <div className="mx-auto mt-12 max-w-2xl">
               <Accordion type="single" collapsible className="w-full">
-                {[
-                {
-                  q: "How do I know if a PEO is the right fit?",
-                  a: "That depends on your employee count, internal capacity, current pain points, and what kind of support you need. We help you think through that before forcing a decision."
-                },
-                {
-                  q: "What if we already have a PEO?",
-                  a: "That is one of the biggest reasons employers reach out. We can help you evaluate whether the current fit is still right."
-                },
-                {
-                  q: "What documents will you need?",
-                  a: "Usually things like an application, employee census, payroll reports, SUTA, benefits documents, and workers' comp information when relevant."
-                },
-                {
-                  q: "How long does this usually take?",
-                  a: "A typical process is around 60 days, though some move faster and some slower depending on complexity and timing."
-                },
-                {
-                  q: "What happens after we decide?",
-                  a: "Pillar helps support the handoff into onboarding so you're not left to navigate the next phase alone."
-                }].
-                map(({ q, a }, i) =>
+                {FAQS.map(({ q, a }, i) =>
                 <AccordionItem key={i} value={`faq-${i}`}>
                     <AccordionTrigger className="text-left font-heading font-600 text-foreground">
                       {q}
