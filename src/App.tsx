@@ -28,6 +28,10 @@ import HowToSwitchPeos from "./pages/resources/HowToSwitchPeos";
 import PeoForNonprofitsGuide from "./pages/resources/PeoForNonprofitsGuide";
 import PeoReadiness from "./pages/resources/PeoReadiness";
 import PeoImplementation from "./pages/resources/PeoImplementation";
+import PeoCostGuide from "./pages/resources/PeoCostGuide";
+import PeoVsPayrollService from "./pages/resources/PeoVsPayrollService";
+import BestPeoForSmallBusiness from "./pages/resources/BestPeoForSmallBusiness";
+import TopPeoCompanies from "./pages/resources/TopPeoCompanies";
 
 const queryClient = new QueryClient();
 
