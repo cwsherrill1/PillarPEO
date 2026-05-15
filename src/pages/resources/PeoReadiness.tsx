@@ -7,6 +7,13 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Reveal } from "@/components/Reveal";
 import SEOHead from "@/components/SEOHead";
+import { ArticleByline, buildArticleJsonLd } from "@/components/ArticleByline";
+
+const ARTICLE = buildArticleJsonLd({
+  title: "Is Your Company Ready for a PEO?",
+  description: "An interactive self-assessment to see if your company is a good PEO fit.",
+  path: "/resources/peo-readiness",
+});
 
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
@@ -97,6 +104,8 @@ const PeoReadiness = () => {
       <SEOHead
         title="Is Your Company Ready for a PEO?"
         description="Use this interactive self-assessment to find out if your company is a good fit for a PEO. Check off the statements that apply and get instant guidance."
+        jsonLd={ARTICLE}
+        ogType="article"
       />
 
       <section className="bg-primary py-24 md:py-32">
@@ -112,6 +121,9 @@ const PeoReadiness = () => {
             <p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80 md:text-xl">
               Most employers don't know a PEO is the right move until they're already overwhelmed. Use this self-assessment to see where you actually stand.
             </p>
+          </Reveal>
+          <Reveal delay={150}>
+            <ArticleByline />
           </Reveal>
           <Reveal delay={200}>
             <div className="mt-8">
