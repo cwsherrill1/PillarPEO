@@ -85,6 +85,34 @@ const resources = [
     category: "Guide",
     href: "/resources/peo-implementation",
   },
+  {
+    icon: DollarSign,
+    title: "How Much Does a PEO Cost in 2026?",
+    desc: "Real pricing models, hidden fees, renewal increases, and how to compare quotes apples-to-apples.",
+    category: "Cost Guide",
+    href: "/resources/peo-cost-guide",
+  },
+  {
+    icon: FileText,
+    title: "PEO vs. Payroll Service: When You Need Each",
+    desc: "When to stick with Gusto/ADP Run and when you've outgrown a basic payroll provider.",
+    category: "Comparison",
+    href: "/resources/peo-vs-payroll-service",
+  },
+  {
+    icon: BookOpen,
+    title: "Best PEO for Small Business (2026)",
+    desc: "An independent broker's comparison of Justworks, Rippling, ADP TotalSource, Insperity, TriNet, and Gusto.",
+    category: "Comparison",
+    href: "/resources/best-peo-for-small-business",
+  },
+  {
+    icon: Newspaper,
+    title: "Top PEO Companies in 2026",
+    desc: "The PEO landscape grouped by tier — national, modern, and industry-vertical — with how to pick.",
+    category: "Industry Guide",
+    href: "/resources/top-peo-companies",
+  },
 ];
 
 const insights = [
