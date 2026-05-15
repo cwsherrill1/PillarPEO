@@ -25,7 +25,7 @@ const sections = [
   {
     title: "Contact Us",
     content:
-      "If you have questions about this Privacy Policy or how we handle your data, please reach out to us at [email@pillarpeo.com] or through our Contact page.",
+      "If you have questions about this Privacy Policy or how we handle your data, please reach out to us at info@pillarpeo.com or through our Contact page.",
   },
 ];
 
