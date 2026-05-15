@@ -116,8 +116,8 @@ const Footer = () => {
             </h4>
             <ul className="space-y-2.5 text-sm text-primary-foreground/60">
               <li>
-                <a href="mailto:caleb@pillarpeo.com" className="transition-colors hover:text-accent">
-                  caleb@pillarpeo.com
+                <a href="mailto:info@pillarpeo.com" className="transition-colors hover:text-accent">
+                  info@pillarpeo.com
                 </a>
               </li>
               <li>

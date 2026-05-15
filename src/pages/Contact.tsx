@@ -23,7 +23,7 @@ const contactJsonLd = {
   "@type": "ProfessionalService",
   name: "Pillar PEO Advisors",
   url: "https://pillarpeo.com",
-  email: "caleb@pillarpeo.com",
+  email: "info@pillarpeo.com",
   telephone: "+1-704-787-1261",
   address: {
     "@type": "PostalAddress",
@@ -35,7 +35,7 @@ const contactJsonLd = {
 };
 
 const contactCards = [
-  { icon: Mail, label: "Email", value: "caleb@pillarpeo.com", href: "mailto:caleb@pillarpeo.com" },
+  { icon: Mail, label: "Email", value: "info@pillarpeo.com", href: "mailto:info@pillarpeo.com" },
   { icon: Phone, label: "Phone", value: "(704) 787-1261", href: undefined },
   { icon: MapPin, label: "Location", value: "Charlotte, NC", href: undefined },
 ];
