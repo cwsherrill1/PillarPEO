@@ -52,6 +52,7 @@ const PeoForNonprofits = () => (
       title="PEO for Nonprofits — Independent Broker"
       description="Pillar is an independent PEO broker helping nonprofits find the right PEO to streamline HR, payroll, and benefits — so your team can focus on the mission."
       jsonLd={nonprofitJsonLd}
+      ogImage="/og/og-nonprofits.jpg"
     />
     {/* Hero */}
     <section className="bg-primary text-primary-foreground">

@@ -155,6 +155,7 @@ const Resources = () => {
         title="Resources"
         description="Free PEO guides, checklists, and comparisons built for employers — not PEO sales teams. Make a confident decision."
         jsonLd={faqJsonLd}
+        ogImage="/og/og-resources.jpg"
       />
       {/* Hero */}
       <section className="bg-primary py-24 md:py-32">
