@@ -5,6 +5,13 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Reveal } from "@/components/Reveal";
 import SEOHead from "@/components/SEOHead";
+import { ArticleByline, ArticleAuthorBio, buildArticleJsonLd } from "@/components/ArticleByline";
+
+const ARTICLE = buildArticleJsonLd({
+  title: "Understanding Co-Employment",
+  description: "What co-employment actually means for your liability, your employees, and your control.",
+  path: "/resources/co-employment",
+});
 
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
@@ -20,6 +27,8 @@ const CoEmployment = () => (
     <SEOHead
       title="Understanding Co-Employment"
       description="Co-employment is the foundation of every PEO relationship. Learn what it actually means for your liability, your employees, and your control."
+      jsonLd={ARTICLE}
+      ogType="article"
     />
 
     {/* Hero */}
@@ -36,6 +45,9 @@ const CoEmployment = () => (
           <p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80 md:text-xl">
             Co-employment is the foundation of every PEO relationship. Here's what it actually means for your liability, your employees, and your control.
           </p>
+        </Reveal>
+        <Reveal delay={150}>
+          <ArticleByline />
         </Reveal>
         <Reveal delay={200}>
           <div className="mt-8">

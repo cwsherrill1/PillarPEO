@@ -5,6 +5,13 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Reveal } from "@/components/Reveal";
 import SEOHead from "@/components/SEOHead";
+import { ArticleByline, ArticleAuthorBio, buildArticleJsonLd } from "@/components/ArticleByline";
+
+const ARTICLE = buildArticleJsonLd({
+  title: "How to Switch PEOs Without Disrupting Payroll",
+  description: "What the switching process actually looks like and how to do it without missing a beat.",
+  path: "/resources/how-to-switch-peos",
+});
 
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
@@ -25,6 +32,8 @@ const HowToSwitchPeos = () => (
     <SEOHead
       title="How to Switch PEOs Without Disrupting Payroll"
       description="The fear of transition keeps employers stuck in bad PEO relationships. Here's what the switching process actually looks like and how to do it right."
+      jsonLd={ARTICLE}
+      ogType="article"
     />
 
     <section className="bg-primary py-24 md:py-32">
@@ -40,6 +49,9 @@ const HowToSwitchPeos = () => (
           <p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80 md:text-xl">
             The fear of transition keeps thousands of employers stuck in PEO relationships that aren't working. Here's what the process actually looks like — and how to do it right.
           </p>
+        </Reveal>
+        <Reveal delay={150}>
+          <ArticleByline />
         </Reveal>
         <Reveal delay={200}>
           <div className="mt-8">
