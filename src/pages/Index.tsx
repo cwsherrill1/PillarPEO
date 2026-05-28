@@ -108,16 +108,19 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="flex justify-center">
+            <div className="flex flex-col items-center">
               <img
                 src={heroTeam}
-                alt="Diverse team collaborating in a modern office"
-                width={576}
-                height={576}
+                alt="Caleb and Josiah Sherrill, founders of Pillar PEO Advisors"
+                width={1050}
+                height={1400}
                 fetchPriority="high"
                 decoding="async"
-                className="w-full max-w-md rounded-2xl shadow-2xl shadow-black/20 object-cover"
+                className="w-full max-w-sm rounded-2xl shadow-2xl shadow-black/30 object-cover aspect-[3/4]"
               />
+              <p className="mt-3 text-sm text-primary-foreground/70">
+                Caleb &amp; Josiah Sherrill, Founders
+              </p>
             </div>
           </div>
         </div>
