@@ -315,31 +315,30 @@ const Resources = () => {
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {filteredResources.map((r, i) => (
               <Reveal key={r.title} delay={i * 80}>
-                <Card className="group h-full transition-shadow duration-300 hover:shadow-lg">
-                  <CardContent className="flex h-full flex-col p-6">
-                    <div className="flex items-start justify-between">
-                      <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
-                        <r.icon className="h-6 w-6 text-primary" />
+                <Link to={r.href} className="group block h-full cursor-pointer">
+                  <Card className="h-full transition-shadow duration-300 group-hover:shadow-lg">
+                    <CardContent className="flex h-full flex-col p-6">
+                      <div className="flex items-start justify-between">
+                        <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10">
+                          <r.icon className="h-6 w-6 text-primary" />
+                        </div>
+                        <Badge variant="secondary" className="text-xs">
+                          {r.category}
+                        </Badge>
                       </div>
-                      <Badge variant="secondary" className="text-xs">
-                        {r.category}
-                      </Badge>
-                    </div>
-                    <h3 className="mt-4 font-heading text-lg font-700 text-foreground">
-                      {r.title}
-                    </h3>
-                    <p className="mt-2 flex-1 text-base text-muted-foreground">
-                      {r.desc}
-                    </p>
-                    <Link
-                      to={r.href}
-                      className="mt-4 inline-flex items-center text-sm font-semibold text-accent transition-colors hover:text-accent/80"
-                    >
-                      Read More
-                      <ArrowRight className="ml-1 h-3.5 w-3.5" />
-                    </Link>
-                  </CardContent>
-                </Card>
+                      <h3 className="mt-4 font-heading text-lg font-700 text-foreground group-hover:text-accent transition-colors">
+                        {r.title}
+                      </h3>
+                      <p className="mt-2 flex-1 text-base text-muted-foreground">
+                        {r.desc}
+                      </p>
+                      <span className="mt-4 inline-flex items-center text-sm font-semibold text-accent transition-colors group-hover:text-accent/80">
+                        Read More
+                        <ArrowRight className="ml-1 h-3.5 w-3.5" />
+                      </span>
+                    </CardContent>
+                  </Card>
+                </Link>
               </Reveal>
             ))}
           </div>

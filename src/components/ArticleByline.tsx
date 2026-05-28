@@ -4,16 +4,16 @@ import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 const LINKEDIN_URL = "https://www.linkedin.com/in/calebsherrill/";
 
 export const ArticleByline = ({ datePublished = "2025" }: { datePublished?: string }) => (
-  <div className="mt-6 flex items-center justify-center gap-3 text-sm text-muted-foreground">
+  <div className="mt-6 flex items-center justify-center gap-3 text-sm text-primary-foreground/80">
     <Avatar className="h-9 w-9">
       <AvatarFallback className="bg-accent/15 text-accent text-xs font-heading font-700">
         CS
       </AvatarFallback>
     </Avatar>
     <div className="text-left">
-      <p className="font-semibold text-foreground">
+      <p className="font-semibold text-primary-foreground">
         By Caleb Sherrill
-        <span className="font-normal text-muted-foreground"> · Founder, PEO Advisor</span>
+        <span className="font-normal text-primary-foreground/70"> · Founder, PEO Advisor</span>
       </p>
       <p className="text-xs">
         Published {datePublished} ·{" "}

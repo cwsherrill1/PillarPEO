@@ -1,19 +1,19 @@
-# Swap hero image to real photo of Caleb & Josiah
+## Fix Author Name Visibility + Make Resource Cards Fully Clickable
 
-## Steps
+### Problem 1: Author name invisible on resource pages
+The `ArticleByline` component uses `text-foreground` (dark navy) for "By Caleb Sherrill", but it's rendered inside `bg-primary` (dark navy) hero sections. Dark text on dark background = invisible. The `text-muted-foreground` on the parent div and the "Published" line are also at risk.
 
-1. **Convert the HEIC upload** to a web-friendly JPG using ImageMagick (HEIC isn't supported by browsers). Save as `src/assets/hero-team.jpg`, replacing the existing stock photo. Target ~1200px on the long side, quality 85, for a sharp but lightweight hero.
+### Fix 1: Update `src/components/ArticleByline.tsx`
+- Change the outer div's text color from `text-muted-foreground` to `text-primary-foreground/80` so all text inherits a light, readable color.
+- Change the author name `text-foreground` to `text-primary-foreground` so it stands out.
+- Keep `text-muted-foreground` on the "· Founder, PEO Advisor" span, but adjust to `text-primary-foreground/70` for consistency.
+- Keep the LinkedIn link as `text-accent` (already visible on dark backgrounds).
 
-2. **Update the hero `<img>` in `src/pages/Index.tsx`:**
-   - Change `alt` to `"Caleb and Josiah Sherrill, founders of Pillar PEO Advisors"` (real names = better E-E-A-T and AEO signals)
-   - Adjust the image container so faces aren't clipped at the 884px viewport (object-position tuning, slightly taller aspect ratio if needed)
-   - Add a small caption under the photo: *"Caleb & Josiah Sherrill, Founders"* — subtle trust signal that ties the hero to the About page
+### Problem 2: Only the "Read More" button navigates on resource cards
+In `src/pages/Resources.tsx`, the resource grid cards have a `<Link>` only around the bottom "Read More" text. Users expect the whole card to be clickable.
 
-3. **Update Organization JSON-LD** in `src/pages/Index.tsx` to add an `image` field pointing at the new hero photo (absolute URL), reinforcing the real-human signal for search/AI.
-
-4. **Visual QA** after the swap: load the homepage at 884px and at desktop width, confirm both faces are visible and the crop looks natural. If the framing is off, I'll adjust object-position or come back to you for a different shot.
-
-## Notes / risks
-
-- I cannot preview the HEIC in this environment, so I'm trusting that the photo meets the guidelines we discussed (both visible, decent lighting, uncluttered background). If after the swap it doesn't land, easiest fix is a different photo.
-- No copy changes, no layout restructure beyond the hero image block.
+### Fix 2: Update `src/pages/Resources.tsx`
+- Wrap each `Card` in a `<Link to={r.href}>` so the entire card surface is clickable.
+- Remove the inner `<Link>` around "Read More" — replace it with a non-interactive `<span>` that keeps the same visual styling (arrow, accent color, hover state via parent `group-hover`).
+- Add `cursor-pointer` to the card wrapper.
+- Ensure no nested `<a>` tags (invalid HTML). The card's icon, title, description, and "Read More" area all become part of one single link surface.
