@@ -45,6 +45,7 @@ const orgJsonLd = {
       telephone: "+1-704-787-1261",
       email: "info@pillarpeo.com",
       address: { "@type": "PostalAddress", addressLocality: "Charlotte", addressRegion: "NC", addressCountry: "US" },
+      image: "https://pillarpeo.com/hero-team.jpg",
       founder: { "@id": "https://pillarpeo.com/#caleb" },
       knowsAbout: ["PEO broker", "PEO advisory", "Professional Employer Organization", "Co-employment", "PEO comparison", "Payroll", "Employee benefits", "HR compliance"],
     },
