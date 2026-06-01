@@ -87,7 +87,10 @@ const WhatIsAPeo = () => (
 
     <ArticleHero src={heroImg} alt="Architectural illustration of three columns symbolizing PEO co-employment" />
 
- className="mb-8 inline-flex items-center text-sm font-semibold text-accent hover:text-accent/80">
+    <section className="py-20 md:py-28">
+      <div className="container max-w-3xl">
+        <Reveal>
+          <Link to="/resources" className="mb-8 inline-flex items-center text-sm font-semibold text-accent hover:text-accent/80">
             <ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources
           </Link>
           <p className="text-xl leading-8 text-foreground/85">
