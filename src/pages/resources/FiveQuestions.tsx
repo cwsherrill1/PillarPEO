@@ -6,6 +6,16 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Reveal } from "@/components/Reveal";
 import SEOHead from "@/components/SEOHead";
 import { ArticleByline, ArticleAuthorBio, buildArticleJsonLd } from "@/components/ArticleByline";
+import { RedFlagVsGoodAnswer } from "@/components/ArticleDiagrams";
+
+const redFlagVsGood = [
+  { red: "Vague pricing built around a single bundled rate with no PEPM or % breakdown.", green: "Clear line items: admin fee, benefits passthrough, workers' comp, 401(k), implementation." },
+  { red: "\"You'll have a team\" with no named contact or response-time commitment.", green: "Named CSM, named payroll specialist, written SLA on response times." },
+  { red: "Won't share renewal history. \"Every client is different.\"", green: "Three years of average renewal % shared up front, plus references at your size." },
+  { red: "Termination requires 90+ days mid-plan-year with benefits cliff.", green: "30–60 day notice, clean data export, defined offboarding playbook." },
+  { red: "References are hand-picked rave reviews from wildly different industries.", green: "References at your size, industry, and multi-state setup — you pick from a list." },
+];
+
 
 const ARTICLE = buildArticleJsonLd({
   title: "5 Questions to Ask Any PEO",
@@ -113,7 +123,21 @@ const FiveQuestions = () => (
       </div>
     </section>
 
+    {/* Red Flag vs Good Answer */}
+    <section className="py-20 md:py-28">
+      <div className="container max-w-4xl">
+        <Reveal>
+          <h2 className="text-center font-heading text-2xl font-800 text-foreground md:text-3xl">How to tell a good answer from a red flag</h2>
+          <p className="mx-auto mt-3 max-w-2xl text-center text-base text-muted-foreground">
+            Same five questions. Two very different conversations.
+          </p>
+          <RedFlagVsGoodAnswer items={redFlagVsGood} />
+        </Reveal>
+      </div>
+    </section>
+
     {/* Bonus Insight */}
+
     <section className="py-20 md:py-28">
       <div className="container max-w-3xl">
         <Reveal>

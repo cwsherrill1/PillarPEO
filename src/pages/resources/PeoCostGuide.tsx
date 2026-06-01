@@ -7,6 +7,8 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Reveal } from "@/components/Reveal";
 import SEOHead from "@/components/SEOHead";
 import { ArticleByline, ArticleAuthorBio, buildArticleJsonLd } from "@/components/ArticleByline";
+import { PricingModelsCompare } from "@/components/ArticleDiagrams";
+
 
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
@@ -100,6 +102,8 @@ const PeoCostGuide = () => (
 
     <Section title="The Two Pricing Models — And Which Is Better for You" alt>
       <p>Every PEO uses one of two models (or a hybrid):</p>
+      <PricingModelsCompare />
+
       <Card className="mt-2 border-accent/20"><CardContent className="p-6">
         <h3 className="font-heading font-700 text-foreground">1. Per Employee Per Month (PEPM)</h3>
         <p className="mt-2 text-sm text-muted-foreground"><strong>Range:</strong> $80–$200/employee/month for the admin fee alone, before benefits and workers' comp. <strong>Best for:</strong> stable headcount, higher-wage workforces, and companies that want predictable budgeting. Most modern PEOs (Justworks, Rippling, Gusto's PEO, TriNet) lead with this.</p>
