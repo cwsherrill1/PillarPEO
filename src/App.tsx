@@ -37,11 +37,14 @@ import PeoBenefits from "./pages/resources/PeoBenefits";
 import PeoBrokerVsDirect from "./pages/resources/PeoBrokerVsDirect";
 import WhatIsAPeo from "./pages/resources/WhatIsAPeo";
 import EmployeeHealthBenefitsOptions from "./pages/resources/EmployeeHealthBenefitsOptions";
-import PeoBrokerCharlotteNc from "./pages/resources/PeoBrokerCharlotteNc";
 import PeoForVentureBackedStartups from "./pages/resources/PeoForVentureBackedStartups";
 import SignsOutgrownPeoCharlotte from "./pages/resources/SignsOutgrownPeoCharlotte";
 import PeoForNonprofitsCharlotte from "./pages/resources/PeoForNonprofitsCharlotte";
 import PeoIndustryTransparency from "./pages/resources/PeoIndustryTransparency";
+import PeoBroker from "./pages/PeoBroker";
+import PeoBrokerCharlotte from "./pages/PeoBrokerCharlotte";
+import PeoBrokerNorthCarolina from "./pages/PeoBrokerNorthCarolina";
+import PeoBrokerSouthCarolina from "./pages/PeoBrokerSouthCarolina";
 
 const queryClient = new QueryClient();
 
