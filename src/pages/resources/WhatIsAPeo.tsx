@@ -7,6 +7,8 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Reveal } from "@/components/Reveal";
 import SEOHead from "@/components/SEOHead";
 import { ArticleByline, ArticleAuthorBio, buildArticleJsonLd } from "@/components/ArticleByline";
+import { CoEmploymentDiagram } from "@/components/ArticleDiagrams";
+
 
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
@@ -115,6 +117,8 @@ const WhatIsAPeo = () => (
 
     <Section title="Co-Employment, Explained Without the Lawyer Speak">
       <p>The model that makes a PEO work is called co-employment. Two employers, two roles:</p>
+      <CoEmploymentDiagram />
+
       <Card className="mt-2 border-accent/20"><CardContent className="p-6">
         <h3 className="font-heading font-700 text-foreground">You = the worksite employer</h3>
         <p className="mt-2 text-sm text-muted-foreground">You hire, manage, direct work, decide pay, and fire. Employees show up to your office (or your Zoom). Your culture, your team.</p>
