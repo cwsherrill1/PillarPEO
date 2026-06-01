@@ -6,6 +6,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Reveal } from "@/components/Reveal";
 import SEOHead from "@/components/SEOHead";
 import { ArticleByline, ArticleAuthorBio, buildArticleJsonLd } from "@/components/ArticleByline";
+import { SwitchTimeline } from "@/components/ArticleDiagrams";
+
 
 const ARTICLE = buildArticleJsonLd({
   title: "How to Switch PEOs Without Disrupting Payroll",
@@ -110,28 +112,16 @@ const HowToSwitchPeos = () => (
 
     {/* Timeline */}
     <section className="bg-muted/30 py-20 md:py-28">
-      <div className="container max-w-3xl">
+      <div className="container max-w-4xl">
         <Reveal>
           <h2 className="font-heading text-2xl font-800 text-foreground md:text-3xl">The Transition Timeline</h2>
         </Reveal>
-        <div className="mt-8 space-y-4">
-          {timeline.map((step, i) => (
-            <Reveal key={i} delay={i * 80}>
-              <Card>
-                <CardContent className="flex items-start gap-4 p-6">
-                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent text-accent-foreground font-heading font-800">{i + 1}</span>
-                  <div>
-                    <p className="text-sm font-semibold text-accent">{step.weeks}</p>
-                    <h3 className="font-heading font-700 text-foreground">{step.title}</h3>
-                    <p className="mt-1 text-sm text-muted-foreground">{step.desc}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            </Reveal>
-          ))}
-        </div>
+        <Reveal delay={80}>
+          <SwitchTimeline phases={timeline} />
+        </Reveal>
       </div>
     </section>
+
 
     <section className="py-20 md:py-28">
       <div className="container max-w-3xl">
