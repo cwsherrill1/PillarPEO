@@ -7,6 +7,8 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Reveal } from "@/components/Reveal";
 import SEOHead from "@/components/SEOHead";
 import { ArticleByline, ArticleAuthorBio, buildArticleJsonLd } from "@/components/ArticleByline";
+import heroImg from "@/assets/blog/startups-hero.jpg";
+import { ArticleHero } from "@/components/ArticleHero";
 
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
@@ -81,10 +83,9 @@ const PeoForStartups = () => (
       </div>
     </section>
 
-    <section className="py-20 md:py-28">
-      <div className="container max-w-3xl">
-        <Reveal>
-          <Link to="/resources" className="mb-8 inline-flex items-center text-sm font-semibold text-accent hover:text-accent/80">
+    <ArticleHero src={heroImg} alt="Green ascending arrow over geometric columns, symbolizing startup growth" />
+
+ className="mb-8 inline-flex items-center text-sm font-semibold text-accent hover:text-accent/80">
             <ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources
           </Link>
           <p className="text-xl leading-8 text-foreground/85">
