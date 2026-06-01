@@ -39,6 +39,7 @@ import WhatIsAPeo from "./pages/resources/WhatIsAPeo";
 import EmployeeHealthBenefitsOptions from "./pages/resources/EmployeeHealthBenefitsOptions";
 import PeoBrokerCharlotteNc from "./pages/resources/PeoBrokerCharlotteNc";
 import PeoForVentureBackedStartups from "./pages/resources/PeoForVentureBackedStartups";
+import SignsOutgrownPeoCharlotte from "./pages/resources/SignsOutgrownPeoCharlotte";
 
 const queryClient = new QueryClient();
 
