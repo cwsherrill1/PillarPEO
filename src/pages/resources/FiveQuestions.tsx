@@ -6,6 +6,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Reveal } from "@/components/Reveal";
 import SEOHead from "@/components/SEOHead";
 import { ArticleByline, ArticleAuthorBio, buildArticleJsonLd } from "@/components/ArticleByline";
+import heroImg from "@/assets/blog/five-questions-hero.jpg";
+import { ArticleHero } from "@/components/ArticleHero";
 
 const ARTICLE = buildArticleJsonLd({
   title: "5 Questions to Ask Any PEO",
@@ -75,14 +77,17 @@ const FiveQuestions = () => (
       </div>
     </section>
 
+    <ArticleHero src={heroImg} alt="Five numbered pillars representing critical questions to ask a PEO" />
+
     {/* Intro */}
     <section className="py-20 md:py-28">
+
       <div className="container max-w-3xl">
         <Reveal>
           <Link to="/resources" className="mb-8 inline-flex items-center text-sm font-semibold text-accent hover:text-accent/80">
             <ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources
           </Link>
-          <p className="text-lg leading-relaxed text-muted-foreground">
+          <p className="text-xl leading-8 text-foreground/85">
             Signing with a PEO is a significant commitment. Most contracts run 12 months minimum, and switching mid-year costs time, money, and disruption. The problem is that most PEO sales reps are trained to close — not to help you evaluate. These five questions are what Pillar asks on behalf of every client before any recommendation is made.
           </p>
         </Reveal>
@@ -102,7 +107,7 @@ const FiveQuestions = () => (
                   </span>
                   <div>
                     <h2 className="font-heading text-xl font-700 text-foreground">{item.q}</h2>
-                    <p className="mt-3 text-base leading-relaxed text-muted-foreground">{item.a}</p>
+                    <p className="mt-3 text-lg leading-8 text-foreground/85">{item.a}</p>
                   </div>
                 </div>
               </CardContent>
@@ -119,7 +124,7 @@ const FiveQuestions = () => (
           <Card className="border-accent/30 bg-accent/5">
             <CardContent className="p-6 md:p-8">
               <h2 className="font-heading text-2xl font-800 text-foreground">What most employers never think to ask</h2>
-              <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+              <p className="mt-4 text-lg leading-8 text-foreground/85">
                 Beyond these five, there are deal-specific questions that depend on your size, industry, and current setup — things like how the PEO handles multi-state SUTA, what their technology stack looks like, and how they handle a payroll cutover. This is where having an independent advisor changes the outcome. Pillar asks these questions on your behalf — before you're locked into anything.
               </p>
             </CardContent>

@@ -6,6 +6,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Reveal } from "@/components/Reveal";
 import SEOHead from "@/components/SEOHead";
 import { ArticleByline, ArticleAuthorBio, buildArticleJsonLd } from "@/components/ArticleByline";
+import heroImg from "@/assets/blog/switch-peos-hero.jpg";
+import { ArticleHero } from "@/components/ArticleHero";
 
 const ARTICLE = buildArticleJsonLd({
   title: "How to Switch PEOs Without Disrupting Payroll",
@@ -63,13 +65,15 @@ const HowToSwitchPeos = () => (
       </div>
     </section>
 
+    <ArticleHero src={heroImg} alt="Illustration of a bridge connecting two PEO structures, symbolizing transition" />
+
     <section className="py-20 md:py-28">
       <div className="container max-w-3xl">
         <Reveal>
           <Link to="/resources" className="mb-8 inline-flex items-center text-sm font-semibold text-accent hover:text-accent/80">
             <ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources
           </Link>
-          <p className="text-lg leading-relaxed text-muted-foreground">
+          <p className="text-xl leading-8 text-foreground/85">
             The number one reason employers stay in a bad PEO relationship isn't loyalty — it's fear. Fear of payroll disruption. Fear of employee confusion during benefits transitions. Fear of losing momentum right when the business needs stability. That fear is understandable, but it's also largely preventable with the right plan. Switching PEOs is a structured process, not a leap of faith.
           </p>
         </Reveal>
@@ -80,7 +84,7 @@ const HowToSwitchPeos = () => (
       <div className="container max-w-3xl">
         <Reveal>
           <h2 className="font-heading text-2xl font-800 text-foreground md:text-3xl">Understand Your Current Contract</h2>
-          <p className="mt-4 text-base leading-relaxed text-muted-foreground">Before anything else, pull your current PEO agreement and identify:</p>
+          <p className="mt-4 text-lg leading-8 text-foreground/85">Before anything else, pull your current PEO agreement and identify:</p>
           <ul className="mt-4 space-y-3 text-base text-muted-foreground">
             <Bullet>Your termination notice window (typically 30–90 days)</Bullet>
             <Bullet>Your benefits contract end date — PEO benefits often run on a plan year that doesn't match your service contract</Bullet>
@@ -96,7 +100,7 @@ const HowToSwitchPeos = () => (
       <div className="container max-w-3xl">
         <Reveal>
           <h2 className="font-heading text-2xl font-800 text-foreground md:text-3xl">The Comparison Phase</h2>
-          <p className="mt-4 text-base leading-relaxed text-muted-foreground">Before you can switch, you need to know where you're going. This means:</p>
+          <p className="mt-4 text-lg leading-8 text-foreground/85">Before you can switch, you need to know where you're going. This means:</p>
           <ul className="mt-4 space-y-3 text-base text-muted-foreground">
             <Bullet>Gathering your payroll data, benefits census, workers' comp history, and SUTA rates</Bullet>
             <Bullet>Submitting that data to multiple PEO providers simultaneously</Bullet>
@@ -152,7 +156,7 @@ const HowToSwitchPeos = () => (
       <div className="container max-w-3xl">
         <Reveal>
           <h2 className="font-heading text-2xl font-800 text-foreground md:text-3xl">Benefits Transition — What Employees Experience</h2>
-          <p className="mt-4 text-base leading-relaxed text-muted-foreground">Benefits are where transitions require the most communication. Employees may:</p>
+          <p className="mt-4 text-lg leading-8 text-foreground/85">Benefits are where transitions require the most communication. Employees may:</p>
           <ul className="mt-4 space-y-3 text-base text-muted-foreground">
             <Bullet>Receive new insurance cards</Bullet>
             <Bullet>Need to re-select benefit options through a new enrollment portal</Bullet>
