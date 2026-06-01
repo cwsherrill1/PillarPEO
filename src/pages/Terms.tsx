@@ -39,7 +39,7 @@ const Terms = () => {
       <section className="bg-primary py-20 text-primary-foreground md:py-28">
         <div className="container text-center">
           <h1 className="font-heading text-3xl font-700 md:text-5xl">Terms of Service</h1>
-          <p className="mx-auto mt-4 max-w-lg text-primary-foreground/60">
+          <p className="mx-auto mt-4 max-w-lg text-primary-foreground/80">
             Last updated: March 2026
           </p>
         </div>

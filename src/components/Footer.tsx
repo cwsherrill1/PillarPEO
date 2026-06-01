@@ -13,7 +13,7 @@ const Footer = () => {
             <h3 className="font-heading text-2xl font-700 md:text-3xl">
               Make a confident next-step decision.
             </h3>
-            <p className="mt-2 max-w-md text-primary-foreground/60">
+            <p className="mt-2 max-w-md text-primary-foreground/80">
               Tell us what isn't working and we'll help you find a better-fit
               path forward.
             </p>
@@ -40,7 +40,7 @@ const Footer = () => {
               alt="Pillar PEO Advisors"
               className="h-10 w-auto brightness-0 invert"
             />
-            <p className="mt-4 text-sm leading-relaxed text-primary-foreground/50">
+            <p className="mt-4 text-sm leading-relaxed text-primary-foreground/75">
               Guidance for employers making high-stakes PEO decisions. Clarity
               over confusion. Confidence over guesswork.
             </p>
@@ -48,7 +48,7 @@ const Footer = () => {
 
           {/* Navigation */}
           <div>
-            <h4 className="mb-4 text-xs font-bold tracking-widest text-primary-foreground/40 uppercase">
+            <h4 className="mb-4 text-xs font-bold tracking-widest text-primary-foreground/70 uppercase">
               Navigation
             </h4>
             <ul className="space-y-2.5">
@@ -62,7 +62,7 @@ const Footer = () => {
                 <li key={link.href}>
                   <Link
                     to={link.href}
-                    className="text-sm text-primary-foreground/60 transition-colors hover:text-accent"
+                    className="text-sm text-primary-foreground/80 transition-colors hover:text-accent"
                   >
                     {link.label}
                   </Link>
@@ -73,7 +73,7 @@ const Footer = () => {
 
           {/* Solutions */}
           <div>
-            <h4 className="mb-4 text-xs font-bold tracking-widest text-primary-foreground/40 uppercase">
+            <h4 className="mb-4 text-xs font-bold tracking-widest text-primary-foreground/70 uppercase">
               Solutions
             </h4>
             <ul className="space-y-2.5">
@@ -88,20 +88,20 @@ const Footer = () => {
                 <li key={link.href}>
                   <Link
                     to={link.href}
-                    className="text-sm text-primary-foreground/60 transition-colors hover:text-accent"
+                    className="text-sm text-primary-foreground/80 transition-colors hover:text-accent"
                   >
                     {link.label}
                   </Link>
                 </li>
               ))}
 
-              <h4 className="mb-4 mt-8 text-xs font-bold tracking-widest text-primary-foreground/40 uppercase">
+              <h4 className="mb-4 mt-8 text-xs font-bold tracking-widest text-primary-foreground/70 uppercase">
                 Company
               </h4>
               <li>
                 <Link
                   to="/about#why-pillar"
-                  className="text-sm text-primary-foreground/60 transition-colors hover:text-accent"
+                  className="text-sm text-primary-foreground/80 transition-colors hover:text-accent"
                 >
                   Why Pillar
                 </Link>
@@ -111,10 +111,10 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="mb-4 text-xs font-bold tracking-widest text-primary-foreground/40 uppercase">
+            <h4 className="mb-4 text-xs font-bold tracking-widest text-primary-foreground/70 uppercase">
               Get in Touch
             </h4>
-            <ul className="space-y-2.5 text-sm text-primary-foreground/60">
+            <ul className="space-y-2.5 text-sm text-primary-foreground/80">
               <li>
                 <a href="mailto:info@pillarpeo.com" className="transition-colors hover:text-accent">
                   info@pillarpeo.com
@@ -129,20 +129,20 @@ const Footer = () => {
 
         {/* Legal */}
         <div className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-primary-foreground/10 pt-8 md:flex-row">
-          <p className="text-xs text-primary-foreground/40">
+          <p className="text-xs text-primary-foreground/70">
             © {new Date().getFullYear()} Pillar PEO Advisors. All rights
             reserved.
           </p>
           <div className="flex gap-6">
             <Link
               to="/privacy"
-              className="text-xs text-primary-foreground/40 transition-colors hover:text-primary-foreground/60"
+              className="text-xs text-primary-foreground/70 transition-colors hover:text-primary-foreground/80"
             >
               Privacy Policy
             </Link>
             <Link
               to="/terms"
-              className="text-xs text-primary-foreground/40 transition-colors hover:text-primary-foreground/60"
+              className="text-xs text-primary-foreground/70 transition-colors hover:text-primary-foreground/80"
             >
               Terms of Service
             </Link>

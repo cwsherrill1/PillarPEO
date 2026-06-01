@@ -166,7 +166,7 @@ const Header = () => {
               ))}
 
               {/* Solutions group */}
-              <div className="px-4 py-2 text-xs font-bold tracking-widest text-primary-foreground/40 uppercase">
+              <div className="px-4 py-2 text-xs font-bold tracking-widest text-primary-foreground/70 uppercase">
                 Solutions
               </div>
               {solutions.map((sol) => (
