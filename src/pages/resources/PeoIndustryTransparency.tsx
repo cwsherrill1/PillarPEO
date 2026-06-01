@@ -139,11 +139,15 @@ const PeoIndustryTransparency = () => (
 
     <Section title="A lot of brokers are just sending business back to their friends" alt>
       <p>
-        Many brokers in this industry spent years working inside a provider before going
-        independent. They keep the relationships, the old managers, the buddies still working the
-        sales floor. When a client shows up, the business quietly flows right back to the people
-        they used to work alongside. They call it a relationship. You think you are getting an
-        open market search. You are not.
+        Many{" "}
+        <Link to="/peo-broker" className="font-semibold text-accent hover:underline">
+          PEO brokers
+        </Link>{" "}
+        in this industry spent years working inside a provider before going independent. They keep
+        the relationships, the old managers, the buddies still working the sales floor. When a
+        client shows up, the business quietly flows right back to the people they used to work
+        alongside. They call it a relationship. You think you are getting an open market search.
+        You are not.
       </p>
       <p>
         You protect yourself with one question. Ask where they worked before, and watch whether
@@ -241,9 +245,9 @@ const PeoIndustryTransparency = () => (
               size="lg"
               className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20"
             >
-              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
+              <Link to="/contact">
                 Schedule a PEO Strategy Call
-              </a>
+              </Link>
             </Button>
           </div>
         </Reveal>

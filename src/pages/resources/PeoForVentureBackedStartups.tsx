@@ -217,13 +217,21 @@ const PeoForVentureBackedStartups = () => (
         Charlotte is not Silicon Valley, but its tech and fintech sectors are expanding quickly.
         Startups coming out of the Queen City's accelerator and angel networks face the same
         infrastructure challenges as any venture-backed company, usually with fewer internal
-        resources to solve them.
+        resources to solve them. If you're local, our{" "}
+        <Link to="/peo-broker-charlotte" className="font-semibold text-accent hover:underline">
+          Charlotte PEO broker page
+        </Link>{" "}
+        walks through what local representation looks like.
       </p>
       <p>
         Pillar PEO Advisors works with growth-stage and venture-backed companies to find providers
         that are built for scale, ready for investor scrutiny, and capable of handling a
-        fast-moving team. If you are raising in the next twelve months, now is the time to get
-        your people infrastructure in order.
+        fast-moving team. Working with an{" "}
+        <Link to="/peo-broker" className="font-semibold text-accent hover:underline">
+          independent PEO broker
+        </Link>{" "}
+        is how you get the structured evaluation investors look for. If you are raising in the next
+        twelve months, now is the time to get your people infrastructure in order.
       </p>
     </Section>
 
@@ -258,9 +266,9 @@ const PeoForVentureBackedStartups = () => (
               size="lg"
               className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20"
             >
-              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
+              <Link to="/contact">
                 Schedule a PEO Strategy Call
-              </a>
+              </Link>
             </Button>
           </div>
         </Reveal>

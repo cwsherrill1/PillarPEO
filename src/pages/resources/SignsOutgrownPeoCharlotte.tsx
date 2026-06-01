@@ -186,14 +186,22 @@ const SignsOutgrownPeoCharlotte = () => (
     <Section title="What switching actually looks like">
       <p>
         The number one reason businesses stay stuck is the belief that switching is painful. It
-        does not have to be. A broker manages the whole transition, from new proposals to
-        negotiating exit terms to coordinating the data handoff. In most cases it takes 30 to 45
-        days with minimal time required from you.
+        does not have to be. A{" "}
+        <Link to="/peo-broker" className="font-semibold text-accent hover:underline">
+          PEO broker
+        </Link>{" "}
+        manages the whole transition, from new proposals to negotiating exit terms to coordinating
+        the data handoff. In most cases it takes 30 to 45 days with minimal time required from you.
       </p>
       <p>
         One caution. If the person managing your switch came up through a provider and keeps
         nudging you toward their old team, you are not running an open search. Make sure whoever
         handles this is genuinely independent and will stay on afterward as a long-term watchdog.
+        For local Charlotte employers, our{" "}
+        <Link to="/peo-broker-charlotte" className="font-semibold text-accent hover:underline">
+          Charlotte broker page
+        </Link>{" "}
+        explains what that looks like in practice.
       </p>
       <p>
         If your renewal is coming up in the next 90 days, that is your window. We will give you an
@@ -233,9 +241,9 @@ const SignsOutgrownPeoCharlotte = () => (
               size="lg"
               className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20"
             >
-              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
+              <Link to="/contact">
                 Schedule a PEO Strategy Call
-              </a>
+              </Link>
             </Button>
           </div>
         </Reveal>
