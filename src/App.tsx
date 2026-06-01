@@ -39,6 +39,7 @@ import WhatIsAPeo from "./pages/resources/WhatIsAPeo";
 import EmployeeHealthBenefitsOptions from "./pages/resources/EmployeeHealthBenefitsOptions";
 import PeoBrokerCharlotteNc from "./pages/resources/PeoBrokerCharlotteNc";
 import PeoForVentureBackedStartups from "./pages/resources/PeoForVentureBackedStartups";
+import SignsOutgrownPeoCharlotte from "./pages/resources/SignsOutgrownPeoCharlotte";
 
 const queryClient = new QueryClient();
 
@@ -76,6 +77,7 @@ const App = () => (
             <Route path="/blog/employee-health-benefits-options" element={<EmployeeHealthBenefitsOptions />} />
             <Route path="/blog/peo-broker-charlotte-nc" element={<PeoBrokerCharlotteNc />} />
             <Route path="/blog/peo-for-venture-backed-startups" element={<PeoForVentureBackedStartups />} />
+            <Route path="/blog/signs-outgrown-peo-charlotte" element={<SignsOutgrownPeoCharlotte />} />
             <Route path="/hr-headache-score" element={<HrHeadacheQuiz />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
