@@ -80,7 +80,11 @@ const App = () => (
             <Route path="/resources/peo-broker-vs-direct" element={<PeoBrokerVsDirect />} />
             <Route path="/resources/what-is-a-peo" element={<WhatIsAPeo />} />
             <Route path="/blog/employee-health-benefits-options" element={<EmployeeHealthBenefitsOptions />} />
-            <Route path="/blog/peo-broker-charlotte-nc" element={<PeoBrokerCharlotteNc />} />
+            <Route path="/peo-broker" element={<PeoBroker />} />
+            <Route path="/peo-broker-charlotte" element={<PeoBrokerCharlotte />} />
+            <Route path="/peo-broker-north-carolina" element={<PeoBrokerNorthCarolina />} />
+            <Route path="/peo-broker-south-carolina" element={<PeoBrokerSouthCarolina />} />
+            <Route path="/blog/peo-broker-charlotte-nc" element={<Navigate to="/peo-broker-charlotte" replace />} />
             <Route path="/blog/peo-for-venture-backed-startups" element={<PeoForVentureBackedStartups />} />
             <Route path="/blog/signs-outgrown-peo-charlotte" element={<SignsOutgrownPeoCharlotte />} />
             <Route path="/blog/peo-for-nonprofits-charlotte" element={<PeoForNonprofitsCharlotte />} />
