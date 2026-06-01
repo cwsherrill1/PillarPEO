@@ -77,8 +77,11 @@ const FiveQuestions = () => (
       </div>
     </section>
 
+    <ArticleHero src={heroImg} alt="Five numbered pillars representing critical questions to ask a PEO" />
+
     {/* Intro */}
     <section className="py-20 md:py-28">
+
       <div className="container max-w-3xl">
         <Reveal>
           <Link to="/resources" className="mb-8 inline-flex items-center text-sm font-semibold text-accent hover:text-accent/80">
