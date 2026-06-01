@@ -77,6 +77,7 @@ const App = () => (
             <Route path="/blog/employee-health-benefits-options" element={<EmployeeHealthBenefitsOptions />} />
             <Route path="/blog/peo-broker-charlotte-nc" element={<PeoBrokerCharlotteNc />} />
             <Route path="/blog/peo-for-venture-backed-startups" element={<PeoForVentureBackedStartups />} />
+            <Route path="/blog/signs-outgrown-peo-charlotte" element={<SignsOutgrownPeoCharlotte />} />
             <Route path="/hr-headache-score" element={<HrHeadacheQuiz />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
