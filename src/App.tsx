@@ -41,6 +41,7 @@ import PeoBrokerCharlotteNc from "./pages/resources/PeoBrokerCharlotteNc";
 import PeoForVentureBackedStartups from "./pages/resources/PeoForVentureBackedStartups";
 import SignsOutgrownPeoCharlotte from "./pages/resources/SignsOutgrownPeoCharlotte";
 import PeoForNonprofitsCharlotte from "./pages/resources/PeoForNonprofitsCharlotte";
+import PeoIndustryTransparency from "./pages/resources/PeoIndustryTransparency";
 
 const queryClient = new QueryClient();
 
