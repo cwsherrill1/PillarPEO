@@ -40,6 +40,7 @@ import EmployeeHealthBenefitsOptions from "./pages/resources/EmployeeHealthBenef
 import PeoBrokerCharlotteNc from "./pages/resources/PeoBrokerCharlotteNc";
 import PeoForVentureBackedStartups from "./pages/resources/PeoForVentureBackedStartups";
 import SignsOutgrownPeoCharlotte from "./pages/resources/SignsOutgrownPeoCharlotte";
+import PeoForNonprofitsCharlotte from "./pages/resources/PeoForNonprofitsCharlotte";
 
 const queryClient = new QueryClient();
 
@@ -78,6 +79,7 @@ const App = () => (
             <Route path="/blog/peo-broker-charlotte-nc" element={<PeoBrokerCharlotteNc />} />
             <Route path="/blog/peo-for-venture-backed-startups" element={<PeoForVentureBackedStartups />} />
             <Route path="/blog/signs-outgrown-peo-charlotte" element={<SignsOutgrownPeoCharlotte />} />
+            <Route path="/blog/peo-for-nonprofits-charlotte" element={<PeoForNonprofitsCharlotte />} />
             <Route path="/hr-headache-score" element={<HrHeadacheQuiz />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
