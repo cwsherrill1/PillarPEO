@@ -1,19 +1,29 @@
-## Fix Author Name Visibility + Make Resource Cards Fully Clickable
+## New blog post: How to Choose a PEO Broker in Charlotte NC
 
-### Problem 1: Author name invisible on resource pages
-The `ArticleByline` component uses `text-foreground` (dark navy) for "By Caleb Sherrill", but it's rendered inside `bg-primary` (dark navy) hero sections. Dark text on dark background = invisible. The `text-muted-foreground` on the parent div and the "Published" line are also at risk.
+Create a new article page following the same pattern as the previous hub post (`EmployeeHealthBenefitsOptions.tsx`) — same hero, byline, alternating sections, FAQ accordion, author bio, and final CTA.
 
-### Fix 1: Update `src/components/ArticleByline.tsx`
-- Change the outer div's text color from `text-muted-foreground` to `text-primary-foreground/80` so all text inherits a light, readable color.
-- Change the author name `text-foreground` to `text-primary-foreground` so it stands out.
-- Keep `text-muted-foreground` on the "· Founder, PEO Advisor" span, but adjust to `text-primary-foreground/70` for consistency.
-- Keep the LinkedIn link as `text-accent` (already visible on dark backgrounds).
+### Files
 
-### Problem 2: Only the "Read More" button navigates on resource cards
-In `src/pages/Resources.tsx`, the resource grid cards have a `<Link>` only around the bottom "Read More" text. Users expect the whole card to be clickable.
+**Create** `src/pages/resources/PeoBrokerCharlotteNc.tsx`
+- `SEOHead`:
+  - title: `How to Choose a PEO Broker in Charlotte NC`
+  - description: `Most PEO brokers came from the PEO side and quietly send business to old buddies. Here is how to find one who actually works for you in Charlotte.`
+  - `ogType="article"`
+  - JSON-LD: Article + BreadcrumbList (via `buildArticleJsonLd`) + FAQPage
+  - `datePublished: "2026-04-07"`
+- Hero (`bg-primary`): Badge "Charlotte Guide", H1 "How to Choose a PEO Broker in Charlotte NC" (last phrase in `text-accent`), subhead, `<ArticleByline datePublished="April 7, 2026" />`, primary CTA → HubSpot.
+- Intro: back-to-resources link, bolded summary box (accent-bordered card) with the supplied summary, then the two opening paragraphs.
+- Alternating `Section` components for: What independent representation actually means · What a real broker does for you (with bullet list + closing paragraph) · Why this matters in Charlotte specifically · The fee question · Questions to ask any broker before you trust them (bullet list + closing line) · See what your options actually look like.
+- FAQ section: Accordion with the 4 Q/A items.
+- `<ArticleAuthorBio />`.
+- Final CTA section (`bg-primary`) with "Schedule a PEO Strategy Call" → HubSpot.
 
-### Fix 2: Update `src/pages/Resources.tsx`
-- Wrap each `Card` in a `<Link to={r.href}>` so the entire card surface is clickable.
-- Remove the inner `<Link>` around "Read More" — replace it with a non-interactive `<span>` that keeps the same visual styling (arrow, accent color, hover state via parent `group-hover`).
-- Add `cursor-pointer` to the card wrapper.
-- Ensure no nested `<a>` tags (invalid HTML). The card's icon, title, description, and "Read More" area all become part of one single link surface.
+**Edit** `src/App.tsx`
+- Import `PeoBrokerCharlotteNc`.
+- Add route: `<Route path="/blog/peo-broker-charlotte-nc" element={<PeoBrokerCharlotteNc />} />`.
+- Existing redirect `/blog/what-is-a-peo-broker-charlotte-nc → /about` stays as-is (different slug, no conflict).
+
+### Notes
+- Reuses all existing components (`SEOHead`, `ArticleByline`, `ArticleAuthorBio`, `Reveal`, `Accordion`, `Button`, `Badge`).
+- All copy, FAQ Q&A, and JSON-LD content used verbatim from the brief.
+- No nav or sitemap changes (matches how the previous hub post was shipped).

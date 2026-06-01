@@ -37,6 +37,7 @@ import PeoBenefits from "./pages/resources/PeoBenefits";
 import PeoBrokerVsDirect from "./pages/resources/PeoBrokerVsDirect";
 import WhatIsAPeo from "./pages/resources/WhatIsAPeo";
 import EmployeeHealthBenefitsOptions from "./pages/resources/EmployeeHealthBenefitsOptions";
+import PeoBrokerCharlotteNc from "./pages/resources/PeoBrokerCharlotteNc";
 
 const queryClient = new QueryClient();
 
@@ -72,6 +73,7 @@ const App = () => (
             <Route path="/resources/peo-broker-vs-direct" element={<PeoBrokerVsDirect />} />
             <Route path="/resources/what-is-a-peo" element={<WhatIsAPeo />} />
             <Route path="/blog/employee-health-benefits-options" element={<EmployeeHealthBenefitsOptions />} />
+            <Route path="/blog/peo-broker-charlotte-nc" element={<PeoBrokerCharlotteNc />} />
             <Route path="/hr-headache-score" element={<HrHeadacheQuiz />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
