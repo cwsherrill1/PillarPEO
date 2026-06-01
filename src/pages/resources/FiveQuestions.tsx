@@ -8,7 +8,7 @@ import SEOHead from "@/components/SEOHead";
 import { ArticleByline, ArticleAuthorBio, buildArticleJsonLd } from "@/components/ArticleByline";
 
 const ARTICLE = buildArticleJsonLd({
-  title: "5 Questions to Ask Any PEO Before Signing",
+  title: "5 Questions to Ask Any PEO",
   description: "The critical questions most employers never think to ask before signing with a PEO.",
   path: "/resources/5-questions",
 });

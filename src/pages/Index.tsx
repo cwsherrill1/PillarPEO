@@ -72,7 +72,7 @@ const Index = () => {
   return (
     <>
       <SEOHead
-        title="Independent PEO Broker — Compare PEO Options With Confidence"
+        title="Independent PEO Broker — Compare PEOs"
         description="Pillar PEO Advisors is an independent PEO broker helping small and mid-sized employers compare PEOs, expose hidden fees, and switch with no service fee."
         jsonLd={orgJsonLd} />
       
