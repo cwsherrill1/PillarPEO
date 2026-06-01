@@ -24,7 +24,7 @@ const Section = ({ title, children, alt = false }: { title: string; children: Re
     <div className="container max-w-3xl">
       <Reveal>
         <h2 className="font-heading text-2xl font-800 text-foreground md:text-3xl">{title}</h2>
-        <div className="mt-4 space-y-4 text-base leading-relaxed text-muted-foreground">{children}</div>
+        <div className="mt-4 space-y-4 text-lg leading-8 text-foreground/85">{children}</div>
       </Reveal>
     </div>
   </section>
@@ -80,7 +80,7 @@ const PeoImplementation = () => (
           <Link to="/resources" className="mb-8 inline-flex items-center text-sm font-semibold text-accent hover:text-accent/80">
             <ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources
           </Link>
-          <p className="text-lg leading-relaxed text-muted-foreground">
+          <p className="text-xl leading-8 text-foreground/85">
             Most employers focus heavily on the evaluation and selection process — and then are surprised by how much work happens after they sign. A PEO implementation is not just a software setup. It involves migrating payroll data, transitioning benefits, communicating with employees, and coordinating between your current and new providers. This guide walks you through what to expect — and what to watch for.
           </p>
         </Reveal>

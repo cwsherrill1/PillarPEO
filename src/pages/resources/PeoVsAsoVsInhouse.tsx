@@ -76,7 +76,7 @@ const PeoVsAsoVsInhouse = () => (
           <Link to="/resources" className="mb-8 inline-flex items-center text-sm font-semibold text-accent hover:text-accent/80">
             <ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources
           </Link>
-          <p className="text-lg leading-relaxed text-muted-foreground">
+          <p className="text-xl leading-8 text-foreground/85">
             There's a common assumption that a PEO is the right answer for every growing company. It isn't. The right HR model depends on your size, complexity, growth stage, and how much control your leadership wants to retain. This guide breaks down the three most common models so you can make the right call — not just the most marketed one.
           </p>
         </Reveal>

@@ -39,7 +39,7 @@ const Section = ({ title, children, alt = false }: { title: string; children: Re
     <div className="container max-w-3xl">
       <Reveal>
         <h2 className="font-heading text-2xl font-800 text-foreground md:text-3xl">{title}</h2>
-        <div className="mt-4 space-y-4 text-base leading-relaxed text-muted-foreground">{children}</div>
+        <div className="mt-4 space-y-4 text-lg leading-8 text-foreground/85">{children}</div>
       </Reveal>
     </div>
   </section>
@@ -89,10 +89,10 @@ const WhatIsAPeo = () => (
           <Link to="/resources" className="mb-8 inline-flex items-center text-sm font-semibold text-accent hover:text-accent/80">
             <ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources
           </Link>
-          <p className="text-lg leading-relaxed text-muted-foreground">
+          <p className="text-xl leading-8 text-foreground/85">
             A PEO — Professional Employer Organization — is a company that handles your payroll, benefits, HR compliance, and workers' comp under a co-employment relationship. The short version: you keep running your business, the PEO handles all the administrative employment work, and your employees get Fortune-500-grade benefits at small-business scale.
           </p>
-          <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
+          <p className="mt-4 text-xl leading-8 text-foreground/85">
             That's the official definition. The rest of this guide is what's actually true once you're inside one.
           </p>
         </Reveal>

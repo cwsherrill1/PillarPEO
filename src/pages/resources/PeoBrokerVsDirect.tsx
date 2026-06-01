@@ -37,7 +37,7 @@ const Section = ({ title, children, alt = false }: { title: string; children: Re
     <div className="container max-w-3xl">
       <Reveal>
         <h2 className="font-heading text-2xl font-800 text-foreground md:text-3xl">{title}</h2>
-        <div className="mt-4 space-y-4 text-base leading-relaxed text-muted-foreground">{children}</div>
+        <div className="mt-4 space-y-4 text-lg leading-8 text-foreground/85">{children}</div>
       </Reveal>
     </div>
   </section>
@@ -87,7 +87,7 @@ const PeoBrokerVsDirect = () => (
           <Link to="/resources" className="mb-8 inline-flex items-center text-sm font-semibold text-accent hover:text-accent/80">
             <ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources
           </Link>
-          <p className="text-lg leading-relaxed text-muted-foreground">
+          <p className="text-xl leading-8 text-foreground/85">
             We're a PEO broker. So take this with appropriate skepticism — but we're also going to be honest about when going direct makes more sense than using us. Here's how the economics actually work, what brokers do that PEOs won't, and the situations where you should skip the broker entirely.
           </p>
         </Reveal>

@@ -141,7 +141,7 @@ const PeoReadiness = () => {
             <Link to="/resources" className="mb-8 inline-flex items-center text-sm font-semibold text-accent hover:text-accent/80">
               <ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources
             </Link>
-            <p className="text-lg leading-relaxed text-muted-foreground">
+            <p className="text-xl leading-8 text-foreground/85">
               A PEO makes a lot of sense for many growing companies — and very little sense for others. Before you start evaluating providers, it helps to understand whether your situation is actually a good PEO fit. Work through this checklist and see how many of these statements apply to your company.
             </p>
           </Reveal>

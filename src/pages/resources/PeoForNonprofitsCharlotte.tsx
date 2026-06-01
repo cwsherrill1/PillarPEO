@@ -55,7 +55,7 @@ const Section = ({
     <div className="container max-w-3xl">
       <Reveal>
         <h2 className="font-heading text-2xl font-800 text-foreground md:text-3xl">{title}</h2>
-        <div className="mt-4 space-y-4 text-base leading-relaxed text-muted-foreground">
+        <div className="mt-4 space-y-4 text-lg leading-8 text-foreground/85">
           {children}
         </div>
       </Reveal>
@@ -127,7 +127,7 @@ const PeoForNonprofitsCharlotte = () => (
               instead of administration.
             </p>
           </div>
-          <div className="mt-8 space-y-4 text-base leading-relaxed text-muted-foreground">
+          <div className="mt-8 space-y-4 text-lg leading-8 text-foreground/85">
             <p>
               Nonprofit leaders in Charlotte are running real organizations with real employees,
               real payroll obligations, and real compliance exposure. Most of them are doing it

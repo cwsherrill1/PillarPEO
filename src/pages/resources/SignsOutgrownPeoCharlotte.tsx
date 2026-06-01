@@ -55,7 +55,7 @@ const Section = ({
     <div className="container max-w-3xl">
       <Reveal>
         <h2 className="font-heading text-2xl font-800 text-foreground md:text-3xl">{title}</h2>
-        <div className="mt-4 space-y-4 text-base leading-relaxed text-muted-foreground">
+        <div className="mt-4 space-y-4 text-lg leading-8 text-foreground/85">
           {children}
         </div>
       </Reveal>
@@ -127,7 +127,7 @@ const SignsOutgrownPeoCharlotte = () => (
               a broker manages it.
             </p>
           </div>
-          <div className="mt-8 space-y-4 text-base leading-relaxed text-muted-foreground">
+          <div className="mt-8 space-y-4 text-lg leading-8 text-foreground/85">
             <p>
               Most companies do not leave their PEO because of a dramatic failure. They leave
               because something quietly stopped working and they finally got tired of accepting it.

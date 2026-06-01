@@ -59,7 +59,7 @@ const Section = ({
     <div className="container max-w-3xl">
       <Reveal>
         <h2 className="font-heading text-2xl font-800 text-foreground md:text-3xl">{title}</h2>
-        <div className="mt-4 space-y-4 text-base leading-relaxed text-muted-foreground">
+        <div className="mt-4 space-y-4 text-lg leading-8 text-foreground/85">
           {children}
         </div>
       </Reveal>
@@ -131,7 +131,7 @@ const EmployeeHealthBenefitsOptions = () => (
               claims are.
             </p>
           </div>
-          <div className="mt-8 space-y-4 text-base leading-relaxed text-muted-foreground">
+          <div className="mt-8 space-y-4 text-lg leading-8 text-foreground/85">
             <p>
               If you have ever tried to figure out how to offer health insurance to your employees,
               you already know the problem. Every option comes with its own vocabulary, its own

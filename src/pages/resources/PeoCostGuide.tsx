@@ -41,7 +41,7 @@ const Section = ({ title, children, alt = false }: { title: string; children: Re
     <div className="container max-w-3xl">
       <Reveal>
         <h2 className="font-heading text-2xl font-800 text-foreground md:text-3xl">{title}</h2>
-        <div className="mt-4 space-y-4 text-base leading-relaxed text-muted-foreground">{children}</div>
+        <div className="mt-4 space-y-4 text-lg leading-8 text-foreground/85">{children}</div>
       </Reveal>
     </div>
   </section>
@@ -91,7 +91,7 @@ const PeoCostGuide = () => (
           <Link to="/resources" className="mb-8 inline-flex items-center text-sm font-semibold text-accent hover:text-accent/80">
             <ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources
           </Link>
-          <p className="text-lg leading-relaxed text-muted-foreground">
+          <p className="text-xl leading-8 text-foreground/85">
             Most published "PEO cost" articles are written by PEOs trying to sell you something — or by SEO sites guessing at numbers. This one is written by an independent broker who actually sees real quotes from ADP TotalSource, Insperity, Justworks, Rippling, TriNet, Paychex, and dozens of regional PEOs every month. Here's what PEOs actually cost in 2026, what's negotiable, and what you should never pay extra for.
           </p>
         </Reveal>

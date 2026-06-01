@@ -70,10 +70,10 @@ const CoEmployment = () => (
 
         <Reveal>
           <h2 className="font-heading text-2xl font-800 text-foreground md:text-3xl">What Is Co-Employment?</h2>
-          <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+          <p className="mt-4 text-lg leading-8 text-foreground/85">
             When you partner with a PEO, both you and the PEO become employers of your workforce in different capacities. The PEO becomes the employer of record for payroll, tax filings, benefits administration, and regulatory compliance. You remain the employer of record for day-to-day direction, operations, culture, and all hiring and firing decisions. This shared arrangement is called co-employment.
           </p>
-          <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+          <p className="mt-4 text-lg leading-8 text-foreground/85">
             It exists because the IRS and most state agencies require a legal entity to withhold taxes and administer benefits at scale. The PEO fills that role — which is how they can offer Fortune 500-level benefits at small business prices. Pooling thousands of employees from hundreds of companies gives PEOs buying power that no single employer of 50 or 100 people could replicate.
           </p>
         </Reveal>
@@ -84,7 +84,7 @@ const CoEmployment = () => (
       <div className="container max-w-3xl">
         <Reveal>
           <h2 className="font-heading text-2xl font-800 text-foreground md:text-3xl">What Changes for Your Employees</h2>
-          <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+          <p className="mt-4 text-lg leading-8 text-foreground/85">
             For most employees, the change is invisible in daily life. They still show up to the same office, report to the same managers, and follow your company's policies and culture. What may change:
           </p>
           <ul className="mt-4 space-y-3 text-base text-muted-foreground">
@@ -92,7 +92,7 @@ const CoEmployment = () => (
             <li className="flex items-start gap-2"><span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-accent" />Benefits enrollment and payroll processing flow through the PEO's platform</li>
             <li className="flex items-start gap-2"><span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-accent" />They may have access to a broader HR portal, additional employee assistance programs, or upgraded benefit options</li>
           </ul>
-          <p className="mt-4 text-base leading-relaxed text-muted-foreground">These are generally improvements, not friction points.</p>
+          <p className="mt-4 text-lg leading-8 text-foreground/85">These are generally improvements, not friction points.</p>
         </Reveal>
       </div>
     </section>
@@ -101,7 +101,7 @@ const CoEmployment = () => (
       <div className="container max-w-3xl">
         <Reveal>
           <h2 className="font-heading text-2xl font-800 text-foreground md:text-3xl">What You Keep Control Of</h2>
-          <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+          <p className="mt-4 text-lg leading-8 text-foreground/85">
             This is where employers often have the most anxiety — and the most misconceptions. You retain full control of:
           </p>
           <ul className="mt-4 space-y-3 text-base text-muted-foreground">
@@ -118,10 +118,10 @@ const CoEmployment = () => (
       <div className="container max-w-3xl">
         <Reveal>
           <h2 className="font-heading text-2xl font-800 text-foreground md:text-3xl">The Liability Question</h2>
-          <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+          <p className="mt-4 text-lg leading-8 text-foreground/85">
             Co-employment does shift some employer liability to the PEO — specifically in areas like payroll tax compliance, employment law filings, and benefits administration. This is one of the reasons employers use PEOs: shared liability on compliance functions is meaningful protection, especially for multi-state employers navigating different state labor laws.
           </p>
-          <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+          <p className="mt-4 text-lg leading-8 text-foreground/85">
             However, co-employment does not eliminate your liability as the worksite employer. You are still responsible for what happens on your job sites, how your managers treat employees, and the decisions you make about the workforce. Think of it as shared accountability on the administrative side, not a liability transfer.
           </p>
         </Reveal>
@@ -169,10 +169,10 @@ const CoEmployment = () => (
       <div className="container max-w-3xl">
         <Reveal>
           <h2 className="font-heading text-2xl font-800 text-foreground md:text-3xl">Is Co-Employment Right for Your Organization?</h2>
-          <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+          <p className="mt-4 text-lg leading-8 text-foreground/85">
             Co-employment works best when an employer wants professional HR infrastructure, better benefits, compliance confidence, and administrative relief — without building an internal HR department to match. It tends to be the right model for organizations with 10 to 250 employees that have outgrown founder-led HR or whose current PEO relationship is underperforming.
           </p>
-          <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+          <p className="mt-4 text-lg leading-8 text-foreground/85">
             It is not the right model for organizations that need full HR outsourcing without any involvement, or those with unusual workforce arrangements that don't fit a standard PEO structure.
           </p>
         </Reveal>

@@ -53,7 +53,7 @@ const Section = ({ title, children, alt = false }: { title: string; children: Re
     <div className="container max-w-3xl">
       <Reveal>
         <h2 className="font-heading text-2xl font-800 text-foreground md:text-3xl">{title}</h2>
-        <div className="mt-4 space-y-4 text-base leading-relaxed text-muted-foreground">{children}</div>
+        <div className="mt-4 space-y-4 text-lg leading-8 text-foreground/85">{children}</div>
       </Reveal>
     </div>
   </section>
@@ -93,7 +93,7 @@ const TopPeoCompanies = () => (
       <div className="container max-w-3xl">
         <Reveal>
           <Link to="/resources" className="mb-8 inline-flex items-center text-sm font-semibold text-accent hover:text-accent/80"><ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources</Link>
-          <p className="text-lg leading-relaxed text-muted-foreground">
+          <p className="text-xl leading-8 text-foreground/85">
             There are roughly 500 PEOs in the United States. Most "top PEO" rankings are based on revenue, sponsorship, or whoever paid for placement. This guide groups the providers by category and use case so you can quickly see which tier matches your company — then narrow from there. We don't take fees from any provider for being listed.
           </p>
         </Reveal>
@@ -108,7 +108,7 @@ const TopPeoCompanies = () => (
             <Reveal key={t.tier}>
               <div className="rounded-2xl border border-border bg-card p-6 md:p-8">
                 <h3 className="font-heading text-xl font-700 text-foreground">{t.tier}</h3>
-                <p className="mt-3 text-base leading-relaxed text-muted-foreground">{t.desc}</p>
+                <p className="mt-3 text-lg leading-8 text-foreground/85">{t.desc}</p>
                 <div className="mt-4 flex flex-wrap gap-2">
                   {t.list.map((p) => (
                     <Badge key={p} variant="outline" className="border-accent/30 text-foreground">{p}</Badge>
