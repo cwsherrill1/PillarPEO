@@ -36,6 +36,7 @@ import PeoForStartups from "./pages/resources/PeoForStartups";
 import PeoBenefits from "./pages/resources/PeoBenefits";
 import PeoBrokerVsDirect from "./pages/resources/PeoBrokerVsDirect";
 import WhatIsAPeo from "./pages/resources/WhatIsAPeo";
+import EmployeeHealthBenefitsOptions from "./pages/resources/EmployeeHealthBenefitsOptions";
 
 const queryClient = new QueryClient();
 
