@@ -288,9 +288,12 @@ const EmployeeHealthBenefitsOptions = () => (
       </p>
       <p>
         The tradeoffs live in the structure, the contract terms, and the renewal behavior, and
-        they vary widely from one arrangement to the next. This is the option where independent
-        representation matters most, because the differences between providers are large and not
-        obvious from a sales pitch.
+        they vary widely from one arrangement to the next. This is the option where{" "}
+        <Link to="/peo-broker" className="font-semibold text-accent hover:underline">
+          independent broker representation
+        </Link>{" "}
+        matters most, because the differences between providers are large and not obvious from a
+        sales pitch.
       </p>
       <p>
         <strong className="text-foreground">Tends to fit:</strong> Growth-minded small and
@@ -368,9 +371,9 @@ const EmployeeHealthBenefitsOptions = () => (
               size="lg"
               className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20"
             >
-              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
+              <Link to="/contact">
                 Schedule a PEO Strategy Call
-              </a>
+              </Link>
             </Button>
           </div>
         </Reveal>

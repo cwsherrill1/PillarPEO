@@ -189,13 +189,20 @@ const PeoForNonprofitsCharlotte = () => (
       <p>
         Plenty of advisors in this space came up through a single provider and quietly route every
         client back to their old team. A nonprofit on a tight budget cannot afford a recommendation
-        built around someone's friendships instead of your actual numbers. Work with someone
-        independent who will model the real cost, stay on as a long-term watchdog, and tell you
-        the truth, even if the truth is that you should wait.
+        built around someone's friendships instead of your actual numbers. Work with an{" "}
+        <Link to="/peo-broker" className="font-semibold text-accent hover:underline">
+          independent PEO broker
+        </Link>{" "}
+        who will model the real cost, stay on as a long-term watchdog, and tell you the truth, even
+        if the truth is that you should wait.
       </p>
       <p>
         Most Charlotte nonprofits we talk to are either overpaying for inadequate coverage or
-        underinvesting in HR in ways that quietly create risk. Both are solvable.
+        underinvesting in HR in ways that quietly create risk. Both are solvable — and{" "}
+        <Link to="/peo-broker-charlotte" className="font-semibold text-accent hover:underline">
+          working with a local Charlotte broker
+        </Link>{" "}
+        is the fastest way to get a clear picture.
       </p>
     </Section>
 
@@ -230,9 +237,9 @@ const PeoForNonprofitsCharlotte = () => (
               size="lg"
               className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20"
             >
-              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
+              <Link to="/contact">
                 Schedule a PEO Strategy Call
-              </a>
+              </Link>
             </Button>
           </div>
         </Reveal>
