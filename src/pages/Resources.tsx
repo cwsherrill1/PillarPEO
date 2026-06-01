@@ -141,7 +141,43 @@ const resources = [
     category: "Guide",
     href: "/resources/what-is-a-peo",
   },
+  {
+    icon: HelpCircle,
+    title: "Employee Health Benefits Options: What Employers Actually Offer",
+    desc: "Fully-insured, level-funded, ICHRA, PEO master plans, and association health plans — how each works and when it fits.",
+    category: "Guide",
+    href: "/blog/employee-health-benefits-options",
+  },
+  {
+    icon: Building2,
+    title: "PEO for Venture-Backed Startups",
+    desc: "Multi-state compliance, equity-friendly payroll, and benefits that hold up in diligence.",
+    category: "Guide",
+    href: "/blog/peo-for-venture-backed-startups",
+  },
+  {
+    icon: RefreshCw,
+    title: "Signs You've Outgrown Your PEO (Charlotte)",
+    desc: "The renewal red flags, service gaps, and cost signals that mean it's time to move on.",
+    category: "Guide",
+    href: "/blog/signs-outgrown-peo-charlotte",
+  },
+  {
+    icon: Building2,
+    title: "PEO for Nonprofits in Charlotte",
+    desc: "What Charlotte-area nonprofits should weigh before signing — benefits, 403(b), and grant compliance.",
+    category: "Guide",
+    href: "/blog/peo-for-nonprofits-charlotte",
+  },
+  {
+    icon: Newspaper,
+    title: "PEO Industry Transparency",
+    desc: "How the PEO industry actually makes money — and what employers deserve to see in a quote.",
+    category: "Industry Guide",
+    href: "/blog/peo-industry-transparency",
+  },
 ];
+
 
 const insights = [
   {

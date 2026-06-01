@@ -1,31 +1,26 @@
-## Goal
-Make blog/resource articles easier to read and more visually engaging.
+## Issue
 
-## What I'll change
+The article "Employee Health Benefits Options" exists and is routed at `/blog/employee-health-benefits-options` (see `src/App.tsx`), but it isn't included in the `resources` array in `src/pages/Resources.tsx`. That's why it doesn't appear in the Resources grid.
 
-### 1. Readability bump (all resource articles)
-- Bump body copy from `text-base` → `text-lg` (18px) and intro paragraphs from `text-lg` → `text-xl`.
-- Increase line-height to `leading-relaxed`/`leading-8` for long-form prose.
-- Constrain measure to `max-w-3xl` (already in place on most) and tighten paragraph spacing to `space-y-5`.
-- Slightly darken muted body text for contrast (use `text-foreground/80` instead of `text-muted-foreground` for main prose; keep `text-muted-foreground` for captions/meta).
-- Apply consistently across `src/pages/resources/*.tsx` and `src/pages/DoWeNeedAPeo.tsx`, `SwitchYourPeo.tsx`, etc.
+A few other `/blog/*` articles have the same problem (venture-backed startups, signs you've outgrown your PEO, nonprofits Charlotte, industry transparency) — they're routed but not surfaced anywhere except via direct URL or sitemap.
 
-### 2. Images in blog posts
-Two parts:
+## Plan
 
-**a. Hero image per article.** Generate a custom 16:9 hero image for each resource article using the brand palette (Dark Navy + Grass Green, advisor/Exodus aesthetic — no generic SaaS stock). Display it between the hero headline section and the article intro.
+1. Add a new entry to the `resources` array in `src/pages/Resources.tsx` for the health benefits post:
+   - icon: `HelpCircle` (or `FileText`)
+   - title: "Employee Health Benefits Options: What Employers Actually Offer"
+   - desc: short one-liner about the real options (fully-insured, level-funded, ICHRA, PEO master plans, association health plans) and how to choose
+   - category: "Guide"
+   - href: `/blog/employee-health-benefits-options`
 
-**b. One inline supporting image per article** (mid-article visual break) — abstract/editorial illustration, not stock photo people.
+2. (Optional, recommend) Also add cards for the other orphaned `/blog/*` articles so the Resources page is the single source of truth:
+   - PEO for Venture-Backed Startups → `/blog/peo-for-venture-backed-startups`
+   - Signs You've Outgrown Your PEO (Charlotte) → `/blog/signs-outgrown-peo-charlotte`
+   - PEO for Nonprofits (Charlotte) → `/blog/peo-for-nonprofits-charlotte`
+   - PEO Industry Transparency → `/blog/peo-industry-transparency`
 
-Articles getting images (~18 resource pages + 4 location/segment pages). I'll generate with `imagegen` at `standard` quality, save to `src/assets/blog/`, and import per page.
+No other changes — routes, SEO, and the article pages themselves are already in place.
 
-### 3. Shared component
-Add a small `<ArticleHero image={...} />` and `<ArticleImage />` wrapper to keep styling consistent (rounded-xl, shadow, proper alt text for SEO/AEO, lazy-loaded).
+## Question for you
 
-## What I need from you
-
-1. **Scope** — do all ~22 articles, or start with the top 5–6 (5 Questions, PEO Cost Guide, What Is a PEO, Switch Your PEO, Nonprofits, Startups)?
-2. **Image style** — abstract/editorial (architectural, pillars, light, navy/green geometry) OR photographic (real people in offices)? I'd recommend abstract/editorial to stay on-brand and avoid stock-photo feel.
-3. **Inline images** — one per article, or just hero images for now?
-
-Once you answer I'll switch to build mode and ship it.
+Do you want me to add just the health benefits post, or also surface the other four orphaned `/blog/*` articles at the same time?
