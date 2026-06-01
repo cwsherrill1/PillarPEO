@@ -5,8 +5,6 @@ import { Badge } from "@/components/ui/badge";
 import { Reveal } from "@/components/Reveal";
 import SEOHead from "@/components/SEOHead";
 import { ArticleByline, ArticleAuthorBio, buildArticleJsonLd } from "@/components/ArticleByline";
-import heroImg from "@/assets/blog/nonprofits-hero.jpg";
-import { ArticleHero } from "@/components/ArticleHero";
 
 const ARTICLE = buildArticleJsonLd({
   title: "PEO for Nonprofits: What to Know Before You Buy",
@@ -66,8 +64,6 @@ const PeoForNonprofitsGuide = () => (
         </Reveal>
       </div>
     </section>
-
-    <ArticleHero src={heroImg} alt="Open hand supporting a small structure, symbolizing nonprofit HR support" />
 
     <section className="py-20 md:py-28">
       <div className="container max-w-3xl">

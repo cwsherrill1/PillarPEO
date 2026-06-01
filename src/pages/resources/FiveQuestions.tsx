@@ -6,8 +6,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Reveal } from "@/components/Reveal";
 import SEOHead from "@/components/SEOHead";
 import { ArticleByline, ArticleAuthorBio, buildArticleJsonLd } from "@/components/ArticleByline";
-import heroImg from "@/assets/blog/five-questions-hero.jpg";
-import { ArticleHero } from "@/components/ArticleHero";
 
 const ARTICLE = buildArticleJsonLd({
   title: "5 Questions to Ask Any PEO",
@@ -76,8 +74,6 @@ const FiveQuestions = () => (
         </Reveal>
       </div>
     </section>
-
-    <ArticleHero src={heroImg} alt="Five numbered pillars representing critical questions to ask a PEO" />
 
     {/* Intro */}
     <section className="py-20 md:py-28">
