@@ -206,8 +206,8 @@ const Contact = () => {
                     />
                   </div>
 
-                  <Button type="submit" size="lg" className="w-full sm:w-auto bg-accent text-accent-foreground hover:bg-accent/90">
-                    Send My Request
+                  <Button type="submit" size="lg" disabled={submitting} className="w-full sm:w-auto bg-accent text-accent-foreground hover:bg-accent/90">
+                    {submitting ? "Sending…" : "Send My Request"}
                   </Button>
                 </form>
               </CardContent>
