@@ -15,6 +15,7 @@ import {
 import { toast } from "sonner";
 import { Reveal } from "@/components/Reveal";
 import SEOHead from "@/components/SEOHead";
+import { supabase } from "@/integrations/supabase/client";
 
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
@@ -64,8 +65,24 @@ const Contact = () => {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [submitting, setSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setSubmitting(true);
+    const { error } = await supabase.from("leads").insert({
+      source: "contact",
+      name: formData.name.trim(),
+      email: formData.email.trim(),
+      company: formData.company.trim(),
+      employees: formData.employees,
+      message: formData.message.trim(),
+    });
+    setSubmitting(false);
+    if (error) {
+      toast.error("Something went wrong. Please try again or email us at info@pillarpeo.com.");
+      return;
+    }
     toast.success("Thank you! We'll be in touch within 1 business day.");
     setFormData({ name: "", email: "", company: "", employees: "", message: "" });
   };
@@ -189,8 +206,8 @@ const Contact = () => {
                     />
                   </div>
 
-                  <Button type="submit" size="lg" className="w-full sm:w-auto bg-accent text-accent-foreground hover:bg-accent/90">
-                    Send My Request
+                  <Button type="submit" size="lg" disabled={submitting} className="w-full sm:w-auto bg-accent text-accent-foreground hover:bg-accent/90">
+                    {submitting ? "Sending…" : "Send My Request"}
                   </Button>
                 </form>
               </CardContent>
