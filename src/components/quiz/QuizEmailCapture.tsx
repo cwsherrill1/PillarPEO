@@ -3,8 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { ArrowRight } from "lucide-react";
-
-const WEBHOOK_URL = "YOUR_WEBHOOK_URL";
+import { supabase } from "@/integrations/supabase/client";
 
 interface QuizEmailCaptureProps {
   onSubmit: (data: { firstName: string; email: string; company: string }) => void;
@@ -23,17 +22,12 @@ const QuizEmailCapture = ({ onSubmit, onSkip }: QuizEmailCaptureProps) => {
 
     setSubmitting(true);
     try {
-      if (WEBHOOK_URL !== "YOUR_WEBHOOK_URL") {
-        await fetch(WEBHOOK_URL, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            firstName: firstName.trim(),
-            email: email.trim(),
-            company: company.trim(),
-          }),
-        });
-      }
+      await supabase.from("leads").insert({
+        source: "quiz",
+        name: firstName.trim(),
+        email: email.trim(),
+        company: company.trim(),
+      });
     } catch {
       // Silently continue — don't block results
     }
