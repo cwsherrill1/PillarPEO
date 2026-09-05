@@ -6,7 +6,7 @@ const LINKEDIN_URL = "https://www.linkedin.com/in/calebsherrill/";
 export const ArticleByline = ({ datePublished = "2025" }: { datePublished?: string }) => (
   <div className="mt-6 flex items-center justify-center gap-3 text-sm text-primary-foreground/80">
     <Avatar className="h-9 w-9">
-      <AvatarFallback className="bg-accent/15 text-green-ink text-xs font-heading font-700">
+      <AvatarFallback className="bg-accent/15 text-green text-xs font-heading font-700">
         CS
       </AvatarFallback>
     </Avatar>
@@ -21,7 +21,7 @@ export const ArticleByline = ({ datePublished = "2025" }: { datePublished?: stri
           href={LINKEDIN_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-1 text-green-ink hover:underline"
+          className="inline-flex items-center gap-1 text-green hover:underline"
         >
           <Linkedin className="h-3 w-3" /> LinkedIn
         </a>
@@ -68,12 +68,14 @@ export const buildArticleJsonLd = ({
   title,
   description,
   path,
-  datePublished = "2025-01-01",
+  datePublished,
+  dateModified,
 }: {
   title: string;
   description: string;
   path: string;
-  datePublished?: string;
+  datePublished: string;
+  dateModified?: string;
 }) => {
   const url = `https://pillarpeo.com${path}`;
   return {
@@ -85,25 +87,19 @@ export const buildArticleJsonLd = ({
         description,
         url,
         datePublished,
-        dateModified: datePublished,
-        author: {
-          "@type": "Person",
-          "@id": "https://pillarpeo.com/#caleb",
-          name: "Caleb Sherrill",
-          jobTitle: "Founder & PEO Advisor",
-          url: LINKEDIN_URL,
-          sameAs: [LINKEDIN_URL],
-        },
-        publisher: {
-          "@type": "Organization",
-          name: "Pillar PEO Advisors",
-          url: "https://pillarpeo.com",
-          logo: {
-            "@type": "ImageObject",
-            url: "https://pillarpeo.com/pillar-logo.png",
-          },
-        },
+        dateModified: dateModified ?? datePublished,
+        author: { "@id": "https://pillarpeo.com/#caleb" },
+        publisher: { "@id": "https://pillarpeo.com/#organization" },
         mainEntityOfPage: { "@type": "WebPage", "@id": url },
+      },
+      {
+        "@type": "Person",
+        "@id": "https://pillarpeo.com/#caleb",
+        name: "Caleb Sherrill",
+        jobTitle: "Founder & HR Advisor",
+        url: LINKEDIN_URL,
+        sameAs: [LINKEDIN_URL],
+        worksFor: { "@id": "https://pillarpeo.com/#organization" },
       },
       {
         "@type": "BreadcrumbList",
