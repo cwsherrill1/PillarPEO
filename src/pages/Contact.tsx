@@ -60,36 +60,56 @@ const steps = [
   },
 ];
 
+const FIRM_SIZES = ["1–9", "10–25", "26–75", "76–150", "150+"];
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    company: "",
     employees: "",
-    message: "",
+    locations: "",
   });
-
+  const [errors, setErrors] = useState<Record<string, string>>({});
   const [submitting, setSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+
+  const validate = () => {
+    const next: Record<string, string> = {};
+    if (!formData.name.trim()) next.name = "Please enter your name.";
+    if (!formData.email.trim()) {
+      next.email = "Please enter your work email.";
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email.trim())) {
+      next.email = "That email address doesn't look right.";
+    }
+    if (!formData.employees) next.employees = "Please choose a firm size.";
+    setErrors(next);
+    return Object.keys(next).length === 0;
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!validate()) return;
     setSubmitting(true);
     const { error } = await supabase.from("leads").insert({
       source: "contact",
       name: formData.name.trim(),
       email: formData.email.trim(),
-      company: formData.company.trim(),
+      company: "",
       employees: formData.employees,
-      message: formData.message.trim(),
+      message: formData.locations.trim(),
     });
     setSubmitting(false);
     if (error) {
       toast.error("Something went wrong. Please try again or email us at info@pillarpeo.com.");
+      setErrors({ form: "We couldn't send that. Please try again, or email info@pillarpeo.com." });
       return;
     }
+    setErrors({});
+    setSubmitted(true);
     toast.success("Thank you! We'll be in touch within 1 business day.");
-    setFormData({ name: "", email: "", company: "", employees: "", message: "" });
+    setFormData({ name: "", email: "", employees: "", locations: "" });
   };
+
 
   return (
     <>
