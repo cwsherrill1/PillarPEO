@@ -141,7 +141,7 @@ const PeoBrokerNorthCarolina = () => (
     <Section title="Statewide service from Charlotte HQ">
       <p>
         Pillar is based in{" "}
-        <Link to="/peo-broker-charlotte" className="font-semibold text-green-ink hover:underline">
+        <Link to="/hr-consulting/charlotte-nc" className="font-semibold text-green-ink hover:underline">
           Charlotte
         </Link>{" "}
         and works with employers across the state. We also serve cross-border employers in{" "}

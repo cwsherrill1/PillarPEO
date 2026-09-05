@@ -48,15 +48,15 @@ export const redirects: RedirectRule[] = [
   { from: "/blog/peo-roi-calculator", to: "/tools/peo-cost-calculator", pending: true },
   { from: "/hr-headache-score", to: "/tools/hr-risk-score", pending: true },
 
-  { from: "/peo-for-nonprofits", to: "/industries/nonprofits" },
-  { from: "/resources/peo-for-nonprofits-guide", to: "/industries/nonprofits" },
-  { from: "/blog/peo-for-nonprofits-charlotte", to: "/industries/nonprofits" },
+  { from: "/industries/nonprofits", to: "/industries/nonprofits" },
+  { from: "/industries/nonprofits", to: "/industries/nonprofits" },
+  { from: "/industries/nonprofits", to: "/industries/nonprofits" },
   { from: "/nonprofit-toolkit", to: "/industries/nonprofits" },
 
-  { from: "/peo-broker-charlotte", to: "/hr-consulting/charlotte-nc" },
-  { from: "/blog/peo-broker-charlotte-nc", to: "/hr-consulting/charlotte-nc" },
+  { from: "/hr-consulting/charlotte-nc", to: "/hr-consulting/charlotte-nc" },
+  { from: "/blog/hr-consulting/charlotte-nc-nc", to: "/hr-consulting/charlotte-nc" },
   { from: "/blog/what-is-a-peo-broker-charlotte-nc", to: "/hr-consulting/charlotte-nc" },
-  { from: "/blog/signs-outgrown-peo-charlotte", to: "/hr-consulting/charlotte-nc" },
+  { from: "/hr-consulting/charlotte-nc", to: "/hr-consulting/charlotte-nc" },
 
   { from: "/peo-broker-north-carolina", to: "/resources/state-employer-guides/north-carolina", pending: true },
   { from: "/peo-broker-south-carolina", to: "/resources/state-employer-guides/south-carolina", pending: true },

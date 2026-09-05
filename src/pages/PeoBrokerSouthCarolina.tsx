@@ -143,7 +143,7 @@ const PeoBrokerSouthCarolina = () => (
           North Carolina employers
         </Link>{" "}
         and are headquartered in{" "}
-        <Link to="/peo-broker-charlotte" className="font-semibold text-green-ink hover:underline">
+        <Link to="/hr-consulting/charlotte-nc" className="font-semibold text-green-ink hover:underline">
           Charlotte
         </Link>
         , so the cross-border picture is everyday work for us.

@@ -67,8 +67,8 @@ export const siteRoutes: SiteRoute[] = [
   { path: "/resources/what-is-a-peo", lastmod: D },
   { path: "/blog/employee-health-benefits-options", lastmod: "2026-03-31" },
   { path: "/blog/peo-for-venture-backed-startups", lastmod: "2026-04-21" },
-  { path: "/blog/signs-outgrown-peo-charlotte", lastmod: "2026-05-05" },
-  { path: "/blog/peo-for-nonprofits-charlotte", lastmod: "2026-05-12" },
+  { path: "/hr-consulting/charlotte-nc", lastmod: "2026-05-05" },
+  { path: "/industries/nonprofits", lastmod: "2026-05-12" },
   { path: "/blog/peo-industry-transparency", lastmod: "2026-05-19" },
 
   { path: "/privacy", lastmod: D, changefreq: "yearly" },

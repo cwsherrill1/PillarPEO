@@ -62,7 +62,7 @@ const resources = [
     title: "PEO for Nonprofits: What to Know Before You Buy",
     desc: "What nonprofit leaders need to understand before partnering with a PEO.",
     category: "Guide",
-    href: "/resources/peo-for-nonprofits-guide",
+    href: "/industries/nonprofits",
   },
   {
     icon: ClipboardCheck,
@@ -153,14 +153,14 @@ const resources = [
     title: "Signs You've Outgrown Your PEO (Charlotte)",
     desc: "The renewal red flags, service gaps, and cost signals that mean it's time to move on.",
     category: "Guide",
-    href: "/blog/signs-outgrown-peo-charlotte",
+    href: "/hr-consulting/charlotte-nc",
   },
   {
     icon: Building2,
     title: "PEO for Nonprofits in Charlotte",
     desc: "What Charlotte-area nonprofits should weigh before signing — benefits, 403(b), and grant compliance.",
     category: "Guide",
-    href: "/blog/peo-for-nonprofits-charlotte",
+    href: "/industries/nonprofits",
   },
   {
     icon: Newspaper,
