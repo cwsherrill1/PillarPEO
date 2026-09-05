@@ -190,7 +190,7 @@ const PeoForNonprofitsCharlotte = () => (
         Plenty of advisors in this space came up through a single provider and quietly route every
         client back to their old team. A nonprofit on a tight budget cannot afford a recommendation
         built around someone's friendships instead of your actual numbers. Work with an{" "}
-        <Link to="/peo-broker" className="font-semibold text-green-ink hover:underline">
+        <Link to="/services/peo-brokerage" className="font-semibold text-green-ink hover:underline">
           independent PEO broker
         </Link>{" "}
         who will model the real cost, stay on as a long-term watchdog, and tell you the truth, even

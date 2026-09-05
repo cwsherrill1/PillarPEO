@@ -90,7 +90,7 @@ const Index = () => {
                   variant="outline"
                   className="bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 px-8 text-base"
                   asChild>
-                  <Link to="/how-it-works">See How It Works</Link>
+                  <Link to="/services/peo-brokerage">See How It Works</Link>
                 </Button>
               </div>
             </div>
@@ -287,7 +287,7 @@ const Index = () => {
               icon: RefreshCcw,
               title: "Switching your current PEO?",
               desc: "Compare service, price, support, and fit before you make a move.",
-              href: "/switch-your-peo",
+              href: "/services/transitions",
               cta: "Explore PEO Switching",
               accent: "text-green-ink",
               border: "border-accent/30",

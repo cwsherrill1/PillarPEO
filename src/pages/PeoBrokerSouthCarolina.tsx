@@ -129,7 +129,7 @@ const PeoBrokerSouthCarolina = () => (
         availability, and rapid hiring in Upstate manufacturing and Lowcountry hospitality. A
         provider that fits a Greenville plant rarely fits a Charleston tech team the same way —
         which is exactly why{" "}
-        <Link to="/peo-broker" className="font-semibold text-green-ink hover:underline">
+        <Link to="/services/peo-brokerage" className="font-semibold text-green-ink hover:underline">
           working with an independent broker
         </Link>{" "}
         matters.

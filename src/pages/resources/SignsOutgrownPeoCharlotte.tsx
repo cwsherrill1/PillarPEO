@@ -187,7 +187,7 @@ const SignsOutgrownPeoCharlotte = () => (
       <p>
         The number one reason businesses stay stuck is the belief that switching is painful. It
         does not have to be. A{" "}
-        <Link to="/peo-broker" className="font-semibold text-green-ink hover:underline">
+        <Link to="/services/peo-brokerage" className="font-semibold text-green-ink hover:underline">
           PEO broker
         </Link>{" "}
         manages the whole transition, from new proposals to negotiating exit terms to coordinating

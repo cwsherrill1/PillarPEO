@@ -227,7 +227,7 @@ const PeoForVentureBackedStartups = () => (
         Pillar PEO Advisors works with growth-stage and venture-backed companies to find providers
         that are built for scale, ready for investor scrutiny, and capable of handling a
         fast-moving team. Working with an{" "}
-        <Link to="/peo-broker" className="font-semibold text-green-ink hover:underline">
+        <Link to="/services/peo-brokerage" className="font-semibold text-green-ink hover:underline">
           independent PEO broker
         </Link>{" "}
         is how you get the structured evaluation investors look for. If you are raising in the next

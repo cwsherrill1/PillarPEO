@@ -13,7 +13,7 @@ const NotFound = () => {
 
   const suggestions = [
     { label: "Home", href: "/", icon: Home },
-    { label: "How It Works", href: "/how-it-works", icon: HelpCircle },
+    { label: "How It Works", href: "/services/peo-brokerage", icon: HelpCircle },
     { label: "Resources", href: "/resources", icon: BookOpen },
     { label: "Contact", href: "/contact", icon: Phone },
   ];

@@ -48,7 +48,7 @@ const resources = [
     title: "PEO Pricing: What to Watch For",
     desc: "Hidden fees, bundled costs, and renewal surprises. Read a PEO quote like an insider.",
     category: "Guide",
-    href: "/resources/peo-pricing",
+    href: "/resources/peo-cost-guide",
   },
   {
     icon: FileText,
@@ -62,7 +62,7 @@ const resources = [
     title: "How to Switch PEOs Without Disrupting Payroll",
     desc: "What the switching process actually looks like — and how to do it without missing a beat.",
     category: "Guide",
-    href: "/resources/how-to-switch-peos",
+    href: "/services/transitions",
   },
   {
     icon: Building2,
@@ -83,7 +83,7 @@ const resources = [
     title: "What to Expect During a PEO Implementation",
     desc: "What the next 60–90 days look like after you sign — and how to prepare.",
     category: "Guide",
-    href: "/resources/peo-implementation",
+    href: "/services/transitions",
   },
   {
     icon: DollarSign,
@@ -184,7 +184,7 @@ const insights = [
     title: "How Much Does a PEO Cost?",
     desc: "A breakdown of PEO pricing models, what drives costs, and how to compare quotes.",
     date: "2025",
-    href: "/resources/peo-pricing",
+    href: "/resources/peo-cost-guide",
   },
   {
     title: "PEO vs. HR Outsourcing: What's the Difference?",
@@ -480,7 +480,7 @@ const Resources = () => {
                 variant="outline"
                 className="bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
               >
-                <Link to="/how-it-works">See How It Works</Link>
+                <Link to="/services/peo-brokerage">See How It Works</Link>
               </Button>
             </div>
           </Reveal>

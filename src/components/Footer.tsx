@@ -54,7 +54,7 @@ const Footer = () => {
             <ul className="space-y-2.5">
               {[
                 { label: "Home", href: "/" },
-                { label: "How It Works", href: "/how-it-works" },
+                { label: "How It Works", href: "/services/peo-brokerage" },
                 { label: "Resources", href: "/resources" },
                 { label: "About", href: "/about" },
                 { label: "Contact", href: "/contact" },
@@ -78,7 +78,7 @@ const Footer = () => {
             </h4>
             <ul className="space-y-2.5">
               {[
-                { label: "Switch Your PEO", href: "/switch-your-peo" },
+                { label: "Switch Your PEO", href: "/services/transitions" },
                 { label: "PEO for Nonprofits", href: "/peo-for-nonprofits" },
                 {
                   label: "First-Time PEO",

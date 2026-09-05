@@ -18,18 +18,18 @@ export interface RedirectRule {
 
 export const redirects: RedirectRule[] = [
   // → PEO brokerage (live)
-  { from: "/how-it-works", to: "/services/peo-brokerage" },
-  { from: "/peo-broker", to: "/services/peo-brokerage" },
+  { from: "/services/peo-brokerage", to: "/services/peo-brokerage" },
+  { from: "/services/peo-brokerage", to: "/services/peo-brokerage" },
   { from: "/why-peo", to: "/services/peo-brokerage" },
 
   // → Transitions (live)
-  { from: "/switch-your-peo", to: "/services/transitions" },
-  { from: "/resources/how-to-switch-peos", to: "/services/transitions" },
+  { from: "/services/transitions", to: "/services/transitions" },
+  { from: "/services/transitions", to: "/services/transitions" },
   { from: "/peo-onboarding", to: "/services/transitions" },
-  { from: "/resources/peo-implementation", to: "/services/transitions" },
+  { from: "/services/transitions", to: "/services/transitions" },
 
   // → Cost guide (live) — merges the duplicate pricing page
-  { from: "/resources/peo-pricing", to: "/resources/peo-cost-guide" },
+  { from: "/resources/peo-cost-guide", to: "/resources/peo-cost-guide" },
   { from: "/blog/how-much-peo-costs", to: "/resources/peo-cost-guide" },
 
   // Legacy Wix + placeholder pages (live)

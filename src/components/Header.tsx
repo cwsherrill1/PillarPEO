@@ -13,14 +13,14 @@ import { cn } from "@/lib/utils";
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
 const solutions = [
-  { label: "Switch Your PEO", href: "/switch-your-peo" },
+  { label: "Switch Your PEO", href: "/services/transitions" },
   { label: "PEO for Nonprofits", href: "/peo-for-nonprofits" },
   { label: "First-Time PEO", href: "/do-we-need-a-peo" },
 ];
 
 const navLinks = [
   { label: "Home", href: "/" },
-  { label: "How It Works", href: "/how-it-works" },
+  { label: "How It Works", href: "/services/peo-brokerage" },
   { label: "Resources", href: "/resources" },
   { label: "HR Quiz", href: "/hr-headache-score" },
   { label: "About", href: "/about" },
