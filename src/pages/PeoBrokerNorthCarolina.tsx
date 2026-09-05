@@ -131,7 +131,7 @@ const PeoBrokerNorthCarolina = () => (
         and a fast-growing workforce concentrated in a handful of metro corridors. That mix opens
         real leverage for employers willing to put providers in a true side-by-side comparison —
         which is exactly what an{" "}
-        <Link to="/peo-broker" className="font-semibold text-green-ink hover:underline">
+        <Link to="/services/peo-brokerage" className="font-semibold text-green-ink hover:underline">
           independent PEO broker
         </Link>{" "}
         is built to do.

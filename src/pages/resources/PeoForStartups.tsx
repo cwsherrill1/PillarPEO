@@ -147,7 +147,7 @@ const PeoForStartups = () => (
         <Bullet>Read the notice provision before you sign — many PEOs require 90 days advance notice.</Bullet>
         <Bullet>Have your next benefits stack lined up 60 days before exit so employees never see a gap.</Bullet>
       </ul>
-      <p className="mt-4">More on this in our <Link to="/resources/how-to-switch-peos" className="text-green-ink hover:underline">how to switch PEOs</Link> guide.</p>
+      <p className="mt-4">More on this in our <Link to="/services/transitions" className="text-green-ink hover:underline">how to switch PEOs</Link> guide.</p>
     </Section>
 
     <Section title="Frequently Asked Questions">

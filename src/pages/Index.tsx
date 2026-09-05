@@ -90,7 +90,7 @@ const Index = () => {
                   variant="outline"
                   className="bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 px-8 text-base"
                   asChild>
-                  <Link to="/how-it-works">See How It Works</Link>
+                  <Link to="/services/peo-brokerage">See How It Works</Link>
                 </Button>
               </div>
             </div>
@@ -131,6 +131,70 @@ const Index = () => {
           <p className="text-center text-sm font-medium text-muted-foreground">Independent PEO broker · Serving employers with 5–500 employees · Zero cost to employers
 
           </p>
+        </div>
+      </section>
+
+      {/* ── 2b. WHERE TO START (routes to the priced services) ── */}
+      <section className="bg-background py-20 md:py-28">
+        <div className="container">
+          <Reveal>
+            <div className="mx-auto max-w-2xl text-center">
+              <h2 className="font-heading text-3xl font-800 text-foreground md:text-4xl">
+                Where do you want to start?
+              </h2>
+              <p className="mt-4 text-muted-foreground">
+                Fixed-price HR work for firms of 10–150 people, in every state your
+                people work in.
+              </p>
+            </div>
+          </Reveal>
+
+          <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            {[
+              {
+                need: "I need to know what my HR risk is",
+                service: "HR Audit",
+                price: "From $2,500",
+                href: "/services/hr-audit",
+              },
+              {
+                need: "I need a specific thing fixed",
+                service: "HR Projects",
+                price: "$1,500–$7,500 fixed",
+                href: "/services/hr-projects",
+              },
+              {
+                need: "I need ongoing HR help",
+                service: "Fractional HR",
+                price: "From $2,000 / month",
+                href: "/services/fractional-hr",
+              },
+              {
+                need: "I'm dealing with a PEO",
+                service: "Transitions",
+                price: "$3,000–$10,000 fixed",
+                href: "/services/transitions",
+              },
+            ].map(({ need, service, price, href }, i) => (
+              <Reveal key={href} delay={i * 100}>
+                <Link to={href} className="block h-full">
+                  <Card className="h-full border-border/60 card-elevated hover-lift">
+                    <CardContent className="p-6">
+                      <p className="text-base leading-relaxed text-muted-foreground">
+                        {need}
+                      </p>
+                      <h3 className="mt-4 font-heading text-lg font-700 text-green-ink">
+                        {service}
+                      </h3>
+                      <p className="mt-1 text-base tabular-nums text-foreground">
+                        {price}
+                      </p>
+                    </CardContent>
+                  </Card>
+                </Link>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -287,7 +351,7 @@ const Index = () => {
               icon: RefreshCcw,
               title: "Switching your current PEO?",
               desc: "Compare service, price, support, and fit before you make a move.",
-              href: "/switch-your-peo",
+              href: "/services/transitions",
               cta: "Explore PEO Switching",
               accent: "text-green-ink",
               border: "border-accent/30",

@@ -289,7 +289,7 @@ const EmployeeHealthBenefitsOptions = () => (
       <p>
         The tradeoffs live in the structure, the contract terms, and the renewal behavior, and
         they vary widely from one arrangement to the next. This is the option where{" "}
-        <Link to="/peo-broker" className="font-semibold text-green-ink hover:underline">
+        <Link to="/services/peo-brokerage" className="font-semibold text-green-ink hover:underline">
           independent broker representation
         </Link>{" "}
         matters most, because the differences between providers are large and not obvious from a

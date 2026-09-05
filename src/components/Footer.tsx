@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-
-const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
+import { BOOKING_URL, PRIMARY_CTA } from "@/data/pricing";
 
 const Footer = () => {
   return (
@@ -24,7 +23,7 @@ const Footer = () => {
             className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20"
           >
             <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
-              Schedule a PEO Strategy Call
+              {PRIMARY_CTA}
             </a>
           </Button>
         </div>
@@ -54,7 +53,8 @@ const Footer = () => {
             <ul className="space-y-2.5">
               {[
                 { label: "Home", href: "/" },
-                { label: "How It Works", href: "/how-it-works" },
+                { label: "Services", href: "/services" },
+                { label: "Pricing", href: "/pricing" },
                 { label: "Resources", href: "/resources" },
                 { label: "About", href: "/about" },
                 { label: "Contact", href: "/contact" },
@@ -74,16 +74,15 @@ const Footer = () => {
           {/* Solutions */}
           <div>
             <h4 className="mb-4 text-xs font-bold tracking-widest text-primary-foreground/70 uppercase">
-              Solutions
+              Services
             </h4>
             <ul className="space-y-2.5">
               {[
-                { label: "Switch Your PEO", href: "/switch-your-peo" },
-                { label: "PEO for Nonprofits", href: "/peo-for-nonprofits" },
-                {
-                  label: "First-Time PEO",
-                  href: "/do-we-need-a-peo",
-                },
+                { label: "HR Audit", href: "/services/hr-audit" },
+                { label: "HR Projects", href: "/services/hr-projects" },
+                { label: "Fractional HR", href: "/services/fractional-hr" },
+                { label: "Transitions", href: "/services/transitions" },
+                { label: "PEO brokerage", href: "/services/peo-brokerage" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link
@@ -101,14 +100,20 @@ const Footer = () => {
               Company
             </h4>
             <ul className="space-y-2.5">
-              <li>
-                <Link
-                  to="/about#why-pillar"
-                  className="text-sm text-primary-foreground/80 transition-colors hover:text-accent"
-                >
-                  Why Pillar
-                </Link>
-              </li>
+              {[
+                { label: "Why Pillar", href: "/about" },
+                { label: "Caleb Sherrill", href: "/about/caleb-sherrill" },
+                { label: "How we get paid", href: "/how-we-get-paid" },
+              ].map((link) => (
+                <li key={link.href}>
+                  <Link
+                    to={link.href}
+                    className="text-sm text-primary-foreground/80 transition-colors hover:text-accent"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 

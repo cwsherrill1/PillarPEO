@@ -17,17 +17,23 @@ Full price list: /pricing.md
 ## Pages
 
 - [Home](/): What Pillar does and who it serves.
-- [How It Works](/how-it-works): The engagement process from first call to delivery.
-- [Switch Your PEO](/switch-your-peo): Guidance for employers replacing a current PEO.
-- [PEO for Nonprofits](/peo-for-nonprofits): Considerations for mission-driven teams.
-- [Do We Need a PEO?](/do-we-need-a-peo): Help for first-time PEO buyers.
-- [PEO Broker](/peo-broker): The free PEO comparison service.
+- [Services](/services): The full service ladder with prices and who each is for.
+- [HR Audit](/services/hr-audit): 41 checks across nine areas, 15 business days, from $2,500.
+- [HR Projects](/services/hr-projects): Six fixed-price projects, $1,500–$7,500.
+- [Fractional HR](/services/fractional-hr): Advisor, Partner and Embedded tiers.
+- [Transitions](/services/transitions): PEO exit, switch, implementation, HRIS and payroll moves.
+- [PEO Brokerage](/services/peo-brokerage): The free PEO comparison service.
+- [Pricing](/pricing): Every price in one table.
+- [How We Get Paid](/how-we-get-paid): Fee structure and commission disclosure.
 - [PEO Broker — Charlotte](/peo-broker-charlotte)
 - [PEO Broker — North Carolina](/peo-broker-north-carolina)
 - [PEO Broker — South Carolina](/peo-broker-south-carolina)
+- [PEO for Nonprofits](/peo-for-nonprofits): Considerations for mission-driven teams.
+- [Do We Need a PEO?](/do-we-need-a-peo): Help for first-time PEO buyers.
 - [Resources](/resources): Guides on PEO selection, pricing, benefits and switching.
 - [HR Headache Score](/hr-headache-score): 15-question assessment of HR pain points.
 - [About](/about): Background on Pillar and the leadership team.
+- [Caleb Sherrill](/about/caleb-sherrill): Founder background.
 - [Contact](/contact): Book an HR audit or send a message.
 
 ## Contact

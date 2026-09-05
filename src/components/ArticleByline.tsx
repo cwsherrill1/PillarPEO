@@ -1,4 +1,5 @@
 import { Linkedin } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 const LINKEDIN_URL = "https://www.linkedin.com/in/calebsherrill/";
@@ -12,7 +13,10 @@ export const ArticleByline = ({ datePublished = "2025" }: { datePublished?: stri
     </Avatar>
     <div className="text-left">
       <p className="font-semibold text-primary-foreground">
-        By Caleb Sherrill
+        By{" "}
+        <Link to="/about/caleb-sherrill" className="underline-offset-2 hover:underline">
+          Caleb Sherrill
+        </Link>
         <span className="font-normal text-primary-foreground/70"> · Founder, PEO Advisor</span>
       </p>
       <p className="text-xs">
@@ -43,7 +47,10 @@ export const ArticleAuthorBio = () => (
           <div className="flex-1">
             <p className="font-heading text-lg font-700 text-foreground">About the author</p>
             <p className="mt-2 text-base leading-relaxed text-muted-foreground">
-              <span className="font-semibold text-foreground">Caleb Sherrill</span> is the founder
+              <Link to="/about/caleb-sherrill" className="font-semibold text-foreground hover:underline">
+                Caleb Sherrill
+              </Link>{" "}
+              is the founder
               of Pillar PEO Advisors. After living through payroll mistakes and compliance fines
               in a previous business, he built Pillar to help small and mid-sized employers
               compare PEO options as an independent broker — at no cost to the employer.
@@ -97,7 +104,7 @@ export const buildArticleJsonLd = ({
         "@id": "https://pillarpeo.com/#caleb",
         name: "Caleb Sherrill",
         jobTitle: "Founder & HR Advisor",
-        url: LINKEDIN_URL,
+        url: "https://pillarpeo.com/about/caleb-sherrill",
         sameAs: [LINKEDIN_URL],
         worksFor: { "@id": "https://pillarpeo.com/#organization" },
       },

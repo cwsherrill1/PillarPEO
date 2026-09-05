@@ -3,8 +3,9 @@
 
 import { writeFileSync } from "fs";
 import { resolve } from "path";
-import { redirects } from "../src/data/redirects";
+import { activeRedirects, wildcardRedirects } from "../src/data/redirects";
 
-const lines = redirects.map((r) => `${r.from} ${r.to} 301`);
+const rules = [...activeRedirects, ...wildcardRedirects];
+const lines = rules.map((r) => `${r.from} ${r.to} 301`);
 writeFileSync(resolve("public/_redirects"), lines.join("\n") + "\n");
-console.log(`_redirects written (${redirects.length} rules)`);
+console.log(`_redirects written (${rules.length} rules)`);

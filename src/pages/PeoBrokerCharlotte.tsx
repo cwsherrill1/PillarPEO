@@ -148,7 +148,7 @@ const PeoBrokerCharlotte = () => (
         Knowing which carriers are actually competitive right now, and which providers have strong
         compliance support in North Carolina, is not something you get from a demo call or a broker
         who only sells what their friends are selling. For the broader picture on{" "}
-        <Link to="/peo-broker" className="font-semibold text-green-ink hover:underline">
+        <Link to="/services/peo-brokerage" className="font-semibold text-green-ink hover:underline">
           choosing a PEO broker
         </Link>
         , our national guide goes deeper.
