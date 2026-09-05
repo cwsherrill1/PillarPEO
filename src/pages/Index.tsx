@@ -1,5 +1,9 @@
 import { Link } from "react-router-dom";
-import heroTeam from "@/assets/hero-team.jpg";
+import heroTeam from "@/assets/hero/hero-team-768.jpg";
+import heroAvif384 from "@/assets/hero/hero-team-384.avif";
+import heroAvif768 from "@/assets/hero/hero-team-768.avif";
+import heroWebp384 from "@/assets/hero/hero-team-384.webp";
+import heroWebp768 from "@/assets/hero/hero-team-768.webp";
 import { Button } from "@/components/ui/button";
 import { organization, caleb } from "@/data/organization";
 import SEOHead from "@/components/SEOHead";
@@ -92,15 +96,27 @@ const Index = () => {
             </div>
 
             <div className="flex flex-col items-center">
-              <img
-                src={heroTeam}
-                alt="Caleb and Josiah Sherrill, founders of Pillar PEO Advisors"
-                width={1050}
-                height={1400}
-                fetchPriority="high"
-                decoding="async"
-                className="w-full max-w-sm rounded-2xl shadow-2xl shadow-black/30 object-cover aspect-[3/4]"
-              />
+              <picture>
+                <source
+                  type="image/avif"
+                  srcSet={`${heroAvif384} 384w, ${heroAvif768} 768w`}
+                  sizes="(min-width: 768px) 384px, 100vw"
+                />
+                <source
+                  type="image/webp"
+                  srcSet={`${heroWebp384} 384w, ${heroWebp768} 768w`}
+                  sizes="(min-width: 768px) 384px, 100vw"
+                />
+                <img
+                  src={heroTeam}
+                  alt="Caleb and Josiah Sherrill, founders of Pillar PEO Advisors"
+                  width={1050}
+                  height={1400}
+                  fetchPriority="high"
+                  decoding="async"
+                  className="w-full max-w-sm rounded-2xl shadow-2xl shadow-black/30 object-cover aspect-[3/4]"
+                />
+              </picture>
               <p className="mt-3 text-sm text-primary-foreground/70">
                 Caleb &amp; Josiah Sherrill, Founders
               </p>
