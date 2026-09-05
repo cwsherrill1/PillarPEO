@@ -25,10 +25,19 @@ Full price list: /pricing.md
 - [PEO Brokerage](/services/peo-brokerage): The free PEO comparison service.
 - [Pricing](/pricing): Every price in one table.
 - [How We Get Paid](/how-we-get-paid): Fee structure and commission disclosure.
-- [PEO Broker — Charlotte](/peo-broker-charlotte)
+- [Industries](/industries): Who Pillar works with.
+- [Law Firms](/industries/law-firms): Paralegal classification, partner status, trust-account duties.
+- [CPA Firms](/industries/cpa-firms): Busy-season overtime, seasonal staffing, per-diem and travel pay.
+- [Engineering & Architecture](/industries/engineering-architecture): Designer and drafter exemptions, public-contract wage rules.
+- [Medical & Dental](/industries/medical-dental): OSHA requirements, file separation, on-call and differentials.
+- [Financial Advisors & RIAs](/industries/financial-advisors): Supervision vs HR, producer pay plans.
+- [Nonprofits](/industries/nonprofits): Volunteers vs employees, program staff, grant-funded roles.
+- [HR Consulting in the Carolinas](/hr-consulting): Metro coverage.
+- [Charlotte, NC](/hr-consulting/charlotte-nc): City ordinance handbook language and the NC/SC cross-border problem.
+- [Rock Hill & Fort Mill, SC](/hr-consulting/rock-hill-fort-mill-sc): South Carolina E-Verify, workers' comp and wage-notice rules.
+- [Raleigh-Durham, NC](/hr-consulting/raleigh-durham-nc): RTP contractor classification and university spin-out first hires.
 - [PEO Broker — North Carolina](/peo-broker-north-carolina)
 - [PEO Broker — South Carolina](/peo-broker-south-carolina)
-- [PEO for Nonprofits](/peo-for-nonprofits): Considerations for mission-driven teams.
 - [Do We Need a PEO?](/do-we-need-a-peo): Help for first-time PEO buyers.
 - [Resources](/resources): Guides on PEO selection, pricing, benefits and switching.
 - [HR Headache Score](/hr-headache-score): 15-question assessment of HR pain points.
