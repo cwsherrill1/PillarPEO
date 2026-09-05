@@ -11,6 +11,8 @@ const ARTICLE = buildArticleJsonLd({
   title: "PEO Pricing: What to Watch For",
   description: "Hidden fees, bundled costs, and renewal surprises. Read a PEO quote like an insider.",
   path: "/resources/peo-pricing",
+  datePublished: "2026-01-15",
+  dateModified: "2026-09-05",
 });
 
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";

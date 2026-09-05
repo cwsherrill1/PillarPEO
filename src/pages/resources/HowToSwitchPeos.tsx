@@ -13,6 +13,8 @@ const ARTICLE = buildArticleJsonLd({
   title: "How to Switch PEOs Without Disrupting Payroll",
   description: "What the switching process actually looks like and how to do it without missing a beat.",
   path: "/resources/how-to-switch-peos",
+  datePublished: "2026-01-15",
+  dateModified: "2026-09-05",
 });
 
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";

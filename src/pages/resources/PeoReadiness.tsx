@@ -13,6 +13,8 @@ const ARTICLE = buildArticleJsonLd({
   title: "Is Your Company Ready for a PEO?",
   description: "An interactive self-assessment to see if your company is a good PEO fit.",
   path: "/resources/peo-readiness",
+  datePublished: "2026-01-15",
+  dateModified: "2026-09-05",
 });
 
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";

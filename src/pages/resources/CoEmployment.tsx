@@ -11,6 +11,8 @@ const ARTICLE = buildArticleJsonLd({
   title: "Understanding Co-Employment",
   description: "What co-employment actually means for your liability, your employees, and your control.",
   path: "/resources/co-employment",
+  datePublished: "2026-01-15",
+  dateModified: "2026-09-05",
 });
 
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";

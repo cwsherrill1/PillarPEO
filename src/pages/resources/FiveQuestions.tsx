@@ -21,6 +21,8 @@ const ARTICLE = buildArticleJsonLd({
   title: "5 Questions to Ask Any PEO",
   description: "The critical questions most employers never think to ask before signing with a PEO.",
   path: "/resources/5-questions",
+  datePublished: "2026-01-15",
+  dateModified: "2026-09-05",
 });
 
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";

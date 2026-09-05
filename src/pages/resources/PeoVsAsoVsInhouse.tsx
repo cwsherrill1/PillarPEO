@@ -12,6 +12,8 @@ const ARTICLE = buildArticleJsonLd({
   title: "PEO vs. ASO vs. In-House HR",
   description: "Compare PEO, ASO, and in-house HR models side by side to find the right fit.",
   path: "/resources/peo-vs-aso-vs-inhouse",
+  datePublished: "2026-01-15",
+  dateModified: "2026-09-05",
 });
 
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";

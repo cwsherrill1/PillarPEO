@@ -10,6 +10,8 @@ const ARTICLE = buildArticleJsonLd({
   title: "PEO for Nonprofits: What to Know Before You Buy",
   description: "What nonprofit leaders need to understand before partnering with a PEO.",
   path: "/resources/peo-for-nonprofits-guide",
+  datePublished: "2026-01-15",
+  dateModified: "2026-09-05",
 });
 
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";

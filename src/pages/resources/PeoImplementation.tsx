@@ -11,6 +11,8 @@ const ARTICLE = buildArticleJsonLd({
   title: "What to Expect During a PEO Implementation",
   description: "What the next 60–90 days look like after you sign — and how to prepare.",
   path: "/resources/peo-implementation",
+  datePublished: "2026-01-15",
+  dateModified: "2026-09-05",
 });
 
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
