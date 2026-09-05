@@ -190,7 +190,7 @@
 
     /* Grass Green #2ECC71 */
     --accent: 145 63% 49%;
-    --accent-foreground: 0 0% 100%;
+    --accent-foreground: 236 96% 15%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
@@ -214,6 +214,8 @@
     /* Extended brand tokens */
     --navy: 236 96% 15%;
     --green: 145 63% 49%;
+    /* Green ink #1A7A45 — the only green allowed as text/link on light grounds */
+    --green-ink: 145 65% 29%;
     --soft-blue: 197 86% 64%;
     --bold-yellow: 43 100% 50%;
     --dark-grey: 210 7% 46%;
@@ -274,4 +276,16 @@
 .hover-lift:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 40px -12px hsl(236 96% 15% / 0.18);
+}
+
+/* Visible focus ring on every interactive element */
+@layer base {
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible,
+  [tabindex]:focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
 }
