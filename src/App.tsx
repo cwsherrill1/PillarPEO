@@ -9,7 +9,6 @@ import ScrollToTop from "@/components/ScrollToTop";
 import { activeRedirects } from "@/data/redirects";
 
 const Index = lazy(() => import("./pages/Index"));
-const PeoForNonprofits = lazy(() => import("./pages/PeoForNonprofits"));
 const DoWeNeedAPeo = lazy(() => import("./pages/DoWeNeedAPeo"));
 const Resources = lazy(() => import("./pages/Resources"));
 const About = lazy(() => import("./pages/About"));
@@ -23,7 +22,6 @@ const HrHeadacheQuiz = lazy(() => import("./pages/HrHeadacheQuiz"));
 const FiveQuestions = lazy(() => import("./pages/resources/FiveQuestions"));
 const CoEmployment = lazy(() => import("./pages/resources/CoEmployment"));
 const PeoVsAsoVsInhouse = lazy(() => import("./pages/resources/PeoVsAsoVsInhouse"));
-const PeoForNonprofitsGuide = lazy(() => import("./pages/resources/PeoForNonprofitsGuide"));
 const PeoReadiness = lazy(() => import("./pages/resources/PeoReadiness"));
 const PeoCostGuide = lazy(() => import("./pages/resources/PeoCostGuide"));
 const PeoVsPayrollService = lazy(() => import("./pages/resources/PeoVsPayrollService"));
@@ -35,8 +33,6 @@ const PeoBrokerVsDirect = lazy(() => import("./pages/resources/PeoBrokerVsDirect
 const WhatIsAPeo = lazy(() => import("./pages/resources/WhatIsAPeo"));
 const EmployeeHealthBenefitsOptions = lazy(() => import("./pages/resources/EmployeeHealthBenefitsOptions"));
 const PeoForVentureBackedStartups = lazy(() => import("./pages/resources/PeoForVentureBackedStartups"));
-const SignsOutgrownPeoCharlotte = lazy(() => import("./pages/resources/SignsOutgrownPeoCharlotte"));
-const PeoForNonprofitsCharlotte = lazy(() => import("./pages/resources/PeoForNonprofitsCharlotte"));
 const PeoIndustryTransparency = lazy(() => import("./pages/resources/PeoIndustryTransparency"));
 const Services = lazy(() => import("./pages/services/Services"));
 const HrAudit = lazy(() => import("./pages/services/HrAudit"));
@@ -47,7 +43,17 @@ const PeoBrokerage = lazy(() => import("./pages/services/PeoBrokerage"));
 const HowWeGetPaid = lazy(() => import("./pages/HowWeGetPaid"));
 const PricingPage = lazy(() => import("./pages/Pricing"));
 const CalebSherrill = lazy(() => import("./pages/about/CalebSherrill"));
-const PeoBrokerCharlotte = lazy(() => import("./pages/PeoBrokerCharlotte"));
+const IndustriesIndex = lazy(() => import("./pages/industries/Industries"));
+const LawFirms = lazy(() => import("./pages/industries/LawFirms"));
+const CpaFirms = lazy(() => import("./pages/industries/CpaFirms"));
+const EngineeringArchitecture = lazy(() => import("./pages/industries/EngineeringArchitecture"));
+const MedicalDental = lazy(() => import("./pages/industries/MedicalDental"));
+const FinancialAdvisors = lazy(() => import("./pages/industries/FinancialAdvisors"));
+const NonprofitsIndustry = lazy(() => import("./pages/industries/Nonprofits"));
+const HrConsulting = lazy(() => import("./pages/locations/HrConsulting"));
+const CharlotteNc = lazy(() => import("./pages/locations/CharlotteNc"));
+const RockHillFortMillSc = lazy(() => import("./pages/locations/RockHillFortMillSc"));
+const RaleighDurhamNc = lazy(() => import("./pages/locations/RaleighDurhamNc"));
 const PeoBrokerNorthCarolina = lazy(() => import("./pages/PeoBrokerNorthCarolina"));
 const PeoBrokerSouthCarolina = lazy(() => import("./pages/PeoBrokerSouthCarolina"));
 
@@ -76,13 +82,22 @@ const App = () => (
               <Route path="/how-we-get-paid" element={<HowWeGetPaid />} />
               <Route path="/pricing" element={<PricingPage />} />
               <Route path="/about/caleb-sherrill" element={<CalebSherrill />} />
-              <Route path="/peo-for-nonprofits" element={<PeoForNonprofits />} />
+              <Route path="/industries" element={<IndustriesIndex />} />
+              <Route path="/industries/law-firms" element={<LawFirms />} />
+              <Route path="/industries/cpa-firms" element={<CpaFirms />} />
+              <Route path="/industries/engineering-architecture" element={<EngineeringArchitecture />} />
+              <Route path="/industries/medical-dental" element={<MedicalDental />} />
+              <Route path="/industries/financial-advisors" element={<FinancialAdvisors />} />
+              <Route path="/industries/nonprofits" element={<NonprofitsIndustry />} />
+              <Route path="/hr-consulting" element={<HrConsulting />} />
+              <Route path="/hr-consulting/charlotte-nc" element={<CharlotteNc />} />
+              <Route path="/hr-consulting/rock-hill-fort-mill-sc" element={<RockHillFortMillSc />} />
+              <Route path="/hr-consulting/raleigh-durham-nc" element={<RaleighDurhamNc />} />
               <Route path="/do-we-need-a-peo" element={<DoWeNeedAPeo />} />
               <Route path="/resources" element={<Resources />} />
               <Route path="/resources/5-questions" element={<FiveQuestions />} />
               <Route path="/resources/co-employment" element={<CoEmployment />} />
               <Route path="/resources/peo-vs-aso-vs-inhouse" element={<PeoVsAsoVsInhouse />} />
-              <Route path="/resources/peo-for-nonprofits-guide" element={<PeoForNonprofitsGuide />} />
               <Route path="/resources/peo-readiness" element={<PeoReadiness />} />
               <Route path="/resources/peo-cost-guide" element={<PeoCostGuide />} />
               <Route path="/resources/peo-vs-payroll-service" element={<PeoVsPayrollService />} />
@@ -93,12 +108,9 @@ const App = () => (
               <Route path="/resources/peo-broker-vs-direct" element={<PeoBrokerVsDirect />} />
               <Route path="/resources/what-is-a-peo" element={<WhatIsAPeo />} />
               <Route path="/blog/employee-health-benefits-options" element={<EmployeeHealthBenefitsOptions />} />
-              <Route path="/peo-broker-charlotte" element={<PeoBrokerCharlotte />} />
               <Route path="/peo-broker-north-carolina" element={<PeoBrokerNorthCarolina />} />
               <Route path="/peo-broker-south-carolina" element={<PeoBrokerSouthCarolina />} />
               <Route path="/blog/peo-for-venture-backed-startups" element={<PeoForVentureBackedStartups />} />
-              <Route path="/blog/signs-outgrown-peo-charlotte" element={<SignsOutgrownPeoCharlotte />} />
-              <Route path="/blog/peo-for-nonprofits-charlotte" element={<PeoForNonprofitsCharlotte />} />
               <Route path="/blog/peo-industry-transparency" element={<PeoIndustryTransparency />} />
               <Route path="/hr-headache-score" element={<HrHeadacheQuiz />} />
               <Route path="/about" element={<About />} />

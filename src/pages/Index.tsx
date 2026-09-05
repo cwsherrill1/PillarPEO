@@ -361,7 +361,7 @@ const Index = () => {
               icon: Church,
               title: "Running a nonprofit team?",
               desc: "Reduce admin drag without pulling focus from the mission.",
-              href: "/peo-for-nonprofits",
+              href: "/industries/nonprofits",
               cta: "Explore Nonprofits",
               accent: "text-soft-blue",
               border: "border-soft-blue/30",

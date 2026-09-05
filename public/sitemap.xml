@@ -61,17 +61,7 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://pillarpeo.com/peo-for-nonprofits</loc>
-    <lastmod>2026-09-05</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
     <loc>https://pillarpeo.com/do-we-need-a-peo</loc>
-    <lastmod>2026-09-05</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://pillarpeo.com/peo-broker-charlotte</loc>
     <lastmod>2026-09-05</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -87,6 +77,61 @@
   </url>
   <url>
     <loc>https://pillarpeo.com/hr-headache-score</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pillarpeo.com/industries</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pillarpeo.com/industries/law-firms</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pillarpeo.com/industries/cpa-firms</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pillarpeo.com/industries/engineering-architecture</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pillarpeo.com/industries/medical-dental</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pillarpeo.com/industries/financial-advisors</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pillarpeo.com/industries/nonprofits</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pillarpeo.com/hr-consulting</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pillarpeo.com/hr-consulting/charlotte-nc</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pillarpeo.com/hr-consulting/rock-hill-fort-mill-sc</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pillarpeo.com/hr-consulting/raleigh-durham-nc</loc>
     <lastmod>2026-09-05</lastmod>
     <changefreq>monthly</changefreq>
   </url>
@@ -109,10 +154,6 @@
   </url>
   <url>
     <loc>https://pillarpeo.com/resources/peo-vs-aso-vs-inhouse</loc>
-    <lastmod>2026-09-05</lastmod>
-  </url>
-  <url>
-    <loc>https://pillarpeo.com/resources/peo-for-nonprofits-guide</loc>
     <lastmod>2026-09-05</lastmod>
   </url>
   <url>
@@ -154,14 +195,6 @@
   <url>
     <loc>https://pillarpeo.com/blog/peo-for-venture-backed-startups</loc>
     <lastmod>2026-04-21</lastmod>
-  </url>
-  <url>
-    <loc>https://pillarpeo.com/blog/signs-outgrown-peo-charlotte</loc>
-    <lastmod>2026-05-05</lastmod>
-  </url>
-  <url>
-    <loc>https://pillarpeo.com/blog/peo-for-nonprofits-charlotte</loc>
-    <lastmod>2026-05-12</lastmod>
   </url>
   <url>
     <loc>https://pillarpeo.com/blog/peo-industry-transparency</loc>

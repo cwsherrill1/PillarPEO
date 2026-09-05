@@ -218,7 +218,7 @@ const PeoForVentureBackedStartups = () => (
         Startups coming out of the Queen City's accelerator and angel networks face the same
         infrastructure challenges as any venture-backed company, usually with fewer internal
         resources to solve them. If you're local, our{" "}
-        <Link to="/peo-broker-charlotte" className="font-semibold text-green-ink hover:underline">
+        <Link to="/hr-consulting/charlotte-nc" className="font-semibold text-green-ink hover:underline">
           Charlotte PEO broker page
         </Link>{" "}
         walks through what local representation looks like.
