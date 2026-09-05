@@ -154,86 +154,132 @@ const Contact = () => {
                 <h2 className="font-heading text-2xl font-700 text-foreground mb-6">
                   Or send us a message
                 </h2>
-                <form onSubmit={handleSubmit} className="space-y-5">
+                {submitted ? (
+                  <div
+                    role="status"
+                    className="rounded-lg border border-accent/40 bg-accent/10 p-6"
+                  >
+                    <p className="font-heading text-lg font-700 text-foreground">
+                      Thanks — we've got it.
+                    </p>
+                    <p className="mt-2 text-base text-muted-foreground">
+                      We'll be in touch within 1 business day. If it's urgent, call{" "}
+                      <a href="tel:+17047871261" className="font-semibold text-green-ink hover:underline">
+                        (704) 787-1261
+                      </a>
+                      .
+                    </p>
+                  </div>
+                ) : (
+                <form onSubmit={handleSubmit} noValidate className="space-y-5">
                   <div className="grid gap-5 sm:grid-cols-2">
                     <div className="space-y-2">
-                      <Label htmlFor="name">Name</Label>
+                      <Label htmlFor="name">
+                        Name <span aria-hidden="true" className="text-green-ink">*</span>
+                        <span className="sr-only">(required)</span>
+                      </Label>
                       <Input
                         id="name"
                         required
+                        aria-required="true"
+                        aria-invalid={!!errors.name}
+                        aria-describedby={errors.name ? "name-error" : undefined}
                         value={formData.name}
                         onChange={(e) =>
                           setFormData({ ...formData, name: e.target.value })
                         }
                         placeholder="Jane Smith"
                       />
+                      {errors.name && (
+                        <p id="name-error" className="text-sm font-semibold text-destructive">
+                          {errors.name}
+                        </p>
+                      )}
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="email">Email</Label>
+                      <Label htmlFor="email">
+                        Work email <span aria-hidden="true" className="text-green-ink">*</span>
+                        <span className="sr-only">(required)</span>
+                      </Label>
                       <Input
                         id="email"
                         type="email"
                         required
+                        aria-required="true"
+                        aria-invalid={!!errors.email}
+                        aria-describedby={errors.email ? "email-error" : undefined}
                         value={formData.email}
                         onChange={(e) =>
                           setFormData({ ...formData, email: e.target.value })
                         }
-                        placeholder="jane@company.com"
+                        placeholder="jane@firm.com"
                       />
-                    </div>
-                  </div>
-
-                  <div className="grid gap-5 sm:grid-cols-2">
-                    <div className="space-y-2">
-                      <Label htmlFor="company">Company</Label>
-                      <Input
-                        id="company"
-                        required
-                        value={formData.company}
-                        onChange={(e) =>
-                          setFormData({ ...formData, company: e.target.value })
-                        }
-                        placeholder="Acme Corp"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="employees">Number of Employees</Label>
-                      <Select
-                        value={formData.employees}
-                        onValueChange={(v) =>
-                          setFormData({ ...formData, employees: v })
-                        }
-                      >
-                        <SelectTrigger id="employees">
-                          <SelectValue placeholder="Select range" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="5-25">5 – 25</SelectItem>
-                          <SelectItem value="25-50">25 – 50</SelectItem>
-                          <SelectItem value="50-150">50 – 150</SelectItem>
-                          <SelectItem value="150+">150+</SelectItem>
-                        </SelectContent>
-                      </Select>
+                      {errors.email && (
+                        <p id="email-error" className="text-sm font-semibold text-destructive">
+                          {errors.email}
+                        </p>
+                      )}
                     </div>
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="message">Message</Label>
-                    <Textarea
-                      id="message"
-                      value={formData.message}
-                      onChange={(e) =>
-                        setFormData({ ...formData, message: e.target.value })
+                    <Label htmlFor="employees">
+                      Firm size <span aria-hidden="true" className="text-green-ink">*</span>
+                      <span className="sr-only">(required)</span>
+                    </Label>
+                    <Select
+                      value={formData.employees}
+                      onValueChange={(v) =>
+                        setFormData({ ...formData, employees: v })
                       }
-                      placeholder="Tell us about your team and what you're looking for…"
-                      rows={5}
+                    >
+                      <SelectTrigger
+                        id="employees"
+                        aria-invalid={!!errors.employees}
+                        aria-describedby={errors.employees ? "employees-error" : undefined}
+                      >
+                        <SelectValue placeholder="Select firm size" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {FIRM_SIZES.map((size) => (
+                          <SelectItem key={size} value={size}>
+                            {size} people
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                    {errors.employees && (
+                      <p id="employees-error" className="text-sm font-semibold text-destructive">
+                        {errors.employees}
+                      </p>
+                    )}
+                  </div>
+
+                  <div className="space-y-2">
+                    <Label htmlFor="locations">Where are your people? (optional)</Label>
+                    <Textarea
+                      id="locations"
+                      value={formData.locations}
+                      onChange={(e) =>
+                        setFormData({ ...formData, locations: e.target.value })
+                      }
+                      placeholder="e.g. 22 in Charlotte, 6 remote across SC, GA and TX"
+                      rows={4}
                     />
                   </div>
+
+                  {errors.form && (
+                    <p role="alert" className="text-sm font-semibold text-destructive">
+                      {errors.form}
+                    </p>
+                  )}
 
                   <Button type="submit" size="lg" disabled={submitting} className="w-full sm:w-auto bg-accent text-accent-foreground hover:bg-accent/90">
                     {submitting ? "Sending…" : "Send My Request"}
                   </Button>
                 </form>
+                )}
+
               </CardContent>
             </Card>
           </Reveal>
