@@ -12,4 +12,3 @@
 /blank-1 /about 301
 /blog /resources 301
 /blog/peo-vs-hr-outsourcing /resources/peo-vs-aso-vs-inhouse 301
-/blog/* /resources/:splat 301

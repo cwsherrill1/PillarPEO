@@ -70,5 +70,7 @@ export const activeRedirects = redirects.filter((r) => !r.pending);
 
 /** Wildcard rules for the host only (React Router handles these separately). */
 export const wildcardRedirects: RedirectRule[] = [
-  { from: "/blog/*", to: "/resources/:splat" },
+  // Held until batch 5: several /blog/* URLs still render real pages today,
+  // so a blanket wildcard would redirect live content.
+  // { from: "/blog/*", to: "/resources/:splat" },
 ];

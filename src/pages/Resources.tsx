@@ -44,13 +44,6 @@ const resources = [
     href: "/resources/co-employment",
   },
   {
-    icon: DollarSign,
-    title: "PEO Pricing: What to Watch For",
-    desc: "Hidden fees, bundled costs, and renewal surprises. Read a PEO quote like an insider.",
-    category: "Guide",
-    href: "/resources/peo-cost-guide",
-  },
-  {
     icon: FileText,
     title: "PEO vs. ASO vs. In-House HR",
     desc: "Not every company needs a PEO. This comparison helps you understand which model fits.",
