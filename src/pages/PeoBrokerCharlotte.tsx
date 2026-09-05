@@ -61,7 +61,6 @@ const JSONLD = {
       name: "Pillar PEO Advisors — Charlotte",
       url: "https://pillarpeo.com/peo-broker-charlotte",
       areaServed: { "@type": "City", name: "Charlotte, NC" },
-      address: { "@type": "PostalAddress", addressLocality: "Charlotte", addressRegion: "NC", addressCountry: "US" },
       description:
         "Independent Charlotte PEO broker. Full-market comparison, transparent fees, free forever.",
     },

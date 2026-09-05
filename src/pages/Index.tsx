@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import heroTeam from "@/assets/hero-team.jpg";
 import { Button } from "@/components/ui/button";
+import { organization, caleb } from "@/data/organization";
 import SEOHead from "@/components/SEOHead";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -34,29 +35,11 @@ const orgJsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "ProfessionalService",
-      "@id": "https://pillarpeo.com/#organization",
-      name: "Pillar PEO Advisors",
+      ...organization,
       alternateName: "Pillar PEO Broker",
-      url: "https://pillarpeo.com",
-      description: "Independent PEO broker helping small and mid-sized employers compare PEO options, expose hidden fees, and switch with no service fee.",
-      serviceType: "PEO Broker",
-      areaServed: "US",
-      telephone: "+1-704-787-1261",
-      email: "info@pillarpeo.com",
-      address: { "@type": "PostalAddress", addressLocality: "Charlotte", addressRegion: "NC", addressCountry: "US" },
-      image: "https://pillarpeo.com/hero-team.jpg",
-      founder: { "@id": "https://pillarpeo.com/#caleb" },
-      knowsAbout: ["PEO broker", "PEO advisory", "Professional Employer Organization", "Co-employment", "PEO comparison", "Payroll", "Employee benefits", "HR compliance"],
+      knowsAbout: ["PEO broker", "PEO advisory", "Professional Employer Organization", "Co-employment", "PEO comparison", "Payroll", "Employee benefits", "HR compliance", "Fractional HR", "HR audit"],
     },
-    {
-      "@type": "Person",
-      "@id": "https://pillarpeo.com/#caleb",
-      name: "Caleb Sherrill",
-      jobTitle: "Founder & PEO Advisor",
-      worksFor: { "@id": "https://pillarpeo.com/#organization" },
-      sameAs: ["https://www.linkedin.com/in/calebsherrill/"],
-    },
+    caleb,
     {
       "@type": "FAQPage",
       mainEntity: FAQS.map(({ q, a }) => ({

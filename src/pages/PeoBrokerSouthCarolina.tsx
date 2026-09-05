@@ -57,7 +57,8 @@ const JSONLD = {
       name: "Pillar PEO Advisors — South Carolina",
       url: "https://pillarpeo.com/peo-broker-south-carolina",
       areaServed: { "@type": "State", name: "South Carolina" },
-      address: { "@type": "PostalAddress", addressLocality: "Charlotte", addressRegion: "NC", addressCountry: "US" },
+      parentOrganization: { "@id": "https://pillarpeo.com/#organization" },
+      telephone: "+1-704-787-1261",
       description: "Independent PEO broker serving employers across South Carolina.",
     },
     {

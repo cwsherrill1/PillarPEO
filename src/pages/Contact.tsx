@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/select";
 import { toast } from "sonner";
 import { Reveal } from "@/components/Reveal";
+import { organization, caleb, ORG_REF, breadcrumb } from "@/data/organization";
 import SEOHead from "@/components/SEOHead";
 import { supabase } from "@/integrations/supabase/client";
 
@@ -21,23 +22,26 @@ const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
 const contactJsonLd = {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  name: "Pillar PEO Advisors",
-  url: "https://pillarpeo.com",
-  email: "info@pillarpeo.com",
-  telephone: "+1-704-787-1261",
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Charlotte",
-    addressRegion: "NC",
-    addressCountry: "US",
-  },
-  areaServed: "US",
+  "@graph": [
+    organization,
+    caleb,
+    {
+      "@type": "ContactPage",
+      "@id": "https://pillarpeo.com/contact#page",
+      url: "https://pillarpeo.com/contact",
+      name: "Contact Pillar PEO Advisors",
+      about: ORG_REF,
+    },
+    breadcrumb([
+      { name: "Home", path: "/" },
+      { name: "Contact", path: "/contact" },
+    ]),
+  ],
 };
 
 const contactCards = [
   { icon: Mail, label: "Email", value: "info@pillarpeo.com", href: "mailto:info@pillarpeo.com" },
-  { icon: Phone, label: "Phone", value: "(704) 787-1261", href: undefined },
+  { icon: Phone, label: "Phone", value: "(704) 787-1261", href: "tel:+17047871261" },
   { icon: MapPin, label: "Location", value: "Charlotte, NC", href: undefined },
 ];
 
