@@ -9,29 +9,40 @@ import {
   SheetTitle,
 } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
+import { BOOKING_URL, PRIMARY_CTA } from "@/data/pricing";
 
-const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
-
-const solutions = [
-  { label: "Switch Your PEO", href: "/services/transitions" },
-  { label: "PEO for Nonprofits", href: "/peo-for-nonprofits" },
-  { label: "First-Time PEO", href: "/do-we-need-a-peo" },
+const services = [
+  { label: "All services", href: "/services" },
+  { label: "HR Audit", href: "/services/hr-audit" },
+  { label: "HR Projects", href: "/services/hr-projects" },
+  { label: "Fractional HR", href: "/services/fractional-hr" },
+  { label: "Transitions", href: "/services/transitions" },
+  { label: "PEO brokerage", href: "/services/peo-brokerage" },
+  { label: "Pricing", href: "/pricing" },
 ];
 
-const navLinks = [
-  { label: "Home", href: "/" },
-  { label: "How It Works", href: "/services/peo-brokerage" },
+// Industries and Locations arrive in batch 4. Until then they are hidden
+// rather than linked to pages that do not exist.
+const industries: { label: string; href: string }[] = [];
+const locations: { label: string; href: string }[] = [];
+
+const flatLinks = [
   { label: "Resources", href: "/resources" },
-  { label: "HR Quiz", href: "/hr-headache-score" },
   { label: "About", href: "/about" },
 ];
 
 const Header = () => {
-  const [solutionsOpen, setSolutionsOpen] = useState(false);
+  const [openMenu, setOpenMenu] = useState<string | null>(null);
   const [mobileOpen, setMobileOpen] = useState(false);
   const location = useLocation();
 
   const isActive = (href: string) => location.pathname === href;
+
+  const dropdowns = [
+    { label: "Services", items: services },
+    { label: "Industries", items: industries },
+    { label: "Locations", items: locations },
+  ].filter((d) => d.items.length > 0);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur-md">
@@ -47,67 +58,53 @@ const Header = () => {
 
         {/* Desktop Nav */}
         <nav className="hidden items-center gap-1 lg:flex">
-          {navLinks.slice(0, 2).map((link) => (
-            <Link
-              key={link.href}
-              to={link.href}
-              className={cn(
-                "rounded-md px-3 py-2 text-sm font-semibold transition-colors",
-                isActive(link.href)
-                  ? "text-green-ink"
-                  : "text-foreground/70 hover:text-foreground"
-              )}
+          {dropdowns.map((menu) => (
+            <div
+              key={menu.label}
+              className="relative"
+              onMouseEnter={() => setOpenMenu(menu.label)}
+              onMouseLeave={() => setOpenMenu(null)}
             >
-              {link.label}
-            </Link>
+              <button
+                className={cn(
+                  "inline-flex items-center gap-1 rounded-md px-3 py-2 text-sm font-semibold transition-colors",
+                  menu.items.some((s) => isActive(s.href))
+                    ? "text-green-ink"
+                    : "text-foreground/70 hover:text-foreground"
+                )}
+              >
+                {menu.label}
+                <ChevronDown
+                  className={cn(
+                    "h-3.5 w-3.5 transition-transform",
+                    openMenu === menu.label && "rotate-180"
+                  )}
+                />
+              </button>
+              {openMenu === menu.label && (
+                <div className="absolute left-0 top-full pt-2">
+                  <div className="w-64 rounded-lg border border-border bg-background p-2 shadow-xl">
+                    {menu.items.map((item) => (
+                      <Link
+                        key={item.href}
+                        to={item.href}
+                        className={cn(
+                          "block rounded-md px-3 py-2.5 text-sm font-semibold transition-colors",
+                          isActive(item.href)
+                            ? "bg-accent/10 text-green-ink"
+                            : "text-foreground/70 hover:bg-muted hover:text-foreground"
+                        )}
+                      >
+                        {item.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
           ))}
 
-          {/* Solutions Dropdown */}
-          <div
-            className="relative"
-            onMouseEnter={() => setSolutionsOpen(true)}
-            onMouseLeave={() => setSolutionsOpen(false)}
-          >
-            <button
-              className={cn(
-                "inline-flex items-center gap-1 rounded-md px-3 py-2 text-sm font-semibold transition-colors",
-                solutions.some((s) => isActive(s.href))
-                  ? "text-green-ink"
-                  : "text-foreground/70 hover:text-foreground"
-              )}
-            >
-              Solutions
-              <ChevronDown
-                className={cn(
-                  "h-3.5 w-3.5 transition-transform",
-                  solutionsOpen && "rotate-180"
-                )}
-              />
-            </button>
-            {solutionsOpen && (
-              <div className="absolute left-0 top-full pt-2">
-                <div className="w-64 rounded-lg border border-border bg-background p-2 shadow-xl">
-                  {solutions.map((sol) => (
-                    <Link
-                      key={sol.href}
-                      to={sol.href}
-                      className={cn(
-                        "block rounded-md px-3 py-2.5 text-sm font-semibold transition-colors",
-                        isActive(sol.href)
-                          ? "bg-accent/10 text-green-ink"
-                          : "text-foreground/70 hover:bg-muted hover:text-foreground"
-                      )}
-                      onClick={() => setSolutionsOpen(false)}
-                    >
-                      {sol.label}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            )}
-          </div>
-
-          {navLinks.slice(2).map((link) => (
+          {flatLinks.map((link) => (
             <Link
               key={link.href}
               to={link.href}
@@ -130,7 +127,7 @@ const Header = () => {
             className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20"
           >
             <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
-              Schedule a PEO Strategy Call
+              {PRIMARY_CTA}
             </a>
           </Button>
         </div>
@@ -149,45 +146,32 @@ const Header = () => {
           >
             <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
             <div className="flex flex-col gap-1 pt-8">
-              {navLinks.slice(0, 2).map((link) => (
-                <Link
-                  key={link.href}
-                  to={link.href}
-                  onClick={() => setMobileOpen(false)}
-                  className={cn(
-                    "rounded-md px-4 py-3 text-base font-semibold transition-colors",
-                    isActive(link.href)
-                      ? "bg-accent/20 text-accent"
-                      : "text-primary-foreground/80 hover:text-primary-foreground"
-                  )}
-                >
-                  {link.label}
-                </Link>
-              ))}
-
-              {/* Solutions group */}
-              <div className="px-4 py-2 text-xs font-bold tracking-widest text-primary-foreground/70 uppercase">
-                Solutions
-              </div>
-              {solutions.map((sol) => (
-                <Link
-                  key={sol.href}
-                  to={sol.href}
-                  onClick={() => setMobileOpen(false)}
-                  className={cn(
-                    "rounded-md px-6 py-2.5 text-sm font-semibold transition-colors",
-                    isActive(sol.href)
-                      ? "bg-accent/20 text-accent"
-                      : "text-primary-foreground/70 hover:text-primary-foreground"
-                  )}
-                >
-                  {sol.label}
-                </Link>
+              {dropdowns.map((menu) => (
+                <div key={menu.label}>
+                  <div className="px-4 py-2 text-xs font-bold uppercase tracking-widest text-primary-foreground/70">
+                    {menu.label}
+                  </div>
+                  {menu.items.map((item) => (
+                    <Link
+                      key={item.href}
+                      to={item.href}
+                      onClick={() => setMobileOpen(false)}
+                      className={cn(
+                        "block rounded-md px-6 py-2.5 text-sm font-semibold transition-colors",
+                        isActive(item.href)
+                          ? "bg-accent/20 text-accent"
+                          : "text-primary-foreground/70 hover:text-primary-foreground"
+                      )}
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
               ))}
 
               <div className="my-2 h-px bg-primary-foreground/10" />
 
-              {navLinks.slice(2).map((link) => (
+              {flatLinks.map((link) => (
                 <Link
                   key={link.href}
                   to={link.href}
@@ -208,8 +192,13 @@ const Header = () => {
                   asChild
                   className="w-full bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90"
                 >
-                  <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" onClick={() => setMobileOpen(false)}>
-                    Schedule a PEO Strategy Call
+                  <a
+                    href={BOOKING_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setMobileOpen(false)}
+                  >
+                    {PRIMARY_CTA}
                   </a>
                 </Button>
               </div>
