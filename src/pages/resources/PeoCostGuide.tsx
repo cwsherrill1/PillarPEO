@@ -169,6 +169,32 @@ const PeoCostGuide = () => (
       <p className="mt-4">More on this in our <Link to="/resources/peo-broker-vs-direct" className="text-green-ink hover:underline">PEO broker vs. going direct</Link> guide.</p>
     </Section>
 
+    <Section title="How to Compare Quotes Accurately">
+      <p>Comparing PEO quotes is harder than it looks because providers use different structures. To make an apples-to-apples comparison:</p>
+      <ul className="space-y-2">
+        <Bullet>Ask every provider to quote on the same scope of services</Bullet>
+        <Bullet>Separate the administrative fee from the benefits cost from the workers' comp cost</Bullet>
+        <Bullet>Model out cost at current headcount, then at 20% growth</Bullet>
+        <Bullet>Ask for a multi-year projection, not just year-one pricing</Bullet>
+        <Bullet>Factor in the implementation or onboarding fee — some waive it, some don't</Bullet>
+      </ul>
+      <p className="mt-4">What's often priced separately, and belongs in the comparison: 401(k) administration fees, SUTA management fees, EPLI, implementation fees, per-state registration fees for multi-state employers, and premium support tiers.</p>
+    </Section>
+
+    <Section title="What a Fair Deal Looks Like" alt>
+      <p>A reasonable PEO relationship should deliver:</p>
+      <ul className="space-y-2">
+        <Bullet>Transparent pricing with clear line-item breakdowns</Bullet>
+        <Bullet>A named contact with a defined response SLA</Bullet>
+        <Bullet>Competitive benefits that employees actually perceive as better than before</Bullet>
+        <Bullet>Clear renewal terms with reasonable notice windows</Bullet>
+        <Bullet>A clean exit process if the relationship doesn't work out</Bullet>
+      </ul>
+      <p className="mt-4 font-semibold text-foreground">If a PEO can't give you clarity on all five before you sign, that's a red flag — not a reason to move faster.</p>
+    </Section>
+
+
+
     <Section title="Frequently Asked PEO Cost Questions">
       <Accordion type="single" collapsible className="w-full">
         {faqs.map((f, i) => (
