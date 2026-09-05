@@ -6,11 +6,9 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Layout from "@/components/Layout";
 import ScrollToTop from "@/components/ScrollToTop";
-import { redirects } from "@/data/redirects";
+import { activeRedirects } from "@/data/redirects";
 
 const Index = lazy(() => import("./pages/Index"));
-const HowItWorks = lazy(() => import("./pages/HowItWorks"));
-const SwitchYourPeo = lazy(() => import("./pages/SwitchYourPeo"));
 const PeoForNonprofits = lazy(() => import("./pages/PeoForNonprofits"));
 const DoWeNeedAPeo = lazy(() => import("./pages/DoWeNeedAPeo"));
 const Resources = lazy(() => import("./pages/Resources"));
@@ -24,12 +22,9 @@ const HrHeadacheQuiz = lazy(() => import("./pages/HrHeadacheQuiz"));
 // Resource sub-pages
 const FiveQuestions = lazy(() => import("./pages/resources/FiveQuestions"));
 const CoEmployment = lazy(() => import("./pages/resources/CoEmployment"));
-const PeoPricing = lazy(() => import("./pages/resources/PeoPricing"));
 const PeoVsAsoVsInhouse = lazy(() => import("./pages/resources/PeoVsAsoVsInhouse"));
-const HowToSwitchPeos = lazy(() => import("./pages/resources/HowToSwitchPeos"));
 const PeoForNonprofitsGuide = lazy(() => import("./pages/resources/PeoForNonprofitsGuide"));
 const PeoReadiness = lazy(() => import("./pages/resources/PeoReadiness"));
-const PeoImplementation = lazy(() => import("./pages/resources/PeoImplementation"));
 const PeoCostGuide = lazy(() => import("./pages/resources/PeoCostGuide"));
 const PeoVsPayrollService = lazy(() => import("./pages/resources/PeoVsPayrollService"));
 const BestPeoForSmallBusiness = lazy(() => import("./pages/resources/BestPeoForSmallBusiness"));
@@ -43,7 +38,15 @@ const PeoForVentureBackedStartups = lazy(() => import("./pages/resources/PeoForV
 const SignsOutgrownPeoCharlotte = lazy(() => import("./pages/resources/SignsOutgrownPeoCharlotte"));
 const PeoForNonprofitsCharlotte = lazy(() => import("./pages/resources/PeoForNonprofitsCharlotte"));
 const PeoIndustryTransparency = lazy(() => import("./pages/resources/PeoIndustryTransparency"));
-const PeoBroker = lazy(() => import("./pages/PeoBroker"));
+const Services = lazy(() => import("./pages/services/Services"));
+const HrAudit = lazy(() => import("./pages/services/HrAudit"));
+const HrProjects = lazy(() => import("./pages/services/HrProjects"));
+const FractionalHr = lazy(() => import("./pages/services/FractionalHr"));
+const TransitionsPage = lazy(() => import("./pages/services/Transitions"));
+const PeoBrokerage = lazy(() => import("./pages/services/PeoBrokerage"));
+const HowWeGetPaid = lazy(() => import("./pages/HowWeGetPaid"));
+const PricingPage = lazy(() => import("./pages/Pricing"));
+const CalebSherrill = lazy(() => import("./pages/about/CalebSherrill"));
 const PeoBrokerCharlotte = lazy(() => import("./pages/PeoBrokerCharlotte"));
 const PeoBrokerNorthCarolina = lazy(() => import("./pages/PeoBrokerNorthCarolina"));
 const PeoBrokerSouthCarolina = lazy(() => import("./pages/PeoBrokerSouthCarolina"));
@@ -64,19 +67,23 @@ const App = () => (
           <Suspense fallback={<RouteFallback />}>
             <Routes>
               <Route path="/" element={<Index />} />
-              <Route path="/how-it-works" element={<HowItWorks />} />
-              <Route path="/switch-your-peo" element={<SwitchYourPeo />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/services/hr-audit" element={<HrAudit />} />
+              <Route path="/services/hr-projects" element={<HrProjects />} />
+              <Route path="/services/fractional-hr" element={<FractionalHr />} />
+              <Route path="/services/transitions" element={<TransitionsPage />} />
+              <Route path="/services/peo-brokerage" element={<PeoBrokerage />} />
+              <Route path="/how-we-get-paid" element={<HowWeGetPaid />} />
+              <Route path="/pricing" element={<PricingPage />} />
+              <Route path="/about/caleb-sherrill" element={<CalebSherrill />} />
               <Route path="/peo-for-nonprofits" element={<PeoForNonprofits />} />
               <Route path="/do-we-need-a-peo" element={<DoWeNeedAPeo />} />
               <Route path="/resources" element={<Resources />} />
               <Route path="/resources/5-questions" element={<FiveQuestions />} />
               <Route path="/resources/co-employment" element={<CoEmployment />} />
-              <Route path="/resources/peo-pricing" element={<PeoPricing />} />
               <Route path="/resources/peo-vs-aso-vs-inhouse" element={<PeoVsAsoVsInhouse />} />
-              <Route path="/resources/how-to-switch-peos" element={<HowToSwitchPeos />} />
               <Route path="/resources/peo-for-nonprofits-guide" element={<PeoForNonprofitsGuide />} />
               <Route path="/resources/peo-readiness" element={<PeoReadiness />} />
-              <Route path="/resources/peo-implementation" element={<PeoImplementation />} />
               <Route path="/resources/peo-cost-guide" element={<PeoCostGuide />} />
               <Route path="/resources/peo-vs-payroll-service" element={<PeoVsPayrollService />} />
               <Route path="/resources/best-peo-for-small-business" element={<BestPeoForSmallBusiness />} />
@@ -86,7 +93,6 @@ const App = () => (
               <Route path="/resources/peo-broker-vs-direct" element={<PeoBrokerVsDirect />} />
               <Route path="/resources/what-is-a-peo" element={<WhatIsAPeo />} />
               <Route path="/blog/employee-health-benefits-options" element={<EmployeeHealthBenefitsOptions />} />
-              <Route path="/peo-broker" element={<PeoBroker />} />
               <Route path="/peo-broker-charlotte" element={<PeoBrokerCharlotte />} />
               <Route path="/peo-broker-north-carolina" element={<PeoBrokerNorthCarolina />} />
               <Route path="/peo-broker-south-carolina" element={<PeoBrokerSouthCarolina />} />
@@ -101,7 +107,7 @@ const App = () => (
               <Route path="/terms" element={<Terms />} />
 
               {/* 301 redirects — generated from src/data/redirects.ts */}
-              {redirects.map((r) => (
+              {activeRedirects.map((r) => (
                 <Route key={r.from} path={r.from} element={<Navigate to={r.to} replace />} />
               ))}
 
