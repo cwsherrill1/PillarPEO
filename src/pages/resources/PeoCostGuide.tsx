@@ -26,6 +26,7 @@ const ARTICLE = buildArticleJsonLd({
   description: "PEO cost guide: real pricing models, hidden fees, renewal increases, and how to compare quotes from ADP, Insperity, Justworks, Rippling, and more.",
   path: "/resources/peo-cost-guide",
   datePublished: "2026-05-15",
+  dateModified: "2026-09-05",
 });
 
 const FAQ_JSONLD = {
