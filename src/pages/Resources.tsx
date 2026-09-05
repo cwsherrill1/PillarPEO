@@ -292,7 +292,7 @@ const Resources = () => {
                 </div>
                 <Button
                   size="lg"
-                  className="shrink-0 bg-accent text-green-ink-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20 cursor-pointer"
+                  className="shrink-0 bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20 cursor-pointer"
                   onClick={() => {
                     fetch("/guides/Employers_Guide_to_Choosing_the_Right_PEO.pdf")
                       .then((res) => res.blob())

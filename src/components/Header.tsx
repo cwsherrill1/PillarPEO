@@ -127,7 +127,7 @@ const Header = () => {
         <div className="hidden items-center lg:flex">
           <Button
             asChild
-            className="bg-accent text-green-ink-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20"
+            className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20"
           >
             <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
               Schedule a PEO Strategy Call

@@ -255,7 +255,7 @@ const Index = () => {
               </p>
               <Button
                 size="lg"
-                className="mt-6 bg-accent text-green-ink-foreground hover:bg-accent/90 px-8 text-base font-semibold shadow-lg shadow-accent/20"
+                className="mt-6 bg-accent text-accent-foreground hover:bg-accent/90 px-8 text-base font-semibold shadow-lg shadow-accent/20"
                 asChild>
                 
                 <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Schedule a PEO Strategy Call</a>

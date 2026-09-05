@@ -153,7 +153,7 @@ const HowItWorks = () => (
                 <Reveal key={s.num} delay={i * 100}>
                   <Card className="relative border-l-4 border-l-accent hover-lift card-elevated">
                     <CardContent className="p-6 flex gap-5 md:gap-7 items-start">
-                      <div className="relative z-10 flex-shrink-0 w-12 h-12 md:w-14 md:h-14 rounded-full bg-accent flex items-center justify-center text-green-ink-foreground font-heading text-lg md:text-xl font-800 shadow-md">
+                      <div className="relative z-10 flex-shrink-0 w-12 h-12 md:w-14 md:h-14 rounded-full bg-accent flex items-center justify-center text-accent-foreground font-heading text-lg md:text-xl font-800 shadow-md">
                         {s.num}
                       </div>
                       <div>

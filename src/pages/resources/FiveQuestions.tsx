@@ -108,7 +108,7 @@ const FiveQuestions = () => (
             <Card className="overflow-hidden">
               <CardContent className="p-6 md:p-8">
                 <div className="flex items-start gap-4">
-                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent text-green-ink-foreground font-heading font-800 text-lg">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent text-accent-foreground font-heading font-800 text-lg">
                     {i + 1}
                   </span>
                   <div>

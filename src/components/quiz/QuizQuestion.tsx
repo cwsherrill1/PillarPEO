@@ -72,8 +72,8 @@ const QuizQuestion = ({
                   <span
                     className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full border-2 text-sm font-semibold transition-colors ${
                       isSelected
-                        ? "border-accent bg-accent text-green-ink-foreground"
-                        : "border-muted text-muted-foreground [@media(hover:hover)]:group-hover:border-accent [@media(hover:hover)]:group-hover:bg-accent [@media(hover:hover)]:group-hover:text-green-ink-foreground group-active:border-accent group-active:bg-accent group-active:text-green-ink-foreground"
+                        ? "border-accent bg-accent text-accent-foreground"
+                        : "border-muted text-muted-foreground [@media(hover:hover)]:group-hover:border-accent [@media(hover:hover)]:group-hover:bg-accent [@media(hover:hover)]:group-hover:text-accent-foreground group-active:border-accent group-active:bg-accent group-active:text-accent-foreground"
                     }`}
                   >
                     {String.fromCharCode(65 + idx)}

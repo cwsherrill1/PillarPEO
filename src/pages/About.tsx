@@ -182,7 +182,7 @@ const About = () => (
           <Button
             asChild
             size="lg"
-            className="mt-6 bg-accent text-green-ink-foreground hover:bg-accent/90 font-heading font-700 px-8"
+            className="mt-6 bg-accent text-accent-foreground hover:bg-accent/90 font-heading font-700 px-8"
           >
             <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
               Schedule a Call
