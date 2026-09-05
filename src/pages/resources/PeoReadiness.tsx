@@ -88,12 +88,12 @@ const PeoReadiness = () => {
       };
     if (count <= 10)
       return {
-        color: "text-accent",
+        color: "text-green-ink",
         title: "You're likely in range where a PEO could provide meaningful value.",
         desc: "The question is whether the right PEO at the right price is available for your specific situation.",
       };
     return {
-      color: "text-accent",
+      color: "text-green-ink",
       title: "Your company profile is a strong match for a PEO evaluation.",
       desc: "The more boxes you checked in Benefits and HR Administration, the more urgently it's worth exploring.",
     };
@@ -138,7 +138,7 @@ const PeoReadiness = () => {
       <section className="py-20 md:py-28">
         <div className="container max-w-3xl">
           <Reveal>
-            <Link to="/resources" className="mb-8 inline-flex items-center text-sm font-semibold text-accent hover:text-accent/80">
+            <Link to="/resources" className="mb-8 inline-flex items-center text-sm font-semibold text-green-ink hover:text-green-ink/80">
               <ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources
             </Link>
             <p className="text-xl leading-8 text-foreground/85">
@@ -182,7 +182,7 @@ const PeoReadiness = () => {
           <Reveal>
             <Card className="border-accent/30 bg-accent/5">
               <CardContent className="p-6 md:p-8 text-center">
-                <p className="text-sm font-semibold uppercase tracking-wider text-accent">Your Result</p>
+                <p className="text-sm font-semibold uppercase tracking-wider text-green-ink">Your Result</p>
                 <p className="mt-2 font-heading text-4xl font-800 text-foreground">{count} <span className="text-lg font-400 text-muted-foreground">/ {categories.reduce((a, c) => a + c.items.length, 0)} checked</span></p>
                 {result ? (
                   <>

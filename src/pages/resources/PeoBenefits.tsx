@@ -84,7 +84,7 @@ const PeoBenefits = () => (
     <section className="py-20 md:py-28">
       <div className="container max-w-3xl">
         <Reveal>
-          <Link to="/resources" className="mb-8 inline-flex items-center text-sm font-semibold text-accent hover:text-accent/80">
+          <Link to="/resources" className="mb-8 inline-flex items-center text-sm font-semibold text-green-ink hover:text-green-ink/80">
             <ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources
           </Link>
           <p className="text-xl leading-8 text-foreground/85">
@@ -135,7 +135,7 @@ const PeoBenefits = () => (
         <Bullet><strong className="text-foreground">High-claims industries:</strong> if you're in healthcare, manufacturing, or have an older workforce, master health rates can be worse than carrier-direct quotes.</Bullet>
         <Bullet><strong className="text-foreground">Plan customization:</strong> you pick from the PEO's menu. You can't design a custom plan the way a large self-funded employer can.</Bullet>
         <Bullet><strong className="text-foreground">Geographic dead zones:</strong> some PEOs have weak network coverage in rural states. Always verify network adequacy before signing.</Bullet>
-        <Bullet><strong className="text-foreground">Renewal volatility:</strong> when the master plan renews high, every PEO client takes the hit. See <Link to="/resources/peo-cost-guide" className="text-accent hover:underline">the renewal trap</Link>.</Bullet>
+        <Bullet><strong className="text-foreground">Renewal volatility:</strong> when the master plan renews high, every PEO client takes the hit. See <Link to="/resources/peo-cost-guide" className="text-green-ink hover:underline">the renewal trap</Link>.</Bullet>
       </ul>
     </Section>
 

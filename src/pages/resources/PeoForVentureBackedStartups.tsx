@@ -114,7 +114,7 @@ const PeoForVentureBackedStartups = () => (
         <Reveal>
           <Link
             to="/resources"
-            className="mb-8 inline-flex items-center text-sm font-semibold text-accent hover:text-accent/80"
+            className="mb-8 inline-flex items-center text-sm font-semibold text-green-ink hover:text-green-ink/80"
           >
             <ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources
           </Link>
@@ -218,7 +218,7 @@ const PeoForVentureBackedStartups = () => (
         Startups coming out of the Queen City's accelerator and angel networks face the same
         infrastructure challenges as any venture-backed company, usually with fewer internal
         resources to solve them. If you're local, our{" "}
-        <Link to="/peo-broker-charlotte" className="font-semibold text-accent hover:underline">
+        <Link to="/peo-broker-charlotte" className="font-semibold text-green-ink hover:underline">
           Charlotte PEO broker page
         </Link>{" "}
         walks through what local representation looks like.
@@ -227,7 +227,7 @@ const PeoForVentureBackedStartups = () => (
         Pillar PEO Advisors works with growth-stage and venture-backed companies to find providers
         that are built for scale, ready for investor scrutiny, and capable of handling a
         fast-moving team. Working with an{" "}
-        <Link to="/peo-broker" className="font-semibold text-accent hover:underline">
+        <Link to="/peo-broker" className="font-semibold text-green-ink hover:underline">
           independent PEO broker
         </Link>{" "}
         is how you get the structured evaluation investors look for. If you are raising in the next

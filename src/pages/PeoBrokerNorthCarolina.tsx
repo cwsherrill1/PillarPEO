@@ -130,7 +130,7 @@ const PeoBrokerNorthCarolina = () => (
         and a fast-growing workforce concentrated in a handful of metro corridors. That mix opens
         real leverage for employers willing to put providers in a true side-by-side comparison —
         which is exactly what an{" "}
-        <Link to="/peo-broker" className="font-semibold text-accent hover:underline">
+        <Link to="/peo-broker" className="font-semibold text-green-ink hover:underline">
           independent PEO broker
         </Link>{" "}
         is built to do.
@@ -140,11 +140,11 @@ const PeoBrokerNorthCarolina = () => (
     <Section title="Statewide service from Charlotte HQ">
       <p>
         Pillar is based in{" "}
-        <Link to="/peo-broker-charlotte" className="font-semibold text-accent hover:underline">
+        <Link to="/peo-broker-charlotte" className="font-semibold text-green-ink hover:underline">
           Charlotte
         </Link>{" "}
         and works with employers across the state. We also serve cross-border employers in{" "}
-        <Link to="/peo-broker-south-carolina" className="font-semibold text-accent hover:underline">
+        <Link to="/peo-broker-south-carolina" className="font-semibold text-green-ink hover:underline">
           South Carolina
         </Link>
         , which matters when your team spans both sides of the line.

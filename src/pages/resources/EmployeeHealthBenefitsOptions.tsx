@@ -118,7 +118,7 @@ const EmployeeHealthBenefitsOptions = () => (
         <Reveal>
           <Link
             to="/resources"
-            className="mb-8 inline-flex items-center text-sm font-semibold text-accent hover:text-accent/80"
+            className="mb-8 inline-flex items-center text-sm font-semibold text-green-ink hover:text-green-ink/80"
           >
             <ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources
           </Link>
@@ -289,7 +289,7 @@ const EmployeeHealthBenefitsOptions = () => (
       <p>
         The tradeoffs live in the structure, the contract terms, and the renewal behavior, and
         they vary widely from one arrangement to the next. This is the option where{" "}
-        <Link to="/peo-broker" className="font-semibold text-accent hover:underline">
+        <Link to="/peo-broker" className="font-semibold text-green-ink hover:underline">
           independent broker representation
         </Link>{" "}
         matters most, because the differences between providers are large and not obvious from a

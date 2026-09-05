@@ -63,7 +63,7 @@ const CoEmployment = () => (
     <section className="py-20 md:py-28">
       <div className="container max-w-3xl">
         <Reveal>
-          <Link to="/resources" className="mb-8 inline-flex items-center text-sm font-semibold text-accent hover:text-accent/80">
+          <Link to="/resources" className="mb-8 inline-flex items-center text-sm font-semibold text-green-ink hover:text-green-ink/80">
             <ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources
           </Link>
         </Reveal>
@@ -155,7 +155,7 @@ const CoEmployment = () => (
                 <CardContent className="p-6">
                   <p className="text-sm font-semibold uppercase tracking-wider text-destructive">Myth</p>
                   <p className="mt-1 font-heading font-700 text-foreground">{m.myth}</p>
-                  <p className="mt-3 text-sm font-semibold uppercase tracking-wider text-accent">Reality</p>
+                  <p className="mt-3 text-sm font-semibold uppercase tracking-wider text-green-ink">Reality</p>
                   <p className="mt-1 text-sm text-muted-foreground">{m.reality}</p>
                 </CardContent>
               </Card>

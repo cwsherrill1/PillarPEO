@@ -113,7 +113,7 @@ const PeoIndustryTransparency = () => (
         <Reveal>
           <Link
             to="/resources"
-            className="mb-8 inline-flex items-center text-sm font-semibold text-accent hover:text-accent/80"
+            className="mb-8 inline-flex items-center text-sm font-semibold text-green-ink hover:text-green-ink/80"
           >
             <ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources
           </Link>
@@ -140,7 +140,7 @@ const PeoIndustryTransparency = () => (
     <Section title="A lot of brokers are just sending business back to their friends" alt>
       <p>
         Many{" "}
-        <Link to="/peo-broker" className="font-semibold text-accent hover:underline">
+        <Link to="/peo-broker" className="font-semibold text-green-ink hover:underline">
           PEO brokers
         </Link>{" "}
         in this industry spent years working inside a provider before going independent. They keep

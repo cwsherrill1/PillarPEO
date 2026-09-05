@@ -104,7 +104,7 @@ const DoWeNeedAPeo = () => (
           <ul className="mt-10 space-y-4">
             {signals.map((signal) => (
               <li key={signal} className="flex items-start gap-3">
-                <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-accent" />
+                <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-green-ink" />
                 <span className="text-lg text-muted-foreground leading-relaxed">
                   {signal}
                 </span>
@@ -130,10 +130,10 @@ const DoWeNeedAPeo = () => (
             return (
               <Reveal key={step.num} delay={i * 120}>
                 <div className="text-center">
-                  <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-accent text-accent-foreground font-heading text-xl font-800">
+                  <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-accent text-green-ink-foreground font-heading text-xl font-800">
                     {step.num}
                   </div>
-                  <Icon className="mx-auto mt-4 h-6 w-6 text-accent" />
+                  <Icon className="mx-auto mt-4 h-6 w-6 text-green-ink" />
                   <h3 className="mt-3 font-heading text-lg font-700 text-foreground">
                     {step.title}
                   </h3>
@@ -158,7 +158,7 @@ const DoWeNeedAPeo = () => (
           <Button
             asChild
             size="lg"
-            className="mt-6 bg-accent text-accent-foreground hover:bg-accent/90 font-heading font-700 px-8 shadow-lg shadow-accent/20"
+            className="mt-6 bg-accent text-green-ink-foreground hover:bg-accent/90 font-heading font-700 px-8 shadow-lg shadow-accent/20"
           >
             <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
               Book a First-Time PEO Strategy Call

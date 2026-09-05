@@ -96,7 +96,7 @@ const About = () => (
     <section id="why-pillar" className="bg-background">
       <div className="container max-w-3xl py-24 md:py-32">
         <Reveal>
-          <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-accent">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-green-ink">
             How Pillar Started
           </p>
           <h2 className="font-heading text-3xl font-800 text-foreground md:text-4xl">
@@ -131,7 +131,7 @@ const About = () => (
       <div className="container py-24 md:py-32">
         <Reveal>
           <div className="text-center">
-            <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-accent">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-green-ink">
               Our Team
             </p>
             <h2 className="font-heading text-3xl font-800 text-foreground md:text-4xl">
@@ -151,14 +151,14 @@ const About = () => (
                 <CardContent className="p-8 text-center">
                   <Avatar className="mx-auto mb-5 h-28 w-28">
                     <AvatarImage src={m.image} alt={m.name} className="object-cover" />
-                    <AvatarFallback className="bg-accent/10 text-accent text-2xl font-heading font-700">
+                    <AvatarFallback className="bg-accent/10 text-green-ink text-2xl font-heading font-700">
                       {m.initials}
                     </AvatarFallback>
                   </Avatar>
                   <h3 className="font-heading text-xl font-700 text-foreground">
                     {m.name}
                   </h3>
-                  <p className="mt-1 text-sm font-medium text-accent">
+                  <p className="mt-1 text-sm font-medium text-green-ink">
                     {m.title}
                   </p>
                   <p className="mt-4 text-base leading-relaxed text-muted-foreground">
@@ -182,7 +182,7 @@ const About = () => (
           <Button
             asChild
             size="lg"
-            className="mt-6 bg-accent text-accent-foreground hover:bg-accent/90 font-heading font-700 px-8"
+            className="mt-6 bg-accent text-green-ink-foreground hover:bg-accent/90 font-heading font-700 px-8"
           >
             <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
               Schedule a Call
@@ -196,7 +196,7 @@ const About = () => (
     <section className="bg-background">
       <div className="container max-w-3xl py-24 md:py-32">
         <Reveal>
-          <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-accent">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-green-ink">
             Why the Work Matters
           </p>
           <h2 className="font-heading text-3xl font-800 text-foreground md:text-4xl">
@@ -225,7 +225,7 @@ const About = () => (
     <section className="bg-muted/40">
       <div className="container max-w-3xl py-24 md:py-32">
         <Reveal>
-          <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-accent">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-green-ink">
             What We Stand For
           </p>
           <h2 className="font-heading text-3xl font-800 text-foreground md:text-4xl">

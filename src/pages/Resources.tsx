@@ -274,10 +274,10 @@ const Resources = () => {
             <Card className="border-accent/30 bg-accent/5 overflow-hidden">
               <CardContent className="flex flex-col items-center gap-8 p-8 md:flex-row md:p-12">
                 <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl bg-accent/10">
-                  <BookOpen className="h-10 w-10 text-accent" />
+                  <BookOpen className="h-10 w-10 text-green-ink" />
                 </div>
                 <div className="flex-1 text-center md:text-left">
-                  <Badge className="mb-3 bg-accent/10 text-accent hover:bg-accent/20">
+                  <Badge className="mb-3 bg-accent/10 text-green-ink hover:bg-accent/20">
                     Featured Resource
                   </Badge>
                   <h2 className="font-heading text-2xl font-800 text-foreground md:text-3xl">
@@ -292,7 +292,7 @@ const Resources = () => {
                 </div>
                 <Button
                   size="lg"
-                  className="shrink-0 bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20 cursor-pointer"
+                  className="shrink-0 bg-accent text-green-ink-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20 cursor-pointer"
                   onClick={() => {
                     fetch("/guides/Employers_Guide_to_Choosing_the_Right_PEO.pdf")
                       .then((res) => res.blob())

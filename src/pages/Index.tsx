@@ -229,7 +229,7 @@ const Index = () => {
               map(({ step, title, desc }, i) =>
               <Reveal key={step} delay={i * 150}>
                   <div className="relative text-center">
-                    <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full border-2 border-accent bg-background font-heading text-xl font-800 text-accent">
+                    <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full border-2 border-accent bg-background font-heading text-xl font-800 text-green-ink">
                       {step}
                     </div>
                     <h3 className="font-heading text-lg font-700 text-foreground">
@@ -256,7 +256,7 @@ const Index = () => {
               </p>
               <Button
                 size="lg"
-                className="mt-6 bg-accent text-accent-foreground hover:bg-accent/90 px-8 text-base font-semibold shadow-lg shadow-accent/20"
+                className="mt-6 bg-accent text-green-ink-foreground hover:bg-accent/90 px-8 text-base font-semibold shadow-lg shadow-accent/20"
                 asChild>
                 
                 <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Schedule a PEO Strategy Call</a>
@@ -290,7 +290,7 @@ const Index = () => {
               desc: "Compare service, price, support, and fit before you make a move.",
               href: "/switch-your-peo",
               cta: "Explore PEO Switching",
-              accent: "text-accent",
+              accent: "text-green-ink",
               border: "border-accent/30",
               glow: "hover:shadow-[0_0_30px_-8px_hsl(145_63%_49%/0.2)]"
             },
@@ -399,8 +399,8 @@ const Index = () => {
                   <Card className="border-accent/20 bg-accent/5">
                     <CardContent className="p-6">
                       <div className="mb-3 flex items-center gap-2">
-                        <CheckCircle2 size={18} className="text-accent" />
-                        <span className="text-xs font-bold uppercase tracking-wider text-accent">
+                        <CheckCircle2 size={18} className="text-green-ink" />
+                        <span className="text-xs font-bold uppercase tracking-wider text-green-ink">
                           Truth
                         </span>
                       </div>

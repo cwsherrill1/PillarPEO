@@ -90,7 +90,7 @@ const FiveQuestions = () => (
 
       <div className="container max-w-3xl">
         <Reveal>
-          <Link to="/resources" className="mb-8 inline-flex items-center text-sm font-semibold text-accent hover:text-accent/80">
+          <Link to="/resources" className="mb-8 inline-flex items-center text-sm font-semibold text-green-ink hover:text-green-ink/80">
             <ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources
           </Link>
           <p className="text-xl leading-8 text-foreground/85">
@@ -108,7 +108,7 @@ const FiveQuestions = () => (
             <Card className="overflow-hidden">
               <CardContent className="p-6 md:p-8">
                 <div className="flex items-start gap-4">
-                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent text-accent-foreground font-heading font-800 text-lg">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent text-green-ink-foreground font-heading font-800 text-lg">
                     {i + 1}
                   </span>
                   <div>

@@ -54,7 +54,7 @@ const Header = () => {
               className={cn(
                 "rounded-md px-3 py-2 text-sm font-semibold transition-colors",
                 isActive(link.href)
-                  ? "text-accent"
+                  ? "text-green-ink"
                   : "text-foreground/70 hover:text-foreground"
               )}
             >
@@ -72,7 +72,7 @@ const Header = () => {
               className={cn(
                 "inline-flex items-center gap-1 rounded-md px-3 py-2 text-sm font-semibold transition-colors",
                 solutions.some((s) => isActive(s.href))
-                  ? "text-accent"
+                  ? "text-green-ink"
                   : "text-foreground/70 hover:text-foreground"
               )}
             >
@@ -94,7 +94,7 @@ const Header = () => {
                       className={cn(
                         "block rounded-md px-3 py-2.5 text-sm font-semibold transition-colors",
                         isActive(sol.href)
-                          ? "bg-accent/10 text-accent"
+                          ? "bg-accent/10 text-green-ink"
                           : "text-foreground/70 hover:bg-muted hover:text-foreground"
                       )}
                       onClick={() => setSolutionsOpen(false)}
@@ -114,7 +114,7 @@ const Header = () => {
               className={cn(
                 "rounded-md px-3 py-2 text-sm font-semibold transition-colors",
                 isActive(link.href)
-                  ? "text-accent"
+                  ? "text-green-ink"
                   : "text-foreground/70 hover:text-foreground"
               )}
             >
@@ -127,7 +127,7 @@ const Header = () => {
         <div className="hidden items-center lg:flex">
           <Button
             asChild
-            className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20"
+            className="bg-accent text-green-ink-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20"
           >
             <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
               Schedule a PEO Strategy Call

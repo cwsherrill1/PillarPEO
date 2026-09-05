@@ -6,7 +6,7 @@ const LINKEDIN_URL = "https://www.linkedin.com/in/calebsherrill/";
 export const ArticleByline = ({ datePublished = "2025" }: { datePublished?: string }) => (
   <div className="mt-6 flex items-center justify-center gap-3 text-sm text-primary-foreground/80">
     <Avatar className="h-9 w-9">
-      <AvatarFallback className="bg-accent/15 text-accent text-xs font-heading font-700">
+      <AvatarFallback className="bg-accent/15 text-green-ink text-xs font-heading font-700">
         CS
       </AvatarFallback>
     </Avatar>
@@ -21,7 +21,7 @@ export const ArticleByline = ({ datePublished = "2025" }: { datePublished?: stri
           href={LINKEDIN_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-1 text-accent hover:underline"
+          className="inline-flex items-center gap-1 text-green-ink hover:underline"
         >
           <Linkedin className="h-3 w-3" /> LinkedIn
         </a>
@@ -36,7 +36,7 @@ export const ArticleAuthorBio = () => (
       <div className="rounded-2xl border border-border bg-muted/30 p-6 md:p-8">
         <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center">
           <Avatar className="h-16 w-16 shrink-0">
-            <AvatarFallback className="bg-accent/15 text-accent text-xl font-heading font-700">
+            <AvatarFallback className="bg-accent/15 text-green-ink text-xl font-heading font-700">
               CS
             </AvatarFallback>
           </Avatar>
@@ -52,7 +52,7 @@ export const ArticleAuthorBio = () => (
               href={LINKEDIN_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-accent hover:underline"
+              className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-green-ink hover:underline"
             >
               <Linkedin className="h-4 w-4" /> Connect on LinkedIn
             </a>

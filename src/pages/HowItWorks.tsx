@@ -113,7 +113,7 @@ const HowItWorks = () => (
             return (
               <Reveal key={s.label} delay={i * 120}>
                 <div className="text-center">
-                  <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-accent/10 text-accent">
+                  <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-accent/10 text-green-ink">
                     <Icon size={22} />
                   </div>
                   <p className="font-heading text-3xl font-800 text-foreground md:text-4xl">
@@ -153,12 +153,12 @@ const HowItWorks = () => (
                 <Reveal key={s.num} delay={i * 100}>
                   <Card className="relative border-l-4 border-l-accent hover-lift card-elevated">
                     <CardContent className="p-6 flex gap-5 md:gap-7 items-start">
-                      <div className="relative z-10 flex-shrink-0 w-12 h-12 md:w-14 md:h-14 rounded-full bg-accent flex items-center justify-center text-accent-foreground font-heading text-lg md:text-xl font-800 shadow-md">
+                      <div className="relative z-10 flex-shrink-0 w-12 h-12 md:w-14 md:h-14 rounded-full bg-accent flex items-center justify-center text-green-ink-foreground font-heading text-lg md:text-xl font-800 shadow-md">
                         {s.num}
                       </div>
                       <div>
                         <div className="flex items-center gap-2 mb-2">
-                          <Icon className="w-5 h-5 text-accent" />
+                          <Icon className="w-5 h-5 text-green-ink" />
                           <h3 className="font-heading text-xl md:text-2xl font-700 text-foreground">
                             {s.title}
                           </h3>

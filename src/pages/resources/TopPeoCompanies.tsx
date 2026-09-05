@@ -92,7 +92,7 @@ const TopPeoCompanies = () => (
     <section className="py-20 md:py-28">
       <div className="container max-w-3xl">
         <Reveal>
-          <Link to="/resources" className="mb-8 inline-flex items-center text-sm font-semibold text-accent hover:text-accent/80"><ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources</Link>
+          <Link to="/resources" className="mb-8 inline-flex items-center text-sm font-semibold text-green-ink hover:text-green-ink/80"><ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources</Link>
           <p className="text-xl leading-8 text-foreground/85">
             There are roughly 500 PEOs in the United States. Most "top PEO" rankings are based on revenue, sponsorship, or whoever paid for placement. This guide groups the providers by category and use case so you can quickly see which tier matches your company — then narrow from there. We don't take fees from any provider for being listed.
           </p>
@@ -126,13 +126,13 @@ const TopPeoCompanies = () => (
         <li className="flex items-start gap-2"><span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-accent" /><span><strong className="text-foreground">Under 25 employees, single-state, white-collar:</strong> Modern PEOs (Justworks, Gusto, Rippling) are usually the best price-to-quality ratio.</span></li>
         <li className="flex items-start gap-2"><span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-accent" /><span><strong className="text-foreground">25–250 employees, multi-state, complex benefits:</strong> National tier-1 (ADP TotalSource, Insperity, TriNet) typically offer the deepest benefits and most mature compliance.</span></li>
         <li className="flex items-start gap-2"><span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-accent" /><span><strong className="text-foreground">Higher-risk industry (construction, manufacturing, healthcare):</strong> A regional or industry-vertical PEO often beats the nationals on workers' comp pricing.</span></li>
-        <li className="flex items-start gap-2"><span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-accent" /><span><strong className="text-foreground">Mission-driven or faith-based:</strong> Look at vertical providers with nonprofit experience. See our <Link to="/resources/peo-for-nonprofits-guide" className="text-accent hover:underline">PEO for nonprofits guide</Link>.</span></li>
+        <li className="flex items-start gap-2"><span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-accent" /><span><strong className="text-foreground">Mission-driven or faith-based:</strong> Look at vertical providers with nonprofit experience. See our <Link to="/resources/peo-for-nonprofits-guide" className="text-green-ink hover:underline">PEO for nonprofits guide</Link>.</span></li>
       </ul>
     </Section>
 
     <Section title="What 'CPEO Certified' Actually Means" alt>
       <p>CPEO (Certified Professional Employer Organization) is an IRS designation under the Small Business Efficiency Act of 2014. A CPEO has met financial reporting, bonding, and tax compliance requirements — and clients are protected from payroll tax liability if the PEO fails to remit.</p>
-      <p>Fewer than 100 of the ~500 PEOs in the US are CPEO-certified. <strong className="text-foreground">For most employers, CPEO status should be a hard requirement.</strong> Always verify on the <a href="https://www.irs.gov/tax-professionals/certified-professional-employer-organization" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">IRS CPEO list</a> before signing.</p>
+      <p>Fewer than 100 of the ~500 PEOs in the US are CPEO-certified. <strong className="text-foreground">For most employers, CPEO status should be a hard requirement.</strong> Always verify on the <a href="https://www.irs.gov/tax-professionals/certified-professional-employer-organization" target="_blank" rel="noopener noreferrer" className="text-green-ink hover:underline">IRS CPEO list</a> before signing.</p>
     </Section>
 
     <Section title="Frequently Asked Questions">

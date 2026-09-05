@@ -206,7 +206,7 @@ const Contact = () => {
                     />
                   </div>
 
-                  <Button type="submit" size="lg" disabled={submitting} className="w-full sm:w-auto bg-accent text-accent-foreground hover:bg-accent/90">
+                  <Button type="submit" size="lg" disabled={submitting} className="w-full sm:w-auto bg-accent text-green-ink-foreground hover:bg-accent/90">
                     {submitting ? "Sending…" : "Send My Request"}
                   </Button>
                 </form>
@@ -254,7 +254,7 @@ const Contact = () => {
             {steps.map((step, i) => (
               <Reveal key={step.title} delay={i * 150}>
                 <div className="flex flex-col items-center text-center">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-full bg-accent text-accent-foreground font-heading text-xl font-800">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-full bg-accent text-green-ink-foreground font-heading text-xl font-800">
                     {i + 1}
                   </div>
                   <h3 className="mt-4 font-heading text-lg font-600 text-foreground">
