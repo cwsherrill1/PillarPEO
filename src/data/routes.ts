@@ -31,12 +31,25 @@ export const siteRoutes: SiteRoute[] = [
   { path: "/contact", lastmod: D, changefreq: "monthly" },
 
   // Still-live legacy pages (replacements arrive in batches 4 and 5)
-  { path: "/peo-for-nonprofits", lastmod: D, changefreq: "monthly" },
   { path: "/do-we-need-a-peo", lastmod: D, changefreq: "monthly" },
-  { path: "/peo-broker-charlotte", lastmod: D, changefreq: "monthly" },
   { path: "/peo-broker-north-carolina", lastmod: D, changefreq: "monthly" },
   { path: "/peo-broker-south-carolina", lastmod: D, changefreq: "monthly" },
   { path: "/hr-headache-score", lastmod: D, changefreq: "monthly" },
+
+  // Industries (national)
+  { path: "/industries", lastmod: D, changefreq: "monthly" },
+  { path: "/industries/law-firms", lastmod: D, changefreq: "monthly" },
+  { path: "/industries/cpa-firms", lastmod: D, changefreq: "monthly" },
+  { path: "/industries/engineering-architecture", lastmod: D, changefreq: "monthly" },
+  { path: "/industries/medical-dental", lastmod: D, changefreq: "monthly" },
+  { path: "/industries/financial-advisors", lastmod: D, changefreq: "monthly" },
+  { path: "/industries/nonprofits", lastmod: D, changefreq: "monthly" },
+
+  // Locations (Carolinas)
+  { path: "/hr-consulting", lastmod: D, changefreq: "monthly" },
+  { path: "/hr-consulting/charlotte-nc", lastmod: D, changefreq: "monthly" },
+  { path: "/hr-consulting/rock-hill-fort-mill-sc", lastmod: D, changefreq: "monthly" },
+  { path: "/hr-consulting/raleigh-durham-nc", lastmod: D, changefreq: "monthly" },
 
   // Resources
   { path: "/resources", lastmod: D, changefreq: "weekly" },
@@ -44,7 +57,6 @@ export const siteRoutes: SiteRoute[] = [
   { path: "/resources/co-employment", lastmod: D },
   { path: "/resources/peo-cost-guide", lastmod: D },
   { path: "/resources/peo-vs-aso-vs-inhouse", lastmod: D },
-  { path: "/resources/peo-for-nonprofits-guide", lastmod: D },
   { path: "/resources/peo-readiness", lastmod: D },
   { path: "/resources/peo-vs-payroll-service", lastmod: D },
   { path: "/resources/best-peo-for-small-business", lastmod: D },

@@ -10,6 +10,8 @@ import {
 } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import { BOOKING_URL, PRIMARY_CTA } from "@/data/pricing";
+import { industries as industryList } from "@/data/industries";
+import { metros } from "@/data/locations";
 
 const services = [
   { label: "All services", href: "/services" },
@@ -21,10 +23,15 @@ const services = [
   { label: "Pricing", href: "/pricing" },
 ];
 
-// Industries and Locations arrive in batch 4. Until then they are hidden
-// rather than linked to pages that do not exist.
-const industries: { label: string; href: string }[] = [];
-const locations: { label: string; href: string }[] = [];
+const industries = [
+  { label: "All industries", href: "/industries" },
+  ...industryList.map((i) => ({ label: i.navLabel, href: `/industries/${i.slug}` })),
+];
+
+const locations = [
+  { label: "The Carolinas", href: "/hr-consulting" },
+  ...metros.map((m) => ({ label: m.navLabel, href: `/hr-consulting/${m.slug}` })),
+];
 
 const flatLinks = [
   { label: "Resources", href: "/resources" },
