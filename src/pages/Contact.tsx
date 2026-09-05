@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/select";
 import { toast } from "sonner";
 import { Reveal } from "@/components/Reveal";
+import { organization, caleb, ORG_REF, breadcrumb } from "@/data/organization";
 import SEOHead from "@/components/SEOHead";
 import { supabase } from "@/integrations/supabase/client";
 
@@ -21,23 +22,26 @@ const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
 const contactJsonLd = {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  name: "Pillar PEO Advisors",
-  url: "https://pillarpeo.com",
-  email: "info@pillarpeo.com",
-  telephone: "+1-704-787-1261",
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Charlotte",
-    addressRegion: "NC",
-    addressCountry: "US",
-  },
-  areaServed: "US",
+  "@graph": [
+    organization,
+    caleb,
+    {
+      "@type": "ContactPage",
+      "@id": "https://pillarpeo.com/contact#page",
+      url: "https://pillarpeo.com/contact",
+      name: "Contact Pillar PEO Advisors",
+      about: ORG_REF,
+    },
+    breadcrumb([
+      { name: "Home", path: "/" },
+      { name: "Contact", path: "/contact" },
+    ]),
+  ],
 };
 
 const contactCards = [
   { icon: Mail, label: "Email", value: "info@pillarpeo.com", href: "mailto:info@pillarpeo.com" },
-  { icon: Phone, label: "Phone", value: "(704) 787-1261", href: undefined },
+  { icon: Phone, label: "Phone", value: "(704) 787-1261", href: "tel:+17047871261" },
   { icon: MapPin, label: "Location", value: "Charlotte, NC", href: undefined },
 ];
 
@@ -56,36 +60,56 @@ const steps = [
   },
 ];
 
+const FIRM_SIZES = ["1–9", "10–25", "26–75", "76–150", "150+"];
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    company: "",
     employees: "",
-    message: "",
+    locations: "",
   });
-
+  const [errors, setErrors] = useState<Record<string, string>>({});
   const [submitting, setSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+
+  const validate = () => {
+    const next: Record<string, string> = {};
+    if (!formData.name.trim()) next.name = "Please enter your name.";
+    if (!formData.email.trim()) {
+      next.email = "Please enter your work email.";
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email.trim())) {
+      next.email = "That email address doesn't look right.";
+    }
+    if (!formData.employees) next.employees = "Please choose a firm size.";
+    setErrors(next);
+    return Object.keys(next).length === 0;
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!validate()) return;
     setSubmitting(true);
     const { error } = await supabase.from("leads").insert({
       source: "contact",
       name: formData.name.trim(),
       email: formData.email.trim(),
-      company: formData.company.trim(),
+      company: "",
       employees: formData.employees,
-      message: formData.message.trim(),
+      message: formData.locations.trim(),
     });
     setSubmitting(false);
     if (error) {
       toast.error("Something went wrong. Please try again or email us at info@pillarpeo.com.");
+      setErrors({ form: "We couldn't send that. Please try again, or email info@pillarpeo.com." });
       return;
     }
+    setErrors({});
+    setSubmitted(true);
     toast.success("Thank you! We'll be in touch within 1 business day.");
-    setFormData({ name: "", email: "", company: "", employees: "", message: "" });
+    setFormData({ name: "", email: "", employees: "", locations: "" });
   };
+
 
   return (
     <>
@@ -130,86 +154,132 @@ const Contact = () => {
                 <h2 className="font-heading text-2xl font-700 text-foreground mb-6">
                   Or send us a message
                 </h2>
-                <form onSubmit={handleSubmit} className="space-y-5">
+                {submitted ? (
+                  <div
+                    role="status"
+                    className="rounded-lg border border-accent/40 bg-accent/10 p-6"
+                  >
+                    <p className="font-heading text-lg font-700 text-foreground">
+                      Thanks — we've got it.
+                    </p>
+                    <p className="mt-2 text-base text-muted-foreground">
+                      We'll be in touch within 1 business day. If it's urgent, call{" "}
+                      <a href="tel:+17047871261" className="font-semibold text-green-ink hover:underline">
+                        (704) 787-1261
+                      </a>
+                      .
+                    </p>
+                  </div>
+                ) : (
+                <form onSubmit={handleSubmit} noValidate className="space-y-5">
                   <div className="grid gap-5 sm:grid-cols-2">
                     <div className="space-y-2">
-                      <Label htmlFor="name">Name</Label>
+                      <Label htmlFor="name">
+                        Name <span aria-hidden="true" className="text-green-ink">*</span>
+                        <span className="sr-only">(required)</span>
+                      </Label>
                       <Input
                         id="name"
                         required
+                        aria-required="true"
+                        aria-invalid={!!errors.name}
+                        aria-describedby={errors.name ? "name-error" : undefined}
                         value={formData.name}
                         onChange={(e) =>
                           setFormData({ ...formData, name: e.target.value })
                         }
                         placeholder="Jane Smith"
                       />
+                      {errors.name && (
+                        <p id="name-error" className="text-sm font-semibold text-destructive">
+                          {errors.name}
+                        </p>
+                      )}
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="email">Email</Label>
+                      <Label htmlFor="email">
+                        Work email <span aria-hidden="true" className="text-green-ink">*</span>
+                        <span className="sr-only">(required)</span>
+                      </Label>
                       <Input
                         id="email"
                         type="email"
                         required
+                        aria-required="true"
+                        aria-invalid={!!errors.email}
+                        aria-describedby={errors.email ? "email-error" : undefined}
                         value={formData.email}
                         onChange={(e) =>
                           setFormData({ ...formData, email: e.target.value })
                         }
-                        placeholder="jane@company.com"
+                        placeholder="jane@firm.com"
                       />
-                    </div>
-                  </div>
-
-                  <div className="grid gap-5 sm:grid-cols-2">
-                    <div className="space-y-2">
-                      <Label htmlFor="company">Company</Label>
-                      <Input
-                        id="company"
-                        required
-                        value={formData.company}
-                        onChange={(e) =>
-                          setFormData({ ...formData, company: e.target.value })
-                        }
-                        placeholder="Acme Corp"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="employees">Number of Employees</Label>
-                      <Select
-                        value={formData.employees}
-                        onValueChange={(v) =>
-                          setFormData({ ...formData, employees: v })
-                        }
-                      >
-                        <SelectTrigger id="employees">
-                          <SelectValue placeholder="Select range" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="5-25">5 – 25</SelectItem>
-                          <SelectItem value="25-50">25 – 50</SelectItem>
-                          <SelectItem value="50-150">50 – 150</SelectItem>
-                          <SelectItem value="150+">150+</SelectItem>
-                        </SelectContent>
-                      </Select>
+                      {errors.email && (
+                        <p id="email-error" className="text-sm font-semibold text-destructive">
+                          {errors.email}
+                        </p>
+                      )}
                     </div>
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="message">Message</Label>
-                    <Textarea
-                      id="message"
-                      value={formData.message}
-                      onChange={(e) =>
-                        setFormData({ ...formData, message: e.target.value })
+                    <Label htmlFor="employees">
+                      Firm size <span aria-hidden="true" className="text-green-ink">*</span>
+                      <span className="sr-only">(required)</span>
+                    </Label>
+                    <Select
+                      value={formData.employees}
+                      onValueChange={(v) =>
+                        setFormData({ ...formData, employees: v })
                       }
-                      placeholder="Tell us about your team and what you're looking for…"
-                      rows={5}
+                    >
+                      <SelectTrigger
+                        id="employees"
+                        aria-invalid={!!errors.employees}
+                        aria-describedby={errors.employees ? "employees-error" : undefined}
+                      >
+                        <SelectValue placeholder="Select firm size" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {FIRM_SIZES.map((size) => (
+                          <SelectItem key={size} value={size}>
+                            {size} people
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                    {errors.employees && (
+                      <p id="employees-error" className="text-sm font-semibold text-destructive">
+                        {errors.employees}
+                      </p>
+                    )}
+                  </div>
+
+                  <div className="space-y-2">
+                    <Label htmlFor="locations">Where are your people? (optional)</Label>
+                    <Textarea
+                      id="locations"
+                      value={formData.locations}
+                      onChange={(e) =>
+                        setFormData({ ...formData, locations: e.target.value })
+                      }
+                      placeholder="e.g. 22 in Charlotte, 6 remote across SC, GA and TX"
+                      rows={4}
                     />
                   </div>
+
+                  {errors.form && (
+                    <p role="alert" className="text-sm font-semibold text-destructive">
+                      {errors.form}
+                    </p>
+                  )}
 
                   <Button type="submit" size="lg" disabled={submitting} className="w-full sm:w-auto bg-accent text-accent-foreground hover:bg-accent/90">
                     {submitting ? "Sending…" : "Send My Request"}
                   </Button>
                 </form>
+                )}
+
               </CardContent>
             </Card>
           </Reveal>

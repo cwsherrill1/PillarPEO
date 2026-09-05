@@ -114,7 +114,7 @@ const SignsOutgrownPeoCharlotte = () => (
         <Reveal>
           <Link
             to="/resources"
-            className="mb-8 inline-flex items-center text-sm font-semibold text-accent hover:text-accent/80"
+            className="mb-8 inline-flex items-center text-sm font-semibold text-green-ink hover:text-green-ink/80"
           >
             <ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources
           </Link>
@@ -187,7 +187,7 @@ const SignsOutgrownPeoCharlotte = () => (
       <p>
         The number one reason businesses stay stuck is the belief that switching is painful. It
         does not have to be. A{" "}
-        <Link to="/peo-broker" className="font-semibold text-accent hover:underline">
+        <Link to="/peo-broker" className="font-semibold text-green-ink hover:underline">
           PEO broker
         </Link>{" "}
         manages the whole transition, from new proposals to negotiating exit terms to coordinating
@@ -198,7 +198,7 @@ const SignsOutgrownPeoCharlotte = () => (
         nudging you toward their old team, you are not running an open search. Make sure whoever
         handles this is genuinely independent and will stay on afterward as a long-term watchdog.
         For local Charlotte employers, our{" "}
-        <Link to="/peo-broker-charlotte" className="font-semibold text-accent hover:underline">
+        <Link to="/peo-broker-charlotte" className="font-semibold text-green-ink hover:underline">
           Charlotte broker page
         </Link>{" "}
         explains what that looks like in practice.

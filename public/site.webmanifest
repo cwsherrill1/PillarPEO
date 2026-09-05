@@ -1,0 +1,14 @@
+{
+  "name": "Pillar PEO Advisors",
+  "short_name": "Pillar",
+  "description": "HR advisory for professional-services firms, nationwide, from Charlotte.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#02064B",
+  "icons": [
+    { "src": "/favicon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/favicon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}

@@ -1,31 +1,40 @@
 # Pillar PEO Advisors
 
-> Independent PEO advisory firm helping U.S. employers (5–500 employees) compare PEO options, understand tradeoffs, and make confident decisions — at no cost to the employer.
+> Independent HR advisory firm for professional-services firms of 10–150 people, anywhere in the U.S., headquartered in Charlotte, North Carolina. Fixed-price HR audits from $2,500, HR projects, fractional HR, and clean transitions into or out of a PEO. PEO brokerage is free to the client, with provider commission disclosed.
 
-Pillar PEO Advisors guides business owners, HR leaders, and nonprofit teams through the process of selecting, switching, or evaluating a Professional Employer Organization (PEO). The site explains how PEOs work, who they fit, and how to avoid common pitfalls.
+Pillar works with managing partners and practice administrators at law, CPA, engineering and architecture, medical and dental, RIA and nonprofit firms. Every engagement is priced before the work starts, and covers every state your people work in. Pillar sells no software and places no insurance.
+
+## Services
+
+- HR Audit (the Load Report) — $2,500 / $4,000 / $6,000 by headcount band.
+- HR Projects — $1,500–$7,500 fixed: handbook, FLSA review, I-9 and E-Verify, comp benchmarking, performance, manager training.
+- Fractional HR — Advisor 8 hrs/mo $2,000, Partner 20 hrs/mo $3,750, Embedded 40 hrs/mo $6,000. Three-month minimum.
+- Transitions — $3,000–$10,000 fixed: PEO exit, PEO switch, PEO implementation, HRIS migration, payroll switch.
+- PEO brokerage — $0 to the client, provider commission disclosed.
+
+Full price list: /pricing.md
 
 ## Pages
 
-- [Home](/): Overview of Pillar's advisory service and audiences served.
-- [How It Works](/how-it-works): The Pillar advisory process from discovery to decision.
+- [Home](/): What Pillar does and who it serves.
+- [How It Works](/how-it-works): The engagement process from first call to delivery.
 - [Switch Your PEO](/switch-your-peo): Guidance for employers replacing a current PEO.
-- [PEO for Nonprofits](/peo-for-nonprofits): How PEOs reduce admin drag for mission-driven teams.
+- [PEO for Nonprofits](/peo-for-nonprofits): Considerations for mission-driven teams.
 - [Do We Need a PEO?](/do-we-need-a-peo): Help for first-time PEO buyers.
-- [Resources](/resources): Educational guides on PEO selection, pricing, and switching.
-- [About](/about): Background on Pillar and the leadership team (Caleb & Josiah Sherrill).
-- [Contact](/contact): Schedule a strategy call or send a message.
-- [HR Headache Score](/hr-headache-score): 15-question quiz that scores your HR pain points.
+- [PEO Broker](/peo-broker): The free PEO comparison service.
+- [PEO Broker — Charlotte](/peo-broker-charlotte)
+- [PEO Broker — North Carolina](/peo-broker-north-carolina)
+- [PEO Broker — South Carolina](/peo-broker-south-carolina)
+- [Resources](/resources): Guides on PEO selection, pricing, benefits and switching.
+- [HR Headache Score](/hr-headache-score): 15-question assessment of HR pain points.
+- [About](/about): Background on Pillar and the leadership team.
+- [Contact](/contact): Book an HR audit or send a message.
 
-## Resources
+## Contact
 
-- [5 Questions to Ask Any PEO](/resources/5-questions): Vetting checklist for PEO conversations.
-- [Co-Employment Explained](/resources/co-employment): How the PEO co-employment model works.
-- [PEO Pricing](/resources/peo-pricing): How PEOs charge and what to expect.
-- [PEO vs ASO vs In-House](/resources/peo-vs-aso-vs-inhouse): Comparing HR delivery models.
-- [How to Switch PEOs](/resources/how-to-switch-peos): Step-by-step transition guide.
-- [PEO for Nonprofits Guide](/resources/peo-for-nonprofits-guide): Nonprofit-specific considerations.
-- [PEO Readiness Assessment](/resources/peo-readiness): Tool to assess organizational readiness.
-- [PEO Implementation](/resources/peo-implementation): What onboarding to a PEO looks like.
+- Email: info@pillarpeo.com
+- Phone: (704) 787-1261
+- Service area: United States, headquartered in Charlotte, NC
 
 ## Optional
 

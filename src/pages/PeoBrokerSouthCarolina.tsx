@@ -57,7 +57,8 @@ const JSONLD = {
       name: "Pillar PEO Advisors — South Carolina",
       url: "https://pillarpeo.com/peo-broker-south-carolina",
       areaServed: { "@type": "State", name: "South Carolina" },
-      address: { "@type": "PostalAddress", addressLocality: "Charlotte", addressRegion: "NC", addressCountry: "US" },
+      parentOrganization: { "@id": "https://pillarpeo.com/#organization" },
+      telephone: "+1-704-787-1261",
       description: "Independent PEO broker serving employers across South Carolina.",
     },
     {
@@ -128,7 +129,7 @@ const PeoBrokerSouthCarolina = () => (
         availability, and rapid hiring in Upstate manufacturing and Lowcountry hospitality. A
         provider that fits a Greenville plant rarely fits a Charleston tech team the same way —
         which is exactly why{" "}
-        <Link to="/peo-broker" className="font-semibold text-accent hover:underline">
+        <Link to="/peo-broker" className="font-semibold text-green-ink hover:underline">
           working with an independent broker
         </Link>{" "}
         matters.
@@ -138,11 +139,11 @@ const PeoBrokerSouthCarolina = () => (
     <Section title="Cross-border NC/SC employer support">
       <p>
         Plenty of Carolinas employers have teams on both sides of the line. We work closely with{" "}
-        <Link to="/peo-broker-north-carolina" className="font-semibold text-accent hover:underline">
+        <Link to="/peo-broker-north-carolina" className="font-semibold text-green-ink hover:underline">
           North Carolina employers
         </Link>{" "}
         and are headquartered in{" "}
-        <Link to="/peo-broker-charlotte" className="font-semibold text-accent hover:underline">
+        <Link to="/peo-broker-charlotte" className="font-semibold text-green-ink hover:underline">
           Charlotte
         </Link>
         , so the cross-border picture is everyday work for us.

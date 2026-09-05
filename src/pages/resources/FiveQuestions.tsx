@@ -21,6 +21,8 @@ const ARTICLE = buildArticleJsonLd({
   title: "5 Questions to Ask Any PEO",
   description: "The critical questions most employers never think to ask before signing with a PEO.",
   path: "/resources/5-questions",
+  datePublished: "2026-01-15",
+  dateModified: "2026-09-05",
 });
 
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
@@ -90,7 +92,7 @@ const FiveQuestions = () => (
 
       <div className="container max-w-3xl">
         <Reveal>
-          <Link to="/resources" className="mb-8 inline-flex items-center text-sm font-semibold text-accent hover:text-accent/80">
+          <Link to="/resources" className="mb-8 inline-flex items-center text-sm font-semibold text-green-ink hover:text-green-ink/80">
             <ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources
           </Link>
           <p className="text-xl leading-8 text-foreground/85">

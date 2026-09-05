@@ -95,9 +95,12 @@ const Footer = () => {
                 </li>
               ))}
 
-              <h4 className="mb-4 mt-8 text-xs font-bold tracking-widest text-primary-foreground/70 uppercase">
-                Company
-              </h4>
+            </ul>
+
+            <h4 className="mb-4 mt-8 text-xs font-bold tracking-widest text-primary-foreground/70 uppercase">
+              Company
+            </h4>
+            <ul className="space-y-2.5">
               <li>
                 <Link
                   to="/about#why-pillar"
@@ -121,7 +124,9 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <span>(704) 787-1261</span>
+                <a href="tel:+17047871261" className="transition-colors hover:text-accent">
+                  (704) 787-1261
+                </a>
               </li>
             </ul>
           </div>

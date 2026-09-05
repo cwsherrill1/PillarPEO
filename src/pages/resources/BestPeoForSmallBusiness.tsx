@@ -84,7 +84,7 @@ const BestPeoForSmallBusiness = () => (
     <section className="py-20 md:py-28">
       <div className="container max-w-3xl">
         <Reveal>
-          <Link to="/resources" className="mb-8 inline-flex items-center text-sm font-semibold text-accent hover:text-accent/80"><ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources</Link>
+          <Link to="/resources" className="mb-8 inline-flex items-center text-sm font-semibold text-green-ink hover:text-green-ink/80"><ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources</Link>
           <p className="text-xl leading-8 text-foreground/85">
             "Best PEO" lists written by PEOs are useless — they always conclude with whoever paid for the listicle. This one is written by an independent broker who has no quota with any of these providers and gets paid the same regardless of which one you pick. Below is what we actually see when employers compare these six in 2026.
           </p>
@@ -95,11 +95,11 @@ const BestPeoForSmallBusiness = () => (
     <Section title="The Short Answer" alt>
       <p>If you want to skip the comparisons:</p>
       <ul className="space-y-2 mt-2">
-        <li className="flex gap-2"><span className="text-accent font-bold">→</span><span><strong className="text-foreground">5–25 employees, white-collar, simple:</strong> Justworks or Gusto PEO</span></li>
-        <li className="flex gap-2"><span className="text-accent font-bold">→</span><span><strong className="text-foreground">Tech-forward, multi-state, want IT integration:</strong> Rippling</span></li>
-        <li className="flex gap-2"><span className="text-accent font-bold">→</span><span><strong className="text-foreground">25–250 employees, premium HR consulting:</strong> Insperity</span></li>
-        <li className="flex gap-2"><span className="text-accent font-bold">→</span><span><strong className="text-foreground">Higher-risk industry, complex workers' comp:</strong> ADP TotalSource</span></li>
-        <li className="flex gap-2"><span className="text-accent font-bold">→</span><span><strong className="text-foreground">Vertical-specific (tech, life sciences, nonprofit):</strong> TriNet</span></li>
+        <li className="flex gap-2"><span className="text-green-ink font-bold">→</span><span><strong className="text-foreground">5–25 employees, white-collar, simple:</strong> Justworks or Gusto PEO</span></li>
+        <li className="flex gap-2"><span className="text-green-ink font-bold">→</span><span><strong className="text-foreground">Tech-forward, multi-state, want IT integration:</strong> Rippling</span></li>
+        <li className="flex gap-2"><span className="text-green-ink font-bold">→</span><span><strong className="text-foreground">25–250 employees, premium HR consulting:</strong> Insperity</span></li>
+        <li className="flex gap-2"><span className="text-green-ink font-bold">→</span><span><strong className="text-foreground">Higher-risk industry, complex workers' comp:</strong> ADP TotalSource</span></li>
+        <li className="flex gap-2"><span className="text-green-ink font-bold">→</span><span><strong className="text-foreground">Vertical-specific (tech, life sciences, nonprofit):</strong> TriNet</span></li>
       </ul>
     </Section>
 
@@ -113,7 +113,7 @@ const BestPeoForSmallBusiness = () => (
                 <CardContent className="p-6 md:p-8">
                   <div className="flex flex-wrap items-center justify-between gap-2">
                     <h3 className="font-heading text-xl font-700 text-foreground">{p.name}</h3>
-                    <Badge variant="outline" className="border-accent/30 text-accent">{p.price}</Badge>
+                    <Badge variant="outline" className="border-accent/30 text-green-ink">{p.price}</Badge>
                   </div>
                   <p className="mt-3 text-sm"><strong className="text-foreground">Best fit:</strong> <span className="text-muted-foreground">{p.fit}</span></p>
                   <p className="mt-2 text-sm"><strong className="text-foreground">Strengths:</strong> <span className="text-muted-foreground">{p.strengths}</span></p>
@@ -134,7 +134,7 @@ const BestPeoForSmallBusiness = () => (
         <li className="flex items-start gap-2"><span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-accent" /><span><strong className="text-foreground">Implementation fees:</strong> $0 to $1,500/employee. Always negotiable.</span></li>
         <li className="flex items-start gap-2"><span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-accent" /><span><strong className="text-foreground">401(k) admin:</strong> Some PEOs include it; others charge $4–$8/participant/month on top.</span></li>
       </ul>
-      <p className="mt-4">See our full <Link to="/resources/peo-cost-guide" className="text-accent hover:underline">PEO cost guide</Link> for the math.</p>
+      <p className="mt-4">See our full <Link to="/resources/peo-cost-guide" className="text-green-ink hover:underline">PEO cost guide</Link> for the math.</p>
     </Section>
 
     <Section title="Frequently Asked Questions">

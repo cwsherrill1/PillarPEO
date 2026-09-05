@@ -10,6 +10,8 @@ const ARTICLE = buildArticleJsonLd({
   title: "PEO for Nonprofits: What to Know Before You Buy",
   description: "What nonprofit leaders need to understand before partnering with a PEO.",
   path: "/resources/peo-for-nonprofits-guide",
+  datePublished: "2026-01-15",
+  dateModified: "2026-09-05",
 });
 
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
@@ -68,7 +70,7 @@ const PeoForNonprofitsGuide = () => (
     <section className="py-20 md:py-28">
       <div className="container max-w-3xl">
         <Reveal>
-          <Link to="/resources" className="mb-8 inline-flex items-center text-sm font-semibold text-accent hover:text-accent/80">
+          <Link to="/resources" className="mb-8 inline-flex items-center text-sm font-semibold text-green-ink hover:text-green-ink/80">
             <ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources
           </Link>
           <p className="text-xl leading-8 text-foreground/85">

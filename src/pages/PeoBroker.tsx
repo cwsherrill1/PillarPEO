@@ -188,14 +188,14 @@ const PeoBroker = () => (
       </p>
       <ul className="space-y-2">
         <Bullet>
-          <Link to="/peo-broker-charlotte" className="font-semibold text-accent hover:underline">
+          <Link to="/peo-broker-charlotte" className="font-semibold text-green-ink hover:underline">
             PEO broker in Charlotte, NC
           </Link>
         </Bullet>
         <Bullet>
           <Link
             to="/peo-broker-north-carolina"
-            className="font-semibold text-accent hover:underline"
+            className="font-semibold text-green-ink hover:underline"
           >
             PEO broker for North Carolina employers
           </Link>
@@ -203,7 +203,7 @@ const PeoBroker = () => (
         <Bullet>
           <Link
             to="/peo-broker-south-carolina"
-            className="font-semibold text-accent hover:underline"
+            className="font-semibold text-green-ink hover:underline"
           >
             PEO broker for South Carolina employers
           </Link>
@@ -214,7 +214,7 @@ const PeoBroker = () => (
         to{" "}
         <Link
           to="/blog/employee-health-benefits-options"
-          className="font-semibold text-accent hover:underline"
+          className="font-semibold text-green-ink hover:underline"
         >
           employee health benefits options
         </Link>{" "}

@@ -113,7 +113,7 @@ const HowItWorks = () => (
             return (
               <Reveal key={s.label} delay={i * 120}>
                 <div className="text-center">
-                  <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-accent/10 text-accent">
+                  <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-accent/10 text-green-ink">
                     <Icon size={22} />
                   </div>
                   <p className="font-heading text-3xl font-800 text-foreground md:text-4xl">
@@ -158,7 +158,7 @@ const HowItWorks = () => (
                       </div>
                       <div>
                         <div className="flex items-center gap-2 mb-2">
-                          <Icon className="w-5 h-5 text-accent" />
+                          <Icon className="w-5 h-5 text-green-ink" />
                           <h3 className="font-heading text-xl md:text-2xl font-700 text-foreground">
                             {s.title}
                           </h3>

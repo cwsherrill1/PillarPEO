@@ -11,6 +11,8 @@ const ARTICLE = buildArticleJsonLd({
   title: "Understanding Co-Employment",
   description: "What co-employment actually means for your liability, your employees, and your control.",
   path: "/resources/co-employment",
+  datePublished: "2026-01-15",
+  dateModified: "2026-09-05",
 });
 
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
@@ -63,7 +65,7 @@ const CoEmployment = () => (
     <section className="py-20 md:py-28">
       <div className="container max-w-3xl">
         <Reveal>
-          <Link to="/resources" className="mb-8 inline-flex items-center text-sm font-semibold text-accent hover:text-accent/80">
+          <Link to="/resources" className="mb-8 inline-flex items-center text-sm font-semibold text-green-ink hover:text-green-ink/80">
             <ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources
           </Link>
         </Reveal>
@@ -155,7 +157,7 @@ const CoEmployment = () => (
                 <CardContent className="p-6">
                   <p className="text-sm font-semibold uppercase tracking-wider text-destructive">Myth</p>
                   <p className="mt-1 font-heading font-700 text-foreground">{m.myth}</p>
-                  <p className="mt-3 text-sm font-semibold uppercase tracking-wider text-accent">Reality</p>
+                  <p className="mt-3 text-sm font-semibold uppercase tracking-wider text-green-ink">Reality</p>
                   <p className="mt-1 text-sm text-muted-foreground">{m.reality}</p>
                 </CardContent>
               </Card>

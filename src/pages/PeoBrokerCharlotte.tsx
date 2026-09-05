@@ -61,7 +61,6 @@ const JSONLD = {
       name: "Pillar PEO Advisors — Charlotte",
       url: "https://pillarpeo.com/peo-broker-charlotte",
       areaServed: { "@type": "City", name: "Charlotte, NC" },
-      address: { "@type": "PostalAddress", addressLocality: "Charlotte", addressRegion: "NC", addressCountry: "US" },
       description:
         "Independent Charlotte PEO broker. Full-market comparison, transparent fees, free forever.",
     },
@@ -149,7 +148,7 @@ const PeoBrokerCharlotte = () => (
         Knowing which carriers are actually competitive right now, and which providers have strong
         compliance support in North Carolina, is not something you get from a demo call or a broker
         who only sells what their friends are selling. For the broader picture on{" "}
-        <Link to="/peo-broker" className="font-semibold text-accent hover:underline">
+        <Link to="/peo-broker" className="font-semibold text-green-ink hover:underline">
           choosing a PEO broker
         </Link>
         , our national guide goes deeper.
@@ -213,11 +212,11 @@ const PeoBrokerCharlotte = () => (
     <Section title="Serving the Carolinas">
       <p>
         We work with employers throughout the region — from{" "}
-        <Link to="/peo-broker-north-carolina" className="font-semibold text-accent hover:underline">
+        <Link to="/peo-broker-north-carolina" className="font-semibold text-green-ink hover:underline">
           North Carolina
         </Link>{" "}
         to{" "}
-        <Link to="/peo-broker-south-carolina" className="font-semibold text-accent hover:underline">
+        <Link to="/peo-broker-south-carolina" className="font-semibold text-green-ink hover:underline">
           South Carolina
         </Link>
         . Charlotte is home base, but the playbook travels.

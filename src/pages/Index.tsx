@@ -1,6 +1,11 @@
 import { Link } from "react-router-dom";
-import heroTeam from "@/assets/hero-team.jpg";
+import heroTeam from "@/assets/hero/hero-team-768.jpg";
+import heroAvif384 from "@/assets/hero/hero-team-384.avif";
+import heroAvif768 from "@/assets/hero/hero-team-768.avif";
+import heroWebp384 from "@/assets/hero/hero-team-384.webp";
+import heroWebp768 from "@/assets/hero/hero-team-768.webp";
 import { Button } from "@/components/ui/button";
+import { organization, caleb } from "@/data/organization";
 import SEOHead from "@/components/SEOHead";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -34,29 +39,11 @@ const orgJsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "ProfessionalService",
-      "@id": "https://pillarpeo.com/#organization",
-      name: "Pillar PEO Advisors",
+      ...organization,
       alternateName: "Pillar PEO Broker",
-      url: "https://pillarpeo.com",
-      description: "Independent PEO broker helping small and mid-sized employers compare PEO options, expose hidden fees, and switch with no service fee.",
-      serviceType: "PEO Broker",
-      areaServed: "US",
-      telephone: "+1-704-787-1261",
-      email: "info@pillarpeo.com",
-      address: { "@type": "PostalAddress", addressLocality: "Charlotte", addressRegion: "NC", addressCountry: "US" },
-      image: "https://pillarpeo.com/hero-team.jpg",
-      founder: { "@id": "https://pillarpeo.com/#caleb" },
-      knowsAbout: ["PEO broker", "PEO advisory", "Professional Employer Organization", "Co-employment", "PEO comparison", "Payroll", "Employee benefits", "HR compliance"],
+      knowsAbout: ["PEO broker", "PEO advisory", "Professional Employer Organization", "Co-employment", "PEO comparison", "Payroll", "Employee benefits", "HR compliance", "Fractional HR", "HR audit"],
     },
-    {
-      "@type": "Person",
-      "@id": "https://pillarpeo.com/#caleb",
-      name: "Caleb Sherrill",
-      jobTitle: "Founder & PEO Advisor",
-      worksFor: { "@id": "https://pillarpeo.com/#organization" },
-      sameAs: ["https://www.linkedin.com/in/calebsherrill/"],
-    },
+    caleb,
     {
       "@type": "FAQPage",
       mainEntity: FAQS.map(({ q, a }) => ({
@@ -109,15 +96,27 @@ const Index = () => {
             </div>
 
             <div className="flex flex-col items-center">
-              <img
-                src={heroTeam}
-                alt="Caleb and Josiah Sherrill, founders of Pillar PEO Advisors"
-                width={1050}
-                height={1400}
-                fetchPriority="high"
-                decoding="async"
-                className="w-full max-w-sm rounded-2xl shadow-2xl shadow-black/30 object-cover aspect-[3/4]"
-              />
+              <picture>
+                <source
+                  type="image/avif"
+                  srcSet={`${heroAvif384} 384w, ${heroAvif768} 768w`}
+                  sizes="(min-width: 768px) 384px, 100vw"
+                />
+                <source
+                  type="image/webp"
+                  srcSet={`${heroWebp384} 384w, ${heroWebp768} 768w`}
+                  sizes="(min-width: 768px) 384px, 100vw"
+                />
+                <img
+                  src={heroTeam}
+                  alt="Caleb and Josiah Sherrill, founders of Pillar PEO Advisors"
+                  width={1050}
+                  height={1400}
+                  fetchPriority="high"
+                  decoding="async"
+                  className="w-full max-w-sm rounded-2xl shadow-2xl shadow-black/30 object-cover aspect-[3/4]"
+                />
+              </picture>
               <p className="mt-3 text-sm text-primary-foreground/70">
                 Caleb &amp; Josiah Sherrill, Founders
               </p>
@@ -229,7 +228,7 @@ const Index = () => {
               map(({ step, title, desc }, i) =>
               <Reveal key={step} delay={i * 150}>
                   <div className="relative text-center">
-                    <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full border-2 border-accent bg-background font-heading text-xl font-800 text-accent">
+                    <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full border-2 border-accent bg-background font-heading text-xl font-800 text-green-ink">
                       {step}
                     </div>
                     <h3 className="font-heading text-lg font-700 text-foreground">
@@ -290,7 +289,7 @@ const Index = () => {
               desc: "Compare service, price, support, and fit before you make a move.",
               href: "/switch-your-peo",
               cta: "Explore PEO Switching",
-              accent: "text-accent",
+              accent: "text-green-ink",
               border: "border-accent/30",
               glow: "hover:shadow-[0_0_30px_-8px_hsl(145_63%_49%/0.2)]"
             },
@@ -399,8 +398,8 @@ const Index = () => {
                   <Card className="border-accent/20 bg-accent/5">
                     <CardContent className="p-6">
                       <div className="mb-3 flex items-center gap-2">
-                        <CheckCircle2 size={18} className="text-accent" />
-                        <span className="text-xs font-bold uppercase tracking-wider text-accent">
+                        <CheckCircle2 size={18} className="text-green-ink" />
+                        <span className="text-xs font-bold uppercase tracking-wider text-green-ink">
                           Truth
                         </span>
                       </div>

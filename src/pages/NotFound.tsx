@@ -53,7 +53,7 @@ const NotFound = () => {
                 to={item.href}
                 className="flex flex-col items-center gap-2 rounded-lg border bg-card p-6 text-center transition-shadow hover:shadow-md"
               >
-                <item.icon className="h-6 w-6 text-accent" />
+                <item.icon className="h-6 w-6 text-green-ink" />
                 <span className="text-sm font-medium text-foreground">{item.label}</span>
               </Link>
             ))}

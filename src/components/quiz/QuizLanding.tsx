@@ -16,7 +16,7 @@ const QuizLanding = ({ onStart }: QuizLandingProps) => {
 
         <h1 className="mb-6 font-heading text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
           Is Your HR a{" "}
-          <span className="text-accent">Headache</span>?
+          <span className="text-green-ink">Headache</span>?
         </h1>
 
         <p className="mx-auto mb-10 max-w-lg text-lg text-muted-foreground">

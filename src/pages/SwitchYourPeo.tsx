@@ -123,7 +123,7 @@ const SwitchYourPeo = () => (
           <ul className="mt-10 space-y-4">
             {signs.map((sign) => (
               <li key={sign} className="flex items-start gap-3 text-muted-foreground">
-                <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-accent" />
+                <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-green-ink" />
                 <span className="text-lg leading-relaxed">{sign}</span>
               </li>
             ))}
@@ -150,7 +150,7 @@ const SwitchYourPeo = () => (
                   <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-accent text-accent-foreground font-heading text-xl font-800">
                     {step.num}
                   </div>
-                  <Icon className="mx-auto mt-4 h-6 w-6 text-accent" />
+                  <Icon className="mx-auto mt-4 h-6 w-6 text-green-ink" />
                   <h3 className="mt-3 font-heading text-lg font-700 text-foreground">
                     {step.title}
                   </h3>
@@ -214,8 +214,8 @@ const SwitchYourPeo = () => (
                 <Card className="border-accent/20 bg-accent/5">
                   <CardContent className="p-6">
                     <div className="mb-3 flex items-center gap-2">
-                      <CheckCircle2 size={18} className="text-accent" />
-                      <span className="text-xs font-bold uppercase tracking-wider text-accent">
+                      <CheckCircle2 size={18} className="text-green-ink" />
+                      <span className="text-xs font-bold uppercase tracking-wider text-green-ink">
                         Truth
                       </span>
                     </div>

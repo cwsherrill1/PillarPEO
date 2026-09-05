@@ -88,7 +88,7 @@ const WhatIsAPeo = () => (
     <section className="py-20 md:py-28">
       <div className="container max-w-3xl">
         <Reveal>
-          <Link to="/resources" className="mb-8 inline-flex items-center text-sm font-semibold text-accent hover:text-accent/80">
+          <Link to="/resources" className="mb-8 inline-flex items-center text-sm font-semibold text-green-ink hover:text-green-ink/80">
             <ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources
           </Link>
           <p className="text-xl leading-8 text-foreground/85">
@@ -127,7 +127,7 @@ const WhatIsAPeo = () => (
         <h3 className="font-heading font-700 text-foreground">The PEO = the administrative employer</h3>
         <p className="mt-2 text-sm text-muted-foreground">Files payroll taxes under their FEIN, sponsors benefits, carries workers' comp, handles compliance paperwork. Employees get a W-2 with the PEO's tax ID.</p>
       </CardContent></Card>
-      <p className="mt-4">It's not staffing. You're not "renting" your employees. They're still your team in every way that matters. For a deeper breakdown, see our <Link to="/resources/co-employment" className="text-accent hover:underline">co-employment guide</Link>.</p>
+      <p className="mt-4">It's not staffing. You're not "renting" your employees. They're still your team in every way that matters. For a deeper breakdown, see our <Link to="/resources/co-employment" className="text-green-ink hover:underline">co-employment guide</Link>.</p>
     </Section>
 
     <Section title="What a PEO Costs" alt>
@@ -136,7 +136,7 @@ const WhatIsAPeo = () => (
         <Bullet><strong className="text-foreground">Per Employee Per Month (PEPM):</strong> $80–$200/employee/month for the admin fee. Common with Justworks, Rippling, TriNet.</Bullet>
         <Bullet><strong className="text-foreground">Percentage of payroll:</strong> 2%–6% of gross payroll. Common with ADP TotalSource and Insperity.</Bullet>
       </ul>
-      <p>Benefits, workers' comp, and 401(k) are usually separate line items, passed through at carrier rates. Full breakdown in our <Link to="/resources/peo-cost-guide" className="text-accent hover:underline">PEO cost guide</Link>.</p>
+      <p>Benefits, workers' comp, and 401(k) are usually separate line items, passed through at carrier rates. Full breakdown in our <Link to="/resources/peo-cost-guide" className="text-green-ink hover:underline">PEO cost guide</Link>.</p>
     </Section>
 
     <Section title="Who Should Use a PEO (And Who Shouldn't)">
@@ -154,7 +154,7 @@ const WhatIsAPeo = () => (
         <Bullet>200+ employees with a built-out HR team and self-funded health plan ambitions</Bullet>
         <Bullet>Industries with very high workers' comp risk that pool poorly</Bullet>
       </ul>
-      <p className="mt-4">Not sure where you fall? Take our <Link to="/resources/peo-readiness" className="text-accent hover:underline">PEO readiness assessment</Link>.</p>
+      <p className="mt-4">Not sure where you fall? Take our <Link to="/resources/peo-readiness" className="text-green-ink hover:underline">PEO readiness assessment</Link>.</p>
     </Section>
 
     <Section title="PEO vs. Other Models" alt>
@@ -166,7 +166,7 @@ const WhatIsAPeo = () => (
         <Bullet><strong className="text-foreground">Staffing agency:</strong> provides workers to you; not the same category</Bullet>
         <Bullet><strong className="text-foreground">EOR:</strong> employs workers in places you have no legal entity (often international)</Bullet>
       </ul>
-      <p className="mt-4">Full comparison: <Link to="/resources/peo-vs-aso-vs-inhouse" className="text-accent hover:underline">PEO vs. ASO vs. In-House HR</Link>.</p>
+      <p className="mt-4">Full comparison: <Link to="/resources/peo-vs-aso-vs-inhouse" className="text-green-ink hover:underline">PEO vs. ASO vs. In-House HR</Link>.</p>
     </Section>
 
     <Section title="The Honest Risks">

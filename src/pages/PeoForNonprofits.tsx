@@ -106,7 +106,7 @@ const PeoForNonprofits = () => (
           <ul className="mt-10 space-y-4">
             {painPoints.map((point) => (
               <li key={point} className="flex items-start gap-3">
-                <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-accent" />
+                <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-green-ink" />
                 <span className="text-lg text-muted-foreground leading-relaxed">
                   {point}
                 </span>
@@ -135,7 +135,7 @@ const PeoForNonprofits = () => (
                   <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-accent text-accent-foreground font-heading text-xl font-800">
                     {step.num}
                   </div>
-                  <Icon className="mx-auto mt-4 h-6 w-6 text-accent" />
+                  <Icon className="mx-auto mt-4 h-6 w-6 text-green-ink" />
                   <h3 className="mt-3 font-heading text-lg font-700 text-foreground">
                     {step.title}
                   </h3>

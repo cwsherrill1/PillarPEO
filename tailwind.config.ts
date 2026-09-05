@@ -68,6 +68,7 @@ export default {
         },
         navy: "hsl(var(--navy))",
         green: "hsl(var(--green))",
+        "green-ink": "hsl(var(--green-ink))",
         "soft-blue": "hsl(var(--soft-blue))",
         "bold-yellow": "hsl(var(--bold-yellow))",
         "dark-grey": "hsl(var(--dark-grey))",

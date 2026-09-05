@@ -84,7 +84,7 @@ const PeoForStartups = () => (
     <section className="py-20 md:py-28">
       <div className="container max-w-3xl">
         <Reveal>
-          <Link to="/resources" className="mb-8 inline-flex items-center text-sm font-semibold text-accent hover:text-accent/80">
+          <Link to="/resources" className="mb-8 inline-flex items-center text-sm font-semibold text-green-ink hover:text-green-ink/80">
             <ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources
           </Link>
           <p className="text-xl leading-8 text-foreground/85">
@@ -134,7 +134,7 @@ const PeoForStartups = () => (
       <p>From conversations with diligence teams at Series A and Series B firms:</p>
       <ul className="space-y-2">
         <Bullet>Multi-state compliance is the #1 hidden risk in early-stage acquisitions. PEO eliminates it.</Bullet>
-        <Bullet>Co-employment is well-understood at the VC level — no one will be confused. Read our <Link to="/resources/co-employment" className="text-accent hover:underline">co-employment guide</Link> for board-ready talking points.</Bullet>
+        <Bullet>Co-employment is well-understood at the VC level — no one will be confused. Read our <Link to="/resources/co-employment" className="text-green-ink hover:underline">co-employment guide</Link> for board-ready talking points.</Bullet>
         <Bullet>Acquirers will sometimes ask the company to leave the PEO before closing, to absorb employees onto their HRIS. Build clean exit terms into your contract from day one.</Bullet>
       </ul>
     </Section>
@@ -147,7 +147,7 @@ const PeoForStartups = () => (
         <Bullet>Read the notice provision before you sign — many PEOs require 90 days advance notice.</Bullet>
         <Bullet>Have your next benefits stack lined up 60 days before exit so employees never see a gap.</Bullet>
       </ul>
-      <p className="mt-4">More on this in our <Link to="/resources/how-to-switch-peos" className="text-accent hover:underline">how to switch PEOs</Link> guide.</p>
+      <p className="mt-4">More on this in our <Link to="/resources/how-to-switch-peos" className="text-green-ink hover:underline">how to switch PEOs</Link> guide.</p>
     </Section>
 
     <Section title="Frequently Asked Questions">

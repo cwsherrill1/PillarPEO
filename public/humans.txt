@@ -1,0 +1,10 @@
+/* TEAM */
+Founder: Caleb Sherrill
+Partner: Josiah Sherrill
+Contact: info@pillarpeo.com
+Location: Charlotte, North Carolina, USA
+
+/* SITE */
+Standards: HTML5, CSS3, ECMAScript 2022
+Components: React, Vite, TypeScript, Tailwind CSS
+Typefaces: League Spartan, Nunito Sans

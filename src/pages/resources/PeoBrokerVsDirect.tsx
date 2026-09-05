@@ -84,7 +84,7 @@ const PeoBrokerVsDirect = () => (
     <section className="py-20 md:py-28">
       <div className="container max-w-3xl">
         <Reveal>
-          <Link to="/resources" className="mb-8 inline-flex items-center text-sm font-semibold text-accent hover:text-accent/80">
+          <Link to="/resources" className="mb-8 inline-flex items-center text-sm font-semibold text-green-ink hover:text-green-ink/80">
             <ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources
           </Link>
           <p className="text-xl leading-8 text-foreground/85">
@@ -139,7 +139,7 @@ const PeoBrokerVsDirect = () => (
         <Bullet>"What happens if I'm unhappy with the PEO you placed me with?" (Should offer to broker the move)</Bullet>
         <Bullet>"How are you compensated, in plain English?" (Should be a clear, simple answer)</Bullet>
       </ul>
-      <p className="mt-4">For more on choosing well, see our <Link to="/resources/5-questions" className="text-accent hover:underline">5 Questions to Ask Any PEO</Link> checklist.</p>
+      <p className="mt-4">For more on choosing well, see our <Link to="/resources/5-questions" className="text-green-ink hover:underline">5 Questions to Ask Any PEO</Link> checklist.</p>
     </Section>
 
     <Section title="Frequently Asked Questions" alt>
