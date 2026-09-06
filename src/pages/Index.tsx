@@ -451,7 +451,7 @@ const Index = () => {
             {
               myth: "\u201CThe PEO handles compliance.\u201D",
               truth:
-              "A PEO handles payroll tax filing and much of the paperwork. It does not classify your roles, write your job descriptions, or train your managers \u2014 and those are where the expensive problems start."
+              "A PEO handles payroll tax filing and much of the paperwork. It does not classify your roles, write your job descriptions, or train your managers, and those are where the expensive problems start."
                         }].
             map(({ myth, truth }, i) =>
             <Reveal key={i} delay={i * 120}>
