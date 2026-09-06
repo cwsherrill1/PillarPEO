@@ -5,7 +5,7 @@ import { Reveal } from "@/components/Reveal";
 import ServiceHero from "@/components/services/ServiceHero";
 import ServiceCta from "@/components/services/ServiceCta";
 import UpdatedLine from "@/components/services/UpdatedLine";
-import { pricing, transitionTypes } from "@/data/pricing";
+import { transitionTypes } from "@/data/pricing";
 import { ORG_REF, SITE_URL, breadcrumb } from "@/data/organization";
 
 const jsonLd = {
@@ -27,8 +27,7 @@ const jsonLd = {
         "Fixed-price PEO exits, PEO switches, PEO implementations, HRIS migrations and payroll provider switches.",
       offers: {
         "@type": "Offer",
-        priceCurrency: "USD",
-        description: pricing.transitions.range,
+        description: "Fixed price, quoted before the work starts.",
       },
     },
   ],
@@ -38,7 +37,7 @@ const Transitions = () => (
   <>
     <SEOHead
       title="PEO Exit, Switch and System Transitions"
-      description={`Fixed-price transitions for firms moving into, out of or between a PEO, plus HRIS migrations and payroll switches. ${pricing.transitions.range.replace(" fixed", "")}, quoted before the work starts.`}
+      description="Fixed-price transitions for firms moving into, out of or between a PEO, plus HRIS migrations and payroll switches. Fixed price, quoted before the work starts."
       canonical={`${SITE_URL}/services/transitions`}
       jsonLd={jsonLd}
     />
@@ -46,7 +45,7 @@ const Transitions = () => (
     <ServiceHero
       eyebrow="T-1 · Transitions"
       title="Move systems without dropping a payroll."
-      intro={`PEO exits, switches and implementations, HRIS migrations and payroll changes — ${pricing.transitions.range}.`}
+      intro="PEO exits, switches and implementations, HRIS migrations and payroll changes. Fixed price, quoted before the work starts."
     />
 
     <section className="bg-background">

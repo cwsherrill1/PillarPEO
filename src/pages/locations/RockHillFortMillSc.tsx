@@ -204,9 +204,8 @@ const RockHillFortMillSc = () => (
           HR audit
         </Link>{" "}
         runs 41 checks across nine areas, scored Pass, Watch or Fail, in 15 business days
-        from document upload and about four hours of your time. The price is a fixed band
-        by headcount, and states are priced into the band rather than billed on top: up to
-        two states in the smallest band, up to five in the middle, unlimited above that. A
+        from document upload and about four hours of your time. The price is set by
+        headcount and by how many states you employ in, and is quoted on the scope call. A
         Carolinas firm with people on both sides is a two-state engagement, not a
         surcharge.
       </p>

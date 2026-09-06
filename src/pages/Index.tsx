@@ -6,7 +6,7 @@ import heroWebp384 from "@/assets/hero/hero-team-384.webp";
 import heroWebp768 from "@/assets/hero/hero-team-768.webp";
 import { Button } from "@/components/ui/button";
 import { organization, caleb } from "@/data/organization";
-import { pricing, PRIMARY_CTA, BOOKING_URL } from "@/data/pricing";
+import { PRIMARY_CTA, BOOKING_URL } from "@/data/pricing";
 import SEOHead from "@/components/SEOHead";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -71,12 +71,12 @@ const Index = () => {
           <div className="grid items-center gap-12 md:grid-cols-[1.2fr_1fr]">
             <div>
               <h1 className="font-heading text-3xl font-800 leading-[1.15] md:text-[2.6rem] lg:text-5xl">
-                <span className="block">HR that bears</span>
-                <span className="block text-accent">the load.</span>
+                <span className="block">We handle the paperwork.</span>
+                <span className="block text-accent">You focus on your people.</span>
               </h1>
 
               <p className="mt-6 max-w-xl text-lg leading-relaxed text-primary-foreground/80">
-                Fixed-price HR audits, projects, fractional support, and PEO or HRIS transitions for law, accounting, engineering, and medical firms — in every state your people work in. Headquartered in Charlotte.
+                HR audits, projects, fractional support, and PEO or HRIS transitions for law, accounting, engineering, and medical firms — in every state your people work in. Headquartered in Charlotte.
               </p>
 
               <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -155,25 +155,25 @@ const Index = () => {
               {
                 need: "I need to know what my HR risk is",
                 service: "HR Audit",
-                price: `From ${pricing.audit.from}`,
+                price: "Fixed price, quoted before the work starts",
                 href: "/services/hr-audit",
               },
               {
                 need: "I need a specific thing fixed",
                 service: "HR Projects",
-                price: pricing.projects.range,
+                price: "Fixed price, quoted before the work starts",
                 href: "/services/hr-projects",
               },
               {
                 need: "I need ongoing HR help",
                 service: "Fractional HR",
-                price: `From ${pricing.fractional.tiers[0].price}`,
+                price: "Fixed monthly price, quoted before the work starts",
                 href: "/services/fractional-hr",
               },
               {
                 need: "I'm dealing with a PEO",
                 service: "Transitions",
-                price: pricing.transitions.range,
+                price: "Fixed price, quoted before the work starts",
                 href: "/services/transitions",
               },
             ].map(({ need, service, price, href }, i) => (
@@ -187,7 +187,7 @@ const Index = () => {
                       <h3 className="mt-4 font-heading text-lg font-700 text-green-ink">
                         {service}
                       </h3>
-                      <p className="mt-1 text-base tabular-nums text-foreground">
+                      <p className="mt-1 text-base text-foreground">
                         {price}
                       </p>
                     </CardContent>

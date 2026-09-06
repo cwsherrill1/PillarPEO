@@ -5,7 +5,7 @@ import { Reveal } from "@/components/Reveal";
 import ServiceHero from "@/components/services/ServiceHero";
 import ServiceCta from "@/components/services/ServiceCta";
 import UpdatedLine from "@/components/services/UpdatedLine";
-import { hrProjects, pricing } from "@/data/pricing";
+import { hrProjects } from "@/data/pricing";
 import { ORG_REF, SITE_URL, breadcrumb } from "@/data/organization";
 
 const jsonLd = {
@@ -27,9 +27,8 @@ const jsonLd = {
         "Fixed-price HR projects: handbooks, FLSA classification, I-9 and E-Verify remediation, compensation benchmarking, performance management and manager training.",
       offers: hrProjects.map((p) => ({
         "@type": "Offer",
-        priceCurrency: "USD",
         name: p.name,
-        description: `${p.name} — ${p.price} fixed`,
+        description: `${p.name} — fixed price, quoted before the work starts`,
       })),
     },
   ],
@@ -47,7 +46,7 @@ const HrProjects = () => (
     <ServiceHero
       eyebrow="P-1 · HR Projects"
       title="One specific thing, fixed at a fixed price."
-      intro={`${pricing.projects.range}, quoted before the work starts, in every state your people work in.`}
+      intro="Fixed price, quoted before the work starts, in every state your people work in."
     />
 
     <section className="bg-background">
@@ -72,14 +71,9 @@ const HrProjects = () => (
             <Reveal key={p.name} delay={i * 80}>
               <Card className="h-full border-l-4 border-l-accent card-elevated hover-lift">
                 <CardContent className="p-6">
-                  <div className="flex items-baseline justify-between gap-4">
-                    <h3 className="font-heading text-lg font-700 text-foreground">
-                      {p.name}
-                    </h3>
-                    <span className="whitespace-nowrap font-heading text-base font-700 tabular-nums text-green-ink">
-                      {p.price}
-                    </span>
-                  </div>
+                  <h3 className="font-heading text-lg font-700 text-foreground">
+                    {p.name}
+                  </h3>
                   <p className="mt-2 text-base leading-relaxed text-muted-foreground">
                     {p.desc}
                   </p>
