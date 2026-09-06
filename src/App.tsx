@@ -117,8 +117,16 @@ const App = () => (
               <Route path="/resources/peo-broker-vs-direct" element={<PeoBrokerVsDirect />} />
               <Route path="/resources/what-is-a-peo" element={<WhatIsAPeo />} />
               <Route path="/blog/employee-health-benefits-options" element={<EmployeeHealthBenefitsOptions />} />
-              <Route path="/peo-broker-north-carolina" element={<PeoBrokerNorthCarolina />} />
-              <Route path="/peo-broker-south-carolina" element={<PeoBrokerSouthCarolina />} />
+              <Route path="/resources/state-employer-guides" element={<StateEmployerGuides />} />
+              <Route path="/resources/state-employer-guides/north-carolina" element={<StateGuideNorthCarolina />} />
+              <Route path="/resources/state-employer-guides/south-carolina" element={<StateGuideSouthCarolina />} />
+              <Route path="/resources/nc-vs-sc-employment-law" element={<NcVsScEmploymentLaw />} />
+              <Route path="/resources/multi-state-employer-checklist" element={<MultiStateEmployerChecklist />} />
+              <Route path="/resources/hr-audit-checklist" element={<HrAuditChecklist />} />
+              <Route path="/resources/e-verify-north-carolina" element={<EVerifyNorthCarolina />} />
+              <Route path="/resources/e-verify-south-carolina" element={<EVerifySouthCarolina />} />
+              <Route path="/resources/nc-handbook-requirements" element={<NcHandbookRequirements />} />
+              <Route path="/resources/sc-handbook-requirements" element={<ScHandbookRequirements />} />
               <Route path="/blog/peo-industry-transparency" element={<PeoIndustryTransparency />} />
               <Route path="/hr-headache-score" element={<HrHeadacheQuiz />} />
               <Route path="/about" element={<About />} />
