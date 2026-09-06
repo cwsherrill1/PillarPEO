@@ -58,7 +58,7 @@ const HrConsulting = () => (
       <p>
         The Carolinas are a specific problem in their own right. The North Carolina and
         South Carolina rules differ on E-Verify, on workers' compensation thresholds, and
-        on notice of wage changes — and a firm in Charlotte can easily have staff on both
+        on notice of wage changes, and a firm in Charlotte can easily have staff on both
         sides of the line without noticing that anything changed.
       </p>
       <ul className="space-y-3">
@@ -102,7 +102,7 @@ const HrConsulting = () => (
     <ServiceCta
       heading="Book an HR audit, wherever your people are."
       body="One fixed price, quoted before we start, covering every state on your payroll."
-      proof="PROOF SLOT — Carolinas client reference naming the metro and the number of states covered."
+      proof="Carolinas client reference naming the metro and the number of states covered."
       secondary={{ label: "See the audit", href: "/services/hr-audit" }}
     />
   </>

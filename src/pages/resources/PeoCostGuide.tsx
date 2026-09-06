@@ -14,11 +14,11 @@ const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
 const faqs = [
   { q: "How much does a PEO cost per employee?", a: "Most PEOs charge between $80 and $200 per employee per month (PEPM) on a flat-fee model, or 2%–6% of total payroll on a percentage model. The wide range reflects differences in service level, benefits, workers' comp risk class, and the size of your workforce." },
-  { q: "Are PEO fees cheaper than hiring in-house HR?", a: "For most companies between 5 and 100 employees, yes. The breakeven is roughly when you'd otherwise need a full-time HR generalist plus a payroll specialist plus broker fees for benefits — typically around 50–75 employees, depending on complexity." },
+  { q: "Are PEO fees cheaper than hiring in-house HR?", a: "For most companies between 5 and 100 employees, yes. The breakeven is roughly when you'd otherwise need a full-time HR generalist plus a payroll specialist plus broker fees for benefits, typically around 50–75 employees, depending on complexity." },
   { q: "Do PEOs charge setup or implementation fees?", a: "Some do, some don't. Setup fees range from $0 to $1,500 per employee, often waived during competitive deals. Always ask whether the fee is being absorbed or simply moved into your monthly rate." },
-  { q: "Why did my PEO renewal price go up so much?", a: "Three usual culprits: the underlying health plan renewed higher, your workers' comp loss ratio worsened, or the PEO raised its administrative fee. Ask for a line-item breakdown — the increase is rarely uniform across all components." },
-  { q: "Can I negotiate PEO pricing?", a: "Yes — especially with multiple competing quotes in hand. PEOs expect to negotiate on admin fees, implementation fees, and benefit contribution structures. They rarely negotiate on workers' comp or carrier-set premiums." },
-  { q: "What's the cheapest PEO?", a: "There isn't a single cheapest PEO — pricing depends on your industry, state, payroll size, and benefits needs. Tech-friendly providers like Justworks and Rippling tend to look cheaper for low-claims workforces; traditional providers like ADP TotalSource or Insperity may price better for higher-risk industries due to better workers' comp pooling." },
+  { q: "Why did my PEO renewal price go up so much?", a: "Three usual culprits: the underlying health plan renewed higher, your workers' comp loss ratio worsened, or the PEO raised its administrative fee. Ask for a line-item breakdown: the increase is rarely uniform across all components." },
+  { q: "Can I negotiate PEO pricing?", a: "Yes, especially with multiple competing quotes in hand. PEOs expect to negotiate on admin fees, implementation fees, and benefit contribution structures. They rarely negotiate on workers' comp or carrier-set premiums." },
+  { q: "What's the cheapest PEO?", a: "There isn't a single cheapest PEO: pricing depends on your industry, state, payroll size, and benefits needs. Tech-friendly providers like Justworks and Rippling tend to look cheaper for low-claims workforces; traditional providers like ADP TotalSource or Insperity may price better for higher-risk industries due to better workers' comp pooling." },
 ];
 
 const ARTICLE = buildArticleJsonLd({
@@ -75,7 +75,7 @@ const PeoCostGuide = () => (
         </Reveal>
         <Reveal delay={100}>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80 md:text-xl">
-            Real pricing ranges, hidden fees, renewal increases — and how to compare quotes apples-to-apples.
+            Real pricing ranges, hidden fees, renewal increases, and how to compare quotes apples-to-apples.
           </p>
         </Reveal>
         <Reveal delay={150}><ArticleByline datePublished="May 15, 2026" /></Reveal>
@@ -96,13 +96,13 @@ const PeoCostGuide = () => (
             <ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources
           </Link>
           <p className="text-xl leading-8 text-foreground/85">
-            Most published "PEO cost" articles are written by PEOs trying to sell you something — or by SEO sites guessing at numbers. This one is written by an independent broker who actually sees real quotes from ADP TotalSource, Insperity, Justworks, Rippling, TriNet, Paychex, and dozens of regional PEOs every month. Here's what PEOs actually cost in 2026, what's negotiable, and what you should never pay extra for.
+            Most published "PEO cost" articles are written by PEOs trying to sell you something, or by SEO sites guessing at numbers. This one is written by an independent broker who actually sees real quotes from ADP TotalSource, Insperity, Justworks, Rippling, TriNet, Paychex, and dozens of regional PEOs every month. Here's what PEOs actually cost in 2026, what's negotiable, and what you should never pay extra for.
           </p>
         </Reveal>
       </div>
     </section>
 
-    <Section title="The Two Pricing Models — And Which Is Better for You" alt>
+    <Section title="The Two Pricing Models: And Which Is Better for You" alt>
       <p>Every PEO uses one of two models (or a hybrid):</p>
       <PricingModelsCompare />
 
@@ -114,7 +114,7 @@ const PeoCostGuide = () => (
         <h3 className="font-heading font-700 text-foreground">2. Percentage of Payroll</h3>
         <p className="mt-2 text-sm text-muted-foreground"><strong>Range:</strong> 2%–6% of gross payroll. <strong>Best for:</strong> lower-wage workforces where 2%–4% of a $35K salary beats $150 PEPM. Common with ADP TotalSource and Insperity for blue-collar industries.</p>
       </CardContent></Card>
-      <p className="mt-4"><strong className="text-foreground">Quick math:</strong> a 25-person company at $65K average salary pays roughly $45,000/year on PEPM ($150 × 25 × 12) or $40,625/year on a 2.5% percentage model. The cheaper option flips at higher salaries — always model both.</p>
+      <p className="mt-4"><strong className="text-foreground">Quick math:</strong> a 25-person company at $65K average salary pays roughly $45,000/year on PEPM ($150 × 25 × 12) or $40,625/year on a 2.5% percentage model. The cheaper option flips at higher salaries: always model both.</p>
     </Section>
 
     <Section title="What's Actually Bundled in That Number">
@@ -129,7 +129,7 @@ const PeoCostGuide = () => (
     </Section>
 
     <Section title="Real Pricing Ranges by Provider Type" alt>
-      <p>These are the bands we typically see in 2026 quotes — your actual number depends on industry, state, headcount, and benefits selection.</p>
+      <p>These are the bands we typically see in 2026 quotes; your actual number depends on industry, state, headcount, and benefits selection.</p>
       <div className="mt-4 overflow-x-auto">
         <table className="w-full text-sm">
           <thead className="bg-muted/50 text-foreground">
@@ -161,7 +161,7 @@ const PeoCostGuide = () => (
     </Section>
 
     <Section title="How a Broker Saves You Money (Without Costing You Anything)" alt>
-      <p>Independent PEO brokers like Pillar are paid by the PEO you ultimately choose — at the same rate the PEO would have spent on its own sales team. You don't pay extra. What you get:</p>
+      <p>Independent PEO brokers like Pillar are paid by the PEO you ultimately choose, at the same rate the PEO would have spent on its own sales team. You don't pay extra. What you get:</p>
       <ul className="space-y-2">
         <Bullet>Quotes from 3–5 PEOs on a normalized scope (so you're comparing the same thing)</Bullet>
         <Bullet>Honest comparison of admin fee, benefits, workers' comp, and renewal history</Bullet>
@@ -178,7 +178,7 @@ const PeoCostGuide = () => (
         <Bullet>Separate the administrative fee from the benefits cost from the workers' comp cost</Bullet>
         <Bullet>Model out cost at current headcount, then at 20% growth</Bullet>
         <Bullet>Ask for a multi-year projection, not just year-one pricing</Bullet>
-        <Bullet>Factor in the implementation or onboarding fee — some waive it, some don't</Bullet>
+        <Bullet>Factor in the implementation or onboarding fee: some waive it, some don't</Bullet>
       </ul>
       <p className="mt-4">What's often priced separately, and belongs in the comparison: 401(k) administration fees, SUTA management fees, EPLI, implementation fees, per-state registration fees for multi-state employers, and premium support tiers.</p>
     </Section>
@@ -192,7 +192,7 @@ const PeoCostGuide = () => (
         <Bullet>Clear renewal terms with reasonable notice windows</Bullet>
         <Bullet>A clean exit process if the relationship doesn't work out</Bullet>
       </ul>
-      <p className="mt-4 font-semibold text-foreground">If a PEO can't give you clarity on all five before you sign, that's a red flag — not a reason to move faster.</p>
+      <p className="mt-4 font-semibold text-foreground">If a PEO can't give you clarity on all five before you sign, that's a red flag, not a reason to move faster.</p>
     </Section>
 
 

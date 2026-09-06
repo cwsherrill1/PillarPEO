@@ -121,7 +121,7 @@ const CpaFirms = () => (
             Busy-season staff working from other states.
           </strong>{" "}
           A senior working six weeks from a parent's house in another state, a preparer
-          hired remotely for the season — either can create registration and withholding
+          hired remotely for the season: either can create registration and withholding
           obligations in that state, along with its own wage and leave rules. Firms find
           out the following year.
         </Bullet>
@@ -140,8 +140,8 @@ const CpaFirms = () => (
         people actually sat in April).
       </p>
       <p>
-        We look at two payroll registers deliberately — one from inside busy season and
-        one from outside it — because the register from a slow week tells you very little
+        We look at two payroll registers deliberately, one from inside busy season and
+        one from outside it, because the register from a slow week tells you very little
         about how the firm behaves under pressure. We also review the timekeeping sample
         against the hours the firm believes people worked.
       </p>
@@ -159,7 +159,7 @@ const CpaFirms = () => (
     </Section>
 
     <Section title="Proof" alt>
-      <ProofSlot needs="PROOF SLOT — managing partner or firm administrator quote, CPA firm, with a number (staff reclassified, overtime exposure quantified, or states registered)." />
+      <ProofSlot needs="managing partner or firm administrator quote, CPA firm, with a number (staff reclassified, overtime exposure quantified, or states registered)." />
     </Section>
 
     <Section title="Questions accounting firms ask">
@@ -169,7 +169,7 @@ const CpaFirms = () => (
     <ServiceCta
       heading="Fix busy season before busy season."
       body="An audit in the autumn gives you a scored, written picture and time to act on it before January."
-      proof="PROOF SLOT — CPA firm reference describing the autumn audit timing, with headcount."
+      proof="CPA firm reference describing the autumn audit timing, with headcount."
       secondary={{ label: "See all industries", href: "/industries" }}
     />
   </>

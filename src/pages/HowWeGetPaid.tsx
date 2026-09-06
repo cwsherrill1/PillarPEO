@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     q: "Does the audit fee change based on what you recommend?",
-    a: "No. The HR audit is a fixed price quoted before the work starts, and it does not change based on the findings or on what we recommend afterwards — including whether we recommend a PEO at all.",
+    a: "No. The HR audit is a fixed price quoted before the work starts, and it does not change based on the findings or on what we recommend afterwards, including whether we recommend a PEO at all.",
   },
   {
     q: "What if the right answer is to do nothing?",
@@ -182,7 +182,7 @@ const HowWeGetPaid = () => (
     <ServiceCta
       heading="Ask us anything about the money."
       body="If something about how we're paid doesn't sit right, raise it on the first call and we'll put the numbers in front of you."
-      proof="PROOF SLOT — client quote about the commission disclosure, or a redacted sample disclosure document."
+      proof="client quote about the commission disclosure, or a redacted sample disclosure document."
       secondary={{ label: "See all services", href: "/services" }}
     />
   </>

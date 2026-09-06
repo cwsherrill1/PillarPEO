@@ -18,7 +18,7 @@ const faqs: Faq[] = [
   },
   {
     q: "Do PEO agreements have termination fees?",
-    a: "Some do, some do not, and some achieve the same result through the notice window and term length instead. Read the termination article and the renewal article together — the cost of leaving is the sum of both, not just any stated fee.",
+    a: "Some do, some do not, and some achieve the same result through the notice window and term length instead. Read the termination article and the renewal article together: the cost of leaving is the sum of both, not just any stated fee.",
   },
   {
     q: "Can I negotiate the notice window before signing?",
@@ -37,7 +37,7 @@ const jsonLd = {
     articleSchema({
       headline: "PEO Contract Terms: What Leaving Actually Costs",
       description:
-        "Term length, auto-renewal, notice windows, termination fees and mid-year plan-year damage — the clauses that decide the cost of exit.",
+        "Term length, auto-renewal, notice windows, termination fees and mid-year plan-year damage: the clauses that decide the cost of exit.",
       path: "/resources/peo-contract-terms",
       datePublished: "2026-09-06",
       dateModified: "2026-09-06",
@@ -51,7 +51,7 @@ const PeoContractTerms = () => (
     <SEOHead
       title="PEO Contract Terms: What Leaving Costs"
       fullTitle
-      description="Term length, auto-renewal, notice windows, termination fees and mid-year exits — the PEO clauses that decide what leaving actually costs you."
+      description="Term length, auto-renewal, notice windows, termination fees and mid-year exits: the PEO clauses that decide what leaving actually costs you."
       canonical={`${SITE_URL}/resources/peo-contract-terms`}
       ogType="article"
       jsonLd={jsonLd}
@@ -69,7 +69,7 @@ const PeoContractTerms = () => (
         Five: the term length, whether it auto-renews, the notice window you must
         hit to stop that, any termination fee, and what happens to your benefit
         plan year if you exit mid-year. Together they set your real cost of
-        leaving — which is what determines your leverage at every renewal after
+        leaving. That is what determines your leverage at every renewal after
         the first.
       </p>
     </Section>
@@ -78,7 +78,7 @@ const PeoContractTerms = () => (
       <p>
         Most agreements we read run for an initial term and then renew
         automatically for successive terms unless notice is given. Auto-renewal
-        is not unreasonable in itself — nobody wants payroll to lapse — but it
+        is not unreasonable in itself (nobody wants payroll to lapse), but it
         shifts the burden entirely onto you to act, on a date you will not be
         thinking about, in a month when you are busy.
       </p>
@@ -145,16 +145,16 @@ const PeoContractTerms = () => (
       </p>
       <ul className="space-y-3">
         <Bullet>
-          <strong className="text-foreground">Fee on early termination</strong> —
+          <strong className="text-foreground">Fee on early termination</strong>:
           stated amount or formula, and what triggers it.
         </Bullet>
         <Bullet>
-          <strong className="text-foreground">Data and records on exit</strong> —
+          <strong className="text-foreground">Data and records on exit</strong>:
           what you get back, in what format, and how quickly. Payroll history,
           I-9s, personnel files and benefit enrolment records should all be named.
         </Bullet>
         <Bullet>
-          <strong className="text-foreground">Run-off obligations</strong> — who
+          <strong className="text-foreground">Run-off obligations</strong>: who
           handles final tax filings, W-2s and any open workers' compensation
           claims after you leave.
         </Bullet>
@@ -179,7 +179,7 @@ const PeoContractTerms = () => (
       <p>
         A January 1 exit, or an exit aligned to whenever your plan year actually
         starts, avoids most of this. Which means the exit date is not a scheduling
-        detail — it is a design decision you should make at signature, by lining up
+        detail. It is a design decision you should make at signature, by lining up
         the contract term and renewal date with the plan year rather than with the
         date you happened to sign.
       </p>
@@ -206,7 +206,7 @@ const PeoContractTerms = () => (
     <ServiceCta
       heading="Know your notice date before you need it."
       body="Send us the agreement and we will tell you your notice deadline, your renewal date, and whether your plan year lines up with either."
-      proof="PROOF SLOT — anonymised example of a notice window caught in time, with what it preserved."
+      proof="anonymised example of a notice window caught in time, with what it preserved."
       secondary={{ label: "The free renewal review", href: "/resources/peo-renewal-review" }}
     />
   </>

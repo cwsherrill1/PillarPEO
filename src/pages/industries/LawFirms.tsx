@@ -10,7 +10,7 @@ import { ORG_REF, SITE_URL, breadcrumb } from "@/data/organization";
 const faqs: Faq[] = [
   {
     q: "Are paralegals exempt from overtime?",
-    a: "Usually not. The learned professional exemption generally requires a prolonged course of specialized intellectual instruction, and most paralegal roles do not meet it on the duties test — a paralegal certificate is not the same thing. Salary alone never makes a role exempt. The safer default for most firms is to treat paralegals as non-exempt, track hours, and pay overtime.",
+    a: "Usually not. The learned professional exemption generally requires a prolonged course of specialized intellectual instruction, and most paralegal roles do not meet it on the duties test: a paralegal certificate is not the same thing. Salary alone never makes a role exempt. The safer default for most firms is to treat paralegals as non-exempt, track hours, and pay overtime.",
   },
   {
     q: "Is a partner an employee for HR purposes?",
@@ -22,7 +22,7 @@ const faqs: Faq[] = [
   },
   {
     q: "What triggers a wage-hour problem in a law firm?",
-    a: "Most often an unpaid working lunch, off-the-clock evening filing work, or a non-exempt staff member with a smartphone answering matters after hours. The exposure is not one week's overtime — it is the same pattern across several people and a multi-year lookback.",
+    a: "Most often an unpaid working lunch, off-the-clock evening filing work, or a non-exempt staff member with a smartphone answering matters after hours. The exposure is not one week's overtime: it is the same pattern across several people and a multi-year lookback.",
   },
   {
     q: "Does the audit cover states where we only have one lawyer?",
@@ -56,7 +56,7 @@ const jsonLd = {
 const LawFirms = () => (
   <>
     <SEOHead
-      title="HR for Law Firms — Audits and Fixed-Price Work | Pillar"
+      title="HR for Law Firms: Audits and Fixed-Price Work | Pillar"
       fullTitle
       description="Paralegal classification, partner vs employee status, trust-account separation of duties, contract attorneys and multi-state laterals."
       canonical={`${SITE_URL}/industries/law-firms`}
@@ -102,7 +102,7 @@ const LawFirms = () => (
           </strong>{" "}
           A partner who is salaried, supervised and removable is functionally an employee.
           If the firm treats them as an owner for payroll and benefits purposes but as an
-          employee in practice, the paperwork and the reality disagree — and it is the
+          employee in practice, the paperwork and the reality disagree, and it is the
           reality that gets examined.
         </Bullet>
         <Bullet>
@@ -162,7 +162,7 @@ const LawFirms = () => (
         <Link to="/services/hr-projects" className="text-green-ink hover:underline">
           fixed-price project
         </Link>{" "}
-        — most often an FLSA classification review or a handbook rebuild. Firms that want
+        it is most often an FLSA classification review or a handbook rebuild. Firms that want
         someone on call after that use{" "}
         <Link to="/services/fractional-hr" className="text-green-ink hover:underline">
           fractional HR
@@ -173,7 +173,7 @@ const LawFirms = () => (
     </Section>
 
     <Section title="Proof" alt>
-      <ProofSlot needs="PROOF SLOT — managing partner quote, law firm, with a number (headcount reclassified, states registered, or hours recovered)." />
+      <ProofSlot needs="managing partner quote, law firm, with a number (headcount reclassified, states registered, or hours recovered)." />
     </Section>
 
     <Section title="Questions law firms ask">
@@ -183,7 +183,7 @@ const LawFirms = () => (
     <ServiceCta
       heading="Find out what your classification decisions actually expose you to."
       body="A fixed-price audit, quoted before we start, covering every state your people work in."
-      proof="PROOF SLOT — second law firm reference, ideally a firm that changed a paralegal classification after the audit."
+      proof="second law firm reference, ideally a firm that changed a paralegal classification after the audit."
       secondary={{ label: "See all industries", href: "/industries" }}
     />
   </>

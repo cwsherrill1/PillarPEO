@@ -98,7 +98,7 @@ const HrProjects = () => (
             one. First, a scope call: what the deliverable is, which states and which
             employee groups it covers, and what it is not. Second, a written scope and a
             fixed price. Third, the work, with a mid-point review so you see a draft
-            rather than a surprise. Fourth, handover — the document, the file, the
+            rather than a surprise. Fourth, handover: the document, the file, the
             decision log, and a walkthrough with whoever has to operate it after we leave.
           </p>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
@@ -123,7 +123,7 @@ const HrProjects = () => (
               descriptions, an org chart, and a payroll register.
             </li>
             <li>
-              Give us an hour with the people who actually know how the firm works —
+              Give us an hour with the people who actually know how the firm works:
               usually the practice administrator and one partner.
             </li>
             <li>
@@ -142,8 +142,8 @@ const HrProjects = () => (
             Scope changes.
           </h3>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-            If the work turns out to be larger than the scope — a state nobody mentioned,
-            a second entity, an acquisition mid-project — we stop and requote before doing
+            If the work turns out to be larger than the scope (a state nobody mentioned,
+            a second entity, an acquisition mid-project), we stop and requote before doing
             the extra work. You will never receive an invoice for something you did not
             agree to in writing first.
           </p>
@@ -154,7 +154,7 @@ const HrProjects = () => (
     <ServiceCta
       heading="Not sure which project you need?"
       body="The audit tells you which of these matter first, and what each one is worth doing about."
-      proof="PROOF SLOT — client quote on a completed handbook or classification project, with the firm type and headcount."
+      proof="client quote on a completed handbook or classification project, with the firm type and headcount."
       secondary={{ label: "See all services", href: "/services" }}
     />
   </>

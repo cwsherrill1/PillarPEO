@@ -53,7 +53,7 @@ export const ArticleAuthorBio = () => (
               is the founder
               of Pillar PEO Advisors. After living through payroll mistakes and compliance fines
               in a previous business, he built Pillar to help small and mid-sized employers
-              compare PEO options as an independent broker — at no cost to the employer.
+              compare PEO options as an independent broker, at no cost to the employer.
             </p>
             <a
               href={LINKEDIN_URL}

@@ -79,14 +79,14 @@ const PeoAdminFees = () => (
         <Bullet>
           <strong className="text-foreground">Per employee per month
           (PEPM).</strong> A fixed amount per active employee per month. It scales
-          with the thing that actually drives the PEO's workload — the number of
+          with the thing that actually drives the PEO's workload: the number of
           people it has to onboard, pay, enrol and support. It is predictable and
           you can budget it a year out.
         </Bullet>
         <Bullet>
           <strong className="text-foreground">Percentage of payroll.</strong> A
           percentage applied to your payroll each cycle. It scales with the thing
-          that does not drive the PEO's workload at all — how much you pay your
+          that does not drive the PEO's workload at all: how much you pay your
           people. Processing a $250,000 partner's payroll is not more work than
           processing a $60,000 paralegal's.
         </Bullet>
@@ -114,7 +114,7 @@ const PeoAdminFees = () => (
       </p>
       <p>
         Gross payroll includes everything before deductions. Taxable wages exclude
-        pre-tax items — retirement plan deferrals, pre-tax medical and dental
+        pre-tax items: retirement plan deferrals, pre-tax medical and dental
         premiums, HSA and FSA contributions. A fee charged on gross payroll is
         therefore charging you a percentage on money your employees have already
         diverted into their own benefits.
@@ -128,7 +128,7 @@ const PeoAdminFees = () => (
       </p>
       <p>
         The same basis question applies to the unemployment line, for the same
-        reason — see{" "}
+        reason, see{" "}
         <Link to="/resources/peo-suta-rates" className="text-green-ink hover:underline">
           the SUTA line nobody checks
         </Link>
@@ -147,24 +147,24 @@ const PeoAdminFees = () => (
       </p>
       <ul className="space-y-3">
         <Bullet>
-          <strong className="text-foreground">Administrative fee</strong> — stated
+          <strong className="text-foreground">Administrative fee</strong>: stated
           separately, with the model and the basis named.
         </Bullet>
         <Bullet>
-          <strong className="text-foreground">Benefit premiums</strong> — by plan,
+          <strong className="text-foreground">Benefit premiums</strong>: by plan,
           with the employer and employee shares split out.
         </Bullet>
         <Bullet>
-          <strong className="text-foreground">Workers' compensation</strong> — rate
+          <strong className="text-foreground">Workers' compensation</strong>: rate
           by class code, not a blended rate across your whole staff.
         </Bullet>
         <Bullet>
-          <strong className="text-foreground">Payroll taxes</strong> — including
+          <strong className="text-foreground">Payroll taxes</strong>: including
           the assumed unemployment rate and wage basis for every state you employ
           in.
         </Bullet>
         <Bullet>
-          <strong className="text-foreground">Everything else</strong> — setup,
+          <strong className="text-foreground">Everything else</strong>: setup,
           implementation, off-cycle runs, garnishments, terminations, year-end
           filings, and any per-transaction charge.
         </Bullet>
@@ -187,7 +187,7 @@ const PeoAdminFees = () => (
       </p>
       <p>
         Once you have the unbundled quote and the sample invoice, the remaining
-        risk is not in the pricing at all — it is in the term, the notice window
+        risk is not in the pricing at all. It is in the term, the notice window
         and the exit. That is{" "}
         <Link to="/resources/peo-contract-terms" className="text-green-ink hover:underline">
           the next page in this cluster
@@ -206,7 +206,7 @@ const PeoAdminFees = () => (
     <ServiceCta
       heading="Send us the quote. We'll unbundle it."
       body="We read PEO proposals every week and know which lines are missing. The review is free, whether or not you place anything through us."
-      proof="PROOF SLOT — anonymised example of an unbundled quote changing the ranking of two providers."
+      proof="anonymised example of an unbundled quote changing the ranking of two providers."
       secondary={{ label: "The free renewal review", href: "/resources/peo-renewal-review" }}
     />
   </>

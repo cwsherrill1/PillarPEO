@@ -13,7 +13,7 @@ const metro = metros.find((m) => m.slug === "charlotte-nc")!;
 const faqs: Faq[] = [
   {
     q: "Does my Charlotte firm have to use E-Verify?",
-    a: "In North Carolina, E-Verify is required at 25 or more employees under NCGS 64-26. If any of your staff work in South Carolina, E-Verify is required of all employers there, within 3 business days of hire — so a 12-person Charlotte firm with two people in Fort Mill has an obligation it would not have on this side of the line.",
+    a: "In North Carolina, E-Verify is required at 25 or more employees under NCGS 64-26. If any of your staff work in South Carolina, E-Verify is required of all employers there, within 3 business days of hire, so a 12-person Charlotte firm with two people in Fort Mill has an obligation it would not have on this side of the line.",
   },
   {
     q: "At what headcount do we need workers' compensation in North Carolina?",
@@ -44,7 +44,7 @@ const jsonLd = {
     {
       "@type": "LocalBusiness",
       "@id": `${SITE_URL}/hr-consulting/charlotte-nc#localbusiness`,
-      name: "Pillar PEO Advisors — HR consulting in Charlotte, NC",
+      name: "Pillar PEO Advisors: HR consulting in Charlotte, NC",
       parentOrganization: ORG_REF,
       url: `${SITE_URL}/hr-consulting/charlotte-nc`,
       areaServed: {
@@ -172,7 +172,7 @@ const CharlotteNc = () => (
       <p>
         The second is benefits benchmarking. Candidates here compare against employers with
         purchasing power a 40-person firm cannot match on its own. That is the honest case
-        for looking at a PEO — pooled benefits pricing — and it is also the reason we quote
+        for looking at a PEO: pooled benefits pricing, and it is also the reason we quote
         the audit fee identically whether or not a PEO turns out to be the answer. See{" "}
         <Link to="/how-we-get-paid" className="text-green-ink hover:underline">
           how we get paid
@@ -199,14 +199,14 @@ const CharlotteNc = () => (
           <Link to="/industries/law-firms" className="text-green-ink hover:underline">
             Law firms
           </Link>{" "}
-          — paralegal and legal-assistant classification, and trust-account separation of
+          Paralegal and legal-assistant classification, and trust-account separation of
           duties.
         </Bullet>
         <Bullet>
           <Link to="/industries/cpa-firms" className="text-green-ink hover:underline">
             CPA firms
           </Link>{" "}
-          — busy-season overtime and seasonal staffing, plus staff working from elsewhere
+          Busy-season overtime and seasonal staffing, plus staff working from elsewhere
           in the spring.
         </Bullet>
         <Bullet>
@@ -216,13 +216,13 @@ const CharlotteNc = () => (
           >
             Engineering and architecture
           </Link>{" "}
-          — designer and drafter exempt status, and project work across state lines.
+          Designer and drafter exempt status, and project work across state lines.
         </Bullet>
         <Bullet>
           <Link to="/industries/medical-dental" className="text-green-ink hover:underline">
             Medical and dental practices
           </Link>{" "}
-          — file separation, OSHA requirements, on-call and shift differentials.
+          File separation, OSHA requirements, on-call and shift differentials.
         </Bullet>
         <Bullet>
           <Link
@@ -231,7 +231,7 @@ const CharlotteNc = () => (
           >
             RIAs and advisory firms
           </Link>{" "}
-          — supervision records mixed with personnel records, and undocumented producer pay
+          Supervision records mixed with personnel records, and undocumented producer pay
           plans.
         </Bullet>
       </ul>
@@ -244,7 +244,7 @@ const CharlotteNc = () => (
         ZIP codes we serve include {metro.zips.join(", ")}.
       </p>
       <p>
-        Pillar has no published street address — we come to you, and the rest of the work
+        Pillar has no published street address; we come to you, and the rest of the work
         is done remotely. If your people are in states well outside this radius, that is
         normal: multi-state is the default in our pricing, not an add-on.
       </p>
@@ -256,7 +256,7 @@ const CharlotteNc = () => (
         The slot below says exactly what belongs here, and it stays visible until a real
         Charlotte client fills it.
       </p>
-      <ProofSlot needs="PROOF SLOT — managing partner or practice administrator quote, Charlotte firm, named, with a number (headcount, states registered, or findings closed)." />
+      <ProofSlot needs="managing partner or practice administrator quote, Charlotte firm, named, with a number (headcount, states registered, or findings closed)." />
     </Section>
 
     <Section title="Questions Charlotte firms ask" alt>
@@ -266,7 +266,7 @@ const CharlotteNc = () => (
     <ServiceCta
       heading="Book an HR audit for your Charlotte firm."
       body="Fixed price, quoted before we start, covering North Carolina, South Carolina and everywhere else your people work."
-      proof="PROOF SLOT — Charlotte client reference with firm type and headcount."
+      proof="Charlotte client reference with firm type and headcount."
       secondary={{ label: "Rock Hill & Fort Mill", href: "/hr-consulting/rock-hill-fort-mill-sc" }}
     />
   </>

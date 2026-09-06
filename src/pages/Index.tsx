@@ -25,7 +25,7 @@ import {
 const FAQS = [
   { q: "What does Pillar do?", a: "Pillar is an independent HR advisory firm for professional-services firms of roughly 10 to 150 people, in every state their people work in. We run fixed-price HR audits and projects, provide fractional HR, and manage PEO and system transitions. Comparing PEOs is a free service inside that offer." },
   { q: "What is a PEO broker?", a: "A PEO broker is an independent advisor who compares Professional Employer Organizations on your behalf, negotiates pricing, and supports the transition. Brokers are paid by the PEO, not by the employer, so the service is free to you." },
-  { q: "Do I pay Pillar anything?", a: "It depends which service you use. HR audits, projects, fractional HR, and transitions are fixed-price, quoted in writing before any work starts. PEO brokerage is free to you \u2014 the PEO pays the commission, and we disclose it." },
+  { q: "Do I pay Pillar anything?", a: "It depends which service you use. HR audits, projects, fractional HR, and transitions are fixed-price, quoted in writing before any work starts. PEO brokerage is free to you: the PEO pays the commission, and we disclose it." },
   { q: "Should I use a PEO broker or go direct?", a: "Brokers typically secure better pricing, shorter contracts, and flexible exit clauses, and they stay engaged after the sale. Smaller employers almost always benefit from broker support because they lack the leverage to negotiate alone." },
   { q: "How do I know if a PEO is the right fit?", a: "That depends on your employee count, internal capacity, current pain points, and what kind of support you need. We help you think through that before forcing a decision." },
   { q: "What if we already have a PEO?", a: "That is one of the biggest reasons employers reach out. We can help you evaluate whether the current fit is still right." },
@@ -76,7 +76,7 @@ const Index = () => {
               </h1>
 
               <p className="mt-6 max-w-xl text-lg leading-relaxed text-primary-foreground/80">
-                HR audits, projects, fractional support, and PEO or HRIS transitions for firms of 10–150 people — in every state your people work in. Headquartered in Charlotte.
+                HR audits, projects, fractional support, and PEO or HRIS transitions for firms of 10–150 people, in every state your people work in. Headquartered in Charlotte.
               </p>
 
 
@@ -223,7 +223,7 @@ const Index = () => {
                 The wrong setup costs more than the audit.
               </h2>
               <p className="mt-4 text-muted-foreground">
-               When the fit is wrong, the cost shows up everywhere — in
+               When the fit is wrong, the cost shows up everywhere: in
                  leadership time, compliance risk, and the constant sense
                  that something still isn't working.
               </p>
@@ -446,12 +446,12 @@ const Index = () => {
             {
               myth: "\u201CSalaried means exempt.\u201D",
               truth:
-              "It does not. Paying someone a salary is only part of the test \u2014 the job duties have to meet an exemption as well. Misclassified salaried staff are the most common finding in an audit."
+              "It does not. Paying someone a salary is only part of the test. The job duties have to meet an exemption as well. Misclassified salaried staff are the most common finding in an audit."
             },
             {
               myth: "\u201CThe PEO handles compliance.\u201D",
               truth:
-              "A PEO handles payroll tax filing and much of the paperwork. It does not classify your roles, write your job descriptions, or train your managers \u2014 and those are where the expensive problems start."
+              "A PEO handles payroll tax filing and much of the paperwork. It does not classify your roles, write your job descriptions, or train your managers, and those are where the expensive problems start."
                         }].
             map(({ myth, truth }, i) =>
             <Reveal key={i} delay={i * 120}>

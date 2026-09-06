@@ -127,7 +127,7 @@ const Contact = () => {
               Let's find the right PEO for your team.
             </h1>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-primary-foreground/80">
-              No sales pitch, no obligation — just an honest conversation about
+              No sales pitch, no obligation, just an honest conversation about
               what's best for your business.
             </p>
             <div className="mt-6">
@@ -161,7 +161,7 @@ const Contact = () => {
                     className="rounded-lg border border-accent/40 bg-accent/10 p-6"
                   >
                     <p className="font-heading text-lg font-700 text-foreground">
-                      Thanks — we've got it.
+                      Thanks, we've got it.
                     </p>
                     <p className="mt-2 text-base text-muted-foreground">
                       We'll be in touch within 1 business day. If it's urgent, call{" "}

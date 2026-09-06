@@ -14,7 +14,7 @@ const faqs: Faq[] = [
   },
   {
     q: "Where should the at-will disclaimer go?",
-    a: "Prominently, not buried — typically at the front of the handbook and again in the acknowledgment employees sign, so there's no argument the employee missed it.",
+    a: "Prominently, not buried: typically at the front of the handbook and again in the acknowledgment employees sign, so there's no argument the employee missed it.",
   },
   {
     q: "Is a handbook legally required in South Carolina?",
@@ -71,13 +71,13 @@ const ScHandbookRequirements = () => (
         step-by-step discipline process, or promises a certain number of
         warnings before termination, can be read as a commitment rather than a
         guideline if the company doesn't clearly say otherwise up front. The
-        fix is not to remove useful guidance from the handbook — it's to state
+        fix is not to remove useful guidance from the handbook. It's to state
         plainly, in a prominent place, that:
       </p>
       <ul className="space-y-3">
         <Bullet>Employment is at-will, meaning either party can end it at any time, for any lawful reason.</Bullet>
         <Bullet>The handbook is a set of guidelines, not a contract, and doesn't guarantee a specific process before separation.</Bullet>
-        <Bullet>No manager or supervisor can alter that at-will relationship verbally — only a written agreement, signed by an authorized officer, can.</Bullet>
+        <Bullet>No manager or supervisor can alter that at-will relationship verbally: only a written agreement, signed by an authorized officer, can.</Bullet>
         <Bullet>The employee acknowledgment form employees sign repeats this, so there's a signed record they saw it.</Bullet>
       </ul>
     </Section>
@@ -85,7 +85,7 @@ const ScHandbookRequirements = () => (
     <Section title="South Carolina-specific figures a handbook should reflect">
       <ul className="space-y-3">
         <Bullet>
-          <strong className="text-foreground">E-Verify — all employers, within 3 business days.</strong>{" "}
+          <strong className="text-foreground">E-Verify: all employers, within 3 business days.</strong>{" "}
           South Carolina requires every employer, regardless of size, to
           confirm work eligibility through E-Verify within 3 business days of
           hire. See the{" "}
@@ -126,7 +126,7 @@ const ScHandbookRequirements = () => (
       <ul className="space-y-3">
         <Bullet>Anti-harassment policy and a reporting path that doesn't require going through the employee's own manager.</Bullet>
         <Bullet>Overtime approval and timekeeping expectations for non-exempt staff.</Bullet>
-        <Bullet>A note on multi-state work if any staff work outside South Carolina — see the <Link to="/resources/multi-state-employer-checklist" className="text-green-ink hover:underline">multi-state employer checklist</Link>.</Bullet>
+        <Bullet>A note on multi-state work if any staff work outside South Carolina: see the <Link to="/resources/multi-state-employer-checklist" className="text-green-ink hover:underline">multi-state employer checklist</Link>.</Bullet>
         <Bullet>Leave policies stated plainly, including how the Pregnancy Accommodations Act request process works if you're covered.</Bullet>
       </ul>
     </Section>
@@ -164,7 +164,7 @@ const ScHandbookRequirements = () => (
     <ServiceCta
       heading="Not sure your at-will language actually holds up?"
       body="The HR audit reviews your handbook language against how the company actually operates and where its exposure is."
-      proof="PROOF SLOT — client quote describing an at-will or handbook-language finding, South Carolina employer."
+      proof="client quote describing an at-will or handbook-language finding, South Carolina employer."
       secondary={{ label: "See the HR audit", href: "/services/hr-audit" }}
     />
   </>

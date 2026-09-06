@@ -32,22 +32,52 @@ const locations = [
   ...metros.map((m) => ({ label: m.navLabel, href: `/hr-consulting/${m.slug}` })),
 ];
 
-const resourcesMenu = [
+interface NavItem {
+  label: string;
+  href: string;
+}
+
+interface NavGroup {
+  heading: string;
+  items: NavItem[];
+}
+
+const resourcesGroups: NavGroup[] = [
+  {
+    heading: "How PEO pricing works",
+    items: [
+      { label: "Pricing overview", href: "/resources/peo-pricing-explained" },
+      { label: "Why your renewal jumped", href: "/resources/peo-honeymoon-pricing" },
+      { label: "The SUTA line nobody checks", href: "/resources/peo-suta-rates" },
+      { label: "Admin fees: PEPM vs % of payroll", href: "/resources/peo-admin-fees" },
+      { label: "Contract terms and exit costs", href: "/resources/peo-contract-terms" },
+      { label: "When a PEO is the wrong answer", href: "/resources/when-a-peo-is-the-wrong-answer" },
+      { label: "Free PEO renewal review", href: "/resources/peo-renewal-review" },
+    ],
+  },
+  {
+    heading: "Compliance guides",
+    items: [
+      { label: "State employer guides", href: "/resources/state-employer-guides" },
+      { label: "NC vs. SC employment law", href: "/resources/nc-vs-sc-employment-law" },
+      { label: "Multi-state checklist", href: "/resources/multi-state-employer-checklist" },
+      { label: "HR audit checklist", href: "/resources/hr-audit-checklist" },
+      { label: "Do we need a PEO?", href: "/resources/do-we-need-a-peo" },
+    ],
+  },
+  {
+    heading: "Tools",
+    items: [
+      { label: "HR Risk Score", href: "/tools/hr-risk-score" },
+      { label: "PEO cost calculator", href: "/tools/peo-cost-calculator" },
+      { label: "Case studies", href: "/case-studies" },
+    ],
+  },
+];
+
+const resourcesMenu: NavItem[] = [
   { label: "All resources", href: "/resources" },
-  { label: "How PEO pricing works", href: "/resources/peo-pricing-explained" },
-  { label: "— Why your renewal jumped", href: "/resources/peo-honeymoon-pricing" },
-  { label: "— The SUTA line nobody checks", href: "/resources/peo-suta-rates" },
-  { label: "— Admin fees: PEPM vs % of payroll", href: "/resources/peo-admin-fees" },
-  { label: "— Contract terms and exit costs", href: "/resources/peo-contract-terms" },
-  { label: "— When a PEO is the wrong answer", href: "/resources/when-a-peo-is-the-wrong-answer" },
-  { label: "— Free PEO renewal review", href: "/resources/peo-renewal-review" },
-  { label: "HR audit checklist", href: "/resources/hr-audit-checklist" },
-  { label: "State employer guides", href: "/resources/state-employer-guides" },
-  { label: "NC vs. SC employment law", href: "/resources/nc-vs-sc-employment-law" },
-  { label: "Multi-state checklist", href: "/resources/multi-state-employer-checklist" },
-  { label: "HR Risk Score", href: "/tools/hr-risk-score" },
-  { label: "PEO cost calculator", href: "/tools/peo-cost-calculator" },
-  { label: "Case studies", href: "/case-studies" },
+  ...resourcesGroups.flatMap((g) => g.items),
 ];
 
 const partners = [
@@ -69,9 +99,13 @@ const Header = () => {
 
   const isActive = (href: string) => location.pathname === href;
 
-  const dropdowns = [
+  const dropdowns: {
+    label: string;
+    items: NavItem[];
+    groups?: NavGroup[];
+  }[] = [
     { label: "Services", items: services },
-    { label: "Resources", items: resourcesMenu },
+    { label: "Resources", items: resourcesMenu, groups: resourcesGroups },
     { label: "Partners", items: partners },
     { label: "Industries", items: industries },
     { label: "Locations", items: locations },
@@ -97,8 +131,16 @@ const Header = () => {
               className="relative"
               onMouseEnter={() => setOpenMenu(menu.label)}
               onMouseLeave={() => setOpenMenu(null)}
+              onBlur={(e) => {
+                if (!e.currentTarget.contains(e.relatedTarget as Node)) {
+                  setOpenMenu(null);
+                }
+              }}
             >
               <button
+                aria-expanded={openMenu === menu.label}
+                aria-haspopup="menu"
+                onFocus={() => setOpenMenu(menu.label)}
                 className={cn(
                   "inline-flex items-center gap-1 rounded-md px-3 py-2 text-sm font-semibold transition-colors",
                   menu.items.some((s) => isActive(s.href))
@@ -116,22 +158,70 @@ const Header = () => {
               </button>
               {openMenu === menu.label && (
                 <div className="absolute left-0 top-full pt-2">
-                  <div className="w-64 rounded-lg border border-border bg-background p-2 shadow-xl">
-                    {menu.items.map((item) => (
+                  {menu.groups ? (
+                    <div
+                      role="menu"
+                      className="w-[34rem] rounded-lg border border-border bg-background p-4 shadow-xl"
+                    >
                       <Link
-                        key={item.href}
-                        to={item.href}
+                        to="/resources"
+                        role="menuitem"
                         className={cn(
-                          "block rounded-md px-3 py-2.5 text-sm font-semibold transition-colors",
-                          isActive(item.href)
+                          "block rounded-md px-3 py-2 text-sm font-semibold transition-colors",
+                          isActive("/resources")
                             ? "bg-accent/10 text-green-ink"
                             : "text-foreground/70 hover:bg-muted hover:text-foreground"
                         )}
                       >
-                        {item.label}
+                        All resources
                       </Link>
-                    ))}
-                  </div>
+                      <div className="mt-2 grid grid-cols-2 gap-x-4 gap-y-4">
+                        {menu.groups.map((group) => (
+                          <div key={group.heading}>
+                            <p className="px-3 py-1 text-xs font-bold uppercase tracking-widest text-foreground/50">
+                              {group.heading}
+                            </p>
+                            {group.items.map((item) => (
+                              <Link
+                                key={item.href}
+                                to={item.href}
+                                role="menuitem"
+                                className={cn(
+                                  "block rounded-md px-3 py-2 text-sm font-semibold transition-colors",
+                                  isActive(item.href)
+                                    ? "bg-accent/10 text-green-ink"
+                                    : "text-foreground/70 hover:bg-muted hover:text-foreground"
+                                )}
+                              >
+                                {item.label}
+                              </Link>
+                            ))}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ) : (
+                    <div
+                      role="menu"
+                      className="w-64 rounded-lg border border-border bg-background p-2 shadow-xl"
+                    >
+                      {menu.items.map((item) => (
+                        <Link
+                          key={item.href}
+                          to={item.href}
+                          role="menuitem"
+                          className={cn(
+                            "block rounded-md px-3 py-2.5 text-sm font-semibold transition-colors",
+                            isActive(item.href)
+                              ? "bg-accent/10 text-green-ink"
+                              : "text-foreground/70 hover:bg-muted hover:text-foreground"
+                          )}
+                        >
+                          {item.label}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
                 </div>
               )}
             </div>

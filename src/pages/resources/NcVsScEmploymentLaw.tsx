@@ -43,11 +43,11 @@ const rows = [
 const faqs: Faq[] = [
   {
     q: "If we're compliant in North Carolina, are we automatically compliant in South Carolina?",
-    a: "No. The two states set different headcount thresholds for the same categories — South Carolina's E-Verify requirement applies to every employer, while North Carolina's kicks in at 25. Meeting one state's rule doesn't tell you anything about the other.",
+    a: "No. The two states set different headcount thresholds for the same categories: South Carolina's E-Verify requirement applies to every employer, while North Carolina's kicks in at 25. Meeting one state's rule doesn't tell you anything about the other.",
   },
   {
     q: "Which state's workers' comp threshold applies if we have employees in both?",
-    a: "Each state's threshold applies to the employees working there. You count North Carolina employees against North Carolina's 3-employee threshold and South Carolina employees against South Carolina's 4-employee threshold — not a combined count against either state's number, though this is worth confirming for how your specific policies are written.",
+    a: "Each state's threshold applies to the employees working there. You count North Carolina employees against North Carolina's 3-employee threshold and South Carolina employees against South Carolina's 4-employee threshold, not a combined count against either state's number, though this is worth confirming for how your specific policies are written.",
   },
   {
     q: "What should we check first if we're opening a location in the other state?",
@@ -149,7 +149,7 @@ const NcVsScEmploymentLaw = () => (
         The most consequential gap is E-Verify timing. A firm that's compliant in North
         Carolina because it has fewer than 25 employees can still be out of compliance in
         South Carolina the moment it hires its first person there, because South Carolina's
-        duty doesn't wait for a headcount threshold — it applies from the first hire, within
+        duty doesn't wait for a headcount threshold: it applies from the first hire, within
         3 business days. Firms that grow into South Carolina from a North Carolina base are
         the group most likely to miss this, because nothing changed on the North Carolina
         side to prompt a second look.
@@ -169,7 +169,7 @@ const NcVsScEmploymentLaw = () => (
           HR audit
         </Link>{" "}
         checks registrations, E-Verify enrollment, and coverage state by state, against the
-        headcount actually working there — not against a single combined number. If you're
+        headcount actually working there, not against a single combined number. If you're
         opening a location in the other state, start with the{" "}
         <Link to="/resources/multi-state-employer-checklist" className="text-green-ink hover:underline">
           multi-state employer checklist
@@ -197,7 +197,7 @@ const NcVsScEmploymentLaw = () => (
     <ServiceCta
       heading="Staff in both states? Get one clear answer, not two guesses."
       body="The audit checks each state's thresholds against your actual headcount there."
-      proof="PROOF SLOT — multi-state client reference describing a North Carolina/South Carolina finding, with headcount in each state."
+      proof="multi-state client reference describing a North Carolina/South Carolina finding, with headcount in each state."
       secondary={{ label: "See the multi-state checklist", href: "/resources/multi-state-employer-checklist" }}
     />
   </>

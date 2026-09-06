@@ -59,7 +59,7 @@ const EVerifySouthCarolina = () => (
       <p className="text-lg leading-8 text-foreground/85">
         Yes. South Carolina requires every employer, regardless of headcount,
         to verify the work eligibility of new hires using E-Verify within 3
-        business days of the hire date. There is no small-employer exemption —
+        business days of the hire date. There is no small-employer exemption:
         this applies to a one-person shop the same as a large company.
       </p>
     </Section>
@@ -97,7 +97,7 @@ const EVerifySouthCarolina = () => (
     <Section title="What to do next" alt>
       <p>
         Because South Carolina has no headcount exemption and a 3-business-day
-        deadline, the most common failure point is speed, not awareness —
+        deadline, the most common failure point is speed, not awareness:
         companies know E-Verify applies but don't run it fast enough on every
         hire. This is one of the checks in area 1 of the{" "}
         <Link to="/services/hr-audit" className="text-green-ink hover:underline">
@@ -120,7 +120,7 @@ const EVerifySouthCarolina = () => (
           South Carolina handbook checklist
         </Link>
         . If you also employ people in North Carolina, the rule is
-        different — see{" "}
+        different: see{" "}
         <Link to="/resources/e-verify-north-carolina" className="text-green-ink hover:underline">
           North Carolina's E-Verify requirement
         </Link>{" "}
@@ -140,7 +140,7 @@ const EVerifySouthCarolina = () => (
     <ServiceCta
       heading="Confirming E-Verify inside 3 business days, every time?"
       body="The HR audit checks I-9 and E-Verify timing against your actual hire dates, not just your policy."
-      proof="PROOF SLOT — client quote describing an E-Verify timing gap the audit found, South Carolina employer."
+      proof="client quote describing an E-Verify timing gap the audit found, South Carolina employer."
       secondary={{ label: "See the HR audit", href: "/services/hr-audit" }}
     />
   </>

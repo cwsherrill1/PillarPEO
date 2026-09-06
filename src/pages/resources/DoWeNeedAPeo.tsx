@@ -14,7 +14,7 @@ const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 const signals = [
   "Payroll, benefits, or compliance now take more leadership time than they should",
   "You're hiring faster than your HR processes can keep up",
-  "One person is handling payroll, benefits, and compliance — and it's not their main role",
+  "One person is handling payroll, benefits, and compliance, and it's not their main role",
   "You're worried about an employment-related mistake you haven't caught yet",
   "You want to offer competitive benefits but can't access enterprise-level plans",
 ];
@@ -30,13 +30,13 @@ const steps = [
     num: 2,
     icon: BarChart3,
     title: "Options comparison",
-    desc: "If a PEO makes sense, we show you the best-fit providers side by side — with plain-language tradeoffs.",
+    desc: "If a PEO makes sense, we show you the best-fit providers side by side, with plain-language tradeoffs.",
   },
   {
     num: 3,
     icon: Handshake,
     title: "Decision support",
-    desc: "We help you move forward with confidence — or tell you a PEO isn't the right move yet.",
+    desc: "We help you move forward with confidence, or tell you a PEO isn't the right move yet.",
   },
 ];
 
@@ -46,7 +46,7 @@ const categories = [
     name: "Size & Complexity",
     items: [
       "We have 10 or more W-2 employees",
-      "We have employees in more than one state — or plan to within the next 12 months",
+      "We have employees in more than one state, or plan to within the next 12 months",
       "Our payroll and compliance situation is more complicated than one person can comfortably manage",
       "We've had at least one payroll or compliance issue in the past 18 months",
     ],
@@ -63,7 +63,7 @@ const categories = [
   {
     name: "HR Administration",
     items: [
-      "We don't have a dedicated HR professional — HR is handled by an owner, office manager, or operations lead",
+      "We don't have a dedicated HR professional: HR is handled by an owner, office manager, or operations lead",
       "HR tasks regularly pull leadership away from higher-value work",
       "We are uncertain about our compliance posture in areas like ACA, FMLA, or state leave laws",
       "We use more than two separate vendors or platforms to handle HR, payroll, and benefits",
@@ -165,7 +165,7 @@ const DoWeNeedAPeo = () => {
             <p className="mt-6 text-lg md:text-xl text-primary-foreground/80 font-body">
               If payroll, benefits, and compliance are getting heavier every
               quarter, Pillar helps you figure out whether a PEO is the right
-              next step — before things get messy.
+              next step, before things get messy.
             </p>
             <div className="mt-6 flex justify-center">
               <UpdatedLine text="Updated September 2026" />
@@ -277,7 +277,7 @@ const DoWeNeedAPeo = () => {
             </h2>
             <p className="mt-4 text-muted-foreground text-center max-w-xl mx-auto">
               Work through this checklist and see how many of these statements apply
-              to your company. A PEO makes a lot of sense for many growing companies —
+              to your company. A PEO makes a lot of sense for many growing companies,
               and very little sense for others.
             </p>
           </Reveal>
@@ -352,7 +352,7 @@ const DoWeNeedAPeo = () => {
             </h2>
             <p className="mt-4 text-primary-foreground/80 text-lg">
               Start with a short conversation. We'll help you figure out whether
-              a PEO makes sense — and if it doesn't, we'll point you in the
+              a PEO makes sense, and if it doesn't, we'll point you in the
               right direction.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">

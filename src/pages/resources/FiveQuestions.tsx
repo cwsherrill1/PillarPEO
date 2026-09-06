@@ -13,7 +13,7 @@ const redFlagVsGood = [
   { red: "\"You'll have a team\" with no named contact or response-time commitment.", green: "Named CSM, named payroll specialist, written SLA on response times." },
   { red: "Won't share renewal history. \"Every client is different.\"", green: "Three years of average renewal % shared up front, plus references at your size." },
   { red: "Termination requires 90+ days mid-plan-year with benefits cliff.", green: "30–60 day notice, clean data export, defined offboarding playbook." },
-  { red: "References are hand-picked rave reviews from wildly different industries.", green: "References at your size, industry, and multi-state setup — you pick from a list." },
+  { red: "References are hand-picked rave reviews from wildly different industries.", green: "References at your size, industry, and multi-state setup: you pick from a list." },
 ];
 
 
@@ -29,8 +29,8 @@ const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
 const questions = [
   {
-    q: "How is your pricing actually structured — and what changes at renewal?",
-    a: "Most PEO quotes look clean on the surface. What employers miss is how the fee is calculated — per-employee-per-month (PEPM), percentage of payroll, or a bundled rate — and what can shift at renewal. Ask for the last three years of renewal history for comparable clients. If a PEO can't or won't share that, it tells you something.",
+    q: "How is your pricing actually structured, and what changes at renewal?",
+    a: "Most PEO quotes look clean on the surface. What employers miss is how the fee is calculated: per-employee-per-month (PEPM), percentage of payroll, or a bundled rate, and what can shift at renewal. Ask for the last three years of renewal history for comparable clients. If a PEO can't or won't share that, it tells you something.",
   },
   {
     q: "Who is my dedicated service contact, and what's your average response time?",
@@ -42,11 +42,11 @@ const questions = [
   },
   {
     q: "How do I get out if this doesn't work?",
-    a: "This question makes PEO reps uncomfortable — which is exactly why you should ask it. Understand the termination notice window (typically 30–90 days), what happens to your benefits mid-year if you exit, and how data and payroll history are transferred. A good PEO will have clean answers. A bad one will dodge.",
+    a: "This question makes PEO reps uncomfortable. That is exactly why you should ask it. Understand the termination notice window (typically 30–90 days), what happens to your benefits mid-year if you exit, and how data and payroll history are transferred. A good PEO will have clean answers. A bad one will dodge.",
   },
   {
     q: "Can you give me three client references in my industry and size range?",
-    a: "Not just references — references who match your profile. A PEO that's excellent for a 200-person manufacturing company may be a poor fit for a 40-person professional services firm. Ask for references with similar headcount, multi-state presence, or industry, and actually call them.",
+    a: "Not just references: references who match your profile. A PEO that's excellent for a 200-person manufacturing company may be a poor fit for a 40-person professional services firm. Ask for references with similar headcount, multi-state presence, or industry, and actually call them.",
   },
 ];
 
@@ -97,7 +97,7 @@ const FiveQuestions = () => (
             <ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources
           </Link>
           <p className="text-xl leading-8 text-foreground/85">
-            Signing with a PEO is a significant commitment. Most contracts run 12 months minimum, and switching mid-year costs time, money, and disruption. The problem is that most PEO sales reps are trained to close — not to help you evaluate. These five questions are what Pillar asks on behalf of every client before any recommendation is made.
+            Signing with a PEO is a significant commitment. Most contracts run 12 months minimum, and switching mid-year costs time, money, and disruption. The problem is that most PEO sales reps are trained to close, not to help you evaluate. These five questions are what Pillar asks on behalf of every client before any recommendation is made.
           </p>
         </Reveal>
       </div>
@@ -148,7 +148,7 @@ const FiveQuestions = () => (
             <CardContent className="p-6 md:p-8">
               <h2 className="font-heading text-2xl font-800 text-foreground">What most employers never think to ask</h2>
               <p className="mt-4 text-lg leading-8 text-foreground/85">
-                Beyond these five, there are deal-specific questions that depend on your size, industry, and current setup — things like how the PEO handles multi-state SUTA, what their technology stack looks like, and how they handle a payroll cutover. This is where having an independent advisor changes the outcome. Pillar asks these questions on your behalf — before you're locked into anything.
+                Beyond these five, there are deal-specific questions that depend on your size, industry, and current setup: things like how the PEO handles multi-state SUTA, what their technology stack looks like, and how they handle a payroll cutover. This is where having an independent advisor changes the outcome. Pillar asks these questions on your behalf, before you're locked into anything.
               </p>
             </CardContent>
           </Card>

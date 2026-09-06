@@ -70,7 +70,7 @@ const PeoSutaRates = () => (
         unemployment rate at or near the top of the state's band, because the
         pool has to absorb high-turnover employers. For a stable professional
         firm that has earned a good rate of its own, that assumption is simply
-        wrong — and it is negotiable before you sign.
+        wrong, and it is negotiable before you sign.
       </p>
     </Section>
 
@@ -78,7 +78,7 @@ const PeoSutaRates = () => (
       <p>
         State unemployment tax is experience rated. Employers who lay people off
         pay more; employers whose staff stay pay less. That is the whole design
-        of the system, and it is administered state by state — in the Carolinas,
+        of the system, and it is administered state by state: in the Carolinas,
         by the{" "}
         <a
           href="https://des.nc.gov/"
@@ -138,7 +138,7 @@ const PeoSutaRates = () => (
         For a professional-services firm this matters enormously, because most of
         your staff cross the wage base early in the year. A quote that applies an
         unemployment rate to gross payroll rather than to taxable wages can
-        overstate the cost by a wide margin — and it will do so for exactly the
+        overstate the cost by a wide margin, and it will do so for exactly the
         firms whose salaries are highest.
       </p>
       <p>
@@ -152,28 +152,28 @@ const PeoSutaRates = () => (
     <Section title="How to check the number yourself" alt>
       <ul className="space-y-3">
         <Bullet>
-          <strong className="text-foreground">Step 1 — find your own rate.</strong>{" "}
+          <strong className="text-foreground">Step 1: find your own rate.</strong>{" "}
           Your annual rate notice from each state agency gives your experience
           rate for the year. Have one for every state your people work in.
         </Bullet>
         <Bullet>
-          <strong className="text-foreground">Step 2 — find your taxable
+          <strong className="text-foreground">Step 2: find your taxable
           wages.</strong> Not gross payroll. Your quarterly unemployment filings
           show taxable wages per state, already capped at the wage base.
         </Bullet>
         <Bullet>
-          <strong className="text-foreground">Step 3 — get the PEO's rate in
+          <strong className="text-foreground">Step 3: get the PEO's rate in
           writing, per state.</strong> Ask for the assumed rate and the basis it
           will be applied to. "Pooled" is not an answer; a number and a basis is.
         </Bullet>
         <Bullet>
-          <strong className="text-foreground">Step 4 — run the same maths
+          <strong className="text-foreground">Step 4: run the same maths
           twice.</strong> Your rate against your taxable wages, then their rate
           against the same taxable wages. The difference is a real annual cost
           that belongs in the comparison alongside the administrative fee.
         </Bullet>
         <Bullet>
-          <strong className="text-foreground">Step 5 — put the difference back on
+          <strong className="text-foreground">Step 5: put the difference back on
           the table.</strong> A firm with a demonstrably better rate than the pool
           has a concrete, evidenced argument for a better assumption or an offset
           elsewhere in the quote.
@@ -186,7 +186,7 @@ const PeoSutaRates = () => (
         This is the question almost nobody asks, and it has consequences on the
         way out as well as the way in. Depending on the state and on how the PEO
         reports wages, a transition can leave your own unemployment account
-        dormant, transfer your experience, or start you fresh — and when you
+        dormant, transfer your experience, or start you fresh, and when you
         later leave the PEO, you may return to your old rating, inherit a new
         one, or be treated as a new employer.
       </p>
@@ -214,11 +214,11 @@ const PeoSutaRates = () => (
         The unemployment line interacts with everything else. A quote can show a
         low administrative fee and still cost more because of the pooled rate;
         another can show a higher fee and be cheaper overall. That is why we
-        insist on comparing fully unbundled quotes — see{" "}
+        insist on comparing fully unbundled quotes: see{" "}
         <Link to="/resources/peo-admin-fees" className="text-green-ink hover:underline">
           per-employee vs percentage of payroll
         </Link>{" "}
-        — and why a workers' compensation saving can be entirely offset by this
+        and why a workers' compensation saving can be entirely offset by this
         line, as the worked illustration in{" "}
         <Link to="/resources/when-a-peo-is-the-wrong-answer" className="text-green-ink hover:underline">
           when a PEO is the wrong answer
@@ -236,7 +236,7 @@ const PeoSutaRates = () => (
     <ServiceCta
       heading="We'll check the SUTA line for you, free."
       body="Send your rate notices and quarterly filings with your PEO quote and we will run both sets of maths side by side."
-      proof="PROOF SLOT — anonymised example of a pooled SUTA assumption corrected before signature, with the annual difference."
+      proof="anonymised example of a pooled SUTA assumption corrected before signature, with the annual difference."
       secondary={{ label: "The free renewal review", href: "/resources/peo-renewal-review" }}
     />
   </>

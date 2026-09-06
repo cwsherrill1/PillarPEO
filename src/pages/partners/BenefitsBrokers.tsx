@@ -22,7 +22,7 @@ const faqs: Faq[] = [
   },
   {
     q: "Who tells the client about the commission?",
-    a: "We do, in writing, before anything is signed — including when the work is delivered under your brand.",
+    a: "We do, in writing, before anything is signed, including when the work is delivered under your brand.",
   },
 ];
 
@@ -62,7 +62,7 @@ const BenefitsBrokers = () => (
     <ServiceHero
       eyebrow="Partners"
       title="We run the PEO question. You keep the group."
-      intro="For benefits brokers whose clients keep asking whether a PEO would be cheaper — a question you cannot ignore and should not have to answer alone."
+      intro="For benefits brokers whose clients keep asking whether a PEO would be cheaper: a question you cannot ignore and should not have to answer alone."
     />
 
     <Section title="How this works with a benefits broker">
@@ -80,7 +80,7 @@ const BenefitsBrokers = () => (
       </p>
     </Section>
 
-    <Section title="The preliminary quote — before anyone goes to market" alt>
+    <Section title="The preliminary quote: before anyone goes to market" alt>
       <p>
         Most PEO questions can be answered without a single provider being
         contacted. Send us a census and the current invoices and we give you a
@@ -105,8 +105,8 @@ const BenefitsBrokers = () => (
         </Bullet>
       </ul>
       <p>
-        The mechanics behind that read — admin fee basis, SUTA quoting, first-year
-        pricing — are set out in{" "}
+        The mechanics behind that read (admin fee basis, SUTA quoting, first-year
+        pricing) are set out in{" "}
         <Link to="/resources/peo-pricing-explained" className="text-green-ink hover:underline">
           how PEO pricing actually works
         </Link>
@@ -129,7 +129,7 @@ const BenefitsBrokers = () => (
         <Bullet>
           <strong className="text-foreground">We frequently recommend staying put.</strong>{" "}
           Where the client's existing plan wins, that is what the written
-          comparison says — see{" "}
+          comparison says, see{" "}
           <Link to="/resources/when-a-peo-is-the-wrong-answer" className="text-green-ink hover:underline">
             when a PEO is the wrong answer
           </Link>
@@ -151,8 +151,8 @@ const BenefitsBrokers = () => (
         A PEO placement usually moves the coverage onto the provider's master
         plan, which ends the direct group placement. We do not pretend otherwise.
         Where a PEO is placed through a broker partnership, the commission the
-        provider pays us is shared with you on a tiered basis — the tier depends
-        on group size and on how much of the work you carry — and the split is
+        provider pays us is shared with you on a tiered basis: the tier depends
+        on group size and on how much of the work you carry, and the split is
         agreed in writing before the client is approached.
       </p>
       <p>
@@ -176,13 +176,13 @@ const BenefitsBrokers = () => (
           free renewal review
         </Link>{" "}
         gives you something concrete to bring them about 120 days before their
-        renewal date — early enough that the notice window is still open. In the
+        renewal date, early enough that the notice window is still open. In the
         renewals we review, the interesting movement is rarely in the headline
         admin fee; it is in the benefit plan swap, the workers' compensation
         classes or the unemployment line.
       </p>
       <div className="mt-8">
-        <ProofSlot needs="PROOF SLOT — named benefits brokerage partner, one line on a PEO comparison we ran alongside them and the outcome, with written permission." />
+        <ProofSlot needs="named benefits brokerage partner, one line on a PEO comparison we ran alongside them and the outcome, with written permission." />
       </div>
     </Section>
 
@@ -200,7 +200,7 @@ const BenefitsBrokers = () => (
     <ServiceCta
       heading="Send us the group and we'll tell you if it's even worth quoting."
       body="A census and the current invoices are enough for a preliminary read. No provider is contacted until you say so."
-      proof="PROOF SLOT — second broker reference, ideally one where the recommendation was to stay put."
+      proof="second broker reference, ideally one where the recommendation was to stay put."
       secondary={{ label: "Partner overview", href: "/partners" }}
     />
   </>

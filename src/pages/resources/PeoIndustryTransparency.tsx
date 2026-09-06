@@ -209,9 +209,9 @@ const PeoIndustryTransparency = () => (
       <p>
         That is what Pillar PEO Advisors does. We are not affiliated with any single provider. We
         have no preferred placement deals and no old sales floor we are quietly feeding. The
-        model is Free Forever, the providers pay us so your savings stay intact, and we stay on
-        afterward as your long-term watchdog. We make money only when we find you the right fit,
-        and we only find the right fit by being honest with you.
+        brokerage is free to the employer because the provider pays a commission, and we disclose
+        that commission to you in writing. You can read exactly{" "}
+        <Link to="/how-we-get-paid/" className="text-green-ink underline">how we get paid</Link>.
       </p>
       <p>If you want a straight read on your current situation, we will give you one.</p>
     </Section>
@@ -238,8 +238,8 @@ const PeoIndustryTransparency = () => (
             Want a straight read on your situation?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">
-            No old sales floor, no preferred placements — just an honest comparison and a
-            long-term watchdog.
+            No old sales floor and no preferred placements. Just an honest comparison, with any
+            commission disclosed in writing.
           </p>
           <div className="mt-8">
             <Button

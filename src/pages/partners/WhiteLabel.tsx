@@ -18,7 +18,7 @@ const faqs: Faq[] = [
   },
   {
     q: "Can you join client calls?",
-    a: "Yes, as part of your team, introduced however you prefer — or not at all. Some partners want a specialist in the room; others want the analysis and nothing else.",
+    a: "Yes, as part of your team, introduced however you prefer, or not at all. Some partners want a specialist in the room; others want the analysis and nothing else.",
   },
   {
     q: "What if the client asks a question you can't answer as us?",
@@ -186,7 +186,7 @@ const WhiteLabel = () => (
         each have their own version.
       </p>
       <div className="mt-8">
-        <ProofSlot needs="PROOF SLOT — partner firm that has used white-label delivery, with a one-line quote and written permission to name them." />
+        <ProofSlot needs="partner firm that has used white-label delivery, with a one-line quote and written permission to name them." />
       </div>
     </Section>
 
@@ -204,7 +204,7 @@ const WhiteLabel = () => (
     <ServiceCta
       heading="Tell us what has to carry your name."
       body="Send the engagement you're looking at and we'll come back with scope, turnaround and exactly what the client would see."
-      proof="PROOF SLOT — second white-label reference, ideally a multi-deliverable engagement."
+      proof="second white-label reference, ideally a multi-deliverable engagement."
       secondary={{ label: "Partner overview", href: "/partners" }}
     />
   </>

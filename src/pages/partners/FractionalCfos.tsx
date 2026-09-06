@@ -86,7 +86,7 @@ const FractionalCfos = () => (
     <Section title="The three questions you actually get asked" alt>
       <ul className="space-y-3">
         <Bullet>
-          <strong className="text-foreground">"Our benefits renewal is brutal — what do we do?"</strong>{" "}
+          <strong className="text-foreground">"Our benefits renewal is brutal. What do we do?"</strong>{" "}
           We read the renewal against the prior year and tell you what moved and
           why. In the proposals we review, the increase is often concentrated in
           one or two lines rather than spread across the quote. Start at the{" "}
@@ -141,7 +141,7 @@ const FractionalCfos = () => (
 
     <Section title="What we need from you to start" alt>
       <ul className="space-y-3">
-        <Bullet>An employee census — headcount, state, role and pay basis.</Bullet>
+        <Bullet>An employee census: headcount, state, role and pay basis.</Bullet>
         <Bullet>
           The current PEO or payroll invoices, ideally three consecutive months.
         </Bullet>
@@ -187,7 +187,7 @@ const FractionalCfos = () => (
         .
       </p>
       <div className="mt-8">
-        <ProofSlot needs="PROOF SLOT — fractional CFO partner, named firm, one line on a delivered client engagement and what the client decided, with written permission." />
+        <ProofSlot needs="fractional CFO partner, named firm, one line on a delivered client engagement and what the client decided, with written permission." />
       </div>
     </Section>
 
@@ -198,14 +198,14 @@ const FractionalCfos = () => (
         <Link to="/partners" className="text-green-ink hover:underline">
           Send a partner enquiry
         </Link>{" "}
-        — it goes to Caleb directly.
+        : it goes to Caleb directly.
       </p>
     </Section>
 
     <ServiceCta
       heading="Send us the client you don't want to own the HR for."
       body="Tell us the situation and we'll tell you whether it's worth doing, whose name it carries, and what it takes."
-      proof="PROOF SLOT — second fractional CFO or COO reference, ideally multi-state."
+      proof="second fractional CFO or COO reference, ideally multi-state."
       secondary={{ label: "Partner overview", href: "/partners" }}
     />
   </>

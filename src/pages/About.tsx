@@ -30,7 +30,7 @@ const team = [
     name: "Emily Snooks",
     title: "COO",
     image: emilyPhoto,
-    bio: "Emily brings 6+ years of operations leadership across remote teams, finance, and event management. As COO, she keeps Pillar's workflows, bookkeeping, and client experience running smoothly — so the advisory work stays focused on employers.",
+    bio: "Emily brings 6+ years of operations leadership across remote teams, finance, and event management. As COO, she keeps Pillar's workflows, bookkeeping, and client experience running smoothly, so the advisory work stays focused on employers.",
   },
 ];
 
@@ -69,7 +69,7 @@ const aboutJsonLd = {
 const About = () => (
   <div>
     <SEOHead
-      title="About Pillar — HR Advisory for Professional Firms"
+      title="About Pillar: HR Advisory for Professional Firms"
       fullTitle
       description="Independent, founder-led HR advisory for professional-services firms nationwide, headquartered in Charlotte. Fixed price, commissions disclosed."
       jsonLd={aboutJsonLd}
@@ -87,7 +87,7 @@ const About = () => (
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-primary-foreground/80 md:text-xl">
             Fixed-price HR audits and projects, fractional HR, and clean
-            transitions into or out of a PEO — for law, accounting,
+            transitions into or out of a PEO for law, accounting,
             engineering, medical and nonprofit firms of 10 to 150 people.
           </p>
         </Reveal>
@@ -108,7 +108,7 @@ const About = () => (
 
         <Reveal delay={100}>
           <div className="mt-10 space-y-6 text-left text-base leading-relaxed text-muted-foreground md:text-lg">
-            <p>Caleb Sherrill didn't build Pillar from a distance — he built it from experience.</p>
+            <p>Caleb Sherrill didn't build Pillar from a distance. He built it from experience.</p>
             <p>
               As a business builder and operator, he'd already lived through the
               administrative drag that quietly steals momentum. In a previous
@@ -117,7 +117,7 @@ const About = () => (
             </p>
             <p>
               That experience made one thing clear: too many business leaders
-              spend their time solving the wrong problems — carrying avoidable
+              spend their time solving the wrong problems: carrying avoidable
               risk, confusion, and administrative burden.
             </p>
             <p>
@@ -224,9 +224,9 @@ Want to know what your HR risk actually is?
             <p>
               Managing partners and practice administrators end up owning HR by
               default. It isn't the job they trained for, it isn't in the
-              billable hour, and the mistakes it produces — a misclassified
+              billable hour, and the mistakes it produces, a misclassified
               role, a handbook written for one state, an I-9 file nobody has
-              opened in four years — stay quiet until they're expensive.
+              opened in four years, stay quiet until they're expensive.
             </p>
             <p>
               Pillar exists to take that weight off the people carrying it:

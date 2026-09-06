@@ -44,7 +44,7 @@ const jsonLd = {
     {
       "@type": "LocalBusiness",
       "@id": `${SITE_URL}/hr-consulting/rock-hill-fort-mill-sc#localbusiness`,
-      name: "Pillar PEO Advisors — HR consulting in Rock Hill and Fort Mill, SC",
+      name: "Pillar PEO Advisors: HR consulting in Rock Hill and Fort Mill, SC",
       parentOrganization: ORG_REF,
       url: `${SITE_URL}/hr-consulting/rock-hill-fort-mill-sc`,
       areaServed: {
@@ -65,7 +65,7 @@ const RockHillFortMillSc = () => (
     <SEOHead
       title="HR Consulting in Rock Hill and Fort Mill, SC | Pillar"
       fullTitle
-      description="SC E-Verify for all employers within 3 business days, workers' comp at 4+, and 7 days' notice of wage changes — handled properly."
+      description="SC E-Verify for all employers within 3 business days, workers' comp at 4+, and 7 days' notice of wage changes, handled properly."
       canonical={`${SITE_URL}/hr-consulting/rock-hill-fort-mill-sc`}
       jsonLd={jsonLd}
     />
@@ -96,7 +96,7 @@ const RockHillFortMillSc = () => (
           same obligation as a large employer, and the three-business-day window means it
           has to be part of the onboarding routine rather than something done at the end of
           the month. Compare North Carolina, where the requirement begins at 25 or more
-          employees under NCGS 64-26 — which is why a firm that relocated from Charlotte
+          employees under NCGS 64-26, which is why a firm that relocated from Charlotte
           often arrives here having never set E-Verify up at all.
         </Bullet>
         <Bullet>
@@ -113,7 +113,7 @@ const RockHillFortMillSc = () => (
             7 days' advance written notice of wage changes.
           </strong>{" "}
           This is the rule most commonly broken by employers acting generously. A raise, a
-          bonus-plan change, a new commission grid, a shift-differential adjustment — all
+          bonus-plan change, a new commission grid, a shift-differential adjustment: all
           are wage changes, all need written notice ahead of the effective date. Firms
           almost never have a document that shows they gave it.
         </Bullet>
@@ -139,8 +139,8 @@ const RockHillFortMillSc = () => (
       <p>
         Once someone performs work in North Carolina, that state's requirements attach to
         their employment: withholding and unemployment registration, its workers'
-        compensation threshold of 3 or more employees, and — once the firm reaches 25 or
-        more employees — E-Verify under NCGS 64-26. Meanwhile the South Carolina staff keep
+        compensation threshold of 3 or more employees, and, once the firm reaches 25 or
+        more employees, E-Verify under NCGS 64-26. Meanwhile the South Carolina staff keep
         every South Carolina rule.
       </p>
       <p>
@@ -163,7 +163,7 @@ const RockHillFortMillSc = () => (
           <Link to="/industries/law-firms" className="text-green-ink hover:underline">
             law firms
           </Link>{" "}
-          serving both states, often with attorneys licensed in each — which raises the
+          serving both states, often with attorneys licensed in each, which raises the
           same paralegal classification question in two jurisdictions at once.
         </Bullet>
         <Bullet>
@@ -227,7 +227,7 @@ const RockHillFortMillSc = () => (
       </p>
       <p>
         Pillar has no published street address. We come to you, and everything else is done
-        remotely — including work in states nowhere near the Carolinas.
+        remotely, including work in states nowhere near the Carolinas.
       </p>
     </Section>
 
@@ -237,7 +237,7 @@ const RockHillFortMillSc = () => (
         have. The slot below names exactly what belongs here and stays visible until a real
         local client fills it.
       </p>
-      <ProofSlot needs="PROOF SLOT — owner or practice administrator quote, Rock Hill / Fort Mill / Indian Land firm, named, with a number (headcount, hires remediated, or states registered)." />
+      <ProofSlot needs="owner or practice administrator quote, Rock Hill / Fort Mill / Indian Land firm, named, with a number (headcount, hires remediated, or states registered)." />
     </Section>
 
     <Section title="Questions South Carolina firms ask" alt>
@@ -247,7 +247,7 @@ const RockHillFortMillSc = () => (
     <ServiceCta
       heading="Get the South Carolina side right, once."
       body="A fixed-price HR audit covering both Carolinas and every other state your people work in."
-      proof="PROOF SLOT — South Carolina client reference with firm type and headcount."
+      proof="South Carolina client reference with firm type and headcount."
       secondary={{ label: "Charlotte, NC", href: "/hr-consulting/charlotte-nc" }}
     />
   </>

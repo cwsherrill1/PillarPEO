@@ -17,7 +17,7 @@ const faqs: Faq[] = [
   },
   {
     q: "We're a spin-out about to make our first three hires. What do we need before day one?",
-    a: "State registration for withholding and unemployment, workers' compensation once you reach 3 or more employees in North Carolina, I-9s completed on schedule, offer letters that state pay and classification, and a short written handbook. E-Verify becomes a requirement at 25 or more employees under NCGS 64-26 — worth setting up before you get there rather than at the threshold.",
+    a: "State registration for withholding and unemployment, workers' compensation once you reach 3 or more employees in North Carolina, I-9s completed on schedule, offer letters that state pay and classification, and a short written handbook. E-Verify becomes a requirement at 25 or more employees under NCGS 64-26; it's worth setting up before you get there rather than at the threshold.",
   },
   {
     q: "Are research staff exempt?",
@@ -44,7 +44,7 @@ const jsonLd = {
     {
       "@type": "LocalBusiness",
       "@id": `${SITE_URL}/hr-consulting/raleigh-durham-nc#localbusiness`,
-      name: "Pillar PEO Advisors — HR consulting in Raleigh-Durham, NC",
+      name: "Pillar PEO Advisors: HR consulting in Raleigh-Durham, NC",
       parentOrganization: ORG_REF,
       url: `${SITE_URL}/hr-consulting/raleigh-durham-nc`,
       areaServed: {
@@ -64,7 +64,7 @@ const RaleighDurhamNc = () => (
   <>
     <SEOHead
       title="HR Consulting in Raleigh-Durham, NC"
-      description="Contractor classification in RTP, first hires at university spin-outs, and public-contract wage rules — fixed price, quoted before the work starts."
+      description="Contractor classification in RTP, first hires at university spin-outs, and public-contract wage rules: fixed price, quoted before the work starts."
       canonical={`${SITE_URL}/hr-consulting/raleigh-durham-nc`}
       jsonLd={jsonLd}
     />
@@ -120,7 +120,7 @@ const RaleighDurhamNc = () => (
         <Bullet>
           <strong className="text-foreground">Registration before payroll.</strong> State
           withholding and unemployment accounts need to exist before the first run, and
-          they need to exist in each state where someone works — remote scientific and
+          they need to exist in each state where someone works: remote scientific and
           software hires make this a multi-state question from day one.
         </Bullet>
         <Bullet>
@@ -187,32 +187,32 @@ const RaleighDurhamNc = () => (
           >
             Engineering and architecture firms
           </Link>{" "}
-          — designer and drafter exempt status, project travel, public-contract wage terms.
+          Designer and drafter exempt status, project travel, public-contract wage terms.
         </Bullet>
         <Bullet>
           <Link to="/industries/law-firms" className="text-green-ink hover:underline">
             Law firms
           </Link>{" "}
-          — including IP and technology-transfer practices with contract attorneys on long
+          Including IP and technology-transfer practices with contract attorneys on long
           engagements.
         </Bullet>
         <Bullet>
           <Link to="/industries/cpa-firms" className="text-green-ink hover:underline">
             CPA firms
           </Link>{" "}
-          — busy-season overtime and remote seasonal staff.
+          Busy-season overtime and remote seasonal staff.
         </Bullet>
         <Bullet>
           <Link to="/industries/medical-dental" className="text-green-ink hover:underline">
             Medical and dental practices
           </Link>{" "}
-          — file separation and OSHA requirements, often across multiple sites.
+          File separation and OSHA requirements, often across multiple sites.
         </Bullet>
         <Bullet>
           <Link to="/industries/nonprofits" className="text-green-ink hover:underline">
             Nonprofits
           </Link>{" "}
-          — grant-funded roles, allocation documentation, volunteers alongside staff.
+          Grant-funded roles, allocation documentation, volunteers alongside staff.
         </Bullet>
       </ul>
     </Section>
@@ -235,7 +235,7 @@ const RaleighDurhamNc = () => (
         one. The slot below names exactly what belongs here and stays visible until a real
         local client fills it.
       </p>
-      <ProofSlot needs="PROOF SLOT — founder, COO or practice administrator quote, Raleigh, Durham or RTP organisation, named, with a number (contractors reviewed, headcount at first audit, or states registered)." />
+      <ProofSlot needs="founder, COO or practice administrator quote, Raleigh, Durham or RTP organisation, named, with a number (contractors reviewed, headcount at first audit, or states registered)." />
     </Section>
 
     <Section title="Questions Triangle organisations ask" alt>
@@ -245,7 +245,7 @@ const RaleighDurhamNc = () => (
     <ServiceCta
       heading="Book an HR audit for your Triangle organisation."
       body="Fixed price quoted before we start, 15 business days, and every state your people work in included."
-      proof="PROOF SLOT — Raleigh-Durham client reference with organisation type and headcount."
+      proof="Raleigh-Durham client reference with organisation type and headcount."
       secondary={{ label: "All Carolinas locations", href: "/hr-consulting" }}
     />
   </>

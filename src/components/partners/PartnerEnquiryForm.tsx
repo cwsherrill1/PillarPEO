@@ -73,7 +73,7 @@ const PartnerEnquiryForm = () => {
     }
     setErrors({});
     setSubmitted(true);
-    toast.success("Thanks — we'll be in touch within one business day.");
+    toast.success("Thanks, we'll be in touch within one business day.");
     setForm({ name: "", firm: "", email: "", partnerType: "", clients: "" });
   };
 
@@ -81,7 +81,7 @@ const PartnerEnquiryForm = () => {
     return (
       <div className="rounded-lg border border-border bg-background p-8 text-center">
         <p className="font-heading text-lg font-700 text-foreground">
-          Thanks — that's with us.
+          Thanks, that's with us.
         </p>
         <p className="mt-2 text-base text-muted-foreground">
           Caleb reads every partner enquiry himself and will reply within one

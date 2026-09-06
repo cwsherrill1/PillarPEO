@@ -21,7 +21,7 @@ const jsonLd = {
 };
 
 /**
- * HR Risk Score — a rebuild of the old HR Headache Score quiz.
+ * HR Risk Score: a rebuild of the old HR Headache Score quiz.
  * Nine questions, one per audit area from /services/hr-audit. The score
  * shows immediately after the last question; email is asked only afterward,
  * to send a written plan (not to gate the score).
@@ -57,7 +57,7 @@ const HrRiskScore = () => {
   return (
     <>
       <SEOHead
-        title="HR Risk Score — Free 9-Area Assessment"
+        title="HR Risk Score: Free 9-Area Assessment"
         description="Nine questions covering the same areas Pillar's HR audit checks. See your score instantly, then get a written plan by email."
         canonical={`${SITE_URL}/tools/hr-risk-score`}
         jsonLd={jsonLd}
@@ -73,7 +73,7 @@ const HrRiskScore = () => {
             eyebrow="Free 2-minute assessment"
             titlePrefix="What's Your"
             titleAccent="HR Risk Score"
-            subtitle="Nine questions, one for each area Pillar's HR audit checks. Your score shows immediately — no email required to see it."
+            subtitle="Nine questions, one for each area Pillar's HR audit checks. Your score shows immediately: no email required to see it."
             ctaText="Get My HR Risk Score"
             footerText="Free. Score shown instantly. No email required to see your result."
           />

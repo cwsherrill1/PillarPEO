@@ -141,7 +141,7 @@ const jsonLd = {
 const HrAuditChecklist = () => (
   <>
     <SEOHead
-      title="HR Audit Checklist — Nine Areas, Free"
+      title="HR Audit Checklist: Nine Areas, Free"
       description="The full HR audit checklist: nine areas and the checks inside each one, free to read and download, no email required."
       canonical={`${SITE_URL}/resources/hr-audit-checklist`}
       jsonLd={jsonLd}
@@ -185,7 +185,7 @@ const HrAuditChecklist = () => (
 
     <Section title="What to do with what you find">
       <p>
-        If most checks come back clean, good — keep this on a yearly cadence.
+        If most checks come back clean, good. Keep this on a yearly cadence.
         If you find gaps, especially in classification, registrations, or
         records, that's exactly what the{" "}
         <Link to="/services/hr-audit" className="text-green-ink hover:underline">
@@ -220,7 +220,7 @@ const HrAuditChecklist = () => (
     <ServiceCta
       heading="Want it scored instead of self-checked?"
       body="The paid HR audit runs these same nine areas against your actual documents and gives you a written, scored report in 15 business days."
-      proof="PROOF SLOT — client quote describing what the scored report changed about how they saw their risk."
+      proof="client quote describing what the scored report changed about how they saw their risk."
       secondary={{ label: "See the HR audit", href: "/services/hr-audit" }}
     />
   </>

@@ -20,7 +20,7 @@ const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 const myths = [
   { myth: "My employees will technically work for someone else.", reality: "Your employees still report to you. The PEO handles the administrative side only." },
   { myth: "We lose control of benefits decisions.", reality: "You still choose the benefit package. The PEO administers it and gives you better options through pooled buying power." },
-  { myth: "Co-employment creates legal risk.", reality: "When structured properly with a reputable PEO, it reduces compliance risk — especially for multi-state employers." },
+  { myth: "Co-employment creates legal risk.", reality: "When structured properly with a reputable PEO, it reduces compliance risk, especially for multi-state employers." },
   { myth: "We have to tell employees they now work for a PEO.", reality: "Communication requirements vary, but many employees experience no meaningful change." },
 ];
 
@@ -76,7 +76,7 @@ const CoEmployment = () => (
             When you partner with a PEO, both you and the PEO become employers of your workforce in different capacities. The PEO becomes the employer of record for payroll, tax filings, benefits administration, and regulatory compliance. You remain the employer of record for day-to-day direction, operations, culture, and all hiring and firing decisions. This shared arrangement is called co-employment.
           </p>
           <p className="mt-4 text-lg leading-8 text-foreground/85">
-            It exists because the IRS and most state agencies require a legal entity to withhold taxes and administer benefits at scale. The PEO fills that role — which is how they can offer Fortune 500-level benefits at small business prices. Pooling thousands of employees from hundreds of companies gives PEOs buying power that no single employer of 50 or 100 people could replicate.
+            It exists because the IRS and most state agencies require a legal entity to withhold taxes and administer benefits at scale. The PEO fills that role: that is how they can offer Fortune 500-level benefits at small business prices. Pooling thousands of employees from hundreds of companies gives PEOs buying power that no single employer of 50 or 100 people could replicate.
           </p>
         </Reveal>
       </div>
@@ -104,7 +104,7 @@ const CoEmployment = () => (
         <Reveal>
           <h2 className="font-heading text-2xl font-800 text-foreground md:text-3xl">What You Keep Control Of</h2>
           <p className="mt-4 text-lg leading-8 text-foreground/85">
-            This is where employers often have the most anxiety — and the most misconceptions. You retain full control of:
+            This is where employers often have the most anxiety, and the most misconceptions. You retain full control of:
           </p>
           <ul className="mt-4 space-y-3 text-base text-muted-foreground">
             {["Who you hire and who you let go", "How your employees are managed day-to-day", "Your company culture, values, and operating decisions", "Compensation decisions", "Your business strategy, clients, and operations"].map((item) => (
@@ -121,7 +121,7 @@ const CoEmployment = () => (
         <Reveal>
           <h2 className="font-heading text-2xl font-800 text-foreground md:text-3xl">The Liability Question</h2>
           <p className="mt-4 text-lg leading-8 text-foreground/85">
-            Co-employment does shift some employer liability to the PEO — specifically in areas like payroll tax compliance, employment law filings, and benefits administration. This is one of the reasons employers use PEOs: shared liability on compliance functions is meaningful protection, especially for multi-state employers navigating different state labor laws.
+            Co-employment does shift some employer liability to the PEO, specifically in areas like payroll tax compliance, employment law filings, and benefits administration. This is one of the reasons employers use PEOs: shared liability on compliance functions is meaningful protection, especially for multi-state employers navigating different state labor laws.
           </p>
           <p className="mt-4 text-lg leading-8 text-foreground/85">
             However, co-employment does not eliminate your liability as the worksite employer. You are still responsible for what happens on your job sites, how your managers treat employees, and the decisions you make about the workforce. Think of it as shared accountability on the administrative side, not a liability transfer.
@@ -138,7 +138,7 @@ const CoEmployment = () => (
             <li className="flex items-start gap-2"><span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-accent" /><span><strong className="text-foreground">A staffing arrangement.</strong> Your employees are still your employees. The PEO does not supply your labor.</span></li>
             <li className="flex items-start gap-2"><span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-accent" /><span><strong className="text-foreground">A loss of control.</strong> You make all operational and personnel decisions.</span></li>
             <li className="flex items-start gap-2"><span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-accent" /><span><strong className="text-foreground">A legal gray area.</strong> Co-employment is a well-established, IRS-recognized relationship.</span></li>
-            <li className="flex items-start gap-2"><span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-accent" /><span><strong className="text-foreground">A hidden risk.</strong> Reputable PEOs operate under ESAC or IRS Certified PEO (CPEO) status — both of which carry meaningful compliance and financial safeguards.</span></li>
+            <li className="flex items-start gap-2"><span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-accent" /><span><strong className="text-foreground">A hidden risk.</strong> Reputable PEOs operate under ESAC or IRS Certified PEO (CPEO) status, both of which carry meaningful compliance and financial safeguards.</span></li>
           </ul>
         </Reveal>
       </div>
@@ -172,7 +172,7 @@ const CoEmployment = () => (
         <Reveal>
           <h2 className="font-heading text-2xl font-800 text-foreground md:text-3xl">Is Co-Employment Right for Your Organization?</h2>
           <p className="mt-4 text-lg leading-8 text-foreground/85">
-            Co-employment works best when an employer wants professional HR infrastructure, better benefits, compliance confidence, and administrative relief — without building an internal HR department to match. It tends to be the right model for organizations with 10 to 250 employees that have outgrown founder-led HR or whose current PEO relationship is underperforming.
+            Co-employment works best when an employer wants professional HR infrastructure, better benefits, compliance confidence, and administrative relief, without building an internal HR department to match. It tends to be the right model for organizations with 10 to 250 employees that have outgrown founder-led HR or whose current PEO relationship is underperforming.
           </p>
           <p className="mt-4 text-lg leading-8 text-foreground/85">
             It is not the right model for organizations that need full HR outsourcing without any involvement, or those with unusual workforce arrangements that don't fit a standard PEO structure.
@@ -189,7 +189,7 @@ const CoEmployment = () => (
             Not sure if co-employment fits your situation?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">
-            Pillar helps employers understand the structure, compare options, and make a confident decision — without being sold by the PEO itself. Talk to an independent advisor who has no stake in which PEO you choose.
+            Pillar helps employers understand the structure, compare options, and make a confident decision, without being sold by the PEO itself. Talk to an independent advisor who has no stake in which PEO you choose.
           </p>
           <div className="mt-8">
             <Button asChild size="lg" className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20">

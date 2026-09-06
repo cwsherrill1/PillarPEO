@@ -6,7 +6,7 @@ interface SEOHeadProps {
   canonical?: string;
   jsonLd?: Record<string, unknown>;
   ogType?: "website" | "article";
-  /** When true, `title` is used verbatim — no " — Pillar PEO Advisors" suffix. */
+  /** When true, `title` is used verbatim: no " - Pillar PEO Advisors" suffix. */
   fullTitle?: boolean;
 }
 
@@ -15,7 +15,7 @@ const BASE_URL = "https://pillarpeo.com";
 
 const SEOHead = ({ title, description, canonical, jsonLd, ogType = "website", fullTitle = false }: SEOHeadProps) => {
   useEffect(() => {
-    const pageTitle = fullTitle ? title : `${title} — ${SITE_NAME}`;
+    const pageTitle = fullTitle ? title : `${title} - ${SITE_NAME}`;
 
     // Title
     document.title = pageTitle;

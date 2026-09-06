@@ -78,8 +78,8 @@ const PeoRenewalReview = () => (
         Because everything downstream of the decision takes longer than people
         expect. Gathering a clean census and loss history takes a week or two.
         Underwriting a serious quote takes several weeks. Comparing unbundled
-        quotes properly takes another. And your contract's notice window — the
-        written notice you must give to avoid auto-renewal — closes before your
+        quotes properly takes another. And your contract's notice window, the
+        written notice you must give to avoid auto-renewal, closes before your
         renewal date, not on it.
       </p>
       <p>
@@ -98,30 +98,30 @@ const PeoRenewalReview = () => (
     <Section title="What we need from you">
       <ul className="space-y-3">
         <Bullet>
-          <strong className="text-foreground">The current agreement</strong> —
+          <strong className="text-foreground">The current agreement</strong>:
           including any amendments, so we can find your term, renewal date and
           notice window.
         </Bullet>
         <Bullet>
           <strong className="text-foreground">The renewal letter or current
-          proposal</strong> — whatever pricing you have been given for the coming
+          proposal</strong>: whatever pricing you have been given for the coming
           term.
         </Bullet>
         <Bullet>
-          <strong className="text-foreground">A census</strong> — headcount by
+          <strong className="text-foreground">A census</strong>: headcount by
           state, role, salary band, and benefit enrolment tier. No names needed.
         </Bullet>
         <Bullet>
           <strong className="text-foreground">Four quarters of unemployment
-          filings</strong> — plus your current rate notice for each state, so we
+          filings</strong>: plus your current rate notice for each state, so we
           can test the unemployment assumption against your actual experience.
         </Bullet>
         <Bullet>
           <strong className="text-foreground">Workers' compensation detail</strong>{" "}
-          — class codes and loss history.
+          class codes and loss history.
         </Bullet>
         <Bullet>
-          <strong className="text-foreground">Benefit plan documents</strong> —
+          <strong className="text-foreground">Benefit plan documents</strong>:
           current plan designs, employer contribution strategy, and recent invoices.
         </Bullet>
       </ul>
@@ -131,7 +131,7 @@ const PeoRenewalReview = () => (
       <p>
         A written comparison, not a sales deck. It separates the administrative
         fee from benefits, workers' compensation and payroll taxes, so you can see
-        which line is actually driving the change — see{" "}
+        which line is actually driving the change: see{" "}
         <Link to="/resources/peo-admin-fees" className="text-green-ink hover:underline">
           per-employee vs percentage of payroll
         </Link>{" "}
@@ -154,7 +154,7 @@ const PeoRenewalReview = () => (
         </Bullet>
         <Bullet>
           <strong className="text-foreground">A recommendation.</strong> Stay,
-          renegotiate, switch, or leave the PEO model entirely — including the
+          renegotiate, switch, or leave the PEO model entirely, including the
           case for{" "}
           <Link to="/resources/when-a-peo-is-the-wrong-answer" className="text-green-ink hover:underline">
             not using a PEO at all
@@ -173,8 +173,8 @@ const PeoRenewalReview = () => (
       </p>
       <p>
         We sell no software and place no insurance of our own, so there is no
-        second product behind the recommendation. Our paid work — audits, projects,
-        fractional HR and transitions — is quoted separately and only if you ask
+        second product behind the recommendation. Our paid work, audits, projects,
+        fractional HR and transitions, is quoted separately and only if you ask
         for it. Full detail on{" "}
         <Link to="/how-we-get-paid" className="text-green-ink hover:underline">
           how we get paid
@@ -230,7 +230,7 @@ const PeoRenewalReview = () => (
     <ServiceCta
       heading="Book the free renewal review."
       body="Send us your agreement and your renewal letter. We'll tell you your notice deadline first, before anything else."
-      proof="PROOF SLOT — permissioned renewal review outcome, with the line that moved and the annual difference."
+      proof="permissioned renewal review outcome, with the line that moved and the annual difference."
       secondary={{ label: "How we get paid", href: "/how-we-get-paid" }}
     />
   </>

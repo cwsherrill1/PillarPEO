@@ -14,13 +14,13 @@ const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
 const faqs = [
   { q: "What does PEO stand for?", a: "PEO stands for Professional Employer Organization. It's a company that enters into a co-employment relationship with your business to handle payroll, benefits, HR compliance, and workers' compensation while you retain control of day-to-day operations." },
-  { q: "How does a PEO actually work?", a: "You sign a Client Service Agreement (CSA) with the PEO. They become the employer of record for tax purposes — running payroll under their FEIN, sponsoring benefits, and handling compliance — while you remain the worksite employer who hires, manages, and fires. Employees keep working for you in every way that matters." },
-  { q: "Is a PEO the same as a staffing agency?", a: "No. A staffing agency provides temporary or contract workers to you. A PEO partners with you on the people you've already hired — your existing W-2 team. You don't hand over hiring authority; you hand over administration." },
+  { q: "How does a PEO actually work?", a: "You sign a Client Service Agreement (CSA) with the PEO. They become the employer of record for tax purposes, running payroll under their FEIN, sponsoring benefits, and handling compliance, while you remain the worksite employer who hires, manages, and fires. Employees keep working for you in every way that matters." },
+  { q: "Is a PEO the same as a staffing agency?", a: "No. A staffing agency provides temporary or contract workers to you. A PEO partners with you on the people you've already hired: your existing W-2 team. You don't hand over hiring authority; you hand over administration." },
   { q: "What's the difference between a PEO and an EOR?", a: "A PEO co-employs alongside you in a state where you already have a business presence. An Employer of Record (EOR) employs workers on your behalf in countries or states where you don't have a legal entity. PEOs are for domestic teams; EORs are for international or new-state hiring." },
-  { q: "Is a PEO worth it for a small business?", a: "For most companies between 5 and 100 employees, yes — particularly if you have employees in multiple states, want competitive benefits, or don't have a dedicated HR person. Below 5 employees, basic payroll software is usually sufficient." },
+  { q: "Is a PEO worth it for a small business?", a: "For most companies between 5 and 100 employees, yes, particularly if you have employees in multiple states, want competitive benefits, or don't have a dedicated HR person. Below 5 employees, basic payroll software is usually sufficient." },
   { q: "What is a CPEO?", a: "A Certified PEO (CPEO) has been certified by the IRS, meaning the PEO is solely liable for federal employment taxes on wages it pays. This protects you from double-payment of taxes if the PEO ever defaults. Major CPEOs include ADP TotalSource, Insperity, and TriNet." },
-  { q: "Do I lose control over my employees with a PEO?", a: "No. You retain full control of hiring, firing, day-to-day management, work assignments, and pay decisions. The PEO handles administrative employment functions only — the things you'd want off your plate anyway." },
-  { q: "How is a PEO different from an HR consultant or HRIS software?", a: "An HR consultant gives advice. HRIS software (like BambooHR or Gusto) handles records and payroll. A PEO does both — and adds health benefits at large-group pricing, workers' comp coverage, and shared employer liability. It's the only model that bundles all of it." },
+  { q: "Do I lose control over my employees with a PEO?", a: "No. You retain full control of hiring, firing, day-to-day management, work assignments, and pay decisions. The PEO handles administrative employment functions only: the things you'd want off your plate anyway." },
+  { q: "How is a PEO different from an HR consultant or HRIS software?", a: "An HR consultant gives advice. HRIS software (like BambooHR or Gusto) handles records and payroll. A PEO does both and adds health benefits at large-group pricing, workers' comp coverage, and shared employer liability. It's the only model that bundles all of it." },
 ];
 
 const ARTICLE = buildArticleJsonLd({
@@ -94,7 +94,7 @@ const WhatIsAPeo = () => (
             <ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources
           </Link>
           <p className="text-xl leading-8 text-foreground/85">
-            A PEO — Professional Employer Organization — is a company that handles your payroll, benefits, HR compliance, and workers' comp under a co-employment relationship. The short version: you keep running your business, the PEO handles all the administrative employment work, and your employees get Fortune-500-grade benefits at small-business scale.
+            A PEO (Professional Employer Organization) is a company that handles your payroll, benefits, HR compliance, and workers' comp under a co-employment relationship. The short version: you keep running your business, the PEO handles all the administrative employment work, and your employees get Fortune-500-grade benefits at small-business scale.
           </p>
           <p className="mt-4 text-xl leading-8 text-foreground/85">
             That's the official definition. The rest of this guide is what's actually true once you're inside one.
@@ -104,13 +104,13 @@ const WhatIsAPeo = () => (
     </section>
 
     <Section title="What a PEO Actually Does" alt>
-      <p>A PEO is functionally an outsourced HR, payroll, and benefits department — bundled with the buying power of an employer 100x your size. Specifically:</p>
+      <p>A PEO is functionally an outsourced HR, payroll, and benefits department, bundled with the buying power of an employer 100x your size. Specifically:</p>
       <ul className="space-y-2">
         <Bullet>Runs your payroll under their federal tax ID and files all federal, state, and local employment taxes</Bullet>
         <Bullet>Sponsors and administers your health, dental, vision, life, and disability plans (typically with major carriers like Aetna, BCBS, UHC, Kaiser)</Bullet>
         <Bullet>Provides 401(k) through a Multiple Employer Plan, reducing your fiduciary liability</Bullet>
         <Bullet>Carries workers' compensation under a master policy</Bullet>
-        <Bullet>Handles HR compliance — I-9s, EEO-1, ACA filings, harassment training, posters, state-mandated leave laws</Bullet>
+        <Bullet>Handles HR compliance: I-9s, EEO-1, ACA filings, harassment training, posters, state-mandated leave laws</Bullet>
         <Bullet>Provides an HR support line and online employee self-service portal</Bullet>
         <Bullet>Manages onboarding, terminations, and unemployment claims</Bullet>
       </ul>
@@ -162,9 +162,9 @@ const WhatIsAPeo = () => (
     <Section title="PEO vs. Other Models" alt>
       <p>Quick mental model:</p>
       <ul className="space-y-2">
-        <Bullet><strong className="text-foreground">PEO:</strong> bundled — payroll + benefits + HR + workers' comp under co-employment</Bullet>
-        <Bullet><strong className="text-foreground">ASO:</strong> same services, no co-employment — you keep all employer liability</Bullet>
-        <Bullet><strong className="text-foreground">HRIS (Gusto, BambooHR):</strong> software only — no benefits brokerage, no compliance shield</Bullet>
+        <Bullet><strong className="text-foreground">PEO:</strong> bundled: payroll + benefits + HR + workers' comp under co-employment</Bullet>
+        <Bullet><strong className="text-foreground">ASO:</strong> same services, no co-employment: you keep all employer liability</Bullet>
+        <Bullet><strong className="text-foreground">HRIS (Gusto, BambooHR):</strong> software only: no benefits brokerage, no compliance shield</Bullet>
         <Bullet><strong className="text-foreground">Staffing agency:</strong> provides workers to you; not the same category</Bullet>
         <Bullet><strong className="text-foreground">EOR:</strong> employs workers in places you have no legal entity (often international)</Bullet>
       </ul>

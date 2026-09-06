@@ -10,7 +10,7 @@ import { ORG_REF, SITE_URL, breadcrumb } from "@/data/organization";
 const faqs: Faq[] = [
   {
     q: "Is supervision the same thing as HR?",
-    a: "No, and the overlap is where problems start. Supervisory review exists to meet regulatory obligations; HR exists to manage the employment relationship. They share evidence — emails, attestations, disciplinary records — but they answer to different rules on retention, access and confidentiality, and a single combined file usually satisfies neither well.",
+    a: "No, and the overlap is where problems start. Supervisory review exists to meet regulatory obligations; HR exists to manage the employment relationship. They share evidence: emails, attestations, disciplinary records; but they answer to different rules on retention, access and confidentiality, and a single combined file usually satisfies neither well.",
   },
   {
     q: "Where should licensing and registration records live?",
@@ -26,7 +26,7 @@ const faqs: Faq[] = [
   },
   {
     q: "Does the audit cover our deferred compensation plan?",
-    a: "The audit checks that pay plans are documented, applied consistently, and calculated the way the plan says — including how deferred amounts and clawbacks are described to the people they apply to. Plan design and the tax treatment of deferred compensation belong with your counsel and tax adviser.",
+    a: "The audit checks that pay plans are documented, applied consistently, and calculated the way the plan says, including how deferred amounts and clawbacks are described to the people they apply to. Plan design and the tax treatment of deferred compensation belong with your counsel and tax adviser.",
   },
 ];
 
@@ -88,8 +88,8 @@ const FinancialAdvisors = () => (
           <strong className="text-foreground">
             Supervision files and personnel files in one place.
           </strong>{" "}
-          The same event — an email review flag, a client complaint, a disciplinary
-          conversation — generates records for two purposes with two different retention
+          The same event, an email review flag, a client complaint, a disciplinary
+          conversation, generates records for two purposes with two different retention
           and access rules. Merged, they tend to be over-retained for one purpose and
           under-protected for the other, and access is granted by role rather than by need.
         </Bullet>
@@ -107,7 +107,7 @@ const FinancialAdvisors = () => (
             Producer pay plans that exist only in an email.
           </strong>{" "}
           Grid splits, bonus thresholds, treatment of inherited books and what happens to
-          trailing revenue when someone leaves — often agreed in a message years ago,
+          trailing revenue when someone leaves, often agreed in a message years ago,
           calculated by hand each period, and understood differently by the two people who
           agreed it. This is the single most common source of disputes we see in advisory
           firms.
@@ -145,7 +145,7 @@ const FinancialAdvisors = () => (
       </p>
       <p>
         We stay in our lane deliberately. Pillar does not advise on your regulatory
-        obligations as an adviser — that is your compliance consultant's and your
+        obligations as an adviser; that is your compliance consultant's and your
         counsel's work. What we audit is the employment layer sitting under it: whether
         records are separated, whether policies are written and acknowledged, whether pay
         plans are documented and calculated as documented, and whether separations are
@@ -167,7 +167,7 @@ const FinancialAdvisors = () => (
     </Section>
 
     <Section title="Proof" alt>
-      <ProofSlot needs="PROOF SLOT — principal or COO quote, RIA or advisory firm, with a number (AUM band optional, headcount and what the pay-plan documentation resolved)." />
+      <ProofSlot needs="principal or COO quote, RIA or advisory firm, with a number (AUM band optional, headcount and what the pay-plan documentation resolved)." />
     </Section>
 
     <Section title="Questions advisory firms ask">
@@ -177,7 +177,7 @@ const FinancialAdvisors = () => (
     <ServiceCta
       heading="Put the employment layer in writing."
       body="A fixed-price audit of the HR side of your firm, scoped and quoted before we start."
-      proof="PROOF SLOT — advisory firm reference describing the pay-plan documentation outcome."
+      proof="advisory firm reference describing the pay-plan documentation outcome."
       secondary={{ label: "See all industries", href: "/industries" }}
     />
   </>

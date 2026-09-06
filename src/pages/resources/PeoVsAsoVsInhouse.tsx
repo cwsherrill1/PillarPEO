@@ -20,14 +20,14 @@ const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
 const comparisonRows = [
   { factor: "Employment structure", peo: "Co-employment", aso: "Sole employer", inhouse: "Sole employer" },
-  { factor: "Benefits buying power", peo: "High — pooled with thousands", aso: "Moderate — some pooling", inhouse: "Low — priced as single employer" },
-  { factor: "Compliance support", peo: "Shared — PEO bears some liability", aso: "Advisory only — you bear all", inhouse: "Internal only" },
+  { factor: "Benefits buying power", peo: "High: pooled with thousands", aso: "Moderate: some pooling", inhouse: "Low: priced as single employer" },
+  { factor: "Compliance support", peo: "Shared: PEO bears some liability", aso: "Advisory only: you bear all", inhouse: "Internal only" },
   { factor: "Cost structure", peo: "PEPM or % of payroll", aso: "Typically lower PEPM", inhouse: "Salary + overhead + tools" },
   { factor: "Control of employees", peo: "Full operational control retained", aso: "Full control", inhouse: "Full control" },
   { factor: "Best headcount range", peo: "10–500 employees", aso: "50–500 employees", inhouse: "200+ employees" },
   { factor: "Setup complexity", peo: "Moderate", aso: "Moderate", inhouse: "High" },
   { factor: "Workers' comp", peo: "Usually bundled & managed", aso: "You source & manage", inhouse: "You source & manage" },
-  { factor: "Exit flexibility", peo: "Contract, 30–90 day notice", aso: "Similar", inhouse: "Internal — more complex" },
+  { factor: "Exit flexibility", peo: "Contract, 30–90 day notice", aso: "Similar", inhouse: "Internal, more complex" },
 ];
 
 const Bullet = ({ children }: { children: React.ReactNode }) => (
@@ -79,7 +79,7 @@ const PeoVsAsoVsInhouse = () => (
             <ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources
           </Link>
           <p className="text-xl leading-8 text-foreground/85">
-            There's a common assumption that a PEO is the right answer for every growing company. It isn't. The right HR model depends on your size, complexity, growth stage, and how much control your leadership wants to retain. This guide breaks down the three most common models so you can make the right call — not just the most marketed one.
+            There's a common assumption that a PEO is the right answer for every growing company. It isn't. The right HR model depends on your size, complexity, growth stage, and how much control your leadership wants to retain. This guide breaks down the three most common models so you can make the right call, not just the most marketed one.
           </p>
         </Reveal>
       </div>
@@ -92,7 +92,7 @@ const PeoVsAsoVsInhouse = () => (
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {[
             { title: "PEO", desc: "A co-employment arrangement where the PEO becomes the employer of record for payroll, taxes, and benefits administration. You retain full operational control. The PEO pools your employees with thousands of others to deliver enterprise-grade benefits at a cost smaller companies couldn't access independently." },
-            { title: "ASO", desc: "An ASO provides many of the same administrative services — payroll processing, HR support, benefits administration — but without co-employment. You remain the sole employer of record. You get administrative help without giving up any legal employer status." },
+            { title: "ASO", desc: "An ASO provides many of the same administrative services: payroll processing, HR support, benefits administration, but without co-employment. You remain the sole employer of record. You get administrative help without giving up any legal employer status." },
             { title: "In-House HR", desc: "Hiring internal HR staff to handle payroll, compliance, benefits, and people operations directly. You own the full function, retain complete control, and bear full cost and liability." },
           ].map((d, i) => (
             <Reveal key={d.title} delay={i * 80}>
@@ -168,7 +168,7 @@ const PeoVsAsoVsInhouse = () => (
             <Bullet>A company that chooses an ASO when it actually needed a PEO misses the benefits buying power that would have improved employee retention</Bullet>
             <Bullet>A company that skips all three and patches together DIY HR creates compliance exposure that often only becomes visible when something goes wrong</Bullet>
           </ul>
-          <p className="mt-4 font-semibold text-foreground">The right answer depends on your specific situation — and it's rarely the one a vendor is selling you.</p>
+          <p className="mt-4 font-semibold text-foreground">The right answer depends on your specific situation, and it's rarely the one a vendor is selling you.</p>
         </Reveal>
       </div>
     </section>
@@ -181,7 +181,7 @@ const PeoVsAsoVsInhouse = () => (
             Let's figure out which model actually fits your company.
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">
-            Pillar's discovery process takes about 30 minutes and gives you a clear, unbiased picture of your options — with no pressure to buy anything.
+            Pillar's discovery process takes about 30 minutes and gives you a clear, unbiased picture of your options, with no pressure to buy anything.
           </p>
           <div className="mt-8">
             <Button asChild size="lg" className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20">

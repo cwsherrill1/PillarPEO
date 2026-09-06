@@ -95,7 +95,7 @@ export const pricing = {
 export const serviceLadder = [
   {
     mark: pricing.audit.mark,
-    name: "HR Audit — the Load Report",
+    name: "HR Audit: the Load Report",
     price: "$2,500 / $4,000 / $6,000 by headcount band",
     who: pricing.audit.who,
     href: "/services/hr-audit",
@@ -160,7 +160,7 @@ export const hrProjects = [
   {
     name: "Manager training",
     price: "$1,500–$4,500",
-    desc: "Working sessions for the people who make employment decisions — hiring, documentation, discipline, and leave conversations.",
+    desc: "Working sessions for the people who make employment decisions: hiring, documentation, discipline, and leave conversations.",
   },
 ] as const;
 

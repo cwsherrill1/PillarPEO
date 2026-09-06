@@ -92,7 +92,7 @@ const EmployeeHealthBenefitsOptions = () => (
         </Reveal>
         <Reveal delay={100}>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80 md:text-xl">
-            Eight ways employers can offer health benefits — what they are, who they fit, and the
+            Eight ways employers can offer health benefits: what they are, who they fit, and the
             tradeoffs nobody mentions on the sales call.
           </p>
         </Reveal>
@@ -333,8 +333,9 @@ const EmployeeHealthBenefitsOptions = () => (
         We exist to help employers compare their options and make a confident decision without
         guessing. We are independent, we are not feeding business back to an old sales floor, and
         our job is to find the structure that actually fits your business, whether that is a PEO
-        arrangement or something else entirely. The model is Free Forever, the providers pay us so
-        your savings stay intact, and we stay on as your long-term watchdog.
+        arrangement or something else entirely. PEO brokerage is free to the employer because the
+        provider pays a commission, and we disclose that commission to you in writing. See{" "}
+        <Link to="/how-we-get-paid/" className="text-green-ink underline">how we get paid</Link>.
       </p>
       <p>
         If you want a straight read on which of these eight paths makes the most sense for your
@@ -365,7 +366,7 @@ const EmployeeHealthBenefitsOptions = () => (
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">
             We'll walk through all eight options with you and recommend the structure that actually
-            fits your business — independent, no pressure, free forever.
+            fits your business, independent, no pressure, free forever.
           </p>
           <div className="mt-8">
             <Button

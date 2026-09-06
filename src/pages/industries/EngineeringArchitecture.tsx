@@ -89,7 +89,7 @@ const EngineeringArchitecture = () => (
           <strong className="text-foreground">
             Designers and drafters treated as exempt by title.
           </strong>{" "}
-          Firms tend to classify by seniority ladder — everyone from Designer II upward is
+          Firms tend to classify by seniority ladder: everyone from Designer II upward is
           salaried and exempt. The test is duties and independent judgment. Someone
           producing drawings to a licensed professional's direction usually does not clear
           it, however skilled the work is. Because the rule is applied by grade, the error
@@ -147,7 +147,7 @@ const EngineeringArchitecture = () => (
       </p>
       <p>
         Alongside the standard inputs we ask for job descriptions at every grade in the
-        design ladder — that is where the classification answer lives — and for any public
+        design ladder (that is where the classification answer lives) and for any public
         contract with wage or reporting terms, so we read what you actually agreed to
         rather than what is typical.
       </p>
@@ -168,7 +168,7 @@ const EngineeringArchitecture = () => (
     </Section>
 
     <Section title="Proof" alt>
-      <ProofSlot needs="PROOF SLOT — principal or director of operations quote, engineering or architecture firm, with a number (grades reviewed, states registered, or field-pay policy rewritten)." />
+      <ProofSlot needs="principal or director of operations quote, engineering or architecture firm, with a number (grades reviewed, states registered, or field-pay policy rewritten)." />
     </Section>
 
     <Section title="Questions design firms ask">
@@ -178,7 +178,7 @@ const EngineeringArchitecture = () => (
     <ServiceCta
       heading="Get the design ladder classified once, properly."
       body="A fixed-price audit covering every state your projects put people in, quoted before we start."
-      proof="PROOF SLOT — engineering firm reference describing a multi-state project registration cleanup."
+      proof="engineering firm reference describing a multi-state project registration cleanup."
       secondary={{ label: "See all industries", href: "/industries" }}
     />
   </>

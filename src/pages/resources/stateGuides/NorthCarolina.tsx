@@ -11,7 +11,7 @@ import { ORG_REF, SITE_URL, breadcrumb } from "@/data/organization";
 const faqs: Faq[] = [
   {
     q: "At what headcount does E-Verify apply in North Carolina?",
-    a: "At 25 employees, under N.C. Gen. Stat. § 64-26. Below that headcount, North Carolina does not require it, though a federal contract or a specific industry rule can still require it — that's a separate check.",
+    a: "At 25 employees, under N.C. Gen. Stat. § 64-26. Below that headcount, North Carolina does not require it, though a federal contract or a specific industry rule can still require it: that's a separate check.",
   },
   {
     q: "At what headcount do we need workers' compensation coverage in North Carolina?",
@@ -19,10 +19,10 @@ const faqs: Faq[] = [
   },
   {
     q: "Do North Carolina's rules apply the same way to part-time and seasonal staff?",
-    a: "Headcount tests generally count individuals, not full-time-equivalent hours, but the exact counting method for a given threshold is worth verifying against the current statute rather than assumed — we check this during the audit.",
+    a: "Headcount tests generally count individuals, not full-time-equivalent hours, but the exact counting method for a given threshold is worth verifying against the current statute rather than assumed: we check this during the audit.",
   },
   {
-    q: "We have staff in both North Carolina and South Carolina — do the same numbers apply?",
+    q: "We have staff in both North Carolina and South Carolina: do the same numbers apply?",
     a: "No. The two states set different thresholds for the same categories. See the North Carolina vs. South Carolina comparison for a side-by-side table.",
   },
 ];
@@ -62,7 +62,7 @@ const NorthCarolina = () => (
         North Carolina sets two employer obligations by a specific employee count: workers'
         compensation coverage at three or more employees, and E-Verify enrollment at 25 or
         more employees under N.C. Gen. Stat. § 64-26. Most other obligations either apply to
-        every employer regardless of size or depend on federal thresholds — we verify those
+        every employer regardless of size or depend on federal thresholds: we verify those
         against the current statute rather than estimate them here.
       </p>
     </Section>
@@ -180,7 +180,7 @@ const NorthCarolina = () => (
     </Section>
 
     <Section title="Proof" alt>
-      <ProofSlot needs="PROOF SLOT — North Carolina client quote describing an E-Verify or workers' comp finding, with headcount at the time." />
+      <ProofSlot needs="North Carolina client quote describing an E-Verify or workers' comp finding, with headcount at the time." />
     </Section>
 
     <Section title="Questions North Carolina employers ask">
@@ -190,7 +190,7 @@ const NorthCarolina = () => (
     <ServiceCta
       heading="Know exactly which North Carolina rules apply to you."
       body="The audit checks your headcount against the current thresholds, not against a guess."
-      proof="PROOF SLOT — North Carolina client reference with headcount and a specific finding."
+      proof="North Carolina client reference with headcount and a specific finding."
       secondary={{ label: "See all state guides", href: "/resources/state-employer-guides" }}
     />
   </>

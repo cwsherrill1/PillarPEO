@@ -95,7 +95,7 @@ const Transitions = () => (
             <Link to="/services/peo-brokerage" className="text-green-ink hover:underline">
               PEO brokerage
             </Link>{" "}
-            — that comparison is free.
+            : that comparison is free.
           </p>
         </Reveal>
       </div>
@@ -142,7 +142,7 @@ const Transitions = () => (
               documents need an officer's signature and are the most common source of delay.
             </li>
             <li>
-              Nominate one internal owner — usually the practice administrator — who can
+              Nominate one internal owner, usually the practice administrator, who can
               answer census and payroll questions the same day.
             </li>
             <li>
@@ -157,7 +157,7 @@ const Transitions = () => (
     <ServiceCta
       heading="Planning a move?"
       body="Bring us the date you want to land on and we'll tell you what has to happen, and when."
-      proof="PROOF SLOT — client quote on a completed PEO exit or switch, with headcount, states and the go-live date."
+      proof="client quote on a completed PEO exit or switch, with headcount, states and the go-live date."
       secondary={{ label: "See all services", href: "/services" }}
     />
   </>

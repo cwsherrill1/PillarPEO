@@ -50,7 +50,7 @@ const CharlotteNc = lazy(() => import("./pages/locations/CharlotteNc"));
 const RockHillFortMillSc = lazy(() => import("./pages/locations/RockHillFortMillSc"));
 const RaleighDurhamNc = lazy(() => import("./pages/locations/RaleighDurhamNc"));
 
-// Batch 4 — state employer guides and compliance resources
+// Batch 4: state employer guides and compliance resources
 const StateEmployerGuides = lazy(() => import("./pages/resources/stateGuides/StateEmployerGuides"));
 const StateGuideNorthCarolina = lazy(() => import("./pages/resources/stateGuides/NorthCarolina"));
 const StateGuideSouthCarolina = lazy(() => import("./pages/resources/stateGuides/SouthCarolina"));
@@ -160,7 +160,7 @@ const App = () => (
               <Route path="/privacy" element={<Privacy />} />
               <Route path="/terms" element={<Terms />} />
 
-              {/* 301 redirects — generated from src/data/redirects.ts */}
+              {/* 301 redirects: generated from src/data/redirects.ts */}
               {activeRedirects.map((r) => (
                 <Route key={r.from} path={r.from} element={<Navigate to={r.to} replace />} />
               ))}

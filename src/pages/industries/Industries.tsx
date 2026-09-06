@@ -48,7 +48,7 @@ const Industries = () => (
       <UpdatedLine />
       <p>
         Pillar works with professional-services firms of roughly 10 to 150 people, in
-        every state their people work in. The service ladder is the same for everyone —{" "}
+        every state their people work in. The service ladder is the same for everyone:{" "}
         <Link to="/services/hr-audit" className="text-green-ink hover:underline">
           an HR audit
         </Link>{" "}
@@ -60,7 +60,7 @@ const Industries = () => (
         <Link to="/services/fractional-hr" className="text-green-ink hover:underline">
           fractional HR
         </Link>{" "}
-        — but what turns up in the audit depends heavily on what kind of firm you run.
+        , but what turns up in the audit depends heavily on what kind of firm you run.
       </p>
 
       <div className="mt-10 grid gap-6 md:grid-cols-2">
@@ -88,8 +88,8 @@ const Industries = () => (
 
     <ServiceCta
       heading="Start with what's actually wrong."
-      body="The audit runs 41 checks across nine areas and gives you a written, scored picture of your exposure — in every state you employ people."
-      proof="PROOF SLOT — one quote per industry, from a named firm type and headcount, ideally with a number attached."
+      body="The audit runs 41 checks across nine areas and gives you a written, scored picture of your exposure, in every state you employ people."
+      proof="one quote per industry, from a named firm type and headcount, ideally with a number attached."
       secondary={{ label: "See all services", href: "/services" }}
     />
   </>

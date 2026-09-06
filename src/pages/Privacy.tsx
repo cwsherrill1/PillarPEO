@@ -57,7 +57,7 @@ const Privacy = () => {
         title="Privacy Policy"
         canonical={`${SITE_URL}/privacy`}
         jsonLd={jsonLd}
-        description="Pillar PEO Advisors' privacy policy — how we collect, use, and protect your information."
+        description="Pillar PEO Advisors' privacy policy: how we collect, use, and protect your information."
       />
       <section className="bg-primary py-20 text-primary-foreground md:py-28">
         <div className="container text-center">

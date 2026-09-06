@@ -22,7 +22,7 @@ const faqs: Faq[] = [
   },
   {
     q: "Does Pillar publish its own fees?",
-    a: "No. Pillar's engagements are fixed price, quoted before the work starts, and scoped to your headcount and the states you employ in. PEO brokerage is free to you — the PEO pays the commission and we disclose it in writing.",
+    a: "No. Pillar's engagements are fixed price, quoted before the work starts, and scoped to your headcount and the states you employ in. PEO brokerage is free to you: the PEO pays the commission and we disclose it in writing.",
   },
 ];
 
@@ -55,7 +55,7 @@ const pages = [
   {
     href: "/resources/peo-suta-rates",
     title: "The SUTA line nobody checks",
-    desc: "Pooled, top-of-band unemployment rates quoted to a stable firm that has never earned one — and the basis error underneath.",
+    desc: "Pooled, top-of-band unemployment rates quoted to a stable firm that has never earned one, and the basis error underneath.",
   },
   {
     href: "/resources/peo-admin-fees",
@@ -84,7 +84,7 @@ const PeoPricingExplained = () => (
     <SEOHead
       title="How PEO Pricing Actually Works"
       fullTitle
-      description="Where PEO pricing hides money: first-year discounts, pooled SUTA rates, fee basis and exit clauses — written from the proposals we review every week."
+      description="Where PEO pricing hides money: first-year discounts, pooled SUTA rates, fee basis and exit clauses, written from the proposals we review every week."
       canonical={`${SITE_URL}/resources/peo-pricing-explained`}
       ogType="article"
       jsonLd={jsonLd}
@@ -93,7 +93,7 @@ const PeoPricingExplained = () => (
     <ServiceHero
       eyebrow="Resources · PEO pricing"
       title="How PEO pricing actually works"
-      intro="Six pages on where the money hides in a PEO proposal, written from the proposals we review as a broker — not from other people's blogs."
+      intro="Six pages on where the money hides in a PEO proposal, written from the proposals we review as a broker, not from other people's blogs."
     />
 
     <Section title="How does PEO pricing actually work?">
@@ -102,8 +102,8 @@ const PeoPricingExplained = () => (
         A PEO quote has four moving parts: an administrative fee, the benefit
         premiums, the workers' compensation rate, and the payroll taxes it
         assumes on your behalf. Only the first is usually negotiated openly. The
-        rest — especially the state unemployment assumption and the basis the
-        fee is charged on — are where most of the money quietly moves.
+        rest, especially the state unemployment assumption and the basis the
+        fee is charged on, are where most of the money quietly moves.
       </p>
       <p>
         Buyers compare the administrative fee because it is the number the
@@ -170,8 +170,8 @@ const PeoPricingExplained = () => (
 
     <Section title="How we source what's on these pages" alt>
       <p>
-        Two rules. Where we describe how the industry behaves — how fees are
-        structured, what happens at renewal, how unemployment rates get quoted —
+        Two rules. Where we describe how the industry behaves: how fees are
+        structured, what happens at renewal, how unemployment rates get quoted,
         we are describing what we see first-hand in the proposals and invoices
         we review as a broker. We say so, and we do not dress it up as a
         statistic.
@@ -249,7 +249,7 @@ const PeoPricingExplained = () => (
     <ServiceCta
       heading="Have a renewal coming? We'll review it free."
       body="Send us your census, two payroll registers, your current invoice and your benefit summaries. You get a side-by-side of what you pay now against what the market would charge."
-      proof="PROOF SLOT — anonymised renewal review outcome, professional-services firm, with the line item that moved."
+      proof="anonymised renewal review outcome, professional-services firm, with the line item that moved."
       secondary={{ label: "The free renewal review", href: "/resources/peo-renewal-review" }}
     />
   </>

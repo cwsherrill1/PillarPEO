@@ -12,16 +12,16 @@ const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
 const faqs = [
   { q: "What benefits does a PEO actually provide?", a: "A PEO bundles health, dental, vision, life, disability, 401(k), FSA/HSA, EAP, commuter benefits, and often pet insurance and supplemental coverage. Because the PEO is the employer of record for thousands of clients combined, your small company gets large-group pricing and plan options." },
-  { q: "Are PEO health insurance plans cheaper?", a: "Sometimes. The honest answer: PEOs typically beat the small-group market by 5–20% for white-collar workforces and offer richer plan designs (broader networks, lower deductibles). For high-claims industries, the savings can be smaller — but plan quality is almost always better." },
-  { q: "Can employees keep their doctors when we move to a PEO?", a: "Usually yes. PEOs offer Aetna, BCBS, Kaiser, UHC, and Cigna in most states — the same major networks employees already use. Always pull the in-network provider lookup before signing so employees see continuity." },
-  { q: "Does a PEO offer a 401(k)?", a: "Yes — most PEOs offer either a multiple-employer 401(k) (MEP) or pooled employer plan (PEP), which dramatically reduces fiduciary risk and admin burden. You can also keep your existing 401(k) plan when joining a PEO." },
+  { q: "Are PEO health insurance plans cheaper?", a: "Sometimes. The honest answer: PEOs typically beat the small-group market by 5–20% for white-collar workforces and offer richer plan designs (broader networks, lower deductibles). For high-claims industries, the savings can be smaller, but plan quality is almost always better." },
+  { q: "Can employees keep their doctors when we move to a PEO?", a: "Usually yes. PEOs offer Aetna, BCBS, Kaiser, UHC, and Cigna in most states: the same major networks employees already use. Always pull the in-network provider lookup before signing so employees see continuity." },
+  { q: "Does a PEO offer a 401(k)?", a: "Yes, most PEOs offer either a multiple-employer 401(k) (MEP) or pooled employer plan (PEP), which dramatically reduces fiduciary risk and admin burden. You can also keep your existing 401(k) plan when joining a PEO." },
   { q: "What about workers' comp through a PEO?", a: "PEOs provide workers' comp via their master policy. Premiums are competitive for most industries because risk is pooled across thousands of employers. High-risk industries (construction, manufacturing) sometimes pay more under PEOs and should compare carefully." },
-  { q: "Do PEO benefits include things like EAP, mental health, and pet insurance?", a: "Yes — these voluntary and ancillary benefits are one of the underrated reasons to use a PEO. Modern PEOs include Calm, Talkspace, OneMedical, ClassPass, pet insurance, and student-loan repayment platforms that would be too expensive to source individually as a small employer." },
+  { q: "Do PEO benefits include things like EAP, mental health, and pet insurance?", a: "Yes, these voluntary and ancillary benefits are one of the underrated reasons to use a PEO. Modern PEOs include Calm, Talkspace, OneMedical, ClassPass, pet insurance, and student-loan repayment platforms that would be too expensive to source individually as a small employer." },
 ];
 
 const ARTICLE = buildArticleJsonLd({
   title: "PEO Benefits Explained: What You Actually Get",
-  description: "PEO benefits explained — health, 401(k), workers' comp, EAP, and ancillary perks. An honest breakdown of what's included, what's better, and where PEOs underdeliver.",
+  description: "PEO benefits explained: health, 401(k), workers' comp, EAP, and ancillary perks. An honest breakdown of what's included, what's better, and where PEOs underdeliver.",
   path: "/resources/peo-benefits",
   datePublished: "2026-05-15",
   dateModified: "2026-09-05",
@@ -90,21 +90,21 @@ const PeoBenefits = () => (
             <ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources
           </Link>
           <p className="text-xl leading-8 text-foreground/85">
-            "PEO benefits" gets used as a catch-all term, but the actual stack ranges from genuinely impressive (Fortune-500-grade health plans for 12 employees) to ordinary (the same 401(k) you'd get anywhere). Here's an honest breakdown of every category — what's bundled, what's negotiable, and where PEOs actually beat the open market.
+            "PEO benefits" gets used as a catch-all term, but the actual stack ranges from genuinely impressive (Fortune-500-grade health plans for 12 employees) to ordinary (the same 401(k) you'd get anywhere). Here's an honest breakdown of every category: what's bundled, what's negotiable, and where PEOs actually beat the open market.
           </p>
         </Reveal>
       </div>
     </section>
 
     <Section title="The Core Benefits Stack" alt>
-      <p>Every legitimate PEO offers the following — quality and pricing vary, but the categories are standard:</p>
+      <p>Every legitimate PEO offers the following: quality and pricing vary, but the categories are standard:</p>
       <Card className="mt-2 border-accent/20"><CardContent className="p-6">
         <h3 className="font-heading font-700 text-foreground">Health Insurance (Medical, Dental, Vision)</h3>
         <p className="mt-2 text-sm text-muted-foreground">Aetna, BCBS, UHC, Cigna, or Kaiser depending on geography. Multiple plan designs (HMO, PPO, HDHP+HSA). Large-group pricing typically saves 5–20% versus the open small-group market.</p>
       </CardContent></Card>
       <Card className="mt-3 border-accent/20"><CardContent className="p-6">
         <h3 className="font-heading font-700 text-foreground">401(k) Retirement</h3>
-        <p className="mt-2 text-sm text-muted-foreground">Multiple Employer Plan (MEP) or Pooled Employer Plan (PEP) — significantly reduced fiduciary liability and lower admin fees per participant. Roth, traditional, and safe harbor options.</p>
+        <p className="mt-2 text-sm text-muted-foreground">Multiple Employer Plan (MEP) or Pooled Employer Plan (PEP): significantly reduced fiduciary liability and lower admin fees per participant. Roth, traditional, and safe harbor options.</p>
       </CardContent></Card>
       <Card className="mt-3 border-accent/20"><CardContent className="p-6">
         <h3 className="font-heading font-700 text-foreground">Workers' Compensation</h3>
@@ -143,7 +143,7 @@ const PeoBenefits = () => (
 
     <Section title="The Recruiting Math">
       <p>The fastest-overlooked benefit of using a PEO: the offer letter looks bigger.</p>
-      <p>A 15-person startup competing for a senior engineer against Google can credibly offer Aetna PPO with a $500 deductible, 6% 401(k) match in a low-cost MEP, and a $2,000/year wellness stipend. That's not a startup benefits package — that's a Fortune 500 benefits package. Recruiters routinely close offers they would have lost without it.</p>
+      <p>A 15-person startup competing for a senior engineer against Google can credibly offer Aetna PPO with a $500 deductible, 6% 401(k) match in a low-cost MEP, and a $2,000/year wellness stipend. That's not a startup benefits package. That's a Fortune 500 benefits package. Recruiters routinely close offers they would have lost without it.</p>
     </Section>
 
     <Section title="Frequently Asked Questions" alt>
