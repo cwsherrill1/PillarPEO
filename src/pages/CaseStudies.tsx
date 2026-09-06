@@ -108,6 +108,85 @@ const CaseStudies = () => (
       </div>
     </section>
 
+    <section className="bg-background py-20 md:py-28">
+      <div className="container max-w-3xl">
+        <Reveal>
+          <h2 className="font-heading text-2xl font-800 text-foreground md:text-3xl">
+            The permission policy, in full
+          </h2>
+          <p className="mt-4 text-muted-foreground">
+            Professional-services firms are cautious about being written about, and they
+            should be. HR work touches pay, classification, terminations and immigration
+            paperwork — subjects a managing partner does not want attached to the firm's
+            name in a search result. So the rule here is simple and it does not bend.
+          </p>
+          <ul className="mt-6 space-y-3 text-muted-foreground">
+            <li>
+              Nothing is published without written permission from the client, given after
+              they have read the finished draft. Verbal approval in a meeting is not enough.
+            </li>
+            <li>
+              The client chooses the level of identification: named firm, or described only
+              by sector, headcount band and region. Anonymous is always an option and is
+              never treated as a lesser case study.
+            </li>
+            <li>
+              No employee is identifiable, ever — not by name, role, or a detail specific
+              enough to make them recognisable inside their own firm.
+            </li>
+            <li>
+              Permission can be withdrawn at any time, for any reason, and the page comes
+              down without a conversation about it.
+            </li>
+            <li>
+              We do not publish composites, illustrative examples, or "based on a real
+              engagement" stories. A composite is fiction with a straight face.
+            </li>
+          </ul>
+        </Reveal>
+
+        <Reveal delay={100}>
+          <h2 className="mt-14 font-heading text-2xl font-800 text-foreground md:text-3xl">
+            What a number has to mean here
+          </h2>
+          <p className="mt-4 text-muted-foreground">
+            Every case study carries at least one figure, and the figure has to be one the
+            client would recognise on their own records: employees reclassified, states
+            registered, days from kickoff to go-live, the size of a corrected filing, the
+            difference between the quotes on the table. What you will not see is a
+            percentage saving with no baseline, an ROI multiple, or a satisfaction score
+            invented for the page.
+          </p>
+          <p className="mt-4 text-muted-foreground">
+            Where a result depends on assumptions — a projected cost, a comparison against
+            what a provider would have charged — the assumptions are printed alongside it.
+            If a client is happy to be quoted but the result cannot be measured, we publish
+            the quote as a quote and do not dress it up as an outcome.
+          </p>
+        </Reveal>
+
+        <Reveal delay={200}>
+          <h2 className="mt-14 font-heading text-2xl font-800 text-foreground md:text-3xl">
+            Why this page is mostly empty right now
+          </h2>
+          <p className="mt-4 text-muted-foreground">
+            Pillar is a young firm, and the engagements that would make the best case
+            studies are either still running or belong to clients who have not been asked
+            yet. Filling the space with stock photography and invented testimonials would
+            be faster and completely worthless to you. The placeholders above stay visible
+            on purpose: they are the honest state of this page, and they will be replaced
+            with real, approved work as it completes.
+          </p>
+          <p className="mt-4 text-muted-foreground">
+            In the meantime, the most useful thing we can show you is the work itself — how
+            an audit is scoped, what a transition plan contains, and what we would need
+            from your firm. Ask on a call and we will walk you through a redacted
+            deliverable rather than a success story.
+          </p>
+        </Reveal>
+      </div>
+    </section>
+
     <section className="bg-primary text-primary-foreground">
       <div className="container max-w-2xl py-20 md:py-28 text-center">
         <Reveal>
