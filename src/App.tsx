@@ -122,6 +122,10 @@ const App = () => (
               <Route path="/resources/e-verify-south-carolina" element={<EVerifySouthCarolina />} />
               <Route path="/resources/nc-handbook-requirements" element={<NcHandbookRequirements />} />
               <Route path="/resources/sc-handbook-requirements" element={<ScHandbookRequirements />} />
+              <Route path="/resources/do-we-need-a-peo" element={<DoWeNeedAPeoResource />} />
+              <Route path="/tools/hr-risk-score" element={<HrRiskScore />} />
+              <Route path="/tools/peo-cost-calculator" element={<PeoCostCalculator />} />
+              <Route path="/case-studies" element={<CaseStudies />} />
               <Route path="/blog/peo-industry-transparency" element={<PeoIndustryTransparency />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
