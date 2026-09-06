@@ -20,7 +20,7 @@ const services = [
   { label: "Fractional HR", href: "/services/fractional-hr" },
   { label: "Transitions", href: "/services/transitions" },
   { label: "PEO brokerage", href: "/services/peo-brokerage" },
-  { label: "Pricing", href: "/pricing" },
+  { label: "Pricing", href: "/services" },
 ];
 
 const industries = [

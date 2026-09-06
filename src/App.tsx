@@ -37,7 +37,6 @@ const FractionalHr = lazy(() => import("./pages/services/FractionalHr"));
 const TransitionsPage = lazy(() => import("./pages/services/Transitions"));
 const PeoBrokerage = lazy(() => import("./pages/services/PeoBrokerage"));
 const HowWeGetPaid = lazy(() => import("./pages/HowWeGetPaid"));
-const PricingPage = lazy(() => import("./pages/Pricing"));
 const CalebSherrill = lazy(() => import("./pages/about/CalebSherrill"));
 const IndustriesIndex = lazy(() => import("./pages/industries/Industries"));
 const LawFirms = lazy(() => import("./pages/industries/LawFirms"));
@@ -90,7 +89,6 @@ const App = () => (
               <Route path="/services/transitions" element={<TransitionsPage />} />
               <Route path="/services/peo-brokerage" element={<PeoBrokerage />} />
               <Route path="/how-we-get-paid" element={<HowWeGetPaid />} />
-              <Route path="/pricing" element={<PricingPage />} />
               <Route path="/about/caleb-sherrill" element={<CalebSherrill />} />
               <Route path="/industries" element={<IndustriesIndex />} />
               <Route path="/industries/law-firms" element={<LawFirms />} />

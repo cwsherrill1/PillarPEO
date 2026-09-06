@@ -24,8 +24,7 @@ const jsonLd = {
       description: s.who,
       offers: {
         "@type": "Offer",
-        priceCurrency: "USD",
-        description: s.price,
+        description: "Fixed price, quoted before the work starts.",
       },
     })),
   ],
@@ -34,8 +33,8 @@ const jsonLd = {
 const Services = () => (
   <>
     <SEOHead
-      title="HR Services and Prices"
-      description="Fixed-price HR audits, HR projects, fractional HR, transitions, and free PEO brokerage for professional-services firms — priced before the work starts."
+      title="HR Services for Professional Firms"
+      description="Fixed-price HR audits, HR projects, fractional HR, transitions, and free PEO brokerage for professional-services firms — quoted before the work starts."
       canonical={`${SITE_URL}/services`}
       jsonLd={jsonLd}
     />
@@ -71,9 +70,6 @@ const Services = () => (
                   <th className="py-3 pr-4 font-heading text-xs font-700 uppercase tracking-widest text-muted-foreground">
                     Service
                   </th>
-                  <th className="py-3 pr-4 font-heading text-xs font-700 uppercase tracking-widest text-muted-foreground">
-                    Price
-                  </th>
                   <th className="py-3 font-heading text-xs font-700 uppercase tracking-widest text-muted-foreground">
                     Who it's for
                   </th>
@@ -93,9 +89,6 @@ const Services = () => (
                         {s.name}
                       </Link>
                     </td>
-                    <td className="py-5 pr-4 text-base tabular-nums text-foreground">
-                      {s.price}
-                    </td>
                     <td className="py-5 text-base leading-relaxed text-muted-foreground">
                       {s.who}
                     </td>
@@ -108,12 +101,7 @@ const Services = () => (
 
         <Reveal delay={200}>
           <p className="mt-8 text-sm text-muted-foreground">
-            Prices shown are current as of September 2026 and are quoted in writing
-            before any work begins. See the{" "}
-            <Link to="/pricing" className="text-green-ink hover:underline">
-              full price list
-            </Link>{" "}
-            or{" "}
+            Every price is fixed and quoted in writing before any work begins. See{" "}
             <Link to="/how-we-get-paid" className="text-green-ink hover:underline">
               how we get paid
             </Link>
@@ -127,7 +115,7 @@ const Services = () => (
       heading="Start with the audit."
       body="Most firms start with the HR audit, then fix what it finds. You'll know the price before we begin."
       proof="PROOF SLOT — managing partner quote, professional-services firm, on what the audit found, with a number."
-      secondary={{ label: "See the full price list", href: "/pricing" }}
+      secondary={{ label: "Contact us", href: "/contact" }}
     />
   </>
 );
