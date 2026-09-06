@@ -182,7 +182,7 @@ const HowToSwitchPeos = () => (
             Considering a switch but not sure where to start?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">
-            Pillar has guided dozens of employers through PEO transitions — from initial evaluation to first payroll on the new platform. Talk to an advisor and find out what switching looks like for your specific situation.
+            Pillar runs PEO transitions end to end: initial evaluation, provider comparison, data migration, and first payroll on the new platform. Talk to an advisor and find out what switching looks like for your specific situation.
           </p>
           <div className="mt-8">
             <Button asChild size="lg" className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20">
