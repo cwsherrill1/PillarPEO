@@ -57,7 +57,7 @@ const MedicalDental = () => (
   <>
     <SEOHead
       title="HR for Medical and Dental Practices"
-      description="OSHA bloodborne pathogen requirements, separating medical files from personnel files from I-9s, credentialing records, on-call time and shift differentials. Fixed price, quoted before the work starts."
+      description="OSHA bloodborne pathogen rules, separating medical files from personnel files and I-9s, credentialing records, on-call and shift pay."
       canonical={`${SITE_URL}/industries/medical-dental`}
       jsonLd={jsonLd}
     />

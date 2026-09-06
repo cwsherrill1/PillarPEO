@@ -71,7 +71,8 @@ const NcVsScEmploymentLaw = () => (
   <>
     <SEOHead
       title="North Carolina vs. South Carolina Employment Law"
-      description="A side-by-side table of employer thresholds in North Carolina and South Carolina: E-Verify, workers' comp, wage-change notice, and pregnancy accommodation."
+      fullTitle
+      description="Side-by-side employer thresholds in NC and SC: E-Verify, workers' comp, wage-change notice and pregnancy accommodation."
       canonical={`${SITE_URL}/resources/nc-vs-sc-employment-law`}
       jsonLd={jsonLd}
     />

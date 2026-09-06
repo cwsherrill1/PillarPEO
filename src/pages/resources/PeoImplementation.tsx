@@ -44,6 +44,7 @@ const PeoImplementation = () => (
   <>
     <SEOHead
       title="What to Expect During a PEO Implementation"
+      fullTitle
       description="Signing with a PEO is step one. Here's what the next 60–90 days actually look like and how to make sure nothing falls through the cracks."
       jsonLd={ARTICLE}
       ogType="article"

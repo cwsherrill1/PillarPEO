@@ -42,6 +42,7 @@ const NcHandbookRequirements = () => (
   <>
     <SEOHead
       title="North Carolina Employee Handbook Checklist"
+      fullTitle
       description="What a North Carolina employee handbook should cover, and which of it is legally required versus good practice."
       canonical={`${SITE_URL}/resources/nc-handbook-requirements`}
       jsonLd={jsonLd}

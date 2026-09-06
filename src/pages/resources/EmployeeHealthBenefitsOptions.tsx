@@ -72,6 +72,7 @@ const EmployeeHealthBenefitsOptions = () => (
   <>
     <SEOHead
       title="Every Way to Offer Employee Health Benefits"
+      fullTitle
       description="Group, level-funded, self-insured, ICHRA, QSEHRA, association, chamber, and PEO plans explained in plain English. The 2026 guide for employers."
       jsonLd={{
         "@context": "https://schema.org",

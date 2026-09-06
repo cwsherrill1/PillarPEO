@@ -98,10 +98,6 @@ const jsonLd = {
       url: `${SITE_URL}/services/peo-brokerage`,
       description:
         "Independent PEO brokerage: a full-market comparison at no cost to the employer, with provider commission disclosed in writing.",
-      offers: {
-        "@type": "Offer",
-        description: "Free to you. Provider commission disclosed in writing.",
-      },
     },
     {
       "@type": "FAQPage",

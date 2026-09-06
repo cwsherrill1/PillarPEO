@@ -65,7 +65,7 @@ const CharlotteNc = () => (
     <SEOHead
       title="HR Consulting in Charlotte, NC | Pillar PEO Advisors"
       fullTitle
-      description="Fixed-price HR audits and HR projects for Charlotte professional-services firms — handbook language for the city ordinance, and the NC/SC cross-border problem handled properly."
+      description="Fixed-price HR audits and projects for Charlotte professional-services firms, including the city ordinance and NC/SC cross-border staff."
       canonical={`${SITE_URL}/hr-consulting/charlotte-nc`}
       jsonLd={jsonLd}
     />

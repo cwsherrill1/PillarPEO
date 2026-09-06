@@ -148,8 +148,9 @@ const DoWeNeedAPeo = () => {
   return (
     <>
       <SEOHead
-        title="Do We Need a PEO? — Independent Broker Assessment"
-        description="Not sure if a PEO is right for your business? Pillar is an independent PEO broker — use our checklist and self-assessment to see whether outsourcing HR, payroll, and benefits makes sense."
+        title="Do We Need a PEO? An Honest Self-Assessment"
+        fullTitle
+        description="A checklist and self-assessment for deciding whether outsourcing HR, payroll and benefits to a PEO makes sense for your firm."
         canonical={`${SITE_URL}/resources/do-we-need-a-peo`}
         jsonLd={jsonLd}
       />

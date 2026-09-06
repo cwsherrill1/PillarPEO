@@ -70,7 +70,8 @@ const About = () => (
   <div>
     <SEOHead
       title="About Pillar — HR Advisory for Professional Firms"
-      description="Pillar is an independent HR advisory firm for professional-services firms nationwide, headquartered in Charlotte, NC. Founder-led, fixed-price, commissions disclosed."
+      fullTitle
+      description="Independent, founder-led HR advisory for professional-services firms nationwide, headquartered in Charlotte. Fixed price, commissions disclosed."
       jsonLd={aboutJsonLd}
     />
     {/* ─── Hero ─── */}

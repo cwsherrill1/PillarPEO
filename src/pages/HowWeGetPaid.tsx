@@ -61,7 +61,7 @@ const HowWeGetPaid = () => (
   <>
     <SEOHead
       title="How We Get Paid"
-      description="Are PEO brokers free? For the employer, yes — the provider pays a commission. Here is exactly how Pillar is paid for every service, and what we disclose before you decide."
+      description="Exactly how Pillar is paid for every service, why PEO brokerage is free to the employer, and what we disclose before you decide."
       canonical={`${SITE_URL}/how-we-get-paid`}
       jsonLd={jsonLd}
     />

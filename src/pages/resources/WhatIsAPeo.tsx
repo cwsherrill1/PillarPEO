@@ -56,6 +56,7 @@ const WhatIsAPeo = () => (
   <>
     <SEOHead
       title="What Is a PEO? A Complete Guide for Employers"
+      fullTitle
       description="What a PEO is, how co-employment works, what it costs, and when it's worth it. An independent broker's honest, plain-English guide."
       jsonLd={{ "@context": "https://schema.org", "@graph": [ARTICLE["@graph"][0], ARTICLE["@graph"][1], FAQ_JSONLD] }}
       ogType="article"

@@ -42,6 +42,7 @@ const EVerifySouthCarolina = () => (
   <>
     <SEOHead
       title="Is E-Verify Required in South Carolina?"
+      fullTitle
       description="Yes. South Carolina requires every employer, regardless of size, to use E-Verify within 3 business days of hire. What that means and what to do next."
       canonical={`${SITE_URL}/resources/e-verify-south-carolina`}
       jsonLd={jsonLd}

@@ -33,7 +33,7 @@ const Industries = () => (
   <>
     <SEOHead
       title="HR Advisory by Industry"
-      description="HR audits and fixed-price HR work built around how your kind of firm actually operates — law, CPA, engineering and architecture, medical and dental, RIAs and nonprofits."
+      description="HR audits and fixed-price HR work built around how your kind of firm operates: law, CPA, engineering, medical, RIAs and nonprofits."
       canonical={`${SITE_URL}/industries`}
       jsonLd={jsonLd}
     />

@@ -58,7 +58,7 @@ const HrRiskScore = () => {
     <>
       <SEOHead
         title="HR Risk Score — Free 9-Area Assessment"
-        description="Take the free HR Risk Score assessment — nine questions covering the same areas Pillar's HR audit checks. See your score instantly, then get a written plan by email."
+        description="Nine questions covering the same areas Pillar's HR audit checks. See your score instantly, then get a written plan by email."
         canonical={`${SITE_URL}/tools/hr-risk-score`}
         jsonLd={jsonLd}
       />

@@ -35,6 +35,7 @@ const HowToSwitchPeos = () => (
   <>
     <SEOHead
       title="How to Switch PEOs Without Disrupting Payroll"
+      fullTitle
       description="The fear of transition keeps employers stuck in bad PEO relationships. Here's what the switching process actually looks like and how to do it right."
       jsonLd={ARTICLE}
       ogType="article"

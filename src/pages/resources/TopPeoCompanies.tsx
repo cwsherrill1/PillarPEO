@@ -64,7 +64,8 @@ const TopPeoCompanies = () => (
   <>
     <SEOHead
       title="Top PEO Companies in 2026: Independent Comparison"
-      description="The top PEO companies in 2026, grouped by category — national tier-1, modern tech-forward, and industry-vertical providers. Independent broker analysis of fit, strengths, and how to choose."
+      fullTitle
+      description="The top PEO companies in 2026 by category: national tier-1, tech-forward, and industry-vertical providers, with how to choose."
       jsonLd={{ "@context": "https://schema.org", "@graph": [ARTICLE["@graph"][0], ARTICLE["@graph"][1], FAQ_JSONLD] }}
       ogType="article"
     />

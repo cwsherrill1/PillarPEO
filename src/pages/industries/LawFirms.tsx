@@ -56,8 +56,9 @@ const jsonLd = {
 const LawFirms = () => (
   <>
     <SEOHead
-      title="HR for Law Firms — Audits and Fixed-Price HR Work"
-      description="Paralegal classification, partner vs employee status, trust-account separation of duties, contract attorneys and multi-state laterals. Fixed price, quoted before the work starts."
+      title="HR for Law Firms — Audits and Fixed-Price Work | Pillar"
+      fullTitle
+      description="Paralegal classification, partner vs employee status, trust-account separation of duties, contract attorneys and multi-state laterals."
       canonical={`${SITE_URL}/industries/law-firms`}
       jsonLd={jsonLd}
     />

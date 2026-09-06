@@ -57,7 +57,7 @@ const Nonprofits = () => (
   <>
     <SEOHead
       title="HR for Nonprofits"
-      description="Volunteers versus employees, exempt status for program staff, grant-funded position documentation, and board and executive compensation. Fixed price, quoted before the work starts."
+      description="Volunteers versus employees, exempt status for program staff, grant-funded position documentation, and board and executive pay."
       canonical={`${SITE_URL}/industries/nonprofits`}
       jsonLd={jsonLd}
     />

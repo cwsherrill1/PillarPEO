@@ -25,10 +25,6 @@ const jsonLd = {
       url: `${SITE_URL}/services/transitions`,
       description:
         "Fixed-price PEO exits, PEO switches, PEO implementations, HRIS migrations and payroll provider switches.",
-      offers: {
-        "@type": "Offer",
-        description: "Fixed price, quoted before the work starts.",
-      },
     },
   ],
 };
@@ -36,8 +32,9 @@ const jsonLd = {
 const Transitions = () => (
   <>
     <SEOHead
-      title="PEO Exit, Switch and System Transitions"
-      description="Fixed-price transitions for firms moving into, out of or between a PEO, plus HRIS migrations and payroll switches. Fixed price, quoted before the work starts."
+      title="PEO Exit, Switch and System Transitions | Pillar"
+      fullTitle
+      description="Fixed-price transitions into, out of or between PEOs, plus HRIS migrations and payroll switches. Quoted before the work starts."
       canonical={`${SITE_URL}/services/transitions`}
       jsonLd={jsonLd}
     />
@@ -100,6 +97,59 @@ const Transitions = () => (
             </Link>{" "}
             — that comparison is free.
           </p>
+        </Reveal>
+      </div>
+    </section>
+
+    <section className="bg-background">
+      <div className="container max-w-3xl py-20 md:py-28">
+        <Reveal>
+          <h2 className="font-heading text-3xl font-800 text-foreground md:text-4xl">
+            What the work actually involves.
+          </h2>
+          <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+            A transition is mostly data, deadlines and paperwork that only exists once.
+            We start by reading the agreement you are leaving or entering: notice period,
+            termination window, renewal date, what happens to accrued balances, and who
+            owns the historic payroll records afterwards. That single document usually
+            dictates the timeline, and it is the step firms skip.
+          </p>
+          <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+            From there the work runs on a written plan: state-by-state registrations
+            reopened or closed, unemployment accounts and rates confirmed, workers' comp
+            policy bound before the first day of coverage, benefit plans mapped
+            plan-to-plan so nobody loses a deductible mid-year, 401(k) plan documents and
+            payroll feeds re-pointed, year-to-date wage and tax figures reconciled and
+            loaded, and employee records, PTO balances and I-9s carried across. We run a
+            parallel payroll before go-live and reconcile it to the cent.
+          </p>
+          <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+            Your people see almost none of that. What they see is a short set of
+            communications we draft for you: what is changing, what they need to do, when
+            they need to do it, and where their pay stub and benefits will live afterwards.
+            Open enrolment inside a transition gets its own timeline.
+          </p>
+        </Reveal>
+
+        <Reveal delay={100}>
+          <h3 className="mt-12 font-heading text-xl font-700 text-foreground">
+            What you have to do.
+          </h3>
+          <ul className="mt-4 space-y-3 text-base leading-relaxed text-muted-foreground">
+            <li>Give notice in writing, on time. We draft it, but only you can send it.</li>
+            <li>
+              Sign the applications and carrier forms. Broker of record letters and plan
+              documents need an officer's signature and are the most common source of delay.
+            </li>
+            <li>
+              Nominate one internal owner — usually the practice administrator — who can
+              answer census and payroll questions the same day.
+            </li>
+            <li>
+              Keep a period of your accounting team's time free around go-live for the
+              reconciliation, and expect one messy quarter of two year-to-date records.
+            </li>
+          </ul>
         </Reveal>
       </div>
     </section>

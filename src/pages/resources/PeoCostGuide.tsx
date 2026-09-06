@@ -57,8 +57,9 @@ const Bullet = ({ children }: { children: React.ReactNode }) => (
 const PeoCostGuide = () => (
   <>
     <SEOHead
-      title="How Much Does a PEO Cost in 2026? Real Pricing Breakdown"
-      description="The real cost of a PEO in 2026 — pricing models, hidden fees, renewal increases, and how to compare quotes from ADP, Insperity, Justworks, Rippling, TriNet, and more."
+      title="How Much Does a PEO Cost in 2026?"
+      fullTitle
+      description="Real PEO pricing in 2026: pricing models, hidden fees, renewal increases, and how to compare quotes from the major providers."
       jsonLd={{ "@context": "https://schema.org", "@graph": [ARTICLE["@graph"][0], ARTICLE["@graph"][1], FAQ_JSONLD] }}
       ogType="article"
     />

@@ -60,7 +60,7 @@ const FinancialAdvisors = () => (
   <>
     <SEOHead
       title="HR for Financial Advisors and RIAs"
-      description="Where supervision overlaps HR, licensing and registration record-keeping, outside business activity policies, and deferred comp and producer pay plans. Fixed price, quoted before the work starts."
+      description="Where supervision overlaps HR, licensing and registration records, outside business activity policies, and producer pay plans."
       canonical={`${SITE_URL}/industries/financial-advisors`}
       jsonLd={jsonLd}
     />

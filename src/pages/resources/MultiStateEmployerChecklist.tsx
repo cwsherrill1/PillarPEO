@@ -76,7 +76,8 @@ const MultiStateEmployerChecklist = () => (
   <>
     <SEOHead
       title="Multi-State Employer Checklist"
-      description="What happens the day you hire someone in a new state: tax registration, unemployment insurance, workers' comp, notices, handbook addendum and payroll setup."
+      fullTitle
+      description="The day you hire in a new state: tax registration, unemployment insurance, workers' comp, notices, handbook addendum and payroll setup."
       canonical={`${SITE_URL}/resources/multi-state-employer-checklist`}
       jsonLd={jsonLd}
     />

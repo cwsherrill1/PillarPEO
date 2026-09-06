@@ -1,5 +1,26 @@
 import { Reveal } from "@/components/Reveal";
 import SEOHead from "@/components/SEOHead";
+import { ORG_REF, SITE_URL, breadcrumb } from "@/data/organization";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    breadcrumb([
+      { name: "Home", path: "/" },
+      { name: "Privacy Policy", path: "/privacy" },
+    ]),
+    {
+      "@type": "WebPage",
+      "@id": `${SITE_URL}/privacy`,
+      name: "Privacy Policy",
+      url: `${SITE_URL}/privacy`,
+      description: "How Pillar PEO Advisors collects, uses and protects your information.",
+      isPartOf: ORG_REF,
+      publisher: ORG_REF,
+      dateModified: "2026-09-06",
+    },
+  ],
+};
 
 const sections = [
   {
@@ -34,6 +55,8 @@ const Privacy = () => {
     <>
       <SEOHead
         title="Privacy Policy"
+        canonical={`${SITE_URL}/privacy`}
+        jsonLd={jsonLd}
         description="Pillar PEO Advisors' privacy policy — how we collect, use, and protect your information."
       />
       <section className="bg-primary py-20 text-primary-foreground md:py-28">

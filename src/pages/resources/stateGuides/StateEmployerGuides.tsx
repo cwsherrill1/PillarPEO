@@ -94,6 +94,52 @@ const StateEmployerGuides = () => (
       <LegalNote />
     </Section>
 
+    <Section title="The standard each guide is written to">
+      <p className="text-lg leading-8 text-foreground/85">
+        Every guide is organized the same way: by headcount. That is deliberate, because
+        almost everything in employment law switches on at a headcount threshold rather
+        than at a revenue figure or a company stage. A guide tells you what applies at one
+        employee, what changes at the state's next threshold, and what changes again when
+        federal law joins in. If you employ people in more than one state, you read the
+        strictest rule that applies to any of them, because the rules stack rather than
+        cancel out.
+      </p>
+      <p className="mt-6 text-lg leading-8 text-foreground/85">
+        Within each headcount band, a guide covers the same categories: employment
+        eligibility verification, workers' compensation, wage payment and wage-change
+        notice, mandatory posters and notices, leave entitlements, final-pay rules, and
+        registration obligations with the state's revenue and unemployment agencies. Where
+        a state simply has no requirement in a category, the guide says so instead of
+        leaving a gap you might read as an oversight.
+      </p>
+    </Section>
+
+    <Section title="How each figure is verified" alt>
+      <p className="text-lg leading-8 text-foreground/85">
+        Every threshold in these guides is checked against the primary source — the state
+        statute or the administering agency's own published page, not a law firm summary,
+        a vendor blog, or another consultancy's checklist. When the primary source and a
+        secondary source disagree, the primary source wins and the secondary one is
+        discarded. Each guide carries a visible verification date, and anything we have not
+        yet confirmed against the primary source is marked in the text as unverified rather
+        than quietly published.
+      </p>
+      <p className="mt-6 text-lg leading-8 text-foreground/85">
+        Guides are re-checked on a set rhythm: after each state's legislative session
+        closes, at the start of each calendar year when wage bases and rates reset, and
+        whenever an agency issues a rule change we are tracking. The verification date on
+        the page moves only when the content has actually been re-checked, so a recent date
+        means recent work rather than a recent edit.
+      </p>
+      <p className="mt-6 text-lg leading-8 text-foreground/85">
+        What these guides are not: they are not legal advice, and they are not a substitute
+        for counsel on a live matter. They tell you which obligations exist and where the
+        thresholds sit, so you can see whether your firm is on the right side of them. If
+        you find something out of date or believe a threshold is wrong, tell us — we will
+        re-check it against the source and correct the page.
+      </p>
+    </Section>
+
     <ServiceCta
       heading="Not sure which rules apply to your headcount?"
       body="An HR audit checks your actual registrations and thresholds against what the law requires — state by state."

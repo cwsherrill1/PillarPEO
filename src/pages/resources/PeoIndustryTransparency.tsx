@@ -68,6 +68,7 @@ const PeoIndustryTransparency = () => (
   <>
     <SEOHead
       title="What the PEO Industry Does Not Tell You"
+      fullTitle
       description="Hidden fees, renewal traps, and brokers funneling clients back to old employers. A Charlotte broker breaks down what the sales process hides."
       jsonLd={{
         "@context": "https://schema.org",

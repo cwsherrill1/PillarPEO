@@ -42,6 +42,7 @@ const ScHandbookRequirements = () => (
   <>
     <SEOHead
       title="South Carolina Employee Handbook Checklist"
+      fullTitle
       description="What a South Carolina employee handbook should cover, including why the at-will disclaimer matters and the state-specific figures to reflect."
       canonical={`${SITE_URL}/resources/sc-handbook-requirements`}
       jsonLd={jsonLd}

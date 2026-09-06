@@ -36,7 +36,7 @@ const HrConsulting = () => (
   <>
     <SEOHead
       title="HR Consulting in the Carolinas"
-      description="Fixed-price HR audits, projects and fractional HR for firms in Charlotte, Rock Hill and Fort Mill, and the Raleigh-Durham Triangle — plus every other state your people work in."
+      description="Fixed-price HR audits, projects and fractional HR for firms in Charlotte, Rock Hill and Fort Mill, and the Raleigh-Durham Triangle."
       canonical={`${SITE_URL}/hr-consulting`}
       jsonLd={jsonLd}
     />
