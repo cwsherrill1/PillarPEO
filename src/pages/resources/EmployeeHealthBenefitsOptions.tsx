@@ -32,7 +32,7 @@ const ARTICLE = buildArticleJsonLd({
   title: "Every Way to Offer Employee Health Benefits in 2026: A Plain-English Guide",
   description:
     "Group, level-funded, self-insured, ICHRA, QSEHRA, association, chamber, and PEO plans explained in plain English. The 2026 guide for employers.",
-  path: "/blog/employee-health-benefits-options",
+  path: "/resources/employee-health-benefits-options",
   datePublished: "2026-06-01",
   dateModified: "2026-09-05",
 });

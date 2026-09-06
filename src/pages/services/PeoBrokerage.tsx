@@ -286,7 +286,7 @@ const PeoBrokerage = () => (
         Benefits design is where most of the value shows up. If you're weighing options,
         our guide to{" "}
         <Link
-          to="/blog/employee-health-benefits-options"
+          to="/resources/employee-health-benefits-options"
           className="font-semibold text-green-ink hover:underline"
         >
           employee health benefits options

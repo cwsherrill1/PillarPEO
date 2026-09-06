@@ -132,7 +132,7 @@ const resources = [
     title: "Employee Health Benefits Options: What Employers Actually Offer",
     desc: "Fully-insured, level-funded, ICHRA, PEO master plans, and association health plans — how each works and when it fits.",
     category: "Guide",
-    href: "/blog/employee-health-benefits-options",
+    href: "/resources/employee-health-benefits-options",
   },
   {
     icon: RefreshCw,
@@ -216,7 +216,7 @@ const resources = [
     title: "PEO Industry Transparency",
     desc: "How the PEO industry actually makes money — and what employers deserve to see in a quote.",
     category: "Industry Guide",
-    href: "/blog/peo-industry-transparency",
+    href: "/resources/peo-industry-transparency",
   },
 ];
 

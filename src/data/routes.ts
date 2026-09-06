@@ -59,8 +59,8 @@ export const siteRoutes: SiteRoute[] = [
   { path: "/resources/peo-benefits", lastmod: D },
   { path: "/resources/peo-broker-vs-direct", lastmod: D },
   { path: "/resources/what-is-a-peo", lastmod: D },
-  { path: "/blog/employee-health-benefits-options", lastmod: "2026-03-31" },
-  { path: "/blog/peo-industry-transparency", lastmod: "2026-05-19" },
+  { path: "/resources/employee-health-benefits-options", lastmod: "2026-03-31" },
+  { path: "/resources/peo-industry-transparency", lastmod: "2026-05-19" },
 
   // Tools
   { path: "/tools/hr-risk-score", lastmod: D, changefreq: "monthly" },
