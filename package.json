@@ -12,7 +12,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "predev": "bunx tsx scripts/generate-sitemap.ts && bunx tsx scripts/generate-redirects.ts",
-    "prebuild": "bunx tsx scripts/generate-sitemap.ts && bunx tsx scripts/generate-redirects.ts"
+    "prebuild": "bunx tsx scripts/generate-sitemap.ts && bunx tsx scripts/generate-redirects.ts",
+    "build:static": "vite build && bunx tsx scripts/prerender.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
