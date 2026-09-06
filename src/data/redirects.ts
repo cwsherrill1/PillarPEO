@@ -62,6 +62,9 @@ export const redirects: RedirectRule[] = [
   { from: "/peo-broker-south-carolina", to: "/resources/state-employer-guides/south-carolina" },
 
   { from: "/blog/peo-for-venture-backed-startups", to: "/resources/peo-for-startups" },
+
+  { from: "/blog/employee-health-benefits-options", to: "/resources/employee-health-benefits-options" },
+  { from: "/blog/peo-industry-transparency", to: "/resources/peo-industry-transparency" },
 ];
 
 /** Only the rules whose destination exists today. */
@@ -69,7 +72,7 @@ export const activeRedirects = redirects.filter((r) => !r.pending);
 
 /** Wildcard rules for the host only (React Router handles these separately). */
 export const wildcardRedirects: RedirectRule[] = [
-  // Held until batch 5: several /blog/* URLs still render real pages today,
-  // so a blanket wildcard would redirect live content.
-  // { from: "/blog/*", to: "/resources/:splat" },
+  // No /blog/* path renders a page any more. Anything not matched by an
+  // explicit rule above falls through to /resources.
+  { from: "/blog/*", to: "/resources/" },
 ];
