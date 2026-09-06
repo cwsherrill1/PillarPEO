@@ -32,22 +32,52 @@ const locations = [
   ...metros.map((m) => ({ label: m.navLabel, href: `/hr-consulting/${m.slug}` })),
 ];
 
-const resourcesMenu = [
+interface NavItem {
+  label: string;
+  href: string;
+}
+
+interface NavGroup {
+  heading: string;
+  items: NavItem[];
+}
+
+const resourcesGroups: NavGroup[] = [
+  {
+    heading: "How PEO pricing works",
+    items: [
+      { label: "Pricing overview", href: "/resources/peo-pricing-explained" },
+      { label: "Why your renewal jumped", href: "/resources/peo-honeymoon-pricing" },
+      { label: "The SUTA line nobody checks", href: "/resources/peo-suta-rates" },
+      { label: "Admin fees: PEPM vs % of payroll", href: "/resources/peo-admin-fees" },
+      { label: "Contract terms and exit costs", href: "/resources/peo-contract-terms" },
+      { label: "When a PEO is the wrong answer", href: "/resources/when-a-peo-is-the-wrong-answer" },
+      { label: "Free PEO renewal review", href: "/resources/peo-renewal-review" },
+    ],
+  },
+  {
+    heading: "Compliance guides",
+    items: [
+      { label: "State employer guides", href: "/resources/state-employer-guides" },
+      { label: "NC vs. SC employment law", href: "/resources/nc-vs-sc-employment-law" },
+      { label: "Multi-state checklist", href: "/resources/multi-state-employer-checklist" },
+      { label: "HR audit checklist", href: "/resources/hr-audit-checklist" },
+      { label: "Do we need a PEO?", href: "/resources/do-we-need-a-peo" },
+    ],
+  },
+  {
+    heading: "Tools",
+    items: [
+      { label: "HR Risk Score", href: "/tools/hr-risk-score" },
+      { label: "PEO cost calculator", href: "/tools/peo-cost-calculator" },
+      { label: "Case studies", href: "/case-studies" },
+    ],
+  },
+];
+
+const resourcesMenu: NavItem[] = [
   { label: "All resources", href: "/resources" },
-  { label: "How PEO pricing works", href: "/resources/peo-pricing-explained" },
-  { label: "— Why your renewal jumped", href: "/resources/peo-honeymoon-pricing" },
-  { label: "— The SUTA line nobody checks", href: "/resources/peo-suta-rates" },
-  { label: "— Admin fees: PEPM vs % of payroll", href: "/resources/peo-admin-fees" },
-  { label: "— Contract terms and exit costs", href: "/resources/peo-contract-terms" },
-  { label: "— When a PEO is the wrong answer", href: "/resources/when-a-peo-is-the-wrong-answer" },
-  { label: "— Free PEO renewal review", href: "/resources/peo-renewal-review" },
-  { label: "HR audit checklist", href: "/resources/hr-audit-checklist" },
-  { label: "State employer guides", href: "/resources/state-employer-guides" },
-  { label: "NC vs. SC employment law", href: "/resources/nc-vs-sc-employment-law" },
-  { label: "Multi-state checklist", href: "/resources/multi-state-employer-checklist" },
-  { label: "HR Risk Score", href: "/tools/hr-risk-score" },
-  { label: "PEO cost calculator", href: "/tools/peo-cost-calculator" },
-  { label: "Case studies", href: "/case-studies" },
+  ...resourcesGroups.flatMap((g) => g.items),
 ];
 
 const partners = [
