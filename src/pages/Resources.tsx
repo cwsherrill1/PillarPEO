@@ -30,6 +30,55 @@ const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
 const resources = [
   {
+    icon: DollarSign,
+    title: "How PEO Pricing Actually Works",
+    desc: "The hub: fee models, renewal jumps, the SUTA line, contract terms, and when a PEO is the wrong answer.",
+    category: "Pricing",
+    href: "/resources/peo-pricing-explained",
+  },
+  {
+    icon: RefreshCw,
+    title: "Why Your PEO Renewal Jumped",
+    desc: "Introductory pricing, repricing at renewal, and the switching costs that remove your leverage.",
+    category: "Pricing",
+    href: "/resources/peo-honeymoon-pricing",
+  },
+  {
+    icon: Scale,
+    title: "The SUTA Line Nobody Checks",
+    desc: "Pooled unemployment rates, the taxable wage base, and what happens to your experience rating.",
+    category: "Pricing",
+    href: "/resources/peo-suta-rates",
+  },
+  {
+    icon: DollarSign,
+    title: "PEO Admin Fees: Per Employee vs % of Payroll",
+    desc: "The two fee models, the gross-versus-taxable basis question, and how to force an unbundled quote.",
+    category: "Pricing",
+    href: "/resources/peo-admin-fees",
+  },
+  {
+    icon: FileText,
+    title: "PEO Contract Terms: What Leaving Costs",
+    desc: "Term, auto-renewal, notice windows, termination fees, and why a plan-year exit is cleaner.",
+    category: "Pricing",
+    href: "/resources/peo-contract-terms",
+  },
+  {
+    icon: HelpCircle,
+    title: "When a PEO Is the Wrong Answer",
+    desc: "Four situations where a PEO adds cost without removing work, with an illustrative example.",
+    category: "Pricing",
+    href: "/resources/when-a-peo-is-the-wrong-answer",
+  },
+  {
+    icon: ClipboardCheck,
+    title: "The Free PEO Renewal Review",
+    desc: "Start 120 days out. What we need, what you get back, and exactly how we're paid.",
+    category: "Pricing",
+    href: "/resources/peo-renewal-review",
+  },
+  {
     icon: HelpCircle,
     title: "5 Questions to Ask Any PEO Before Signing",
     desc: "The critical questions most employers never think to ask — until it's too late.",
