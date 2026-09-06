@@ -333,8 +333,9 @@ const EmployeeHealthBenefitsOptions = () => (
         We exist to help employers compare their options and make a confident decision without
         guessing. We are independent, we are not feeding business back to an old sales floor, and
         our job is to find the structure that actually fits your business, whether that is a PEO
-        arrangement or something else entirely. The model is Free Forever, the providers pay us so
-        your savings stay intact, and we stay on as your long-term watchdog.
+        arrangement or something else entirely. PEO brokerage is free to the employer because the
+        provider pays a commission, and we disclose that commission to you in writing. See{" "}
+        <Link to="/how-we-get-paid/" className="text-green-ink underline">how we get paid</Link>.
       </p>
       <p>
         If you want a straight read on which of these eight paths makes the most sense for your
