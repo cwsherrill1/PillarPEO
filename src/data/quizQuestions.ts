@@ -190,7 +190,7 @@ export const quizQuestions: QuizQuestion[] = [
       { text: "Manageable but draining", score: 2 },
       { text: "It's one of my biggest headaches", score: 3 },
     ],
-    quickWin: "Write down the three HR tasks that drain you most — awareness is the first step.",
+    quickWin: "Write down the three HR tasks that drain you most: awareness is the first step.",
     longerTermFix: "Let Pillar design an HR solution that takes the headache off your plate entirely.",
   },
 ];
@@ -214,8 +214,8 @@ export function getTierInfo(score: number): TierInfo {
       badge: "✅",
       color: "hsl(145, 63%, 49%)",
       headline: "Your HR setup is in good shape.",
-      body: "You've clearly put thought into how HR runs in your business. Most of your systems are working and your team has solid foundations. That said, there's always room to optimize — especially as you grow.",
-      ctaText: "Want a free second opinion from a PEO expert? Book a 20-minute call with Pillar — no pitch, just perspective.",
+      body: "You've clearly put thought into how HR runs in your business. Most of your systems are working and your team has solid foundations. That said, there's always room to optimize, especially as you grow.",
+      ctaText: "Want a free second opinion from a PEO expert? Book a 20-minute call with Pillar: no pitch, just perspective.",
       painPointCount: 2,
     };
   }
@@ -226,7 +226,7 @@ export function getTierInfo(score: number): TierInfo {
       badge: "⚠️",
       color: "hsl(43, 100%, 50%)",
       headline: "Your HR is showing real warning signs.",
-      body: "You're managing it — but it's costing you time, money, and energy you could be putting into your business. The good news: these problems are fixable, and faster than you think.",
+      body: "You're managing it, but it's costing you time, money, and energy you could be putting into your business. The good news: these problems are fixable, and faster than you think.",
       ctaText: "Let Pillar take a look. A free 30-minute HR review could save you thousands and hours every month.",
       painPointCount: 3,
     };
@@ -237,7 +237,7 @@ export function getTierInfo(score: number): TierInfo {
     badge: "🚨",
     color: "hsl(0, 84%, 60%)",
     headline: "Your HR setup is actively costing you.",
-    body: "Your score suggests HR is one of the biggest drains on your business right now — in time, money, and leadership focus. You don't have to keep running it this way.",
+    body: "Your score suggests HR is one of the biggest drains on your business right now, in time, money, and leadership focus. You don't have to keep running it this way.",
     ctaText: "If HR is taking your focus away from your people and your business, then talking to Pillar is the right decision. Book your free call today.",
     painPointCount: 4,
   };
