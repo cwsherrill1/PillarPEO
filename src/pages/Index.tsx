@@ -23,8 +23,9 @@ import {
 "lucide-react";
 
 const FAQS = [
-  { q: "What is a PEO broker?", a: "A PEO broker is an independent advisor who compares Professional Employer Organizations on your behalf, negotiates pricing, and supports the transition. Brokers are paid by the PEO, not by the employer, so the service is typically free to you." },
-  { q: "Do I pay Pillar PEO Advisors anything?", a: "No. Pillar is compensated by the PEO you ultimately select. Our advice, comparisons, and onboarding support are free to the employer." },
+  { q: "What does Pillar do?", a: "Pillar is an independent HR advisory firm for professional-services firms of roughly 10 to 150 people, in every state their people work in. We run fixed-price HR audits and projects, provide fractional HR, and manage PEO and system transitions. Comparing PEOs is a free service inside that offer." },
+  { q: "What is a PEO broker?", a: "A PEO broker is an independent advisor who compares Professional Employer Organizations on your behalf, negotiates pricing, and supports the transition. Brokers are paid by the PEO, not by the employer, so the service is free to you." },
+  { q: "Do I pay Pillar anything?", a: "It depends which service you use. HR audits, projects, fractional HR, and transitions are fixed-price, quoted in writing before any work starts. PEO brokerage is free to you \u2014 the PEO pays the commission, and we disclose it." },
   { q: "Should I use a PEO broker or go direct?", a: "Brokers typically secure better pricing, shorter contracts, and flexible exit clauses, and they stay engaged after the sale. Smaller employers almost always benefit from broker support because they lack the leverage to negotiate alone." },
   { q: "How do I know if a PEO is the right fit?", a: "That depends on your employee count, internal capacity, current pain points, and what kind of support you need. We help you think through that before forcing a decision." },
   { q: "What if we already have a PEO?", a: "That is one of the biggest reasons employers reach out. We can help you evaluate whether the current fit is still right." },
