@@ -65,13 +65,6 @@ const resources = [
     href: "/industries/nonprofits",
   },
   {
-    icon: ClipboardCheck,
-    title: "Is Your Company Ready for a PEO?",
-    desc: "An interactive self-assessment to see if your company is a good PEO fit.",
-    category: "Self-Assessment",
-    href: "/resources/do-we-need-a-peo",
-  },
-  {
     icon: Settings,
     title: "What to Expect During a PEO Implementation",
     desc: "What the next 60–90 days look like after you sign — and how to prepare.",
