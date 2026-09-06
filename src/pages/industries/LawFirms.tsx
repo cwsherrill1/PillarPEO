@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { pricing } from "@/data/pricing";
 import SEOHead from "@/components/SEOHead";
 import ServiceHero from "@/components/services/ServiceHero";
 import ServiceCta from "@/components/services/ServiceCta";
@@ -58,7 +57,7 @@ const LawFirms = () => (
   <>
     <SEOHead
       title="HR for Law Firms — Audits and Fixed-Price HR Work"
-      description={`Paralegal classification, partner vs employee status, trust-account separation of duties, contract attorneys and multi-state laterals. Fixed-price HR audits for law firms from ${pricing.audit.from}.`}
+      description="Paralegal classification, partner vs employee status, trust-account separation of duties, contract attorneys and multi-state laterals. Fixed price, quoted before the work starts."
       canonical={`${SITE_URL}/industries/law-firms`}
       jsonLd={jsonLd}
     />

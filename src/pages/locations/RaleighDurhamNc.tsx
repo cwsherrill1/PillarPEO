@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { pricing } from "@/data/pricing";
 import SEOHead from "@/components/SEOHead";
 import ServiceHero from "@/components/services/ServiceHero";
 import ServiceCta from "@/components/services/ServiceCta";
@@ -65,7 +64,7 @@ const RaleighDurhamNc = () => (
   <>
     <SEOHead
       title="HR Consulting in Raleigh-Durham, NC"
-      description={`Contractor classification in RTP, first hires at university spin-outs, and public-contract wage rules — fixed-price HR audits for Triangle firms from ${pricing.audit.from}.`}
+      description="Contractor classification in RTP, first hires at university spin-outs, and public-contract wage rules — fixed price, quoted before the work starts."
       canonical={`${SITE_URL}/hr-consulting/raleigh-durham-nc`}
       jsonLd={jsonLd}
     />

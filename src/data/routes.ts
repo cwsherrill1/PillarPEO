@@ -22,7 +22,6 @@ export const siteRoutes: SiteRoute[] = [
   { path: "/services/fractional-hr", lastmod: D, changefreq: "monthly" },
   { path: "/services/transitions", lastmod: D, changefreq: "monthly" },
   { path: "/services/peo-brokerage", lastmod: D, changefreq: "monthly" },
-  { path: "/pricing", lastmod: D, changefreq: "monthly" },
   { path: "/how-we-get-paid", lastmod: D, changefreq: "monthly" },
 
   // Company

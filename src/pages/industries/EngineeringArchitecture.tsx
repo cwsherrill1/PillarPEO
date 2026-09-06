@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { pricing } from "@/data/pricing";
 import SEOHead from "@/components/SEOHead";
 import ServiceHero from "@/components/services/ServiceHero";
 import ServiceCta from "@/components/services/ServiceCta";
@@ -61,7 +60,7 @@ const EngineeringArchitecture = () => (
   <>
     <SEOHead
       title="HR for Engineering and Architecture Firms"
-      description={`Exempt status for designers and drafters, public-contract wage rules, project-based and travelling staff, and multi-state project work. Fixed-price HR audits from ${pricing.audit.from}.`}
+      description="Exempt status for designers and drafters, public-contract wage rules, project-based and travelling staff, and multi-state project work. Fixed price, quoted before the work starts."
       canonical={`${SITE_URL}/industries/engineering-architecture`}
       jsonLd={jsonLd}
     />

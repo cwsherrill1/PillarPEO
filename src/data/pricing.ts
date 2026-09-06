@@ -1,10 +1,20 @@
 /**
- * Single source of truth for every price shown on the site.
+ * PRICES ARE DELIBERATELY NOT PUBLISHED ON THE SITE AS OF SEPTEMBER 2026.
+ * The client asked for every dollar figure to be removed from public pages,
+ * meta descriptions and JSON-LD. The figures below are kept intact and
+ * accurate so publishing can be switched back on later: re-render them from
+ * here rather than hardcoding anywhere else. Nothing in this file may be
+ * rendered into the UI or into structured data while PRICES_PUBLISHED is false.
+ *
+ * Single source of truth for every price (currently unpublished).
  * Nothing anywhere else may hardcode a dollar figure.
  * Prices are proposed and under review.
  */
 
 export const PRICES_ARE_PROVISIONAL = true;
+
+/** Master switch: while false, no dollar figure from this file may reach the site. */
+export const PRICES_PUBLISHED = false;
 
 export const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
@@ -178,5 +188,5 @@ export const transitionTypes = [
   },
 ] as const;
 
-/** The label used for the primary CTA everywhere on the priced-service pages. */
-export const PRIMARY_CTA = `Book an HR audit · from ${pricing.audit.from}`;
+/** The label used for the primary CTA everywhere. No price suffix while prices are unpublished. */
+export const PRIMARY_CTA = "Book an HR audit";

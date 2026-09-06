@@ -12,7 +12,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "predev": "bunx tsx scripts/generate-sitemap.ts && bunx tsx scripts/generate-redirects.ts",
-    "prebuild": "bunx tsx scripts/generate-sitemap.ts && bunx tsx scripts/generate-redirects.ts"
+    "prebuild": "bunx tsx scripts/generate-sitemap.ts && bunx tsx scripts/generate-redirects.ts",
+    "build:static": "vite build && bunx tsx scripts/prerender.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -84,6 +85,7 @@
     "jsdom": "^20.0.3",
     "lovable-tagger": "^1.1.13",
     "postcss": "^8.5.6",
+    "puppeteer": "^25.10.0",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.38.0",

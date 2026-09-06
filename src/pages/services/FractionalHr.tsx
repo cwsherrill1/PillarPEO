@@ -10,7 +10,7 @@ import { ORG_REF, SITE_URL, breadcrumb } from "@/data/organization";
 const comparison = [
   {
     option: "Fractional HR",
-    cost: pricing.fractional.range,
+    cost: "Fixed monthly price, quoted in advance",
     fit: "You need senior HR judgment a few days a month, in several states, without adding headcount.",
     limits: "Not an on-site presence, and not a payroll or benefits platform.",
   },
@@ -47,9 +47,8 @@ const jsonLd = {
         "Fractional HR for professional-services firms: 8, 20 or 40 hours a month at a fixed monthly price, three-month minimum.",
       offers: pricing.fractional.tiers.map((t) => ({
         "@type": "Offer",
-        priceCurrency: "USD",
         name: t.label,
-        description: `${t.label} — ${t.hours} — ${t.price}`,
+        description: `${t.label} — ${t.hours}`,
       })),
     },
   ],
@@ -58,7 +57,7 @@ const jsonLd = {
 const FractionalHr = () => (
   <>
     <SEOHead
-      title={`Fractional HR — ${pricing.fractional.range}`}
+      title="Fractional HR for Professional Firms"
       description="Fractional HR for firms of 10–150 people: Advisor 8 hrs, Partner 20 hrs, or Embedded 40 hrs a month at a fixed price, in every state you employ."
       canonical={`${SITE_URL}/services/fractional-hr`}
       jsonLd={jsonLd}
@@ -91,9 +90,6 @@ const FractionalHr = () => (
                   <th className="py-3 pr-4 font-heading text-xs font-700 uppercase tracking-widest text-muted-foreground">
                     Hours
                   </th>
-                  <th className="py-3 pr-4 font-heading text-xs font-700 uppercase tracking-widest text-muted-foreground">
-                    Price
-                  </th>
                   <th className="py-3 font-heading text-xs font-700 uppercase tracking-widest text-muted-foreground">
                     What you get
                   </th>
@@ -107,9 +103,6 @@ const FractionalHr = () => (
                     </td>
                     <td className="py-5 pr-4 text-base tabular-nums text-muted-foreground">
                       {t.hours}
-                    </td>
-                    <td className="py-5 pr-4 text-base tabular-nums text-foreground">
-                      {t.price}
                     </td>
                     <td className="py-5 text-base leading-relaxed text-muted-foreground">
                       {t.who}

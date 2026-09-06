@@ -75,4 +75,7 @@ export const wildcardRedirects: RedirectRule[] = [
   // No /blog/* path renders a page any more. Anything not matched by an
   // explicit rule above falls through to /resources.
   { from: "/blog/*", to: "/resources/" },
+
+  // Pricing page retired — prices are no longer published
+  { from: "/pricing", to: "/services" },
 ];
