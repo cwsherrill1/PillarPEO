@@ -40,8 +40,8 @@ const jsonLd = {
       name: "Partner with Pillar",
       description:
         "Referral and white-label HR partnerships for fractional CFOs, COOs and benefits brokers.",
-      isPartOf: { "@id": `${SITE_URL}/#website` },
-      about: { "@id": ORG_REF },
+      isPartOf: ORG_REF,
+      publisher: ORG_REF,
       dateModified: "2026-09-06",
     },
     faqSchema(faqs),
