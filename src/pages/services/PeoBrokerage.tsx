@@ -310,7 +310,9 @@ const PeoBrokerage = () => (
             ))}
           </Accordion>
         </Reveal>
+      </div>
     </section>
+
 
     <Prose title="A PEO is usually the wrong answer if…" alt>
       <ul className="space-y-3">
