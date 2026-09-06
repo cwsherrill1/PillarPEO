@@ -362,3 +362,62 @@ See the HR audit
 PROOF SLOT
 
 PROOF SLOT — client quote describing what the scored report changed about how they saw their risk.
+
+
+# How PEO pricing actually works (cluster summary)
+
+Pillar brokers PEO arrangements and reads provider proposals every week. The claims below about
+industry mechanics are Pillar's own first-hand observations from reviewing those proposals, not
+citations of third parties. Statistics, where used, are attributed to primary sources only.
+
+## Hub — /resources/peo-pricing-explained
+PEO pricing has four moving parts: the administrative fee, benefit premiums, workers' compensation,
+and payroll taxes. Most proposals blend them into a single per-employee number, which makes
+comparison impossible. Unbundle the quote and each line becomes checkable and negotiable.
+
+## Why your renewal jumped — /resources/peo-honeymoon-pricing
+Introductory pricing wins the account; renewal pricing keeps it. By renewal, switching costs
+(migration effort, plan-year disruption, notice windows) have removed most of the employer's
+leverage. Ask about renewal caps and repricing mechanics before signing, not after.
+
+## The SUTA line nobody checks — /resources/peo-suta-rates
+PEOs commonly quote a pooled state unemployment rate near the top of the state band, because the
+pool absorbs high-turnover employers. State unemployment tax is experience rated and applies only
+to wages up to each state's annual taxable wage base — not to gross payroll. Check the provider's
+assumed rate and basis, per state, against your own rate notices and quarterly filings. Ask in
+writing what happens to your experience rating both when you join and when you leave; being treated
+as a new employer on exit can be expensive.
+
+## Admin fees — /resources/peo-admin-fees
+Two models: per employee per month, or a percentage of payroll. PEPM tracks the provider's actual
+workload (number of people). A percentage rises with every raise and promotion for no added
+service, which penalises professional-services firms whose headcount is flat and whose
+compensation is not. If a percentage is used, ask what basis: gross payroll includes pre-tax
+retirement and insurance deferrals; taxable wages do not. Always demand an unbundled quote and a
+redacted sample invoice before signing.
+
+## Contract terms — /resources/peo-contract-terms
+Five clauses set the cost of leaving: term length, auto-renewal, the notice window, termination
+fees, and plan-year alignment. The notice window traps the most employers: it closes before the
+renewal date, and notice must be given in the form and to the address the contract specifies.
+Mid-year exits restart employee deductibles and out-of-pocket accumulators and complicate year-end
+wage reporting; an exit aligned to the plan year is cleaner.
+
+## When a PEO is the wrong answer — /resources/when-a-peo-is-the-wrong-answer
+Four cases: the firm is low-risk and low-turnover and beats the pool; benefits are already well
+placed; real HR capability exists in-house; or the actual problem is process, not administration.
+The page includes a clearly labelled illustrative example — round numbers, not a client — in which
+a workers' compensation saving is more than offset by a pooled unemployment rate and a
+percentage-of-payroll fee, so total spend rises.
+
+## The free PEO renewal review — /resources/peo-renewal-review
+Start about 120 days before renewal. Inputs: current agreement, renewal letter, census, four
+quarters of unemployment filings and rate notices, workers' compensation class codes and loss
+history, benefit plan documents. Output: an unbundled written comparison, market quotes, your
+renewal and notice dates, and a recommendation. Free to the employer; if coverage is placed through
+Pillar, the provider pays a commission which is disclosed in writing.
+
+## Partners — /partners
+Referral and white-label HR partnerships for fractional CFOs and COOs and for benefits brokers.
+Pillar sells no software, insurance or accounting. No referral fees are paid for HR advisory work.
+PEO placements pay a provider commission, disclosed in writing to the client.
