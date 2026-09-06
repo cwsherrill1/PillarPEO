@@ -32,7 +32,6 @@ const PeoBenefits = lazy(() => import("./pages/resources/PeoBenefits"));
 const PeoBrokerVsDirect = lazy(() => import("./pages/resources/PeoBrokerVsDirect"));
 const WhatIsAPeo = lazy(() => import("./pages/resources/WhatIsAPeo"));
 const EmployeeHealthBenefitsOptions = lazy(() => import("./pages/resources/EmployeeHealthBenefitsOptions"));
-const PeoForVentureBackedStartups = lazy(() => import("./pages/resources/PeoForVentureBackedStartups"));
 const PeoIndustryTransparency = lazy(() => import("./pages/resources/PeoIndustryTransparency"));
 const Services = lazy(() => import("./pages/services/Services"));
 const HrAudit = lazy(() => import("./pages/services/HrAudit"));
@@ -110,7 +109,6 @@ const App = () => (
               <Route path="/blog/employee-health-benefits-options" element={<EmployeeHealthBenefitsOptions />} />
               <Route path="/peo-broker-north-carolina" element={<PeoBrokerNorthCarolina />} />
               <Route path="/peo-broker-south-carolina" element={<PeoBrokerSouthCarolina />} />
-              <Route path="/blog/peo-for-venture-backed-startups" element={<PeoForVentureBackedStartups />} />
               <Route path="/blog/peo-industry-transparency" element={<PeoIndustryTransparency />} />
               <Route path="/hr-headache-score" element={<HrHeadacheQuiz />} />
               <Route path="/about" element={<About />} />
