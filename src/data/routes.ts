@@ -30,11 +30,6 @@ export const siteRoutes: SiteRoute[] = [
   { path: "/about/caleb-sherrill", lastmod: D, changefreq: "monthly" },
   { path: "/contact", lastmod: D, changefreq: "monthly" },
 
-  // Still-live legacy pages (replacements arrive in batches 4 and 5)
-  { path: "/do-we-need-a-peo", lastmod: D, changefreq: "monthly" },
-  { path: "/peo-broker-north-carolina", lastmod: D, changefreq: "monthly" },
-  { path: "/peo-broker-south-carolina", lastmod: D, changefreq: "monthly" },
-  { path: "/hr-headache-score", lastmod: D, changefreq: "monthly" },
 
   // Industries (national)
   { path: "/industries", lastmod: D, changefreq: "monthly" },
@@ -57,7 +52,6 @@ export const siteRoutes: SiteRoute[] = [
   { path: "/resources/co-employment", lastmod: D },
   { path: "/resources/peo-cost-guide", lastmod: D },
   { path: "/resources/peo-vs-aso-vs-inhouse", lastmod: D },
-  { path: "/resources/peo-readiness", lastmod: D },
   { path: "/resources/peo-vs-payroll-service", lastmod: D },
   { path: "/resources/best-peo-for-small-business", lastmod: D },
   { path: "/resources/top-peo-companies", lastmod: D },
@@ -66,8 +60,25 @@ export const siteRoutes: SiteRoute[] = [
   { path: "/resources/peo-broker-vs-direct", lastmod: D },
   { path: "/resources/what-is-a-peo", lastmod: D },
   { path: "/blog/employee-health-benefits-options", lastmod: "2026-03-31" },
-  { path: "/blog/peo-for-venture-backed-startups", lastmod: "2026-04-21" },
   { path: "/blog/peo-industry-transparency", lastmod: "2026-05-19" },
+
+  // Tools
+  { path: "/tools/hr-risk-score", lastmod: D, changefreq: "monthly" },
+  { path: "/tools/peo-cost-calculator", lastmod: D, changefreq: "monthly" },
+  { path: "/case-studies", lastmod: D, changefreq: "monthly" },
+
+  // State employer guides and compliance resources
+  { path: "/resources/state-employer-guides", lastmod: D, changefreq: "monthly" },
+  { path: "/resources/state-employer-guides/north-carolina", lastmod: D, changefreq: "monthly" },
+  { path: "/resources/state-employer-guides/south-carolina", lastmod: D, changefreq: "monthly" },
+  { path: "/resources/nc-vs-sc-employment-law", lastmod: D, changefreq: "monthly" },
+  { path: "/resources/multi-state-employer-checklist", lastmod: D, changefreq: "monthly" },
+  { path: "/resources/hr-audit-checklist", lastmod: D, changefreq: "monthly" },
+  { path: "/resources/e-verify-north-carolina", lastmod: D, changefreq: "monthly" },
+  { path: "/resources/e-verify-south-carolina", lastmod: D, changefreq: "monthly" },
+  { path: "/resources/nc-handbook-requirements", lastmod: D, changefreq: "monthly" },
+  { path: "/resources/sc-handbook-requirements", lastmod: D, changefreq: "monthly" },
+  { path: "/resources/do-we-need-a-peo", lastmod: D, changefreq: "monthly" },
 
   { path: "/privacy", lastmod: D, changefreq: "yearly" },
   { path: "/terms", lastmod: D, changefreq: "yearly" },
