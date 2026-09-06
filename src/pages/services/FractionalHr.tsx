@@ -45,11 +45,6 @@ const jsonLd = {
       url: `${SITE_URL}/services/fractional-hr`,
       description:
         "Fractional HR for professional-services firms: 8, 20 or 40 hours a month at a fixed monthly price, three-month minimum.",
-      offers: pricing.fractional.tiers.map((t) => ({
-        "@type": "Offer",
-        name: t.label,
-        description: `${t.label} — ${t.hours}`,
-      })),
     },
   ],
 };

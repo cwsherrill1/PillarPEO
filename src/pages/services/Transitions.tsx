@@ -25,10 +25,6 @@ const jsonLd = {
       url: `${SITE_URL}/services/transitions`,
       description:
         "Fixed-price PEO exits, PEO switches, PEO implementations, HRIS migrations and payroll provider switches.",
-      offers: {
-        "@type": "Offer",
-        description: "Fixed price, quoted before the work starts.",
-      },
     },
   ],
 };

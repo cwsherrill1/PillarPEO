@@ -25,11 +25,6 @@ const jsonLd = {
       url: `${SITE_URL}/services/hr-projects`,
       description:
         "Fixed-price HR projects: handbooks, FLSA classification, I-9 and E-Verify remediation, compensation benchmarking, performance management and manager training.",
-      offers: hrProjects.map((p) => ({
-        "@type": "Offer",
-        name: p.name,
-        description: `${p.name} — fixed price, quoted before the work starts`,
-      })),
     },
   ],
 };

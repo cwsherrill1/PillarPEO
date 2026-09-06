@@ -22,10 +22,6 @@ const jsonLd = {
       areaServed: "US",
       url: `${SITE_URL}${s.href}`,
       description: s.who,
-      offers: {
-        "@type": "Offer",
-        description: "Fixed price, quoted before the work starts.",
-      },
     })),
   ],
 };
