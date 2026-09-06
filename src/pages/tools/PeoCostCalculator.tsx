@@ -17,7 +17,6 @@ const jsonLd = {
   "@graph": [
     breadcrumb([
       { name: "Home", path: "/" },
-      { name: "Tools", path: "/tools" },
       { name: "PEO Cost Calculator", path: "/tools/peo-cost-calculator" },
     ]),
   ],
