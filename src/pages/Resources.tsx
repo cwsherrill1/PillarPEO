@@ -404,13 +404,13 @@ const Resources = () => {
                           {r.category}
                         </Badge>
                       </div>
-                      <h3 className="mt-4 font-heading text-lg font-700 text-foreground group-hover:text-accent transition-colors">
+                      <h3 className="mt-4 font-heading text-lg font-700 text-foreground group-hover:text-green-ink transition-colors">
                         {r.title}
                       </h3>
                       <p className="mt-2 flex-1 text-base text-muted-foreground">
                         {r.desc}
                       </p>
-                      <span className="mt-4 inline-flex items-center text-sm font-semibold text-accent transition-colors group-hover:text-accent/80">
+                      <span className="mt-4 inline-flex items-center text-sm font-semibold text-green-ink transition-colors group-hover:text-green-ink/80">
                         Read More
                         <ArrowRight className="ml-1 h-3.5 w-3.5" />
                       </span>
@@ -453,14 +453,14 @@ const Resources = () => {
                           </Badge>
                           <span className="text-xs text-muted-foreground">{item.date}</span>
                         </div>
-                        <h3 className="mt-2 font-heading text-base font-700 text-foreground group-hover:text-accent transition-colors">
+                        <h3 className="mt-2 font-heading text-base font-700 text-foreground group-hover:text-green-ink transition-colors">
                           {item.title}
                         </h3>
                         <p className="mt-1 text-sm text-muted-foreground">
                           {item.desc}
                         </p>
                       </div>
-                      <ArrowRight className="h-4 w-4 shrink-0 text-muted-foreground group-hover:text-accent transition-colors" />
+                      <ArrowRight className="h-4 w-4 shrink-0 text-muted-foreground group-hover:text-green-ink transition-colors" />
                     </CardContent>
                   </Card>
                 </Link>

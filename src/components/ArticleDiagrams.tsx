@@ -12,7 +12,7 @@ export const CoEmploymentDiagram = () => (
       {/* You */}
       <div className="rounded-xl bg-primary p-5 text-primary-foreground">
         <div className="flex items-center gap-2 font-heading font-800">
-          <Building2 className="h-5 w-5 text-accent" /> You (worksite employer)
+          <Building2 className="h-5 w-5 text-green-ink" /> You (worksite employer)
         </div>
         <ul className="mt-3 space-y-1.5 text-sm text-primary-foreground/85">
           <li>• Hire, fire, manage</li>
@@ -23,14 +23,14 @@ export const CoEmploymentDiagram = () => (
       </div>
       {/* PEO */}
       <div className="hidden items-center justify-center md:flex">
-        <div className="text-accent">
+        <div className="text-green-ink">
           <ArrowRight className="h-6 w-6" />
           <ArrowRight className="h-6 w-6 -mt-1 rotate-180" />
         </div>
       </div>
       <div className="rounded-xl border border-accent/30 bg-accent/5 p-5">
         <div className="flex items-center gap-2 font-heading font-800 text-foreground">
-          <Users className="h-5 w-5 text-accent" /> The PEO (admin employer)
+          <Users className="h-5 w-5 text-green-ink" /> The PEO (admin employer)
         </div>
         <ul className="mt-3 space-y-1.5 text-sm text-foreground/85">
           <li>• Files payroll taxes (their FEIN)</li>
@@ -52,7 +52,7 @@ export const CoEmploymentDiagram = () => (
 export const PricingModelsCompare = () => (
   <figure className="my-8 grid gap-4 md:grid-cols-2">
     <div className="rounded-2xl border border-border bg-card p-6">
-      <div className="text-xs font-700 uppercase tracking-wider text-accent">Model A</div>
+      <div className="text-xs font-700 uppercase tracking-wider text-green-ink">Model A</div>
       <h3 className="mt-1 font-heading text-xl font-800 text-foreground">Per Employee / Month</h3>
       <div className="mt-3 font-heading text-3xl font-800 text-foreground">
         $80–$200<span className="text-base font-600 text-muted-foreground"> /EE/mo</span>
@@ -65,7 +65,7 @@ export const PricingModelsCompare = () => (
       <p className="mt-3 text-xs text-muted-foreground">Best for: stable headcount, higher wages, white-collar.</p>
     </div>
     <div className="rounded-2xl border border-border bg-card p-6">
-      <div className="text-xs font-700 uppercase tracking-wider text-accent">Model B</div>
+      <div className="text-xs font-700 uppercase tracking-wider text-green-ink">Model B</div>
       <h3 className="mt-1 font-heading text-xl font-800 text-foreground">% of Payroll</h3>
       <div className="mt-3 font-heading text-3xl font-800 text-foreground">
         2%–6%<span className="text-base font-600 text-muted-foreground"> of gross</span>
@@ -97,10 +97,10 @@ export const SwitchTimeline = ({ phases }: { phases: Phase[] }) => (
       <div className="absolute left-0 right-0 top-5 hidden h-0.5 bg-border md:block" aria-hidden="true" />
       {phases.map((p, i) => (
         <li key={i} className="relative flex flex-col items-center text-center md:items-start md:text-left">
-          <div className="z-10 flex h-10 w-10 items-center justify-center rounded-full bg-accent font-heading text-base font-800 text-accent-foreground shadow-md">
+          <div className="z-10 flex h-10 w-10 items-center justify-center rounded-full bg-accent font-heading text-base font-800 text-green-ink-foreground shadow-md">
             {i + 1}
           </div>
-          <div className="mt-3 text-xs font-700 uppercase tracking-wider text-accent">{p.weeks}</div>
+          <div className="mt-3 text-xs font-700 uppercase tracking-wider text-green-ink">{p.weeks}</div>
           <div className="mt-1 font-heading text-sm font-700 text-foreground">{p.title}</div>
           <p className="mt-1 text-xs leading-relaxed text-foreground/75">{p.desc}</p>
         </li>
@@ -119,7 +119,7 @@ export const RedFlagVsGoodAnswer = ({ items }: { items: QuestionContrast[] }) =>
       <div className="flex items-center justify-center gap-2 p-3 text-destructive">
         <XCircle className="h-4 w-4" /> Red flag
       </div>
-      <div className="flex items-center justify-center gap-2 p-3 text-accent">
+      <div className="flex items-center justify-center gap-2 p-3 text-green-ink">
         <CheckCircle2 className="h-4 w-4" /> Good answer
       </div>
     </div>

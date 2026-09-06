@@ -230,9 +230,9 @@ const QuizResults = ({
                     {question.topic}
                   </h4>
                   <div className="mb-3 flex items-start gap-2">
-                    <Lightbulb className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
+                    <Lightbulb className="mt-0.5 h-4 w-4 shrink-0 text-green-ink" />
                     <div>
-                      <p className="text-xs font-semibold uppercase tracking-wide text-accent">
+                      <p className="text-xs font-semibold uppercase tracking-wide text-green-ink">
                         Quick Win
                       </p>
                       <p className="text-sm text-muted-foreground">{question.quickWin}</p>
