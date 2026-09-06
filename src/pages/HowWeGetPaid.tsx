@@ -160,7 +160,7 @@ const HowWeGetPaid = () => (
       heading="Ask us anything about the money."
       body="If something about how we're paid doesn't sit right, raise it on the first call and we'll put the numbers in front of you."
       proof="PROOF SLOT — client quote about the commission disclosure, or a redacted sample disclosure document."
-      secondary={{ label: "See the full price list", href: "/pricing" }}
+      secondary={{ label: "See all services", href: "/services" }}
     />
   </>
 );
