@@ -75,6 +75,10 @@ const PeoContractTerms = lazy(() => import("./pages/resources/pricing/PeoContrac
 const WhenPeoWrongAnswer = lazy(() => import("./pages/resources/pricing/WhenPeoWrongAnswer"));
 const PeoRenewalReview = lazy(() => import("./pages/resources/pricing/PeoRenewalReview"));
 const Partners = lazy(() => import("./pages/Partners"));
+const PartnersFractionalCfos = lazy(() => import("./pages/partners/FractionalCfos"));
+const PartnersBenefitsBrokers = lazy(() => import("./pages/partners/BenefitsBrokers"));
+const PartnersWhiteLabel = lazy(() => import("./pages/partners/WhiteLabel"));
+const PartnersClientOnePager = lazy(() => import("./pages/partners/ClientOnePager"));
 
 const queryClient = new QueryClient();
 
@@ -146,6 +150,10 @@ const App = () => (
               <Route path="/resources/when-a-peo-is-the-wrong-answer" element={<WhenPeoWrongAnswer />} />
               <Route path="/resources/peo-renewal-review" element={<PeoRenewalReview />} />
               <Route path="/partners" element={<Partners />} />
+              <Route path="/partners/fractional-cfos" element={<PartnersFractionalCfos />} />
+              <Route path="/partners/benefits-brokers" element={<PartnersBenefitsBrokers />} />
+              <Route path="/partners/white-label" element={<PartnersWhiteLabel />} />
+              <Route path="/partners/client-one-pager" element={<PartnersClientOnePager />} />
               <Route path="/resources/peo-industry-transparency" element={<PeoIndustryTransparency />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
