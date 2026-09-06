@@ -61,26 +61,6 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://pillarpeo.com/do-we-need-a-peo</loc>
-    <lastmod>2026-09-05</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://pillarpeo.com/peo-broker-north-carolina</loc>
-    <lastmod>2026-09-05</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://pillarpeo.com/peo-broker-south-carolina</loc>
-    <lastmod>2026-09-05</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://pillarpeo.com/hr-headache-score</loc>
-    <lastmod>2026-09-05</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
     <loc>https://pillarpeo.com/industries</loc>
     <lastmod>2026-09-05</lastmod>
     <changefreq>monthly</changefreq>
@@ -157,10 +137,6 @@
     <lastmod>2026-09-05</lastmod>
   </url>
   <url>
-    <loc>https://pillarpeo.com/resources/peo-readiness</loc>
-    <lastmod>2026-09-05</lastmod>
-  </url>
-  <url>
     <loc>https://pillarpeo.com/resources/peo-vs-payroll-service</loc>
     <lastmod>2026-09-05</lastmod>
   </url>
@@ -193,12 +169,78 @@
     <lastmod>2026-03-31</lastmod>
   </url>
   <url>
-    <loc>https://pillarpeo.com/blog/peo-for-venture-backed-startups</loc>
-    <lastmod>2026-04-21</lastmod>
-  </url>
-  <url>
     <loc>https://pillarpeo.com/blog/peo-industry-transparency</loc>
     <lastmod>2026-05-19</lastmod>
+  </url>
+  <url>
+    <loc>https://pillarpeo.com/tools/hr-risk-score</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pillarpeo.com/tools/peo-cost-calculator</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pillarpeo.com/case-studies</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pillarpeo.com/resources/state-employer-guides</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pillarpeo.com/resources/state-employer-guides/north-carolina</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pillarpeo.com/resources/state-employer-guides/south-carolina</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pillarpeo.com/resources/nc-vs-sc-employment-law</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pillarpeo.com/resources/multi-state-employer-checklist</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pillarpeo.com/resources/hr-audit-checklist</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pillarpeo.com/resources/e-verify-north-carolina</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pillarpeo.com/resources/e-verify-south-carolina</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pillarpeo.com/resources/nc-handbook-requirements</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pillarpeo.com/resources/sc-handbook-requirements</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pillarpeo.com/resources/do-we-need-a-peo</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://pillarpeo.com/privacy</loc>
