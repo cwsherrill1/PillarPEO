@@ -92,7 +92,7 @@ const EmployeeHealthBenefitsOptions = () => (
         </Reveal>
         <Reveal delay={100}>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80 md:text-xl">
-            Eight ways employers can offer health benefits — what they are, who they fit, and the
+            Eight ways employers can offer health benefits: what they are, who they fit, and the
             tradeoffs nobody mentions on the sales call.
           </p>
         </Reveal>
@@ -366,7 +366,7 @@ const EmployeeHealthBenefitsOptions = () => (
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">
             We'll walk through all eight options with you and recommend the structure that actually
-            fits your business — independent, no pressure, free forever.
+            fits your business, independent, no pressure, free forever.
           </p>
           <div className="mt-8">
             <Button

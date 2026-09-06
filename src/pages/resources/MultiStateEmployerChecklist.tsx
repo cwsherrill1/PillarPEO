@@ -49,7 +49,7 @@ const faqs: Faq[] = [
   },
   {
     q: "Does this apply the first time we ever hire outside our home state, or every time after that?",
-    a: "The first hire in a new state means new registrations from scratch. Later hires in a state you're already registered in are much lighter — mostly the notice, addendum, and payroll setup steps.",
+    a: "The first hire in a new state means new registrations from scratch. Later hires in a state you're already registered in are much lighter: mostly the notice, addendum, and payroll setup steps.",
   },
 ];
 
@@ -132,7 +132,7 @@ const MultiStateEmployerChecklist = () => (
         State-specific registration deadlines, unemployment insurance new-employer
         rates, and workers' comp thresholds all vary by state and change over
         time. Confirm the current figures for the specific state at the point of
-        hire — we verify this during the audit.
+        hire. We verify this during the audit.
       </VerifyTodo>
       <LegalNote />
     </Section>

@@ -13,13 +13,13 @@ const guides = [
     slug: "north-carolina",
     name: "North Carolina",
     summary:
-      "E-Verify, workers' comp, and the headcount thresholds that trigger each — organized by how many people you employ.",
+      "E-Verify, workers' comp, and the headcount thresholds that trigger each, organized by how many people you employ.",
   },
   {
     slug: "south-carolina",
     name: "South Carolina",
     summary:
-      "E-Verify for every employer, workers' comp, wage-change notice, and the Pregnancy Accommodations Act — by headcount.",
+      "E-Verify for every employer, workers' comp, wage-change notice, and the Pregnancy Accommodations Act, by headcount.",
   },
 ];
 
@@ -116,7 +116,7 @@ const StateEmployerGuides = () => (
 
     <Section title="How each figure is verified" alt>
       <p className="text-lg leading-8 text-foreground/85">
-        Every threshold in these guides is checked against the primary source — the state
+        Every threshold in these guides is checked against the primary source: the state
         statute or the administering agency's own published page, not a law firm summary,
         a vendor blog, or another consultancy's checklist. When the primary source and a
         secondary source disagree, the primary source wins and the secondary one is
@@ -135,14 +135,14 @@ const StateEmployerGuides = () => (
         What these guides are not: they are not legal advice, and they are not a substitute
         for counsel on a live matter. They tell you which obligations exist and where the
         thresholds sit, so you can see whether your firm is on the right side of them. If
-        you find something out of date or believe a threshold is wrong, tell us — we will
+        you find something out of date or believe a threshold is wrong, tell us. We will
         re-check it against the source and correct the page.
       </p>
     </Section>
 
     <ServiceCta
       heading="Not sure which rules apply to your headcount?"
-      body="An HR audit checks your actual registrations and thresholds against what the law requires — state by state."
+      body="An HR audit checks your actual registrations and thresholds against what the law requires, state by state."
       proof="multi-state client quote referencing a specific state finding, with headcount."
       secondary={{ label: "See the HR audit", href: "/services/hr-audit" }}
     />

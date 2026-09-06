@@ -166,7 +166,7 @@
 
 @layer base {
   :root {
-    /* Brand palette — all HSL */
+    /* Brand palette: all HSL */
     --background: 0 0% 100%;
     --foreground: 233 96% 15%;
 
@@ -214,7 +214,7 @@
     /* Extended brand tokens */
     --navy: 236 96% 15%;
     --green: 145 63% 49%;
-    /* Green ink #1A7A45 — the only green allowed as text/link on light grounds */
+    /* Green ink #1A7A45: the only green allowed as text/link on light grounds */
     --green-ink: 145 65% 29%;
     --soft-blue: 197 86% 64%;
     --bold-yellow: 43 100% 50%;

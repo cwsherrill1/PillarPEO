@@ -2,7 +2,7 @@
  * Single source of truth for permanent redirects.
  * `App.tsx` renders <Navigate> routes from this list, and
  * `scripts/generate-redirects.ts` writes `public/_redirects` from it.
- * One hop only — never point a `from` at another `from`.
+ * One hop only: never point a `from` at another `from`.
  *
  * `pending: true` means the destination does not exist yet (it arrives in a
  * later batch). Pending rules are kept here for the record but are NOT
@@ -28,7 +28,7 @@ export const redirects: RedirectRule[] = [
   { from: "/peo-onboarding", to: "/services/transitions" },
   { from: "/resources/peo-implementation", to: "/services/transitions" },
 
-  // → Cost guide (live) — merges the duplicate pricing page
+  // → Cost guide (live): merges the duplicate pricing page
   { from: "/resources/peo-pricing", to: "/resources/peo-cost-guide" },
   { from: "/blog/how-much-peo-costs", to: "/resources/peo-cost-guide" },
 
@@ -76,6 +76,6 @@ export const wildcardRedirects: RedirectRule[] = [
   // explicit rule above falls through to /resources.
   { from: "/blog/*", to: "/resources/" },
 
-  // Pricing page retired — prices are no longer published
+  // Pricing page retired: prices are no longer published
   { from: "/pricing", to: "/services" },
 ];

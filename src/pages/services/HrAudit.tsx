@@ -62,7 +62,7 @@ const jsonLd = {
     ]),
     {
       "@type": "Service",
-      name: "HR Audit — the Load Report",
+      name: "HR Audit: the Load Report",
       serviceType: "HR audit",
       provider: ORG_REF,
       areaServed: "US",

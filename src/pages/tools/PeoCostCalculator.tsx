@@ -23,7 +23,7 @@ const jsonLd = {
 };
 
 /**
- * These are third-party market figures — what a PEO would charge — not
+ * These are third-party market figures, what a PEO would charge, not
  * Pillar's own prices, which stay unpublished and are quoted on a scope call.
  *
  * Admin fee bands mirror the ranges published in our PEO cost guide.
@@ -38,7 +38,7 @@ const EMPLOYER_HEALTH_SINGLE = 7900;
 const EMPLOYER_HEALTH_FAMILY = 20100;
 
 const setupOptions = [
-  { value: "none", label: "No HR person — an owner or ops lead handles it" },
+  { value: "none", label: "No HR person: an owner or ops lead handles it" },
   { value: "diy", label: "In-house HR, no PEO or fractional support" },
   { value: "peo", label: "Already on a PEO" },
   { value: "team", label: "In-house HR team" },
@@ -99,7 +99,7 @@ const PeoCostCalculator = () => {
       <SEOHead
         title="PEO Cost Calculator: Estimate Your PEO Cost | Pillar"
         fullTitle
-        description="Estimate what a PEO would charge your firm a year — admin fee, health contribution, workers' comp and SUTA — with every assumption shown."
+        description="Estimate what a PEO would charge your firm a year: admin fee, health contribution, workers' comp and SUTA, with every assumption shown."
         canonical={`${SITE_URL}/tools/peo-cost-calculator`}
         jsonLd={jsonLd}
       />
@@ -109,7 +109,7 @@ const PeoCostCalculator = () => {
           <Reveal>
             <h1 className="font-heading text-4xl font-800 md:text-5xl">PEO Cost Calculator</h1>
             <p className="mt-6 text-lg text-primary-foreground/80">
-              An estimate of what <em>a PEO</em> would charge you in a year — administration,
+              An estimate of what <em>a PEO</em> would charge you in a year: administration,
               your share of health premium, workers' comp and unemployment tax. These are
               market figures, not a quote, and not Pillar's own fees. Every assumption behind
               the number is listed on this page so you can argue with it.
@@ -205,7 +205,7 @@ const PeoCostCalculator = () => {
                     onChange={(e) => setWageBase(e.target.value)}
                   />
                   <p className="mt-1 text-xs text-muted-foreground">
-                    Set by each state each year — check your state's current figure.
+                    Set by each state each year; check your state's current figure.
                   </p>
                 </div>
                 <div>
@@ -321,7 +321,7 @@ const PeoCostCalculator = () => {
                   <p className="mt-2 text-base text-muted-foreground">
                     You already have a PEO, so the useful comparison is your current invoice
                     against this range. If yours sits above it, that is a renewal conversation or
-                    a market check. Comparing PEOs with Pillar is free to you — the provider pays
+                    a market check. Comparing PEOs with Pillar is free to you: the provider pays
                     the commission, disclosed in writing. If you decide to move, the{" "}
                     <Link to="/services/transitions" className="font-semibold text-green-ink underline underline-offset-4">
                       transition work
@@ -333,13 +333,13 @@ const PeoCostCalculator = () => {
                     With an in-house HR team, a PEO usually competes on benefits buying power
                     rather than administration. Compare this range against what your current
                     carrier renewal and payroll platform cost you today. Where you want outside
-                    help — an audit, a handbook, a multi-state clean-up — Pillar's work is fixed
+                    help, an audit, a handbook, a multi-state clean-up, Pillar's work is fixed
                     price, quoted before the work starts.
                   </p>
                 ) : (
                   <p className="mt-2 text-base text-muted-foreground">
                     With {statesNum > 1 ? "people in more than one state and " : ""}no dedicated
-                    HR function, a PEO is worth pricing — and so is keeping your own payroll and
+                    HR function, a PEO is worth pricing, and so is keeping your own payroll and
                     adding{" "}
                     <Link to="/services/fractional-hr" className="font-semibold text-green-ink underline underline-offset-4">
                       fractional HR

@@ -47,7 +47,7 @@ const steps = [
     num: 2,
     icon: BarChart3,
     title: "Better-fit comparison",
-    desc: "We present alternatives side by side — pricing, service model, benefits — so you can see real tradeoffs.",
+    desc: "We present alternatives side by side (pricing, service model, benefits) so you can see real tradeoffs.",
   },
   {
     num: 3,
@@ -70,9 +70,9 @@ const switchJsonLd = {
 const SwitchYourPeo = () => (
   <>
     <SEOHead
-      title="Switch Your PEO — Independent Broker Review | Pillar"
+      title="Switch Your PEO: Independent Broker Review | Pillar"
       fullTitle
-      description="Wondering if it's time to switch PEOs? Pillar is an independent PEO broker — we compare options and manage the transition without disruption."
+      description="Wondering if it's time to switch PEOs? Pillar is an independent PEO broker: we compare options and manage the transition without disruption."
       jsonLd={switchJsonLd}
       
     />
@@ -133,7 +133,7 @@ const SwitchYourPeo = () => (
       </div>
     </section>
 
-    {/* How we help switchers — 3-step plan */}
+    {/* How we help switchers: 3-step plan */}
     <section className="bg-muted/40">
       <div className="container max-w-4xl py-20 md:py-28">
         <Reveal>

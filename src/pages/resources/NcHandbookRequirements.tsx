@@ -57,7 +57,7 @@ const NcHandbookRequirements = () => (
     <Section title="What does a North Carolina handbook actually need to say?">
       <UpdatedLine />
       <p className="text-lg leading-8 text-foreground/85">
-        Very little is legally required in a North Carolina handbook itself —
+        Very little is legally required in a North Carolina handbook itself:
         most of what belongs in one is good practice, not statute. The two
         confirmed legal points to reflect are E-Verify at 25 or more employees
         and workers' compensation coverage at 3 or more employees. Everything
@@ -114,7 +114,7 @@ const NcHandbookRequirements = () => (
         </Bullet>
         <Bullet>
           <strong className="text-foreground">Leave policies.</strong> Whatever
-          leave you actually offer — vacation, sick, bereavement — stated
+          leave you actually offer, vacation, sick, bereavement, stated
           plainly, plus a note on FMLA if you're a covered employer.
         </Bullet>
         <Bullet>

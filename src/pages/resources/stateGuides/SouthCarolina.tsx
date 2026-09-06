@@ -11,7 +11,7 @@ import { SITE_URL, breadcrumb } from "@/data/organization";
 const faqs: Faq[] = [
   {
     q: "Does E-Verify apply to small employers in South Carolina?",
-    a: "Yes. South Carolina requires every employer, regardless of size, to verify new hires' work authorization within 3 business days of hire — either through E-Verify or by another method the statute permits. This is different from North Carolina, which only requires E-Verify at 25 or more employees.",
+    a: "Yes. South Carolina requires every employer, regardless of size, to verify new hires' work authorization within 3 business days of hire, either through E-Verify or by another method the statute permits. This is different from North Carolina, which only requires E-Verify at 25 or more employees.",
   },
   {
     q: "At what headcount does workers' compensation apply in South Carolina?",
@@ -23,7 +23,7 @@ const faqs: Faq[] = [
   },
   {
     q: "When does the Pregnancy Accommodations Act apply?",
-    a: "At 15 or more employees. Below that headcount, other federal or state protections may still apply — that's worth confirming for your specific situation rather than assuming this Act is the only rule in play.",
+    a: "At 15 or more employees. Below that headcount, other federal or state protections may still apply: that's worth confirming for your specific situation rather than assuming this Act is the only rule in play.",
   },
 ];
 
@@ -166,7 +166,7 @@ const SouthCarolina = () => (
         <Link to="/services/hr-audit" className="text-green-ink hover:underline">
           HR audit
         </Link>{" "}
-        checks your actual headcount and hiring dates against these thresholds — including
+        checks your actual headcount and hiring dates against these thresholds, including
         the 3-business-day E-Verify window, which is easy to miss when hiring moves fast.
         For firms with people in both states, start with the{" "}
         <Link to="/resources/multi-state-employer-checklist" className="text-green-ink hover:underline">

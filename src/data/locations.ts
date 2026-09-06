@@ -1,7 +1,7 @@
 /**
  * The Carolinas metro pages. These are the only pages allowed to carry local
  * signals (city names, service-area towns, zips, geo coordinates).
- * No street address anywhere — Pillar has no verified published address.
+ * No street address anywhere: Pillar has no verified published address.
  */
 
 export interface Metro {
@@ -66,7 +66,7 @@ export const metros: Metro[] = [
     navLabel: "Rock Hill & Fort Mill, SC",
     state: "South Carolina",
     summary:
-      "South Carolina's employer rules for firms on either side of the line — E-Verify for all employers, and wage-notice requirements NC does not have.",
+      "South Carolina's employer rules for firms on either side of the line: E-Verify for all employers, and wage-notice requirements NC does not have.",
     geo: { lat: 34.9249, lng: -81.0251 },
     towns: [
       "Rock Hill",

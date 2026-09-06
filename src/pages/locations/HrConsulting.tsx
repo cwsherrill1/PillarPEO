@@ -58,7 +58,7 @@ const HrConsulting = () => (
       <p>
         The Carolinas are a specific problem in their own right. The North Carolina and
         South Carolina rules differ on E-Verify, on workers' compensation thresholds, and
-        on notice of wage changes — and a firm in Charlotte can easily have staff on both
+        on notice of wage changes, and a firm in Charlotte can easily have staff on both
         sides of the line without noticing that anything changed.
       </p>
       <ul className="space-y-3">

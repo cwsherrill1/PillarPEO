@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     q: "Does the audit fee change based on what you recommend?",
-    a: "No. The HR audit is a fixed price quoted before the work starts, and it does not change based on the findings or on what we recommend afterwards — including whether we recommend a PEO at all.",
+    a: "No. The HR audit is a fixed price quoted before the work starts, and it does not change based on the findings or on what we recommend afterwards, including whether we recommend a PEO at all.",
   },
   {
     q: "What if the right answer is to do nothing?",

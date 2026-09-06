@@ -9,7 +9,7 @@ import { ArticleByline, ArticleAuthorBio, buildArticleJsonLd } from "@/component
 
 const ARTICLE = buildArticleJsonLd({
   title: "What to Expect During a PEO Implementation",
-  description: "What the next 60–90 days look like after you sign — and how to prepare.",
+  description: "What the next 60–90 days look like after you sign, and how to prepare.",
   path: "/services/transitions",
   datePublished: "2026-01-15",
   dateModified: "2026-09-05",
@@ -33,10 +33,10 @@ const Section = ({ title, children, alt = false }: { title: string; children: Re
 );
 
 const bumps = [
-  "Missing or incorrect employee data that delays setup — get ahead of this with a thorough data audit",
+  "Missing or incorrect employee data that delays setup: get ahead of this with a thorough data audit",
   "Benefits elections that don't process correctly for certain employee classifications",
-  "State tax registration delays for new states — some states take 4–6 weeks for registration confirmation",
-  "Employees who don't complete enrollment in time — have a clear communication and follow-up plan",
+  "State tax registration delays for new states: some states take 4–6 weeks for registration confirmation",
+  "Employees who don't complete enrollment in time: have a clear communication and follow-up plan",
   "Payroll deductions that need adjustment after the first run",
 ];
 
@@ -61,7 +61,7 @@ const PeoImplementation = () => (
         </Reveal>
         <Reveal delay={100}>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80 md:text-xl">
-            Signing with a PEO is step one. Here's what the next 60–90 days actually look like — and how to make sure nothing falls through the cracks.
+            Signing with a PEO is step one. Here's what the next 60–90 days actually look like, and how to make sure nothing falls through the cracks.
           </p>
         </Reveal>
         <Reveal delay={150}>
@@ -84,7 +84,7 @@ const PeoImplementation = () => (
             <ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources
           </Link>
           <p className="text-xl leading-8 text-foreground/85">
-            Most employers focus heavily on the evaluation and selection process — and then are surprised by how much work happens after they sign. A PEO implementation is not just a software setup. It involves migrating payroll data, transitioning benefits, communicating with employees, and coordinating between your current and new providers. This guide walks you through what to expect — and what to watch for.
+            Most employers focus heavily on the evaluation and selection process, and then are surprised by how much work happens after they sign. A PEO implementation is not just a software setup. It involves migrating payroll data, transitioning benefits, communicating with employees, and coordinating between your current and new providers. This guide walks you through what to expect and what to watch for.
           </p>
         </Reveal>
       </div>
@@ -94,7 +94,7 @@ const PeoImplementation = () => (
       <p>Once you sign with a new PEO, implementation begins immediately. In the first two weeks:</p>
       <ul className="space-y-3">
         <Bullet>Your assigned implementation coordinator will request your employee data (roster, classifications, pay rates, direct deposit info, deductions)</Bullet>
-        <Bullet>Benefits enrollment opens — employees will receive instructions for selecting their new plans</Bullet>
+        <Bullet>Benefits enrollment opens: employees will receive instructions for selecting their new plans</Bullet>
         <Bullet>Payroll structure is built in the new system, including pay schedules, tax withholding, and any state registrations needed</Bullet>
         <Bullet>You'll receive access to the HR admin portal and complete an initial orientation</Bullet>
       </ul>
@@ -109,13 +109,13 @@ const PeoImplementation = () => (
         <Bullet>Designate beneficiaries for life insurance and relevant coverage</Bullet>
         <Bullet>Enroll in any voluntary benefits or supplemental coverage</Bullet>
       </ul>
-      <p>Employers should communicate clearly and early. Employees who miss the enrollment window may be locked out of coverage for the plan year. Your implementation coordinator should provide communication templates — use them.</p>
+      <p>Employers should communicate clearly and early. Employees who miss the enrollment window may be locked out of coverage for the plan year. Your implementation coordinator should provide communication templates. Use them.</p>
     </Section>
 
     <Section title="The First Payroll" alt>
       <p>The first payroll run on a new PEO platform is the moment most employers are most anxious about. Here's how to make it go smoothly:</p>
       <ul className="space-y-3">
-        <Bullet>Complete a full parallel review — verify every employee's pay rate, deductions, and direct deposit information before processing</Bullet>
+        <Bullet>Complete a full parallel review: verify every employee's pay rate, deductions, and direct deposit information before processing</Bullet>
         <Bullet>Confirm the payroll schedule aligns with your existing pay cadence</Bullet>
         <Bullet>Review state and local tax withholding setup, especially for employees in multiple states</Bullet>
         <Bullet>Confirm that year-to-date earnings are correctly loaded if you're mid-year</Bullet>
@@ -139,7 +139,7 @@ const PeoImplementation = () => (
         <Bullet>Getting your team comfortable with the HR portal and self-service tools</Bullet>
         <Bullet>Scheduling a 60-day check-in with your PEO service contact and your advisor</Bullet>
       </ul>
-      <p>This is also the right time to establish your ongoing service relationship — know who to call for what, what the response SLA looks like, and what the escalation path is if something goes wrong.</p>
+      <p>This is also the right time to establish your ongoing service relationship: know who to call for what, what the response SLA looks like, and what the escalation path is if something goes wrong.</p>
     </Section>
 
     <Section title="How Pillar Stays Involved After You Sign">
@@ -160,7 +160,7 @@ const PeoImplementation = () => (
             About to go through a PEO implementation?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">
-            Pillar walks alongside employers through the entire journey — from first conversation to first payroll on a new platform. Talk to an advisor to get a realistic picture of what this looks like for your company.
+            Pillar walks alongside employers through the entire journey, from first conversation to first payroll on a new platform. Talk to an advisor to get a realistic picture of what this looks like for your company.
           </p>
           <div className="mt-8">
             <Button asChild size="lg" className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20">

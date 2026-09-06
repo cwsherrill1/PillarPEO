@@ -104,7 +104,7 @@ const Nonprofits = () => (
           </strong>{" "}
           A role paid across two or three funding sources needs a documented position, a
           defensible allocation, and time records that support what was charged. The most
-          common finding is not misuse — it is an allocation everybody understands and
+          common finding is not misuse: it is an allocation everybody understands and
           nobody wrote down.
         </Bullet>
         <Bullet>
@@ -157,7 +157,7 @@ const Nonprofits = () => (
         <Link to="/services/peo-brokerage" className="text-green-ink hover:underline">
           PEO brokerage
         </Link>{" "}
-        is free to you and the commission is disclosed in writing — see{" "}
+        is free to you and the commission is disclosed in writing, see{" "}
         <Link to="/how-we-get-paid" className="text-green-ink hover:underline">
           how we get paid
         </Link>

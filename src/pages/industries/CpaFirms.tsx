@@ -121,7 +121,7 @@ const CpaFirms = () => (
             Busy-season staff working from other states.
           </strong>{" "}
           A senior working six weeks from a parent's house in another state, a preparer
-          hired remotely for the season — either can create registration and withholding
+          hired remotely for the season: either can create registration and withholding
           obligations in that state, along with its own wage and leave rules. Firms find
           out the following year.
         </Bullet>
@@ -140,8 +140,8 @@ const CpaFirms = () => (
         people actually sat in April).
       </p>
       <p>
-        We look at two payroll registers deliberately — one from inside busy season and
-        one from outside it — because the register from a slow week tells you very little
+        We look at two payroll registers deliberately, one from inside busy season and
+        one from outside it, because the register from a slow week tells you very little
         about how the firm behaves under pressure. We also review the timekeeping sample
         against the hours the firm believes people worked.
       </p>

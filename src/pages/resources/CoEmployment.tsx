@@ -104,7 +104,7 @@ const CoEmployment = () => (
         <Reveal>
           <h2 className="font-heading text-2xl font-800 text-foreground md:text-3xl">What You Keep Control Of</h2>
           <p className="mt-4 text-lg leading-8 text-foreground/85">
-            This is where employers often have the most anxiety — and the most misconceptions. You retain full control of:
+            This is where employers often have the most anxiety, and the most misconceptions. You retain full control of:
           </p>
           <ul className="mt-4 space-y-3 text-base text-muted-foreground">
             {["Who you hire and who you let go", "How your employees are managed day-to-day", "Your company culture, values, and operating decisions", "Compensation decisions", "Your business strategy, clients, and operations"].map((item) => (
@@ -121,7 +121,7 @@ const CoEmployment = () => (
         <Reveal>
           <h2 className="font-heading text-2xl font-800 text-foreground md:text-3xl">The Liability Question</h2>
           <p className="mt-4 text-lg leading-8 text-foreground/85">
-            Co-employment does shift some employer liability to the PEO — specifically in areas like payroll tax compliance, employment law filings, and benefits administration. This is one of the reasons employers use PEOs: shared liability on compliance functions is meaningful protection, especially for multi-state employers navigating different state labor laws.
+            Co-employment does shift some employer liability to the PEO, specifically in areas like payroll tax compliance, employment law filings, and benefits administration. This is one of the reasons employers use PEOs: shared liability on compliance functions is meaningful protection, especially for multi-state employers navigating different state labor laws.
           </p>
           <p className="mt-4 text-lg leading-8 text-foreground/85">
             However, co-employment does not eliminate your liability as the worksite employer. You are still responsible for what happens on your job sites, how your managers treat employees, and the decisions you make about the workforce. Think of it as shared accountability on the administrative side, not a liability transfer.
@@ -138,7 +138,7 @@ const CoEmployment = () => (
             <li className="flex items-start gap-2"><span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-accent" /><span><strong className="text-foreground">A staffing arrangement.</strong> Your employees are still your employees. The PEO does not supply your labor.</span></li>
             <li className="flex items-start gap-2"><span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-accent" /><span><strong className="text-foreground">A loss of control.</strong> You make all operational and personnel decisions.</span></li>
             <li className="flex items-start gap-2"><span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-accent" /><span><strong className="text-foreground">A legal gray area.</strong> Co-employment is a well-established, IRS-recognized relationship.</span></li>
-            <li className="flex items-start gap-2"><span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-accent" /><span><strong className="text-foreground">A hidden risk.</strong> Reputable PEOs operate under ESAC or IRS Certified PEO (CPEO) status — both of which carry meaningful compliance and financial safeguards.</span></li>
+            <li className="flex items-start gap-2"><span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-accent" /><span><strong className="text-foreground">A hidden risk.</strong> Reputable PEOs operate under ESAC or IRS Certified PEO (CPEO) status, both of which carry meaningful compliance and financial safeguards.</span></li>
           </ul>
         </Reveal>
       </div>

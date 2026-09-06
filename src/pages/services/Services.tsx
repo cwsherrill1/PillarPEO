@@ -130,9 +130,9 @@ const Services = () => (
                 <Link to="/services/hr-audit" className="text-green-ink hover:underline">
                   HR audit
                 </Link>
-                . It reviews the areas that actually generate liability — classification,
+                . It reviews the areas that actually generate liability: classification,
                 pay practices, I-9s, handbook, personnel files, leave, state registrations
-                — and gives you a ranked list of findings rather than a general opinion.
+                and gives you a ranked list of findings rather than a general opinion.
                 Almost every other engagement here starts life as a line in that report.
               </p>
             </div>
@@ -143,7 +143,7 @@ const Services = () => (
               <p className="mt-2 text-base leading-relaxed text-muted-foreground">
                 A handbook that hasn't been touched in five years, a classification
                 question you already lose sleep over, an I-9 file you'd rather not have
-                inspected — that is an{" "}
+                inspected: that is an{" "}
                 <Link to="/services/hr-projects" className="text-green-ink hover:underline">
                   HR project
                 </Link>
@@ -156,7 +156,7 @@ const Services = () => (
               </h3>
               <p className="mt-2 text-base leading-relaxed text-muted-foreground">
                 Recurring questions, managers who need coaching, hiring across state
-                lines, an administrator quietly doing HR on top of a full job — that is{" "}
+                lines, an administrator quietly doing HR on top of a full job: that is{" "}
                 <Link to="/services/fractional-hr" className="text-green-ink hover:underline">
                   fractional HR
                 </Link>
@@ -168,7 +168,7 @@ const Services = () => (
                 "We're moving systems, or a provider."
               </h3>
               <p className="mt-2 text-base leading-relaxed text-muted-foreground">
-                Leaving a PEO, joining one, changing payroll or HRIS — that is a{" "}
+                Leaving a PEO, joining one, changing payroll or HRIS: that is a{" "}
                 <Link to="/services/transitions" className="text-green-ink hover:underline">
                   transition
                 </Link>
@@ -185,7 +185,7 @@ const Services = () => (
                 <Link to="/services/peo-brokerage" className="text-green-ink hover:underline">
                   PEO brokerage
                 </Link>
-                , and it is free to you — the provider pays the commission and we disclose
+                , and it is free to you: the provider pays the commission and we disclose
                 it in writing. You can also model the market yourself with the{" "}
                 <Link to="/tools/peo-cost-calculator" className="text-green-ink hover:underline">
                   PEO cost calculator
@@ -198,7 +198,7 @@ const Services = () => (
 
         <Reveal delay={200}>
           <p className="mt-10 text-base leading-relaxed text-muted-foreground">
-            Firms often run two of these at once — an audit and a transition, or a project
+            Firms often run two of these at once: an audit and a transition, or a project
             and ongoing fractional support. Nothing here requires you to buy the next thing,
             and we will say so when the honest answer is that you do not need us yet.
           </p>

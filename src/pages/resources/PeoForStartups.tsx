@@ -11,17 +11,17 @@ import { ArticleByline, ArticleAuthorBio, buildArticleJsonLd } from "@/component
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
 const faqs = [
-  { q: "When should a startup get a PEO?", a: "Most venture-backed startups benefit from a PEO between 5 and 75 employees — early enough to avoid building HR infrastructure in-house, late enough that benefits actually matter for recruiting. Pre-seed companies under 5 people are usually fine on Gusto or Justworks' non-PEO payroll." },
-  { q: "Can a PEO handle multi-state employees and remote teams?", a: "Yes — this is one of the strongest reasons startups pick a PEO. The PEO becomes the employer of record for state tax registration, SUTA, workers' comp, and compliance in every state you have employees. Without it, you're registering in each state yourself, which is expensive and slow." },
-  { q: "Will a PEO mess up my equity grants or 409A?", a: "No. Equity, stock options, and 409A valuations are issued by your company directly — the PEO only touches W-2 payroll. Some PEOs (Rippling, Justworks) integrate with Carta or Pulley to make ISO/NSO tax handling cleaner." },
+  { q: "When should a startup get a PEO?", a: "Most venture-backed startups benefit from a PEO between 5 and 75 employees: early enough to avoid building HR infrastructure in-house, late enough that benefits actually matter for recruiting. Pre-seed companies under 5 people are usually fine on Gusto or Justworks' non-PEO payroll." },
+  { q: "Can a PEO handle multi-state employees and remote teams?", a: "Yes, this is one of the strongest reasons startups pick a PEO. The PEO becomes the employer of record for state tax registration, SUTA, workers' comp, and compliance in every state you have employees. Without it, you're registering in each state yourself, which is expensive and slow." },
+  { q: "Will a PEO mess up my equity grants or 409A?", a: "No. Equity, stock options, and 409A valuations are issued by your company directly; the PEO only touches W-2 payroll. Some PEOs (Rippling, Justworks) integrate with Carta or Pulley to make ISO/NSO tax handling cleaner." },
   { q: "Do investors care if we use a PEO?", a: "Most VCs prefer it. A PEO reduces compliance risk during diligence and signals operational maturity. The only friction is a brief due-diligence question about co-employment, easily explained." },
   { q: "What's the best PEO for a tech startup?", a: "Justworks and Rippling lead for sub-100-employee tech startups due to clean UX, strong benefits, and modern integrations. TriNet has a strong life-sciences and tech vertical. We compare all of them in our best PEO for small business guide." },
-  { q: "Can we leave a PEO when we get acquired or hit 200 employees?", a: "Yes — most PEO contracts allow exit with 30–90 days notice at any anniversary. The bigger question is timing: leaving mid-year resets your FICA/FUTA wage bases, which costs real money. Plan exits for January 1 whenever possible." },
+  { q: "Can we leave a PEO when we get acquired or hit 200 employees?", a: "Yes, most PEO contracts allow exit with 30–90 days notice at any anniversary. The bigger question is timing: leaving mid-year resets your FICA/FUTA wage bases, which costs real money. Plan exits for January 1 whenever possible." },
 ];
 
 const ARTICLE = buildArticleJsonLd({
   title: "PEO for Startups: Equity, Multi-State, and Scaling Compliance",
-  description: "Why startups use a PEO — multi-state compliance, benefits that recruit, equity-friendly payroll, and exit timing. An independent broker's guide.",
+  description: "Why startups use a PEO: multi-state compliance, benefits that recruit, equity-friendly payroll, and exit timing. An independent broker's guide.",
   path: "/resources/peo-for-startups",
   datePublished: "2026-05-15",
   dateModified: "2026-09-05",
@@ -69,7 +69,7 @@ const PeoForStartups = () => (
         </Reveal>
         <Reveal delay={100}>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80 md:text-xl">
-            Multi-state compliance, recruiting-grade benefits, equity-friendly payroll — without building HR in-house.
+            Multi-state compliance, recruiting-grade benefits, equity-friendly payroll, without building HR in-house.
           </p>
         </Reveal>
         <Reveal delay={150}><ArticleByline datePublished="May 15, 2026" /></Reveal>
@@ -103,11 +103,11 @@ const PeoForStartups = () => (
       </CardContent></Card>
       <Card className="mt-3 border-accent/20"><CardContent className="p-6">
         <h3 className="font-heading font-700 text-foreground">2. Fortune-500 benefits at startup scale</h3>
-        <p className="mt-2 text-sm text-muted-foreground">A 12-person startup gets the same Aetna, BCBS, or Kaiser plans normally reserved for 1,000+ employee companies — because you're pooled with thousands of other PEO clients.</p>
+        <p className="mt-2 text-sm text-muted-foreground">A 12-person startup gets the same Aetna, BCBS, or Kaiser plans normally reserved for 1,000+ employee companies, because you're pooled with thousands of other PEO clients.</p>
       </CardContent></Card>
       <Card className="mt-3 border-accent/20"><CardContent className="p-6">
         <h3 className="font-heading font-700 text-foreground">3. Compliance you don't have to think about</h3>
-        <p className="mt-2 text-sm text-muted-foreground">I-9s, EEO-1, ACA filings, state-mandated leave laws, posters, harassment training — handled. One missed Cal-OSHA filing costs more than a year of PEO fees.</p>
+        <p className="mt-2 text-sm text-muted-foreground">I-9s, EEO-1, ACA filings, state-mandated leave laws, posters, harassment training: handled. One missed Cal-OSHA filing costs more than a year of PEO fees.</p>
       </CardContent></Card>
     </Section>
 
@@ -127,7 +127,7 @@ const PeoForStartups = () => (
       <ul className="space-y-2">
         <Bullet><strong className="text-foreground">Equity grants:</strong> issued by your company. The PEO has nothing to do with them.</Bullet>
         <Bullet><strong className="text-foreground">409A valuations:</strong> done by your valuation firm. Unaffected.</Bullet>
-        <Bullet><strong className="text-foreground">ISO exercises:</strong> the PEO handles W-2 reporting and AMT box. Make sure the PEO can handle ISO and ESPP transactions — most modern ones can; some legacy ones can't.</Bullet>
+        <Bullet><strong className="text-foreground">ISO exercises:</strong> the PEO handles W-2 reporting and AMT box. Make sure the PEO can handle ISO and ESPP transactions: most modern ones can; some legacy ones can't.</Bullet>
         <Bullet><strong className="text-foreground">Cap table integrations:</strong> Rippling integrates with Carta and Pulley natively. Justworks has clean Carta sync. ADP and Insperity require manual handoff.</Bullet>
       </ul>
     </Section>
@@ -136,7 +136,7 @@ const PeoForStartups = () => (
       <p>From conversations with diligence teams at Series A and Series B firms:</p>
       <ul className="space-y-2">
         <Bullet>Multi-state compliance is the #1 hidden risk in early-stage acquisitions. PEO eliminates it.</Bullet>
-        <Bullet>Co-employment is well-understood at the VC level — no one will be confused. Read our <Link to="/resources/co-employment" className="text-green-ink hover:underline">co-employment guide</Link> for board-ready talking points.</Bullet>
+        <Bullet>Co-employment is well-understood at the VC level; no one will be confused. Read our <Link to="/resources/co-employment" className="text-green-ink hover:underline">co-employment guide</Link> for board-ready talking points.</Bullet>
         <Bullet>Acquirers will sometimes ask the company to leave the PEO before closing, to absorb employees onto their HRIS. Build clean exit terms into your contract from day one.</Bullet>
       </ul>
     </Section>
@@ -148,11 +148,11 @@ const PeoForStartups = () => (
     </Section>
 
     <Section title="Exit Planning: How to Leave a PEO Without Losing Money">
-      <p>The single biggest hidden cost of leaving a PEO is the <strong className="text-foreground">FICA/FUTA wage base reset</strong>. If you exit mid-year, every employee's Social Security wage base resets to zero with the new employer — costing 6.2% of wages up to $168,600 per high earner. On a 50-person tech team, that can be six figures.</p>
+      <p>The single biggest hidden cost of leaving a PEO is the <strong className="text-foreground">FICA/FUTA wage base reset</strong>. If you exit mid-year, every employee's Social Security wage base resets to zero with the new employer, costing 6.2% of wages up to $168,600 per high earner. On a 50-person tech team, that can be six figures.</p>
       <p>Three rules:</p>
       <ul className="space-y-2">
         <Bullet>Always exit January 1 if possible.</Bullet>
-        <Bullet>Read the notice provision before you sign — many PEOs require 90 days advance notice.</Bullet>
+        <Bullet>Read the notice provision before you sign: many PEOs require 90 days advance notice.</Bullet>
         <Bullet>Have your next benefits stack lined up 60 days before exit so employees never see a gap.</Bullet>
       </ul>
       <p className="mt-4">More on this in our <Link to="/services/transitions" className="text-green-ink hover:underline">how to switch PEOs</Link> guide.</p>

@@ -89,7 +89,7 @@ const EngineeringArchitecture = () => (
           <strong className="text-foreground">
             Designers and drafters treated as exempt by title.
           </strong>{" "}
-          Firms tend to classify by seniority ladder — everyone from Designer II upward is
+          Firms tend to classify by seniority ladder: everyone from Designer II upward is
           salaried and exempt. The test is duties and independent judgment. Someone
           producing drawings to a licensed professional's direction usually does not clear
           it, however skilled the work is. Because the rule is applied by grade, the error
@@ -147,7 +147,7 @@ const EngineeringArchitecture = () => (
       </p>
       <p>
         Alongside the standard inputs we ask for job descriptions at every grade in the
-        design ladder — that is where the classification answer lives — and for any public
+        design ladder (that is where the classification answer lives) and for any public
         contract with wage or reporting terms, so we read what you actually agreed to
         rather than what is typical.
       </p>

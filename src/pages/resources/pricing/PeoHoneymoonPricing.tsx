@@ -14,7 +14,7 @@ const faqs: Faq[] = [
   },
   {
     q: "Can I negotiate the renewal after I get the notice?",
-    a: "You have some room, but far less than you had before signing. Your leverage at renewal depends almost entirely on whether you can credibly leave, which depends on your notice window and your plan year — both of which were set at signature.",
+    a: "You have some room, but far less than you had before signing. Your leverage at renewal depends almost entirely on whether you can credibly leave, which depends on your notice window and your plan year, both of which were set at signature.",
   },
   {
     q: "What is a renewal cap?",
@@ -69,7 +69,7 @@ const PeoHoneymoonPricing = () => (
         Because the first-year rate was often set below a sustainable level to
         win your business, and the renewal is the first price that reflects what
         serving you actually costs. By then your payroll, benefits and HR records
-        all sit inside the PEO, so your cost of leaving is at its highest point —
+        all sit inside the PEO, so your cost of leaving is at its highest point,
         which is exactly when the reprice lands.
       </p>
     </Section>
@@ -99,7 +99,7 @@ const PeoHoneymoonPricing = () => (
         <Bullet>
           <strong className="text-foreground">The increase is rarely explained
           line by line.</strong> Renewal notices we see frequently present a
-          single new blended number rather than showing which component moved —
+          single new blended number rather than showing which component moved:
           administrative fee, benefit trend, workers' compensation, or the
           unemployment assumption.
         </Bullet>
@@ -115,7 +115,7 @@ const PeoHoneymoonPricing = () => (
       </p>
       <p>
         The useful question is not "is this cheap?" but "how is this funded?"
-        There are legitimate answers — a genuinely better workers' compensation
+        There are legitimate answers: a genuinely better workers' compensation
         master policy, a plan whose network fits your geography unusually well,
         real scale in the states where your people are. There are also answers
         that mean a reprice is coming: an introductory administrative fee, a
@@ -147,7 +147,7 @@ const PeoHoneymoonPricing = () => (
           <strong className="text-foreground">Is there a renewal cap?</strong> A
           ceiling on the administrative fee increase, and where possible a
           ceiling or a defined methodology on the benefit renewal. This has to be
-          negotiated before signature — a cap requested after the first invoice
+          negotiated before signature; a cap requested after the first invoice
           is a request, not a right.
         </Bullet>
         <Bullet>
@@ -181,7 +181,7 @@ const PeoHoneymoonPricing = () => (
         competing, because it knows what leaving costs you.
       </p>
       <p>
-        If you already signed without one, you are not out of options — but your
+        If you already signed without one, you are not out of options, but your
         options are the same as your exit options. That is why the useful moment
         to start work is roughly 120 days before your renewal date, not the week
         the notice arrives. See{" "}

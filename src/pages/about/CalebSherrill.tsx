@@ -30,7 +30,7 @@ const jsonLd = {
 const CalebSherrill = () => (
   <>
     <SEOHead
-      title="Caleb Sherrill — Founder"
+      title="Caleb Sherrill: Founder"
       description="Caleb Sherrill founded Pillar after payroll mistakes and fines in a previous business showed him how much avoidable risk employers carry alone."
       canonical={`${SITE_URL}/about/caleb-sherrill`}
       jsonLd={jsonLd}
@@ -65,7 +65,7 @@ const CalebSherrill = () => (
         <Reveal delay={100}>
           <div className="mt-10 space-y-6 text-base leading-relaxed text-muted-foreground md:text-lg">
             <p>
-              Caleb Sherrill didn't build Pillar from a distance — he built it from
+              Caleb Sherrill didn't build Pillar from a distance. He built it from
               experience.
             </p>
             <p>
@@ -76,7 +76,7 @@ const CalebSherrill = () => (
             </p>
             <p>
               That experience made one thing clear: too many business leaders spend their
-              time solving the wrong problems — carrying avoidable risk, confusion, and
+              time solving the wrong problems: carrying avoidable risk, confusion, and
               administrative burden. Pillar was built to change that: to help employers
               make better decisions around HR, payroll, and compliance.
             </p>

@@ -1,7 +1,7 @@
 import { ArrowRight, Building2, Users, CheckCircle2, XCircle } from "lucide-react";
 
 /* ------------------------------------------------------------------ */
-/*  CoEmploymentDiagram — two boxes feeding one shared employee group  */
+/*  CoEmploymentDiagram: two boxes feeding one shared employee group  */
 /* ------------------------------------------------------------------ */
 export const CoEmploymentDiagram = () => (
   <figure className="my-8 rounded-2xl border border-border bg-card p-6 md:p-8">
@@ -41,13 +41,13 @@ export const CoEmploymentDiagram = () => (
       </div>
     </div>
     <div className="mt-5 rounded-lg bg-muted/40 p-4 text-center text-sm text-foreground/80">
-      <strong className="text-foreground">Your employees</strong> — still your team. They just get a W-2 with the PEO's tax ID.
+      <strong className="text-foreground">Your employees</strong>: still your team. They just get a W-2 with the PEO's tax ID.
     </div>
   </figure>
 );
 
 /* ------------------------------------------------------------------ */
-/*  PricingModelsCompare — PEPM vs % of payroll, with break-even note */
+/*  PricingModelsCompare: PEPM vs % of payroll, with break-even note */
 /* ------------------------------------------------------------------ */
 export const PricingModelsCompare = () => (
   <figure className="my-8 grid gap-4 md:grid-cols-2">
@@ -59,7 +59,7 @@ export const PricingModelsCompare = () => (
       </div>
       <p className="mt-2 text-sm text-foreground/80">Flat admin fee. Predictable.</p>
       <div className="mt-4 rounded-lg bg-muted/40 p-3 text-sm">
-        <div className="font-700 text-foreground">Example — 25 employees @ $150 PEPM</div>
+        <div className="font-700 text-foreground">Example: 25 employees @ $150 PEPM</div>
         <div className="mt-1 text-foreground/80">$150 × 25 × 12 = <strong className="text-foreground">$45,000 / yr</strong></div>
       </div>
       <p className="mt-3 text-xs text-muted-foreground">Best for: stable headcount, higher wages, white-collar.</p>
@@ -72,7 +72,7 @@ export const PricingModelsCompare = () => (
       </div>
       <p className="mt-2 text-sm text-foreground/80">Scales with payroll. Cheaper at low wages.</p>
       <div className="mt-4 rounded-lg bg-muted/40 p-3 text-sm">
-        <div className="font-700 text-foreground">Example — 25 EE × $65K @ 2.5%</div>
+        <div className="font-700 text-foreground">Example: 25 EE × $65K @ 2.5%</div>
         <div className="mt-1 text-foreground/80">$1.625M × 2.5% = <strong className="text-foreground">$40,625 / yr</strong></div>
       </div>
       <p className="mt-3 text-xs text-muted-foreground">Best for: lower-wage workforces, blue-collar.</p>
@@ -84,7 +84,7 @@ export const PricingModelsCompare = () => (
 );
 
 /* ------------------------------------------------------------------ */
-/*  SwitchTimeline — horizontal 5-phase phases bar                     */
+/*  SwitchTimeline: horizontal 5-phase phases bar                     */
 /* ------------------------------------------------------------------ */
 interface Phase { weeks: string; title: string; desc: string; }
 export const SwitchTimeline = ({ phases }: { phases: Phase[] }) => (
@@ -110,7 +110,7 @@ export const SwitchTimeline = ({ phases }: { phases: Phase[] }) => (
 );
 
 /* ------------------------------------------------------------------ */
-/*  RedFlagVsGoodAnswer — for the 5 Questions article                  */
+/*  RedFlagVsGoodAnswer: for the 5 Questions article                  */
 /* ------------------------------------------------------------------ */
 interface QuestionContrast { red: string; green: string; }
 export const RedFlagVsGoodAnswer = ({ items }: { items: QuestionContrast[] }) => (

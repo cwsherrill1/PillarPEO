@@ -29,7 +29,7 @@ const QuizEmailCapture = ({ onSubmit, onSkip }: QuizEmailCaptureProps) => {
         company: company.trim(),
       });
     } catch {
-      // Silently continue — don't block results
+      // Silently continue: don't block results
     }
     onSubmit({
       firstName: firstName.trim(),

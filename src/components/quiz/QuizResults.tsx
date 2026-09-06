@@ -75,12 +75,12 @@ const QuizResults = ({
   const headacheCards = rankedAnswers.filter((a) => a.score === 3);
 
   const handleShare = async () => {
-    const text = `I scored ${score}/${maxScore} on the ${shareLabel ?? toolName} — "${tierInfo.band}". Take it yourself: ${window.location.href}`;
+    const text = `I scored ${score}/${maxScore} on the ${shareLabel ?? toolName}: "${tierInfo.band}". Take it yourself: ${window.location.href}`;
     try {
       await navigator.clipboard.writeText(text);
       toast.success("Score copied to clipboard!");
     } catch {
-      toast.error("Couldn't copy — try manually.");
+      toast.error("Couldn't copy, try manually.");
     }
   };
 
@@ -94,10 +94,10 @@ const QuizResults = ({
         name: firstName.trim(),
         email: email.trim(),
         company: company.trim(),
-        message: `${planEmailCapture.toolName} result: ${score}/${maxScore} — ${tierInfo.band}`,
+        message: `${planEmailCapture.toolName} result: ${score}/${maxScore}: ${tierInfo.band}`,
       });
     } catch {
-      // Silently continue — don't block the confirmation
+      // Silently continue; don't block the confirmation
     }
     setSubmitting(false);
     setPlanSent(true);
@@ -143,7 +143,7 @@ const QuizResults = ({
               </div>
               <p className="mb-6 text-sm text-muted-foreground">
                 Enter your details and we'll send a written plan based on your{" "}
-                {planEmailCapture.toolName} result — no charge, no obligation.
+                {planEmailCapture.toolName} result, no charge, no obligation.
               </p>
               <form onSubmit={handlePlanSubmit} className="grid gap-4 text-left sm:grid-cols-2">
                 <div>
@@ -258,7 +258,7 @@ const QuizResults = ({
       <div className="border-t border-border pt-8 text-center">
         <p className="mx-auto mb-4 max-w-lg text-muted-foreground">
           Most leaders feel exactly like you do. At Pillar PEO Advisors we help
-          businesses simplify HR — so you can focus on your people, not
+          businesses simplify HR, so you can focus on your people, not
           paperwork.
         </p>
         <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center">

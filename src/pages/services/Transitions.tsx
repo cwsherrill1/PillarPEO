@@ -95,7 +95,7 @@ const Transitions = () => (
             <Link to="/services/peo-brokerage" className="text-green-ink hover:underline">
               PEO brokerage
             </Link>{" "}
-            — that comparison is free.
+            : that comparison is free.
           </p>
         </Reveal>
       </div>
@@ -142,7 +142,7 @@ const Transitions = () => (
               documents need an officer's signature and are the most common source of delay.
             </li>
             <li>
-              Nominate one internal owner — usually the practice administrator — who can
+              Nominate one internal owner, usually the practice administrator, who can
               answer census and payroll questions the same day.
             </li>
             <li>

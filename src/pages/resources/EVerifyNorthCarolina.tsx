@@ -74,7 +74,7 @@ const EVerifyNorthCarolina = () => (
         <Bullet>
           <strong className="text-foreground">What it requires.</strong>{" "}
           Running new hires through the federal E-Verify system after
-          completing Form I-9, on top of the I-9 itself — E-Verify does not
+          completing Form I-9, on top of the I-9 itself: E-Verify does not
           replace the I-9.
         </Bullet>
         <Bullet>
@@ -122,7 +122,7 @@ const EVerifyNorthCarolina = () => (
           North Carolina handbook checklist
         </Link>
         . If you also employ people in South Carolina, the rules are
-        different — see{" "}
+        different: see{" "}
         <Link to="/resources/e-verify-south-carolina" className="text-green-ink hover:underline">
           South Carolina's E-Verify requirement
         </Link>{" "}

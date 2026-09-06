@@ -2,7 +2,7 @@ import { SHOW_PLACEHOLDERS } from "@/data/flags";
 
 /**
  * Visible marker for a fact we have not been given and will not guess.
- * Dashed amber border on existing tokens only — no new colours.
+ * Dashed amber border on existing tokens only: no new colours.
  */
 const VerifyTodo = ({ children }: { children: React.ReactNode }) => {
   if (!SHOW_PLACEHOLDERS) return null;

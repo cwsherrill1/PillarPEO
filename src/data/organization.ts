@@ -1,7 +1,7 @@
 /**
  * The single canonical organization entity for the whole site.
  * Page-level schema must reference it with ORG_REF rather than redeclaring it.
- * No streetAddress — Pillar has no published street address yet.
+ * No streetAddress: Pillar has no published street address yet.
  */
 
 export const ORG_ID = "https://pillarpeo.com/#organization";

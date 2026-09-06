@@ -28,7 +28,7 @@ export function gtag(...args: unknown[]) {
 }
 
 /**
- * Loads GA4 lazily: on the first user interaction, or after 3s idle —
+ * Loads GA4 lazily: on the first user interaction, or after 3s idle,
  * whichever comes first. Keeps analytics off the critical rendering path.
  */
 export function initAnalytics() {

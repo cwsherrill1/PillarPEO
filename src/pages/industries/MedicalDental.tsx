@@ -10,7 +10,7 @@ import { ORG_REF, SITE_URL, breadcrumb } from "@/data/organization";
 const faqs: Faq[] = [
   {
     q: "Which employee files have to be kept separately?",
-    a: "As a working rule: personnel records in one file, anything medical — including health information, accommodation documentation and related records — in a separate confidential file, and I-9s in their own file apart from both. Credentialing records are a fourth category, kept for a different purpose and often needed by people who should not see the personnel file.",
+    a: "As a working rule: personnel records in one file, anything medical, including health information, accommodation documentation and related records, in a separate confidential file, and I-9s in their own file apart from both. Credentialing records are a fourth category, kept for a different purpose and often needed by people who should not see the personnel file.",
   },
   {
     q: "Why keep I-9s out of the personnel file?",
@@ -18,7 +18,7 @@ const faqs: Faq[] = [
   },
   {
     q: "Does the bloodborne pathogens standard apply to a small dental practice?",
-    a: "It applies based on occupational exposure, not practice size. Where staff can reasonably be expected to have contact with blood or other potentially infectious material, the standard's requirements — including a written exposure control plan reviewed and updated annually, training, and offering hepatitis B vaccination to exposed staff — are in scope.",
+    a: "It applies based on occupational exposure, not practice size. Where staff can reasonably be expected to have contact with blood or other potentially infectious material, the standard's requirements, including a written exposure control plan reviewed and updated annually, training, and offering hepatitis B vaccination to exposed staff, are in scope.",
   },
   {
     q: "Do we owe extra pay for on-call time?",
@@ -96,7 +96,7 @@ const MedicalDental = () => (
           Where staff have occupational exposure to blood or other potentially infectious
           material, the plan is required to be written, reviewed and updated annually, with
           training and hepatitis B vaccination offered to exposed employees. The plan often
-          exists — dated several years ago, referencing devices the practice no longer
+          exists: dated several years ago, referencing devices the practice no longer
           uses and staff who have left.
         </Bullet>
         <Bullet>

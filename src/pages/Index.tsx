@@ -76,7 +76,7 @@ const Index = () => {
               </h1>
 
               <p className="mt-6 max-w-xl text-lg leading-relaxed text-primary-foreground/80">
-                HR audits, projects, fractional support, and PEO or HRIS transitions for firms of 10–150 people — in every state your people work in. Headquartered in Charlotte.
+                HR audits, projects, fractional support, and PEO or HRIS transitions for firms of 10–150 people, in every state your people work in. Headquartered in Charlotte.
               </p>
 
 
@@ -223,7 +223,7 @@ const Index = () => {
                 The wrong setup costs more than the audit.
               </h2>
               <p className="mt-4 text-muted-foreground">
-               When the fit is wrong, the cost shows up everywhere — in
+               When the fit is wrong, the cost shows up everywhere: in
                  leadership time, compliance risk, and the constant sense
                  that something still isn't working.
               </p>

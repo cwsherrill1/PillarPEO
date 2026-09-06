@@ -28,7 +28,7 @@ const stages = [
     num: 1,
     icon: MessageSquare,
     title: "Discovery",
-    desc: "We learn what's happening in your business now — what feels heavy, what matters most, and what a better outcome looks like.",
+    desc: "We learn what's happening in your business now: what feels heavy, what matters most, and what a better outcome looks like.",
   },
   {
     num: 2,
@@ -141,7 +141,7 @@ const Prose = ({
 const PeoBrokerage = () => (
   <>
     <SEOHead
-      title="PEO Brokerage — Free to the Employer"
+      title="PEO Brokerage: Free to the Employer"
       description="Independent PEO brokerage: a full-market comparison at no cost to you, with the provider commission disclosed in writing. Six stages, about 60 days."
       canonical={`${SITE_URL}/services/peo-brokerage`}
       jsonLd={jsonLd}
@@ -162,7 +162,7 @@ const PeoBrokerage = () => (
               A PEO broker represents you, not the PEO. The best one goes to the full
               market, compares every option honestly, and has no hidden loyalty to a
               former employer. Brokers are paid by the providers, so the service is free
-              to the employer — but that only protects you when the broker is truly
+              to the employer, but that only protects you when the broker is truly
               independent, and shows you the number.
             </p>
           </div>
@@ -180,7 +180,7 @@ const PeoBrokerage = () => (
       </ul>
     </Prose>
 
-    {/* Six stages — from the former How It Works page */}
+    {/* Six stages, from the former How It Works page */}
     <section className="bg-background">
       <div className="container max-w-4xl py-20 md:py-28">
         <Reveal>
@@ -226,7 +226,7 @@ const PeoBrokerage = () => (
     <Prose title="Independent vs. captive brokers" alt>
       <p>
         A large share of PEO brokers spent years inside a single PEO before going
-        independent. That rolodex of old colleagues becomes a quiet pipeline — clients
+        independent. That rolodex of old colleagues becomes a quiet pipeline: clients
         come in expecting a market search and quietly get routed back to a former
         employer. The broker calls it a relationship; the client thinks they're getting
         an open comparison.
@@ -242,7 +242,7 @@ const PeoBrokerage = () => (
       <p>
         Brokers in this space are compensated by the provider, which means the service
         is free to the employer. The check looks the same no matter who the broker
-        recommends — which is exactly why the buddy system is so easy to hide. The
+        recommends, which is exactly why the buddy system is so easy to hide. The
         protection is transparency: work with someone who shows you their compensation
         structure upfront and has real relationships with enough providers that no
         single one dominates.
@@ -270,7 +270,7 @@ const PeoBrokerage = () => (
 
     <Prose title="If you're already in a PEO">
       <p>
-        Moving into, out of, or between PEOs is separate, paid work — see{" "}
+        Moving into, out of, or between PEOs is separate, paid work; see{" "}
         <Link to="/services/transitions" className="font-semibold text-green-ink hover:underline">
           transitions
         </Link>

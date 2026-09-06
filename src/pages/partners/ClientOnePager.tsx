@@ -45,7 +45,7 @@ const ClientOnePager = () => {
         jsonLd={jsonLd}
       />
 
-      {/* Screen-only instructions — never printed */}
+      {/* Screen-only instructions: never printed */}
       <section className="print-hide border-b border-border bg-muted/40">
         <div className="container max-w-3xl py-10">
           <h1 className="font-heading text-2xl font-800 text-foreground md:text-3xl">
@@ -53,8 +53,8 @@ const ClientOnePager = () => {
           </h1>
           <p className="mt-3 text-base leading-relaxed text-muted-foreground">
             Print this page, or save it as a PDF, and hand it to a client. Everything
-            below the line prints on a single page — this box, the site navigation
-            and the footer do not.
+            below the line prints on a single page (this box, the site navigation,
+            and the footer do not).
           </p>
           <p className="mt-3 text-base leading-relaxed text-muted-foreground">
             To stamp your firm name on it, add{" "}

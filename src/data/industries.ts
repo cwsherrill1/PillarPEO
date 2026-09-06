@@ -1,5 +1,5 @@
 /**
- * The six industry pages. National in scope — these pages never mention a city.
+ * The six industry pages. National in scope: these pages never mention a city.
  * Used by the industries index, the header dropdown and the sitemap.
  */
 

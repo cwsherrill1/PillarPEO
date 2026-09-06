@@ -29,15 +29,15 @@ const tiers = [
 
 const faqs = [
   { q: "What are the largest PEO companies in the US?", a: "By client count and revenue, the top PEOs are ADP TotalSource, Insperity, TriNet, Paychex PEO, and TotalSource. Modern players Justworks, Rippling, and Gusto PEO have grown rapidly in the 5–100 employee segment over the past five years." },
-  { q: "What's the difference between a tier-1 PEO and a regional PEO?", a: "Tier-1 PEOs have national reach, larger benefit pools, and standardized processes — but less flexibility. Regional or industry-vertical PEOs often deliver better service, sharper pricing in their niche, and more responsive account management — but limited geographic coverage and smaller benefit pools." },
-  { q: "Are NAPEO-certified PEOs better?", a: "NAPEO membership signals industry participation, but the more meaningful certification is IRS Certified PEO (CPEO). CPEO status protects clients on payroll tax liability — if the PEO fails to remit, the IRS pursues the PEO, not the client. Always confirm CPEO status before signing." },
+  { q: "What's the difference between a tier-1 PEO and a regional PEO?", a: "Tier-1 PEOs have national reach, larger benefit pools, and standardized processes, but less flexibility. Regional or industry-vertical PEOs often deliver better service, sharper pricing in their niche, and more responsive account management, but limited geographic coverage and smaller benefit pools." },
+  { q: "Are NAPEO-certified PEOs better?", a: "NAPEO membership signals industry participation, but the more meaningful certification is IRS Certified PEO (CPEO). CPEO status protects clients on payroll tax liability: if the PEO fails to remit, the IRS pursues the PEO, not the client. Always confirm CPEO status before signing." },
   { q: "Should I pick a PEO based on revenue ranking?", a: "No. Revenue ranking tells you who's biggest, not who's best for you. A 25-person professional services firm in Texas will get a better outcome from the right regional PEO than from being a small fish at TriNet. Fit beats size." },
   { q: "How many PEO companies are there in the US?", a: "Roughly 500 PEOs operate in the United States, serving over 200,000 small and mid-sized businesses, according to NAPEO industry data. Of those, fewer than 100 are CPEO-certified." },
 ];
 
 const ARTICLE = buildArticleJsonLd({
   title: "Top PEO Companies in 2026: Independent Comparison",
-  description: "The top PEO companies in 2026 by category — national tier-1, modern tech-forward, and industry-vertical providers. Independent broker analysis of who fits whom.",
+  description: "The top PEO companies in 2026 by category: national tier-1, modern tech-forward, and industry-vertical providers. Independent broker analysis of who fits whom.",
   path: "/resources/top-peo-companies",
   datePublished: "2026-05-15",
   dateModified: "2026-09-05",
@@ -79,7 +79,7 @@ const TopPeoCompanies = () => (
             <span className="text-accent"> in 2026</span>
           </h1>
         </Reveal>
-        <Reveal delay={100}><p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80 md:text-xl">An independent broker's view of the top PEOs by category — national, modern, and industry-vertical — and how to know which fits.</p></Reveal>
+        <Reveal delay={100}><p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80 md:text-xl">An independent broker's view of the top PEOs by category, national, modern, and industry-vertical, and how to know which fits.</p></Reveal>
         <Reveal delay={150}><ArticleByline datePublished="May 15, 2026" /></Reveal>
         <Reveal delay={200}>
           <div className="mt-8">
@@ -96,7 +96,7 @@ const TopPeoCompanies = () => (
         <Reveal>
           <Link to="/resources" className="mb-8 inline-flex items-center text-sm font-semibold text-green-ink hover:text-green-ink/80"><ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources</Link>
           <p className="text-xl leading-8 text-foreground/85">
-            There are roughly 500 PEOs in the United States, serving over 200,000 businesses (<a href="https://napeo.org/intro-to-peos/industry-research-data/" target="_blank" rel="noopener noreferrer" className="text-green-ink hover:underline">NAPEO industry data</a>). Most "top PEO" rankings are based on revenue, sponsorship, or whoever paid for placement. This guide groups the providers by category and use case so you can quickly see which tier matches your company — then narrow from there. We don't take fees from any provider for being listed.
+            There are roughly 500 PEOs in the United States, serving over 200,000 businesses (<a href="https://napeo.org/intro-to-peos/industry-research-data/" target="_blank" rel="noopener noreferrer" className="text-green-ink hover:underline">NAPEO industry data</a>). Most "top PEO" rankings are based on revenue, sponsorship, or whoever paid for placement. This guide groups the providers by category and use case so you can quickly see which tier matches your company, then narrow from there. We don't take fees from any provider for being listed.
           </p>
         </Reveal>
       </div>
@@ -133,7 +133,7 @@ const TopPeoCompanies = () => (
     </Section>
 
     <Section title="What 'CPEO Certified' Actually Means" alt>
-      <p>CPEO (Certified Professional Employer Organization) is an IRS designation under the Small Business Efficiency Act of 2014. A CPEO has met financial reporting, bonding, and tax compliance requirements — and clients are protected from payroll tax liability if the PEO fails to remit.</p>
+      <p>CPEO (Certified Professional Employer Organization) is an IRS designation under the Small Business Efficiency Act of 2014. A CPEO has met financial reporting, bonding, and tax compliance requirements, and clients are protected from payroll tax liability if the PEO fails to remit.</p>
       <p>Fewer than 100 of the ~500 PEOs in the US are CPEO-certified. <strong className="text-foreground">For most employers, CPEO status should be a hard requirement.</strong> Always verify on the <a href="https://www.irs.gov/tax-professionals/certified-professional-employer-organization" target="_blank" rel="noopener noreferrer" className="text-green-ink hover:underline">IRS CPEO list</a> before signing.</p>
     </Section>
 
@@ -154,7 +154,7 @@ const TopPeoCompanies = () => (
       <div className="container text-center">
         <Reveal>
           <h2 className="font-heading text-3xl font-800 text-primary-foreground md:text-4xl">500 PEOs. We'll narrow it to 3.</h2>
-          <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">Tell us about your company in 20 minutes — we'll come back with the 3 PEOs most likely to fit and run quotes for you.</p>
+          <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">Tell us about your company in 20 minutes; we'll come back with the 3 PEOs most likely to fit and run quotes for you.</p>
           <div className="mt-8">
             <Button asChild size="lg" className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20">
               <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Schedule a PEO Strategy Call</a>

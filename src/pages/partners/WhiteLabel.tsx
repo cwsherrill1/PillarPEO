@@ -18,7 +18,7 @@ const faqs: Faq[] = [
   },
   {
     q: "Can you join client calls?",
-    a: "Yes, as part of your team, introduced however you prefer — or not at all. Some partners want a specialist in the room; others want the analysis and nothing else.",
+    a: "Yes, as part of your team, introduced however you prefer, or not at all. Some partners want a specialist in the room; others want the analysis and nothing else.",
   },
   {
     q: "What if the client asks a question you can't answer as us?",

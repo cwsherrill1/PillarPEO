@@ -157,7 +157,7 @@ const FractionalHr = () => (
             agree on at the start of each month. A typical month has a recurring working
             session with the managing partner or practice administrator, a queue of
             employee-relations questions handled as they come in, and one piece of
-            building work that moves forward — an updated handbook section, a job
+            building work that moves forward: an updated handbook section, a job
             architecture, an offer-letter template set, a manager coaching plan.
           </p>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
@@ -202,7 +202,7 @@ const FractionalHr = () => (
             of priorities rather than a discovery period you are paying for. There is a
             three-month minimum because nothing meaningful in HR turns around faster than
             that, and after the minimum the engagement runs month to month. Tiers move up
-            and down as your year does — hiring seasons and open enrolment need more hours
+            and down as your year does: hiring seasons and open enrolment need more hours
             than a quiet quarter. If your volume outgrows the top tier, we will tell you
             it is time to hire someone in-house, and help you write the role and interview
             for it.
