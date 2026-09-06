@@ -238,8 +238,8 @@ const PeoIndustryTransparency = () => (
             Want a straight read on your situation?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">
-            No old sales floor, no preferred placements — just an honest comparison and a
-            long-term watchdog.
+            No old sales floor and no preferred placements. Just an honest comparison, with any
+            commission disclosed in writing.
           </p>
           <div className="mt-8">
             <Button
