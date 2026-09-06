@@ -66,6 +66,16 @@ const HrRiskScore = lazy(() => import("./pages/tools/HrRiskScore"));
 const PeoCostCalculator = lazy(() => import("./pages/tools/PeoCostCalculator"));
 const CaseStudies = lazy(() => import("./pages/CaseStudies"));
 
+// PEO pricing cluster
+const PeoPricingExplained = lazy(() => import("./pages/resources/pricing/PeoPricingExplained"));
+const PeoHoneymoonPricing = lazy(() => import("./pages/resources/pricing/PeoHoneymoonPricing"));
+const PeoSutaRates = lazy(() => import("./pages/resources/pricing/PeoSutaRates"));
+const PeoAdminFees = lazy(() => import("./pages/resources/pricing/PeoAdminFees"));
+const PeoContractTerms = lazy(() => import("./pages/resources/pricing/PeoContractTerms"));
+const WhenPeoWrongAnswer = lazy(() => import("./pages/resources/pricing/WhenPeoWrongAnswer"));
+const PeoRenewalReview = lazy(() => import("./pages/resources/pricing/PeoRenewalReview"));
+const Partners = lazy(() => import("./pages/Partners"));
+
 const queryClient = new QueryClient();
 
 // Fixed-height placeholder: no spinner, no layout shift.
@@ -128,6 +138,14 @@ const App = () => (
               <Route path="/tools/hr-risk-score" element={<HrRiskScore />} />
               <Route path="/tools/peo-cost-calculator" element={<PeoCostCalculator />} />
               <Route path="/case-studies" element={<CaseStudies />} />
+              <Route path="/resources/peo-pricing-explained" element={<PeoPricingExplained />} />
+              <Route path="/resources/peo-honeymoon-pricing" element={<PeoHoneymoonPricing />} />
+              <Route path="/resources/peo-suta-rates" element={<PeoSutaRates />} />
+              <Route path="/resources/peo-admin-fees" element={<PeoAdminFees />} />
+              <Route path="/resources/peo-contract-terms" element={<PeoContractTerms />} />
+              <Route path="/resources/when-a-peo-is-the-wrong-answer" element={<WhenPeoWrongAnswer />} />
+              <Route path="/resources/peo-renewal-review" element={<PeoRenewalReview />} />
+              <Route path="/partners" element={<Partners />} />
               <Route path="/resources/peo-industry-transparency" element={<PeoIndustryTransparency />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />

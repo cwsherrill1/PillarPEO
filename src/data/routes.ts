@@ -79,6 +79,16 @@ export const siteRoutes: SiteRoute[] = [
   { path: "/resources/sc-handbook-requirements", lastmod: D, changefreq: "monthly" },
   { path: "/resources/do-we-need-a-peo", lastmod: D, changefreq: "monthly" },
 
+  // PEO pricing cluster
+  { path: "/resources/peo-pricing-explained", lastmod: "2026-09-06", changefreq: "monthly" },
+  { path: "/resources/peo-honeymoon-pricing", lastmod: "2026-09-06", changefreq: "monthly" },
+  { path: "/resources/peo-suta-rates", lastmod: "2026-09-06", changefreq: "monthly" },
+  { path: "/resources/peo-admin-fees", lastmod: "2026-09-06", changefreq: "monthly" },
+  { path: "/resources/peo-contract-terms", lastmod: "2026-09-06", changefreq: "monthly" },
+  { path: "/resources/when-a-peo-is-the-wrong-answer", lastmod: "2026-09-06", changefreq: "monthly" },
+  { path: "/resources/peo-renewal-review", lastmod: "2026-09-06", changefreq: "monthly" },
+  { path: "/partners", lastmod: "2026-09-06", changefreq: "monthly" },
+
   { path: "/privacy", lastmod: D, changefreq: "yearly" },
   { path: "/terms", lastmod: D, changefreq: "yearly" },
 ];

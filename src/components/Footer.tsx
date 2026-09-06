@@ -103,6 +103,7 @@ const Footer = () => {
                 { label: "Why Pillar", href: "/about" },
                 { label: "Caleb Sherrill", href: "/about/caleb-sherrill" },
                 { label: "How we get paid", href: "/how-we-get-paid" },
+                { label: "Partners", href: "/partners" },
                 { label: "Case studies", href: "/case-studies" },
                 { label: "HR Risk Score", href: "/tools/hr-risk-score" },
                 { label: "PEO cost calculator", href: "/tools/peo-cost-calculator" },
