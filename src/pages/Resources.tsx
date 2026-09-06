@@ -81,7 +81,7 @@ const resources = [
   {
     icon: HelpCircle,
     title: "5 Questions to Ask Any PEO Before Signing",
-    desc: "The critical questions most employers never think to ask — until it's too late.",
+    desc: "The critical questions most employers never think to ask, until it's too late.",
     category: "Checklist",
     href: "/resources/5-questions",
   },
@@ -102,7 +102,7 @@ const resources = [
   {
     icon: RefreshCw,
     title: "How to Switch PEOs Without Disrupting Payroll",
-    desc: "What the switching process actually looks like — and how to do it without missing a beat.",
+    desc: "What the switching process actually looks like, and how to do it without missing a beat.",
     category: "Guide",
     href: "/services/transitions",
   },
@@ -116,7 +116,7 @@ const resources = [
   {
     icon: Settings,
     title: "What to Expect During a PEO Implementation",
-    desc: "What the next 60–90 days look like after you sign — and how to prepare.",
+    desc: "What the next 60–90 days look like after you sign, and how to prepare.",
     category: "Guide",
     href: "/services/transitions",
   },
@@ -144,7 +144,7 @@ const resources = [
   {
     icon: Newspaper,
     title: "Top PEO Companies in 2026",
-    desc: "The PEO landscape grouped by tier — national, modern, and industry-vertical — with how to pick.",
+    desc: "The PEO landscape grouped by tier: national, modern, and industry-vertical, with how to pick.",
     category: "Industry Guide",
     href: "/resources/top-peo-companies",
   },
@@ -179,7 +179,7 @@ const resources = [
   {
     icon: HelpCircle,
     title: "Employee Health Benefits Options: What Employers Actually Offer",
-    desc: "Fully-insured, level-funded, ICHRA, PEO master plans, and association health plans — how each works and when it fits.",
+    desc: "Fully-insured, level-funded, ICHRA, PEO master plans, and association health plans: how each works and when it fits.",
     category: "Guide",
     href: "/resources/employee-health-benefits-options",
   },
@@ -193,7 +193,7 @@ const resources = [
   {
     icon: Building2,
     title: "PEO for Nonprofits in Charlotte",
-    desc: "What Charlotte-area nonprofits should weigh before signing — benefits, 403(b), and grant compliance.",
+    desc: "What Charlotte-area nonprofits should weigh before signing: benefits, 403(b), and grant compliance.",
     category: "Guide",
     href: "/industries/nonprofits",
   },
@@ -221,7 +221,7 @@ const resources = [
   {
     icon: ClipboardCheck,
     title: "Multi-State Employer Checklist",
-    desc: "What happens the day you hire someone in a new state — registrations, insurance, notices, payroll.",
+    desc: "What happens the day you hire someone in a new state: registrations, insurance, notices, payroll.",
     category: "Checklist",
     href: "/resources/multi-state-employer-checklist",
   },
@@ -263,7 +263,7 @@ const resources = [
   {
     icon: Newspaper,
     title: "PEO Industry Transparency",
-    desc: "How the PEO industry actually makes money — and what employers deserve to see in a quote.",
+    desc: "How the PEO industry actually makes money, and what employers deserve to see in a quote.",
     category: "Industry Guide",
     href: "/resources/peo-industry-transparency",
   },
@@ -298,7 +298,7 @@ const faqs = [
   },
   {
     q: "Are these resources free?",
-    a: "Yes — every resource on this page is completely free. We believe employers make better decisions with better information.",
+    a: "Yes, every resource on this page is completely free. We believe employers make better decisions with better information.",
   },
   {
     q: "Can I share these with my team or board?",
@@ -336,7 +336,7 @@ const Resources = () => {
     <>
       <SEOHead
         title="Resources"
-        description="Free PEO guides, checklists, and comparisons built for employers — not PEO sales teams. Make a confident decision."
+        description="Free PEO guides, checklists, and comparisons built for employers, not PEO sales teams. Make a confident decision."
         jsonLd={faqJsonLd}
         
       />
@@ -351,7 +351,7 @@ const Resources = () => {
           </Reveal>
           <Reveal delay={100}>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80 md:text-xl">
-              Free guides, checklists, and comparisons built for employers — not
+              Free guides, checklists, and comparisons built for employers, not
               PEO sales teams.
             </p>
           </Reveal>
@@ -376,7 +376,7 @@ const Resources = () => {
                   </h2>
                   <p className="mt-3 max-w-xl text-muted-foreground">
                     Everything you need to evaluate, compare, and choose the
-                    right PEO — in one comprehensive guide. Covers pricing
+                    right PEO, in one comprehensive guide. Covers pricing
                     models, contract red flags, benefits benchmarking, and the
                     questions your broker won't ask.
                   </p>
@@ -485,7 +485,7 @@ const Resources = () => {
               </h2>
             </div>
             <p className="mx-auto mt-4 max-w-xl text-center text-muted-foreground">
-              Shorter reads on common PEO questions — written for busy employers.
+              Shorter reads on common PEO questions, written for busy employers.
             </p>
           </Reveal>
 
@@ -552,7 +552,7 @@ const Resources = () => {
               Need guidance beyond the guides?
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">
-              Our advisors can walk you through any of these topics — and help
+              Our advisors can walk you through any of these topics, and help
               you apply them to your specific situation.
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">

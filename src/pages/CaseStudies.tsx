@@ -19,8 +19,8 @@ const jsonLd = {
 
 const formatSteps = [
   { title: "Situation", desc: "What the client's HR setup looked like, and what prompted the engagement." },
-  { title: "What we found", desc: "The specific gaps or costs uncovered — named plainly, with a number." },
-  { title: "What changed", desc: "What Pillar did, what the client did, and the measurable result — with a number." },
+  { title: "What we found", desc: "The specific gaps or costs uncovered: named plainly, with a number." },
+  { title: "What changed", desc: "What Pillar did, what the client did, and the measurable result: with a number." },
 ];
 
 const placeholders = [
@@ -30,7 +30,7 @@ const placeholders = [
 ];
 
 /**
- * Index page only. No case study content is invented here — every result
+ * Index page only. No case study content is invented here: every result
  * slot is a visible ProofSlot until a real, client-approved case study
  * exists to fill it.
  */
@@ -38,7 +38,7 @@ const CaseStudies = () => (
   <>
     <SEOHead
       title="Case Studies"
-      description="Pillar's case studies are published only with client permission, in a fixed format: the situation, what we found, and what changed — with a number."
+      description="Pillar's case studies are published only with client permission, in a fixed format: the situation, what we found, and what changed, with a number."
       canonical={`${SITE_URL}/case-studies`}
       jsonLd={jsonLd}
     />
@@ -65,7 +65,7 @@ const CaseStudies = () => (
             The format every case study follows
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Every case study on this site — once published — follows the same three-part
+            Every case study on this site, once published, follows the same three-part
             structure, and includes a specific number, not a vague claim.
           </p>
         </Reveal>
@@ -93,7 +93,7 @@ const CaseStudies = () => (
           </h2>
           <p className="mt-4 text-muted-foreground">
             These slots are placeholders, not previews of specific clients. Nothing below is a
-            real client, name, or number — each will only be filled once a real engagement is
+            real client, name, or number; each will only be filled once a real engagement is
             complete and the client has agreed to be named or described.
           </p>
         </Reveal>
@@ -117,7 +117,7 @@ const CaseStudies = () => (
           <p className="mt-4 text-muted-foreground">
             Professional-services firms are cautious about being written about, and they
             should be. HR work touches pay, classification, terminations and immigration
-            paperwork — subjects a managing partner does not want attached to the firm's
+            paperwork: subjects a managing partner does not want attached to the firm's
             name in a search result. So the rule here is simple and it does not bend.
           </p>
           <ul className="mt-6 space-y-3 text-muted-foreground">
@@ -131,7 +131,7 @@ const CaseStudies = () => (
               never treated as a lesser case study.
             </li>
             <li>
-              No employee is identifiable, ever — not by name, role, or a detail specific
+              No employee is identifiable, ever, not by name, role, or a detail specific
               enough to make them recognisable inside their own firm.
             </li>
             <li>
@@ -158,8 +158,8 @@ const CaseStudies = () => (
             invented for the page.
           </p>
           <p className="mt-4 text-muted-foreground">
-            Where a result depends on assumptions — a projected cost, a comparison against
-            what a provider would have charged — the assumptions are printed alongside it.
+            Where a result depends on assumptions, a projected cost, a comparison against
+            what a provider would have charged, the assumptions are printed alongside it.
             If a client is happy to be quoted but the result cannot be measured, we publish
             the quote as a quote and do not dress it up as an outcome.
           </p>
@@ -178,7 +178,7 @@ const CaseStudies = () => (
             with real, approved work as it completes.
           </p>
           <p className="mt-4 text-muted-foreground">
-            In the meantime, the most useful thing we can show you is the work itself — how
+            In the meantime, the most useful thing we can show you is the work itself: how
             an audit is scoped, what a transition plan contains, and what we would need
             from your firm. Ask on a call and we will walk you through a redacted
             deliverable rather than a success story.
