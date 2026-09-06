@@ -371,7 +371,7 @@ const Index = () => {
               icon: Building2,
               title: "Wondering if you need a PEO?",
               desc: "Build a better people-ops foundation before growth gets messy.",
-              href: "/do-we-need-a-peo",
+              href: "/resources/do-we-need-a-peo",
               cta: "Explore First-Time PEO",
               accent: "text-bold-yellow",
               border: "border-bold-yellow/30",

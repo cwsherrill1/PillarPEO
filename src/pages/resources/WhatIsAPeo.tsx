@@ -155,7 +155,7 @@ const WhatIsAPeo = () => (
         <Bullet>200+ employees with a built-out HR team and self-funded health plan ambitions</Bullet>
         <Bullet>Industries with very high workers' comp risk that pool poorly</Bullet>
       </ul>
-      <p className="mt-4">Not sure where you fall? Take our <Link to="/resources/peo-readiness" className="text-green-ink hover:underline">PEO readiness assessment</Link>.</p>
+      <p className="mt-4">Not sure where you fall? Take our <Link to="/resources/do-we-need-a-peo" className="text-green-ink hover:underline">PEO readiness assessment</Link>.</p>
     </Section>
 
     <Section title="PEO vs. Other Models" alt>

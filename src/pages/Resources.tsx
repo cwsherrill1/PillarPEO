@@ -69,7 +69,7 @@ const resources = [
     title: "Is Your Company Ready for a PEO?",
     desc: "An interactive self-assessment to see if your company is a good PEO fit.",
     category: "Self-Assessment",
-    href: "/resources/peo-readiness",
+    href: "/resources/do-we-need-a-peo",
   },
   {
     icon: Settings,
@@ -189,7 +189,7 @@ const insights = [
     title: "Should Your Business Use a PEO?",
     desc: "How to know if a PEO is the right fit for your company's size, stage, and goals.",
     date: "2025",
-    href: "/resources/peo-readiness",
+    href: "/resources/do-we-need-a-peo",
   },
 ];
 
