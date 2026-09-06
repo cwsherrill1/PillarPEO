@@ -36,7 +36,7 @@ const inputs = [
 const faqs = [
   {
     q: "What is an HR audit and what does it cost?",
-    a: `An HR audit is a structured review of how your firm actually hires, pays, documents and separates people, measured against the rules in every state you employ. Pillar's audit runs 41 checks across nine areas and costs ${pricing.audit.bands[0].price} for 10–25 employees, ${pricing.audit.bands[1].price} for 26–75, and ${pricing.audit.bands[2].price} for 76–150. The price is fixed and quoted before we start.`,
+    a: "An HR audit is a structured review of how your firm actually hires, pays, documents and separates people, measured against the rules in every state you employ. Pillar's audit runs 41 checks across nine areas. The price is set by headcount band and by how many states you employ in, and is quoted on the scope call, before we start.",
   },
   {
     q: "How long does the audit take?",
@@ -69,12 +69,6 @@ const jsonLd = {
       url: `${SITE_URL}/services/hr-audit`,
       description:
         "A fixed-price HR audit: 41 checks across nine areas, scored Pass, Watch or Fail, delivered in 15 business days.",
-      offers: pricing.audit.bands.map((b) => ({
-        "@type": "Offer",
-        priceCurrency: "USD",
-        price: b.price.replace(/[$,]/g, ""),
-        description: `${b.label} — ${b.states}`,
-      })),
     },
     {
       "@type": "FAQPage",
@@ -90,9 +84,9 @@ const jsonLd = {
 const HrAudit = () => (
   <>
     <SEOHead
-      title={`HR Audit for Small Professional Firms, from ${pricing.audit.from} | Pillar`}
+      title="HR Audit for Small Professional Firms | Pillar"
       fullTitle
-      description={`A fixed-price HR audit for professional-services firms: 41 checks across nine areas, scored Pass, Watch or Fail, in 15 business days. ${pricing.audit.bands[0].price} / ${pricing.audit.bands[1].price} / ${pricing.audit.bands[2].price} by headcount.`}
+      description="A fixed-price HR audit for professional-services firms: 41 checks across nine areas, scored Pass, Watch or Fail, in 15 business days. Fixed price, quoted before the work starts."
       canonical={`${SITE_URL}/services/hr-audit`}
       jsonLd={jsonLd}
     />
@@ -114,10 +108,8 @@ const HrAudit = () => (
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
             An HR audit is a structured review of how your firm actually hires, pays,
             documents and separates people, measured against the rules in every state
-            you employ. Pillar's audit runs 41 checks across nine areas and costs
-            {pricing.audit.bands[0].price} for 10–25 employees, {pricing.audit.bands[1].price} for 26–75, and{" "}
-            {pricing.audit.bands[2].price} for 76–150. The
-            price is fixed and quoted before we start.
+            you employ. Pillar's audit runs 41 checks across nine areas. Fixed price,
+            quoted before the work starts.
           </p>
         </Reveal>
       </div>
@@ -139,8 +131,8 @@ const HrAudit = () => (
                   <p className="font-heading text-sm font-700 uppercase tracking-widest text-muted-foreground">
                     {b.label}
                   </p>
-                  <p className="mt-3 font-heading text-4xl font-800 tabular-nums text-foreground">
-                    {b.price}
+                  <p className="mt-3 text-lg font-700 text-foreground">
+                    Fixed price, quoted before the work starts.
                   </p>
                   <p className="mt-3 text-base text-muted-foreground">{b.states}</p>
                 </CardContent>
@@ -149,7 +141,10 @@ const HrAudit = () => (
           ))}
         </div>
         <Reveal delay={300}>
-          <p className="mt-8 text-base text-muted-foreground">{pricing.audit.overLimit}</p>
+          <p className="mt-8 text-base text-muted-foreground">
+            The price is set by headcount band and by how many states you employ in,
+            and is quoted on the scope call.
+          </p>
         </Reveal>
       </div>
     </section>
