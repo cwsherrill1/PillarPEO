@@ -289,3 +289,34 @@
     @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
   }
 }
+
+/* Print rules for the partner client one-pager (/partners/client-one-pager).
+   Scoped to body.one-pager so site-wide printing is unchanged. */
+@media print {
+  body.one-pager header,
+  body.one-pager footer.site-footer,
+  body.one-pager > div > footer,
+  body.one-pager .print-hide {
+    display: none !important;
+  }
+  body.one-pager {
+    background: #fff;
+  }
+  body.one-pager .print-sheet {
+    max-width: none;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 10.5pt;
+    color: #000;
+  }
+  body.one-pager .print-sheet h2 {
+    margin-top: 14pt;
+  }
+  body.one-pager a {
+    text-decoration: none;
+    color: #000;
+  }
+  @page {
+    margin: 14mm;
+  }
+}
