@@ -1,5 +1,26 @@
 import { Reveal } from "@/components/Reveal";
 import SEOHead from "@/components/SEOHead";
+import { ORG_REF, SITE_URL, breadcrumb } from "@/data/organization";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    breadcrumb([
+      { name: "Home", path: "/" },
+      { name: "Terms of Service", path: "/terms" },
+    ]),
+    {
+      "@type": "WebPage",
+      "@id": `${SITE_URL}/terms`,
+      name: "Terms of Service",
+      url: `${SITE_URL}/terms`,
+      description: "Terms of Service for the Pillar PEO Advisors website and advisory services.",
+      isPartOf: ORG_REF,
+      publisher: ORG_REF,
+      dateModified: "2026-09-06",
+    },
+  ],
+};
 
 const sections = [
   {
@@ -34,6 +55,8 @@ const Terms = () => {
     <>
       <SEOHead
         title="Terms of Service"
+        canonical={`${SITE_URL}/terms`}
+        jsonLd={jsonLd}
         description="Terms of Service for Pillar PEO Advisors website and advisory services."
       />
       <section className="bg-primary py-20 text-primary-foreground md:py-28">
