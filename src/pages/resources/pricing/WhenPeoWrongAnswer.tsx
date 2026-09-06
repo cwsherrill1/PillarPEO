@@ -75,7 +75,7 @@ const WhenPeoWrongAnswer = () => (
       </p>
     </Section>
 
-    <Section title="Case 1 — you are low-risk and low-turnover" alt>
+    <Section title="Case 1: you are low-risk and low-turnover" alt>
       <p>
         Much of a PEO's economic case rests on pooling: pooled workers'
         compensation, pooled unemployment, pooled medical. Pooling helps employers
@@ -95,12 +95,12 @@ const WhenPeoWrongAnswer = () => (
       </p>
     </Section>
 
-    <Section title="Case 2 — your benefits are already good">
+    <Section title="Case 2: your benefits are already good">
       <p>
         If you have a competent benefits broker and a plan your people are happy
         with, a PEO is being asked to beat an already-good outcome. Sometimes it
         does. Often it offers a comparable plan at a comparable cost, and the
-        change delivers disruption rather than savings — new carriers, new
+        change delivers disruption rather than savings: new carriers, new
         networks, and employees checking whether their doctor is still covered.
       </p>
       <p>
@@ -120,11 +120,11 @@ const WhenPeoWrongAnswer = () => (
       </p>
     </Section>
 
-    <Section title="Case 3 — you have HR capability in-house" alt>
+    <Section title="Case 3: you have HR capability in-house" alt>
       <p>
         A PEO is most valuable to a firm with nobody doing HR. If you have a
         capable practice administrator or an HR generalist who knows your people
-        and your states, a PEO does not remove that role — it changes who they
+        and your states, a PEO does not remove that role. It changes who they
         call. The work of judgement stays with you; the work of processing moves.
       </p>
       <p>
@@ -134,7 +134,7 @@ const WhenPeoWrongAnswer = () => (
       </p>
     </Section>
 
-    <Section title="Case 4 — your problem is process, not administration">
+    <Section title="Case 4: your problem is process, not administration">
       <p>
         This is the most common one we see. The firm's pain is inconsistent
         manager behaviour, an out-of-date handbook, classification decisions
@@ -143,7 +143,7 @@ const WhenPeoWrongAnswer = () => (
       </p>
       <p>
         A PEO will process your payroll flawlessly while your exempt
-        classifications remain wrong. Those are fixed by looking at them — an{" "}
+        classifications remain wrong. Those are fixed by looking at them, an{" "}
         <Link to="/services/hr-audit" className="text-green-ink hover:underline">
           HR audit
         </Link>{" "}
@@ -151,7 +151,7 @@ const WhenPeoWrongAnswer = () => (
         <Link to="/services/hr-projects" className="text-green-ink hover:underline">
           projects
         </Link>{" "}
-        — not by changing who runs the payroll file.
+        , not by changing who runs the payroll file.
       </p>
     </Section>
 
@@ -182,7 +182,7 @@ const WhenPeoWrongAnswer = () => (
         <Bullet>
           <strong className="text-foreground">The result.</strong> Once every line
           is added rather than only the favourable one, total annual spend goes up,
-          not down — and the increase grows in year two as salaries rise against a
+          not down, and the increase grows in year two as salaries rise against a
           percentage-based fee.
         </Bullet>
       </ul>
@@ -204,7 +204,7 @@ const WhenPeoWrongAnswer = () => (
       <p>
         For most firms in these four cases, the alternative is a stack rather than
         a single vendor: a payroll provider, a benefits broker you trust, and HR
-        capability sized to what you actually need — a one-off audit, a fixed-price
+        capability sized to what you actually need: a one-off audit, a fixed-price
         project, or{" "}
         <Link to="/services/fractional-hr" className="text-green-ink hover:underline">
           fractional HR

@@ -94,7 +94,7 @@ const Partners = () => (
       <UpdatedLine />
       <p className="text-lg leading-8 text-foreground/85">
         A defined, scoped piece of HR or PEO work delivered behind your
-        relationship — named or white-labelled, your choice. Most partner work
+        relationship, named or white-labelled, your choice. Most partner work
         starts the same way: a client's renewal lands badly, or they hire someone
         in a state nobody registered in, and the question lands on the person they
         trust most. That is usually you.
@@ -102,7 +102,7 @@ const Partners = () => (
       <p>
         We are the people you hand that question to. We review the numbers, tell
         you what is actually happening in them, and hand back an answer you can
-        take to the client — including, often, "don't do this".
+        take to the client, including, often, "don't do this".
       </p>
     </Section>
 
@@ -131,8 +131,8 @@ const Partners = () => (
       <ul className="space-y-3">
         <Bullet>
           <strong className="text-foreground">Review a PEO renewal or proposal.</strong>{" "}
-          Line by line — admin fee basis, SUTA, workers' compensation, benefit
-          plan changes — and tell you what actually moved. See the{" "}
+          Line by line: admin fee basis, SUTA, workers' compensation, benefit
+          plan changes, and tell you what actually moved. See the{" "}
           <Link to="/resources/peo-renewal-review" className="text-green-ink hover:underline">
             renewal review
           </Link>
@@ -149,7 +149,7 @@ const Partners = () => (
         <Bullet>
           <strong className="text-foreground">Fixed-price HR work.</strong> Audits,
           handbooks, FLSA review, I-9 and E-Verify cleanup, comp benchmarking,
-          multi-state registration cleanup — quoted before it starts.
+          multi-state registration cleanup, quoted before it starts.
         </Bullet>
         <Bullet>
           <strong className="text-foreground">Run transitions.</strong> Into or out
@@ -163,7 +163,7 @@ const Partners = () => (
         <Bullet>
           <strong className="text-foreground">We do not take the relationship.</strong>{" "}
           You stay the client's primary advisor. We copy you on everything, or we
-          never appear at all — your call.
+          never appear at all. Your call.
         </Bullet>
         <Bullet>
           <strong className="text-foreground">We do not sell your clients anything else.</strong>{" "}
@@ -192,8 +192,8 @@ const Partners = () => (
         decides against a PEO, nobody pays us anything.
       </p>
       <p>
-        Our fixed-price advisory work — audits, projects, fractional HR,
-        transitions — is quoted to the client, or to you if you are
+        Our fixed-price advisory work (audits, projects, fractional HR,
+        transitions) is quoted to the client, or to you if you are
         white-labelling, before the work starts. We do not pay referral fees on
         that work. The whole structure is set out on{" "}
         <Link to="/how-we-get-paid" className="text-green-ink hover:underline">
@@ -203,7 +203,7 @@ const Partners = () => (
       </p>
       <p>
         Benefits brokers work on a tiered revenue share instead, so an existing
-        book is protected — the detail is on the{" "}
+        book is protected. The detail is on the{" "}
         <Link to="/partners/benefits-brokers" className="text-green-ink hover:underline">
           benefits brokers page
         </Link>
@@ -250,7 +250,7 @@ const Partners = () => (
 
     <ServiceCta
       heading="Let's talk about a first engagement."
-      body="Tell us the client situation you're looking at and we'll tell you whether it's something we should be in — and whether it should carry your name or ours."
+      body="Tell us the client situation you're looking at and we'll tell you whether it's something we should be in, and whether it should carry your name or ours."
       proof="second partner reference, ideally from the other side (broker vs fractional CFO)."
       secondary={{ label: "How we get paid", href: "/how-we-get-paid" }}
     />

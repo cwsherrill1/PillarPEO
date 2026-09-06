@@ -52,7 +52,7 @@ const HowToSwitchPeos = () => (
         </Reveal>
         <Reveal delay={100}>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80 md:text-xl">
-            The fear of transition keeps thousands of employers stuck in PEO relationships that aren't working. Here's what the process actually looks like — and how to do it right.
+            The fear of transition keeps thousands of employers stuck in PEO relationships that aren't working. Here's what the process actually looks like, and how to do it right.
           </p>
         </Reveal>
         <Reveal delay={150}>
@@ -75,7 +75,7 @@ const HowToSwitchPeos = () => (
             <ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources
           </Link>
           <p className="text-xl leading-8 text-foreground/85">
-            The number one reason employers stay in a bad PEO relationship isn't loyalty — it's fear. Fear of payroll disruption. Fear of employee confusion during benefits transitions. Fear of losing momentum right when the business needs stability. That fear is understandable, but it's also largely preventable with the right plan. Switching PEOs is a structured process, not a leap of faith.
+            The number one reason employers stay in a bad PEO relationship isn't loyalty. It's fear. Fear of payroll disruption. Fear of employee confusion during benefits transitions. Fear of losing momentum right when the business needs stability. That fear is understandable, but it's also largely preventable with the right plan. Switching PEOs is a structured process, not a leap of faith.
           </p>
         </Reveal>
       </div>
@@ -88,9 +88,9 @@ const HowToSwitchPeos = () => (
           <p className="mt-4 text-lg leading-8 text-foreground/85">Before anything else, pull your current PEO agreement and identify:</p>
           <ul className="mt-4 space-y-3 text-base text-muted-foreground">
             <Bullet>Your termination notice window (typically 30–90 days)</Bullet>
-            <Bullet>Your benefits contract end date — PEO benefits often run on a plan year that doesn't match your service contract</Bullet>
+            <Bullet>Your benefits contract end date: PEO benefits often run on a plan year that doesn't match your service contract</Bullet>
             <Bullet>Any penalties or obligations tied to early termination</Bullet>
-            <Bullet>Your data portability rights — payroll history, employee records, and compliance filings</Bullet>
+            <Bullet>Your data portability rights: payroll history, employee records, and compliance filings</Bullet>
           </ul>
           <p className="mt-4 text-base font-semibold text-foreground">The best time to begin evaluating a switch is 4–6 months before your renewal date.</p>
         </Reveal>
@@ -105,7 +105,7 @@ const HowToSwitchPeos = () => (
           <ul className="mt-4 space-y-3 text-base text-muted-foreground">
             <Bullet>Gathering your payroll data, benefits census, workers' comp history, and SUTA rates</Bullet>
             <Bullet>Submitting that data to multiple PEO providers simultaneously</Bullet>
-            <Bullet>Comparing proposals on a normalized basis — same scope, same headcount, same plan structure</Bullet>
+            <Bullet>Comparing proposals on a normalized basis: same scope, same headcount, same plan structure</Bullet>
             <Bullet>Shortlisting two or three providers, conducting demos, and checking references</Bullet>
           </ul>
           <p className="mt-4 text-base text-muted-foreground">This phase typically takes 4–8 weeks when done properly. Rushing it is how employers end up with a new PEO that's only marginally better than the old one.</p>
@@ -132,11 +132,11 @@ const HowToSwitchPeos = () => (
           <h2 className="font-heading text-2xl font-800 text-foreground md:text-3xl">How Payroll Continuity Is Protected</h2>
           <ul className="mt-4 space-y-3 text-base text-muted-foreground">
             <Bullet>The new PEO typically runs their first payroll after a clean break from the prior provider</Bullet>
-            <Bullet>Your payroll data — employee details, direct deposit, deductions — is migrated before cutover</Bullet>
+            <Bullet>Your payroll data (employee details, direct deposit, deductions) is migrated before cutover</Bullet>
             <Bullet>The transition usually happens at a natural payroll boundary (start of a month or quarter)</Bullet>
             <Bullet>A good advisor coordinates timing between both providers to eliminate overlap or gaps</Bullet>
           </ul>
-          <p className="mt-4 text-base text-muted-foreground">Employees typically notice only the change in the portal they log into — not any disruption to their paycheck.</p>
+          <p className="mt-4 text-base text-muted-foreground">Employees typically notice only the change in the portal they log into, not any disruption to their paycheck.</p>
         </Reveal>
       </div>
     </section>
@@ -144,7 +144,7 @@ const HowToSwitchPeos = () => (
     <section className="bg-muted/30 py-20 md:py-28">
       <div className="container max-w-3xl">
         <Reveal>
-          <h2 className="font-heading text-2xl font-800 text-foreground md:text-3xl">Benefits Transition — What Employees Experience</h2>
+          <h2 className="font-heading text-2xl font-800 text-foreground md:text-3xl">Benefits Transition: What Employees Experience</h2>
           <p className="mt-4 text-lg leading-8 text-foreground/85">Benefits are where transitions require the most communication. Employees may:</p>
           <ul className="mt-4 space-y-3 text-base text-muted-foreground">
             <Bullet>Receive new insurance cards</Bullet>
@@ -152,7 +152,7 @@ const HowToSwitchPeos = () => (
             <Bullet>See a change in their summary plan descriptions</Bullet>
             <Bullet>Need to update their FSA or HSA contributions</Bullet>
           </ul>
-          <p className="mt-4 text-base text-muted-foreground">The best approach is proactive, clear communication — ideally a brief all-staff message explaining the change in positive terms, a clear enrollment window, and HR or advisor availability to answer questions. Most employees adapt easily when given clear notice and good communication.</p>
+          <p className="mt-4 text-base text-muted-foreground">The best approach is proactive, clear communication: ideally a brief all-staff message explaining the change in positive terms, a clear enrollment window, and HR or advisor availability to answer questions. Most employees adapt easily when given clear notice and good communication.</p>
         </Reveal>
       </div>
     </section>
