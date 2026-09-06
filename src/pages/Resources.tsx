@@ -132,7 +132,7 @@ const resources = [
     title: "Employee Health Benefits Options: What Employers Actually Offer",
     desc: "Fully-insured, level-funded, ICHRA, PEO master plans, and association health plans — how each works and when it fits.",
     category: "Guide",
-    href: "/blog/employee-health-benefits-options",
+    href: "/resources/employee-health-benefits-options",
   },
   {
     icon: RefreshCw,
@@ -216,7 +216,7 @@ const resources = [
     title: "PEO Industry Transparency",
     desc: "How the PEO industry actually makes money — and what employers deserve to see in a quote.",
     category: "Industry Guide",
-    href: "/blog/peo-industry-transparency",
+    href: "/resources/peo-industry-transparency",
   },
 ];
 
@@ -404,13 +404,13 @@ const Resources = () => {
                           {r.category}
                         </Badge>
                       </div>
-                      <h3 className="mt-4 font-heading text-lg font-700 text-foreground group-hover:text-accent transition-colors">
+                      <h3 className="mt-4 font-heading text-lg font-700 text-foreground group-hover:text-green-ink transition-colors">
                         {r.title}
                       </h3>
                       <p className="mt-2 flex-1 text-base text-muted-foreground">
                         {r.desc}
                       </p>
-                      <span className="mt-4 inline-flex items-center text-sm font-semibold text-accent transition-colors group-hover:text-accent/80">
+                      <span className="mt-4 inline-flex items-center text-sm font-semibold text-green-ink transition-colors group-hover:text-green-ink/80">
                         Read More
                         <ArrowRight className="ml-1 h-3.5 w-3.5" />
                       </span>
@@ -453,14 +453,14 @@ const Resources = () => {
                           </Badge>
                           <span className="text-xs text-muted-foreground">{item.date}</span>
                         </div>
-                        <h3 className="mt-2 font-heading text-base font-700 text-foreground group-hover:text-accent transition-colors">
+                        <h3 className="mt-2 font-heading text-base font-700 text-foreground group-hover:text-green-ink transition-colors">
                           {item.title}
                         </h3>
                         <p className="mt-1 text-sm text-muted-foreground">
                           {item.desc}
                         </p>
                       </div>
-                      <ArrowRight className="h-4 w-4 shrink-0 text-muted-foreground group-hover:text-accent transition-colors" />
+                      <ArrowRight className="h-4 w-4 shrink-0 text-muted-foreground group-hover:text-green-ink transition-colors" />
                     </CardContent>
                   </Card>
                 </Link>

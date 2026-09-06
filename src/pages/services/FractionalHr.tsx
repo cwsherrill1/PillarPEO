@@ -10,7 +10,7 @@ import { ORG_REF, SITE_URL, breadcrumb } from "@/data/organization";
 const comparison = [
   {
     option: "Fractional HR",
-    cost: "$2,000–$6,000 per month",
+    cost: pricing.fractional.range,
     fit: "You need senior HR judgment a few days a month, in several states, without adding headcount.",
     limits: "Not an on-site presence, and not a payroll or benefits platform.",
   },
@@ -58,7 +58,7 @@ const jsonLd = {
 const FractionalHr = () => (
   <>
     <SEOHead
-      title="Fractional HR — $2,000 to $6,000 a Month"
+      title={`Fractional HR — ${pricing.fractional.range}`}
       description="Fractional HR for firms of 10–150 people: Advisor 8 hrs, Partner 20 hrs, or Embedded 40 hrs a month at a fixed price, in every state you employ."
       canonical={`${SITE_URL}/services/fractional-hr`}
       jsonLd={jsonLd}

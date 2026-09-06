@@ -8,9 +8,6 @@ export const PRICES_ARE_PROVISIONAL = true;
 
 export const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
-/** The label used for the primary CTA everywhere on the priced-service pages. */
-export const PRIMARY_CTA = "Book an HR audit · from $2,500";
-
 export const pricing = {
   audit: {
     mark: "A-1",
@@ -180,3 +177,6 @@ export const transitionTypes = [
     desc: "Changing payroll providers, including the state tax registrations that trip most switches up.",
   },
 ] as const;
+
+/** The label used for the primary CTA everywhere on the priced-service pages. */
+export const PRIMARY_CTA = `Book an HR audit · from ${pricing.audit.from}`;

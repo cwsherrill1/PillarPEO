@@ -44,6 +44,7 @@ const NorthCarolina = () => (
   <>
     <SEOHead
       title="North Carolina Employer Guide 2026: HR Rules by Headcount"
+      fullTitle
       description="North Carolina employer obligations organized by headcount: E-Verify at 25+, workers' comp at 3+, and what's still an open question."
       canonical={`${SITE_URL}/resources/state-employer-guides/north-carolina`}
       jsonLd={jsonLd}

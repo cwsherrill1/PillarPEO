@@ -6,6 +6,7 @@ import heroWebp384 from "@/assets/hero/hero-team-384.webp";
 import heroWebp768 from "@/assets/hero/hero-team-768.webp";
 import { Button } from "@/components/ui/button";
 import { organization, caleb } from "@/data/organization";
+import { pricing, PRIMARY_CTA, BOOKING_URL } from "@/data/pricing";
 import SEOHead from "@/components/SEOHead";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -21,11 +22,10 @@ import {
   XCircle } from
 "lucide-react";
 
-const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
-
 const FAQS = [
-  { q: "What is a PEO broker?", a: "A PEO broker is an independent advisor who compares Professional Employer Organizations on your behalf, negotiates pricing, and supports the transition. Brokers are paid by the PEO, not by the employer, so the service is typically free to you." },
-  { q: "Do I pay Pillar PEO Advisors anything?", a: "No. Pillar is compensated by the PEO you ultimately select. Our advice, comparisons, and onboarding support are free to the employer." },
+  { q: "What does Pillar do?", a: "Pillar is an independent HR advisory firm for professional-services firms of roughly 10 to 150 people, in every state their people work in. We run fixed-price HR audits and projects, provide fractional HR, and manage PEO and system transitions. Comparing PEOs is a free service inside that offer." },
+  { q: "What is a PEO broker?", a: "A PEO broker is an independent advisor who compares Professional Employer Organizations on your behalf, negotiates pricing, and supports the transition. Brokers are paid by the PEO, not by the employer, so the service is free to you." },
+  { q: "Do I pay Pillar anything?", a: "It depends which service you use. HR audits, projects, fractional HR, and transitions are fixed-price, quoted in writing before any work starts. PEO brokerage is free to you \u2014 the PEO pays the commission, and we disclose it." },
   { q: "Should I use a PEO broker or go direct?", a: "Brokers typically secure better pricing, shorter contracts, and flexible exit clauses, and they stay engaged after the sale. Smaller employers almost always benefit from broker support because they lack the leverage to negotiate alone." },
   { q: "How do I know if a PEO is the right fit?", a: "That depends on your employee count, internal capacity, current pain points, and what kind of support you need. We help you think through that before forcing a decision." },
   { q: "What if we already have a PEO?", a: "That is one of the biggest reasons employers reach out. We can help you evaluate whether the current fit is still right." },
@@ -59,8 +59,9 @@ const Index = () => {
   return (
     <>
       <SEOHead
-        title="Independent PEO Broker — Compare PEOs"
-        description="Pillar PEO Advisors is an independent PEO broker helping small and mid-sized employers compare PEOs, expose hidden fees, and switch with no service fee."
+        title="HR Advisory for Professional Firms | Pillar PEO Advisors"
+        fullTitle
+        description="Fixed-price HR audits, fractional HR, and PEO transitions for law, CPA, engineering, and medical firms nationwide. Headquartered in Charlotte, NC. Independent."
         jsonLd={orgJsonLd} />
       
       {/* ── 1. HERO ── */}
@@ -70,12 +71,12 @@ const Index = () => {
           <div className="grid items-center gap-12 md:grid-cols-[1.2fr_1fr]">
             <div>
               <h1 className="font-heading text-3xl font-800 leading-[1.15] md:text-[2.6rem] lg:text-5xl">
-                <span className="block">Your independent PEO broker.</span>
-                <span className="block text-accent">Focus on your people, not paperwork.</span>
+                <span className="block">HR that bears</span>
+                <span className="block text-accent">the load.</span>
               </h1>
 
               <p className="mt-6 max-w-xl text-lg leading-relaxed text-primary-foreground/80">
-                Pillar is an independent PEO broker that helps employers compare PEO options, understand tradeoffs, and switch without guessing — at no cost to you.
+                Fixed-price HR audits, projects, fractional support, and PEO or HRIS transitions for law, accounting, engineering, and medical firms — in every state your people work in. Headquartered in Charlotte.
               </p>
 
               <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -83,14 +84,14 @@ const Index = () => {
                   size="lg"
                   className="bg-accent text-accent-foreground hover:bg-accent/90 px-8 text-base font-semibold shadow-lg shadow-accent/20"
                   asChild>
-                  <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Schedule a PEO Strategy Call</a>
+                  <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">{PRIMARY_CTA}</a>
                 </Button>
                 <Button
                   size="lg"
                   variant="outline"
                   className="bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 px-8 text-base"
                   asChild>
-                  <Link to="/services/peo-brokerage">See How It Works</Link>
+                  <Link to="/services/peo-brokerage">Compare PEOs, free</Link>
                 </Button>
               </div>
             </div>
@@ -128,8 +129,8 @@ const Index = () => {
       {/* ── 2. TRUST STRIP ── */}
       <section className="border-b border-border bg-muted/40 py-6">
         <div className="container">
-          <p className="text-center text-sm font-medium text-muted-foreground">Independent PEO broker · Serving employers with 5–500 employees · Zero cost to employers
-
+          <p className="text-center text-sm font-medium text-muted-foreground">
+            Fixed price, quoted before work · Every state your people work in · Independent, commissions disclosed
           </p>
         </div>
       </section>
@@ -154,25 +155,25 @@ const Index = () => {
               {
                 need: "I need to know what my HR risk is",
                 service: "HR Audit",
-                price: "From $2,500",
+                price: `From ${pricing.audit.from}`,
                 href: "/services/hr-audit",
               },
               {
                 need: "I need a specific thing fixed",
                 service: "HR Projects",
-                price: "$1,500–$7,500 fixed",
+                price: pricing.projects.range,
                 href: "/services/hr-projects",
               },
               {
                 need: "I need ongoing HR help",
                 service: "Fractional HR",
-                price: "From $2,000 / month",
+                price: `From ${pricing.fractional.tiers[0].price}`,
                 href: "/services/fractional-hr",
               },
               {
                 need: "I'm dealing with a PEO",
                 service: "Transitions",
-                price: "$3,000–$10,000 fixed",
+                price: pricing.transitions.range,
                 href: "/services/transitions",
               },
             ].map(({ need, service, price, href }, i) => (
@@ -204,7 +205,7 @@ const Index = () => {
           <Reveal>
             <div className="mx-auto max-w-2xl text-center">
               <h2 className="font-heading text-3xl font-800 text-foreground md:text-4xl">
-                The wrong setup costs more than the monthly fee.
+                The wrong setup costs more than the audit.
               </h2>
               <p className="mt-4 text-muted-foreground">
                When the fit is wrong, the cost shows up everywhere — in
@@ -322,7 +323,7 @@ const Index = () => {
                 className="mt-6 bg-accent text-accent-foreground hover:bg-accent/90 px-8 text-base font-semibold shadow-lg shadow-accent/20"
                 asChild>
                 
-                <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Schedule a PEO Strategy Call</a>
+                <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">{PRIMARY_CTA}</a>
               </Button>
             </div>
           </Reveal>
@@ -423,25 +424,20 @@ const Index = () => {
           <div className="mx-auto mt-14 max-w-3xl space-y-8">
             {[
             {
-              myth: "\u201CAll PEOs are basically the same.\u201D",
+              myth: "\u201CWe\u2019re too small for E-Verify.\u201D",
               truth:
-              "Pricing, service structure, support quality, and long-term fit can vary more than people realize."
+              "Not in South Carolina. E-Verify applies to every South Carolina employer, within three business days of hire. North Carolina sets its threshold at 25 or more employees under NCGS 64-26."
             },
             {
-              myth: "\u201CSwitching is too disruptive.\u201D",
+              myth: "\u201CSalaried means exempt.\u201D",
               truth:
-              "Staying in the wrong setup often creates its own ongoing disruption. A guided transition can be far more manageable than people expect."
+              "It does not. Paying someone a salary is only part of the test \u2014 the job duties have to meet an exemption as well. Misclassified salaried staff are the most common finding in an audit."
             },
             {
-              myth: "\u201CWe\u2019re too small to need a PEO.\u201D",
+              myth: "\u201CThe PEO handles compliance.\u201D",
               truth:
-              "Employers with as few as 5 employees often benefit the most \u2014 better benefits, compliance coverage, and time back for leadership."
-            },
-            {
-              myth: "\u201CPEOs are just glorified payroll companies.\u201D",
-              truth:
-              "Payroll is one piece. The real value is in benefits access, risk management, and HR infrastructure you\u2019d otherwise have to build yourself."
-            }].
+              "A PEO handles payroll tax filing and much of the paperwork. It does not classify your roles, write your job descriptions, or train your managers \u2014 and those are where the expensive problems start."
+                        }].
             map(({ myth, truth }, i) =>
             <Reveal key={i} delay={i * 120}>
                 <div className="grid gap-4 md:grid-cols-2">

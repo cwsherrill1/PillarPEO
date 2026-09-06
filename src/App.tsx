@@ -6,7 +6,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Layout from "@/components/Layout";
 import ScrollToTop from "@/components/ScrollToTop";
-import { activeRedirects } from "@/data/redirects";
+import { activeRedirects, wildcardRedirects } from "@/data/redirects";
 
 const Index = lazy(() => import("./pages/Index"));
 const Resources = lazy(() => import("./pages/Resources"));
@@ -115,7 +115,7 @@ const App = () => (
               <Route path="/resources/peo-benefits" element={<PeoBenefits />} />
               <Route path="/resources/peo-broker-vs-direct" element={<PeoBrokerVsDirect />} />
               <Route path="/resources/what-is-a-peo" element={<WhatIsAPeo />} />
-              <Route path="/blog/employee-health-benefits-options" element={<EmployeeHealthBenefitsOptions />} />
+              <Route path="/resources/employee-health-benefits-options" element={<EmployeeHealthBenefitsOptions />} />
               <Route path="/resources/state-employer-guides" element={<StateEmployerGuides />} />
               <Route path="/resources/state-employer-guides/north-carolina" element={<StateGuideNorthCarolina />} />
               <Route path="/resources/state-employer-guides/south-carolina" element={<StateGuideSouthCarolina />} />
@@ -130,7 +130,7 @@ const App = () => (
               <Route path="/tools/hr-risk-score" element={<HrRiskScore />} />
               <Route path="/tools/peo-cost-calculator" element={<PeoCostCalculator />} />
               <Route path="/case-studies" element={<CaseStudies />} />
-              <Route path="/blog/peo-industry-transparency" element={<PeoIndustryTransparency />} />
+              <Route path="/resources/peo-industry-transparency" element={<PeoIndustryTransparency />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/privacy" element={<Privacy />} />
@@ -138,6 +138,10 @@ const App = () => (
 
               {/* 301 redirects — generated from src/data/redirects.ts */}
               {activeRedirects.map((r) => (
+                <Route key={r.from} path={r.from} element={<Navigate to={r.to} replace />} />
+              ))}
+
+              {wildcardRedirects.map((r) => (
                 <Route key={r.from} path={r.from} element={<Navigate to={r.to} replace />} />
               ))}
 

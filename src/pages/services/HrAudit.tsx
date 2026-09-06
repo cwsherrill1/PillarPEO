@@ -36,7 +36,7 @@ const inputs = [
 const faqs = [
   {
     q: "What is an HR audit and what does it cost?",
-    a: "An HR audit is a structured review of how your firm actually hires, pays, documents and separates people, measured against the rules in every state you employ. Pillar's audit runs 41 checks across nine areas and costs $2,500 for 10–25 employees, $4,000 for 26–75, and $6,000 for 76–150. The price is fixed and quoted before we start.",
+    a: `An HR audit is a structured review of how your firm actually hires, pays, documents and separates people, measured against the rules in every state you employ. Pillar's audit runs 41 checks across nine areas and costs ${pricing.audit.bands[0].price} for 10–25 employees, ${pricing.audit.bands[1].price} for 26–75, and ${pricing.audit.bands[2].price} for 76–150. The price is fixed and quoted before we start.`,
   },
   {
     q: "How long does the audit take?",
@@ -90,8 +90,9 @@ const jsonLd = {
 const HrAudit = () => (
   <>
     <SEOHead
-      title="HR Audit — Fixed Price from $2,500"
-      description="A fixed-price HR audit for professional-services firms: 41 checks across nine areas, scored Pass, Watch or Fail, in 15 business days. $2,500 / $4,000 / $6,000 by headcount."
+      title={`HR Audit for Small Professional Firms, from ${pricing.audit.from} | Pillar`}
+      fullTitle
+      description={`A fixed-price HR audit for professional-services firms: 41 checks across nine areas, scored Pass, Watch or Fail, in 15 business days. ${pricing.audit.bands[0].price} / ${pricing.audit.bands[1].price} / ${pricing.audit.bands[2].price} by headcount.`}
       canonical={`${SITE_URL}/services/hr-audit`}
       jsonLd={jsonLd}
     />
@@ -114,7 +115,8 @@ const HrAudit = () => (
             An HR audit is a structured review of how your firm actually hires, pays,
             documents and separates people, measured against the rules in every state
             you employ. Pillar's audit runs 41 checks across nine areas and costs
-            $2,500 for 10–25 employees, $4,000 for 26–75, and $6,000 for 76–150. The
+            {pricing.audit.bands[0].price} for 10–25 employees, {pricing.audit.bands[1].price} for 26–75, and{" "}
+            {pricing.audit.bands[2].price} for 76–150. The
             price is fixed and quoted before we start.
           </p>
         </Reveal>

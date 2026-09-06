@@ -28,7 +28,7 @@ const ARTICLE = buildArticleJsonLd({
   title: "What the PEO Industry Does Not Tell You",
   description:
     "Hidden fees, renewal traps, and brokers funneling clients back to old employers. A Charlotte broker breaks down what the sales process hides.",
-  path: "/blog/peo-industry-transparency",
+  path: "/resources/peo-industry-transparency",
   datePublished: "2026-05-19",
   dateModified: "2026-09-05",
 });

@@ -64,7 +64,7 @@ const jsonLd = {
       name: "Pricing",
       url: `${SITE_URL}/pricing`,
       description:
-        "Every Pillar price in one table: HR audits from $2,500, fixed-price projects, fractional HR from $2,000 a month, transitions, and free PEO brokerage.",
+        `Every Pillar price in one table: HR audits from ${pricing.audit.from}, fixed-price projects, fractional HR from ${pricing.fractional.tiers[0].price}, transitions, and free PEO brokerage.`,
       publisher: ORG_REF,
     },
   ],
@@ -74,7 +74,7 @@ const Pricing = () => (
   <>
     <SEOHead
       title="Pricing"
-      description="Every Pillar price in one table: HR audits from $2,500, HR projects $1,500–$7,500, fractional HR from $2,000 a month, transitions $3,000–$10,000, PEO brokerage free."
+      description={`Every Pillar price in one table: HR audits from ${pricing.audit.from}, HR projects ${pricing.projects.range}, fractional HR from ${pricing.fractional.tiers[0].price}, transitions ${pricing.transitions.range}, PEO brokerage free.`}
       canonical={`${SITE_URL}/pricing`}
       jsonLd={jsonLd}
     />

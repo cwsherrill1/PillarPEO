@@ -6,15 +6,19 @@ interface SEOHeadProps {
   canonical?: string;
   jsonLd?: Record<string, unknown>;
   ogType?: "website" | "article";
+  /** When true, `title` is used verbatim — no " — Pillar PEO Advisors" suffix. */
+  fullTitle?: boolean;
 }
 
 const SITE_NAME = "Pillar PEO Advisors";
 const BASE_URL = "https://pillarpeo.com";
 
-const SEOHead = ({ title, description, canonical, jsonLd, ogType = "website" }: SEOHeadProps) => {
+const SEOHead = ({ title, description, canonical, jsonLd, ogType = "website", fullTitle = false }: SEOHeadProps) => {
   useEffect(() => {
+    const pageTitle = fullTitle ? title : `${title} — ${SITE_NAME}`;
+
     // Title
-    document.title = `${title} — ${SITE_NAME}`;
+    document.title = pageTitle;
 
     // Meta description
     let metaDesc = document.querySelector('meta[name="description"]');
@@ -28,11 +32,11 @@ const SEOHead = ({ title, description, canonical, jsonLd, ogType = "website" }: 
     // OG tags
     const currentUrl = canonical || `${BASE_URL}${window.location.pathname}`;
     const ogTags: Record<string, string> = {
-      "og:title": `${title} — ${SITE_NAME}`,
+      "og:title": pageTitle,
       "og:description": description,
       "og:url": currentUrl,
       "og:type": ogType,
-      "twitter:title": `${title} — ${SITE_NAME}`,
+      "twitter:title": pageTitle,
       "twitter:description": description,
     };
 
@@ -80,7 +84,7 @@ const SEOHead = ({ title, description, canonical, jsonLd, ogType = "website" }: 
       const script = document.querySelector('script[data-seo-jsonld]');
       if (script) script.remove();
     };
-  }, [title, description, canonical, jsonLd, ogType]);
+  }, [title, description, canonical, jsonLd, ogType, fullTitle]);
 
   return null;
 };

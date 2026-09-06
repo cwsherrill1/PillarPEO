@@ -29,3 +29,6 @@
 /peo-broker-north-carolina /resources/state-employer-guides/north-carolina 301
 /peo-broker-south-carolina /resources/state-employer-guides/south-carolina 301
 /blog/peo-for-venture-backed-startups /resources/peo-for-startups 301
+/blog/employee-health-benefits-options /resources/employee-health-benefits-options 301
+/blog/peo-industry-transparency /resources/peo-industry-transparency 301
+/blog/* /resources/ 301

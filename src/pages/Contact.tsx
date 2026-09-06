@@ -296,7 +296,7 @@ const Contact = () => {
                     <div>
                       <p className="text-sm text-muted-foreground">{card.label}</p>
                       {card.href ? (
-                        <a href={card.href} className="font-semibold text-foreground hover:text-accent transition-colors">
+                        <a href={card.href} className="font-semibold text-foreground hover:text-green-ink transition-colors">
                           {card.value}
                         </a>
                       ) : (
