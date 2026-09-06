@@ -140,7 +140,13 @@ const PeoForStartups = () => (
       </ul>
     </Section>
 
-    <Section title="Exit Planning: How to Leave a PEO Without Losing Money" alt>
+    <Section title="Series A vs. Series B: What Diligence Actually Checks" alt>
+      <p>At Series A, the bar is basic: correct worker classification, active workers' comp coverage, and payroll tax registration in every state where you employ people. Most startups can clear it.</p>
+      <p>By Series B the scrutiny tightens. Institutional investors want to see employment practices liability insurance, clean multi-state payroll tax documentation, and proof that benefits administration isn't creating compliance gaps. A PEO that has done this before handles it quietly, so founders aren't scrambling between rounds.</p>
+      <p>If you're a Charlotte-area startup, our <Link to="/hr-consulting/charlotte-nc" className="text-green-ink hover:underline">Charlotte PEO broker page</Link> walks through what local representation looks like for growth-stage companies.</p>
+    </Section>
+
+    <Section title="Exit Planning: How to Leave a PEO Without Losing Money">
       <p>The single biggest hidden cost of leaving a PEO is the <strong className="text-foreground">FICA/FUTA wage base reset</strong>. If you exit mid-year, every employee's Social Security wage base resets to zero with the new employer — costing 6.2% of wages up to $168,600 per high earner. On a 50-person tech team, that can be six figures.</p>
       <p>Three rules:</p>
       <ul className="space-y-2">

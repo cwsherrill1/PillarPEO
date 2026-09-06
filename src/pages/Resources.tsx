@@ -146,7 +146,7 @@ const resources = [
     title: "PEO for Venture-Backed Startups",
     desc: "Multi-state compliance, equity-friendly payroll, and benefits that hold up in diligence.",
     category: "Guide",
-    href: "/blog/peo-for-venture-backed-startups",
+    href: "/resources/peo-for-startups",
   },
   {
     icon: RefreshCw,
