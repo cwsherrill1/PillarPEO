@@ -131,8 +131,16 @@ const Header = () => {
               className="relative"
               onMouseEnter={() => setOpenMenu(menu.label)}
               onMouseLeave={() => setOpenMenu(null)}
+              onBlur={(e) => {
+                if (!e.currentTarget.contains(e.relatedTarget as Node)) {
+                  setOpenMenu(null);
+                }
+              }}
             >
               <button
+                aria-expanded={openMenu === menu.label}
+                aria-haspopup="menu"
+                onFocus={() => setOpenMenu(menu.label)}
                 className={cn(
                   "inline-flex items-center gap-1 rounded-md px-3 py-2 text-sm font-semibold transition-colors",
                   menu.items.some((s) => isActive(s.href))
@@ -150,22 +158,70 @@ const Header = () => {
               </button>
               {openMenu === menu.label && (
                 <div className="absolute left-0 top-full pt-2">
-                  <div className="w-64 rounded-lg border border-border bg-background p-2 shadow-xl">
-                    {menu.items.map((item) => (
+                  {menu.groups ? (
+                    <div
+                      role="menu"
+                      className="w-[34rem] rounded-lg border border-border bg-background p-4 shadow-xl"
+                    >
                       <Link
-                        key={item.href}
-                        to={item.href}
+                        to="/resources"
+                        role="menuitem"
                         className={cn(
-                          "block rounded-md px-3 py-2.5 text-sm font-semibold transition-colors",
-                          isActive(item.href)
+                          "block rounded-md px-3 py-2 text-sm font-semibold transition-colors",
+                          isActive("/resources")
                             ? "bg-accent/10 text-green-ink"
                             : "text-foreground/70 hover:bg-muted hover:text-foreground"
                         )}
                       >
-                        {item.label}
+                        All resources
                       </Link>
-                    ))}
-                  </div>
+                      <div className="mt-2 grid grid-cols-2 gap-x-4 gap-y-4">
+                        {menu.groups.map((group) => (
+                          <div key={group.heading}>
+                            <p className="px-3 py-1 text-xs font-bold uppercase tracking-widest text-foreground/50">
+                              {group.heading}
+                            </p>
+                            {group.items.map((item) => (
+                              <Link
+                                key={item.href}
+                                to={item.href}
+                                role="menuitem"
+                                className={cn(
+                                  "block rounded-md px-3 py-2 text-sm font-semibold transition-colors",
+                                  isActive(item.href)
+                                    ? "bg-accent/10 text-green-ink"
+                                    : "text-foreground/70 hover:bg-muted hover:text-foreground"
+                                )}
+                              >
+                                {item.label}
+                              </Link>
+                            ))}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ) : (
+                    <div
+                      role="menu"
+                      className="w-64 rounded-lg border border-border bg-background p-2 shadow-xl"
+                    >
+                      {menu.items.map((item) => (
+                        <Link
+                          key={item.href}
+                          to={item.href}
+                          role="menuitem"
+                          className={cn(
+                            "block rounded-md px-3 py-2.5 text-sm font-semibold transition-colors",
+                            isActive(item.href)
+                              ? "bg-accent/10 text-green-ink"
+                              : "text-foreground/70 hover:bg-muted hover:text-foreground"
+                          )}
+                        >
+                          {item.label}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
                 </div>
               )}
             </div>
