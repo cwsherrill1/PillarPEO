@@ -99,9 +99,13 @@ const Header = () => {
 
   const isActive = (href: string) => location.pathname === href;
 
-  const dropdowns = [
+  const dropdowns: {
+    label: string;
+    items: NavItem[];
+    groups?: NavGroup[];
+  }[] = [
     { label: "Services", items: services },
-    { label: "Resources", items: resourcesMenu },
+    { label: "Resources", items: resourcesMenu, groups: resourcesGroups },
     { label: "Partners", items: partners },
     { label: "Industries", items: industries },
     { label: "Locations", items: locations },
