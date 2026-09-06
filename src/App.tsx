@@ -53,8 +53,18 @@ const HrConsulting = lazy(() => import("./pages/locations/HrConsulting"));
 const CharlotteNc = lazy(() => import("./pages/locations/CharlotteNc"));
 const RockHillFortMillSc = lazy(() => import("./pages/locations/RockHillFortMillSc"));
 const RaleighDurhamNc = lazy(() => import("./pages/locations/RaleighDurhamNc"));
-const PeoBrokerNorthCarolina = lazy(() => import("./pages/PeoBrokerNorthCarolina"));
-const PeoBrokerSouthCarolina = lazy(() => import("./pages/PeoBrokerSouthCarolina"));
+
+// Batch 4 — state employer guides and compliance resources
+const StateEmployerGuides = lazy(() => import("./pages/resources/stateGuides/StateEmployerGuides"));
+const StateGuideNorthCarolina = lazy(() => import("./pages/resources/stateGuides/NorthCarolina"));
+const StateGuideSouthCarolina = lazy(() => import("./pages/resources/stateGuides/SouthCarolina"));
+const NcVsScEmploymentLaw = lazy(() => import("./pages/resources/NcVsScEmploymentLaw"));
+const MultiStateEmployerChecklist = lazy(() => import("./pages/resources/MultiStateEmployerChecklist"));
+const HrAuditChecklist = lazy(() => import("./pages/resources/HrAuditChecklist"));
+const EVerifyNorthCarolina = lazy(() => import("./pages/resources/EVerifyNorthCarolina"));
+const EVerifySouthCarolina = lazy(() => import("./pages/resources/EVerifySouthCarolina"));
+const NcHandbookRequirements = lazy(() => import("./pages/resources/NcHandbookRequirements"));
+const ScHandbookRequirements = lazy(() => import("./pages/resources/ScHandbookRequirements"));
 
 const queryClient = new QueryClient();
 
