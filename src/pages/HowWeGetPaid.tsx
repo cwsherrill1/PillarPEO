@@ -156,6 +156,29 @@ const HowWeGetPaid = () => (
       </div>
     </section>
 
+    <section className="bg-muted/30">
+      <div className="container max-w-3xl py-16 md:py-20">
+        <Reveal>
+          <h2 className="font-heading text-2xl font-800 text-foreground md:text-3xl">
+            The commission is why we publish the no.
+          </h2>
+          <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+            A commission only gets paid when a PEO is placed, so the honest thing
+            is to be equally public about when it should not be. We wrote that up
+            in full:{" "}
+            <Link
+              to="/resources/when-a-peo-is-the-wrong-answer"
+              className="font-semibold text-green-ink hover:underline"
+            >
+              when a PEO is the wrong answer
+            </Link>
+            . If your firm is in one of those cases, we will tell you on the first
+            call and nobody is paid anything.
+          </p>
+        </Reveal>
+      </div>
+    </section>
+
     <ServiceCta
       heading="Ask us anything about the money."
       body="If something about how we're paid doesn't sit right, raise it on the first call and we'll put the numbers in front of you."

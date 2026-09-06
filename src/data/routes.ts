@@ -88,6 +88,9 @@ export const siteRoutes: SiteRoute[] = [
   { path: "/resources/when-a-peo-is-the-wrong-answer", lastmod: "2026-09-06", changefreq: "monthly" },
   { path: "/resources/peo-renewal-review", lastmod: "2026-09-06", changefreq: "monthly" },
   { path: "/partners", lastmod: "2026-09-06", changefreq: "monthly" },
+  { path: "/partners/fractional-cfos", lastmod: "2026-09-06", changefreq: "monthly" },
+  { path: "/partners/benefits-brokers", lastmod: "2026-09-06", changefreq: "monthly" },
+  { path: "/partners/white-label", lastmod: "2026-09-06", changefreq: "monthly" },
 
   { path: "/privacy", lastmod: D, changefreq: "yearly" },
   { path: "/terms", lastmod: D, changefreq: "yearly" },
