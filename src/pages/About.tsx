@@ -8,7 +8,7 @@ import calebPhoto from "@/assets/team/caleb-sherrill.png";
 import josiahPhoto from "@/assets/team/josiah-sherrill.png";
 import emilyPhoto from "@/assets/team/emily-snooks.png";
 
-const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
+import { BOOKING_URL, PRIMARY_CTA } from "@/data/pricing";
 
 const team = [
   {
@@ -41,7 +41,7 @@ const aboutJsonLd = {
       "@type": "AboutPage",
       url: "https://pillarpeo.com/about",
       name: "About Pillar PEO Advisors",
-      description: "Meet the team behind Pillar PEO Advisors — an independent PEO broker helping employers compare PEO options.",
+      description: "Pillar is an independent HR advisory firm for professional-services firms nationwide, headquartered in Charlotte, NC.",
     },
     {
       "@type": "Person",
@@ -69,8 +69,8 @@ const aboutJsonLd = {
 const About = () => (
   <div>
     <SEOHead
-      title="About Us"
-      description="Meet the team behind Pillar PEO Advisors — an independent PEO broker helping employers compare options with clarity."
+      title="About Pillar — HR Advisory for Professional Firms"
+      description="Pillar is an independent HR advisory firm for professional-services firms nationwide, headquartered in Charlotte, NC. Founder-led, fixed-price, commissions disclosed."
       jsonLd={aboutJsonLd}
     />
     {/* ─── Hero ─── */}
@@ -81,12 +81,13 @@ const About = () => (
             About Pillar
           </p>
           <h1 className="font-heading text-4xl font-800 leading-tight md:text-5xl lg:text-6xl">
-            Built to guide employers through
-            <br className="hidden md:block" /> weighty decisions.
+            HR advisory for professional-services
+            <br className="hidden md:block" /> firms, nationwide, from Charlotte.
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-primary-foreground/80 md:text-xl">
-            Helping leaders navigate payroll, benefits, HR, and compliance
-            with more clarity and less guesswork.
+            Fixed-price HR audits and projects, fractional HR, and clean
+            transitions into or out of a PEO — for law, accounting,
+            engineering, medical and nonprofit firms of 10 to 150 people.
           </p>
         </Reveal>
       </div>
@@ -117,6 +118,19 @@ const About = () => (
               That experience made one thing clear: too many business leaders
               spend their time solving the wrong problems — carrying avoidable
               risk, confusion, and administrative burden.
+            </p>
+            <p>
+              So Pillar is built the way he wishes someone had built it for
+              him: a price quoted before the work starts, coverage in every
+              state your people actually work in, and no software to sell and
+              no insurance to place. Where a PEO is genuinely the right answer,
+              Pillar will compare providers for you at no charge, and disclose
+              what the provider pays us in writing before anything is placed.
+            </p>
+            <p>
+              The name is deliberate. In Exodus, a pillar of cloud and fire went
+              ahead of people who had a long way to go and no map. That's the
+              job: go first, carry the weight, keep the way clear.
             </p>
             <p className="font-medium text-foreground">
               Pillar was built to change that.
@@ -177,7 +191,7 @@ const About = () => (
       <div className="container text-center">
         <Reveal>
           <p className="text-lg font-medium text-foreground">
-            Want to learn how Pillar can help your team?
+Want to know what your HR risk actually is?
           </p>
           <Button
             asChild
@@ -185,7 +199,7 @@ const About = () => (
             className="mt-6 bg-accent text-accent-foreground hover:bg-accent/90 font-heading font-700 px-8"
           >
             <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
-              Schedule a Call
+              {PRIMARY_CTA}
             </a>
           </Button>
         </Reveal>
@@ -207,14 +221,17 @@ const About = () => (
         <Reveal delay={100}>
           <div className="mt-10 space-y-6 text-left text-base leading-relaxed text-muted-foreground md:text-lg">
             <p>
-              We believe employers deserve more than generic quotes and
-              pressure-filled sales conversations. They deserve clear guidance,
-              someone who understands what's at stake, and a better process.
+              Managing partners and practice administrators end up owning HR by
+              default. It isn't the job they trained for, it isn't in the
+              billable hour, and the mistakes it produces — a misclassified
+              role, a handbook written for one state, an I-9 file nobody has
+              opened in four years — stay quiet until they're expensive.
             </p>
             <p>
-              Pillar exists to help employers compare options clearly, understand
-              the tradeoffs, and put the right support in place before costly
-              friction steals more time and focus.
+              Pillar exists to take that weight off the people carrying it:
+              find what's actually wrong, price the fix before the work starts,
+              and stay independent enough that the recommendation is the same
+              whether or not anyone buys anything from us.
             </p>
           </div>
         </Reveal>
@@ -272,7 +289,7 @@ const About = () => (
               className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20"
             >
               <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
-                Schedule a PEO Strategy Call <ArrowRight className="ml-1 h-4 w-4" />
+                {PRIMARY_CTA} <ArrowRight className="ml-1 h-4 w-4" />
               </a>
             </Button>
           </div>
