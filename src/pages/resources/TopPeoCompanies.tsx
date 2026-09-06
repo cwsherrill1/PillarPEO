@@ -40,6 +40,7 @@ const ARTICLE = buildArticleJsonLd({
   description: "The top PEO companies in 2026 by category — national tier-1, modern tech-forward, and industry-vertical providers. Independent broker analysis of who fits whom.",
   path: "/resources/top-peo-companies",
   datePublished: "2026-05-15",
+  dateModified: "2026-09-05",
 });
 
 const FAQ_JSONLD = {
@@ -78,7 +79,7 @@ const TopPeoCompanies = () => (
           </h1>
         </Reveal>
         <Reveal delay={100}><p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80 md:text-xl">An independent broker's view of the top PEOs by category — national, modern, and industry-vertical — and how to know which fits.</p></Reveal>
-        <Reveal delay={150}><ArticleByline datePublished="May 2026" /></Reveal>
+        <Reveal delay={150}><ArticleByline datePublished="May 15, 2026" /></Reveal>
         <Reveal delay={200}>
           <div className="mt-8">
             <Button asChild size="lg" className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20">

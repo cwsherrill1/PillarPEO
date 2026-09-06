@@ -22,6 +22,7 @@ const ARTICLE = buildArticleJsonLd({
   description: "PEO vs payroll service compared: cost, scope, when to choose each, and the trigger points that mean you've outgrown a basic payroll provider.",
   path: "/resources/peo-vs-payroll-service",
   datePublished: "2026-05-15",
+  dateModified: "2026-09-05",
 });
 
 const FAQ_JSONLD = {
@@ -64,7 +65,7 @@ const PeoVsPayrollService = () => (
           </h1>
         </Reveal>
         <Reveal delay={100}><p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80 md:text-xl">A payroll service runs payroll. A PEO runs payroll, benefits, HR, compliance, and shares legal liability. Here's how to know which one you actually need.</p></Reveal>
-        <Reveal delay={150}><ArticleByline datePublished="May 2026" /></Reveal>
+        <Reveal delay={150}><ArticleByline datePublished="May 15, 2026" /></Reveal>
         <Reveal delay={200}>
           <div className="mt-8">
             <Button asChild size="lg" className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20">

@@ -24,6 +24,7 @@ const ARTICLE = buildArticleJsonLd({
   description: "PEO broker vs. going direct — how brokers get paid, what changes in your fees, and when each path actually saves you money. An independent broker's honest take.",
   path: "/resources/peo-broker-vs-direct",
   datePublished: "2026-05-15",
+  dateModified: "2026-09-05",
 });
 
 const FAQ_JSONLD = {
@@ -70,7 +71,7 @@ const PeoBrokerVsDirect = () => (
             How brokers get paid, what changes in your fee, and when each path is actually right.
           </p>
         </Reveal>
-        <Reveal delay={150}><ArticleByline datePublished="May 2026" /></Reveal>
+        <Reveal delay={150}><ArticleByline datePublished="May 15, 2026" /></Reveal>
         <Reveal delay={200}>
           <div className="mt-8">
             <Button asChild size="lg" className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20">

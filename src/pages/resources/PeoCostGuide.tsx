@@ -77,7 +77,7 @@ const PeoCostGuide = () => (
             Real pricing ranges, hidden fees, renewal increases — and how to compare quotes apples-to-apples.
           </p>
         </Reveal>
-        <Reveal delay={150}><ArticleByline datePublished="May 2026" /></Reveal>
+        <Reveal delay={150}><ArticleByline datePublished="May 15, 2026" /></Reveal>
         <Reveal delay={200}>
           <div className="mt-8">
             <Button asChild size="lg" className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20">

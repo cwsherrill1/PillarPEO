@@ -24,6 +24,7 @@ const ARTICLE = buildArticleJsonLd({
   description: "Why startups use a PEO — multi-state compliance, benefits that recruit, equity-friendly payroll, and exit timing. An independent broker's guide.",
   path: "/resources/peo-for-startups",
   datePublished: "2026-05-15",
+  dateModified: "2026-09-05",
 });
 
 const FAQ_JSONLD = {
@@ -70,7 +71,7 @@ const PeoForStartups = () => (
             Multi-state compliance, recruiting-grade benefits, equity-friendly payroll — without building HR in-house.
           </p>
         </Reveal>
-        <Reveal delay={150}><ArticleByline datePublished="May 2026" /></Reveal>
+        <Reveal delay={150}><ArticleByline datePublished="May 15, 2026" /></Reveal>
         <Reveal delay={200}>
           <div className="mt-8">
             <Button asChild size="lg" className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20">

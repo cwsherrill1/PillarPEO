@@ -28,6 +28,7 @@ const ARTICLE = buildArticleJsonLd({
   description: "What a PEO is, how co-employment works, what they cost, and when they're worth it. The independent, broker-honest guide for employers.",
   path: "/resources/what-is-a-peo",
   datePublished: "2026-05-15",
+  dateModified: "2026-09-05",
 });
 
 const FAQ_JSONLD = {
@@ -74,7 +75,7 @@ const WhatIsAPeo = () => (
             How co-employment works, what's included, what it costs, and whether you actually need one.
           </p>
         </Reveal>
-        <Reveal delay={150}><ArticleByline datePublished="May 2026" /></Reveal>
+        <Reveal delay={150}><ArticleByline datePublished="May 15, 2026" /></Reveal>
         <Reveal delay={200}>
           <div className="mt-8">
             <Button asChild size="lg" className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20">
