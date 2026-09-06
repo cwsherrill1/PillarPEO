@@ -30,7 +30,7 @@ const Services = () => (
   <>
     <SEOHead
       title="HR Services for Professional Firms"
-      description="Fixed-price HR audits, HR projects, fractional HR, transitions, and free PEO brokerage for professional-services firms — quoted before the work starts."
+      description="Fixed-price HR audits, projects, fractional HR and transitions, plus free PEO brokerage, for professional-services firms nationwide."
       canonical={`${SITE_URL}/services`}
       jsonLd={jsonLd}
     />
