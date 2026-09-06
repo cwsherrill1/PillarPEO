@@ -310,8 +310,47 @@ const PeoBrokerage = () => (
             ))}
           </Accordion>
         </Reveal>
-      </div>
     </section>
+
+    <Prose title="A PEO is usually the wrong answer if…" alt>
+      <ul className="space-y-3">
+        <Bullet>
+          <strong className="text-foreground">Your benefits are already competitive.</strong>{" "}
+          If a well-placed group plan is doing its job, moving onto a master plan
+          often buys administration you could buy more cheaply on its own.
+        </Bullet>
+        <Bullet>
+          <strong className="text-foreground">Your workers' compensation classes are heavy.</strong>{" "}
+          In the proposals we review, high-hazard classes are one of the fastest
+          ways for a PEO quote to stop making sense.
+        </Bullet>
+        <Bullet>
+          <strong className="text-foreground">You are past roughly 150 people.</strong>{" "}
+          At that size most firms can hire the internal capability and buy the
+          systems directly, and the per-employee administration fee stops earning
+          its keep.
+        </Bullet>
+        <Bullet>
+          <strong className="text-foreground">You want control of your own plan design.</strong>{" "}
+          Inside a PEO, plan design belongs to the provider. If that matters to
+          your partners, this is the wrong model.
+        </Bullet>
+        <Bullet>
+          <strong className="text-foreground">The real problem is a process problem.</strong>{" "}
+          Messy onboarding, unclear classification and an out-of-date handbook do
+          not get fixed by changing who runs payroll.
+        </Bullet>
+      </ul>
+      <p>
+        We say this before we compare anything, because it saves everybody a
+        quarter. The long version, with the mechanics behind each case, is in{" "}
+        <Link to="/resources/when-a-peo-is-the-wrong-answer" className="text-green-ink hover:underline">
+          when a PEO is the wrong answer
+        </Link>
+        .
+      </p>
+    </Prose>
+
 
     <ServiceCta
       heading="Compare PEOs, free."
