@@ -9,20 +9,17 @@ import ScrollToTop from "@/components/ScrollToTop";
 import { activeRedirects } from "@/data/redirects";
 
 const Index = lazy(() => import("./pages/Index"));
-const DoWeNeedAPeo = lazy(() => import("./pages/DoWeNeedAPeo"));
 const Resources = lazy(() => import("./pages/Resources"));
 const About = lazy(() => import("./pages/About"));
 const Contact = lazy(() => import("./pages/Contact"));
 const Privacy = lazy(() => import("./pages/Privacy"));
 const Terms = lazy(() => import("./pages/Terms"));
 const NotFound = lazy(() => import("./pages/NotFound"));
-const HrHeadacheQuiz = lazy(() => import("./pages/HrHeadacheQuiz"));
 
 // Resource sub-pages
 const FiveQuestions = lazy(() => import("./pages/resources/FiveQuestions"));
 const CoEmployment = lazy(() => import("./pages/resources/CoEmployment"));
 const PeoVsAsoVsInhouse = lazy(() => import("./pages/resources/PeoVsAsoVsInhouse"));
-const PeoReadiness = lazy(() => import("./pages/resources/PeoReadiness"));
 const PeoCostGuide = lazy(() => import("./pages/resources/PeoCostGuide"));
 const PeoVsPayrollService = lazy(() => import("./pages/resources/PeoVsPayrollService"));
 const BestPeoForSmallBusiness = lazy(() => import("./pages/resources/BestPeoForSmallBusiness"));
@@ -102,12 +99,10 @@ const App = () => (
               <Route path="/hr-consulting/charlotte-nc" element={<CharlotteNc />} />
               <Route path="/hr-consulting/rock-hill-fort-mill-sc" element={<RockHillFortMillSc />} />
               <Route path="/hr-consulting/raleigh-durham-nc" element={<RaleighDurhamNc />} />
-              <Route path="/do-we-need-a-peo" element={<DoWeNeedAPeo />} />
               <Route path="/resources" element={<Resources />} />
               <Route path="/resources/5-questions" element={<FiveQuestions />} />
               <Route path="/resources/co-employment" element={<CoEmployment />} />
               <Route path="/resources/peo-vs-aso-vs-inhouse" element={<PeoVsAsoVsInhouse />} />
-              <Route path="/resources/peo-readiness" element={<PeoReadiness />} />
               <Route path="/resources/peo-cost-guide" element={<PeoCostGuide />} />
               <Route path="/resources/peo-vs-payroll-service" element={<PeoVsPayrollService />} />
               <Route path="/resources/best-peo-for-small-business" element={<BestPeoForSmallBusiness />} />
@@ -128,7 +123,6 @@ const App = () => (
               <Route path="/resources/nc-handbook-requirements" element={<NcHandbookRequirements />} />
               <Route path="/resources/sc-handbook-requirements" element={<ScHandbookRequirements />} />
               <Route path="/blog/peo-industry-transparency" element={<PeoIndustryTransparency />} />
-              <Route path="/hr-headache-score" element={<HrHeadacheQuiz />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/privacy" element={<Privacy />} />
