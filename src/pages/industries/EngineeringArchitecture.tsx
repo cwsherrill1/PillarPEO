@@ -59,8 +59,9 @@ const jsonLd = {
 const EngineeringArchitecture = () => (
   <>
     <SEOHead
-      title="HR for Engineering and Architecture Firms"
-      description="Exempt status for designers and drafters, public-contract wage rules, project-based and travelling staff, and multi-state project work. Fixed price, quoted before the work starts."
+      title="HR for Engineering and Architecture Firms | Pillar"
+      fullTitle
+      description="Exempt status for designers and drafters, public-contract wage rules, project-based staff, and multi-state project work."
       canonical={`${SITE_URL}/industries/engineering-architecture`}
       jsonLd={jsonLd}
     />

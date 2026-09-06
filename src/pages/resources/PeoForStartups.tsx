@@ -51,8 +51,9 @@ const Bullet = ({ children }: { children: React.ReactNode }) => (
 const PeoForStartups = () => (
   <>
     <SEOHead
-      title="PEO for Startups: Equity, Multi-State & Scaling Compliance"
-      description="Why startups use a PEO — multi-state compliance, recruiting-grade benefits, equity-friendly payroll, and clean exit timing. An independent broker's playbook."
+      title="PEO for Startups: Multi-State, Equity, Scaling"
+      fullTitle
+      description="Why startups use a PEO: multi-state compliance, recruiting-grade benefits, equity-friendly payroll and clean exit timing."
       jsonLd={{ "@context": "https://schema.org", "@graph": [ARTICLE["@graph"][0], ARTICLE["@graph"][1], FAQ_JSONLD] }}
       ogType="article"
     />

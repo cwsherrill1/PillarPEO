@@ -42,6 +42,7 @@ const EVerifyNorthCarolina = () => (
   <>
     <SEOHead
       title="Is E-Verify Required in North Carolina?"
+      fullTitle
       description="Yes. North Carolina requires E-Verify for employers with 25 or more employees, under NCGS 64-26. What that means and what to do next."
       canonical={`${SITE_URL}/resources/e-verify-north-carolina`}
       jsonLd={jsonLd}

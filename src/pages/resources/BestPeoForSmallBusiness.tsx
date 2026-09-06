@@ -55,8 +55,9 @@ const Section = ({ title, children, alt = false }: { title: string; children: Re
 const BestPeoForSmallBusiness = () => (
   <>
     <SEOHead
-      title="Best PEO for Small Business: A Broker's 2026 Comparison"
-      description="Independent comparison of the best PEOs for small business in 2026 — Justworks, Rippling, ADP TotalSource, Insperity, TriNet, Gusto. Real pricing, fit, and watchouts from a broker who quotes them every week."
+      title="Best PEO for Small Business: 2026 Comparison"
+      fullTitle
+      description="Independent 2026 comparison of Justworks, Rippling, ADP TotalSource, Insperity, TriNet and Gusto: pricing, fit and watchouts."
       jsonLd={{ "@context": "https://schema.org", "@graph": [ARTICLE["@graph"][0], ARTICLE["@graph"][1], FAQ_JSONLD] }}
       ogType="article"
     />

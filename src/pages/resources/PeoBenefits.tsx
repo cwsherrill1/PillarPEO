@@ -52,7 +52,8 @@ const PeoBenefits = () => (
   <>
     <SEOHead
       title="PEO Benefits Explained: What You Actually Get"
-      description="Health, 401(k), workers' comp, EAP, and ancillary benefits — what a PEO actually delivers, where it shines, and where it underdelivers. An independent broker's view."
+      fullTitle
+      description="Health, 401(k), workers' comp, EAP and ancillary benefits: what a PEO delivers, where it shines and where it underdelivers."
       jsonLd={{ "@context": "https://schema.org", "@graph": [ARTICLE["@graph"][0], ARTICLE["@graph"][1], FAQ_JSONLD] }}
       ogType="article"
     />

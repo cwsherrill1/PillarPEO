@@ -57,7 +57,7 @@ const CpaFirms = () => (
   <>
     <SEOHead
       title="HR for CPA and Accounting Firms"
-      description="Busy-season overtime, why comp time is not available to private employers, seasonal staffing, per-diem and travel pay, and out-of-state staff. Fixed price, quoted before the work starts."
+      description="Busy-season overtime, why comp time isn't available to private employers, seasonal staffing, per-diem and travel pay, out-of-state staff."
       canonical={`${SITE_URL}/industries/cpa-firms`}
       jsonLd={jsonLd}
     />

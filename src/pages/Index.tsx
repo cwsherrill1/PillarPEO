@@ -61,7 +61,7 @@ const Index = () => {
       <SEOHead
         title="HR Advisory for Professional Firms | Pillar PEO Advisors"
         fullTitle
-        description="Fixed-price HR audits, fractional HR, and PEO transitions for law, CPA, engineering, and medical firms nationwide. Headquartered in Charlotte, NC. Independent."
+        description="Fixed-price HR audits, fractional HR and PEO transitions for law, CPA, engineering and medical firms nationwide. Based in Charlotte, NC."
         jsonLd={orgJsonLd} />
       
       {/* ── 1. HERO ── */}

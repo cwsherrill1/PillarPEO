@@ -70,7 +70,8 @@ const switchJsonLd = {
 const SwitchYourPeo = () => (
   <>
     <SEOHead
-      title="Switch Your PEO — Independent Broker Review"
+      title="Switch Your PEO — Independent Broker Review | Pillar"
+      fullTitle
       description="Wondering if it's time to switch PEOs? Pillar is an independent PEO broker — we compare options and manage the transition without disruption."
       jsonLd={switchJsonLd}
       

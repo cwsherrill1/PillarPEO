@@ -63,8 +63,9 @@ const jsonLd = {
 const RockHillFortMillSc = () => (
   <>
     <SEOHead
-      title="HR Consulting in Rock Hill and Fort Mill, SC"
-      description="South Carolina E-Verify for all employers within 3 business days, workers' comp at 4+, 7 days' notice of wage changes — handled properly, at a fixed price."
+      title="HR Consulting in Rock Hill and Fort Mill, SC | Pillar"
+      fullTitle
+      description="SC E-Verify for all employers within 3 business days, workers' comp at 4+, and 7 days' notice of wage changes — handled properly."
       canonical={`${SITE_URL}/hr-consulting/rock-hill-fort-mill-sc`}
       jsonLd={jsonLd}
     />

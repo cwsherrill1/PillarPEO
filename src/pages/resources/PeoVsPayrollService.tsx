@@ -50,6 +50,7 @@ const PeoVsPayrollService = () => (
   <>
     <SEOHead
       title="PEO vs. Payroll Service: When You Need Each"
+      fullTitle
       description="PEO vs payroll service: real cost comparison, scope of services, and the trigger points that signal you've outgrown a basic payroll provider."
       jsonLd={{ "@context": "https://schema.org", "@graph": [ARTICLE["@graph"][0], ARTICLE["@graph"][1], FAQ_JSONLD] }}
       ogType="article"

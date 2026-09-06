@@ -52,7 +52,8 @@ const PeoBrokerVsDirect = () => (
   <>
     <SEOHead
       title="PEO Broker vs. Going Direct: Which Saves More?"
-      description="How PEO brokers get paid, what your fee actually looks like, and when going direct beats using a broker. An honest breakdown from an independent broker."
+      fullTitle
+      description="How PEO brokers get paid, what your fee really looks like, and when going direct beats using a broker. An independent broker's view."
       jsonLd={{ "@context": "https://schema.org", "@graph": [ARTICLE["@graph"][0], ARTICLE["@graph"][1], FAQ_JSONLD] }}
       ogType="article"
     />

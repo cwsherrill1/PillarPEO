@@ -43,8 +43,9 @@ const jsonLd = {
 const SouthCarolina = () => (
   <>
     <SEOHead
-      title="South Carolina Employer Guide 2026: HR Rules by Headcount"
-      description="South Carolina employer obligations organized by headcount: E-Verify for all employers, workers' comp at 4+, wage-change notice, and the Pregnancy Accommodations Act at 15+."
+      title="South Carolina Employer Guide: HR Rules by Headcount"
+      fullTitle
+      description="SC employer obligations by headcount: E-Verify for all employers, workers' comp at 4+, wage-change notice, Pregnancy Accommodations Act at 15+."
       canonical={`${SITE_URL}/resources/state-employer-guides/south-carolina`}
       jsonLd={jsonLd}
     />

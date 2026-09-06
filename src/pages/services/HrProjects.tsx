@@ -38,7 +38,7 @@ const HrProjects = () => (
   <>
     <SEOHead
       title="Fixed-Price HR Projects"
-      description="Six fixed-price HR projects for professional-services firms: handbook, FLSA classification review, I-9 and E-Verify remediation, comp benchmarking, performance management, manager training."
+      description="Six fixed-price HR projects: handbook, FLSA classification, I-9 and E-Verify remediation, comp benchmarking, performance, manager training."
       canonical={`${SITE_URL}/services/hr-projects`}
       jsonLd={jsonLd}
     />
