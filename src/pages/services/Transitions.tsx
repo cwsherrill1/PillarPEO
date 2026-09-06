@@ -157,7 +157,7 @@ const Transitions = () => (
     <ServiceCta
       heading="Planning a move?"
       body="Bring us the date you want to land on and we'll tell you what has to happen, and when."
-      proof="PROOF SLOT — client quote on a completed PEO exit or switch, with headcount, states and the go-live date."
+      proof="client quote on a completed PEO exit or switch, with headcount, states and the go-live date."
       secondary={{ label: "See all services", href: "/services" }}
     />
   </>

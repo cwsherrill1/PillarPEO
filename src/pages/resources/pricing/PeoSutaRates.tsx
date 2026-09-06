@@ -236,7 +236,7 @@ const PeoSutaRates = () => (
     <ServiceCta
       heading="We'll check the SUTA line for you, free."
       body="Send your rate notices and quarterly filings with your PEO quote and we will run both sets of maths side by side."
-      proof="PROOF SLOT — anonymised example of a pooled SUTA assumption corrected before signature, with the annual difference."
+      proof="anonymised example of a pooled SUTA assumption corrected before signature, with the annual difference."
       secondary={{ label: "The free renewal review", href: "/resources/peo-renewal-review" }}
     />
   </>

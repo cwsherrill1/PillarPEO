@@ -206,7 +206,7 @@ const PeoContractTerms = () => (
     <ServiceCta
       heading="Know your notice date before you need it."
       body="Send us the agreement and we will tell you your notice deadline, your renewal date, and whether your plan year lines up with either."
-      proof="PROOF SLOT — anonymised example of a notice window caught in time, with what it preserved."
+      proof="anonymised example of a notice window caught in time, with what it preserved."
       secondary={{ label: "The free renewal review", href: "/resources/peo-renewal-review" }}
     />
   </>

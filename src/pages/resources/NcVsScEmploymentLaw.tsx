@@ -197,7 +197,7 @@ const NcVsScEmploymentLaw = () => (
     <ServiceCta
       heading="Staff in both states? Get one clear answer, not two guesses."
       body="The audit checks each state's thresholds against your actual headcount there."
-      proof="PROOF SLOT — multi-state client reference describing a North Carolina/South Carolina finding, with headcount in each state."
+      proof="multi-state client reference describing a North Carolina/South Carolina finding, with headcount in each state."
       secondary={{ label: "See the multi-state checklist", href: "/resources/multi-state-employer-checklist" }}
     />
   </>

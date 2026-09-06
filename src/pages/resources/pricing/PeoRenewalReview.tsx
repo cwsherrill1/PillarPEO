@@ -230,7 +230,7 @@ const PeoRenewalReview = () => (
     <ServiceCta
       heading="Book the free renewal review."
       body="Send us your agreement and your renewal letter. We'll tell you your notice deadline first, before anything else."
-      proof="PROOF SLOT — permissioned renewal review outcome, with the line that moved and the annual difference."
+      proof="permissioned renewal review outcome, with the line that moved and the annual difference."
       secondary={{ label: "How we get paid", href: "/how-we-get-paid" }}
     />
   </>

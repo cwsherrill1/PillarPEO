@@ -182,7 +182,7 @@ const HowWeGetPaid = () => (
     <ServiceCta
       heading="Ask us anything about the money."
       body="If something about how we're paid doesn't sit right, raise it on the first call and we'll put the numbers in front of you."
-      proof="PROOF SLOT — client quote about the commission disclosure, or a redacted sample disclosure document."
+      proof="client quote about the commission disclosure, or a redacted sample disclosure document."
       secondary={{ label: "See all services", href: "/services" }}
     />
   </>

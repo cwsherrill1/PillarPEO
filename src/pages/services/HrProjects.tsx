@@ -154,7 +154,7 @@ const HrProjects = () => (
     <ServiceCta
       heading="Not sure which project you need?"
       body="The audit tells you which of these matter first, and what each one is worth doing about."
-      proof="PROOF SLOT — client quote on a completed handbook or classification project, with the firm type and headcount."
+      proof="client quote on a completed handbook or classification project, with the firm type and headcount."
       secondary={{ label: "See all services", href: "/services" }}
     />
   </>

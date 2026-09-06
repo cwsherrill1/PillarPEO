@@ -164,7 +164,7 @@ const ScHandbookRequirements = () => (
     <ServiceCta
       heading="Not sure your at-will language actually holds up?"
       body="The HR audit reviews your handbook language against how the company actually operates and where its exposure is."
-      proof="PROOF SLOT — client quote describing an at-will or handbook-language finding, South Carolina employer."
+      proof="client quote describing an at-will or handbook-language finding, South Carolina employer."
       secondary={{ label: "See the HR audit", href: "/services/hr-audit" }}
     />
   </>

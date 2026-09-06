@@ -357,7 +357,7 @@ const PeoBrokerage = () => (
     <ServiceCta
       heading="Compare PEOs, free."
       body="Start with a short conversation. If a PEO isn't the right answer for your firm, we'll say so."
-      proof="PROOF SLOT — employer quote on a completed PEO placement, with headcount, states and what changed."
+      proof="employer quote on a completed PEO placement, with headcount, states and what changed."
       secondary={{ label: "How we get paid", href: "/how-we-get-paid" }}
     />
   </>

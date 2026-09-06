@@ -182,7 +182,7 @@ const BenefitsBrokers = () => (
         classes or the unemployment line.
       </p>
       <div className="mt-8">
-        <ProofSlot needs="PROOF SLOT — named benefits brokerage partner, one line on a PEO comparison we ran alongside them and the outcome, with written permission." />
+        <ProofSlot needs="named benefits brokerage partner, one line on a PEO comparison we ran alongside them and the outcome, with written permission." />
       </div>
     </Section>
 
@@ -200,7 +200,7 @@ const BenefitsBrokers = () => (
     <ServiceCta
       heading="Send us the group and we'll tell you if it's even worth quoting."
       body="A census and the current invoices are enough for a preliminary read. No provider is contacted until you say so."
-      proof="PROOF SLOT — second broker reference, ideally one where the recommendation was to stay put."
+      proof="second broker reference, ideally one where the recommendation was to stay put."
       secondary={{ label: "Partner overview", href: "/partners" }}
     />
   </>

@@ -283,7 +283,7 @@ const HrAudit = () => (
     <ServiceCta
       heading="Book an audit."
       body="Fifteen business days from upload to walkthrough, at a price you know before we start."
-      proof="PROOF SLOT — managing partner quote, Charlotte law firm, on an audit finding, with a number."
+      proof="managing partner quote, Charlotte law firm, on an audit finding, with a number."
       secondary={{ label: "See all services", href: "/services" }}
     />
   </>

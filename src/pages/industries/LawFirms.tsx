@@ -173,7 +173,7 @@ const LawFirms = () => (
     </Section>
 
     <Section title="Proof" alt>
-      <ProofSlot needs="PROOF SLOT — managing partner quote, law firm, with a number (headcount reclassified, states registered, or hours recovered)." />
+      <ProofSlot needs="managing partner quote, law firm, with a number (headcount reclassified, states registered, or hours recovered)." />
     </Section>
 
     <Section title="Questions law firms ask">
@@ -183,7 +183,7 @@ const LawFirms = () => (
     <ServiceCta
       heading="Find out what your classification decisions actually expose you to."
       body="A fixed-price audit, quoted before we start, covering every state your people work in."
-      proof="PROOF SLOT — second law firm reference, ideally a firm that changed a paralegal classification after the audit."
+      proof="second law firm reference, ideally a firm that changed a paralegal classification after the audit."
       secondary={{ label: "See all industries", href: "/industries" }}
     />
   </>

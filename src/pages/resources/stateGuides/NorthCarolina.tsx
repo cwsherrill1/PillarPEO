@@ -180,7 +180,7 @@ const NorthCarolina = () => (
     </Section>
 
     <Section title="Proof" alt>
-      <ProofSlot needs="PROOF SLOT — North Carolina client quote describing an E-Verify or workers' comp finding, with headcount at the time." />
+      <ProofSlot needs="North Carolina client quote describing an E-Verify or workers' comp finding, with headcount at the time." />
     </Section>
 
     <Section title="Questions North Carolina employers ask">
@@ -190,7 +190,7 @@ const NorthCarolina = () => (
     <ServiceCta
       heading="Know exactly which North Carolina rules apply to you."
       body="The audit checks your headcount against the current thresholds, not against a guess."
-      proof="PROOF SLOT — North Carolina client reference with headcount and a specific finding."
+      proof="North Carolina client reference with headcount and a specific finding."
       secondary={{ label: "See all state guides", href: "/resources/state-employer-guides" }}
     />
   </>

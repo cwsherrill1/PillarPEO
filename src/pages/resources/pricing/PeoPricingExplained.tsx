@@ -249,7 +249,7 @@ const PeoPricingExplained = () => (
     <ServiceCta
       heading="Have a renewal coming? We'll review it free."
       body="Send us your census, two payroll registers, your current invoice and your benefit summaries. You get a side-by-side of what you pay now against what the market would charge."
-      proof="PROOF SLOT — anonymised renewal review outcome, professional-services firm, with the line item that moved."
+      proof="anonymised renewal review outcome, professional-services firm, with the line item that moved."
       secondary={{ label: "The free renewal review", href: "/resources/peo-renewal-review" }}
     />
   </>

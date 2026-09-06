@@ -170,7 +170,7 @@ const NcHandbookRequirements = () => (
     <ServiceCta
       heading="Not sure your handbook matches how you actually operate?"
       body="The HR audit reviews your handbook line by line against your real practice and every state you employ people in."
-      proof="PROOF SLOT — client quote describing a handbook gap the audit found, North Carolina employer."
+      proof="client quote describing a handbook gap the audit found, North Carolina employer."
       secondary={{ label: "See the HR audit", href: "/services/hr-audit" }}
     />
   </>

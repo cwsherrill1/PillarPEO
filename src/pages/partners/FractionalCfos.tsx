@@ -187,7 +187,7 @@ const FractionalCfos = () => (
         .
       </p>
       <div className="mt-8">
-        <ProofSlot needs="PROOF SLOT — fractional CFO partner, named firm, one line on a delivered client engagement and what the client decided, with written permission." />
+        <ProofSlot needs="fractional CFO partner, named firm, one line on a delivered client engagement and what the client decided, with written permission." />
       </div>
     </Section>
 
@@ -205,7 +205,7 @@ const FractionalCfos = () => (
     <ServiceCta
       heading="Send us the client you don't want to own the HR for."
       body="Tell us the situation and we'll tell you whether it's worth doing, whose name it carries, and what it takes."
-      proof="PROOF SLOT — second fractional CFO or COO reference, ideally multi-state."
+      proof="second fractional CFO or COO reference, ideally multi-state."
       secondary={{ label: "Partner overview", href: "/partners" }}
     />
   </>

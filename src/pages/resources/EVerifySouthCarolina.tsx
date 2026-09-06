@@ -140,7 +140,7 @@ const EVerifySouthCarolina = () => (
     <ServiceCta
       heading="Confirming E-Verify inside 3 business days, every time?"
       body="The HR audit checks I-9 and E-Verify timing against your actual hire dates, not just your policy."
-      proof="PROOF SLOT — client quote describing an E-Verify timing gap the audit found, South Carolina employer."
+      proof="client quote describing an E-Verify timing gap the audit found, South Carolina employer."
       secondary={{ label: "See the HR audit", href: "/services/hr-audit" }}
     />
   </>

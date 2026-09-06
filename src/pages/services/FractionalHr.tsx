@@ -214,7 +214,7 @@ const FractionalHr = () => (
     <ServiceCta
       heading="Start with the audit, then decide the tier."
       body="The audit shows how much ongoing help your firm actually needs, so you're not guessing at hours."
-      proof="PROOF SLOT — fractional HR client quote, professional-services firm, with headcount and states covered."
+      proof="fractional HR client quote, professional-services firm, with headcount and states covered."
       secondary={{ label: "See all services", href: "/services" }}
     />
   </>

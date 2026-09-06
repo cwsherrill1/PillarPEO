@@ -196,7 +196,7 @@ const WhenPeoWrongAnswer = () => (
         for how to force an unbundled quote that makes the total visible.
       </p>
       <div className="mt-8">
-        <ProofSlot needs="PROOF SLOT — anonymised, permissioned real comparison where total spend rose under a PEO, with the line-by-line totals and the client's written approval to publish." />
+        <ProofSlot needs="anonymised, permissioned real comparison where total spend rose under a PEO, with the line-by-line totals and the client's written approval to publish." />
       </div>
     </Section>
 
@@ -236,7 +236,7 @@ const WhenPeoWrongAnswer = () => (
     <ServiceCta
       heading="We'll tell you if the answer is no."
       body="PEO brokerage is free to you and paid by the provider. Recommending against one costs us the commission, which is exactly why the advice is worth having."
-      proof="PROOF SLOT — permissioned quote from a firm Pillar advised not to use a PEO."
+      proof="permissioned quote from a firm Pillar advised not to use a PEO."
       secondary={{ label: "The free renewal review", href: "/resources/peo-renewal-review" }}
     />
   </>

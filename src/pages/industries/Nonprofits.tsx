@@ -167,7 +167,7 @@ const Nonprofits = () => (
     </Section>
 
     <Section title="Proof" alt>
-      <ProofSlot needs="PROOF SLOT — executive director or board chair quote, nonprofit, with a number (staff count, funding sources reconciled, or findings closed)." />
+      <ProofSlot needs="executive director or board chair quote, nonprofit, with a number (staff count, funding sources reconciled, or findings closed)." />
     </Section>
 
     <Section title="Questions nonprofits ask">
@@ -177,7 +177,7 @@ const Nonprofits = () => (
     <ServiceCta
       heading="A fixed-price HR audit your board can read."
       body="Scored findings, a remediation plan, and a price quoted before any work starts."
-      proof="PROOF SLOT — nonprofit reference with budget band and what the audit unlocked."
+      proof="nonprofit reference with budget band and what the audit unlocked."
       secondary={{ label: "See all industries", href: "/industries" }}
     />
   </>

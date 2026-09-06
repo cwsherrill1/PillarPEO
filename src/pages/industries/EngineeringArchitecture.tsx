@@ -168,7 +168,7 @@ const EngineeringArchitecture = () => (
     </Section>
 
     <Section title="Proof" alt>
-      <ProofSlot needs="PROOF SLOT — principal or director of operations quote, engineering or architecture firm, with a number (grades reviewed, states registered, or field-pay policy rewritten)." />
+      <ProofSlot needs="principal or director of operations quote, engineering or architecture firm, with a number (grades reviewed, states registered, or field-pay policy rewritten)." />
     </Section>
 
     <Section title="Questions design firms ask">
@@ -178,7 +178,7 @@ const EngineeringArchitecture = () => (
     <ServiceCta
       heading="Get the design ladder classified once, properly."
       body="A fixed-price audit covering every state your projects put people in, quoted before we start."
-      proof="PROOF SLOT — engineering firm reference describing a multi-state project registration cleanup."
+      proof="engineering firm reference describing a multi-state project registration cleanup."
       secondary={{ label: "See all industries", href: "/industries" }}
     />
   </>

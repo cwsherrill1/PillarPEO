@@ -220,7 +220,7 @@ const HrAuditChecklist = () => (
     <ServiceCta
       heading="Want it scored instead of self-checked?"
       body="The paid HR audit runs these same nine areas against your actual documents and gives you a written, scored report in 15 business days."
-      proof="PROOF SLOT — client quote describing what the scored report changed about how they saw their risk."
+      proof="client quote describing what the scored report changed about how they saw their risk."
       secondary={{ label: "See the HR audit", href: "/services/hr-audit" }}
     />
   </>

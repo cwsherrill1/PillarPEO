@@ -89,7 +89,7 @@ const Industries = () => (
     <ServiceCta
       heading="Start with what's actually wrong."
       body="The audit runs 41 checks across nine areas and gives you a written, scored picture of your exposure — in every state you employ people."
-      proof="PROOF SLOT — one quote per industry, from a named firm type and headcount, ideally with a number attached."
+      proof="one quote per industry, from a named firm type and headcount, ideally with a number attached."
       secondary={{ label: "See all services", href: "/services" }}
     />
   </>

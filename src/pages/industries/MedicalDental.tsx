@@ -159,7 +159,7 @@ const MedicalDental = () => (
     </Section>
 
     <Section title="Proof" alt>
-      <ProofSlot needs="PROOF SLOT — practice owner or practice administrator quote, medical or dental practice, with a number (files separated, overtime rate corrected, or staff trained)." />
+      <ProofSlot needs="practice owner or practice administrator quote, medical or dental practice, with a number (files separated, overtime rate corrected, or staff trained)." />
     </Section>
 
     <Section title="Questions practices ask">
@@ -169,7 +169,7 @@ const MedicalDental = () => (
     <ServiceCta
       heading="Get the files, the plan and the pay rate right."
       body="A fixed-price audit that treats your employment records with the same seriousness as your patient records."
-      proof="PROOF SLOT — dental or medical practice reference, with headcount and number of locations."
+      proof="dental or medical practice reference, with headcount and number of locations."
       secondary={{ label: "See all industries", href: "/industries" }}
     />
   </>

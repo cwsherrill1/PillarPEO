@@ -237,7 +237,7 @@ const RockHillFortMillSc = () => (
         have. The slot below names exactly what belongs here and stays visible until a real
         local client fills it.
       </p>
-      <ProofSlot needs="PROOF SLOT — owner or practice administrator quote, Rock Hill / Fort Mill / Indian Land firm, named, with a number (headcount, hires remediated, or states registered)." />
+      <ProofSlot needs="owner or practice administrator quote, Rock Hill / Fort Mill / Indian Land firm, named, with a number (headcount, hires remediated, or states registered)." />
     </Section>
 
     <Section title="Questions South Carolina firms ask" alt>
@@ -247,7 +247,7 @@ const RockHillFortMillSc = () => (
     <ServiceCta
       heading="Get the South Carolina side right, once."
       body="A fixed-price HR audit covering both Carolinas and every other state your people work in."
-      proof="PROOF SLOT — South Carolina client reference with firm type and headcount."
+      proof="South Carolina client reference with firm type and headcount."
       secondary={{ label: "Charlotte, NC", href: "/hr-consulting/charlotte-nc" }}
     />
   </>

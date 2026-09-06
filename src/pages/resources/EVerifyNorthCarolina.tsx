@@ -142,7 +142,7 @@ const EVerifyNorthCarolina = () => (
     <ServiceCta
       heading="Not sure if your hiring process actually uses E-Verify consistently?"
       body="The HR audit checks I-9 and E-Verify practice against every hire in your file, not just the ones you remember."
-      proof="PROOF SLOT — client quote describing an E-Verify or I-9 gap the audit found, North Carolina employer."
+      proof="client quote describing an E-Verify or I-9 gap the audit found, North Carolina employer."
       secondary={{ label: "See the HR audit", href: "/services/hr-audit" }}
     />
   </>

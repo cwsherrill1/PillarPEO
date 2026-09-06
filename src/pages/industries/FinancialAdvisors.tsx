@@ -167,7 +167,7 @@ const FinancialAdvisors = () => (
     </Section>
 
     <Section title="Proof" alt>
-      <ProofSlot needs="PROOF SLOT — principal or COO quote, RIA or advisory firm, with a number (AUM band optional, headcount and what the pay-plan documentation resolved)." />
+      <ProofSlot needs="principal or COO quote, RIA or advisory firm, with a number (AUM band optional, headcount and what the pay-plan documentation resolved)." />
     </Section>
 
     <Section title="Questions advisory firms ask">
@@ -177,7 +177,7 @@ const FinancialAdvisors = () => (
     <ServiceCta
       heading="Put the employment layer in writing."
       body="A fixed-price audit of the HR side of your firm, scoped and quoted before we start."
-      proof="PROOF SLOT — advisory firm reference describing the pay-plan documentation outcome."
+      proof="advisory firm reference describing the pay-plan documentation outcome."
       secondary={{ label: "See all industries", href: "/industries" }}
     />
   </>

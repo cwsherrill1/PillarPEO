@@ -102,7 +102,7 @@ const HrConsulting = () => (
     <ServiceCta
       heading="Book an HR audit, wherever your people are."
       body="One fixed price, quoted before we start, covering every state on your payroll."
-      proof="PROOF SLOT — Carolinas client reference naming the metro and the number of states covered."
+      proof="Carolinas client reference naming the metro and the number of states covered."
       secondary={{ label: "See the audit", href: "/services/hr-audit" }}
     />
   </>

@@ -230,7 +230,7 @@ const Partners = () => (
         .
       </p>
       <div className="mt-8">
-        <ProofSlot needs="PROOF SLOT — named partner firm (fractional CFO practice or benefits brokerage) with a one-line quote about a delivered engagement, and written permission to publish." />
+        <ProofSlot needs="named partner firm (fractional CFO practice or benefits brokerage) with a one-line quote about a delivered engagement, and written permission to publish." />
       </div>
     </Section>
 
@@ -251,7 +251,7 @@ const Partners = () => (
     <ServiceCta
       heading="Let's talk about a first engagement."
       body="Tell us the client situation you're looking at and we'll tell you whether it's something we should be in — and whether it should carry your name or ours."
-      proof="PROOF SLOT — second partner reference, ideally from the other side (broker vs fractional CFO)."
+      proof="second partner reference, ideally from the other side (broker vs fractional CFO)."
       secondary={{ label: "How we get paid", href: "/how-we-get-paid" }}
     />
   </>

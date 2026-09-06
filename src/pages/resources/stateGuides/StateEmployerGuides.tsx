@@ -143,7 +143,7 @@ const StateEmployerGuides = () => (
     <ServiceCta
       heading="Not sure which rules apply to your headcount?"
       body="An HR audit checks your actual registrations and thresholds against what the law requires — state by state."
-      proof="PROOF SLOT — multi-state client quote referencing a specific state finding, with headcount."
+      proof="multi-state client quote referencing a specific state finding, with headcount."
       secondary={{ label: "See the HR audit", href: "/services/hr-audit" }}
     />
   </>

@@ -235,7 +235,7 @@ const RaleighDurhamNc = () => (
         one. The slot below names exactly what belongs here and stays visible until a real
         local client fills it.
       </p>
-      <ProofSlot needs="PROOF SLOT — founder, COO or practice administrator quote, Raleigh, Durham or RTP organisation, named, with a number (contractors reviewed, headcount at first audit, or states registered)." />
+      <ProofSlot needs="founder, COO or practice administrator quote, Raleigh, Durham or RTP organisation, named, with a number (contractors reviewed, headcount at first audit, or states registered)." />
     </Section>
 
     <Section title="Questions Triangle organisations ask" alt>
@@ -245,7 +245,7 @@ const RaleighDurhamNc = () => (
     <ServiceCta
       heading="Book an HR audit for your Triangle organisation."
       body="Fixed price quoted before we start, 15 business days, and every state your people work in included."
-      proof="PROOF SLOT — Raleigh-Durham client reference with organisation type and headcount."
+      proof="Raleigh-Durham client reference with organisation type and headcount."
       secondary={{ label: "All Carolinas locations", href: "/hr-consulting" }}
     />
   </>

@@ -209,7 +209,7 @@ const Services = () => (
     <ServiceCta
       heading="Start with the audit."
       body="Most firms start with the HR audit, then fix what it finds. You'll know the price before we begin."
-      proof="PROOF SLOT — managing partner quote, professional-services firm, on what the audit found, with a number."
+      proof="managing partner quote, professional-services firm, on what the audit found, with a number."
       secondary={{ label: "Contact us", href: "/contact" }}
     />
   </>

@@ -206,7 +206,7 @@ const PeoAdminFees = () => (
     <ServiceCta
       heading="Send us the quote. We'll unbundle it."
       body="We read PEO proposals every week and know which lines are missing. The review is free, whether or not you place anything through us."
-      proof="PROOF SLOT — anonymised example of an unbundled quote changing the ranking of two providers."
+      proof="anonymised example of an unbundled quote changing the ranking of two providers."
       secondary={{ label: "The free renewal review", href: "/resources/peo-renewal-review" }}
     />
   </>
