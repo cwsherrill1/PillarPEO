@@ -91,6 +91,7 @@ const Contact = () => {
     if (!validate()) return;
     setSubmitting(true);
     const { error } = await supabase.from("leads").insert({
+      type: "client",
       source: "contact",
       name: formData.name.trim(),
       email: formData.email.trim(),
