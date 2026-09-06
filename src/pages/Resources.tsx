@@ -323,7 +323,7 @@ const faqJsonLd = {
   })),
 };
 
-const categories = ["All", "Guide", "Checklist", "Comparison", "Self-Assessment"];
+const categories = ["All", "Pricing", "Guide", "Checklist", "Comparison", "Self-Assessment"];
 
 const Resources = () => {
   const [activeCategory, setActiveCategory] = useState("All");
