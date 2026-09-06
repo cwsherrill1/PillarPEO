@@ -6,7 +6,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Layout from "@/components/Layout";
 import ScrollToTop from "@/components/ScrollToTop";
-import { activeRedirects } from "@/data/redirects";
+import { activeRedirects, wildcardRedirects } from "@/data/redirects";
 
 const Index = lazy(() => import("./pages/Index"));
 const Resources = lazy(() => import("./pages/Resources"));
@@ -138,6 +138,10 @@ const App = () => (
 
               {/* 301 redirects — generated from src/data/redirects.ts */}
               {activeRedirects.map((r) => (
+                <Route key={r.from} path={r.from} element={<Navigate to={r.to} replace />} />
+              ))}
+
+              {wildcardRedirects.map((r) => (
                 <Route key={r.from} path={r.from} element={<Navigate to={r.to} replace />} />
               ))}
 
