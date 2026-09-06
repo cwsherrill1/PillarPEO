@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { pricing } from "@/data/pricing";
 import SEOHead from "@/components/SEOHead";
 import ServiceHero from "@/components/services/ServiceHero";
 import ServiceCta from "@/components/services/ServiceCta";
@@ -58,7 +57,7 @@ const MedicalDental = () => (
   <>
     <SEOHead
       title="HR for Medical and Dental Practices"
-      description={`OSHA bloodborne pathogen requirements, separating medical files from personnel files from I-9s, credentialing records, on-call time and shift differentials. Fixed-price HR audits from ${pricing.audit.from}.`}
+      description="OSHA bloodborne pathogen requirements, separating medical files from personnel files from I-9s, credentialing records, on-call time and shift differentials. Fixed price, quoted before the work starts."
       canonical={`${SITE_URL}/industries/medical-dental`}
       jsonLd={jsonLd}
     />

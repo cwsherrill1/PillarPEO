@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { pricing } from "@/data/pricing";
 import SEOHead from "@/components/SEOHead";
 import ServiceHero from "@/components/services/ServiceHero";
 import ServiceCta from "@/components/services/ServiceCta";
@@ -58,7 +57,7 @@ const CpaFirms = () => (
   <>
     <SEOHead
       title="HR for CPA and Accounting Firms"
-      description={`Busy-season overtime, why comp time is not available to private employers, seasonal staffing, per-diem and travel pay, and out-of-state staff. Fixed-price HR audits from ${pricing.audit.from}.`}
+      description="Busy-season overtime, why comp time is not available to private employers, seasonal staffing, per-diem and travel pay, and out-of-state staff. Fixed price, quoted before the work starts."
       canonical={`${SITE_URL}/industries/cpa-firms`}
       jsonLd={jsonLd}
     />

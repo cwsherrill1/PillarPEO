@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { pricing } from "@/data/pricing";
 import SEOHead from "@/components/SEOHead";
 import ServiceHero from "@/components/services/ServiceHero";
 import ServiceCta from "@/components/services/ServiceCta";
@@ -58,7 +57,7 @@ const Nonprofits = () => (
   <>
     <SEOHead
       title="HR for Nonprofits"
-      description={`Volunteers versus employees, exempt status for program staff, grant-funded position documentation, and board and executive compensation. Fixed-price HR audits from ${pricing.audit.from}.`}
+      description="Volunteers versus employees, exempt status for program staff, grant-funded position documentation, and board and executive compensation. Fixed price, quoted before the work starts."
       canonical={`${SITE_URL}/industries/nonprofits`}
       jsonLd={jsonLd}
     />
