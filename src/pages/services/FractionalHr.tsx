@@ -145,6 +145,72 @@ const FractionalHr = () => (
       </div>
     </section>
 
+    <section className="bg-background">
+      <div className="container max-w-3xl py-20 md:py-28">
+        <Reveal>
+          <h2 className="font-heading text-3xl font-800 text-foreground md:text-4xl">
+            What a month actually looks like.
+          </h2>
+          <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+            Fractional HR is not a phone line you call when something breaks. It is a
+            standing block of senior HR time, spent on a short list of things you and we
+            agree on at the start of each month. A typical month has a recurring working
+            session with the managing partner or practice administrator, a queue of
+            employee-relations questions handled as they come in, and one piece of
+            building work that moves forward — an updated handbook section, a job
+            architecture, an offer-letter template set, a manager coaching plan.
+          </p>
+          <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+            Compliance runs underneath all of it. When you hire in a new state, we handle
+            the registrations, the notices, the wage rules and the poster set for that
+            state before the first payroll runs there, rather than after someone notices.
+            When a law changes in a state you already employ in, you hear it from us with
+            the specific action attached, not a newsletter.
+          </p>
+        </Reveal>
+
+        <Reveal delay={100}>
+          <h3 className="mt-12 font-heading text-xl font-700 text-foreground">
+            What we need from you.
+          </h3>
+          <ul className="mt-4 space-y-3 text-base leading-relaxed text-muted-foreground">
+            <li>
+              One decision-maker who can approve a policy change without a partner vote.
+              Fractional HR stalls when every recommendation has to go through committee.
+            </li>
+            <li>
+              Read access to your payroll, HRIS and benefits systems, and to the personnel
+              files. We work in your systems rather than building a shadow set.
+            </li>
+            <li>
+              An hour a month of that person's calendar, protected. Everything else can be
+              asynchronous.
+            </li>
+            <li>
+              Honesty about the situations already in progress. The termination you're
+              thinking about is far cheaper to handle before it happens than after.
+            </li>
+          </ul>
+        </Reveal>
+
+        <Reveal delay={200}>
+          <h3 className="mt-12 font-heading text-xl font-700 text-foreground">
+            How engagements start and end.
+          </h3>
+          <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+            Most firms start after an audit, so the first ninety days have a written list
+            of priorities rather than a discovery period you are paying for. There is a
+            three-month minimum because nothing meaningful in HR turns around faster than
+            that, and after the minimum the engagement runs month to month. Tiers move up
+            and down as your year does — hiring seasons and open enrolment need more hours
+            than a quiet quarter. If your volume outgrows the top tier, we will tell you
+            it is time to hire someone in-house, and help you write the role and interview
+            for it.
+          </p>
+        </Reveal>
+      </div>
+    </section>
+
     <ServiceCta
       heading="Start with the audit, then decide the tier."
       body="The audit shows how much ongoing help your firm actually needs, so you're not guessing at hours."
