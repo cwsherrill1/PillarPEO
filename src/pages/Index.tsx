@@ -76,8 +76,9 @@ const Index = () => {
               </h1>
 
               <p className="mt-6 max-w-xl text-lg leading-relaxed text-primary-foreground/80">
-                HR audits, projects, fractional support, and PEO or HRIS transitions for law, accounting, engineering, and medical firms — in every state your people work in. Headquartered in Charlotte.
+                HR audits, projects, fractional support, and PEO or HRIS transitions for firms of 10–150 people — in every state your people work in. Headquartered in Charlotte.
               </p>
+
 
               <div className="mt-10 flex flex-col gap-4 sm:flex-row">
                 <Button
@@ -135,17 +136,17 @@ const Index = () => {
         </div>
       </section>
 
-      {/* ── 2b. WHERE TO START (routes to the priced services) ── */}
+      {/* ── 2b. WHAT BROUGHT YOU HERE (trigger triage) ── */}
       <section className="bg-background py-20 md:py-28">
         <div className="container">
           <Reveal>
             <div className="mx-auto max-w-2xl text-center">
               <h2 className="font-heading text-3xl font-800 text-foreground md:text-4xl">
-                Where do you want to start?
+                What brought you here today?
               </h2>
               <p className="mt-4 text-muted-foreground">
-                Fixed-price HR work for firms of 10–150 people, in every state your
-                people work in.
+                Most firms call us because one of these four things just happened.
+                Fixed price, quoted before any work starts.
               </p>
             </div>
           </Reveal>
@@ -153,28 +154,28 @@ const Index = () => {
           <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {[
               {
-                need: "I need to know what my HR risk is",
-                service: "HR Audit",
-                price: "Fixed price, quoted before the work starts",
+                need: "Our benefits or PEO renewal just went up",
+                service: "Free renewal review",
+                price: "We read the renewal line by line and tell you what actually moved",
+                href: "/resources/peo-renewal-review",
+              },
+              {
+                need: "We just hired someone in another state",
+                service: "Multi-state cleanup",
+                price: "Registration, withholding, unemployment and handbook, state by state",
+                href: "/resources/multi-state-employer-checklist",
+              },
+              {
+                need: "Nobody here owns HR and it shows",
+                service: "HR audit or fractional HR",
+                price: "Find out what the exposure is, then decide how much help you need",
                 href: "/services/hr-audit",
               },
               {
-                need: "I need a specific thing fixed",
-                service: "HR Projects",
-                price: "Fixed price, quoted before the work starts",
-                href: "/services/hr-projects",
-              },
-              {
-                need: "I need ongoing HR help",
-                service: "Fractional HR",
-                price: "Fixed monthly price, quoted before the work starts",
-                href: "/services/fractional-hr",
-              },
-              {
-                need: "I'm dealing with a PEO",
-                service: "Transitions",
-                price: "Fixed price, quoted before the work starts",
-                href: "/services/transitions",
+                need: "We're considering, or leaving, a PEO",
+                service: "PEO comparison and transitions",
+                price: "Free to compare. Often the answer is that a PEO is the wrong fit",
+                href: "/services/peo-brokerage",
               },
             ].map(({ need, service, price, href }, i) => (
               <Reveal key={href} delay={i * 100}>
@@ -196,8 +197,22 @@ const Index = () => {
               </Reveal>
             ))}
           </div>
+
+          <Reveal>
+            <p className="mx-auto mt-10 max-w-2xl text-center text-base text-muted-foreground">
+              Not sure a PEO is even the right idea? Read{" "}
+              <Link
+                to="/resources/when-a-peo-is-the-wrong-answer"
+                className="text-green-ink hover:underline"
+              >
+                when a PEO is the wrong answer
+              </Link>{" "}
+              first.
+            </p>
+          </Reveal>
         </div>
       </section>
+
 
       {/* ── 3. PROBLEM SECTION (3 cards + urgency) ── */}
       <section className="bg-muted/30 py-20 md:py-28">

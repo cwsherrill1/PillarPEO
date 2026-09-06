@@ -68,7 +68,11 @@ Prices are quoted before the work starts and are not published on the site.
 - [Resources](/resources): Guides on PEO selection, pricing, benefits and switching.
 - [About](/about): Background on Pillar and the leadership team.
 - [Caleb Sherrill](/about/caleb-sherrill): Founder background.
-- [Partners](/partners): Referral and white-label HR partnerships for fractional CFOs, COOs and benefits brokers.
+- [Partners](/partners): Referral and white-label HR partnerships for fractional CFOs, COOs, benefits brokers, accountants and attorneys.
+- [Partners — fractional CFOs and COOs](/partners/fractional-cfos): Hand over the HR and PEO questions and keep the client relationship.
+- [Partners — benefits brokers](/partners/benefits-brokers): Independent PEO comparison run alongside a benefits broker; Pillar never places medical.
+- [Partners — white-label delivery](/partners/white-label): HR and PEO work delivered behind a partner's brand, with commission disclosure preserved.
+- [Partners — client one-pager](/partners/client-one-pager): Printable one-page explanation partners can hand to a client.
 - [Contact](/contact): Book an HR audit or send a message.
 
 ## Editorial policy

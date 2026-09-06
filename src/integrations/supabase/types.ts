@@ -24,6 +24,7 @@ export type Database = {
           message: string | null
           name: string
           source: string
+          type: string
         }
         Insert: {
           company?: string | null
@@ -34,6 +35,7 @@ export type Database = {
           message?: string | null
           name: string
           source?: string
+          type?: string
         }
         Update: {
           company?: string | null
@@ -44,6 +46,7 @@ export type Database = {
           message?: string | null
           name?: string
           source?: string
+          type?: string
         }
         Relationships: []
       }

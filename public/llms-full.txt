@@ -421,3 +421,16 @@ Pillar, the provider pays a commission which is disclosed in writing.
 Referral and white-label HR partnerships for fractional CFOs and COOs and for benefits brokers.
 Pillar sells no software, insurance or accounting. No referral fees are paid for HR advisory work.
 PEO placements pay a provider commission, disclosed in writing to the client.
+
+
+## Partners — fractional CFOs and COOs — /partners/fractional-cfos
+Pillar takes the HR and PEO work off a fractional CFO's plate without taking the client seat. The three questions fractional CFOs are usually asked: a brutal benefits renewal, a hire in a new state, and messy payroll. PEO brokerage is free to the client; the provider pays a commission and Pillar discloses it in writing. To start, Pillar needs a census, three months of invoices, the current agreement and renewal letter, benefit plan summaries, and a decision on whether Pillar is named, copied or invisible. A first renewal read is usually back inside a week; reviews start about 120 days before renewal. Where the answer is that the client should do nothing, Pillar says so and is paid nothing.
+
+## Partners — benefits brokers — /partners/benefits-brokers
+Pillar brokers PEO arrangements and does not place group medical, dental, vision, life or disability, and will not accept an appointment on a group a partner broker already holds. Before anyone goes to market, Pillar gives a free preliminary read from a census, current invoices, workers' compensation classes and the state unemployment rate: plausible, marginal, or no. Where a PEO is placed through a broker partnership, the provider commission is shared on a tiered basis agreed in writing before the client is approached; tiers are not published because they depend on the provider's schedule and group size. The client is always told in writing who is paid and by whom. The free renewal review gives brokers something concrete about 120 days before a client's renewal.
+
+## Partners — white-label delivery — /partners/white-label
+Pillar delivers HR audit findings, PEO comparisons and renewal analysis, handbooks and policy documents, and transition project plans under a partner's brand, inside the partner's process and file conventions, with one named contact. Scope is written first. Three things are always disclosed to the client regardless of branding: who is paid and by whom, that the analysis is not legal advice, and the assumptions behind any estimate. Pillar declines engagements that require those to be removed. A named introduction is the alternative route.
+
+## Partners — client one-pager — /partners/client-one-pager
+A printable single page partners can hand to a client, covering what Pillar does, where engagements usually start (renewal review, HR audit, PEO comparison, transitions), how Pillar is paid, and what documents are needed. Adding ?partner=Firm+Name to the address stamps the partner firm's name on the sheet. Site navigation, footer and on-screen instructions are excluded from print.
