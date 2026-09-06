@@ -2,8 +2,7 @@ import { useEffect } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
-import { SITE_URL, breadcrumb, ORG_REF } from "@/data/organization";
-import { CONTACT_EMAIL, CONTACT_PHONE, CONTACT_PHONE_HREF } from "@/data/organization";
+import { SITE_URL, breadcrumb, ORG_REF, organization } from "@/data/organization";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -43,7 +42,6 @@ const ClientOnePager = () => {
         fullTitle
         description="A printable one-page explanation of what Pillar does, for partners to hand to a client. Add ?partner=Your+Firm to stamp your firm name on it."
         canonical={`${SITE_URL}/partners/client-one-pager`}
-        noindex
         jsonLd={jsonLd}
       />
 
@@ -154,9 +152,9 @@ const ClientOnePager = () => {
 
           <footer className="mt-8 border-t border-border pt-4 text-sm text-muted-foreground">
             <p>
-              {CONTACT_EMAIL} ·{" "}
-              <a href={CONTACT_PHONE_HREF} className="text-green-ink">
-                {CONTACT_PHONE}
+              {organization.email} ·{" "}
+              <a href={`tel:${organization.telephone}`} className="text-green-ink">
+                {organization.telephone}
               </a>{" "}
               · pillarpeo.com
             </p>
