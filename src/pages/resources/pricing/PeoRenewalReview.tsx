@@ -196,9 +196,34 @@ const PeoRenewalReview = () => (
       <LegalNote verified="2026-09-06" />
     </Section>
 
-    <Section title="Questions about the renewal review" alt>
+    <Section title="When the review says: leave the PEO model entirely" alt>
+      <p>
+        Not every bad renewal is a reason to shop for a better PEO. In the
+        renewals we review, some firms should come out of the model altogether:
+        benefits that were already competitive before they went in, heavy workers'
+        compensation classes that make the master policy expensive, headcount that
+        has grown past the point where per-employee administration earns its fee,
+        or partners who want control of plan design that a master plan will never
+        give them.
+      </p>
+      <p>
+        Where that is what the numbers say, the review says it, and we are paid
+        nothing. The full case-by-case version is in{" "}
+        <Link to="/resources/when-a-peo-is-the-wrong-answer" className="text-green-ink hover:underline">
+          when a PEO is the wrong answer
+        </Link>
+        , and the exit itself is a{" "}
+        <Link to="/services/transitions" className="text-green-ink hover:underline">
+          fixed-price transition
+        </Link>
+        .
+      </p>
+    </Section>
+
+    <Section title="Questions about the renewal review">
       <FaqBlock faqs={faqs} />
     </Section>
+
 
     <ArticleAuthorBio />
 
