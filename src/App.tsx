@@ -62,6 +62,10 @@ const EVerifyNorthCarolina = lazy(() => import("./pages/resources/EVerifyNorthCa
 const EVerifySouthCarolina = lazy(() => import("./pages/resources/EVerifySouthCarolina"));
 const NcHandbookRequirements = lazy(() => import("./pages/resources/NcHandbookRequirements"));
 const ScHandbookRequirements = lazy(() => import("./pages/resources/ScHandbookRequirements"));
+const DoWeNeedAPeoResource = lazy(() => import("./pages/resources/DoWeNeedAPeo"));
+const HrRiskScore = lazy(() => import("./pages/tools/HrRiskScore"));
+const PeoCostCalculator = lazy(() => import("./pages/tools/PeoCostCalculator"));
+const CaseStudies = lazy(() => import("./pages/CaseStudies"));
 
 const queryClient = new QueryClient();
 
