@@ -446,7 +446,7 @@ const Index = () => {
             {
               myth: "\u201CSalaried means exempt.\u201D",
               truth:
-              "It does not. Paying someone a salary is only part of the test \u2014 the job duties have to meet an exemption as well. Misclassified salaried staff are the most common finding in an audit."
+              "It does not. Paying someone a salary is only part of the test. The job duties have to meet an exemption as well. Misclassified salaried staff are the most common finding in an audit."
             },
             {
               myth: "\u201CThe PEO handles compliance.\u201D",
