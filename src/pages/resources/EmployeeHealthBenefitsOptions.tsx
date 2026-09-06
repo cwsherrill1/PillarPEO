@@ -34,6 +34,7 @@ const ARTICLE = buildArticleJsonLd({
     "Group, level-funded, self-insured, ICHRA, QSEHRA, association, chamber, and PEO plans explained in plain English. The 2026 guide for employers.",
   path: "/blog/employee-health-benefits-options",
   datePublished: "2026-06-01",
+  dateModified: "2026-09-05",
 });
 
 const FAQ_JSONLD = {
@@ -95,7 +96,7 @@ const EmployeeHealthBenefitsOptions = () => (
           </p>
         </Reveal>
         <Reveal delay={150}>
-          <ArticleByline datePublished="June 2026" />
+          <ArticleByline datePublished="June 1, 2026" />
         </Reveal>
         <Reveal delay={200}>
           <div className="mt-8">

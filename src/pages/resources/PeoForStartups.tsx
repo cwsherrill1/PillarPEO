@@ -24,6 +24,7 @@ const ARTICLE = buildArticleJsonLd({
   description: "Why startups use a PEO — multi-state compliance, benefits that recruit, equity-friendly payroll, and exit timing. An independent broker's guide.",
   path: "/resources/peo-for-startups",
   datePublished: "2026-05-15",
+  dateModified: "2026-09-05",
 });
 
 const FAQ_JSONLD = {
@@ -70,7 +71,7 @@ const PeoForStartups = () => (
             Multi-state compliance, recruiting-grade benefits, equity-friendly payroll — without building HR in-house.
           </p>
         </Reveal>
-        <Reveal delay={150}><ArticleByline datePublished="May 2026" /></Reveal>
+        <Reveal delay={150}><ArticleByline datePublished="May 15, 2026" /></Reveal>
         <Reveal delay={200}>
           <div className="mt-8">
             <Button asChild size="lg" className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20">
@@ -139,7 +140,13 @@ const PeoForStartups = () => (
       </ul>
     </Section>
 
-    <Section title="Exit Planning: How to Leave a PEO Without Losing Money" alt>
+    <Section title="Series A vs. Series B: What Diligence Actually Checks" alt>
+      <p>At Series A, the bar is basic: correct worker classification, active workers' comp coverage, and payroll tax registration in every state where you employ people. Most startups can clear it.</p>
+      <p>By Series B the scrutiny tightens. Institutional investors want to see employment practices liability insurance, clean multi-state payroll tax documentation, and proof that benefits administration isn't creating compliance gaps. A PEO that has done this before handles it quietly, so founders aren't scrambling between rounds.</p>
+      <p>If you're a Charlotte-area startup, our <Link to="/hr-consulting/charlotte-nc" className="text-green-ink hover:underline">Charlotte PEO broker page</Link> walks through what local representation looks like for growth-stage companies.</p>
+    </Section>
+
+    <Section title="Exit Planning: How to Leave a PEO Without Losing Money">
       <p>The single biggest hidden cost of leaving a PEO is the <strong className="text-foreground">FICA/FUTA wage base reset</strong>. If you exit mid-year, every employee's Social Security wage base resets to zero with the new employer — costing 6.2% of wages up to $168,600 per high earner. On a 50-person tech team, that can be six figures.</p>
       <p>Three rules:</p>
       <ul className="space-y-2">

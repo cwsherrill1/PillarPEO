@@ -40,13 +40,13 @@ export const redirects: RedirectRule[] = [
   { from: "/blog/peo-vs-hr-outsourcing", to: "/resources/peo-vs-aso-vs-inhouse" },
 
   // ── Pending: destinations land in batches 4 and 5 ──
-  { from: "/do-we-need-a-peo", to: "/resources/do-we-need-a-peo", pending: true },
-  { from: "/resources/peo-readiness", to: "/resources/do-we-need-a-peo", pending: true },
-  { from: "/blog/should-your-business-use-peo", to: "/resources/do-we-need-a-peo", pending: true },
+  { from: "/do-we-need-a-peo", to: "/resources/do-we-need-a-peo" },
+  { from: "/resources/peo-readiness", to: "/resources/do-we-need-a-peo" },
+  { from: "/blog/should-your-business-use-peo", to: "/resources/do-we-need-a-peo" },
 
-  { from: "/roi-calculator", to: "/tools/peo-cost-calculator", pending: true },
-  { from: "/blog/peo-roi-calculator", to: "/tools/peo-cost-calculator", pending: true },
-  { from: "/hr-headache-score", to: "/tools/hr-risk-score", pending: true },
+  { from: "/roi-calculator", to: "/tools/peo-cost-calculator" },
+  { from: "/blog/peo-roi-calculator", to: "/tools/peo-cost-calculator" },
+  { from: "/hr-headache-score", to: "/tools/hr-risk-score" },
 
   { from: "/peo-for-nonprofits", to: "/industries/nonprofits" },
   { from: "/resources/peo-for-nonprofits-guide", to: "/industries/nonprofits" },
@@ -58,10 +58,10 @@ export const redirects: RedirectRule[] = [
   { from: "/blog/what-is-a-peo-broker-charlotte-nc", to: "/hr-consulting/charlotte-nc" },
   { from: "/blog/signs-outgrown-peo-charlotte", to: "/hr-consulting/charlotte-nc" },
 
-  { from: "/peo-broker-north-carolina", to: "/resources/state-employer-guides/north-carolina", pending: true },
-  { from: "/peo-broker-south-carolina", to: "/resources/state-employer-guides/south-carolina", pending: true },
+  { from: "/peo-broker-north-carolina", to: "/resources/state-employer-guides/north-carolina" },
+  { from: "/peo-broker-south-carolina", to: "/resources/state-employer-guides/south-carolina" },
 
-  { from: "/blog/peo-for-venture-backed-startups", to: "/resources/peo-for-startups", pending: true },
+  { from: "/blog/peo-for-venture-backed-startups", to: "/resources/peo-for-startups" },
 ];
 
 /** Only the rules whose destination exists today. */

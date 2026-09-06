@@ -55,7 +55,7 @@ const HowToSwitchPeos = () => (
           </p>
         </Reveal>
         <Reveal delay={150}>
-          <ArticleByline />
+          <ArticleByline datePublished="January 15, 2026" />
         </Reveal>
         <Reveal delay={200}>
           <div className="mt-8">

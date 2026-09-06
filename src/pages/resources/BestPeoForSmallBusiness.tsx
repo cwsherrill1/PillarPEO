@@ -32,6 +32,7 @@ const ARTICLE = buildArticleJsonLd({
   description: "Independent broker comparison of the best PEOs for small business in 2026 — Justworks, Rippling, ADP TotalSource, Insperity, TriNet, Gusto.",
   path: "/resources/best-peo-for-small-business",
   datePublished: "2026-05-15",
+  dateModified: "2026-09-05",
 });
 
 const FAQ_JSONLD = {
@@ -70,7 +71,7 @@ const BestPeoForSmallBusiness = () => (
           </h1>
         </Reveal>
         <Reveal delay={100}><p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80 md:text-xl">Six top PEOs compared by an independent broker who quotes them every week. Real fit, real pricing, real watchouts.</p></Reveal>
-        <Reveal delay={150}><ArticleByline datePublished="May 2026" /></Reveal>
+        <Reveal delay={150}><ArticleByline datePublished="May 15, 2026" /></Reveal>
         <Reveal delay={200}>
           <div className="mt-8">
             <Button asChild size="lg" className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20">

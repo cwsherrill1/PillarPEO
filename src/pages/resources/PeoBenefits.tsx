@@ -24,6 +24,7 @@ const ARTICLE = buildArticleJsonLd({
   description: "PEO benefits explained — health, 401(k), workers' comp, EAP, and ancillary perks. An honest breakdown of what's included, what's better, and where PEOs underdeliver.",
   path: "/resources/peo-benefits",
   datePublished: "2026-05-15",
+  dateModified: "2026-09-05",
 });
 
 const FAQ_JSONLD = {
@@ -70,7 +71,7 @@ const PeoBenefits = () => (
             Health, retirement, workers' comp, and the perks that recruit. What's bundled, what's better, and what's marketing.
           </p>
         </Reveal>
-        <Reveal delay={150}><ArticleByline datePublished="May 2026" /></Reveal>
+        <Reveal delay={150}><ArticleByline datePublished="May 15, 2026" /></Reveal>
         <Reveal delay={200}>
           <div className="mt-8">
             <Button asChild size="lg" className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20">

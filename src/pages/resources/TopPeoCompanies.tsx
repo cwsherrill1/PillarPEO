@@ -32,7 +32,7 @@ const faqs = [
   { q: "What's the difference between a tier-1 PEO and a regional PEO?", a: "Tier-1 PEOs have national reach, larger benefit pools, and standardized processes — but less flexibility. Regional or industry-vertical PEOs often deliver better service, sharper pricing in their niche, and more responsive account management — but limited geographic coverage and smaller benefit pools." },
   { q: "Are NAPEO-certified PEOs better?", a: "NAPEO membership signals industry participation, but the more meaningful certification is IRS Certified PEO (CPEO). CPEO status protects clients on payroll tax liability — if the PEO fails to remit, the IRS pursues the PEO, not the client. Always confirm CPEO status before signing." },
   { q: "Should I pick a PEO based on revenue ranking?", a: "No. Revenue ranking tells you who's biggest, not who's best for you. A 25-person professional services firm in Texas will get a better outcome from the right regional PEO than from being a small fish at TriNet. Fit beats size." },
-  { q: "How many PEO companies are there in the US?", a: "Roughly 500 PEOs operate in the United States, serving an estimated 200,000+ small and mid-sized businesses covering ~4 million worksite employees (NAPEO). Of those, fewer than 100 are CPEO-certified." },
+  { q: "How many PEO companies are there in the US?", a: "Roughly 500 PEOs operate in the United States, serving over 200,000 small and mid-sized businesses, according to NAPEO industry data. Of those, fewer than 100 are CPEO-certified." },
 ];
 
 const ARTICLE = buildArticleJsonLd({
@@ -40,6 +40,7 @@ const ARTICLE = buildArticleJsonLd({
   description: "The top PEO companies in 2026 by category — national tier-1, modern tech-forward, and industry-vertical providers. Independent broker analysis of who fits whom.",
   path: "/resources/top-peo-companies",
   datePublished: "2026-05-15",
+  dateModified: "2026-09-05",
 });
 
 const FAQ_JSONLD = {
@@ -78,7 +79,7 @@ const TopPeoCompanies = () => (
           </h1>
         </Reveal>
         <Reveal delay={100}><p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80 md:text-xl">An independent broker's view of the top PEOs by category — national, modern, and industry-vertical — and how to know which fits.</p></Reveal>
-        <Reveal delay={150}><ArticleByline datePublished="May 2026" /></Reveal>
+        <Reveal delay={150}><ArticleByline datePublished="May 15, 2026" /></Reveal>
         <Reveal delay={200}>
           <div className="mt-8">
             <Button asChild size="lg" className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20">
@@ -94,7 +95,7 @@ const TopPeoCompanies = () => (
         <Reveal>
           <Link to="/resources" className="mb-8 inline-flex items-center text-sm font-semibold text-green-ink hover:text-green-ink/80"><ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources</Link>
           <p className="text-xl leading-8 text-foreground/85">
-            There are roughly 500 PEOs in the United States. Most "top PEO" rankings are based on revenue, sponsorship, or whoever paid for placement. This guide groups the providers by category and use case so you can quickly see which tier matches your company — then narrow from there. We don't take fees from any provider for being listed.
+            There are roughly 500 PEOs in the United States, serving over 200,000 businesses (<a href="https://napeo.org/intro-to-peos/industry-research-data/" target="_blank" rel="noopener noreferrer" className="text-green-ink hover:underline">NAPEO industry data</a>). Most "top PEO" rankings are based on revenue, sponsorship, or whoever paid for placement. This guide groups the providers by category and use case so you can quickly see which tier matches your company — then narrow from there. We don't take fees from any provider for being listed.
           </p>
         </Reveal>
       </div>

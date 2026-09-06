@@ -30,6 +30,7 @@ const ARTICLE = buildArticleJsonLd({
     "Hidden fees, renewal traps, and brokers funneling clients back to old employers. A Charlotte broker breaks down what the sales process hides.",
   path: "/blog/peo-industry-transparency",
   datePublished: "2026-05-19",
+  dateModified: "2026-09-05",
 });
 
 const FAQ_JSONLD = {

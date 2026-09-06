@@ -1,0 +1,364 @@
+# Pillar PEO Advisors — full text of the state employer guides and the HR audit checklist
+
+Source: https://pillarpeo.com. Last verified 2026-09-05. Pillar is not a law firm. This is general information, not legal advice.
+
+
+
+---
+
+## State Employer Guides
+URL: https://pillarpeo.com/resources/state-employer-guides
+
+RESOURCES · STATE EMPLOYER GUIDES
+
+State employer guides.
+
+Two states so far, organized by headcount, and nothing we haven't verified.
+
+What's here today
+
+Updated September 2026
+
+This is not a 50-state library. Pillar is built around North Carolina and South Carolina, and those are the two guides that exist right now. We add a state only after we've verified its thresholds against the primary source, not by copying a generic list. If you need a state that isn't here, tell us and we'll build it the same way.
+
+Available guides
+North Carolina
+
+E-Verify, workers' comp, and the headcount thresholds that trigger each — organized by how many people you employ.
+
+Read the guide →
+South Carolina
+
+E-Verify for every employer, workers' comp, wage-change notice, and the Pregnancy Accommodations Act — by headcount.
+
+Read the guide →
+
+Staff in both states? See North Carolina vs. South Carolina employment law for a side-by-side table, or start with the multi-state employer checklist.
+
+Last verified: 2026-09-05
+Pillar is not a law firm. This is general information, not legal advice.
+
+Not sure which rules apply to your headcount?
+
+An HR audit checks your actual registrations and thresholds against what the law requires — state by state.
+
+Book an HR audit · from $2,500
+See the HR audit
+
+PROOF SLOT
+
+PROOF SLOT — multi-state client quote referencing a specific state finding, with headcount.
+
+
+---
+
+## North Carolina Employer Guide 2026
+URL: https://pillarpeo.com/resources/state-employer-guides/north-carolina
+
+RESOURCES · STATE EMPLOYER GUIDES
+
+North Carolina: HR rules by headcount.
+
+Two thresholds we can state with a citation. Everything else, we verify before we tell you a number.
+
+What triggers at each headcount in North Carolina?
+
+Updated September 2026
+
+North Carolina sets two employer obligations by a specific employee count: workers' compensation coverage at three or more employees, and E-Verify enrollment at 25 or more employees under N.C. Gen. Stat. § 64-26. Most other obligations either apply to every employer regardless of size or depend on federal thresholds — we verify those against the current statute rather than estimate them here.
+
+1 employee
+
+Having even one employee in North Carolina triggers baseline obligations: new-hire reporting, payroll tax withholding and registration, and posting requirements.
+
+TODO — VERIFY
+
+The exact new-hire reporting window, the current required poster list, and final-pay deadlines under North Carolina's Wage and Hour Act are not stated here because we have not been given the current figures. We verify these against the NC Department of Labor during the audit before quoting a number or deadline.
+
+3+ employees
+Workers' compensation coverage. Once you reach three employees, North Carolina generally requires you to carry workers' compensation coverage. Corporate officers can count toward this total depending on how the business is structured.
+
+TODO — VERIFY
+
+Whether part-owners, contractors misclassified as employees, or officers who've opted out change this count for your specific structure is a facts-and-documents question. We check your actual headcount and entity structure against this threshold during the audit rather than assume it here.
+
+15+ employees
+
+Several federal anti-discrimination statutes (Title VII, the ADA) turn on a 15-employee threshold, counted under federal rules rather than North Carolina's own statute.
+
+TODO — VERIFY
+
+We reference the federal 15-employee threshold only in general terms here; the current counting method (including whether it's based on calendar weeks in the current or preceding year) should be confirmed against EEOC guidance for your specific facts, not assumed from this page.
+
+25+ employees
+E-Verify enrollment. Under N.C. Gen. Stat. § 64-26, employers with 25 or more employees must be enrolled in and use E-Verify to confirm work authorization for new hires. This is the single most commonly missed registration we find in the audit at growing firms that recently crossed this line.
+50+ employees
+
+Fifty employees is the federal FMLA threshold, and North Carolina layers its own registration and reporting obligations on top of federal ones as headcount grows.
+
+TODO — VERIFY
+
+The exact FMLA counting rule (50 employees within a 75-mile radius, counted for 20 or more workweeks) is federal law we haven't been asked to source here, and any North Carolina-specific obligations that attach at this headcount should be verified against the current NCDOL guidance rather than assumed. We confirm the applicable set during the audit.
+
+How this fits into the audit
+
+The HR audit checks your actual headcount, by state, against the thresholds that apply there, rather than assuming your company handbook or payroll provider already got it right. For firms with people in more than one state, start with the multi-state employer checklist, or see how North Carolina compares to South Carolina directly in the side-by-side comparison.
+
+This guide is reviewed quarterly as thresholds and citations are re-checked.
+
+Last verified: 2026-09-05
+Pillar is not a law firm. This is general information, not legal advice.
+
+Proof
+
+PROOF SLOT
+
+PROOF SLOT — North Carolina client quote describing an E-Verify or workers' comp finding, with headcount at the time.
+
+Questions North Carolina employers ask
+At what headcount does E-Verify apply in North Carolina?
+At what headcount do we need workers' compensation coverage in North Carolina?
+Do North Carolina's rules apply the same way to part-time and seasonal staff?
+We have staff in both North Carolina and South Carolina — do the same numbers apply?
+No. The two states set different thresholds for the same categories. See the North Carolina vs. South Carolina comparison for a side-by-side table.
+Know exactly which North Carolina rules apply to you.
+
+The audit checks your headcount against the current thresholds, not against a guess.
+
+Book an HR audit · from $2,500
+See all state guides
+
+PROOF SLOT
+
+PROOF SLOT — North Carolina client reference with headcount and a specific finding.
+
+
+---
+
+## South Carolina Employer Guide 2026
+URL: https://pillarpeo.com/resources/state-employer-guides/south-carolina
+
+RESOURCES · STATE EMPLOYER GUIDES
+
+South Carolina: HR rules by headcount.
+
+One rule applies from your very first hire. The rest scale with headcount.
+
+What triggers at each headcount in South Carolina?
+
+Updated September 2026
+
+South Carolina requires every employer, of any size, to verify work authorization within 3 business days of hire. Beyond that, obligations layer in as headcount grows: workers' compensation at four employees, and the Pregnancy Accommodations Act at 15 employees. A wage-change notice requirement applies regardless of headcount. Anything not listed here is an open question we verify before quoting.
+
+1 employee
+E-Verify, within 3 business days of hire. Unlike North Carolina, South Carolina does not set a headcount floor for this. Every employer must verify each new hire's work authorization within 3 business days, generally through E-Verify.
+7 days' advance written notice of a wage change. Also unaffected by headcount: South Carolina requires 7 days' advance written notice before you change an employee's rate of pay.
+
+TODO — VERIFY
+
+New-hire reporting windows, final-pay deadlines, and the current required poster list for South Carolina are not stated here because we haven't been given current figures. We verify these against SC DEW during the audit before quoting a number or deadline.
+
+4+ employees
+Workers' compensation coverage. Once you reach four employees, South Carolina generally requires workers' compensation coverage. This is a lower threshold than North Carolina's three, which is worth catching if you move headcount between the two states.
+
+TODO — VERIFY
+
+How officers, LLC members, and part-time staff count toward this threshold for your specific structure is a facts question we check during the audit rather than assume here.
+
+15+ employees
+Pregnancy Accommodations Act. At 15 or more employees, South Carolina requires reasonable accommodations for pregnancy, childbirth, and related medical conditions.
+Federal 15-employee threshold. Title VII and the ADA also turn on 15 employees, counted under federal rules.
+
+TODO — VERIFY
+
+The exact counting method behind these thresholds (which weeks count, how leased or temporary staff factor in) should be confirmed against current EEOC guidance for your specific facts, not assumed from this page.
+
+50+ employees
+
+Fifty employees is the federal FMLA threshold. Whether South Carolina layers any state-specific obligation on top at this headcount is not something we assert here.
+
+TODO — VERIFY
+
+We confirm any South Carolina-specific obligations attaching at 50 employees during the audit rather than list them from memory.
+
+How this fits into the audit
+
+The HR audit checks your actual headcount and hiring dates against these thresholds — including the 3-business-day E-Verify window, which is easy to miss when hiring moves fast. For firms with people in both states, start with the multi-state employer checklist, or see South Carolina next to North Carolina in the side-by-side comparison.
+
+This guide is reviewed quarterly as thresholds and citations are re-checked.
+
+Last verified: 2026-09-05
+Pillar is not a law firm. This is general information, not legal advice.
+
+Proof
+
+PROOF SLOT
+
+PROOF SLOT — South Carolina client quote describing an E-Verify timing or workers' comp finding, with headcount at the time.
+
+Questions South Carolina employers ask
+Does E-Verify apply to small employers in South Carolina?
+At what headcount does workers' compensation apply in South Carolina?
+Do we have to notify employees before changing their pay?
+When does the Pregnancy Accommodations Act apply?
+At 15 or more employees. Below that headcount, other federal or state protections may still apply — that's worth confirming for your specific situation rather than assuming this Act is the only rule in play.
+Know exactly which South Carolina rules apply to you.
+
+The audit checks your hire dates and headcount against the current thresholds, not against a guess.
+
+Book an HR audit · from $2,500
+See all state guides
+
+PROOF SLOT
+
+PROOF SLOT — South Carolina client reference with headcount and a specific finding.
+
+
+---
+
+## NC vs. SC Employment Law
+URL: https://pillarpeo.com/resources/nc-vs-sc-employment-law
+
+RESOURCES · MULTI-STATE
+
+North Carolina vs. South Carolina employment law.
+
+For firms with staff in both states, the same headcount can mean two different answers.
+
+How do North Carolina and South Carolina compare on employer thresholds?
+
+Updated September 2026
+
+The two states differ on the figures we can verify: South Carolina requires E-Verify from every employer within 3 business days of hire, while North Carolina's E-Verify duty starts at 25 employees. Workers' comp attaches at 3 employees in North Carolina and 4 in South Carolina. Rows marked "Verify" are open questions we confirm during the audit rather than guess.
+
+Topic	North Carolina	South Carolina
+E-Verify	Required at 25+ employees (N.C. Gen. Stat. § 64-26)	Required for all employers, within 3 business days of hire
+Workers' compensation	Required at 3+ employees	Required at 4+ employees
+Advance notice of wage change	Verify →	7 days' advance written notice required
+Pregnancy accommodation	Verify →	Required at 15+ employees (Pregnancy Accommodations Act)
+New-hire reporting window	Verify →	Verify →
+Final pay deadlines	Verify →	Verify →
+
+TODO — VERIFY
+
+Rows marked "Verify" (new-hire reporting windows, final pay deadlines, and any remaining state-specific thresholds) are not stated here because we have not been given current figures for one or both states. We confirm these against NCDOL and SC DEW during the audit before quoting a number or deadline.
+
+Why the difference matters
+
+The most consequential gap is E-Verify timing. A firm that's compliant in North Carolina because it has fewer than 25 employees can still be out of compliance in South Carolina the moment it hires its first person there, because South Carolina's duty doesn't wait for a headcount threshold — it applies from the first hire, within 3 business days. Firms that grow into South Carolina from a North Carolina base are the group most likely to miss this, because nothing changed on the North Carolina side to prompt a second look.
+
+Workers' compensation moves the other direction but by a smaller margin: North Carolina's 3-employee threshold is one lower than South Carolina's 4. A firm sitting at exactly 3 or 4 total employees split across both states needs to look at each state's headcount separately, not at a combined number.
+
+How the audit handles multi-state employers
+
+The HR audit checks registrations, E-Verify enrollment, and coverage state by state, against the headcount actually working there — not against a single combined number. If you're opening a location in the other state, start with the multi-state employer checklist, then read the full North Carolina and South Carolina guides for the headcount-by-headcount breakdown.
+
+This comparison is reviewed quarterly as thresholds and citations are re-checked.
+
+Last verified: 2026-09-05
+Pillar is not a law firm. This is general information, not legal advice.
+
+Questions multi-state employers ask
+If we're compliant in North Carolina, are we automatically compliant in South Carolina?
+Which state's workers' comp threshold applies if we have employees in both?
+What should we check first if we're opening a location in the other state?
+Start with registration and E-Verify timing, since those attach fastest and are the most commonly missed. The multi-state employer checklist walks through the fuller sequence.
+Staff in both states? Get one clear answer, not two guesses.
+
+The audit checks each state's thresholds against your actual headcount there.
+
+Book an HR audit · from $2,500
+See the multi-state checklist
+
+PROOF SLOT
+
+PROOF SLOT — multi-state client reference describing a North Carolina/South Carolina finding, with headcount in each state.
+
+
+---
+
+## HR Audit Checklist
+URL: https://pillarpeo.com/resources/hr-audit-checklist
+
+RESOURCES · HR AUDIT CHECKLIST
+
+The HR audit checklist, in full.
+
+Nine areas, the checks inside each one, free to read and free to download. No email required.
+
+What does an HR audit actually check?
+
+Updated September 2026
+
+An HR audit checks nine areas of how your company actually operates: hiring paperwork, classification and pay, the handbook, payroll tax registrations, benefits and ACA, leave, records, safety, and how you separate people. Below is the full checklist. You can read it here or download it as a plain text file.
+
+Download the checklist (.md)
+
+1. Hiring, I-9, E-Verify
+Offer letters are consistent and say what the pay basis actually is
+I-9s are completed within the required window for every hire
+I-9s are stored separately from personnel files
+E-Verify is used everywhere it is required, and nowhere it creates unwanted obligations
+Background check process and forms are consistent across hires
+2. Classification and wage-hour
+Exempt/non-exempt calls are based on duties, not job title or pay alone
+Contractor classifications hold up against how the work is actually managed
+Overtime is calculated by workweek, not averaged
+Travel time and on-call time are addressed in writing
+Timekeeping records match what people were actually paid for
+3. Handbook and policies
+The handbook matches how the company actually operates today
+Known gaps (leave, remote work, discipline) are addressed, not silent
+Nothing in the handbook creates promises the company can't defend
+Acknowledgment forms are signed and on file for current staff
+4. Payroll and tax registrations
+The company is registered for withholding and unemployment in every state where someone actually works
+New-hire reporting is happening in every one of those states
+Remote and traveling staff have been checked against where they were physically working
+5. Benefits, ACA, COBRA
+Eligibility as written in plan documents matches eligibility as run in practice
+ACA offer and reporting obligations are being met on time
+COBRA notices go out within the required window, every time
+6. Leave and accommodations
+FMLA process is followed where the company is covered
+State-specific leave rules are identified for every state with employees
+Accommodation requests (pregnancy, disability) have a documented process
+7. Records, retention, privacy
+Personnel files are organized and complete
+Medical information is stored separately from the personnel file
+Retention schedules match legal minimums for each record type
+Access to personnel records is limited to people who need it
+8. Safety and workers' comp
+Workers' comp coverage is active and correct for every state with employees
+Required posters are current and posted where employees can see them
+Injuries are reported and logged on the required timeline
+9. Offboarding and final pay
+Separation is documented consistently, voluntary or not
+Final pay goes out within the deadline for the state the person worked in
+Unemployment claims get a timely, accurate response
+Reference practice is consistent and low-risk
+What to do with what you find
+
+If most checks come back clean, good — keep this on a yearly cadence. If you find gaps, especially in classification, registrations, or records, that's exactly what the paid HR audit is built to score and document properly, so you have something written to act on rather than a hunch.
+
+If you employ people in North Carolina or South Carolina, pair this checklist with the North Carolina employer guide or South Carolina employer guide, and if you hire across state lines generally, see the multi-state employer checklist.
+
+Last verified: 2026-09-05
+Pillar is not a law firm. This is general information, not legal advice.
+
+Questions about the HR audit checklist
+What is an HR audit checklist?
+Is this the same as the paid HR audit?
+Do I need a lawyer to use this checklist?
+How often should we run through this?
+At least once a year, and again after any meaningful change: a new state, a headcount jump, a benefits renewal, or a leadership change in HR.
+Want it scored instead of self-checked?
+
+The paid HR audit runs these same nine areas against your actual documents and gives you a written, scored report in 15 business days.
+
+Book an HR audit · from $2,500
+See the HR audit
+
+PROOF SLOT
+
+PROOF SLOT — client quote describing what the scored report changed about how they saw their risk.

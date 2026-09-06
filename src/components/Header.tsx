@@ -33,8 +33,18 @@ const locations = [
   ...metros.map((m) => ({ label: m.navLabel, href: `/hr-consulting/${m.slug}` })),
 ];
 
+const resourcesMenu = [
+  { label: "All resources", href: "/resources" },
+  { label: "HR audit checklist", href: "/resources/hr-audit-checklist" },
+  { label: "State employer guides", href: "/resources/state-employer-guides" },
+  { label: "NC vs. SC employment law", href: "/resources/nc-vs-sc-employment-law" },
+  { label: "Multi-state checklist", href: "/resources/multi-state-employer-checklist" },
+  { label: "HR Risk Score", href: "/tools/hr-risk-score" },
+  { label: "PEO cost calculator", href: "/tools/peo-cost-calculator" },
+  { label: "Case studies", href: "/case-studies" },
+];
+
 const flatLinks = [
-  { label: "Resources", href: "/resources" },
   { label: "About", href: "/about" },
 ];
 
@@ -49,6 +59,7 @@ const Header = () => {
     { label: "Services", items: services },
     { label: "Industries", items: industries },
     { label: "Locations", items: locations },
+    { label: "Resources", items: resourcesMenu },
   ].filter((d) => d.items.length > 0);
 
   return (

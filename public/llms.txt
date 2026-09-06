@@ -36,14 +36,34 @@ Full price list: /pricing.md
 - [Charlotte, NC](/hr-consulting/charlotte-nc): City ordinance handbook language and the NC/SC cross-border problem.
 - [Rock Hill & Fort Mill, SC](/hr-consulting/rock-hill-fort-mill-sc): South Carolina E-Verify, workers' comp and wage-notice rules.
 - [Raleigh-Durham, NC](/hr-consulting/raleigh-durham-nc): RTP contractor classification and university spin-out first hires.
-- [PEO Broker — North Carolina](/peo-broker-north-carolina)
-- [PEO Broker — South Carolina](/peo-broker-south-carolina)
-- [Do We Need a PEO?](/do-we-need-a-peo): Help for first-time PEO buyers.
+- [Case Studies](/case-studies): Format and permission policy. No case studies published yet.
+
+## Compliance guides and tools
+
+- [State Employer Guides](/resources/state-employer-guides): North Carolina and South Carolina only today. More states added as they are verified.
+- [North Carolina Employer Guide 2026](/resources/state-employer-guides/north-carolina): HR rules organised by headcount. E-Verify at 25+ employees (NCGS 64-26); workers' compensation at 3+ employees.
+- [South Carolina Employer Guide 2026](/resources/state-employer-guides/south-carolina): E-Verify for all employers within 3 business days of hire; workers' compensation at 4+ employees; 7 days' advance written notice of a change in wages; Pregnancy Accommodations Act at 15+ employees.
+- [NC vs. SC Employment Law](/resources/nc-vs-sc-employment-law): Side-by-side table for firms with staff in both states.
+- [Multi-State Employer Checklist](/resources/multi-state-employer-checklist): What to do the day you hire in a new state.
+- [HR Audit Checklist](/resources/hr-audit-checklist): The nine areas and their checks, ungated, with a downloadable version.
+- [E-Verify in North Carolina](/resources/e-verify-north-carolina): Required at 25 or more employees under NCGS 64-26.
+- [E-Verify in South Carolina](/resources/e-verify-south-carolina): Required of all employers within 3 business days of hire.
+- [NC Handbook Requirements](/resources/nc-handbook-requirements)
+- [SC Handbook Requirements](/resources/sc-handbook-requirements)
+- [Do We Need a PEO?](/resources/do-we-need-a-peo): Readiness self-assessment for first-time PEO buyers.
+- [HR Risk Score](/tools/hr-risk-score): Nine-question assessment mapped to the nine audit areas. Score shown immediately.
+- [PEO Cost Calculator](/tools/peo-cost-calculator): Estimate range with stated assumptions. No savings promised.
+
+## Resources
+
 - [Resources](/resources): Guides on PEO selection, pricing, benefits and switching.
-- [HR Headache Score](/hr-headache-score): 15-question assessment of HR pain points.
 - [About](/about): Background on Pillar and the leadership team.
 - [Caleb Sherrill](/about/caleb-sherrill): Founder background.
 - [Contact](/contact): Book an HR audit or send a message.
+
+## Editorial policy
+
+Pillar is not a law firm and publishes no legal advice. Every state figure on this site carries a "Last verified" date and cites the statute or agency. Where a threshold has not been verified, the page says so rather than guessing. Pillar publishes no testimonials, client names or metrics it cannot evidence.
 
 ## Contact
 
