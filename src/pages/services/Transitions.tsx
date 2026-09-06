@@ -38,7 +38,7 @@ const Transitions = () => (
   <>
     <SEOHead
       title="PEO Exit, Switch and System Transitions"
-      description="Fixed-price transitions for firms moving into, out of or between a PEO, plus HRIS migrations and payroll switches. $3,000–$10,000, quoted before the work starts."
+      description={`Fixed-price transitions for firms moving into, out of or between a PEO, plus HRIS migrations and payroll switches. ${pricing.transitions.range.replace(" fixed", "")}, quoted before the work starts.`}
       canonical={`${SITE_URL}/services/transitions`}
       jsonLd={jsonLd}
     />

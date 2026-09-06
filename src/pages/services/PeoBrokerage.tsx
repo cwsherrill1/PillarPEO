@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { pricing } from "@/data/pricing";
 import {
   MessageSquare,
   FileText,
@@ -102,7 +103,7 @@ const jsonLd = {
         "@type": "Offer",
         priceCurrency: "USD",
         price: "0",
-        description: "$0 to the client. Provider commission disclosed in writing.",
+        description: `${pricing.brokerage.price}. Provider commission disclosed in writing.`,
       },
     },
     {
@@ -254,7 +255,7 @@ const PeoBrokerage = () => (
         single one dominates.
       </p>
       <p>
-        At Pillar, brokerage is $0 to the client. The provider pays the commission and
+        At Pillar, brokerage is {pricing.brokerage.price}. The provider pays the commission and
         we disclose it in writing before any placement. Our{" "}
         <Link to="/how-we-get-paid" className="font-semibold text-green-ink hover:underline">
           how we get paid

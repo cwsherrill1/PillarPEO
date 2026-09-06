@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { pricing } from "@/data/pricing";
 import SEOHead from "@/components/SEOHead";
 import ServiceHero from "@/components/services/ServiceHero";
 import ServiceCta from "@/components/services/ServiceCta";
@@ -60,7 +61,7 @@ const FinancialAdvisors = () => (
   <>
     <SEOHead
       title="HR for Financial Advisors and RIAs"
-      description="Where supervision overlaps HR, licensing and registration record-keeping, outside business activity policies, and deferred comp and producer pay plans. Fixed-price HR audits from $2,500."
+      description={`Where supervision overlaps HR, licensing and registration record-keeping, outside business activity policies, and deferred comp and producer pay plans. Fixed-price HR audits from ${pricing.audit.from}.`}
       canonical={`${SITE_URL}/industries/financial-advisors`}
       jsonLd={jsonLd}
     />
