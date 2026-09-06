@@ -97,7 +97,7 @@ export const SwitchTimeline = ({ phases }: { phases: Phase[] }) => (
       <div className="absolute left-0 right-0 top-5 hidden h-0.5 bg-border md:block" aria-hidden="true" />
       {phases.map((p, i) => (
         <li key={i} className="relative flex flex-col items-center text-center md:items-start md:text-left">
-          <div className="z-10 flex h-10 w-10 items-center justify-center rounded-full bg-accent font-heading text-base font-800 text-green-ink-foreground shadow-md">
+          <div className="z-10 flex h-10 w-10 items-center justify-center rounded-full bg-accent font-heading text-base font-800 text-accent-foreground shadow-md">
             {i + 1}
           </div>
           <div className="mt-3 text-xs font-700 uppercase tracking-wider text-green-ink">{p.weeks}</div>
