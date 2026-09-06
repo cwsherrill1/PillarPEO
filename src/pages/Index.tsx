@@ -76,8 +76,9 @@ const Index = () => {
               </h1>
 
               <p className="mt-6 max-w-xl text-lg leading-relaxed text-primary-foreground/80">
-                HR audits, projects, fractional support, and PEO or HRIS transitions for law, accounting, engineering, and medical firms — in every state your people work in. Headquartered in Charlotte.
+                HR audits, projects, fractional support, and PEO or HRIS transitions for firms of 10–150 people — in every state your people work in. Headquartered in Charlotte.
               </p>
+
 
               <div className="mt-10 flex flex-col gap-4 sm:flex-row">
                 <Button
