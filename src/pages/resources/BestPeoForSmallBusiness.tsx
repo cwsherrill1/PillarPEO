@@ -71,7 +71,7 @@ const BestPeoForSmallBusiness = () => (
             <span className="text-accent"> — A Broker's 2026 Comparison</span>
           </h1>
         </Reveal>
-        <Reveal delay={100}><p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80 md:text-xl">Six top PEOs compared by an independent broker who quotes them every week. Real fit, real pricing, real watchouts.</p></Reveal>
+        <Reveal delay={100}><p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80 md:text-xl">Six top PEOs compared by an independent broker, from the proposals and contracts we review. Real fit, real pricing, real watchouts.</p></Reveal>
         <Reveal delay={150}><ArticleByline datePublished="May 15, 2026" /></Reveal>
         <Reveal delay={200}>
           <div className="mt-8">
