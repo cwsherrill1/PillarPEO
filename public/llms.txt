@@ -53,11 +53,22 @@ Prices are quoted before the work starts and are not published on the site.
 - [HR Risk Score](/tools/hr-risk-score): Nine-question assessment mapped to the nine audit areas. Score shown immediately.
 - [PEO Cost Calculator](/tools/peo-cost-calculator): Estimate range with stated assumptions. No savings promised.
 
+## How PEO pricing actually works
+
+- [How PEO Pricing Actually Works](/resources/peo-pricing-explained): Hub for the PEO pricing cluster.
+- [Why Your PEO Renewal Jumped](/resources/peo-honeymoon-pricing): Introductory pricing, repricing at renewal, switching-cost leverage.
+- [The SUTA Line Nobody Checks](/resources/peo-suta-rates): Pooled unemployment rates, taxable wage base vs gross payroll, experience rating on entry and exit.
+- [PEO Admin Fees](/resources/peo-admin-fees): Per employee per month vs percentage of payroll; gross vs taxable basis; unbundled quotes and sample invoices.
+- [PEO Contract Terms](/resources/peo-contract-terms): Term, auto-renewal, notice windows, termination fees, plan-year exits.
+- [When a PEO Is the Wrong Answer](/resources/when-a-peo-is-the-wrong-answer): Four cases where a PEO adds cost without removing work, with a labelled illustrative example.
+- [The Free PEO Renewal Review](/resources/peo-renewal-review): Free renewal benchmark starting about 120 days out; provider commission disclosed.
+
 ## Resources
 
 - [Resources](/resources): Guides on PEO selection, pricing, benefits and switching.
 - [About](/about): Background on Pillar and the leadership team.
 - [Caleb Sherrill](/about/caleb-sherrill): Founder background.
+- [Partners](/partners): Referral and white-label HR partnerships for fractional CFOs, COOs and benefits brokers.
 - [Contact](/contact): Book an HR audit or send a message.
 
 ## Editorial policy
