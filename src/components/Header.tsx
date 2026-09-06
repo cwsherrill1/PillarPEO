@@ -50,6 +50,14 @@ const resourcesMenu = [
   { label: "Case studies", href: "/case-studies" },
 ];
 
+const partners = [
+  { label: "Partner overview", href: "/partners" },
+  { label: "For fractional CFOs", href: "/partners/fractional-cfos" },
+  { label: "For benefits brokers", href: "/partners/benefits-brokers" },
+  { label: "White-label delivery", href: "/partners/white-label" },
+  { label: "Client one-pager", href: "/partners/client-one-pager" },
+];
+
 const flatLinks = [
   { label: "About", href: "/about" },
 ];
@@ -63,9 +71,10 @@ const Header = () => {
 
   const dropdowns = [
     { label: "Services", items: services },
+    { label: "Resources", items: resourcesMenu },
+    { label: "Partners", items: partners },
     { label: "Industries", items: industries },
     { label: "Locations", items: locations },
-    { label: "Resources", items: resourcesMenu },
   ].filter((d) => d.items.length > 0);
 
   return (
