@@ -391,7 +391,7 @@ as a new employer on exit can be expensive.
 ## Admin fees — /resources/peo-admin-fees
 Two models: per employee per month, or a percentage of payroll. PEPM tracks the provider's actual
 workload (number of people). A percentage rises with every raise and promotion for no added
-service, which penalises professional-services firms whose headcount is flat and whose
+service, which penalises employers whose headcount is flat and whose
 compensation is not. If a percentage is used, ask what basis: gross payroll includes pre-tax
 retirement and insurance deferrals; taxable wages do not. Always demand an unbundled quote and a
 redacted sample invoice before signing.

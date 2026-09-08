@@ -27,7 +27,7 @@ const jsonLd = {
       ],
       url: `${SITE_URL}/hr-consulting`,
       description:
-        "Fixed-price HR audits, HR projects, fractional HR and PEO transitions for professional-services firms across the Carolinas.",
+        "Fixed-price HR audits, HR projects, fractional HR and PEO transitions for firms across the Carolinas.",
     },
   ],
 };
@@ -50,7 +50,7 @@ const HrConsulting = () => (
     <Section title="Where we work, and what that means">
       <UpdatedLine />
       <p className="text-lg leading-8 text-foreground/85">
-        Pillar is a Charlotte-based HR advisory firm serving professional-services firms of
+        Pillar is a Charlotte-based HR advisory and PEO brokerage firm serving firms of
         10 to 150 people. Most of our clients are within an hour of Uptown, but the work is
         not limited to the Carolinas: if you employ someone in another state, that state's
         rules are inside the scope and inside the fixed price.

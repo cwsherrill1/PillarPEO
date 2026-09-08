@@ -56,7 +56,7 @@ const steps = [
   },
   {
     icon: BarChart3,
-    title: "Custom PEO comparison delivered",
+    title: "Clear next steps: audit, project, fractional HR, or PEO comparison",
   },
 ];
 
@@ -116,7 +116,7 @@ const Contact = () => {
     <>
       <SEOHead
         title="Contact Us"
-        description="Get in touch with Pillar PEO Advisors. Schedule a free consultation or send us a message about your PEO needs."
+        description="Get in touch with Pillar PEO Advisors. Schedule a free consultation or send us a message about your HR or PEO needs."
         jsonLd={contactJsonLd}
       />
       {/* Hero */}
@@ -124,11 +124,11 @@ const Contact = () => {
         <div className="container text-center">
           <Reveal>
             <h1 className="font-heading text-4xl md:text-5xl font-800 text-primary-foreground">
-              Let's find the right PEO for your team.
+              Tell us what is going on with your HR.
             </h1>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-primary-foreground/80">
-              No sales pitch, no obligation, just an honest conversation about
-              what's best for your business.
+              HR audits, projects, fractional HR, transitions, or a free PEO
+              comparison. No sales pitch, no obligation.
             </p>
             <div className="mt-6">
               <Button
@@ -137,7 +137,7 @@ const Contact = () => {
                 className="bg-accent text-accent-foreground hover:bg-accent/90 font-heading font-700 text-base px-8"
               >
                 <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
-                  Schedule a Call Instead
+                  Book an HR audit
                 </a>
               </Button>
             </div>

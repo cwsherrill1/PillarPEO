@@ -202,7 +202,7 @@ const PeoHoneymoonPricing = () => (
     <ServiceCta
       heading="Renewal notice in hand? Let us read it before you sign it."
       body="We will show you which component moved, what the market would charge for the same census, and whether your notice window is still open."
-      proof="anonymised renewal increase, professional-services firm, with the component that moved and the outcome."
+      proof="anonymised renewal increase, client firm, with the component that moved and the outcome."
       secondary={{ label: "The free renewal review", href: "/resources/peo-renewal-review" }}
     />
   </>

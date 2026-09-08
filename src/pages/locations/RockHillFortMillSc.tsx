@@ -154,7 +154,7 @@ const RockHillFortMillSc = () => (
 
     <Section title="The firms we see here" alt>
       <p>
-        York and Lancaster County have grown a professional-services base of their own
+        York and Lancaster County have grown a professional employer base of their own
         rather than remaining a bedroom community. The recurring types:
       </p>
       <ul className="space-y-3">

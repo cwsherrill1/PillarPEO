@@ -15,7 +15,7 @@ export const organization = {
   name: "Pillar PEO Advisors",
   url: SITE_URL,
   description:
-    "HR advisory for professional-services firms, nationwide, from Charlotte. Fixed-price HR audits, HR projects, fractional HR, and clean PEO transitions.",
+    "Independent HR advisory and PEO brokerage, nationwide, from Charlotte. Fixed-price HR audits, HR projects, fractional HR, and clean PEO transitions.",
   telephone: "+1-704-787-1261",
   email: "info@pillarpeo.com",
   image: `${SITE_URL}/hero-team.jpg`,

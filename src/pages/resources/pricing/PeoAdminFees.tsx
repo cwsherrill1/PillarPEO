@@ -10,7 +10,7 @@ import { SITE_URL, breadcrumb, articleSchema } from "@/data/organization";
 const faqs: Faq[] = [
   {
     q: "Is per-employee-per-month better than a percentage of payroll?",
-    a: "For most professional-services firms, yes, because headcount grows slowly while payroll grows every year through raises and promotions. A percentage model charges you more for paying your people better, which is not a service you are receiving.",
+    a: "For most firms with stable headcount, yes, because headcount grows slowly while payroll grows every year through raises and promotions. A percentage model charges you more for paying your people better, which is not a service you are receiving.",
   },
   {
     q: "What is the difference between gross payroll and taxable wages as a fee basis?",
@@ -92,8 +92,8 @@ const PeoAdminFees = () => (
         </Bullet>
       </ul>
       <p>
-        For a professional-services firm this is not a rounding difference.
-        Headcount at a stable law or CPA firm might not move for two years while
+        For a firm with stable headcount this is not a rounding difference.
+        Headcount at a stable firm might not move for two years while
         total compensation rises every single year through raises, bonuses and
         promotions. On a percentage model, your administrative cost rises with
         every one of those events, for no additional service.

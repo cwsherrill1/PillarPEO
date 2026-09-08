@@ -46,7 +46,7 @@ const questions = [
   },
   {
     q: "Can you give me three client references in my industry and size range?",
-    a: "Ask for references who match your profile. A PEO that's excellent for a 200-person manufacturing company may be a poor fit for a 40-person professional services firm. Ask for references with similar headcount, multi-state presence, or industry, and call them.",
+    a: "Ask for references who match your profile. A PEO that's excellent for a 200-person manufacturing company may be a poor fit for a 40-person office-based firm. Ask for references with similar headcount, multi-state presence, or industry, and call them.",
   },
 ];
 
