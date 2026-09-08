@@ -365,7 +365,7 @@ const EmployeeHealthBenefitsOptions = () => (
             Not sure which path fits your team?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">
-            We'll walk through all eight options with you and recommend the structure that fits your business, independent, no pressure, free forever.
+            We'll walk through all eight options with you and recommend the structure that fits your business. The comparison is free to you; if you place with a provider, the provider pays us a commission we disclose in writing.
           </p>
           <div className="mt-8">
             <Button

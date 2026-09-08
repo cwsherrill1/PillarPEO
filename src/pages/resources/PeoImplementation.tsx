@@ -156,7 +156,7 @@ const PeoImplementation = () => (
             About to go through a PEO implementation?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">
-            Pillar stays involved from first conversation to first payroll on a new platform. Talk to an advisor to get a realistic picture of what this looks like for your company.
+            Pillar stays involved from first conversation to first payroll on a new platform. Send us your census and timeline and we'll give you a realistic picture of what this looks like for your company.
           </p>
           <div className="mt-8">
             <Button asChild size="lg" className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20">
