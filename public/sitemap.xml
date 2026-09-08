@@ -27,7 +27,32 @@
   </url>
   <url>
     <loc>https://pillarpeo.com/services/transitions</loc>
-    <lastmod>2026-09-05</lastmod>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pillarpeo.com/services/transitions/peo-exit</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pillarpeo.com/services/transitions/peo-switch</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pillarpeo.com/services/transitions/peo-implementation</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pillarpeo.com/services/transitions/hris-migration</loc>
+    <lastmod>2026-09-08</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://pillarpeo.com/services/transitions/payroll-provider-switch</loc>
+    <lastmod>2026-09-08</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>

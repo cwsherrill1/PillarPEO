@@ -8,6 +8,14 @@ import UpdatedLine from "@/components/services/UpdatedLine";
 import { transitionTypes } from "@/data/pricing";
 import { ORG_REF, SITE_URL, breadcrumb } from "@/data/organization";
 
+const transitionSlugs: Record<string, string> = {
+  "PEO exit": "peo-exit",
+  "PEO switch": "peo-switch",
+  "PEO implementation": "peo-implementation",
+  "HRIS migration": "hris-migration",
+  "Payroll provider switch": "payroll-provider-switch",
+};
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
@@ -64,11 +72,22 @@ const Transitions = () => (
               <Card className="h-full border-l-4 border-l-accent card-elevated hover-lift">
                 <CardContent className="p-6">
                   <h3 className="font-heading text-lg font-700 text-foreground">
-                    {t.name}
+                    <Link
+                      to={`/services/transitions/${transitionSlugs[t.name]}`}
+                      className="hover:text-green-ink"
+                    >
+                      {t.name}
+                    </Link>
                   </h3>
                   <p className="mt-2 text-base leading-relaxed text-muted-foreground">
                     {t.desc}
                   </p>
+                  <Link
+                    to={`/services/transitions/${transitionSlugs[t.name]}`}
+                    className="mt-3 inline-block text-sm font-semibold text-green-ink hover:underline"
+                  >
+                    How this one runs
+                  </Link>
                 </CardContent>
               </Card>
             </Reveal>
