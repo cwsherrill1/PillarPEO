@@ -336,7 +336,7 @@ const Resources = () => {
     <>
       <SEOHead
         title="Resources"
-        description="Free PEO guides, checklists, and comparisons built for employers, not PEO sales teams. Make a confident decision."
+        description="Free PEO guides, checklists, and comparisons written for the employer side of the table. Make a confident decision."
         jsonLd={faqJsonLd}
         
       />

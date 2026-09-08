@@ -225,7 +225,7 @@ const PeoVsAsoVsInhouse = () => (
             Let's figure out which model fits your company.
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">
-            Pillar's discovery process takes about 30 minutes. You'll leave with a specific answer for your headcount and states, not a sales pitch.
+            Pillar's discovery process takes about 30 minutes. You'll leave with a specific answer for your headcount and states.
           </p>
           <div className="mt-8">
             <Button asChild size="lg" className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20">
