@@ -132,7 +132,7 @@ const PeoForStartups = () => (
       </ul>
     </Section>
 
-    <Section title="What Investors Actually Care About">
+    <Section title="What Investors Look For">
       <p>From conversations with diligence teams at Series A and Series B firms:</p>
       <ul className="space-y-2">
         <Bullet>Multi-state compliance is the #1 hidden risk in early-stage acquisitions. PEO eliminates it.</Bullet>
@@ -141,7 +141,7 @@ const PeoForStartups = () => (
       </ul>
     </Section>
 
-    <Section title="Series A vs. Series B: What Diligence Actually Checks" alt>
+    <Section title="Series A vs. Series B: What Diligence Checks" alt>
       <p>At Series A, the bar is basic: correct worker classification, active workers' comp coverage, and payroll tax registration in every state where you employ people. Most startups can clear it.</p>
       <p>By Series B the scrutiny tightens. Institutional investors want to see employment practices liability insurance, clean multi-state payroll tax documentation, and proof that benefits administration isn't creating compliance gaps. A PEO that has done this before handles it quietly, so founders aren't scrambling between rounds.</p>
       <p>If you're a Charlotte-area startup, our <Link to="/hr-consulting/charlotte-nc" className="text-green-ink hover:underline">Charlotte PEO broker page</Link> walks through what local representation looks like for growth-stage companies.</p>

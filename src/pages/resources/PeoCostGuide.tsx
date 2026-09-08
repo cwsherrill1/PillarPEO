@@ -117,7 +117,7 @@ const PeoCostGuide = () => (
       <p className="mt-4">For example, a 25-person company at $65K average salary pays roughly $45,000/year on PEPM ($150 × 25 × 12) or $40,625/year on a 2.5% percentage model. The cheaper option flips at higher salaries: always model both.</p>
     </Section>
 
-    <Section title="What's Actually Bundled in That Number">
+    <Section title="What Is Bundled Into That Number">
       <p>The headline rate usually includes:</p>
       <ul className="space-y-2">
         {["Payroll processing and tax filing (federal, state, local)", "W-2 and 1099 preparation", "HR support line and basic compliance guidance", "Online HR platform / employee self-service", "Onboarding workflows and document management", "Workers' comp policy administration"].map((t) => <Bullet key={t}>{t}</Bullet>)}

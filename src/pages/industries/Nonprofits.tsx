@@ -177,7 +177,7 @@ const Nonprofits = () => (
     <ServiceCta
       heading="A fixed-price HR audit your board can read."
       body="Scored findings, a remediation plan, and a price quoted before any work starts."
-      proof="nonprofit reference with budget band and what the audit unlocked."
+      proof="nonprofit reference with budget band and what the audit changed."
       secondary={{ label: "See all industries", href: "/industries" }}
     />
   </>

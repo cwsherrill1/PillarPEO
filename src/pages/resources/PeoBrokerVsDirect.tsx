@@ -123,7 +123,7 @@ const PeoBrokerVsDirect = () => (
       </div>
     </Section>
 
-    <Section title="When Going Direct Actually Makes Sense" alt>
+    <Section title="When Going Direct Is the Better Call" alt>
       <p>Honest take: there are two scenarios where you should skip a broker:</p>
       <ul className="space-y-2">
         <Bullet><strong className="text-foreground">You already know exactly which PEO you want.</strong> If you're a 12-person tech startup convinced Justworks is the right answer, calling them direct is fine. A broker won't add much.</Bullet>

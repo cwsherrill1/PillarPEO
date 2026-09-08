@@ -171,7 +171,7 @@ const PeoIndustryTransparency = () => (
 
     <Section title="The renewal trap" alt>
       <p>
-        Here is the pattern that plays out constantly. You sign, you have a reasonable first year,
+        This pattern repeats. You sign, you have a reasonable first year,
         and then renewal arrives with a 15 to 20 percent increase. The explanation is usually
         "market conditions." Sometimes that is true. Often it is also a bet that switching feels
         too hard to bother. Renewal is a leverage point, not a foregone conclusion. Going to

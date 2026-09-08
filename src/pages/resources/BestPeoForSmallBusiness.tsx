@@ -128,7 +128,7 @@ const BestPeoForSmallBusiness = () => (
       </div>
     </section>
 
-    <Section title="What Actually Drives Cost Differences" alt>
+    <Section title="What Drives the Cost Differences" alt>
       <p>The headline PEPM rate is the smallest part of the comparison. The bigger swings come from:</p>
       <ul className="space-y-2">
         <li className="flex items-start gap-2"><span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-accent" /><span><strong className="text-foreground">Workers' comp class & pool:</strong> Same job, same state can vary 30%+ between PEOs depending on each pool's loss ratio.</span></li>

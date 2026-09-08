@@ -178,7 +178,7 @@ const resources = [
   },
   {
     icon: HelpCircle,
-    title: "Employee Health Benefits Options: What Employers Actually Offer",
+    title: "Employee Health Benefits Options: What Employers Offer",
     desc: "Fully-insured, level-funded, ICHRA, PEO master plans, and association health plans: how each works and when it fits.",
     category: "Guide",
     href: "/resources/employee-health-benefits-options",

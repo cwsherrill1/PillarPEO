@@ -20,7 +20,7 @@ const faqs = [
 ];
 
 const ARTICLE = buildArticleJsonLd({
-  title: "PEO Benefits Explained: What You Actually Get",
+  title: "PEO Benefits Explained: What You Get",
   description: "PEO benefits explained: health, 401(k), workers' comp, EAP, and ancillary perks. An honest breakdown of what's included, what's better, and where PEOs underdeliver.",
   path: "/resources/peo-benefits",
   datePublished: "2026-05-15",
@@ -51,7 +51,7 @@ const Bullet = ({ children }: { children: React.ReactNode }) => (
 const PeoBenefits = () => (
   <>
     <SEOHead
-      title="PEO Benefits Explained: What You Actually Get"
+      title="PEO Benefits Explained: What You Get"
       fullTitle
       description="Health, 401(k), workers' comp, EAP and ancillary benefits: what a PEO delivers, where it shines and where it underdelivers."
       jsonLd={{ "@context": "https://schema.org", "@graph": [ARTICLE["@graph"][0], ARTICLE["@graph"][1], FAQ_JSONLD] }}
@@ -64,7 +64,7 @@ const PeoBenefits = () => (
           <Badge className="mb-4 bg-accent/10 text-accent hover:bg-accent/20">Benefits Guide</Badge>
           <h1 className="font-heading text-4xl font-800 leading-tight text-primary-foreground md:text-5xl lg:text-6xl">
             PEO Benefits:
-            <span className="text-accent"> What You Actually Get</span>
+            <span className="text-accent"> What You Get</span>
           </h1>
         </Reveal>
         <Reveal delay={100}>

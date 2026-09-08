@@ -103,7 +103,7 @@ const WhatIsAPeo = () => (
       </div>
     </section>
 
-    <Section title="What a PEO Actually Does" alt>
+    <Section title="What a PEO Does Day to Day" alt>
       <p>A PEO is functionally an outsourced HR, payroll, and benefits department, bundled with the buying power of an employer 100x your size. Specifically:</p>
       <ul className="space-y-2">
         <Bullet>Runs your payroll under their federal tax ID and files all federal, state, and local employment taxes</Bullet>

@@ -284,7 +284,7 @@ const EmployeeHealthBenefitsOptions = () => (
       <p>
         With this approach, your benefits come bundled through a co-employment relationship that
         pools your employees together with many other companies. Because that combined pool can be
-        very large, it can unlock benefits and pricing that a small standalone business would
+        very large, it can open up benefits and pricing that a small standalone business would
         struggle to access on its own, alongside payroll, compliance, and HR support in one
         package.
       </p>
