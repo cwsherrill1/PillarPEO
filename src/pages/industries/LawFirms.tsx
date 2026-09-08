@@ -69,7 +69,7 @@ const LawFirms = () => (
       intro="You advise clients on risk all day. The exposure inside your own firm is usually a classification decision nobody has revisited in years."
     />
 
-    <Section title="What HR problems do law firms actually have?">
+    <Section title="Where HR goes wrong in a law firm">
       <UpdatedLine />
       <p className="text-lg leading-8 text-foreground/85">
         Law firms mostly have wage-hour problems, not personality problems. The recurring

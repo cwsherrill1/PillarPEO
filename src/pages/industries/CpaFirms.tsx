@@ -68,7 +68,7 @@ const CpaFirms = () => (
       intro="Your exposure is concentrated in about eleven weeks of the year, and it is almost always about hours."
     />
 
-    <Section title="What HR problems do CPA firms actually have?">
+    <Section title="The HR problems a CPA firm runs into">
       <UpdatedLine />
       <p className="text-lg leading-8 text-foreground/85">
         Accounting firms have a seasonal wage-hour problem. Non-exempt staff work heavy

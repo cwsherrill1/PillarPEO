@@ -71,7 +71,7 @@ const FinancialAdvisors = () => (
       intro="You have a supervision programme. What you may not have is an employment programme underneath it."
     />
 
-    <Section title="What HR problems do advisory firms actually have?">
+    <Section title="The HR issues advisory firms run into">
       <UpdatedLine />
       <p className="text-lg leading-8 text-foreground/85">
         Advisory firms run supervision well and employment loosely. Compliance records and

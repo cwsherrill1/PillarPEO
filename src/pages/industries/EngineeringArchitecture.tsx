@@ -72,7 +72,7 @@ const EngineeringArchitecture = () => (
       intro="Your staffing follows projects, and projects cross state lines and contract types. The HR record rarely keeps up."
     />
 
-    <Section title="What HR problems do engineering and architecture firms actually have?">
+    <Section title="Where HR strains in a design or engineering firm">
       <UpdatedLine />
       <p className="text-lg leading-8 text-foreground/85">
         Design firms have a classification problem in the middle of the org chart and a

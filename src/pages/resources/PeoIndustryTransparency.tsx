@@ -207,10 +207,9 @@ const PeoIndustryTransparency = () => (
         is actually performing and who is coasting on reputation and old friendships.
       </p>
       <p>
-        That is what Pillar PEO Advisors does. We are not affiliated with any single provider. We
-        have no preferred placement deals and no old sales floor we are quietly feeding. The
-        brokerage is free to the employer because the provider pays a commission, and we disclose
-        that commission to you in writing. You can read exactly{" "}
+        Ask any PEO or broker you are evaluating for a written commission disclosure before you
+        sign. Pillar PEO Advisors is not affiliated with any single provider, has no preferred
+        placement deals, and discloses its own commission in writing. You can read exactly{" "}
         <Link to="/how-we-get-paid/" className="text-green-ink underline">how we get paid</Link>.
       </p>
       <p>If you want a straight read on your current situation, we will give you one.</p>

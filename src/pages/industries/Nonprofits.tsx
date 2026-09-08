@@ -68,7 +68,7 @@ const Nonprofits = () => (
       intro="Lean teams, mixed funding, and volunteers alongside staff. The employment rules do not bend for any of it."
     />
 
-    <Section title="What HR problems do nonprofits actually have?">
+    <Section title="Where HR breaks in a nonprofit">
       <UpdatedLine />
       <p className="text-lg leading-8 text-foreground/85">
         Nonprofits carry the same wage-and-hour rules as any employer, with three

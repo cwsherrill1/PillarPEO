@@ -28,37 +28,37 @@ const stages = [
     num: 1,
     icon: MessageSquare,
     title: "Discovery",
-    desc: "We learn what's happening in your business now: what feels heavy, what matters most, and what a better outcome looks like.",
+    desc: "A call to cover headcount, states, current payroll and benefits setup, and what's driving the search, renewal pricing, a service issue, or first-time buying. Takes about 30-45 minutes and sets the shortlist of providers worth quoting.",
   },
   {
     num: 2,
     icon: FileText,
     title: "Data gathering",
-    desc: "We help you gather the documents needed to compare real options, walking you through it step by step.",
+    desc: "You provide a census (names, ages, ZIP codes, salaries), current benefits summaries, payroll reports, and workers' comp loss runs. We tell you exactly what's needed and chase down anything missing. This is the step most delays come from, so how quickly your team can pull records sets the pace here.",
   },
   {
     num: 3,
     icon: ClipboardList,
     title: "Underwriting & proposals",
-    desc: "Once the information package is complete, proposals are developed and prepared for review.",
+    desc: "Once providers have a complete file, they underwrite your group and return pricing. This step is out of our hands once submitted; turnaround runs roughly one to three weeks depending on how many providers are quoting and the complexity of your benefits and workers' comp classes.",
   },
   {
     num: 4,
     icon: BarChart3,
     title: "Proposal review",
-    desc: "We help you compare options side by side so you can understand tradeoffs, fit, and next steps.",
+    desc: "We put every proposal into one format so fees, plan designs, and contract terms line up side by side, and walk through what's actually different between them, not just the sticker price.",
   },
   {
     num: 5,
     icon: Monitor,
     title: "Demos & decision support",
-    desc: "We coordinate demos and answer questions so your team can move toward a confident decision.",
+    desc: "For finalists, we set up demos with the provider's team so you can see the platform and ask questions directly. We also flag anything in the contract worth pushing back on before you sign.",
   },
   {
     num: 6,
     icon: Handshake,
     title: "Signing & onboarding",
-    desc: "Once a decision is made, we support a smoother handoff into onboarding and implementation.",
+    desc: "Once you pick a provider, we help route the paperwork and stay available through the first payroll runs and open enrollment so nothing gets dropped in the handoff. Full onboarding typically takes several weeks and depends on the provider's own implementation calendar.",
   },
 ];
 

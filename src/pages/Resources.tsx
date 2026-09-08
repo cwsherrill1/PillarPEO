@@ -88,7 +88,7 @@ const resources = [
   {
     icon: Scale,
     title: "Understanding Co-Employment",
-    desc: "What co-employment actually means for your liability, your employees, and your control.",
+    desc: "What co-employment means for your liability, your employees, and your control.",
     category: "Guide",
     href: "/resources/co-employment",
   },
@@ -102,7 +102,7 @@ const resources = [
   {
     icon: RefreshCw,
     title: "How to Switch PEOs Without Disrupting Payroll",
-    desc: "What the switching process actually looks like, and how to do it without missing a beat.",
+    desc: "What the switching process looks like, and how to do it without missing a beat.",
     category: "Guide",
     href: "/services/transitions",
   },
@@ -144,7 +144,7 @@ const resources = [
   {
     icon: Newspaper,
     title: "Top PEO Companies in 2026",
-    desc: "The PEO landscape grouped by tier: national, modern, and industry-vertical, with how to pick.",
+    desc: "PEO providers grouped by tier: national, modern, and industry-vertical, with how to pick.",
     category: "Industry Guide",
     href: "/resources/top-peo-companies",
   },
@@ -165,7 +165,7 @@ const resources = [
   {
     icon: Scale,
     title: "PEO Broker vs. Going Direct",
-    desc: "How brokers get paid, what changes in your fee, and when each path actually saves you money.",
+    desc: "How brokers get paid, what changes in your fee, and when each path saves you money.",
     category: "Comparison",
     href: "/resources/peo-broker-vs-direct",
   },
@@ -263,7 +263,7 @@ const resources = [
   {
     icon: Newspaper,
     title: "PEO Industry Transparency",
-    desc: "How the PEO industry actually makes money, and what employers deserve to see in a quote.",
+    desc: "How the PEO industry makes money, and what employers deserve to see in a quote.",
     category: "Industry Guide",
     href: "/resources/peo-industry-transparency",
   },
@@ -375,10 +375,8 @@ const Resources = () => {
                     The PEO Buyer Guide
                   </h2>
                   <p className="mt-3 max-w-xl text-muted-foreground">
-                    Everything you need to evaluate, compare, and choose the
-                    right PEO, in one comprehensive guide. Covers pricing
-                    models, contract red flags, benefits benchmarking, and the
-                    questions your broker won't ask.
+                    Covers pricing models, contract red flags, benefits
+                    benchmarking, and the questions your broker won't ask.
                   </p>
                 </div>
                 <Button
@@ -414,10 +412,6 @@ const Resources = () => {
               <h2 className="font-heading text-3xl font-800 text-foreground md:text-4xl">
                 Explore by topic
               </h2>
-              <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
-                Practical resources for every stage of the PEO evaluation
-                process.
-              </p>
             </div>
           </Reveal>
 
