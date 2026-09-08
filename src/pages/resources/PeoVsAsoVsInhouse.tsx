@@ -139,6 +139,50 @@ const PeoVsAsoVsInhouse = () => (
       </div>
     </section>
 
+    {/* Substance: taxes, benefit plans, headcount, multi-state */}
+    <section className="bg-muted/30 py-20 md:py-28">
+      <div className="container max-w-3xl">
+        <Reveal>
+          <h2 className="font-heading text-2xl font-800 text-foreground md:text-3xl">What the table doesn't show you</h2>
+          <div className="mt-6 space-y-6 text-base leading-relaxed text-muted-foreground">
+            <p>
+              <strong className="text-foreground">Who files the payroll taxes.</strong> Under a PEO,
+              the PEO files under its own EIN as co-employer, so a filing mistake is the PEO's problem to
+              fix and, in most states, its liability to cover. Under an ASO or in-house HR, your company
+              files under your own EIN. The ASO's software may generate the filings, but your company signs
+              and owns them, and a mistake is yours to correct with the IRS and state agencies.
+            </p>
+            <p>
+              <strong className="text-foreground">Who holds the benefit plans.</strong> A PEO's health
+              plan sits on the PEO's master policy, pooled with every other client on that plan. You get
+              access to that pool's rates, but you don't own the plan and can't customize plan design beyond
+              what the PEO offers that year. An ASO or in-house setup means your company holds its own group
+              policy with a carrier, so you set plan design directly, but you're priced and underwritten on
+              your own group's claims history, not a pooled one.
+            </p>
+            <p>
+              <strong className="text-foreground">What breaks at which headcount.</strong> Below roughly
+              10 employees, a PEO's per-employee fee often outweighs what you'd otherwise pay for basic
+              payroll software, but it's the fastest way to buy a real benefits plan. Between roughly 50 and
+              150 employees, an ASO usually gets weaker on benefits pricing because you're carrying claims
+              risk on a mid-size group. Past roughly 150-200 employees, most companies can hire the internal
+              payroll and benefits staff a PEO or ASO would otherwise provide, and the per-employee
+              administration fee stops paying for itself.
+            </p>
+            <p>
+              <strong className="text-foreground">What breaks with multi-state footprints.</strong> Each
+              state you add brings its own withholding rules, unemployment insurance rate, paid leave law,
+              and wage notice requirements. A PEO absorbs most of that because it already runs payroll in
+              all 50 states under its own registrations. In-house HR has to register your company as an
+              employer in every new state, set up state unemployment insurance accounts, and track each
+              state's leave and notice rules separately, which is where a lot of the administrative load
+              shows up as you expand.
+            </p>
+          </div>
+        </Reveal>
+      </div>
+    </section>
+
     {/* When each makes sense */}
     {[
       { title: "When a PEO Makes Sense", alt: true, items: ["You have 10–250 employees and want benefit quality you couldn't access independently", "You're multi-state and compliance complexity is growing faster than your HR team", "You're paying for fragmented HR tools and want to consolidate", "You've outgrown founder-led HR but aren't ready to build a full department", "You're currently on a PEO but want to benchmark whether it's still the best fit"] },
@@ -181,7 +225,7 @@ const PeoVsAsoVsInhouse = () => (
             Let's figure out which model actually fits your company.
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">
-            Pillar's discovery process takes about 30 minutes and gives you a clear, unbiased picture of your options, with no pressure to buy anything.
+            Pillar's discovery process takes about 30 minutes. You'll leave with a specific answer for your headcount and states, not a sales pitch.
           </p>
           <div className="mt-8">
             <Button asChild size="lg" className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20">
