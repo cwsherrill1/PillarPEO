@@ -36,6 +36,11 @@ const HrProjects = lazy(() => import("./pages/services/HrProjects"));
 const FractionalHr = lazy(() => import("./pages/services/FractionalHr"));
 const TransitionsPage = lazy(() => import("./pages/services/Transitions"));
 const PeoBrokerage = lazy(() => import("./pages/services/PeoBrokerage"));
+const PeoExit = lazy(() => import("./pages/services/transitions/PeoExit"));
+const PeoSwitch = lazy(() => import("./pages/services/transitions/PeoSwitch"));
+const PeoImplementation = lazy(() => import("./pages/services/transitions/PeoImplementation"));
+const HrisMigration = lazy(() => import("./pages/services/transitions/HrisMigration"));
+const PayrollProviderSwitch = lazy(() => import("./pages/services/transitions/PayrollProviderSwitch"));
 const HowWeGetPaid = lazy(() => import("./pages/HowWeGetPaid"));
 const CalebSherrill = lazy(() => import("./pages/about/CalebSherrill"));
 const IndustriesIndex = lazy(() => import("./pages/industries/Industries"));
@@ -102,6 +107,11 @@ const App = () => (
               <Route path="/services/fractional-hr" element={<FractionalHr />} />
               <Route path="/services/transitions" element={<TransitionsPage />} />
               <Route path="/services/peo-brokerage" element={<PeoBrokerage />} />
+              <Route path="/services/transitions/peo-exit" element={<PeoExit />} />
+              <Route path="/services/transitions/peo-switch" element={<PeoSwitch />} />
+              <Route path="/services/transitions/peo-implementation" element={<PeoImplementation />} />
+              <Route path="/services/transitions/hris-migration" element={<HrisMigration />} />
+              <Route path="/services/transitions/payroll-provider-switch" element={<PayrollProviderSwitch />} />
               <Route path="/how-we-get-paid" element={<HowWeGetPaid />} />
               <Route path="/about/caleb-sherrill" element={<CalebSherrill />} />
               <Route path="/industries" element={<IndustriesIndex />} />
