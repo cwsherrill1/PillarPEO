@@ -123,7 +123,7 @@ const PeoForStartups = () => (
     </Section>
 
     <Section title="Equity, 409A, and the PEO" alt>
-      <p>This trips up almost every founder. Here's the clean version:</p>
+      <p>This trips up almost every founder. Here is how it breaks down:</p>
       <ul className="space-y-2">
         <Bullet><strong className="text-foreground">Equity grants:</strong> issued by your company. The PEO has nothing to do with them.</Bullet>
         <Bullet><strong className="text-foreground">409A valuations:</strong> done by your valuation firm. Unaffected.</Bullet>

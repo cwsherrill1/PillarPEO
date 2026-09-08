@@ -114,7 +114,7 @@ const PeoCostGuide = () => (
         <h3 className="font-heading font-700 text-foreground">2. Percentage of Payroll</h3>
         <p className="mt-2 text-sm text-muted-foreground"><strong>Range:</strong> 2%–6% of gross payroll. <strong>Best for:</strong> lower-wage workforces where 2%–4% of a $35K salary beats $150 PEPM. Common with ADP TotalSource and Insperity for blue-collar industries.</p>
       </CardContent></Card>
-      <p className="mt-4"><strong className="text-foreground">Quick math:</strong> a 25-person company at $65K average salary pays roughly $45,000/year on PEPM ($150 × 25 × 12) or $40,625/year on a 2.5% percentage model. The cheaper option flips at higher salaries: always model both.</p>
+      <p className="mt-4">For example, a 25-person company at $65K average salary pays roughly $45,000/year on PEPM ($150 × 25 × 12) or $40,625/year on a 2.5% percentage model. The cheaper option flips at higher salaries: always model both.</p>
     </Section>
 
     <Section title="What's Actually Bundled in That Number">

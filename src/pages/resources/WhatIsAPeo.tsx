@@ -94,7 +94,7 @@ const WhatIsAPeo = () => (
             <ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources
           </Link>
           <p className="text-xl leading-8 text-foreground/85">
-            A PEO (Professional Employer Organization) is a company that handles your payroll, benefits, HR compliance, and workers' comp under a co-employment relationship. The short version: you keep running your business, the PEO handles all the administrative employment work, and your employees get Fortune-500-grade benefits at small-business scale.
+            A PEO (Professional Employer Organization) is a company that handles your payroll, benefits, HR compliance, and workers' comp under a co-employment relationship. You keep running your business, the PEO handles the administrative employment work, and your employees get Fortune-500-grade benefits at small-business scale.
           </p>
           <p className="mt-4 text-xl leading-8 text-foreground/85">
             That's the official definition. The rest of this guide is what's actually true once you're inside one.
@@ -160,7 +160,7 @@ const WhatIsAPeo = () => (
     </Section>
 
     <Section title="PEO vs. Other Models" alt>
-      <p>Quick mental model:</p>
+      <p>Here is how the models compare:</p>
       <ul className="space-y-2">
         <Bullet><strong className="text-foreground">PEO:</strong> bundled: payroll + benefits + HR + workers' comp under co-employment</Bullet>
         <Bullet><strong className="text-foreground">ASO:</strong> same services, no co-employment: you keep all employer liability</Bullet>
