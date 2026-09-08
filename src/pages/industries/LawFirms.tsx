@@ -181,7 +181,7 @@ const LawFirms = () => (
     </Section>
 
     <ServiceCta
-      heading="Find out what your classification decisions actually expose you to."
+      heading="Find out what your classification decisions expose you to."
       body="A fixed-price audit, quoted before we start, covering every state your people work in."
       proof="second law firm reference, ideally a firm that changed a paralegal classification after the audit."
       secondary={{ label: "See all industries", href: "/industries" }}

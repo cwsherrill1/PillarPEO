@@ -131,7 +131,7 @@ const CharlotteNc = () => (
         <Bullet>
           <strong className="text-foreground">Workers' compensation.</strong> Required at 3
           or more employees in North Carolina, 4 or more in South Carolina. Coverage and
-          classification need to reflect where people actually work.
+          classification need to reflect where people work.
         </Bullet>
         <Bullet>
           <strong className="text-foreground">Notice of wage changes.</strong> South

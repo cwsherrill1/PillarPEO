@@ -51,7 +51,7 @@ const PeoContractTerms = () => (
     <SEOHead
       title="PEO Contract Terms: What Leaving Costs"
       fullTitle
-      description="Term length, auto-renewal, notice windows, termination fees and mid-year exits: the PEO clauses that decide what leaving actually costs you."
+      description="Term length, auto-renewal, notice windows, termination fees and mid-year exits: the PEO clauses that decide what leaving costs you."
       canonical={`${SITE_URL}/resources/peo-contract-terms`}
       ogType="article"
       jsonLd={jsonLd}
@@ -97,8 +97,7 @@ const PeoContractTerms = () => (
         <Bullet>
           <strong className="text-foreground">Get the date into your own
           calendar.</strong> Not the provider's. Put the notice deadline and a
-          reminder 120 days before it into whatever system your firm actually
-          uses.
+          reminder 120 days before it into whatever system your firm uses.
         </Bullet>
       </ul>
     </Section>
@@ -177,8 +176,7 @@ const PeoContractTerms = () => (
         an entity they did not think employed them.
       </p>
       <p>
-        A January 1 exit, or an exit aligned to whenever your plan year actually
-        starts, avoids most of this. Which means the exit date is not a scheduling
+        A January 1 exit, or an exit aligned to whenever your plan year starts, avoids most of this. Which means the exit date is not a scheduling
         detail. It is a design decision you should make at signature, by lining up
         the contract term and renewal date with the plan year rather than with the
         date you happened to sign.

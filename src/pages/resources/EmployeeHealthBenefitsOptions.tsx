@@ -12,7 +12,7 @@ const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 const faqs = [
   {
     q: "What is the cheapest way to offer health insurance to employees?",
-    a: "It depends on goals. A QSEHRA or a capped ICHRA allowance gives the lowest predictable employer cost, but the right answer balances cost against the coverage employees actually need.",
+    a: "It depends on goals. A QSEHRA or a capped ICHRA allowance gives the lowest predictable employer cost, but the right answer balances cost against the coverage employees need.",
   },
   {
     q: "What is the difference between ICHRA and QSEHRA?",
@@ -142,7 +142,7 @@ const EmployeeHealthBenefitsOptions = () => (
             </p>
             <p>
               This guide lays out every major way to offer health benefits in 2026, what each one
-              actually is, who it tends to fit, and the tradeoffs nobody mentions on the sales call.
+              is, who it tends to fit, and the tradeoffs nobody mentions on the sales call.
               No jargon, no agenda.
             </p>
           </div>
@@ -259,7 +259,7 @@ const EmployeeHealthBenefitsOptions = () => (
       <p>
         <strong className="text-foreground">Tends to fit:</strong> Small businesses and solo
         operators within an industry or region where a strong, well-managed association plan
-        actually exists.
+        exists.
       </p>
     </Section>
 
@@ -323,7 +323,7 @@ const EmployeeHealthBenefitsOptions = () => (
         The protection is simple. Work with someone who will lay all eight options on the table,
         show you the real tradeoffs of each, and tell you the truth even when the truth is that
         your current setup is fine. Ask any advisor where they worked before, and how many options
-        they actually place business across. The answer tells you whether you are getting a
+        they place business across. The answer tells you whether you are getting a
         comparison or a funnel.
       </p>
     </Section>
@@ -365,8 +365,7 @@ const EmployeeHealthBenefitsOptions = () => (
             Not sure which path fits your team?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">
-            We'll walk through all eight options with you and recommend the structure that actually
-            fits your business, independent, no pressure, free forever.
+            We'll walk through all eight options with you and recommend the structure that fits your business, independent, no pressure, free forever.
           </p>
           <div className="mt-8">
             <Button

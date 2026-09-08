@@ -36,7 +36,7 @@ const inputs = [
 const faqs = [
   {
     q: "What is an HR audit and what does it cost?",
-    a: "An HR audit is a structured review of how your firm actually hires, pays, documents and separates people, measured against the rules in every state you employ. Pillar's audit runs 41 checks across nine areas. The price is set by headcount band and by how many states you employ in, and is quoted on the scope call, before we start.",
+    a: "An HR audit is a structured review of how your firm hires, pays, documents and separates people, measured against the rules in every state you employ. Pillar's audit runs 41 checks across nine areas. The price is set by headcount band and by how many states you employ in, and is quoted on the scope call, before we start.",
   },
   {
     q: "How long does the audit take?",
@@ -93,7 +93,7 @@ const HrAudit = () => (
 
     <ServiceHero
       eyebrow="A-1 · HR Audit"
-      title="The Load Report: what your HR risk actually is, in writing."
+      title="The Load Report: what your HR risk is, in writing."
       intro="41 checks across nine areas, scored Pass, Watch or Fail, in every state your people work in."
     />
 
@@ -106,7 +106,7 @@ const HrAudit = () => (
             What an HR audit is, and what it costs.
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-            An HR audit is a structured review of how your firm actually hires, pays,
+            An HR audit is a structured review of how your firm hires, pays,
             documents and separates people, measured against the rules in every state
             you employ. Pillar's audit runs 41 checks across nine areas. Fixed price,
             quoted before the work starts.

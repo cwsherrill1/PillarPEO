@@ -65,7 +65,7 @@ const PeoVsPayrollService = () => (
             <span className="text-accent"> When You Need Each</span>
           </h1>
         </Reveal>
-        <Reveal delay={100}><p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80 md:text-xl">A payroll service runs payroll. A PEO runs payroll, benefits, HR, compliance, and shares legal liability. Here's how to know which one you actually need.</p></Reveal>
+        <Reveal delay={100}><p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80 md:text-xl">A payroll service runs payroll. A PEO runs payroll, benefits, HR, compliance, and shares legal liability. Here's how to know which one you need.</p></Reveal>
         <Reveal delay={150}><ArticleByline datePublished="May 15, 2026" /></Reveal>
         <Reveal delay={200}>
           <div className="mt-8">
@@ -116,7 +116,7 @@ const PeoVsPayrollService = () => (
       <ul className="space-y-2">
         {["You're under 10 employees and intend to stay there for 12+ months", "All employees work in one or two states", "You don't offer group health benefits, or you have them set up well already", "Nobody is asking HR questions you can't answer with a Google search", "Your operating budget is too tight for an extra $1,500–$3,000/month"].map((t) => <Bullet key={t}>{t}</Bullet>)}
       </ul>
-      <p className="mt-4">Spending PEO money before you need it is a real waste. It crowds out hiring or marketing budget that would actually grow the business.</p>
+      <p className="mt-4">Spending PEO money before you need it is a real waste. It crowds out hiring or marketing budget that would grow the business.</p>
     </Section>
 
     <Section title="When You've Outgrown Payroll Service" alt>

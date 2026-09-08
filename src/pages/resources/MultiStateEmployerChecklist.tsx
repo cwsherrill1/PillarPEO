@@ -161,7 +161,7 @@ const MultiStateEmployerChecklist = () => (
 
     <ServiceCta
       heading="Hiring in a new state? Get it registered right the first time."
-      body="An HR audit checks your registrations, coverage and paperwork against every state you actually employ people in."
+      body="An HR audit checks your registrations, coverage and paperwork against every state you employ people in."
       proof="client quote describing a multi-state registration gap the audit caught, with number of states involved."
       secondary={{ label: "See the HR audit", href: "/services/hr-audit" }}
     />

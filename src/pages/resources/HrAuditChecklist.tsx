@@ -11,7 +11,7 @@ const areas = [
     n: 1,
     title: "Hiring, I-9, E-Verify",
     checks: [
-      "Offer letters are consistent and say what the pay basis actually is",
+      "Offer letters are consistent and say what the pay basis is",
       "I-9s are completed within the required window for every hire",
       "I-9s are stored separately from personnel files",
       "E-Verify is used everywhere it is required, and nowhere it creates unwanted obligations",
@@ -23,17 +23,17 @@ const areas = [
     title: "Classification and wage-hour",
     checks: [
       "Exempt/non-exempt calls are based on duties, not job title or pay alone",
-      "Contractor classifications hold up against how the work is actually managed",
+      "Contractor classifications hold up against how the work is managed",
       "Overtime is calculated by workweek, not averaged",
       "Travel time and on-call time are addressed in writing",
-      "Timekeeping records match what people were actually paid for",
+      "Timekeeping records match what people were paid for",
     ],
   },
   {
     n: 3,
     title: "Handbook and policies",
     checks: [
-      "The handbook matches how the company actually operates today",
+      "The handbook matches how the company operates today",
       "Known gaps (leave, remote work, discipline) are addressed, not silent",
       "Nothing in the handbook creates promises the company can't defend",
       "Acknowledgment forms are signed and on file for current staff",
@@ -43,7 +43,7 @@ const areas = [
     n: 4,
     title: "Payroll and tax registrations",
     checks: [
-      "The company is registered for withholding and unemployment in every state where someone actually works",
+      "The company is registered for withholding and unemployment in every state where someone works",
       "New-hire reporting is happening in every one of those states",
       "Remote and traveling staff have been checked against where they were physically working",
     ],
@@ -104,7 +104,7 @@ const faqs: Faq[] = [
   },
   {
     q: "Is this the same as the paid HR audit?",
-    a: "No. This page tells you what to check. The paid HR audit actually reviews your documents, scores each check Pass, Watch or Fail, and tells you what to do about each finding, in about 15 business days.",
+    a: "No. This page tells you what to check. The paid HR audit reviews your documents, scores each check Pass, Watch or Fail, and tells you what to do about each finding, in about 15 business days.",
   },
   {
     q: "Do I need a lawyer to use this checklist?",
@@ -153,10 +153,10 @@ const HrAuditChecklist = () => (
       intro="Nine areas, the checks inside each one, free to read and free to download. No email required."
     />
 
-    <Section title="What does an HR audit actually check?">
+    <Section title="What does an HR audit check?">
       <UpdatedLine />
       <p className="text-lg leading-8 text-foreground/85">
-        An HR audit checks nine areas of how your company actually operates:
+        An HR audit checks nine areas of how your company operates:
         hiring paperwork, classification and pay, the handbook, payroll tax
         registrations, benefits and ACA, leave, records, safety, and how you
         separate people. Below is the full checklist. You can read it here or

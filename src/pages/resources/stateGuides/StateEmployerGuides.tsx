@@ -128,7 +128,7 @@ const StateEmployerGuides = () => (
         Guides are re-checked on a set rhythm: after each state's legislative session
         closes, at the start of each calendar year when wage bases and rates reset, and
         whenever an agency issues a rule change we are tracking. The verification date on
-        the page moves only when the content has actually been re-checked, so a recent date
+        the page moves only when the content has been re-checked, so a recent date
         means recent work rather than a recent edit.
       </p>
       <p className="mt-6 text-lg leading-8 text-foreground/85">

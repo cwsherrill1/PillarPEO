@@ -68,7 +68,7 @@ const PeoHoneymoonPricing = () => (
       <p className="text-lg leading-8 text-foreground/85">
         Because the first-year rate was often set below a sustainable level to
         win your business, and the renewal is the first price that reflects what
-        serving you actually costs. By then your payroll, benefits and HR records
+        serving you costs. By then your payroll, benefits and HR records
         all sit inside the PEO, so your cost of leaving is at its highest point,
         which is exactly when the reprice lands.
       </p>
@@ -201,7 +201,7 @@ const PeoHoneymoonPricing = () => (
 
     <ServiceCta
       heading="Renewal notice in hand? Let us read it before you sign it."
-      body="We will show you which component actually moved, what the market would charge for the same census, and whether your notice window is still open."
+      body="We will show you which component moved, what the market would charge for the same census, and whether your notice window is still open."
       proof="anonymised renewal increase, professional-services firm, with the component that moved and the outcome."
       secondary={{ label: "The free renewal review", href: "/resources/peo-renewal-review" }}
     />

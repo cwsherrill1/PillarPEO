@@ -24,7 +24,7 @@ const steps = [
     num: 1,
     icon: MessageSquare,
     title: "Quick assessment",
-    desc: "We learn where your team stands and whether a PEO would actually solve the right problems.",
+    desc: "We learn where your team stands and whether a PEO would solve the right problems.",
   },
   {
     num: 2,
@@ -354,7 +354,7 @@ const DoWeNeedAPeo = () => {
             <p className="mt-4 text-primary-foreground/80 text-lg">
               We'll ask about your headcount, states, and current setup, then tell you
               plainly whether a PEO is worth pursuing. If it isn't, we'll say so and
-              point you toward what will actually help.
+              point you toward what will help.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
               <Button

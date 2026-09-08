@@ -130,7 +130,7 @@ const Services = () => (
                 <Link to="/services/hr-audit" className="text-green-ink hover:underline">
                   HR audit
                 </Link>
-                . It reviews the areas that actually generate liability: classification,
+                . It reviews the areas that generate liability: classification,
                 pay practices, I-9s, handbook, personnel files, leave, state registrations
                 and gives you a ranked list of findings rather than a general opinion.
                 Almost every other engagement here starts life as a line in that report.

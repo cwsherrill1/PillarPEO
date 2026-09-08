@@ -11,7 +11,7 @@ import { ArticleByline, ArticleAuthorBio, buildArticleJsonLd } from "@/component
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
 const faqs = [
-  { q: "When should a startup get a PEO?", a: "Most venture-backed startups benefit from a PEO between 5 and 75 employees: early enough to avoid building HR infrastructure in-house, late enough that benefits actually matter for recruiting. Pre-seed companies under 5 people are usually fine on Gusto or Justworks' non-PEO payroll." },
+  { q: "When should a startup get a PEO?", a: "Most venture-backed startups benefit from a PEO between 5 and 75 employees: early enough to avoid building HR infrastructure in-house, late enough that benefits matter for recruiting. Pre-seed companies under 5 people are usually fine on Gusto or Justworks' non-PEO payroll." },
   { q: "Can a PEO handle multi-state employees and remote teams?", a: "Yes, this is one of the strongest reasons startups pick a PEO. The PEO becomes the employer of record for state tax registration, SUTA, workers' comp, and compliance in every state you have employees. Without it, you're registering in each state yourself, which is expensive and slow." },
   { q: "Will a PEO mess up my equity grants or 409A?", a: "No. Equity, stock options, and 409A valuations are issued by your company directly; the PEO only touches W-2 payroll. Some PEOs (Rippling, Justworks) integrate with Carta or Pulley to make ISO/NSO tax handling cleaner." },
   { q: "Do investors care if we use a PEO?", a: "Most VCs prefer it. A PEO reduces compliance risk during diligence and signals operational maturity. The only friction is a brief due-diligence question about co-employment, easily explained." },

@@ -23,7 +23,7 @@ export const pricing = {
     mark: "A-1",
     name: "HR Audit (the Load Report)",
     from: "$2,500",
-    who: "Firms that need to know what their HR risk actually is",
+    who: "Firms that need to know what their HR risk is",
     bands: [
       {
         label: "10–25 employees",
@@ -135,7 +135,7 @@ export const hrProjects = [
   {
     name: "NC/SC employee handbook",
     price: "$3,500–$5,500",
-    desc: "A handbook written for the states your people actually work in, with the policies your firm is required to carry and the ones you asked for.",
+    desc: "A handbook written for the states your people work in, with the policies your firm is required to carry and the ones you asked for.",
   },
   {
     name: "FLSA classification review",
@@ -155,7 +155,7 @@ export const hrProjects = [
   {
     name: "Performance management system",
     price: "$3,000–$6,500",
-    desc: "A review cycle your managers will actually run: forms, cadence, calibration, and documentation that holds up later.",
+    desc: "A review cycle your managers will run: forms, cadence, calibration, and documentation that holds up later.",
   },
   {
     name: "Manager training",

@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="container flex flex-col items-center gap-6 py-16 text-center md:flex-row md:justify-between md:text-left">
           <div>
             <h3 className="font-heading text-2xl font-700 md:text-3xl">
-              Know what your HR risk actually is.
+              Know what your HR risk is.
             </h3>
             <p className="mt-2 max-w-md text-primary-foreground/80">
               Fixed price, quoted before the work starts, covering every state

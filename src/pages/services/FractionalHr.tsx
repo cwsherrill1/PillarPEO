@@ -149,7 +149,7 @@ const FractionalHr = () => (
       <div className="container max-w-3xl py-20 md:py-28">
         <Reveal>
           <h2 className="font-heading text-3xl font-800 text-foreground md:text-4xl">
-            What a month actually looks like.
+            What a month looks like.
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
             Fractional HR is not a phone line you call when something breaks. It is a
@@ -213,7 +213,7 @@ const FractionalHr = () => (
 
     <ServiceCta
       heading="Start with the audit, then decide the tier."
-      body="The audit shows how much ongoing help your firm actually needs, so you're not guessing at hours."
+      body="The audit shows how much ongoing help your firm needs, so you're not guessing at hours."
       proof="fractional HR client quote, professional-services firm, with headcount and states covered."
       secondary={{ label: "See all services", href: "/services" }}
     />

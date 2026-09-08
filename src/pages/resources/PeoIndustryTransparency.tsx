@@ -204,7 +204,7 @@ const PeoIndustryTransparency = () => (
         The good providers exist. They handle compliance competently, staff their service teams
         well, communicate before problems blow up, and treat renewal as a partnership rather than
         an extraction. Finding them takes someone who has seen enough of the market to know who
-        is actually performing and who is coasting on reputation and old friendships.
+        is performing and who is coasting on reputation and old friendships.
       </p>
       <p>
         Ask any PEO or broker you are evaluating for a written commission disclosure before you

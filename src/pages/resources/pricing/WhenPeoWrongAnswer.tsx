@@ -130,7 +130,7 @@ const WhenPeoWrongAnswer = () => (
       <p>
         That trade can still be worth it. But be honest about what you are buying,
         because the sales conversation will describe it as offloading HR, and what
-        you are actually offloading is administration.
+        you are offloading is administration.
       </p>
     </Section>
 
@@ -204,7 +204,7 @@ const WhenPeoWrongAnswer = () => (
       <p>
         For most firms in these four cases, the alternative is a stack rather than
         a single vendor: a payroll provider, a benefits broker you trust, and HR
-        capability sized to what you actually need: a one-off audit, a fixed-price
+        capability sized to what you need: a one-off audit, a fixed-price
         project, or{" "}
         <Link to="/services/fractional-hr" className="text-green-ink hover:underline">
           fractional HR

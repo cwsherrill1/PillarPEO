@@ -156,7 +156,7 @@ const Index = () => {
               {
                 need: "Our benefits or PEO renewal just went up",
                 service: "Free renewal review",
-                price: "We read the renewal line by line and tell you what actually moved",
+                price: "We read the renewal line by line and tell you what moved",
                 href: "/resources/peo-renewal-review",
               },
               {

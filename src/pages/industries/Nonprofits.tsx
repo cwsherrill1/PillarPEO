@@ -21,7 +21,7 @@ const faqs: Faq[] = [
     a: "No. Mission-driven work carries no exemption of its own, and a nonprofit salary does not settle the question either. Program staff who spend most of their time delivering the service rather than managing people or exercising independent judgment on significant matters are frequently non-exempt, whatever the title says.",
   },
   {
-    q: "What does a funder actually expect on personnel documentation?",
+    q: "What does a funder expect on personnel documentation?",
     a: "Typically: that the position is documented, that time charged to the grant is supported by records, that allocation across funding sources is consistent and explainable, and that pay decisions follow a written policy rather than a case-by-case judgement. Most findings in this area are documentation gaps rather than misuse of funds.",
   },
   {

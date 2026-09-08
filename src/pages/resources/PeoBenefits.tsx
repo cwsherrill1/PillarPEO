@@ -11,7 +11,7 @@ import { ArticleByline, ArticleAuthorBio, buildArticleJsonLd } from "@/component
 const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
 const faqs = [
-  { q: "What benefits does a PEO actually provide?", a: "A PEO bundles health, dental, vision, life, disability, 401(k), FSA/HSA, EAP, commuter benefits, and often pet insurance and supplemental coverage. Because the PEO is the employer of record for thousands of clients combined, your small company gets large-group pricing and plan options." },
+  { q: "What benefits does a PEO provide?", a: "A PEO bundles health, dental, vision, life, disability, 401(k), FSA/HSA, EAP, commuter benefits, and often pet insurance and supplemental coverage. Because the PEO is the employer of record for thousands of clients combined, your small company gets large-group pricing and plan options." },
   { q: "Are PEO health insurance plans cheaper?", a: "Sometimes. The honest answer: PEOs typically beat the small-group market by 5–20% for white-collar workforces and offer richer plan designs (broader networks, lower deductibles). For high-claims industries, the savings can be smaller, but plan quality is almost always better." },
   { q: "Can employees keep their doctors when we move to a PEO?", a: "Usually yes. PEOs offer Aetna, BCBS, Kaiser, UHC, and Cigna in most states: the same major networks employees already use. Always pull the in-network provider lookup before signing so employees see continuity." },
   { q: "Does a PEO offer a 401(k)?", a: "Yes, most PEOs offer either a multiple-employer 401(k) (MEP) or pooled employer plan (PEP), which dramatically reduces fiduciary risk and admin burden. You can also keep your existing 401(k) plan when joining a PEO." },
@@ -90,7 +90,7 @@ const PeoBenefits = () => (
             <ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources
           </Link>
           <p className="text-xl leading-8 text-foreground/85">
-            "PEO benefits" gets used as a catch-all term, but the actual stack ranges from genuinely impressive (Fortune-500-grade health plans for 12 employees) to ordinary (the same 401(k) you'd get anywhere). Here's an honest breakdown of every category: what's bundled, what's negotiable, and where PEOs actually beat the open market.
+            "PEO benefits" gets used as a catch-all term, but the actual stack ranges from genuinely impressive (Fortune-500-grade health plans for 12 employees) to ordinary (the same 401(k) you'd get anywhere). Here's an honest breakdown of every category: what's bundled, what's negotiable, and where PEOs beat the open market.
           </p>
         </Reveal>
       </div>

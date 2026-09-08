@@ -23,7 +23,7 @@ const faqs = [
   { q: "What is the best PEO for a small business in 2026?", a: "There is no single 'best' PEO: the right one depends on your headcount, industry, states, benefits priorities, and budget. For 5–40 white-collar employees, Justworks and Gusto PEO usually price best. For 25–250 employees with complex needs or high-risk industries, ADP TotalSource and Insperity often win on benefits depth and workers' comp pooling. Rippling tends to win when IT integration matters." },
   { q: "What size company should use a PEO?", a: "PEOs typically make economic sense between 5 and 250 employees. Below 5, a basic payroll service is more cost-effective. Above 250, many companies build internal HR and benefits brokerage. The sweet spot is 10–100 employees who want Fortune-500 benefits and offloaded compliance." },
   { q: "Do PEOs work for remote-first companies?", a: "Yes, and they're often essential. The moment you hire in 3+ states, multi-state registration, SUTA management, and state-specific labor compliance get expensive. PEOs handle all of that under their EIN. Justworks, Rippling, and TriNet all have strong remote-first offerings." },
-  { q: "Are PEOs only for tech startups?", a: "No. PEOs serve construction, manufacturing, nonprofits, professional services, healthcare, restaurants, and most other industries. Workers' comp pooling is actually most valuable for higher-risk industries: they often see the biggest cost savings vs. buying coverage independently." },
+  { q: "Are PEOs only for tech startups?", a: "No. PEOs serve construction, manufacturing, nonprofits, professional services, healthcare, restaurants, and most other industries. Workers' comp pooling is most valuable for higher-risk industries: they often see the biggest cost savings vs. buying coverage independently." },
   { q: "How long does it take to onboard a PEO?", a: "60–90 days from signed agreement to first payroll for most providers. Faster options (Gusto, Justworks for very small groups) can do 30–45 days. Larger or multi-state implementations can stretch to 120 days. See our PEO implementation guide for the full timeline." },
 ];
 
@@ -88,7 +88,7 @@ const BestPeoForSmallBusiness = () => (
         <Reveal>
           <Link to="/resources" className="mb-8 inline-flex items-center text-sm font-semibold text-green-ink hover:text-green-ink/80"><ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources</Link>
           <p className="text-xl leading-8 text-foreground/85">
-            "Best PEO" lists written by PEOs are useless: they always conclude with whoever paid for the listicle. This one is written by an independent broker who has no quota with any of these providers and gets paid the same regardless of which one you pick. Below is what we actually see when employers compare these six in 2026.
+            "Best PEO" lists written by PEOs are useless: they always conclude with whoever paid for the listicle. This one is written by an independent broker who has no quota with any of these providers and gets paid the same regardless of which one you pick. Below is what we see when employers compare these six in 2026.
           </p>
         </Reveal>
       </div>

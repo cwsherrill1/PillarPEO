@@ -55,7 +55,7 @@ const PeoVsAsoVsInhouse = () => (
         </Reveal>
         <Reveal delay={100}>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80 md:text-xl">
-            Not every company needs a PEO. This side-by-side comparison helps you understand which model actually fits where you are.
+            Not every company needs a PEO. This side-by-side comparison helps you understand which model fits where you are.
           </p>
         </Reveal>
         <Reveal delay={150}>
@@ -209,7 +209,7 @@ const PeoVsAsoVsInhouse = () => (
           <ul className="mt-4 space-y-3 text-base text-muted-foreground">
             <Bullet>A company that hires in-house HR too early pays for capability it doesn't yet need</Bullet>
             <Bullet>A company that stays on a misfit PEO pays premium pricing for underperforming service</Bullet>
-            <Bullet>A company that chooses an ASO when it actually needed a PEO misses the benefits buying power that would have improved employee retention</Bullet>
+            <Bullet>A company that chooses an ASO when it needed a PEO misses the benefits buying power that would have improved employee retention</Bullet>
             <Bullet>A company that skips all three and patches together DIY HR creates compliance exposure that often only becomes visible when something goes wrong</Bullet>
           </ul>
           <p className="mt-4 font-semibold text-foreground">The right answer depends on your specific situation, and it's rarely the one a vendor is selling you.</p>
@@ -222,7 +222,7 @@ const PeoVsAsoVsInhouse = () => (
       <div className="container text-center">
         <Reveal>
           <h2 className="font-heading text-3xl font-800 text-primary-foreground md:text-4xl">
-            Let's figure out which model actually fits your company.
+            Let's figure out which model fits your company.
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">
             Pillar's discovery process takes about 30 minutes. You'll leave with a specific answer for your headcount and states, not a sales pitch.

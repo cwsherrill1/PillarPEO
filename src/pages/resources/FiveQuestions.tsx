@@ -29,7 +29,7 @@ const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
 const questions = [
   {
-    q: "How is your pricing actually structured, and what changes at renewal?",
+    q: "How is your pricing structured, and what changes at renewal?",
     a: "Most PEO quotes look clean on the surface. What employers miss is how the fee is calculated: per-employee-per-month (PEPM), percentage of payroll, or a bundled rate, and what can shift at renewal. Ask for the last three years of renewal history for comparable clients. If a PEO can't or won't share that, it tells you something.",
   },
   {
@@ -46,7 +46,7 @@ const questions = [
   },
   {
     q: "Can you give me three client references in my industry and size range?",
-    a: "Not just references: references who match your profile. A PEO that's excellent for a 200-person manufacturing company may be a poor fit for a 40-person professional services firm. Ask for references with similar headcount, multi-state presence, or industry, and actually call them.",
+    a: "Not just references: references who match your profile. A PEO that's excellent for a 200-person manufacturing company may be a poor fit for a 40-person professional services firm. Ask for references with similar headcount, multi-state presence, or industry, and call them.",
   },
 ];
 

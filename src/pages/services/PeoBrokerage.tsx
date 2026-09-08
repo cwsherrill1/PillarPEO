@@ -46,7 +46,7 @@ const stages = [
     num: 4,
     icon: BarChart3,
     title: "Proposal review",
-    desc: "We put every proposal into one format so fees, plan designs, and contract terms line up side by side, and walk through what's actually different between them, not just the sticker price.",
+    desc: "We put every proposal into one format so fees, plan designs, and contract terms line up side by side, and walk through what's different between them, not just the sticker price.",
   },
   {
     num: 5,
@@ -64,7 +64,7 @@ const stages = [
 
 const faqs = [
   {
-    q: "What does a PEO broker actually do?",
+    q: "What does a PEO broker do?",
     a: "A PEO broker shops the full market on your behalf, compares providers honestly, negotiates pricing and terms, and stays on as a long-term advocate after you sign.",
   },
   {
@@ -162,15 +162,14 @@ const PeoBrokerage = () => (
               A PEO broker represents you, not the PEO. The best one goes to the full
               market, compares every option honestly, and has no hidden loyalty to a
               former employer. Brokers are paid by the providers, so the service is free
-              to the employer, but that only protects you when the broker is truly
-              independent, and shows you the number.
+              to the employer, but that only protects you when the broker is independent of the PEO and shows you the number.
             </p>
           </div>
         </Reveal>
       </div>
     </section>
 
-    <Prose title="What a PEO broker actually does" alt>
+    <Prose title="What a PEO broker does" alt>
       <ul className="space-y-2">
         <Bullet>Goes to market with multiple providers at once, not just familiar names</Bullet>
         <Bullet>Turns confusing proposals into a true apples-to-apples comparison</Bullet>

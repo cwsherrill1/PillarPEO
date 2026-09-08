@@ -108,7 +108,7 @@ const BenefitsBrokers = () => (
         The mechanics behind that read (admin fee basis, SUTA quoting, first-year
         pricing) are set out in{" "}
         <Link to="/resources/peo-pricing-explained" className="text-green-ink hover:underline">
-          how PEO pricing actually works
+          how PEO pricing works
         </Link>
         .
       </p>

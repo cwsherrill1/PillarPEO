@@ -41,7 +41,7 @@ const Industries = () => (
     <ServiceHero
       eyebrow="Industries"
       title="The findings are different in every kind of firm."
-      intro="A law firm's most common wage-hour problem is not a dental practice's. We audit against the way your profession actually staffs and pays people."
+      intro="A law firm's most common wage-hour problem is not a dental practice's. We audit against the way your profession staffs and pays people."
     />
 
     <Section title="Who we work with" wide>
@@ -87,7 +87,7 @@ const Industries = () => (
     </Section>
 
     <ServiceCta
-      heading="Start with what's actually wrong."
+      heading="Start with what's wrong."
       body="The audit runs 41 checks across nine areas and gives you a written, scored picture of your exposure, in every state you employ people."
       proof="one quote per industry, from a named firm type and headcount, ideally with a number attached."
       secondary={{ label: "See all services", href: "/services" }}
