@@ -23,7 +23,7 @@ import {
 "lucide-react";
 
 const FAQS = [
-  { q: "What does Pillar do?", a: "Pillar is an independent HR advisory firm for professional-services firms of roughly 10 to 150 people, in every state their people work in. We run fixed-price HR audits and projects, provide fractional HR, and manage PEO and system transitions. Comparing PEOs is a free service inside that offer." },
+  { q: "What does Pillar do?", a: "Pillar is an independent HR advisory and PEO brokerage firm for firms of roughly 10 to 150 people, in every state their people work in. We run fixed-price HR audits and projects, provide fractional HR, and manage PEO and system transitions. Comparing PEOs is a free service inside that offer." },
   { q: "What is a PEO broker?", a: "A PEO broker is an independent advisor who compares Professional Employer Organizations on your behalf, negotiates pricing, and supports the transition. Brokers are paid by the PEO, not by the employer, so the service is free to you." },
   { q: "Do I pay Pillar anything?", a: "It depends which service you use. HR audits, projects, fractional HR, and transitions are fixed-price, quoted in writing before any work starts. PEO brokerage is free to you: the PEO pays the commission, and we disclose it." },
   { q: "Should I use a PEO broker or go direct?", a: "Brokers typically secure better pricing, shorter contracts, and flexible exit clauses, and they stay engaged after the sale. Smaller employers almost always benefit from broker support because they lack the leverage to negotiate alone." },
@@ -59,9 +59,9 @@ const Index = () => {
   return (
     <>
       <SEOHead
-        title="HR Advisory for Professional Firms | Pillar PEO Advisors"
+        title="HR Advisory and PEO Brokerage | Pillar PEO Advisors"
         fullTitle
-        description="Fixed-price HR audits, fractional HR and PEO transitions for law, CPA, engineering and medical firms nationwide. Based in Charlotte, NC."
+        description="Fixed-price HR audits, fractional HR and PEO transitions for firms of 10–150 people nationwide. Based in Charlotte, NC."
         jsonLd={orgJsonLd} />
       
       {/* ── 1. HERO ── */}

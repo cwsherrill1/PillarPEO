@@ -44,7 +44,7 @@ const jsonLd = {
       areaServed: "US",
       url: `${SITE_URL}/services/fractional-hr`,
       description:
-        "Fractional HR for professional-services firms: 8, 20 or 40 hours a month at a fixed monthly price, three-month minimum.",
+        "Fractional HR for firms of 10–150 people: 8, 20 or 40 hours a month at a fixed monthly price, three-month minimum.",
     },
   ],
 };
@@ -52,7 +52,7 @@ const jsonLd = {
 const FractionalHr = () => (
   <>
     <SEOHead
-      title="Fractional HR for Professional Firms"
+      title="Fractional HR for Firms of 10–150"
       description="Fractional HR for firms of 10–150 people: Advisor 8 hrs, Partner 20 hrs, or Embedded 40 hrs a month at a fixed price, in every state you employ."
       canonical={`${SITE_URL}/services/fractional-hr`}
       jsonLd={jsonLd}
@@ -214,7 +214,7 @@ const FractionalHr = () => (
     <ServiceCta
       heading="Start with the audit, then decide the tier."
       body="The audit shows how much ongoing help your firm needs, so you're not guessing at hours."
-      proof="fractional HR client quote, professional-services firm, with headcount and states covered."
+      proof="fractional HR client quote, client firm, with headcount and states covered."
       secondary={{ label: "See all services", href: "/services" }}
     />
   </>

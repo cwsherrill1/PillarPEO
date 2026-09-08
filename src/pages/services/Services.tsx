@@ -29,8 +29,8 @@ const jsonLd = {
 const Services = () => (
   <>
     <SEOHead
-      title="HR Services for Professional Firms"
-      description="Fixed-price HR audits, projects, fractional HR and transitions, plus free PEO brokerage, for professional-services firms nationwide."
+      title="HR Services for Firms of 10–150"
+      description="Fixed-price HR audits, projects, fractional HR and transitions, plus free PEO brokerage, nationwide."
       canonical={`${SITE_URL}/services`}
       jsonLd={jsonLd}
     />
@@ -38,7 +38,7 @@ const Services = () => (
     <ServiceHero
       eyebrow="Services"
       title="Five services. Every price quoted before the work starts."
-      intro="Independent HR advisory for professional-services firms of 10–150 people, in every state your people work in."
+      intro="Independent HR advisory for firms of 10–150 people, in every state your people work in."
     />
 
     <section className="bg-background">
@@ -209,7 +209,7 @@ const Services = () => (
     <ServiceCta
       heading="Start with the audit."
       body="Most firms start with the HR audit, then fix what it finds. You'll know the price before we begin."
-      proof="managing partner quote, professional-services firm, on what the audit found, with a number."
+      proof="managing partner quote, client firm, on what the audit found, with a number."
       secondary={{ label: "Contact us", href: "/contact" }}
     />
   </>

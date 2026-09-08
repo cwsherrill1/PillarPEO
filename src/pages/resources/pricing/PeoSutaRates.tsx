@@ -14,15 +14,15 @@ const faqs: Faq[] = [
   },
   {
     q: "Should SUTA be charged on gross payroll?",
-    a: "No. State unemployment tax applies only to wages up to that state's annual taxable wage base per employee. A quote that applies an unemployment rate to gross payroll overstates the cost, often substantially for higher-paid professional staff.",
+    a: "No. State unemployment tax applies only to wages up to that state's annual taxable wage base per employee. A quote that applies an unemployment rate to gross payroll overstates the cost, often substantially for higher-paid staff.",
   },
   {
     q: "What happens to my experience rating if I join a PEO?",
     a: "It depends on the state and on the reporting model the PEO uses. In some states the account stays with you, in others the PEO reports under its own account. Ask explicitly, in writing, what happens to your rating both on entry and on exit.",
   },
   {
-    q: "Why does this matter more for a professional-services firm?",
-    a: "Unemployment experience rating rewards stable employment. A law, CPA or engineering firm with low turnover typically earns a good rate on its own. Being placed into a pool built around high-turnover employers means paying for someone else's churn.",
+    q: "Why does this matter more for a stable, low-turnover firm?",
+    a: "Unemployment experience rating rewards stable employment. A firm with low turnover typically earns a good rate on its own. Being placed into a pool built around high-turnover employers means paying for someone else's churn.",
   },
 ];
 
@@ -68,8 +68,8 @@ const PeoSutaRates = () => (
       <p className="text-lg leading-8 text-foreground/85">
         In the proposals we review, PEOs commonly quote a pooled state
         unemployment rate at or near the top of the state's band, because the
-        pool has to absorb high-turnover employers. For a stable professional
-        firm that has earned a good rate of its own, that assumption is simply
+        pool has to absorb high-turnover employers. For a stable firm
+        that has earned a good rate of its own, that assumption is simply
         wrong, and it is negotiable before you sign.
       </p>
     </Section>
@@ -135,8 +135,8 @@ const PeoSutaRates = () => (
         unemployment tax is due on that employee in that state for that year.
       </p>
       <p>
-        For a professional-services firm this matters enormously, because most of
-        your staff cross the wage base early in the year. A quote that applies an
+        For a firm with higher-paid staff this matters enormously, because most of
+        your people cross the wage base early in the year. A quote that applies an
         unemployment rate to gross payroll rather than to taxable wages can
         overstate the cost by a wide margin, and it will do so for exactly the
         firms whose salaries are highest.

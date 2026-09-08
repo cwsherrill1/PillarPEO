@@ -87,8 +87,8 @@ const Footer = () => {
               className="h-10 w-auto brightness-0 invert"
             />
             <p className="mt-4 text-sm leading-relaxed text-primary-foreground/75">
-              Independent HR advisory for professional-services firms nationwide,
-              based in Charlotte.
+              Independent HR advisory and PEO brokerage, nationwide, based in
+              Charlotte.
             </p>
             <ul className="mt-4 space-y-2.5 text-sm text-primary-foreground/80">
               <li>

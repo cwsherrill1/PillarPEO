@@ -41,7 +41,7 @@ const aboutJsonLd = {
       "@type": "AboutPage",
       url: "https://pillarpeo.com/about",
       name: "About Pillar PEO Advisors",
-      description: "Pillar is an independent HR advisory firm for professional-services firms nationwide, headquartered in Charlotte, NC.",
+      description: "Pillar is an independent HR advisory and PEO brokerage firm, nationwide, headquartered in Charlotte, NC.",
     },
     {
       "@type": "Person",
@@ -69,9 +69,9 @@ const aboutJsonLd = {
 const About = () => (
   <div>
     <SEOHead
-      title="About Pillar: HR Advisory for Professional Firms"
+      title="About Pillar: HR Advisory and PEO Brokerage"
       fullTitle
-      description="Independent, founder-led HR advisory for professional-services firms nationwide, headquartered in Charlotte. Fixed price, commissions disclosed."
+      description="Independent, founder-led HR advisory and PEO brokerage, nationwide, headquartered in Charlotte. Fixed price, commissions disclosed."
       jsonLd={aboutJsonLd}
     />
     {/* ─── Hero ─── */}
@@ -82,13 +82,13 @@ const About = () => (
             About Pillar
           </p>
           <h1 className="font-heading text-4xl font-800 leading-tight md:text-5xl lg:text-6xl">
-            HR advisory for professional-services
-            <br className="hidden md:block" /> firms, nationwide, from Charlotte.
+            HR advisory and PEO brokerage,
+            <br className="hidden md:block" /> nationwide, from Charlotte.
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-primary-foreground/80 md:text-xl">
             Fixed-price HR audits and projects, fractional HR, and clean
-            transitions into or out of a PEO for law, accounting,
-            engineering, medical and nonprofit firms of 10 to 150 people.
+            transitions into or out of a PEO for firms of 10 to 150 people,
+            in every state their people work in.
           </p>
         </Reveal>
       </div>

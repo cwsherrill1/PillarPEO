@@ -84,9 +84,9 @@ const jsonLd = {
 const HrAudit = () => (
   <>
     <SEOHead
-      title="HR Audit for Small Professional Firms | Pillar"
+      title="HR Audit for Firms of 10–150"
       fullTitle
-      description="A fixed-price HR audit for professional-services firms: 41 checks across nine areas, scored Pass, Watch or Fail, in 15 business days."
+      description="A fixed-price HR audit for firms of 10–150 people: 41 checks across nine areas, scored Pass, Watch or Fail, in 15 business days."
       canonical={`${SITE_URL}/services/hr-audit`}
       jsonLd={jsonLd}
     />

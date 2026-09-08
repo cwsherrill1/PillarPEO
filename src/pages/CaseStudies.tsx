@@ -24,7 +24,7 @@ const formatSteps = [
 ];
 
 const placeholders = [
-  "First published case study: professional-services firm, HR audit engagement, situation / what we found / what changed with a number, published with client permission.",
+  "First published case study: client firm, HR audit engagement, situation / what we found / what changed with a number, published with client permission.",
   "Second published case study: PEO transition or brokerage placement, situation / what we found / what changed with a number, published with client permission.",
   "Third published case study: fractional HR engagement, situation / what we found / what changed with a number, published with client permission.",
 ];

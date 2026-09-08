@@ -15,7 +15,7 @@ const faqs: Faq[] = [
   },
   {
     q: "Does a PEO always save money on benefits?",
-    a: "No. A PEO's leverage is real for some employers and marginal for others. A professional-services firm with a healthy, stable group may already be rated favourably on its own, in which case pooled pricing can be neutral or worse.",
+    a: "No. A PEO's leverage is real for some employers and marginal for others. A firm with a healthy, stable group may already be rated favourably on its own, in which case pooled pricing can be neutral or worse.",
   },
   {
     q: "What is the alternative if a PEO is wrong for us?",

@@ -54,7 +54,7 @@ const jsonLd = {
       },
       geo: { "@type": "GeoCoordinates", latitude: metro.geo.lat, longitude: metro.geo.lng },
       description:
-        "Fixed-price HR audits, HR projects, fractional HR and PEO transitions for professional-services firms in Charlotte and the surrounding towns.",
+        "Fixed-price HR audits, HR projects, fractional HR and PEO transitions for firms in Charlotte and the surrounding towns.",
     },
     faqSchema(faqs),
   ],
@@ -65,7 +65,7 @@ const CharlotteNc = () => (
     <SEOHead
       title="HR Consulting in Charlotte, NC | Pillar PEO Advisors"
       fullTitle
-      description="Fixed-price HR audits and projects for Charlotte professional-services firms, including the city ordinance and NC/SC cross-border staff."
+      description="Fixed-price HR audits and projects for Charlotte firms, including the city ordinance and NC/SC cross-border staff."
       canonical={`${SITE_URL}/hr-consulting/charlotte-nc`}
       jsonLd={jsonLd}
     />
@@ -158,7 +158,7 @@ const CharlotteNc = () => (
 
     <Section title="Compensation expectations in a banking town" alt>
       <p>
-        Charlotte's professional-services firms compete for staff with the operations and
+        Charlotte's firms compete for staff with the operations and
         risk functions of large financial institutions. That has two effects that show up
         in an HR audit.
       </p>

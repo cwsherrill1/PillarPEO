@@ -123,7 +123,7 @@ const CalebSherrill = () => (
     <ServiceCta
       heading="Talk to Caleb."
       body="Most first conversations are 30 minutes and end with a clear answer about whether we can help."
-      proof="client quote naming Caleb, from a professional-services firm, with a specific outcome."
+      proof="client quote naming Caleb, from a client firm, with a specific outcome."
       secondary={{ label: "Meet the team", href: "/about" }}
     />
   </>
