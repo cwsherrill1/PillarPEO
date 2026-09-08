@@ -1,4 +1,3 @@
-import { BOOKING_URL } from "@/data/pricing";
 /**
  * PRICES ARE DELIBERATELY NOT PUBLISHED ON THE SITE AS OF SEPTEMBER 2026.
  * The client asked for every dollar figure to be removed from public pages,
