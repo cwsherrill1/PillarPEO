@@ -45,7 +45,7 @@ const PeoImplementation = () => (
     <SEOHead
       title="What to Expect During a PEO Implementation"
       fullTitle
-      description="Signing with a PEO is step one. Here's what the next 60–90 days actually look like and how to make sure nothing falls through the cracks."
+      description="Signing with a PEO is step one. Here's what the next 60–90 days actually look like and how to prepare for them."
       jsonLd={ARTICLE}
       ogType="article"
     />
@@ -61,7 +61,7 @@ const PeoImplementation = () => (
         </Reveal>
         <Reveal delay={100}>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80 md:text-xl">
-            Signing with a PEO is step one. Here's what the next 60–90 days actually look like, and how to make sure nothing falls through the cracks.
+            Signing with a PEO is step one. Here's what the next 60–90 days actually look like, and what to check at each stage.
           </p>
         </Reveal>
         <Reveal delay={150}>
@@ -84,14 +84,13 @@ const PeoImplementation = () => (
             <ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources
           </Link>
           <p className="text-xl leading-8 text-foreground/85">
-            Most employers focus heavily on the evaluation and selection process, and then are surprised by how much work happens after they sign. A PEO implementation is not just a software setup. It involves migrating payroll data, transitioning benefits, communicating with employees, and coordinating between your current and new providers. This guide walks you through what to expect and what to watch for.
+            Most employers focus heavily on the evaluation and selection process, and then are surprised by how much work happens after they sign. A PEO implementation involves migrating payroll data, transitioning benefits, communicating with employees, and coordinating between your current and new providers. This guide walks you through what to expect and what to watch for.
           </p>
         </Reveal>
       </div>
     </section>
 
     <Section title="What Happens in the First Two Weeks After Signing" alt>
-      <p>Once you sign with a new PEO, implementation begins immediately. In the first two weeks:</p>
       <ul className="space-y-3">
         <Bullet>Your assigned implementation coordinator will request your employee data (roster, classifications, pay rates, direct deposit info, deductions)</Bullet>
         <Bullet>Benefits enrollment opens: employees will receive instructions for selecting their new plans</Bullet>
@@ -102,7 +101,7 @@ const PeoImplementation = () => (
     </Section>
 
     <Section title="Employee Benefits Enrollment">
-      <p>Benefits enrollment during a PEO implementation is typically a special enrollment period. Employees will need to:</p>
+      <p>Enrollment during implementation typically runs as a special enrollment period. Employees will need to:</p>
       <ul className="space-y-3">
         <Bullet>Log into the new benefits portal (or complete paper forms if required)</Bullet>
         <Bullet>Select their health, dental, and vision plans</Bullet>
@@ -113,7 +112,7 @@ const PeoImplementation = () => (
     </Section>
 
     <Section title="The First Payroll" alt>
-      <p>The first payroll run on a new PEO platform is the moment most employers are most anxious about. Here's how to make it go smoothly:</p>
+      <p>Here's how to make the first payroll run on a new PEO platform go smoothly:</p>
       <ul className="space-y-3">
         <Bullet>Complete a full parallel review: verify every employee's pay rate, deductions, and direct deposit information before processing</Bullet>
         <Bullet>Confirm the payroll schedule aligns with your existing pay cadence</Bullet>
@@ -124,7 +123,6 @@ const PeoImplementation = () => (
     </Section>
 
     <Section title="Common Bumps to Plan For">
-      <p>Even well-run implementations have friction points. The most common:</p>
       <ul className="space-y-3">
         {bumps.map((b) => <Bullet key={b}>{b}</Bullet>)}
       </ul>
@@ -132,7 +130,6 @@ const PeoImplementation = () => (
     </Section>
 
     <Section title="Months 2–3: Stabilization" alt>
-      <p>By the second and third month, the heavy lifting is done. The focus shifts to:</p>
       <ul className="space-y-3">
         <Bullet>Confirming quarterly payroll tax filings are being submitted correctly</Bullet>
         <Bullet>Verifying that benefits are active and claims are processing</Bullet>
@@ -143,14 +140,13 @@ const PeoImplementation = () => (
     </Section>
 
     <Section title="How Pillar Stays Involved After You Sign">
-      <p>Pillar's involvement doesn't end when you sign a contract. During implementation, we:</p>
       <ul className="space-y-3">
         <Bullet>Stay in contact with your implementation coordinator to flag issues early</Bullet>
         <Bullet>Help you review first payroll and first benefits enrollment</Bullet>
         <Bullet>Provide a post-implementation debrief to confirm everything landed correctly</Bullet>
         <Bullet>Remain your contact if service issues arise in the first year</Bullet>
       </ul>
-      <p className="font-semibold text-foreground">Our goal is to make sure the PEO you selected actually performs the way it was sold.</p>
+      <p className="font-semibold text-foreground">The goal is to confirm the PEO you selected performs the way it was sold, and to catch it early if it doesn't.</p>
     </Section>
 
     <section className="bg-primary py-24 md:py-32">
@@ -160,7 +156,7 @@ const PeoImplementation = () => (
             About to go through a PEO implementation?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">
-            Pillar walks alongside employers through the entire journey, from first conversation to first payroll on a new platform. Talk to an advisor to get a realistic picture of what this looks like for your company.
+            Pillar stays involved from first conversation to first payroll on a new platform. Talk to an advisor to get a realistic picture of what this looks like for your company.
           </p>
           <div className="mt-8">
             <Button asChild size="lg" className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20">
