@@ -20,7 +20,12 @@ export const siteRoutes: SiteRoute[] = [
   { path: "/services/hr-audit", lastmod: D, changefreq: "monthly" },
   { path: "/services/hr-projects", lastmod: D, changefreq: "monthly" },
   { path: "/services/fractional-hr", lastmod: D, changefreq: "monthly" },
-  { path: "/services/transitions", lastmod: D, changefreq: "monthly" },
+  { path: "/services/transitions", lastmod: "2026-09-08", changefreq: "monthly" },
+  { path: "/services/transitions/peo-exit", lastmod: "2026-09-08", changefreq: "monthly" },
+  { path: "/services/transitions/peo-switch", lastmod: "2026-09-08", changefreq: "monthly" },
+  { path: "/services/transitions/peo-implementation", lastmod: "2026-09-08", changefreq: "monthly" },
+  { path: "/services/transitions/hris-migration", lastmod: "2026-09-08", changefreq: "monthly" },
+  { path: "/services/transitions/payroll-provider-switch", lastmod: "2026-09-08", changefreq: "monthly" },
   { path: "/services/peo-brokerage", lastmod: D, changefreq: "monthly" },
   { path: "/how-we-get-paid", lastmod: D, changefreq: "monthly" },
 
