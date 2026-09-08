@@ -46,7 +46,7 @@ const stages = [
     num: 4,
     icon: BarChart3,
     title: "Proposal review",
-    desc: "We put every proposal into one format so fees, plan designs, and contract terms line up side by side, and walk through what's different between them, not just the sticker price.",
+    desc: "We put every proposal into one format so fees, plan designs, and contract terms line up side by side, and walk through what's different between them, including the terms behind the sticker price.",
   },
   {
     num: 5,
@@ -171,7 +171,7 @@ const PeoBrokerage = () => (
 
     <Prose title="What a PEO broker does" alt>
       <ul className="space-y-2">
-        <Bullet>Goes to market with multiple providers at once, not just familiar names</Bullet>
+        <Bullet>Goes to market with multiple providers at once, including ones outside the familiar names</Bullet>
         <Bullet>Turns confusing proposals into a true apples-to-apples comparison</Bullet>
         <Bullet>Flags hidden fees, contract traps, and renewal risk before you sign</Bullet>
         <Bullet>Negotiates pricing and terms on your behalf</Bullet>

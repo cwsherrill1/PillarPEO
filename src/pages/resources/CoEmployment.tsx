@@ -94,7 +94,6 @@ const CoEmployment = () => (
             <li className="flex items-start gap-2"><span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-accent" />Benefits enrollment and payroll processing flow through the PEO's platform</li>
             <li className="flex items-start gap-2"><span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-accent" />They may have access to a broader HR portal, additional employee assistance programs, or upgraded benefit options</li>
           </ul>
-          <p className="mt-4 text-lg leading-8 text-foreground/85">These are generally improvements, not friction points.</p>
         </Reveal>
       </div>
     </section>
@@ -172,7 +171,7 @@ const CoEmployment = () => (
         <Reveal>
           <h2 className="font-heading text-2xl font-800 text-foreground md:text-3xl">Is Co-Employment Right for Your Organization?</h2>
           <p className="mt-4 text-lg leading-8 text-foreground/85">
-            Co-employment works best when an employer wants professional HR infrastructure, better benefits, compliance confidence, and administrative relief, without building an internal HR department to match. It tends to be the right model for organizations with 10 to 250 employees that have outgrown founder-led HR or whose current PEO relationship is underperforming.
+            Co-employment works best when an employer wants a benefit plan it cannot buy on its own, without hiring an HR department to run it. It tends to be the right model for organizations with 10 to 250 employees that have outgrown founder-led HR or whose current PEO relationship is underperforming.
           </p>
           <p className="mt-4 text-lg leading-8 text-foreground/85">
             It is not the right model for organizations that need full HR outsourcing without any involvement, or those with unusual workforce arrangements that don't fit a standard PEO structure.

@@ -18,7 +18,7 @@ const faqs: Faq[] = [
   },
   {
     q: "Do PEO agreements have termination fees?",
-    a: "Some do, some do not, and some achieve the same result through the notice window and term length instead. Read the termination article and the renewal article together: the cost of leaving is the sum of both, not just any stated fee.",
+    a: "Some do, some do not, and some achieve the same result through the notice window and term length instead. Read the termination article and the renewal article together: the cost of leaving is the sum of both, and any stated fee is only part of it.",
   },
   {
     q: "Can I negotiate the notice window before signing?",

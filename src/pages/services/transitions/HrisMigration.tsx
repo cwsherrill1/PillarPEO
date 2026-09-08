@@ -93,7 +93,7 @@ const HrisMigration = () => (
           <strong className="text-foreground">Configuration.</strong> Pay
           codes, deduction codes, approval workflows, security roles and
           reporting templates built out in the new system to match how your
-          team works, not just the vendor's default setup.
+          team works, rather than the vendor's default setup.
         </Bullet>
         <Bullet>
           <strong className="text-foreground">Integration cutover.</strong>{" "}
@@ -134,7 +134,7 @@ const HrisMigration = () => (
         <Bullet>
           Give the implementation team access to your current system and a
           named point of contact who knows how your current configuration
-          works in practice, not just how it was documented.
+          works in practice, which is often different from how it was documented.
         </Bullet>
         <Bullet>
           Review the field mapping before data loads. Errors caught here take

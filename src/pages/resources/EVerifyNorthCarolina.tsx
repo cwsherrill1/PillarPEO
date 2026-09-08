@@ -99,7 +99,7 @@ const EVerifyNorthCarolina = () => (
       <p>
         If your company is at or approaching 25 employees in North Carolina,
         confirm your E-Verify enrollment is active and that whoever runs your
-        hiring process is using it for every new hire, not just some.
+        hiring process is using it for every new hire, every time.
         This is one of the checks in area 1 of the{" "}
         <Link to="/services/hr-audit" className="text-green-ink hover:underline">
           HR audit
@@ -141,7 +141,7 @@ const EVerifyNorthCarolina = () => (
 
     <ServiceCta
       heading="Not sure if your hiring process uses E-Verify consistently?"
-      body="The HR audit checks I-9 and E-Verify practice against every hire in your file, not just the ones you remember."
+      body="The HR audit checks I-9 and E-Verify practice against every hire in your file, including the ones nobody remembers."
       proof="client quote describing an E-Verify or I-9 gap the audit found, North Carolina employer."
       secondary={{ label: "See the HR audit", href: "/services/hr-audit" }}
     />

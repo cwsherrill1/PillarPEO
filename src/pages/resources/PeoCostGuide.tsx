@@ -177,7 +177,7 @@ const PeoCostGuide = () => (
         <Bullet>Ask every provider to quote on the same scope of services</Bullet>
         <Bullet>Separate the administrative fee from the benefits cost from the workers' comp cost</Bullet>
         <Bullet>Model out cost at current headcount, then at 20% growth</Bullet>
-        <Bullet>Ask for a multi-year projection, not just year-one pricing</Bullet>
+        <Bullet>Ask for a multi-year projection, since year-one pricing rarely holds</Bullet>
         <Bullet>Factor in the implementation or onboarding fee: some waive it, some don't</Bullet>
       </ul>
       <p className="mt-4">What's often priced separately, and belongs in the comparison: 401(k) administration fees, SUTA management fees, EPLI, implementation fees, per-state registration fees for multi-state employers, and premium support tiers.</p>
