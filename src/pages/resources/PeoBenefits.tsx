@@ -1,3 +1,4 @@
+import { BOOKING_URL } from "@/data/pricing";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -8,7 +9,6 @@ import { Reveal } from "@/components/Reveal";
 import SEOHead from "@/components/SEOHead";
 import { ArticleByline, ArticleAuthorBio, buildArticleJsonLd } from "@/components/ArticleByline";
 
-const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
 const faqs = [
   { q: "What benefits does a PEO provide?", a: "A PEO bundles health, dental, vision, life, disability, 401(k), FSA/HSA, EAP, commuter benefits, and often pet insurance and supplemental coverage. Because the PEO is the employer of record for thousands of clients combined, your small company gets large-group pricing and plan options." },
@@ -166,7 +166,7 @@ const PeoBenefits = () => (
           <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">We'll pull plan designs, pricing, and network maps from multiple PEOs so you can see exactly what your employees would get.</p>
           <div className="mt-8">
             <Button asChild size="lg" className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20">
-              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Schedule a PEO Strategy Call</a>
+              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Compare PEOs, free</a>
             </Button>
           </div>
         </Reveal>

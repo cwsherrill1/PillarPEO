@@ -1,3 +1,4 @@
+import { BOOKING_URL } from "@/data/pricing";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -17,7 +18,6 @@ const ARTICLE = buildArticleJsonLd({
   dateModified: "2026-09-05",
 });
 
-const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
 const Bullet = ({ children }: { children: React.ReactNode }) => (
   <li className="flex items-start gap-2"><span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-accent" /><span>{children}</span></li>
@@ -61,7 +61,7 @@ const HowToSwitchPeos = () => (
         <Reveal delay={200}>
           <div className="mt-8">
             <Button asChild size="lg" className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20">
-              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Talk to an Advisor</a>
+              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Compare PEOs, free</a>
             </Button>
           </div>
         </Reveal>
@@ -186,7 +186,7 @@ const HowToSwitchPeos = () => (
           </p>
           <div className="mt-8">
             <Button asChild size="lg" className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20">
-              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Talk to an Advisor</a>
+              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Compare PEOs, free</a>
             </Button>
           </div>
         </Reveal>

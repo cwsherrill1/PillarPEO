@@ -1,3 +1,4 @@
+import { BOOKING_URL } from "@/data/pricing";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -7,7 +8,6 @@ import { Reveal } from "@/components/Reveal";
 import SEOHead from "@/components/SEOHead";
 import { ArticleByline, ArticleAuthorBio, buildArticleJsonLd } from "@/components/ArticleByline";
 
-const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
 const tiers = [
   {
@@ -157,7 +157,7 @@ const TopPeoCompanies = () => (
           <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">Tell us about your company in 20 minutes; we'll come back with the 3 PEOs most likely to fit and run quotes for you.</p>
           <div className="mt-8">
             <Button asChild size="lg" className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20">
-              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Schedule a PEO Strategy Call</a>
+              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Compare PEOs, free</a>
             </Button>
           </div>
         </Reveal>

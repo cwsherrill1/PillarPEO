@@ -1,3 +1,4 @@
+import { BOOKING_URL } from "@/data/pricing";
 import { useMemo, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -11,7 +12,6 @@ import { quizQuestions, getTierInfo as getDefaultTierInfo, type QuizQuestion } f
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 
-const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
 type Band = {
   band: string;
@@ -264,7 +264,7 @@ const QuizResults = ({
         </p>
         <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
           <Button asChild variant="outline">
-            <Link to="/">Learn more at pillarpeo.com</Link>
+            <Link to="/">pillarpeo.com</Link>
           </Button>
           <Button asChild>
             <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">

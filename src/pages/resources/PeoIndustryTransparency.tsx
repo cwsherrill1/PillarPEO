@@ -1,3 +1,4 @@
+import { BOOKING_URL } from "@/data/pricing";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -7,7 +8,6 @@ import { Reveal } from "@/components/Reveal";
 import SEOHead from "@/components/SEOHead";
 import { ArticleByline, ArticleAuthorBio, buildArticleJsonLd } from "@/components/ArticleByline";
 
-const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
 const faqs = [
   {
@@ -247,7 +247,7 @@ const PeoIndustryTransparency = () => (
               className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20"
             >
               <Link to="/contact">
-                Schedule a PEO Strategy Call
+                Compare PEOs, free
               </Link>
             </Button>
           </div>

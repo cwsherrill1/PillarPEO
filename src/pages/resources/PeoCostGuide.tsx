@@ -1,3 +1,4 @@
+import { BOOKING_URL } from "@/data/pricing";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -10,7 +11,6 @@ import { ArticleByline, ArticleAuthorBio, buildArticleJsonLd } from "@/component
 import { PricingModelsCompare } from "@/components/ArticleDiagrams";
 
 
-const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
 const faqs = [
   { q: "How much does a PEO cost per employee?", a: "Most PEOs charge between $80 and $200 per employee per month (PEPM) on a flat-fee model, or 2%–6% of total payroll on a percentage model. The wide range reflects differences in service level, benefits, workers' comp risk class, and the size of your workforce." },
@@ -217,7 +217,7 @@ const PeoCostGuide = () => (
           <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">We'll collect your data once, send it to multiple PEOs, and bring back normalized quotes so you can compare.</p>
           <div className="mt-8">
             <Button asChild size="lg" className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20">
-              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Schedule a PEO Strategy Call</a>
+              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Compare PEOs, free</a>
             </Button>
           </div>
         </Reveal>

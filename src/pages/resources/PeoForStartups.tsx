@@ -1,3 +1,4 @@
+import { BOOKING_URL } from "@/data/pricing";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -8,7 +9,6 @@ import { Reveal } from "@/components/Reveal";
 import SEOHead from "@/components/SEOHead";
 import { ArticleByline, ArticleAuthorBio, buildArticleJsonLd } from "@/components/ArticleByline";
 
-const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
 const faqs = [
   { q: "When should a startup get a PEO?", a: "Most venture-backed startups benefit from a PEO between 5 and 75 employees: early enough to avoid building HR infrastructure in-house, late enough that benefits matter for recruiting. Pre-seed companies under 5 people are usually fine on Gusto or Justworks' non-PEO payroll." },
@@ -178,7 +178,7 @@ const PeoForStartups = () => (
           <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">We work with venture-backed and bootstrapped startups every week. Get matched with the right PEO for your stage, geography, and benefits goals.</p>
           <div className="mt-8">
             <Button asChild size="lg" className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20">
-              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Schedule a PEO Strategy Call</a>
+              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Compare PEOs, free</a>
             </Button>
           </div>
         </Reveal>
