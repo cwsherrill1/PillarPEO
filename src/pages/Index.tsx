@@ -114,7 +114,7 @@ const Index = () => {
                   alt="Caleb and Josiah Sherrill, founders of Pillar PEO Advisors"
                   width={1050}
                   height={1400}
-                  fetchPriority="high"
+                  {...{ fetchpriority: "high" }}
                   decoding="async"
                   className="w-full max-w-sm rounded-2xl shadow-2xl shadow-black/30 object-cover aspect-[3/4]"
                 />
