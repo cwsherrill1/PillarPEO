@@ -90,7 +90,7 @@ const PeoBenefits = () => (
             <ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources
           </Link>
           <p className="text-xl leading-8 text-foreground/85">
-            "PEO benefits" gets used as a catch-all term, but the actual stack ranges from genuinely impressive (Fortune-500-grade health plans for 12 employees) to ordinary (the same 401(k) you'd get anywhere). Here's an honest breakdown of every category: what's bundled, what's negotiable, and where PEOs beat the open market.
+            "PEO benefits" gets used as a catch-all term, but the actual stack ranges from genuinely impressive (large-group health plans for a 12-person firm) to ordinary (the same 401(k) you'd get anywhere). Here's an honest breakdown of every category: what's bundled, what's negotiable, and where PEOs beat the open market.
           </p>
         </Reveal>
       </div>

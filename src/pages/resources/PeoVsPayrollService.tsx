@@ -129,7 +129,7 @@ const PeoVsPayrollService = () => (
     <Section title="The Hidden Cost of Staying on Payroll Service Too Long">
       <p>Three costs employers underestimate:</p>
       <ul className="space-y-2">
-        <Bullet><strong className="text-foreground">Bad benefits = lost candidates.</strong> Strong PEOs offer Fortune-500-level health plans. A small group health plan often costs the same and is dramatically worse.</Bullet>
+        <Bullet><strong className="text-foreground">Bad benefits = lost candidates.</strong> Strong PEOs offer health plans priced off a much larger pool. A small group health plan often costs the same and is dramatically worse.</Bullet>
         <Bullet><strong className="text-foreground">Compliance fines compound.</strong> A single missed state registration or misclassified contractor can cost $10K–$50K, more than 2 years of PEO fees.</Bullet>
         <Bullet><strong className="text-foreground">Founder time is the most expensive line item.</strong> If HR/payroll/benefits questions absorb 6 hours of your week at a $300/hour effective rate, that's $7,200/month, already more than a PEO would cost.</Bullet>
       </ul>

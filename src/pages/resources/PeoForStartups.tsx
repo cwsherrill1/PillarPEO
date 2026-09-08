@@ -102,7 +102,7 @@ const PeoForStartups = () => (
         <p className="mt-2 text-sm text-muted-foreground">Hire in California, New York, Texas, and Washington in the same week without registering as an employer in any of them. The PEO is the registered employer; you just hire.</p>
       </CardContent></Card>
       <Card className="mt-3 border-accent/20"><CardContent className="p-6">
-        <h3 className="font-heading font-700 text-foreground">2. Fortune-500 benefits at startup scale</h3>
+        <h3 className="font-heading font-700 text-foreground">2. Large-employer benefit plans at startup scale</h3>
         <p className="mt-2 text-sm text-muted-foreground">A 12-person startup gets the same Aetna, BCBS, or Kaiser plans normally reserved for 1,000+ employee companies, because you're pooled with thousands of other PEO clients.</p>
       </CardContent></Card>
       <Card className="mt-3 border-accent/20"><CardContent className="p-6">
