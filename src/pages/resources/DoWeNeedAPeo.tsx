@@ -253,7 +253,8 @@ const DoWeNeedAPeo = () => {
         <div className="container text-center">
           <Reveal>
             <p className="text-lg font-medium text-foreground">
-              Not sure if a PEO is right for you? That's exactly why we're here.
+              Not sure if a PEO is right for you? Book a call and we'll tell you within
+              30 minutes whether it's worth pursuing.
             </p>
             <Button
               asChild
@@ -348,12 +349,12 @@ const DoWeNeedAPeo = () => {
         <div className="container py-24 md:py-32 text-center max-w-2xl">
           <Reveal>
             <h2 className="font-heading text-3xl md:text-4xl font-800">
-              Still not sure? That's what we're here for.
+              Still not sure? Start with a short call.
             </h2>
             <p className="mt-4 text-primary-foreground/80 text-lg">
-              Start with a short conversation. We'll help you figure out whether
-              a PEO makes sense, and if it doesn't, we'll point you in the
-              right direction.
+              We'll ask about your headcount, states, and current setup, then tell you
+              plainly whether a PEO is worth pursuing. If it isn't, we'll say so and
+              point you toward what will actually help.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
               <Button
