@@ -45,7 +45,7 @@ const PeoImplementation = () => (
     <SEOHead
       title="What to Expect During a PEO Implementation"
       fullTitle
-      description="Signing with a PEO is step one. Here's what the next 60–90 days actually look like and how to prepare for them."
+      description="Signing with a PEO is step one. Here's what the next 60–90 days look like and how to prepare for them."
       jsonLd={ARTICLE}
       ogType="article"
     />
@@ -61,7 +61,7 @@ const PeoImplementation = () => (
         </Reveal>
         <Reveal delay={100}>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80 md:text-xl">
-            Signing with a PEO is step one. Here's what the next 60–90 days actually look like, and what to check at each stage.
+            Signing with a PEO is step one. Here's what the next 60–90 days look like, and what to check at each stage.
           </p>
         </Reveal>
         <Reveal delay={150}>

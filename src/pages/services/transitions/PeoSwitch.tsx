@@ -64,7 +64,7 @@ const PeoSwitch = () => (
       intro="Less rebuilding than an exit, but the benefit and payroll mapping still has to be exact, or someone loses a deductible or a pay stub."
     />
 
-    <Section title="What a PEO switch actually involves">
+    <Section title="What a PEO switch involves">
       <UpdatedLine />
       <p className="text-lg leading-8 text-foreground/85">
         A PEO switch moves your employer relationship from one PEO's master

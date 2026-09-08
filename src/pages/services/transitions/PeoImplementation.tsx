@@ -64,7 +64,7 @@ const PeoImplementation = () => (
       intro="Underwriting is the part that decides your pricing, and it runs on data your team has to produce accurately before anything else can happen."
     />
 
-    <Section title="What a first PEO implementation actually involves">
+    <Section title="What a first PEO implementation involves">
       <UpdatedLine />
       <p className="text-lg leading-8 text-foreground/85">
         A first PEO implementation moves your employees onto the PEO's payroll

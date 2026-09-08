@@ -9,7 +9,7 @@ import { ArticleByline, ArticleAuthorBio, buildArticleJsonLd } from "@/component
 
 const ARTICLE = buildArticleJsonLd({
   title: "Understanding Co-Employment",
-  description: "What co-employment actually means for your liability, your employees, and your control.",
+  description: "What co-employment means for your liability, your employees, and your control.",
   path: "/resources/co-employment",
   datePublished: "2026-01-15",
   dateModified: "2026-09-05",
@@ -28,7 +28,7 @@ const CoEmployment = () => (
   <>
     <SEOHead
       title="Understanding Co-Employment"
-      description="Co-employment is the foundation of every PEO relationship. Learn what it actually means for your liability, your employees, and your control."
+      description="Co-employment is the foundation of every PEO relationship. Learn what it means for your liability, your employees, and your control."
       jsonLd={ARTICLE}
       ogType="article"
     />
@@ -45,7 +45,7 @@ const CoEmployment = () => (
         </Reveal>
         <Reveal delay={100}>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80 md:text-xl">
-            Co-employment splits the employer role into two parts: who handles the paperwork and who runs the business. Here's how that split actually works.
+            Co-employment splits the employer role into two parts: who handles the paperwork and who runs the business. Here's how that split works.
           </p>
         </Reveal>
         <Reveal delay={150}>

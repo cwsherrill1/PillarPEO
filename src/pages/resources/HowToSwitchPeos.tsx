@@ -11,7 +11,7 @@ import { SwitchTimeline } from "@/components/ArticleDiagrams";
 
 const ARTICLE = buildArticleJsonLd({
   title: "How to Switch PEOs Without Disrupting Payroll",
-  description: "What the switching process actually looks like and how to do it without missing a beat.",
+  description: "What the switching process looks like and how to do it without missing a beat.",
   path: "/services/transitions",
   datePublished: "2026-01-15",
   dateModified: "2026-09-05",
@@ -36,7 +36,7 @@ const HowToSwitchPeos = () => (
     <SEOHead
       title="How to Switch PEOs Without Disrupting Payroll"
       fullTitle
-      description="Employers often delay switching PEOs because they're worried about payroll or benefits breaking. Here's what the switching process actually looks like and how to do it right."
+      description="Employers often delay switching PEOs because they're worried about payroll or benefits breaking. Here's what the switching process looks like and how to do it right."
       jsonLd={ARTICLE}
       ogType="article"
     />
@@ -52,7 +52,7 @@ const HowToSwitchPeos = () => (
         </Reveal>
         <Reveal delay={100}>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80 md:text-xl">
-            Switching PEOs means moving payroll, tax filings, and benefits to a new provider without missing a paycheck or a claim. Here's what the process actually looks like.
+            Switching PEOs means moving payroll, tax filings, and benefits to a new provider without missing a paycheck or a claim. Here's what the process looks like.
           </p>
         </Reveal>
         <Reveal delay={150}>

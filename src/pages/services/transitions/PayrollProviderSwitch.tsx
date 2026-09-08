@@ -64,7 +64,7 @@ const PayrollProviderSwitch = () => (
       intro="A provider switch is smaller than a PEO exit, but the same year-to-date and tax-filing risks apply, and they get worse the further you are from a quarter boundary."
     />
 
-    <Section title="What a payroll provider switch actually involves">
+    <Section title="What a payroll provider switch involves">
       <UpdatedLine />
       <p className="text-lg leading-8 text-foreground/85">
         A payroll provider switch moves your payroll processing and tax
@@ -104,7 +104,7 @@ const PayrollProviderSwitch = () => (
         pre-tax or post-tax deduction totals for the current year loaded
         exactly as the old provider had them. Get this wrong and the errors
         don't show up immediately: they surface at year end, when W-2s are
-        generated from whatever totals the new system actually has on file.
+        generated from whatever totals the new system has on file.
       </p>
       <p>
         The old provider also needs to be confirmed as having filed its last

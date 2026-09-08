@@ -64,7 +64,7 @@ const HrisMigration = () => (
       intro="The system change is the easy part. The data migration, the historic records and the integrations are what decide whether it goes smoothly."
     />
 
-    <Section title="What an HRIS migration actually involves">
+    <Section title="What an HRIS migration involves">
       <UpdatedLine />
       <p className="text-lg leading-8 text-foreground/85">
         An HRIS migration replaces the software your HR and payroll data lives

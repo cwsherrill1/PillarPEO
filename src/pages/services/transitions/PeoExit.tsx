@@ -64,7 +64,7 @@ const PeoExit = () => (
       intro="Standing up your own payroll, benefits and HR takes longer than the notice window gives you, so the planning starts before the letter goes out."
     />
 
-    <Section title="What a PEO exit actually involves">
+    <Section title="What a PEO exit involves">
       <UpdatedLine />
       <p className="text-lg leading-8 text-foreground/85">
         A PEO exit means moving payroll, tax filings, workers' compensation and

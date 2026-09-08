@@ -124,7 +124,7 @@ const Transitions = () => (
       <div className="container max-w-3xl py-20 md:py-28">
         <Reveal>
           <h2 className="font-heading text-3xl font-800 text-foreground md:text-4xl">
-            What the work actually involves.
+            What the work involves.
           </h2>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
             A transition is mostly data, deadlines and paperwork that only exists once.
