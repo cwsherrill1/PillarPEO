@@ -40,8 +40,8 @@ const Footer = () => {
               className="h-10 w-auto brightness-0 invert"
             />
             <p className="mt-4 text-sm leading-relaxed text-primary-foreground/75">
-              Guidance for employers making high-stakes PEO decisions. Clarity
-              over confusion. Confidence over guesswork.
+              Independent HR advisory for professional-services firms nationwide,
+              based in Charlotte.
             </p>
           </div>
 

@@ -36,7 +36,7 @@ const HowToSwitchPeos = () => (
     <SEOHead
       title="How to Switch PEOs Without Disrupting Payroll"
       fullTitle
-      description="The fear of transition keeps employers stuck in bad PEO relationships. Here's what the switching process actually looks like and how to do it right."
+      description="Employers often delay switching PEOs because they're worried about payroll or benefits breaking. Here's what the switching process actually looks like and how to do it right."
       jsonLd={ARTICLE}
       ogType="article"
     />
@@ -52,7 +52,7 @@ const HowToSwitchPeos = () => (
         </Reveal>
         <Reveal delay={100}>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80 md:text-xl">
-            The fear of transition keeps thousands of employers stuck in PEO relationships that aren't working. Here's what the process actually looks like, and how to do it right.
+            Switching PEOs means moving payroll, tax filings, and benefits to a new provider without missing a paycheck or a claim. Here's what the process actually looks like.
           </p>
         </Reveal>
         <Reveal delay={150}>
@@ -75,7 +75,7 @@ const HowToSwitchPeos = () => (
             <ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources
           </Link>
           <p className="text-xl leading-8 text-foreground/85">
-            The number one reason employers stay in a bad PEO relationship isn't loyalty. It's fear. Fear of payroll disruption. Fear of employee confusion during benefits transitions. Fear of losing momentum right when the business needs stability. That fear is understandable, but it's also largely preventable with the right plan. Switching PEOs is a structured process, not a leap of faith.
+            Employers stay with an underperforming PEO longer than they should because a switch touches payroll and benefits for every employee at once, and a mistake there is visible immediately. That risk is real, but it's manageable with the right sequence: understand your current contract, run a proper comparison, and time the cutover to a clean payroll boundary.
           </p>
         </Reveal>
       </div>
@@ -170,7 +170,7 @@ const HowToSwitchPeos = () => (
             <Bullet>Coordination with both the outgoing and incoming PEO</Bullet>
             <Bullet>Post-transition check-ins to confirm everything landed correctly</Bullet>
           </ul>
-          <p className="mt-4 text-base font-semibold text-foreground">The employer's job is to make the selection. Our job is to make everything else manageable.</p>
+          <p className="mt-4 text-base font-semibold text-foreground">You choose the provider. Pillar coordinates the data, the timeline, and the two PEOs on either side of the cutover.</p>
         </Reveal>
       </div>
     </section>
