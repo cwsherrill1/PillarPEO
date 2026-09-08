@@ -330,16 +330,16 @@ const EmployeeHealthBenefitsOptions = () => (
 
     <Section title="How Pillar PEO Advisors fits in">
       <p>
-        We exist to help employers compare their options and make a confident decision without
-        guessing. We are independent, we are not feeding business back to an old sales floor, and
-        our job is to find the structure that actually fits your business, whether that is a PEO
-        arrangement or something else entirely. PEO brokerage is free to the employer because the
-        provider pays a commission, and we disclose that commission to you in writing. See{" "}
+        Pillar PEO Advisors is independent and does not feed business back to an old sales
+        floor. If a PEO master plan fits your situation, PEO brokerage is free to the employer
+        because the provider pays a commission, and we disclose that commission to you in
+        writing. See{" "}
         <Link to="/how-we-get-paid/" className="text-green-ink underline">how we get paid</Link>.
       </p>
       <p>
-        If you want a straight read on which of these eight paths makes the most sense for your
-        team, start with a free consultation and we will walk through it together.
+        Bring your current census, plan documents, and last two renewal notices to a free
+        consultation, and we will map all eight options against your headcount, budget, and
+        renewal timeline.
       </p>
     </Section>
 
