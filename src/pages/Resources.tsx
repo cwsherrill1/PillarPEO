@@ -1,3 +1,4 @@
+import { BOOKING_URL } from "@/data/pricing";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import {
@@ -26,7 +27,6 @@ import {
 import { Reveal } from "@/components/Reveal";
 import SEOHead from "@/components/SEOHead";
 
-const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
 const resources = [
   {
@@ -336,7 +336,7 @@ const Resources = () => {
     <>
       <SEOHead
         title="Resources"
-        description="Free PEO guides, checklists, and comparisons built for employers, not PEO sales teams. Make a confident decision."
+        description="Free PEO guides, checklists, and comparisons written for the employer side of the table. Make a confident decision."
         jsonLd={faqJsonLd}
         
       />
@@ -556,7 +556,7 @@ const Resources = () => {
                 className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20"
               >
                 <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
-                  Talk to an Advisor
+                  Compare PEOs, free
                 </a>
               </Button>
               <Button

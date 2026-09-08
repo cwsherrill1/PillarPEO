@@ -1,3 +1,4 @@
+import { BOOKING_URL } from "@/data/pricing";
 import { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
 import { CheckCircle2, MessageSquare, BarChart3, Handshake, ArrowLeft } from "lucide-react";
@@ -9,7 +10,6 @@ import SEOHead from "@/components/SEOHead";
 import UpdatedLine from "@/components/services/UpdatedLine";
 import { SITE_URL, breadcrumb } from "@/data/organization";
 
-const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
 const signals = [
   "Payroll, benefits, or compliance now take more leadership time than they should",

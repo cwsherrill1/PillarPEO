@@ -1,3 +1,4 @@
+import { BOOKING_URL } from "@/data/pricing";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -7,7 +8,6 @@ import { Reveal } from "@/components/Reveal";
 import SEOHead from "@/components/SEOHead";
 import { ArticleByline, ArticleAuthorBio, buildArticleJsonLd } from "@/components/ArticleByline";
 
-const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
 const faqs = [
   {
@@ -365,7 +365,7 @@ const EmployeeHealthBenefitsOptions = () => (
             Not sure which path fits your team?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">
-            We'll walk through all eight options with you and recommend the structure that fits your business, independent, no pressure, free forever.
+            We'll walk through all eight options with you and recommend the structure that fits your business. The comparison is free to you; if you place with a provider, the provider pays us a commission we disclose in writing.
           </p>
           <div className="mt-8">
             <Button
@@ -374,7 +374,7 @@ const EmployeeHealthBenefitsOptions = () => (
               className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20"
             >
               <Link to="/contact">
-                Schedule a PEO Strategy Call
+                Compare PEOs, free
               </Link>
             </Button>
           </div>

@@ -142,7 +142,7 @@ const NcHandbookRequirements = () => (
         <Link to="/services/hr-audit" className="text-green-ink hover:underline">
           HR audit
         </Link>
-        , checked against how the company operates, not just against
+        , checked against how the company operates rather than against
         a template. See the full{" "}
         <Link to="/resources/hr-audit-checklist" className="text-green-ink hover:underline">
           HR audit checklist

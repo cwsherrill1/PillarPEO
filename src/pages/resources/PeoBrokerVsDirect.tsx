@@ -1,3 +1,4 @@
+import { BOOKING_URL } from "@/data/pricing";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -8,7 +9,6 @@ import { Reveal } from "@/components/Reveal";
 import SEOHead from "@/components/SEOHead";
 import { ArticleByline, ArticleAuthorBio, buildArticleJsonLd } from "@/components/ArticleByline";
 
-const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
 const faqs = [
   { q: "Does using a PEO broker cost more than going direct?", a: "No. PEOs build sales-channel commissions into their pricing whether you have a broker or not. When you go direct, that commission goes to the PEO's internal sales rep. When you use a broker, the same commission funds independent representation. Your fee is the same either way." },
@@ -164,7 +164,7 @@ const PeoBrokerVsDirect = () => (
           <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">One conversation, one data submission, multiple PEO quotes back. We negotiate, normalize, and stay with you through renewal.</p>
           <div className="mt-8">
             <Button asChild size="lg" className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20">
-              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Schedule a PEO Strategy Call</a>
+              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Compare PEOs, free</a>
             </Button>
           </div>
         </Reveal>

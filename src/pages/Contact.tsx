@@ -1,3 +1,4 @@
+import { BOOKING_URL } from "@/data/pricing";
 import React, { useState } from "react";
 import { Mail, Phone, MapPin, Clock, PhoneCall, BarChart3 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
@@ -18,7 +19,6 @@ import { organization, caleb, ORG_REF, breadcrumb } from "@/data/organization";
 import SEOHead from "@/components/SEOHead";
 import { supabase } from "@/integrations/supabase/client";
 
-const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
 const contactJsonLd = {
   "@context": "https://schema.org",

@@ -1,3 +1,4 @@
+import { BOOKING_URL } from "@/data/pricing";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -8,7 +9,6 @@ import { Reveal } from "@/components/Reveal";
 import SEOHead from "@/components/SEOHead";
 import { ArticleByline, ArticleAuthorBio, buildArticleJsonLd } from "@/components/ArticleByline";
 
-const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
 const providers = [
   { name: "Justworks", fit: "5–75 employees, white-collar, single-state or 2–3 states", strengths: "Clean platform, transparent flat-rate PEPM, fast onboarding, strong basic benefits", watchouts: "Fewer benefit plan tiers; admin fee scales linearly with headcount; less customization", price: "$99–$149 PEPM" },
@@ -21,7 +21,7 @@ const providers = [
 
 const faqs = [
   { q: "What is the best PEO for a small business in 2026?", a: "There is no single 'best' PEO: the right one depends on your headcount, industry, states, benefits priorities, and budget. For 5–40 white-collar employees, Justworks and Gusto PEO usually price best. For 25–250 employees with complex needs or high-risk industries, ADP TotalSource and Insperity often win on benefits depth and workers' comp pooling. Rippling tends to win when IT integration matters." },
-  { q: "What size company should use a PEO?", a: "PEOs typically make economic sense between 5 and 250 employees. Below 5, a basic payroll service is more cost-effective. Above 250, many companies build internal HR and benefits brokerage. The sweet spot is 10–100 employees who want Fortune-500 benefits and offloaded compliance." },
+  { q: "What size company should use a PEO?", a: "PEOs typically make economic sense between 5 and 250 employees. Below 5, a basic payroll service is more cost-effective. Above 250, many companies build internal HR and benefits brokerage. The sweet spot is 10–100 employees who want large-group benefit plans and offloaded compliance." },
   { q: "Do PEOs work for remote-first companies?", a: "Yes, and they're often essential. The moment you hire in 3+ states, multi-state registration, SUTA management, and state-specific labor compliance get expensive. PEOs handle all of that under their EIN. Justworks, Rippling, and TriNet all have strong remote-first offerings." },
   { q: "Are PEOs only for tech startups?", a: "No. PEOs serve construction, manufacturing, nonprofits, professional services, healthcare, restaurants, and most other industries. Workers' comp pooling is most valuable for higher-risk industries: they often see the biggest cost savings vs. buying coverage independently." },
   { q: "How long does it take to onboard a PEO?", a: "60–90 days from signed agreement to first payroll for most providers. Faster options (Gusto, Justworks for very small groups) can do 30–45 days. Larger or multi-state implementations can stretch to 120 days. See our PEO implementation guide for the full timeline." },
@@ -159,7 +159,7 @@ const BestPeoForSmallBusiness = () => (
           <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">We'll narrow your list to the 3 PEOs most likely to fit, run quotes side by side, and tell you what we'd pick if it were our company.</p>
           <div className="mt-8">
             <Button asChild size="lg" className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20">
-              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Schedule a PEO Strategy Call</a>
+              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Compare PEOs, free</a>
             </Button>
           </div>
         </Reveal>

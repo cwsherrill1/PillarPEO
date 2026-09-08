@@ -1,3 +1,4 @@
+import { BOOKING_URL } from "@/data/pricing";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -16,7 +17,6 @@ const ARTICLE = buildArticleJsonLd({
   dateModified: "2026-09-05",
 });
 
-const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
 const comparisonRows = [
   { factor: "Employment structure", peo: "Co-employment", aso: "Sole employer", inhouse: "Sole employer" },
@@ -64,7 +64,7 @@ const PeoVsAsoVsInhouse = () => (
         <Reveal delay={200}>
           <div className="mt-8">
             <Button asChild size="lg" className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20">
-              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Talk to an Advisor</a>
+              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Compare PEOs, free</a>
             </Button>
           </div>
         </Reveal>
@@ -79,7 +79,7 @@ const PeoVsAsoVsInhouse = () => (
             <ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources
           </Link>
           <p className="text-xl leading-8 text-foreground/85">
-            There's a common assumption that a PEO is the right answer for every growing company. It isn't. The right HR model depends on your size, complexity, growth stage, and how much control your leadership wants to retain. This guide breaks down the three most common models so you can make the right call, not just the most marketed one.
+            There's a common assumption that a PEO is the right answer for every growing company. It isn't. The right HR model depends on your size, complexity, growth stage, and how much control your leadership wants to retain. This guide breaks down the three most common models so you can make the right call for your firm rather than the most marketed one.
           </p>
         </Reveal>
       </div>
@@ -225,11 +225,11 @@ const PeoVsAsoVsInhouse = () => (
             Let's figure out which model fits your company.
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">
-            Pillar's discovery process takes about 30 minutes. You'll leave with a specific answer for your headcount and states, not a sales pitch.
+            Pillar's discovery process takes about 30 minutes. You'll leave with a specific answer for your headcount and states.
           </p>
           <div className="mt-8">
             <Button asChild size="lg" className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20">
-              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Talk to an Advisor</a>
+              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Compare PEOs, free</a>
             </Button>
           </div>
         </Reveal>

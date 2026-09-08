@@ -1,3 +1,4 @@
+import { BOOKING_URL } from "@/data/pricing";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -7,7 +8,6 @@ import { Reveal } from "@/components/Reveal";
 import SEOHead from "@/components/SEOHead";
 import { ArticleByline, ArticleAuthorBio, buildArticleJsonLd } from "@/components/ArticleByline";
 
-const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 
 const faqs = [
   { q: "What's the difference between a PEO and a payroll service?", a: "A payroll service (Gusto, ADP Run, QuickBooks Payroll) processes your paychecks and files payroll taxes. A PEO does all of that plus becomes a co-employer: taking on HR, benefits administration, workers' comp, and shared compliance liability. PEO costs more but covers far more." },
@@ -129,7 +129,7 @@ const PeoVsPayrollService = () => (
     <Section title="The Hidden Cost of Staying on Payroll Service Too Long">
       <p>Three costs employers underestimate:</p>
       <ul className="space-y-2">
-        <Bullet><strong className="text-foreground">Bad benefits = lost candidates.</strong> Strong PEOs offer Fortune-500-level health plans. A small group health plan often costs the same and is dramatically worse.</Bullet>
+        <Bullet><strong className="text-foreground">Bad benefits = lost candidates.</strong> Strong PEOs offer health plans priced off a much larger pool. A small group health plan often costs the same and is dramatically worse.</Bullet>
         <Bullet><strong className="text-foreground">Compliance fines compound.</strong> A single missed state registration or misclassified contractor can cost $10K–$50K, more than 2 years of PEO fees.</Bullet>
         <Bullet><strong className="text-foreground">Founder time is the most expensive line item.</strong> If HR/payroll/benefits questions absorb 6 hours of your week at a $300/hour effective rate, that's $7,200/month, already more than a PEO would cost.</Bullet>
       </ul>
@@ -155,7 +155,7 @@ const PeoVsPayrollService = () => (
           <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">We'll walk through your situation in 20 minutes, and tell you honestly if a PEO doesn't make sense yet.</p>
           <div className="mt-8">
             <Button asChild size="lg" className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20">
-              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Schedule a PEO Strategy Call</a>
+              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Compare PEOs, free</a>
             </Button>
           </div>
         </Reveal>

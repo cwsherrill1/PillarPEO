@@ -22,7 +22,7 @@ const steps = [
   },
   {
     name: "Post and distribute state-specific notices",
-    text: "Every state has its own required workplace postings and, in many cases, new-hire notices that must be handed to the employee directly, not just posted on a wall a remote worker will never see.",
+    text: "Every state has its own required workplace postings and, in many cases, new-hire notices that must be handed to the employee directly. Posting them on a wall does nothing for a remote worker.",
   },
   {
     name: "Add a state addendum to the handbook",
