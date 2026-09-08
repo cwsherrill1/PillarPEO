@@ -55,7 +55,7 @@ const FiveQuestions = () => (
     <SEOHead
       title="5 Questions to Ask Any PEO Before Signing"
       fullTitle
-      description="The critical questions most employers never think to ask before signing with a PEO. Use this checklist to separate a good deal from an expensive mistake."
+      description="The questions most employers never think to ask before signing with a PEO, and how the answers separate a good deal from a costly one."
       jsonLd={ARTICLE}
       ogType="article"
     />

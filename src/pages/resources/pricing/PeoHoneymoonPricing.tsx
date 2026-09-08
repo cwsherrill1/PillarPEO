@@ -51,7 +51,7 @@ const PeoHoneymoonPricing = () => (
     <SEOHead
       title="Why Your PEO Renewal Jumped"
       fullTitle
-      description="First-year PEO rates are often priced to win the business, then repriced at renewal once your switching cost peaks. The tell, and what to ask before signing."
+      description="First-year PEO rates are often priced to win the business, then repriced at renewal once your switching cost peaks. What to ask first."
       canonical={`${SITE_URL}/resources/peo-honeymoon-pricing`}
       ogType="article"
       jsonLd={jsonLd}

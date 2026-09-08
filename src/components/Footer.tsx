@@ -2,6 +2,53 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { BOOKING_URL, PRIMARY_CTA } from "@/data/pricing";
 
+const columns: { heading: string; links: { label: string; href: string }[] }[] = [
+  {
+    heading: "Services",
+    links: [
+      { label: "HR Audit", href: "/services/hr-audit" },
+      { label: "HR Projects", href: "/services/hr-projects" },
+      { label: "Fractional HR", href: "/services/fractional-hr" },
+      { label: "Transitions", href: "/services/transitions" },
+      { label: "PEO brokerage", href: "/services/peo-brokerage" },
+    ],
+  },
+  {
+    heading: "Resources",
+    links: [
+      { label: "How PEO pricing works", href: "/resources/peo-pricing-explained" },
+      { label: "When a PEO is the wrong answer", href: "/resources/when-a-peo-is-the-wrong-answer" },
+      { label: "Free PEO renewal review", href: "/resources/peo-renewal-review" },
+      { label: "State employer guides", href: "/resources/state-employer-guides" },
+      { label: "HR audit checklist", href: "/resources/hr-audit-checklist" },
+      { label: "HR Risk Score", href: "/tools/hr-risk-score" },
+      { label: "PEO cost calculator", href: "/tools/peo-cost-calculator" },
+    ],
+  },
+  {
+    heading: "Partners",
+    links: [
+      { label: "Partner overview", href: "/partners" },
+      { label: "For fractional CFOs", href: "/partners/fractional-cfos" },
+      { label: "For benefits brokers", href: "/partners/benefits-brokers" },
+      { label: "White-label delivery", href: "/partners/white-label" },
+      { label: "Client one-pager", href: "/partners/client-one-pager" },
+    ],
+  },
+  {
+    heading: "Company",
+    links: [
+      { label: "About", href: "/about" },
+      { label: "Caleb Sherrill", href: "/about/caleb-sherrill" },
+      { label: "How we get paid", href: "/how-we-get-paid" },
+      { label: "Case studies", href: "/case-studies" },
+      { label: "Industries", href: "/industries" },
+      { label: "Locations", href: "/hr-consulting" },
+      { label: "Contact", href: "/contact" },
+    ],
+  },
+];
+
 const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground">
@@ -31,9 +78,9 @@ const Footer = () => {
 
       {/* Main Footer */}
       <div className="container py-16">
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-5">
           {/* Brand */}
-          <div className="lg:col-span-1">
+          <div>
             <img
               src="/pillar-logo.png"
               alt="Pillar PEO Advisors"
@@ -43,92 +90,7 @@ const Footer = () => {
               Independent HR advisory for professional-services firms nationwide,
               based in Charlotte.
             </p>
-          </div>
-
-          {/* Navigation */}
-          <div>
-            <h4 className="mb-4 text-xs font-bold tracking-widest text-primary-foreground/70 uppercase">
-              Navigation
-            </h4>
-            <ul className="space-y-2.5">
-              {[
-                { label: "Home", href: "/" },
-                { label: "Services", href: "/services" },
-                              { label: "Resources", href: "/resources" },
-                { label: "About", href: "/about" },
-                { label: "Contact", href: "/contact" },
-              ].map((link) => (
-                <li key={link.href}>
-                  <Link
-                    to={link.href}
-                    className="text-sm text-primary-foreground/80 transition-colors hover:text-accent"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Solutions */}
-          <div>
-            <h4 className="mb-4 text-xs font-bold tracking-widest text-primary-foreground/70 uppercase">
-              Services
-            </h4>
-            <ul className="space-y-2.5">
-              {[
-                { label: "HR Audit", href: "/services/hr-audit" },
-                { label: "HR Projects", href: "/services/hr-projects" },
-                { label: "Fractional HR", href: "/services/fractional-hr" },
-                { label: "Transitions", href: "/services/transitions" },
-                { label: "PEO brokerage", href: "/services/peo-brokerage" },
-              ].map((link) => (
-                <li key={link.href}>
-                  <Link
-                    to={link.href}
-                    className="text-sm text-primary-foreground/80 transition-colors hover:text-accent"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-
-            </ul>
-
-            <h4 className="mb-4 mt-8 text-xs font-bold tracking-widest text-primary-foreground/70 uppercase">
-              Company
-            </h4>
-            <ul className="space-y-2.5">
-              {[
-                { label: "Why Pillar", href: "/about" },
-                { label: "Caleb Sherrill", href: "/about/caleb-sherrill" },
-                { label: "How we get paid", href: "/how-we-get-paid" },
-                { label: "Partners", href: "/partners" },
-                { label: "For fractional CFOs", href: "/partners/fractional-cfos" },
-                { label: "For benefits brokers", href: "/partners/benefits-brokers" },
-                { label: "White-label delivery", href: "/partners/white-label" },
-                { label: "Case studies", href: "/case-studies" },
-                { label: "HR Risk Score", href: "/tools/hr-risk-score" },
-                { label: "PEO cost calculator", href: "/tools/peo-cost-calculator" },
-              ].map((link) => (
-                <li key={link.href}>
-                  <Link
-                    to={link.href}
-                    className="text-sm text-primary-foreground/80 transition-colors hover:text-accent"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <h4 className="mb-4 text-xs font-bold tracking-widest text-primary-foreground/70 uppercase">
-              Get in Touch
-            </h4>
-            <ul className="space-y-2.5 text-sm text-primary-foreground/80">
+            <ul className="mt-4 space-y-2.5 text-sm text-primary-foreground/80">
               <li>
                 <a href="mailto:info@pillarpeo.com" className="transition-colors hover:text-accent">
                   info@pillarpeo.com
@@ -141,6 +103,26 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+
+          {columns.map((col) => (
+            <div key={col.heading}>
+              <h4 className="mb-4 text-xs font-bold tracking-widest text-primary-foreground/70 uppercase">
+                {col.heading}
+              </h4>
+              <ul className="space-y-2.5">
+                {col.links.map((link) => (
+                  <li key={link.href}>
+                    <Link
+                      to={link.href}
+                      className="text-sm text-primary-foreground/80 transition-colors hover:text-accent"
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
 
         {/* Legal */}
