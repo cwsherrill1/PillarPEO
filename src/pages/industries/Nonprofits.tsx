@@ -21,7 +21,7 @@ const faqs: Faq[] = [
     a: "No. Mission-driven work carries no exemption of its own, and a nonprofit salary does not settle the question either. Program staff who spend most of their time delivering the service rather than managing people or exercising independent judgment on significant matters are frequently non-exempt, whatever the title says.",
   },
   {
-    q: "What does a funder actually expect on personnel documentation?",
+    q: "What does a funder expect on personnel documentation?",
     a: "Typically: that the position is documented, that time charged to the grant is supported by records, that allocation across funding sources is consistent and explainable, and that pay decisions follow a written policy rather than a case-by-case judgement. Most findings in this area are documentation gaps rather than misuse of funds.",
   },
   {
@@ -68,7 +68,7 @@ const Nonprofits = () => (
       intro="Lean teams, mixed funding, and volunteers alongside staff. The employment rules do not bend for any of it."
     />
 
-    <Section title="What HR problems do nonprofits actually have?">
+    <Section title="Where HR breaks in a nonprofit">
       <UpdatedLine />
       <p className="text-lg leading-8 text-foreground/85">
         Nonprofits carry the same wage-and-hour rules as any employer, with three
@@ -177,7 +177,7 @@ const Nonprofits = () => (
     <ServiceCta
       heading="A fixed-price HR audit your board can read."
       body="Scored findings, a remediation plan, and a price quoted before any work starts."
-      proof="nonprofit reference with budget band and what the audit unlocked."
+      proof="nonprofit reference with budget band and what the audit changed."
       secondary={{ label: "See all industries", href: "/industries" }}
     />
   </>

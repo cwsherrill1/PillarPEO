@@ -68,7 +68,7 @@ const MedicalDental = () => (
       intro="You already run a compliance programme for patients. The employment side is usually a decade behind it."
     />
 
-    <Section title="What HR problems do medical and dental practices actually have?">
+    <Section title="The HR problems that show up in a practice">
       <UpdatedLine />
       <p className="text-lg leading-8 text-foreground/85">
         Practices have a records problem and a pay-calculation problem. Medical

@@ -257,9 +257,10 @@ const QuizResults = ({
       {/* Footer */}
       <div className="border-t border-border pt-8 text-center">
         <p className="mx-auto mb-4 max-w-lg text-muted-foreground">
-          Most leaders feel exactly like you do. At Pillar PEO Advisors we help
-          businesses simplify HR, so you can focus on your people, not
-          paperwork.
+          The free call is 20 minutes. We'll walk through your score, the areas
+          driving it, and what to fix first. Bring your employee count, the
+          states you operate in, and your current handbook or PEO agreement
+          if you have one.
         </p>
         <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
           <Button asChild variant="outline">

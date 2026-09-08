@@ -19,6 +19,11 @@ const services = [
   { label: "HR Projects", href: "/services/hr-projects" },
   { label: "Fractional HR", href: "/services/fractional-hr" },
   { label: "Transitions", href: "/services/transitions" },
+  { label: "PEO exit", href: "/services/transitions/peo-exit" },
+  { label: "PEO switch", href: "/services/transitions/peo-switch" },
+  { label: "PEO implementation", href: "/services/transitions/peo-implementation" },
+  { label: "HRIS migration", href: "/services/transitions/hris-migration" },
+  { label: "Payroll provider switch", href: "/services/transitions/payroll-provider-switch" },
   { label: "PEO brokerage", href: "/services/peo-brokerage" },
 ];
 

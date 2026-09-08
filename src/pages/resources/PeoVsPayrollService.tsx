@@ -14,7 +14,7 @@ const faqs = [
   { q: "Is a PEO worth it if I just need payroll?", a: "No. If your only need is running payroll for 5–20 employees with simple benefits, a payroll service at $40–$60/employee/month is dramatically cheaper than a PEO at $130–$200/employee/month. PEOs make sense when you also need group benefits access, multi-state compliance, or HR support." },
   { q: "When should a small business switch from payroll service to a PEO?", a: "The most common trigger points: (1) you want to offer competitive group health benefits but can't get good rates as a small group, (2) you've hired in 3+ states and compliance is getting expensive, (3) HR questions are eating 5+ hours of your week, or (4) you're hiring fast and need someone else managing onboarding/I-9s/handbooks." },
   { q: "Can I keep my payroll provider and add a PEO later?", a: "No, when you join a PEO, payroll becomes part of the PEO's platform. You can't run two payroll systems for the same employees. This is why switching to a PEO is a bigger decision than switching payroll services." },
-  { q: "Do PEOs file my payroll taxes under their EIN or mine?", a: "Under the PEO's EIN. This is what makes a PEO a co-employer. Your payroll service files under your EIN. The PEO's EIN structure is what unlocks the master health plan and workers' comp pooling, but it's also why exiting a PEO requires more effort than switching payroll providers." },
+  { q: "Do PEOs file my payroll taxes under their EIN or mine?", a: "Under the PEO's EIN. This is what makes a PEO a co-employer. Your payroll service files under your EIN. The PEO's EIN structure is what makes the master health plan possible and workers' comp pooling, but it's also why exiting a PEO requires more effort than switching payroll providers." },
 ];
 
 const ARTICLE = buildArticleJsonLd({
@@ -65,7 +65,7 @@ const PeoVsPayrollService = () => (
             <span className="text-accent"> When You Need Each</span>
           </h1>
         </Reveal>
-        <Reveal delay={100}><p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80 md:text-xl">A payroll service runs payroll. A PEO runs payroll, benefits, HR, compliance, and shares legal liability. Here's how to know which one you actually need.</p></Reveal>
+        <Reveal delay={100}><p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80 md:text-xl">A payroll service runs payroll. A PEO runs payroll, benefits, HR, compliance, and shares legal liability. Here's how to know which one you need.</p></Reveal>
         <Reveal delay={150}><ArticleByline datePublished="May 15, 2026" /></Reveal>
         <Reveal delay={200}>
           <div className="mt-8">
@@ -116,7 +116,7 @@ const PeoVsPayrollService = () => (
       <ul className="space-y-2">
         {["You're under 10 employees and intend to stay there for 12+ months", "All employees work in one or two states", "You don't offer group health benefits, or you have them set up well already", "Nobody is asking HR questions you can't answer with a Google search", "Your operating budget is too tight for an extra $1,500–$3,000/month"].map((t) => <Bullet key={t}>{t}</Bullet>)}
       </ul>
-      <p className="mt-4">Spending PEO money before you need it is a real waste. It crowds out hiring or marketing budget that would actually grow the business.</p>
+      <p className="mt-4">Spending PEO money before you need it is a real waste. It crowds out hiring or marketing budget that would grow the business.</p>
     </Section>
 
     <Section title="When You've Outgrown Payroll Service" alt>

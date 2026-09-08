@@ -434,3 +434,18 @@ Pillar delivers HR audit findings, PEO comparisons and renewal analysis, handboo
 
 ## Partners — client one-pager — /partners/client-one-pager
 A printable single page partners can hand to a client, covering what Pillar does, where engagements usually start (renewal review, HR audit, PEO comparison, transitions), how Pillar is paid, and what documents are needed. Adding ?partner=Firm+Name to the address stamps the partner firm's name on the sheet. Site navigation, footer and on-screen instructions are excluded from print.
+
+## Transitions — PEO exit — /services/transitions/peo-exit
+Leaving a PEO and standing your own payroll, benefits and HR back up. Read the agreement first for the notice window and termination date, then reopen or reinstate state withholding and unemployment accounts in your own name, bind workers' compensation before the first uncovered day, place benefit plans directly, choose payroll and HRIS platforms, and load year-to-date wage and tax figures. A plan-year or January 1 boundary is cleanest; a mid-year exit means two sets of year-to-date records and, in many cases, two W-2s for the same employee.
+
+## Transitions — PEO switch — /services/transitions/peo-switch
+Moving from one PEO to another. Run the comparison before giving notice, because notice is usually irreversible. Census, wage history and accrual balances carry over as data; benefit plans, deductible credit and workers' compensation experience do not carry automatically and have to be negotiated with the incoming provider and its carriers.
+
+## Transitions — PEO implementation — /services/transitions/peo-implementation
+Entering a PEO for the first time: data gathering, underwriting, service agreement, benefit enrolment, and the first payroll, with a parallel run and reconciliation before go-live. The client's team supplies the census, payroll history, unemployment filings, workers' compensation loss runs and signatures, and nominates one internal owner.
+
+## Transitions — HRIS migration — /services/transitions/hris-migration
+Moving HRIS or payroll platform: discovery and configuration, data migration, integrations to benefits carriers and accounting, at least one parallel run, and a decision about historic records and archive access before the old system is switched off.
+
+## Transitions — payroll provider switch — /services/transitions/payroll-provider-switch
+Changing payroll provider. Quarter and calendar-year boundaries are the cleanest points because year-to-date wage bases and tax filings reset. A mid-year move requires loading year-to-date wages and taxes into the new system and agreeing which provider files which quarter, which is why mid-year switches take more work.

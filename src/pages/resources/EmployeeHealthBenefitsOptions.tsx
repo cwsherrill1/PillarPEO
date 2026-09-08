@@ -12,7 +12,7 @@ const BOOKING_URL = "https://meetings.hubspot.com/caleb-sherrill";
 const faqs = [
   {
     q: "What is the cheapest way to offer health insurance to employees?",
-    a: "It depends on goals. A QSEHRA or a capped ICHRA allowance gives the lowest predictable employer cost, but the right answer balances cost against the coverage employees actually need.",
+    a: "It depends on goals. A QSEHRA or a capped ICHRA allowance gives the lowest predictable employer cost, but the right answer balances cost against the coverage employees need.",
   },
   {
     q: "What is the difference between ICHRA and QSEHRA?",
@@ -142,7 +142,7 @@ const EmployeeHealthBenefitsOptions = () => (
             </p>
             <p>
               This guide lays out every major way to offer health benefits in 2026, what each one
-              actually is, who it tends to fit, and the tradeoffs nobody mentions on the sales call.
+              is, who it tends to fit, and the tradeoffs nobody mentions on the sales call.
               No jargon, no agenda.
             </p>
           </div>
@@ -259,7 +259,7 @@ const EmployeeHealthBenefitsOptions = () => (
       <p>
         <strong className="text-foreground">Tends to fit:</strong> Small businesses and solo
         operators within an industry or region where a strong, well-managed association plan
-        actually exists.
+        exists.
       </p>
     </Section>
 
@@ -284,7 +284,7 @@ const EmployeeHealthBenefitsOptions = () => (
       <p>
         With this approach, your benefits come bundled through a co-employment relationship that
         pools your employees together with many other companies. Because that combined pool can be
-        very large, it can unlock benefits and pricing that a small standalone business would
+        very large, it can open up benefits and pricing that a small standalone business would
         struggle to access on its own, alongside payroll, compliance, and HR support in one
         package.
       </p>
@@ -323,23 +323,23 @@ const EmployeeHealthBenefitsOptions = () => (
         The protection is simple. Work with someone who will lay all eight options on the table,
         show you the real tradeoffs of each, and tell you the truth even when the truth is that
         your current setup is fine. Ask any advisor where they worked before, and how many options
-        they actually place business across. The answer tells you whether you are getting a
+        they place business across. The answer tells you whether you are getting a
         comparison or a funnel.
       </p>
     </Section>
 
     <Section title="How Pillar PEO Advisors fits in">
       <p>
-        We exist to help employers compare their options and make a confident decision without
-        guessing. We are independent, we are not feeding business back to an old sales floor, and
-        our job is to find the structure that actually fits your business, whether that is a PEO
-        arrangement or something else entirely. PEO brokerage is free to the employer because the
-        provider pays a commission, and we disclose that commission to you in writing. See{" "}
+        Pillar PEO Advisors is independent and does not feed business back to an old sales
+        floor. If a PEO master plan fits your situation, PEO brokerage is free to the employer
+        because the provider pays a commission, and we disclose that commission to you in
+        writing. See{" "}
         <Link to="/how-we-get-paid/" className="text-green-ink underline">how we get paid</Link>.
       </p>
       <p>
-        If you want a straight read on which of these eight paths makes the most sense for your
-        team, start with a free consultation and we will walk through it together.
+        Bring your current census, plan documents, and last two renewal notices to a free
+        consultation, and we will map all eight options against your headcount, budget, and
+        renewal timeline.
       </p>
     </Section>
 
@@ -365,8 +365,7 @@ const EmployeeHealthBenefitsOptions = () => (
             Not sure which path fits your team?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">
-            We'll walk through all eight options with you and recommend the structure that actually
-            fits your business, independent, no pressure, free forever.
+            We'll walk through all eight options with you and recommend the structure that fits your business, independent, no pressure, free forever.
           </p>
           <div className="mt-8">
             <Button

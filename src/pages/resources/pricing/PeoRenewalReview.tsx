@@ -131,7 +131,7 @@ const PeoRenewalReview = () => (
       <p>
         A written comparison, not a sales deck. It separates the administrative
         fee from benefits, workers' compensation and payroll taxes, so you can see
-        which line is actually driving the change: see{" "}
+        which line is driving the change: see{" "}
         <Link to="/resources/peo-admin-fees" className="text-green-ink hover:underline">
           per-employee vs percentage of payroll
         </Link>{" "}

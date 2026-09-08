@@ -171,7 +171,7 @@ const PeoIndustryTransparency = () => (
 
     <Section title="The renewal trap" alt>
       <p>
-        Here is the pattern that plays out constantly. You sign, you have a reasonable first year,
+        This pattern repeats. You sign, you have a reasonable first year,
         and then renewal arrives with a 15 to 20 percent increase. The explanation is usually
         "market conditions." Sometimes that is true. Often it is also a bet that switching feels
         too hard to bother. Renewal is a leverage point, not a foregone conclusion. Going to
@@ -204,13 +204,12 @@ const PeoIndustryTransparency = () => (
         The good providers exist. They handle compliance competently, staff their service teams
         well, communicate before problems blow up, and treat renewal as a partnership rather than
         an extraction. Finding them takes someone who has seen enough of the market to know who
-        is actually performing and who is coasting on reputation and old friendships.
+        is performing and who is coasting on reputation and old friendships.
       </p>
       <p>
-        That is what Pillar PEO Advisors does. We are not affiliated with any single provider. We
-        have no preferred placement deals and no old sales floor we are quietly feeding. The
-        brokerage is free to the employer because the provider pays a commission, and we disclose
-        that commission to you in writing. You can read exactly{" "}
+        Ask any PEO or broker you are evaluating for a written commission disclosure before you
+        sign. Pillar PEO Advisors is not affiliated with any single provider, has no preferred
+        placement deals, and discloses its own commission in writing. You can read exactly{" "}
         <Link to="/how-we-get-paid/" className="text-green-ink underline">how we get paid</Link>.
       </p>
       <p>If you want a straight read on your current situation, we will give you one.</p>

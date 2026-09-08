@@ -74,12 +74,12 @@ const PeoAdminFees = () => (
       </p>
     </Section>
 
-    <Section title="What each model actually does" alt>
+    <Section title="What each model does" alt>
       <ul className="space-y-3">
         <Bullet>
           <strong className="text-foreground">Per employee per month
           (PEPM).</strong> A fixed amount per active employee per month. It scales
-          with the thing that actually drives the PEO's workload: the number of
+          with the thing that drives the PEO's workload: the number of
           people it has to onboard, pay, enrol and support. It is predictable and
           you can budget it a year out.
         </Bullet>

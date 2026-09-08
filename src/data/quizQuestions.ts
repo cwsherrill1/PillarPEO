@@ -95,7 +95,7 @@ export const quizQuestions: QuizQuestion[] = [
       { text: "Dissatisfied: it's a retention issue", score: 3 },
     ],
     quickWin: "Run a quick anonymous benefits satisfaction survey this week.",
-    longerTermFix: "Access Fortune 500–level benefits through a PEO to boost retention.",
+    longerTermFix: "Use a PEO's pooled plans to offer benefits a firm your size cannot buy alone.",
   },
   {
     id: 8,

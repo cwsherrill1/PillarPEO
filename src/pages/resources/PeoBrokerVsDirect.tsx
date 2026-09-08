@@ -14,14 +14,14 @@ const faqs = [
   { q: "Does using a PEO broker cost more than going direct?", a: "No. PEOs build sales-channel commissions into their pricing whether you have a broker or not. When you go direct, that commission goes to the PEO's internal sales rep. When you use a broker, the same commission funds independent representation. Your fee is the same either way." },
   { q: "How does a PEO broker get paid?", a: "PEO brokers are paid by the PEO once a client is placed and goes live. Compensation is typically a percentage of administrative fees, sometimes with a small renewal residual. Reputable brokers disclose this upfront and don't take per-PEO bonuses that would skew recommendations." },
   { q: "Can a broker get me a better price than going direct?", a: "Often, yes. Brokers compare 3–5 PEO quotes side-by-side, normalize the scope, and negotiate setup fees, locked admin rates, and benefit contribution structures. Going direct, you're negotiating against a single salesperson with no leverage." },
-  { q: "Do brokers represent every PEO?", a: "No broker has every PEO. An independent broker keeps appointments with a set of vetted providers covering the relevant market segments, and shortlists from that set based on your headcount, states and benefits needs. Ask any broker which providers they can actually quote before you start. Avoid 'brokers' who only represent one PEO: they're functionally a sales rep." },
+  { q: "Do brokers represent every PEO?", a: "No broker has every PEO. An independent broker keeps appointments with a set of vetted providers covering the relevant market segments, and shortlists from that set based on your headcount, states and benefits needs. Ask any broker which providers they can quote before you start. Avoid 'brokers' who only represent one PEO: they're functionally a sales rep." },
   { q: "What's the downside of using a broker?", a: "Two real risks: (1) some brokers chase the highest commission rather than the best fit: vet them by asking which PEOs they've placed clients with this year; (2) some brokers disappear after the sale: confirm renewal advocacy is part of the engagement." },
   { q: "Should I get quotes from PEOs directly AND a broker?", a: "It can backfire. PEOs use a 'first-touch' rule: whoever quoted you first 'owns' the deal. If you call ADP TotalSource directly and then come to a broker, the broker often can't quote ADP for you anymore. Pick a path early." },
 ];
 
 const ARTICLE = buildArticleJsonLd({
   title: "PEO Broker vs. Going Direct: Which Saves More?",
-  description: "PEO broker vs. going direct: how brokers get paid, what changes in your fees, and when each path actually saves you money. An independent broker's honest take.",
+  description: "PEO broker vs. going direct: how brokers get paid, what changes in your fees, and when each path saves you money. An independent broker's honest take.",
   path: "/resources/peo-broker-vs-direct",
   datePublished: "2026-05-15",
   dateModified: "2026-09-05",
@@ -69,7 +69,7 @@ const PeoBrokerVsDirect = () => (
         </Reveal>
         <Reveal delay={100}>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80 md:text-xl">
-            How brokers get paid, what changes in your fee, and when each path is actually right.
+            How brokers get paid, what changes in your fee, and when each path is right.
           </p>
         </Reveal>
         <Reveal delay={150}><ArticleByline datePublished="May 15, 2026" /></Reveal>
@@ -90,7 +90,7 @@ const PeoBrokerVsDirect = () => (
             <ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources
           </Link>
           <p className="text-xl leading-8 text-foreground/85">
-            We're a PEO broker. So take this with appropriate skepticism, but we're also going to be honest about when going direct makes more sense than using us. Here's how the economics actually work, what brokers do that PEOs won't, and the situations where you should skip the broker entirely.
+            We're a PEO broker. So take this with appropriate skepticism, but we're also going to be honest about when going direct makes more sense than using us. Here's how the economics work, what brokers do that PEOs won't, and the situations where you should skip the broker entirely.
           </p>
         </Reveal>
       </div>
@@ -123,7 +123,7 @@ const PeoBrokerVsDirect = () => (
       </div>
     </Section>
 
-    <Section title="When Going Direct Actually Makes Sense" alt>
+    <Section title="When Going Direct Is the Better Call" alt>
       <p>Honest take: there are two scenarios where you should skip a broker:</p>
       <ul className="space-y-2">
         <Bullet><strong className="text-foreground">You already know exactly which PEO you want.</strong> If you're a 12-person tech startup convinced Justworks is the right answer, calling them direct is fine. A broker won't add much.</Bullet>

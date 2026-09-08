@@ -123,7 +123,7 @@ const About = () => (
             <p>
               So Pillar is built the way he wishes someone had built it for
               him: a price quoted before the work starts, coverage in every
-              state your people actually work in, and no software to sell and
+              state your people work in, and no software to sell and
               no insurance to place. Where a PEO is genuinely the right answer,
               Pillar will compare providers for you at no charge, and disclose
               what the provider pays us in writing before anything is placed.
@@ -192,7 +192,7 @@ const About = () => (
       <div className="container text-center">
         <Reveal>
           <p className="text-lg font-medium text-foreground">
-Want to know what your HR risk actually is?
+Want to know what your HR risk is?
           </p>
           <Button
             asChild
@@ -230,7 +230,7 @@ Want to know what your HR risk actually is?
             </p>
             <p>
               Pillar exists to take that weight off the people carrying it:
-              find what's actually wrong, price the fix before the work starts,
+              find what's wrong, price the fix before the work starts,
               and stay independent enough that the recommendation is the same
               whether or not anyone buys anything from us.
             </p>

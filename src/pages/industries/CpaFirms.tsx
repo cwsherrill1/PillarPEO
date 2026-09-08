@@ -68,7 +68,7 @@ const CpaFirms = () => (
       intro="Your exposure is concentrated in about eleven weeks of the year, and it is almost always about hours."
     />
 
-    <Section title="What HR problems do CPA firms actually have?">
+    <Section title="The HR problems a CPA firm runs into">
       <UpdatedLine />
       <p className="text-lg leading-8 text-foreground/85">
         Accounting firms have a seasonal wage-hour problem. Non-exempt staff work heavy
@@ -137,7 +137,7 @@ const CpaFirms = () => (
         runs 41 checks across nine areas. For an accounting firm the weight lands on area
         2 (classification and wage-hour), area 1 (hiring, I-9 and E-Verify, because of
         seasonal intake) and area 4 (payroll and tax registrations, because of where
-        people actually sat in April).
+        people sat in April).
       </p>
       <p>
         We look at two payroll registers deliberately, one from inside busy season and

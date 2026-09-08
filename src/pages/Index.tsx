@@ -32,7 +32,7 @@ const FAQS = [
   { q: "What hidden fees should I watch for in a PEO contract?", a: "Common hidden fees include setup fees, per-payroll-run fees, off-cycle payroll fees, benefits administration fees, early-termination penalties, and automatic annual rate escalators. We audit every quote to surface these before you sign." },
   { q: "What documents will you need?", a: "Usually things like an application, employee census, payroll reports, SUTA, benefits documents, and workers' comp information when relevant." },
   { q: "How long does this usually take?", a: "A typical process is around 60 days, though some move faster and some slower depending on complexity and timing." },
-  { q: "What happens after we decide?", a: "Pillar helps support the handoff into onboarding so you're not left to navigate the next phase alone." },
+  { q: "What happens after we decide?", a: "We stay on through implementation: the data gathering, the enrolment deadlines and the first payroll, until the first run reconciles." },
 ];
 
 const orgJsonLd = {
@@ -156,7 +156,7 @@ const Index = () => {
               {
                 need: "Our benefits or PEO renewal just went up",
                 service: "Free renewal review",
-                price: "We read the renewal line by line and tell you what actually moved",
+                price: "We read the renewal line by line and tell you what moved",
                 href: "/resources/peo-renewal-review",
               },
               {
@@ -354,9 +354,9 @@ const Index = () => {
                 Start where you are.
               </h2>
               <p className="mt-4 text-muted-foreground">
-                Whether you're replacing a frustrating PEO, leading a nonprofit
-                team, or trying to figure out whether a PEO even makes sense
-                yet, Pillar helps you move forward with more clarity.
+                Most firms come to us with one problem: a renewal that jumped, a hire
+                in a new state, or an HR job nobody owns. Start there and we will
+                tell you what the next step is.
               </p>
             </div>
           </Reveal>

@@ -92,11 +92,11 @@ const PeoPricingExplained = () => (
 
     <ServiceHero
       eyebrow="Resources · PEO pricing"
-      title="How PEO pricing actually works"
+      title="How PEO pricing works"
       intro="Six pages on where the money hides in a PEO proposal, written from the proposals we review as a broker, not from other people's blogs."
     />
 
-    <Section title="How does PEO pricing actually work?">
+    <Section title="How does PEO pricing work?">
       <UpdatedLine />
       <p className="text-lg leading-8 text-foreground/85">
         A PEO quote has four moving parts: an administrative fee, the benefit

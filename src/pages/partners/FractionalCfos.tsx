@@ -83,7 +83,7 @@ const FractionalCfos = () => (
       </p>
     </Section>
 
-    <Section title="The three questions you actually get asked" alt>
+    <Section title="The three questions you get asked" alt>
       <ul className="space-y-3">
         <Bullet>
           <strong className="text-foreground">"Our benefits renewal is brutal. What do we do?"</strong>{" "}

@@ -14,7 +14,7 @@ const faqs: Faq[] = [
   },
   {
     q: "Does a degree make someone exempt?",
-    a: "No. A degree is relevant evidence for the learned professional exemption, but the analysis is about what the person actually does day to day. Two people with the same degree can land on different sides of the line based on their real responsibilities.",
+    a: "No. A degree is relevant evidence for the learned professional exemption, but the analysis is about what the person does day to day. Two people with the same degree can land on different sides of the line based on their real responsibilities.",
   },
   {
     q: "What changes on a public contract?",
@@ -72,7 +72,7 @@ const EngineeringArchitecture = () => (
       intro="Your staffing follows projects, and projects cross state lines and contract types. The HR record rarely keeps up."
     />
 
-    <Section title="What HR problems do engineering and architecture firms actually have?">
+    <Section title="Where HR strains in a design or engineering firm">
       <UpdatedLine />
       <p className="text-lg leading-8 text-foreground/85">
         Design firms have a classification problem in the middle of the org chart and a
@@ -148,7 +148,7 @@ const EngineeringArchitecture = () => (
       <p>
         Alongside the standard inputs we ask for job descriptions at every grade in the
         design ladder (that is where the classification answer lives) and for any public
-        contract with wage or reporting terms, so we read what you actually agreed to
+        contract with wage or reporting terms, so we read what you agreed to
         rather than what is typical.
       </p>
       <p>

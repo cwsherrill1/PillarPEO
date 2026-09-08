@@ -348,7 +348,7 @@ const PeoCostCalculator = () => {
                     <Link to="/services/hr-audit" className="font-semibold text-green-ink underline underline-offset-4">
                       HR audit
                     </Link>{" "}
-                    tells you which gaps you're actually paying a PEO to solve. Pillar's own work
+                    tells you which gaps you're paying a PEO to solve. Pillar's own work
                     is fixed price, quoted before the work starts.
                   </p>
                 )}

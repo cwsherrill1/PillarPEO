@@ -169,7 +169,7 @@ const NcVsScEmploymentLaw = () => (
           HR audit
         </Link>{" "}
         checks registrations, E-Verify enrollment, and coverage state by state, against the
-        headcount actually working there, not against a single combined number. If you're
+        headcount working there, not against a single combined number. If you're
         opening a location in the other state, start with the{" "}
         <Link to="/resources/multi-state-employer-checklist" className="text-green-ink hover:underline">
           multi-state employer checklist

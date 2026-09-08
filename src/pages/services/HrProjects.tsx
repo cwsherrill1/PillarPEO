@@ -123,7 +123,7 @@ const HrProjects = () => (
               descriptions, an org chart, and a payroll register.
             </li>
             <li>
-              Give us an hour with the people who actually know how the firm works:
+              Give us an hour with the people who know how the firm works:
               usually the practice administrator and one partner.
             </li>
             <li>

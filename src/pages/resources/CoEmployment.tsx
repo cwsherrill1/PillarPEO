@@ -9,7 +9,7 @@ import { ArticleByline, ArticleAuthorBio, buildArticleJsonLd } from "@/component
 
 const ARTICLE = buildArticleJsonLd({
   title: "Understanding Co-Employment",
-  description: "What co-employment actually means for your liability, your employees, and your control.",
+  description: "What co-employment means for your liability, your employees, and your control.",
   path: "/resources/co-employment",
   datePublished: "2026-01-15",
   dateModified: "2026-09-05",
@@ -28,7 +28,7 @@ const CoEmployment = () => (
   <>
     <SEOHead
       title="Understanding Co-Employment"
-      description="Co-employment is the foundation of every PEO relationship. Learn what it actually means for your liability, your employees, and your control."
+      description="Co-employment is the foundation of every PEO relationship. Learn what it means for your liability, your employees, and your control."
       jsonLd={ARTICLE}
       ogType="article"
     />
@@ -45,7 +45,7 @@ const CoEmployment = () => (
         </Reveal>
         <Reveal delay={100}>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80 md:text-xl">
-            Co-employment is the foundation of every PEO relationship. Here's what it actually means for your liability, your employees, and your control.
+            Co-employment splits the employer role into two parts: who handles the paperwork and who runs the business. Here's how that split works.
           </p>
         </Reveal>
         <Reveal delay={150}>
@@ -73,10 +73,10 @@ const CoEmployment = () => (
         <Reveal>
           <h2 className="font-heading text-2xl font-800 text-foreground md:text-3xl">What Is Co-Employment?</h2>
           <p className="mt-4 text-lg leading-8 text-foreground/85">
-            When you partner with a PEO, both you and the PEO become employers of your workforce in different capacities. The PEO becomes the employer of record for payroll, tax filings, benefits administration, and regulatory compliance. You remain the employer of record for day-to-day direction, operations, culture, and all hiring and firing decisions. This shared arrangement is called co-employment.
+            In a PEO relationship, two entities hold pieces of the employer role for the same workforce. The PEO is the employer of record for payroll tax purposes: it files the federal 941 and state unemployment returns under its own EIN, issues W-2s, and carries the master workers' comp policy that your employees are covered under. You remain the employer of record for everything operational: you decide who gets hired, who gets fired, what they get paid, and how they're managed day to day.
           </p>
           <p className="mt-4 text-lg leading-8 text-foreground/85">
-            It exists because the IRS and most state agencies require a legal entity to withhold taxes and administer benefits at scale. The PEO fills that role: that is how they can offer Fortune 500-level benefits at small business prices. Pooling thousands of employees from hundreds of companies gives PEOs buying power that no single employer of 50 or 100 people could replicate.
+            This split exists because tax filings and workers' comp coverage are administered at scale. A PEO files and pays under one umbrella for thousands of worksite employees across many client companies, and that combined headcount is what gives it access to group health rates and workers' comp pricing that a 50- or 100-person employer buying on its own can't get.
           </p>
         </Reveal>
       </div>
@@ -111,7 +111,7 @@ const CoEmployment = () => (
               <li key={item} className="flex items-start gap-2"><span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-accent" />{item}</li>
             ))}
           </ul>
-          <p className="mt-4 text-base font-semibold text-foreground">The PEO is not your boss. They are the infrastructure behind your people operations.</p>
+          <p className="mt-4 text-base font-semibold text-foreground">The PEO files your tax returns and carries the workers' comp policy. It does not make your hiring, firing, or management decisions.</p>
         </Reveal>
       </div>
     </section>
@@ -121,10 +121,10 @@ const CoEmployment = () => (
         <Reveal>
           <h2 className="font-heading text-2xl font-800 text-foreground md:text-3xl">The Liability Question</h2>
           <p className="mt-4 text-lg leading-8 text-foreground/85">
-            Co-employment does shift some employer liability to the PEO, specifically in areas like payroll tax compliance, employment law filings, and benefits administration. This is one of the reasons employers use PEOs: shared liability on compliance functions is meaningful protection, especially for multi-state employers navigating different state labor laws.
+            Co-employment shifts specific liabilities to the PEO: payroll tax deposits and filings, W-2 accuracy, benefits plan administration, and workers' comp coverage. If a payroll tax deposit is late or a filing is wrong, that is the PEO's exposure, not yours. This is one of the reasons employers use PEOs, particularly ones running payroll in several states with different withholding and unemployment rules.
           </p>
           <p className="mt-4 text-lg leading-8 text-foreground/85">
-            However, co-employment does not eliminate your liability as the worksite employer. You are still responsible for what happens on your job sites, how your managers treat employees, and the decisions you make about the workforce. Think of it as shared accountability on the administrative side, not a liability transfer.
+            You stay liable for what happens on your job sites: workplace safety practices, how your managers treat employees, wrongful termination or discrimination claims tied to your decisions, and general business liability. The PEO's coverage protects the payroll and tax mechanics. It does not protect you from the consequences of your own management decisions.
           </p>
         </Reveal>
       </div>

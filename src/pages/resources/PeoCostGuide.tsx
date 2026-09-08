@@ -96,7 +96,7 @@ const PeoCostGuide = () => (
             <ArrowLeft className="mr-1 h-4 w-4" /> Back to Resources
           </Link>
           <p className="text-xl leading-8 text-foreground/85">
-            Most published "PEO cost" articles are written by PEOs trying to sell you something, or by SEO sites guessing at numbers. This one is written by an independent broker who actually sees real quotes from ADP TotalSource, Insperity, Justworks, Rippling, TriNet, Paychex, and dozens of regional PEOs every month. Here's what PEOs actually cost in 2026, what's negotiable, and what you should never pay extra for.
+            Most published "PEO cost" articles are written by PEOs trying to sell you something, or by SEO sites guessing at numbers. This one is written by an independent broker who sees real quotes from ADP TotalSource, Insperity, Justworks, Rippling, TriNet, Paychex, and dozens of regional PEOs every month. Here's what PEOs cost in 2026, what's negotiable, and what you should never pay extra for.
           </p>
         </Reveal>
       </div>
@@ -114,10 +114,10 @@ const PeoCostGuide = () => (
         <h3 className="font-heading font-700 text-foreground">2. Percentage of Payroll</h3>
         <p className="mt-2 text-sm text-muted-foreground"><strong>Range:</strong> 2%–6% of gross payroll. <strong>Best for:</strong> lower-wage workforces where 2%–4% of a $35K salary beats $150 PEPM. Common with ADP TotalSource and Insperity for blue-collar industries.</p>
       </CardContent></Card>
-      <p className="mt-4"><strong className="text-foreground">Quick math:</strong> a 25-person company at $65K average salary pays roughly $45,000/year on PEPM ($150 × 25 × 12) or $40,625/year on a 2.5% percentage model. The cheaper option flips at higher salaries: always model both.</p>
+      <p className="mt-4">For example, a 25-person company at $65K average salary pays roughly $45,000/year on PEPM ($150 × 25 × 12) or $40,625/year on a 2.5% percentage model. The cheaper option flips at higher salaries: always model both.</p>
     </Section>
 
-    <Section title="What's Actually Bundled in That Number">
+    <Section title="What Is Bundled Into That Number">
       <p>The headline rate usually includes:</p>
       <ul className="space-y-2">
         {["Payroll processing and tax filing (federal, state, local)", "W-2 and 1099 preparation", "HR support line and basic compliance guidance", "Online HR platform / employee self-service", "Onboarding workflows and document management", "Workers' comp policy administration"].map((t) => <Bullet key={t}>{t}</Bullet>)}
@@ -188,7 +188,7 @@ const PeoCostGuide = () => (
       <ul className="space-y-2">
         <Bullet>Transparent pricing with clear line-item breakdowns</Bullet>
         <Bullet>A named contact with a defined response SLA</Bullet>
-        <Bullet>Competitive benefits that employees actually perceive as better than before</Bullet>
+        <Bullet>Competitive benefits that employees perceive as better than before</Bullet>
         <Bullet>Clear renewal terms with reasonable notice windows</Bullet>
         <Bullet>A clean exit process if the relationship doesn't work out</Bullet>
       </ul>
@@ -214,7 +214,7 @@ const PeoCostGuide = () => (
       <div className="container text-center">
         <Reveal>
           <h2 className="font-heading text-3xl font-800 text-primary-foreground md:text-4xl">See real PEO quotes for your company.</h2>
-          <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">We'll collect your data once, send it to multiple PEOs, and bring back normalized quotes so you can actually compare.</p>
+          <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">We'll collect your data once, send it to multiple PEOs, and bring back normalized quotes so you can compare.</p>
           <div className="mt-8">
             <Button asChild size="lg" className="bg-accent text-accent-foreground font-heading font-700 hover:bg-accent/90 shadow-lg shadow-accent/20">
               <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Schedule a PEO Strategy Call</a>

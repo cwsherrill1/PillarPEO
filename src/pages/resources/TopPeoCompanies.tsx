@@ -132,7 +132,7 @@ const TopPeoCompanies = () => (
       </ul>
     </Section>
 
-    <Section title="What 'CPEO Certified' Actually Means" alt>
+    <Section title="What 'CPEO Certified' Means" alt>
       <p>CPEO (Certified Professional Employer Organization) is an IRS designation under the Small Business Efficiency Act of 2014. A CPEO has met financial reporting, bonding, and tax compliance requirements, and clients are protected from payroll tax liability if the PEO fails to remit.</p>
       <p>Fewer than 100 of the ~500 PEOs in the US are CPEO-certified. <strong className="text-foreground">For most employers, CPEO status should be a hard requirement.</strong> Always verify on the <a href="https://www.irs.gov/tax-professionals/certified-professional-employer-organization" target="_blank" rel="noopener noreferrer" className="text-green-ink hover:underline">IRS CPEO list</a> before signing.</p>
     </Section>

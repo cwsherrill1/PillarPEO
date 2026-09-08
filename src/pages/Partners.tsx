@@ -101,7 +101,7 @@ const Partners = () => (
       </p>
       <p>
         We are the people you hand that question to. We review the numbers, tell
-        you what is actually happening in them, and hand back an answer you can
+        you what is happening in them, and hand back an answer you can
         take to the client, including, often, "don't do this".
       </p>
     </Section>
@@ -132,7 +132,7 @@ const Partners = () => (
         <Bullet>
           <strong className="text-foreground">Review a PEO renewal or proposal.</strong>{" "}
           Line by line: admin fee basis, SUTA, workers' compensation, benefit
-          plan changes, and tell you what actually moved. See the{" "}
+          plan changes, and tell you what moved. See the{" "}
           <Link to="/resources/peo-renewal-review" className="text-green-ink hover:underline">
             renewal review
           </Link>

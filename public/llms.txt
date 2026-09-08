@@ -22,6 +22,11 @@ Prices are quoted before the work starts and are not published on the site.
 - [HR Projects](/services/hr-projects): Six fixed-price projects.
 - [Fractional HR](/services/fractional-hr): Advisor, Partner and Embedded tiers.
 - [Transitions](/services/transitions): PEO exit, switch, implementation, HRIS and payroll moves.
+- [PEO exit](/services/transitions/peo-exit): Leaving a PEO and standing your own payroll, benefits and HR back up.
+- [PEO switch](/services/transitions/peo-switch): Moving from one PEO to another without losing benefit continuity.
+- [PEO implementation](/services/transitions/peo-implementation): Going into a PEO for the first time.
+- [HRIS migration](/services/transitions/hris-migration): Moving HRIS or payroll platform without losing history.
+- [Payroll provider switch](/services/transitions/payroll-provider-switch): Changing payroll provider, including mid-year.
 - [PEO Brokerage](/services/peo-brokerage): The free PEO comparison service.
 - [How We Get Paid](/how-we-get-paid): Fee structure and commission disclosure.
 - [Industries](/industries): Who Pillar works with.

@@ -75,7 +75,7 @@ const RaleighDurhamNc = () => (
       intro="The Triangle builds organisations quickly and documents them slowly. Contractor status and first hires are where it shows."
     />
 
-    <Section title="What HR problems do Triangle organisations actually have?">
+    <Section title="What HR problems do Triangle organisations have?">
       <UpdatedLine />
       <p className="text-lg leading-8 text-foreground/85">
         Three, mostly. Long-running contractor relationships in Research Triangle Park that

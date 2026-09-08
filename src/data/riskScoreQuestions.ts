@@ -47,7 +47,7 @@ export const riskScoreQuestions: RiskQuestion[] = [
   },
   {
     id: 3,
-    question: "Does your employee handbook say what your company actually does in practice?",
+    question: "Does your employee handbook say what your company does in practice?",
     topic: "Handbook and policies",
     options: [
       { text: "Yes: it's current and matches how we operate", score: 1 },
@@ -55,7 +55,7 @@ export const riskScoreQuestions: RiskQuestion[] = [
       { text: "No: it's outdated, generic, or we don't have one", score: 3 },
     ],
     quickWin: "Read your handbook cover to cover and flag anything that no longer matches reality.",
-    longerTermFix: "Get a handbook written for the states your people actually work in.",
+    longerTermFix: "Get a handbook written for the states your people work in.",
   },
   {
     id: 4,
@@ -79,7 +79,7 @@ export const riskScoreQuestions: RiskQuestion[] = [
       { text: "Not well: we're not confident notices go out on time", score: 3 },
     ],
     quickWin: "Check your last two COBRA notices went out within the required window.",
-    longerTermFix: "Have an HR audit test eligibility rules as written against how they're actually run.",
+    longerTermFix: "Have an HR audit test eligibility rules as written against how they're run.",
   },
   {
     id: 6,

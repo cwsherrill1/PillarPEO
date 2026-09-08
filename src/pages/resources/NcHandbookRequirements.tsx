@@ -54,7 +54,7 @@ const NcHandbookRequirements = () => (
       intro="A checklist, with the legally required pieces separated from good practice."
     />
 
-    <Section title="What does a North Carolina handbook actually need to say?">
+    <Section title="What does a North Carolina handbook need to say?">
       <UpdatedLine />
       <p className="text-lg leading-8 text-foreground/85">
         Very little is legally required in a North Carolina handbook itself:
@@ -66,7 +66,7 @@ const NcHandbookRequirements = () => (
       </p>
     </Section>
 
-    <Section title="What North Carolina law actually requires" alt>
+    <Section title="What North Carolina law requires" alt>
       <ul className="space-y-3">
         <Bullet>
           <strong className="text-foreground">E-Verify at 25+ employees.</strong>{" "}
@@ -114,7 +114,7 @@ const NcHandbookRequirements = () => (
         </Bullet>
         <Bullet>
           <strong className="text-foreground">Leave policies.</strong> Whatever
-          leave you actually offer, vacation, sick, bereavement, stated
+          leave you offer, vacation, sick, bereavement, stated
           plainly, plus a note on FMLA if you're a covered employer.
         </Bullet>
         <Bullet>
@@ -142,7 +142,7 @@ const NcHandbookRequirements = () => (
         <Link to="/services/hr-audit" className="text-green-ink hover:underline">
           HR audit
         </Link>
-        , checked against how the company actually operates, not just against
+        , checked against how the company operates, not just against
         a template. See the full{" "}
         <Link to="/resources/hr-audit-checklist" className="text-green-ink hover:underline">
           HR audit checklist
@@ -168,7 +168,7 @@ const NcHandbookRequirements = () => (
     </Section>
 
     <ServiceCta
-      heading="Not sure your handbook matches how you actually operate?"
+      heading="Not sure your handbook matches how you operate?"
       body="The HR audit reviews your handbook line by line against your real practice and every state you employ people in."
       proof="client quote describing a handbook gap the audit found, North Carolina employer."
       secondary={{ label: "See the HR audit", href: "/services/hr-audit" }}

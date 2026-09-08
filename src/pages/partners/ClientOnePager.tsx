@@ -114,7 +114,7 @@ const ClientOnePager = () => {
           <ul className="mt-2 space-y-2 text-base leading-relaxed text-foreground/85">
             <li>
               <strong>Renewal review.</strong> Your PEO or benefits renewal, read line
-              by line, so you know what actually moved and why. Free.
+              by line, so you know what moved and why. Free.
             </li>
             <li>
               <strong>HR audit.</strong> A written review of documentation,
