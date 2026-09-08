@@ -294,8 +294,7 @@
    Scoped to body.one-pager so site-wide printing is unchanged. */
 @media print {
   body.one-pager header,
-  body.one-pager footer.site-footer,
-  body.one-pager > div > footer,
+  body.one-pager footer,
   body.one-pager .print-hide {
     display: none !important;
   }
